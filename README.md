@@ -6,9 +6,10 @@
 
 <!--- Badges ---> 
 <p align="center">
+	<a href="https://github.com/packethost/docs/watchers"><img src="https://img.shields.io/github/watchers/packethost/docs?color=success" alt="Watchers"/></a>
     <a href="https://github.com/packethost/docs/graphs/contributors"><img src="https://img.shields.io/github/contributors/packethost/docs?color=success" alt="Contributors"/></a>
     <a href="https://github.com/packethost/docs/blob/adding-readme/LICENSE.md"><img src="https://img.shields.io/github/license/packethost/docs?color=success" alt="License"/></a>
-    <a href="https://github.com/packethost/docs/watchers"><img src="https://img.shields.io/github/watchers/packethost/docs?color=success" alt="Watchers"/></a>
+    
 </p>
 
 <!--- Headline Description --->
