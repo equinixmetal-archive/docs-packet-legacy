@@ -4,6 +4,11 @@
 	<h1 align="center"> Packet Documentation </h1>
 </p>
 
+<!--- Badges ---> 
+<p align="center">
+    <a href="https://github.com/packethost/docs/graphs/contributors"><img src="https://img.shields.io/github/contributors/packethost/docs?color=success" alt="Contributors"/></a>
+</p>
+
 <!--- Headline Description --->
 This is the public documentation for Packet's public services.
 View our documentation page at [Packet Docs](https://www.packet.com/docs/).
