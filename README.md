@@ -21,10 +21,11 @@ View our documentation page at [Packet Docs](https://www.packet.com/docs/).
 
 <!--- How To Contribute --->
 ## How To Contribute
-
+***To be updated soon***
 
 <!--- Issues --->
 ## Issues
+***To be updated soon***
 
 <!--- License --->
 ## License
