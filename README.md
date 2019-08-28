@@ -13,3 +13,10 @@ View our documentation page at [Packet Docs](https://www.packet.com/docs/).
 <!--- What We Have Here? --->
 
 ## What We Have Here?
+
+- Documentation
+- Guides
+- Features
+- Products
+
+*** This section is to be updated once we have the latest changes in this repo ***
