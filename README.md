@@ -24,3 +24,10 @@ View our documentation page at [Packet Docs](https://www.packet.com/docs/).
 
 <!--- How To Contribute --->
 ## How To Contribute
+
+
+<!--- Issues --->
+## Issues
+
+<!--- Feedback --->
+## Feedback
