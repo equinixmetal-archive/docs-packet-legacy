@@ -26,9 +26,6 @@ View our documentation page at [Packet Docs](https://www.packet.com/docs/).
 <!--- Issues --->
 ## Issues
 
-<!--- Feedback --->
-## Feedback
-
 <!--- License --->
 ## License
 The Packet Documentation is an open source project under the [MIT License](https://github.com/packethost/docs/blob/adding-readme/LICENSE.md).
