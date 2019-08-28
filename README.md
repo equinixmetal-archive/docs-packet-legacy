@@ -1,4 +1,4 @@
-<p aling="center">
+<p align="center">
 	<img alt="packetbot" src="images/packetbot.png" width="100px" />
 	<h1 align="center"> Packet Documentation </h1>
 </p>
