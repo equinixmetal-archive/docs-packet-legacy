@@ -19,4 +19,4 @@ View our documentation page at [Packet Docs](https://www.packet.com/docs/).
 - Features
 - Products
 
-*** This section is to be updated once we have the latest changes in this repo ***
+***This section is to be updated once we have the latest changes in this repo***
