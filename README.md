@@ -1,4 +1,4 @@
-# HTML markdown to center the headline
+<!--- HTML markdown to center the headline --->
 
 <p align="center">
 	<img alt="packetbot" src="images/packetbot.png" width="120px" />
