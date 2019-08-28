@@ -1,3 +1,5 @@
+# HTML markdown to center the headline
+
 <p align="center">
 	<img alt="packetbot" src="images/packetbot.png" width="120px" />
 	<h1 align="center"> Packet Documentation </h1>
