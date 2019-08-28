@@ -1,5 +1,5 @@
 <p align="center">
-	<img alt="packetbot" src="images/packetbot.png" width="100px" />
+	<img alt="packetbot" src="images/packetbot.png" width="120px" />
 	<h1 align="center"> Packet Documentation </h1>
 </p>
 
