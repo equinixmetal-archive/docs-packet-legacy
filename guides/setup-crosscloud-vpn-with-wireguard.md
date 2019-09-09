@@ -1,6 +1,6 @@
 <!--- HTML markdown to center the headline --->
 <p align="center">
-	<img alt="packetbot" src="images/wireguard-logo.png" width="120px" />
+	<img alt="wireguard-logo" src="../images/wireguard-logo.png" width="120px" />
 	<h1 align="center">Setup a Crosscloud VPN with Wireguard</h1>
 </p>
 
