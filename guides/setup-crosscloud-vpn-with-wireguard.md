@@ -176,7 +176,7 @@ Endpoint = 147.75.72.241:51820
 
 #### Step 5 - Setup the routing for node 1 of EWR1
 
-Issue the following commands at EWR1 node 1 to enable IPv4 and IPv6 routing, so that it can forward packets for node 2 and node 3: \
+Issue the following commands at EWR1 node 1 to enable IPv4 and IPv6 routing, so that it can forward packets for node 2 and node 3: 
 
 ```
 echo "net.ipv4.ip_forward = 1
