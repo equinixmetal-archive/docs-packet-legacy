@@ -8,7 +8,7 @@ We offer bare metal servers, on demand \(seven minutes or less\) in our public c
 
 With Packet bare metal, there are no noisy neighbors, shared resources, or hypervisors to gum up the works and impact your workload. Your dedicated servers are 100%, well...yours!
 
-While our servers & services are completely unmanaged. If you experience issues with your server you can reach out to our support team via [email](mailto:support@packet.com), [Slack](http://slack.packet.com/).
+While our servers & services are completely unmanaged. If you experience issues with your server you can reach out to our support team via [email](mailto:support@packet.com), [Slack](https://slack.packet.com/).
 
 
 ## Need help?
