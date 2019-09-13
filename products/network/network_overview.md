@@ -1,6 +1,7 @@
+    Get started with Packet's networking features including using public, backend and Elastic IP space. 
 
 
-## Network Overview
+### Network Design Overview
 
 Packet’s network and datacenter topology is designed with performance and redundancy as top priorities. Two unique features include a full Layer-3 topology and a native dual-stack (IPv4 / IPv6) capability.
 
@@ -8,41 +9,47 @@ With a pure Layer-3 network design, each server is directly attached to a physic
 
 Each server has dedicated dual network connections going into two Top-of-Rack (ToR) switches. These two physical connections are virtually bonded together as follows:
 
-| | |
+
+| Type  | Network |
 | ------------- | ------------- |
-| t1.small | 1 Gbps Network (2 × Intel NICs 1Gbps w/ TLB) full hardware redundancy but no active/active bond.
-| c1.small | 2 Gbps Bonded Network (2 × Intel NICs 1Gbps w/ LACP) full hardware redundancy and active/active bond.
-| x1.small | 10 Gbps Network (Intel X710 NIC)
-| m1.xlarge | 20 Gbps Bonded Network (2 × Mellanox ConnectX NICs, 10Gbps w/ LACP) full hardware redundancy and active/active bond.
-| c1.xlarge | 20 Gbps Bonded Network (2 × Mellanox ConnectX NICs, 10Gbps w/ LACP) full hardware redundancy and active/active bond.
-| s1.large | 20 Gbps Bonded Network ( 2 × Mellanox ConnectX NICs, 10 Gbps w/ LACP) full hardware redundancy and active/active bond.
-| m2.xlarge | 20Gbps Network Pipe with 2 x 10 Gbps Bonded NICs in an HA configuration (2 x 10Gbps Mellanox Connect-X 4 NICs)
-| c2.medium | 20Gbps Network Pipe with 2 x 10 Gbps Bonded NICs in an HA configuration (2 x Mellanox ConnectX NICs)
-| g2.large | 20Gbps Bonded Network 2 × 10GBPS W/ LACP
-| n2.large | Quad-port Intel x710  (4 × 10GBPS W/ LACP)
+| t1.small|  1 Gbps Network (2 × Intel NICs 1Gbps w/ TLB) full hardware redundancy but no active/active bond.
+| c1.small|  2 Gbps Bonded Network (2 × Intel NICs 1Gbps w/ LACP) full hardware redundancy and active/active bond.
+| x1.small| 10 Gbps Network (Intel X710 NIC)
+| m1.xlarge| 20 Gbps Bonded Network (2 × Mellanox ConnectX NICs, 10Gbps w/ LACP) full hardware redundancy and active/active bond.
+|c1.xlarge| 20 Gbps Bonded Network (2 × Mellanox ConnectX NICs, 10Gbps w/ LACP) full hardware redundancy and active/active bond.
+|s1.large|20 Gbps Bonded Network ( 2 × Mellanox ConnectX NICs, 10 Gbps w/ LACP) full hardware redundancy and active/active bond.
+|m2.xlarge| 20Gbps Network Pipe with 2 x 10 Gbps Bonded NICs in an HA configuration (2 x 10Gbps Mellanox Connect-X 4 NICs)
+|c2.medium| 20Gbps Network Pipe with 2 x 10 Gbps Bonded NICs in an HA configuration (2 x Mellanox ConnectX NICs)
+|g2.large| 20Gbps Bonded Network 2 × 10GBPS W/ LACP
+|n2.large| Quad-port Intel x710  (4 × 10GBPS W/ LACP)
 
 
-### IP Space, Elastic IPs, Global Anycast IPs and Backend Networking
+#### IP Space, Elastic IPs, Global Anycast IPs and Backend Networking
 
-**Default IPv4 and IPv6 Addresses**: Packet servers are grouped into projects to support backend networking and ease of collaboration. When you create a new project, our platform assigns two IP blocks: a per-facility /56 IPv6 and /25 Private IPv4.
+##### Default IPv4 and IPv6 Addresses
+ Packet servers are grouped into projects to support backend networking and ease of collaboration. When you create a new project, our platform assigns two IP blocks: a per-facility /56 IPv6 and /25 Private IPv4.
 
 When you then deploy servers into a project, each machine gets 1 Public IPv4 from Packet’s general pool, as well as 1 Private IPv4 and 1 IPv6 from the blocks already assigned to the project. Note: since the Public IPv4 for each server is assigned from our general pool, you will lose this IPv4 if you delete your server (see elastic addressing section below for how to keep IPs around).
 
-**Elastic IPs:** Elastic IPs (IPv4 only) can be requested via the portal or API, and once assigned are instantly routable to any server within your project based upon location. They cost $0.005/hr ($3.60/mo) per IP. 
+##### Elastic IPs
+Elastic IPs (IPv4 only) can be requested via the portal or API, and once assigned are instantly routable to any server within your project based upon location. They cost $0.005/hr ($3.60/mo) per IP. 
 
 We recommend using Elastic IPs for any workload where permanent reachability is required since these IPs can be retained and reused even if you add or remove specific servers. For example, hosting a public-facing web site behind a load balancer, or directing clients to a clustered database server internally. Move IPs from one server to another if one fails, or move workload to a bigger (or smaller!) server to respond to traffic demands.
 
 Elastic IPs can also be used as additional IPs that you can attach to a server. This is useful if you need additional IP space on a server for containerized or virtualized workloads, where every VM might need a direct connection to the public internet, without the need of NAT-ing and extra routes.
 
-**Global Anycast IPs:** Can be requested via the portal or API. There is a hard limit of four (4) IPs per project. You can then announce your IP space via Local BGP & utilizing bird. Global Anycast IPs can be announced through all of our core sites with Custom sites coming soon.  Each Global Anycast IP costs $0.15/hour. For example, a /31 (two usable IPs) would cost $0.30/hr. Bandwidth is also a consideration as, regular $0.05/GB outbound rates will apply. In addition, inbound bandwidth to Global Anycast IPs will be $0.03/GB.
+##### Global Anycast IPs
+Can be requested via the portal or API. There is a hard limit of four (4) IPs per project. You can then announce your IP space via Local BGP & utilizing bird. Global Anycast IPs can be announced through all of our core sites with Custom sites coming soon.  Each Global Anycast IP costs $0.15/hour. For example, a /31 (two usable IPs) would cost $0.30/hr. Bandwidth is also a consideration as, regular $0.05/GB outbound rates will apply. In addition, inbound bandwidth to Global Anycast IPs will be $0.03/GB.
 
-**Private Networking:** All servers within a Project can talk to each other via private RFC1918 address space (e.g. 10.x.x.x), but cannot communicate over private address space by devices outside of that Project.  
+##### Private Networking
+All servers within a Project can talk to each other via private RFC1918 address space (e.g. 10.x.x.x), but cannot communicate over private address space by devices outside of that Project.  
 
 The only restriction is that all servers must be within a single project. Private networking works within a single datacenter. 
 
-**Backend Transfer:** Enables you to communicate between facilities & projects within your account. This is done via private RFC1918 address space (e.g. 10.x.x.x). Backend connectivity within the same facility does not incur charges for bandwidth, as it does not leave the facility. However, should you connect between facilities this would incur a fee of $0.03/GB. Learn more about backend transfer here. 
+##### Backend Transfer
+Enables you to communicate between facilities & projects within your account. This is done via private RFC1918 address space (e.g. 10.x.x.x). Backend connectivity within the same facility does not incur charges for bandwidth, as it does not leave the facility. However, should you connect between facilities this would incur a fee of $0.03/GB. Learn more about backend transfer here. 
 
-### Backend & Private Network Security
+###### Backend & Private Network Security
 
 We secure this private communication with ACL restrictions applied to the switch ports of the servers. This way only the servers that are part of the same project or ORG (if using backend transfer) are able to talk to each other via private IPs.
 
