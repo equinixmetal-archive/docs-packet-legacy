@@ -8,9 +8,9 @@ As such, there is a bit more you should know about how to troubleshoot or deal w
 
 When you need persistent storage, with built-in replication and snapshots, our block storage product is a very useful tool.  We offer two performance tiers:
 
-* Standard Tier ($0.000104/GB per hour) - With 500 IOPS per volume this is good for backups, dev/test, and medium use datasets.
+* **Standard Tier:**  ($0.000104/GB per hour) - With 500 IOPS per volume this is good for backups, dev/test, and medium use datasets.
 
-* Premium Tier ($0.000223/GB per hour) - With 15,000 IOPS per volume this is targeted at higher I/O heavy workloads.
+* **Premium Tier:** ($0.000223/GB per hour) - With 15,000 IOPS per volume this is targeted at higher I/O heavy workloads.
 
 
 ### Use Cases
