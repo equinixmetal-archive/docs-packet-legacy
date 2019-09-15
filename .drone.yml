@@ -4,5 +4,5 @@ pipeline:
         commands:
           - apk update
           - apk add npm curl jq
-          - npm install -g markdownlint-cli
+          - sudo npm install -g markdownlint-cli
           - markdownlint README.md
