@@ -4,5 +4,6 @@ pipeline:
         commands:
           - apk update
           - apk add npm curl jq
+          - RUN npm config set unsafe-perm true
           - npm install -g markdownlint-cli
           - markdownlint README.md
