@@ -62,4 +62,4 @@ Custom Facilities:
 * __HKG1__ is SSAE16/ISAE3402 SOC-1 Type II certified and ISO 27001 compliant.
 * __SYD1__ is SSAE16/ISAE3402 SOC-1 Type II certified. Plus ISO 27001 and PCI-DSS compliant.
 
-Have a special concern or business need? We can often accommodate this with a private deployment or other approach. Be sure to get in touch!
+Have a special concern or business need? We can often accommodate this with a private deployment or other approach. Be sure to get in touch by visiting  our [support page](https://support.packet.com) or emailing support@packet.com!
