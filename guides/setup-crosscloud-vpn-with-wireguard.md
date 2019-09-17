@@ -14,7 +14,7 @@ In the world of VPNs, [WireGuard](https://www.wireguard.com/) is the new kid on 
 
 The following diagram illustrates a server at our EWR1 facility and another server at our SJC1 facility and their IP addresses:
 
-![alt_text](https://raw.githubusercontent.com/packethost/docs/master/images/setup-crosscloud-vpn-with-wireguard-1.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/packethost/docs/master/images/setup-crosscloud-vpn-with-wireguard/server-ip.png "image_tooltip")
 
 
 #### Step 1 - Install WireGuard on both Packet servers (using Ubuntu 18.04 LTS as an example)
@@ -125,7 +125,7 @@ The following diagram illustrates that one server (node 1) at our EWR1 facility 
 
 All traffic between node 2 or 3 in EWR1 and SJC1 server are “forwarded” via node 1 in EWR1 through the WireGuard VPN tunnel between the SJC1 server and EWR1’s node 1.
 
-![alt_text](https://raw.githubusercontent.com/packethost/docs/master/images/setup-crosscloud-vpn-with-wireguard-2.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/packethost/docs/master/images/setup-crosscloud-vpn-with-wireguard/vpn-example.png "image_tooltip")
 
 
 
