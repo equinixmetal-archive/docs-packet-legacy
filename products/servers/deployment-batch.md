@@ -1,7 +1,8 @@
-> _Deploy multiple servers at once with a single API call._
-
-* * *
-
+<!--<meta>
+{
+    "title":"Deployment: Batch",
+}
+</meta>-->
 Batch deployment is a feature that enables you to deploy multiple servers at once with a single API call.   This is useful if you don't already use a tool like Terraform, which includes its own method for handling large deployments.
 
 With batch deployments you can choose the server types & any facility that suits your particular deployment needs.  It is also possible to create several batches at once, such as in the following example, which shows how to deploy three c1.small.

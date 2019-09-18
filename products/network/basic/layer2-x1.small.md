@@ -1,3 +1,9 @@
+<!--<meta>
+{
+    "title":"L2: x1.small",
+}
+</meta>-->
+
 Our Layer 2 feature on the x1.small (which is found in our 11 custom locations) has some differences in both scope and implementation when compared to our other supported machines (m1.xlarge, c1.xlarge, and s1.large).
 
 

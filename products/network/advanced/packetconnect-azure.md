@@ -1,3 +1,8 @@
+<!--<meta>
+{
+    "title":"Packet Connect: Azure",
+}
+</meta>-->
 
 
 Packet Connect is a low latency, a highly reliable direct connection from Packet to other networks and cloud providers. This Layer 2 service is built from the ground up to be a cloud-native network service focused on developers and their needs. The service is fully automated via native APIs to create virtual connections at configurable speeds from 100 Mbps to 10 Gbps.

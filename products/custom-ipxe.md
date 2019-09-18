@@ -1,5 +1,8 @@
-> _How to install a custom Operating System or modified image._
-
+<!--<meta>
+{
+    "title":"Customer PXE",
+}
+</meta>-->
 
 ### **Introduction**
 

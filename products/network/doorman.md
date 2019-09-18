@@ -1,9 +1,9 @@
----
-description: >-
-  Doorman is a VPN (virtual private network) service that helps to secure
-  traffic between you and your servers for management purposes. This is not a
-  VPN solution between servers for web traffic.
----
+<!--<meta>
+{
+    "title":"Doorman",
+}
+</meta>-->
+
 
 # Doorman
 

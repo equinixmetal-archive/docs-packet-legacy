@@ -1,3 +1,10 @@
+<!--<meta>
+{
+    "title":"Billing",
+}
+</meta>-->
+
+
 # Price & Billing
 
 Pricing a physical server is really the sum of its parts - from switching and cables down to the actual chassis.  Of course, the most important cost is associated with the physical assets of the server - the processor, RAM, disks, etc.  
