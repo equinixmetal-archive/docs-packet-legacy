@@ -6,7 +6,7 @@ If you are deploying your applications with Kubernetes or are just diving into t
 
 The Kubernetes Cluster Autoscaler is designed to dynamically scale your cluster nodepools based on unschedulable pods or nodes that aren’t needed anymore. While this has been supported on cloud providers that use VMs, Packet is the first public cloud provider to support the Cluster Autoscaler on Baremetal servers. In this guide, we’ll be configuring the cluster autoscaler on a bare metal cluster that you have already deployed. If you’re looking for a script that quickly deploys a cluster with a master and two worker nodes, we have a great demo at the Packet-Labs github repo. The following is the example cluster with 1 master and 2 workers that we’ll be using for this guide:
 
-![alt text](https://github.com/enkelprifti98/Kubernetes-Cluster-Autoscaler-on-Packet-Guide/blob/master/images/k8s%20cluster%20overview.png)
+![alt text](/docs/blob/master/images/kubernetes-cluster-autoscaler-on-packet/k8s-cluster-overview.png)
 
 ## Configuration
 
