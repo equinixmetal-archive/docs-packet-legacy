@@ -1,3 +1,12 @@
+<!--<meta>
+{
+    "title":"Layer 2 Examples",
+    "description":"How to configure some possible layer 2 environments.",
+    "date": "2019/09/20",
+    "tag":["layer 2", "another tag"]
+}
+</meta>-->
+
 Layer 2 feature lets you provision between one and twelve (per project) project-specific layer 2 networks.  For more details about the basics of this feature, please read our [overview article](https://support.packet.com/kb/articles/layer-2-overview).
 
 
@@ -25,6 +34,8 @@ By default, each server has two interfaces that are setup in an LACP bond that i
 **Configuration #1: Leaving eth0 in bond0 and adding a single VLAN to eth1.**  
 
 In this example, you will need at least 2 servers (m1.xlarge or c1.xlarge) in the same project and at least 1 Virtual Network. We will be removing eth1 from bond0, attaching a VLAN to it, and pinging between the hosts.
+
+**Note:** this is the only layer 2 configuration available on the x1.small server type.
 
 You will still be able to connect to the server via its public IPv4/IPv6 addresses that are visible in the portal/API because we are leaving eth0 and bond0 intact.  
 
@@ -183,7 +194,7 @@ Bring down eth1:
 
 `ifdown eth1`
 
-**Note: **if you don't want eth1 to come up after a reboot be sure to comment out the eth1 configuration in your /etc/network/interfaces file.
+**Note:** if you don't want eth1 to come up after a reboot be sure to comment out the eth1 configuration in your /etc/network/interfaces file.
 
 Add the new interface to /etc/network/interfaces, changing 1000 to match the VLAN IDs:
 
