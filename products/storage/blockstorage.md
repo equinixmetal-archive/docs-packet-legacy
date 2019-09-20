@@ -1,3 +1,13 @@
+<!--<meta>
+{
+    "title":"Elastic Block Storage",
+    "description":"Deploy block storage volumes",
+    "date": "09/20/2019",
+    "tag":["Elastic Block Storage", "Storage", "Block Storage]
+}
+</meta>-->
+
+
 Packet's Block Storage service looks and smells a lot like Amazon’s EBS. You can create volumes of different performance profiles, leverage snapshot policies and more - all via our API or portal.  The service is highly redundant.
 
 Comparing our block storage service to similar offerings at other clouds, an important difference is that at Packet you don’t have the benefit of a platform-managed hypervisor layer (we only offer bare metal compute and never leave an agent or any other tools/software on your server after it is deployed).

@@ -1,9 +1,11 @@
 <!--<meta>
 {
-    "title":"L2: Overview",
+    "title":"Layer2: Overciew",
+    "description":"Setting Up & Using Layer2",
+    "date": "09/20/2019",
+    "tag":["Layer2", "Networking"]
 }
 </meta>-->
-
 Layer 2 feature lets you provision between one and twelve (per project) project-specific layer 2 networks.  For more details about the basics of this feature, please read our [overview article](https://support.packet.com/kb/articles/layer-2-overview).
 
 

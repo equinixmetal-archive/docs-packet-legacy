@@ -1,9 +1,11 @@
 <!--<meta>
 {
     "title":"IPs: Elastic",
+    "description":"Setting Up & Using Elastic IPs",
+    "date": "09/20/2019",
+    "tag":["Network", "Elastic IPs"]
 }
 </meta>-->
-
 
 When a Packet server is installed, we configure management IP addresses by default. These IPs are for accessing a server administratively, for example, via SSH. It is important to consider that these IPs live and die with a server -- when a server instance is deleted, its management IPs also cease to exist, and may not necessarily be assigned to any new servers created.
 

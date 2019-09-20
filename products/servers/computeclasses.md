@@ -1,8 +1,12 @@
 <!--<meta>
 {
     "title":"Compute Classes",
+    "description":"Our various device type classes",
+    "date": "09/20/2019",
+    "tag":["Device Types", "Devices", "Compute Classes]
 }
 </meta>-->
+
   
 
 As our server lineup grows, it has become harder to scale the very simplistic naming convention we started with (e.g. Type 1, Type 2, etc).

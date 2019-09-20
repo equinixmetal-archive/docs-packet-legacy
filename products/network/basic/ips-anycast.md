@@ -1,9 +1,11 @@
 <!--<meta>
 {
     "title":"IPs: Global Anycast",
+    "description":"Obtaining & Utilizing Global Anycast IPs",
+    "date": "09/20/2019",
+    "tag":["Network", Elastic IPs", "Anycast"]
 }
 </meta>-->
-
 ### Global Anycast IPs
 
 
