@@ -1,5 +1,8 @@
-> Packet names its servers for clarity, leveraging a formula that includes use case, generation, architecture and size.
-
+<!--<meta>
+{
+    "title":"Compute Classes",
+}
+</meta>-->
   
 
 As our server lineup grows, it has become harder to scale the very simplistic naming convention we started with (e.g. Type 1, Type 2, etc).

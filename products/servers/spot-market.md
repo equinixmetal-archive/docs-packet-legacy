@@ -1,6 +1,8 @@
----
-description: Bid on spare Packet server capacity at greatly reduced rates.
----
+<!--<meta>
+{
+    "title":"Spot Market",
+}
+</meta>-->
 
 # Spot Market
 

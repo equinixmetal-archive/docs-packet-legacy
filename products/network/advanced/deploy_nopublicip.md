@@ -1,3 +1,10 @@
+<!--<meta>
+{
+    "title":"Deploy without Public IP",
+}
+</meta>-->
+
+
 The servers provisioned on Packet gets allocated a public IPv4 and IPv6 address by default. However, there are scenarios where the server is deployed in a restricted environment and expected to have no public internet access. The “Deploy without public IP feature” does exactly that by provisioning a server without any public IP on it.  This works for On-demand servers as well as reserved hardware and spot instances. 
 
 This is currently supported on the servers booting with the OS listed below: 

@@ -1,3 +1,9 @@
+<!--<meta>
+{
+    "title":"Custom Partioning & Raid",
+}
+</meta>-->
+
 Custom Partitioning & Raid (CPR) is powerful and yet easy to use feature that helps you configure Reserved Hardware instances during deployment.  
 
 _Please note: this feature is not available for on-demand instances.  A reserved device is required.  This is because with reserved devices, our system knows the exact drive scheme to allow such customization.  However, all of our machine types can be converted to reserved hardware, so just reach out to _[_support@packet.com_](mailto:support@packet.com)_ to arrange.  _
