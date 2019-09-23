@@ -3,7 +3,7 @@
     "title":"Customer VPN: Doorman",
     "description":"Utilizing Doorman to access your Device",
     "date": "09/20/2019",
-    "tag":["VPN", "No Public IP", "Doorman"]
+    "tag":["VPN", "Private Network", "Doorman"]
 }
 </meta>-->
 
