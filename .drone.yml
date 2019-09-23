@@ -1,0 +1,9 @@
+pipeline:
+    build:
+        image: alpine
+        commands:
+          - apk update
+          - apk add npm curl jq
+          - npm config set unsafe-perm true // to make the next line run properly, which is caused by node version, apparently
+          - npm install -g markdownlint-cli
+          - markdownlint README.md
