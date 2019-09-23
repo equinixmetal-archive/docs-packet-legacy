@@ -1,6 +1,9 @@
 <!--<meta>
 {
-    "title":"L2: x1.small",
+    "title":"Layer2: x1.small",
+    "description":"Setting Up Layer2 on x1.small",
+    "date": "09/20/2019",
+    "tag":["Network", "Layer2"]
 }
 </meta>-->
 

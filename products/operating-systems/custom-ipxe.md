@@ -1,6 +1,9 @@
 <!--<meta>
 {
-    "title":"Customer PXE",
+    "title":"Custom PXE",
+    "description":"Setting Up & Using Custom PXE on Packet",
+    "date": "09/20/2019",
+    "tag":["iPxe", "Custom OS", "Custom PXE"]
 }
 </meta>-->
 

@@ -1,9 +1,10 @@
 <!--<meta>
 {
     "title":"Native VLAN",
+    "description":"Setting up Native VLAN",
+    "tag":["VLAN", "Layer2"]
 }
 </meta>-->
-
 
 Native VLAN feature enables support for untagged packets needed for private cloud deployment for ex with RHOS Introspection. When multiple VLANs are configured on the server port, the Native VLAN feature allows assigning one of the VLANs as native VLAN, so the packets destined for the native VLAN will always go out as untagged packets. Similarly, when the server port receives packets that are untagged, it will automatically be construed as belonging to native VLAN. This is currently supported only on non-bonded interfaces.</p>
 

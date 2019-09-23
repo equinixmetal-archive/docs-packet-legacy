@@ -1,6 +1,9 @@
 <!--<meta>
 {
-    "title":"Deploy without Public IP",
+    "title":"Deploy: No Public IP",
+    "description":"Deploying Device With No Public IP",
+    "date": "09/20/2019",
+    "tag":["Deploy", "No IP"]
 }
 </meta>-->
 

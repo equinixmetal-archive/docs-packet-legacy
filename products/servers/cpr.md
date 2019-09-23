@@ -1,8 +1,12 @@
 <!--<meta>
 {
-    "title":"Custom Partioning & Raid",
+    "title":"Custom Partitioning and RAID",
+    "description":"Setting up CPR (Custom Partitioning & RAID)",
+    "date": "09/20/2019",
+    "tag":["CPR", "Custom RAID", "RAID", "Partition"]
 }
 </meta>-->
+
 
 Custom Partitioning & Raid (CPR) is powerful and yet easy to use feature that helps you configure Reserved Hardware instances during deployment.  
 

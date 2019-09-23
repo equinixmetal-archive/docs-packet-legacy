@@ -1,9 +1,9 @@
 <!--<meta>
 {
     "title":"Packet Connect: Overview",
-    "description":"Using Packet Connect",
+    "description":"Setting up Packet Connect",
     "date": "09/20/2019",
-    "tag":["Advanced Networking", "Network", "Packet Connect, "Azure"]
+    "tag":["PacketConnect", "Network"]
 }
 </meta>-->
 
