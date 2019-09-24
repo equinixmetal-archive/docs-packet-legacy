@@ -18,7 +18,7 @@
 
 ### How to link images properly?
 
-In our markdown files we use relational links to link images from `/images` directory:
+In our markdown files we use relative links to link images from `/images` directory:
 
 ```
 /images/file-name/image-name
