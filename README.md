@@ -30,14 +30,17 @@ View our documentation page at [Packet Docs](https://www.packet.com/developers/d
 
 <!--- How To Contribute --->
 ## How To Contribute
+
 ***To be updated soon***
 
 <!--- Issues --->
 ## Issues
+
 ***To be updated soon***
 
 <!--- License --->
 ## License
+
 The Packet Documentation is an open source project under the [MIT License](https://github.com/packethost/docs/blob/adding-readme/LICENSE.md).
 
 <!--- Reach out --->
