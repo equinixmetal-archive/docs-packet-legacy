@@ -27,3 +27,16 @@ In our markdown files we use relative links to link images from `/images` direct
 `file-name` is the name of the file (wihtout .md or any other extension at the end), which includes the images we want to link.
 
 `image-name` is the name of a particular image within a file. Make sure to use appropriate and clear names for image files. 
+
+
+<!--Naming Conventions-->
+## Naming Conventions
+
+### How to properly name a file?
+
+We use dashes to split long file and directory names:
+
+```
+docs/products/operating-systems/
+docs/products/operating-systems/custom-ipxe.md
+```
