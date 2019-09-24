@@ -34,7 +34,7 @@ In our markdown files we use relative links to link images from `/images` direct
 
 ### How to properly name a file?
 
-We use dashes to split long file and directory names:
+We use dashes to split long file and directory names. Ex:
 
 ```
 docs/products/operating-systems/
