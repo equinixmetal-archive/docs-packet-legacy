@@ -40,3 +40,10 @@ We use dashes to split long file and directory names:
 docs/products/operating-systems/
 docs/products/operating-systems/custom-ipxe.md
 ```
+
+<!--Contribute-->
+## Contributing
+
+Feel free to create a pull request to add a new standard.
+
+Please start an issue if you find a file/directory breaking the standards mentioned above.
