@@ -1,6 +1,11 @@
----
-description: Bid on spare Packet server capacity at greatly reduced rates.
----
+<!--<meta>
+{
+    "title":"Deploy: Spot Market",
+    "description":"Deploying Devices in Spot Market",
+    "date": "09/20/2019",
+    "tag":["Spot Market", "Deploy"]
+}
+</meta>-->
 
 # Spot Market
 

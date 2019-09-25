@@ -1,3 +1,12 @@
+<!--<meta>
+{
+    "title":"SOS: Serial over SSH",
+    "description":"Accesisng Serial Console (SOS)",
+    "date": "09/20/2019",
+    "tag":["SOS", "Console"]
+}
+</meta>-->
+
 There are times when a server becomes unreachable over SSH due to broken networking, a bad install, misconfiguration, a kernel upgrade, bad firewall rules, etc.
 
 If you have your server's root password and your SSH key, please follow the instructions below.  If you do not have these assets, you should _[_leverage our Rescue Mode_](https://support.packet.com/kb/articles/rescue-mode).
