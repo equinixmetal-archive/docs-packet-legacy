@@ -37,8 +37,8 @@ We have requested 8 total IPs from Packet during provisioning.  Here is how the
 147.75.x.0 - Network address  
 147.75.x.1 - Gateway  
 147.75.x.2 - Host IP  
-147.75.x.3 - .7 - Usable IPs for VMs  
-147.75.x.8 - Broadcast
+147.75.x.3 - .6 - Usable IPs for VMs  
+147.75.x.7 - Broadcast
 
   
 If you need more IPs, you can choose to go with a /28 subnet.
@@ -78,7 +78,7 @@ Once that finishes, you will see a devstack directory created. Navigate to that 
     
     PUBLIC_NETWORK_GATEWAY=147.75.x.1
     
-    Q_FLOATING_ALLOCATION_POOL=start=147.75.x.3,end=147.75.x.7
+    Q_FLOATING_ALLOCATION_POOL=start=147.75.x.3,end=147.75.x.6
     
     ADMIN_PASSWORD=supersecret
     
