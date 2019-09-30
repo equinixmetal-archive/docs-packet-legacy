@@ -3,7 +3,7 @@
     "title":"Layer 2 Examples",
     "description":"How to configure some possible layer 2 environments.",
     "date": "2019/09/20",
-    "tag":["layer 2", "another tag"]
+    "tag":["layer 2", "networking", "advanced"]
 }
 </meta>-->
 

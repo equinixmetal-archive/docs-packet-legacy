@@ -3,7 +3,7 @@
     "title":"Layer 2 Overview",
     "description":"A quick look at the layer 2 feature.",
     "date": "2019/09/20",
-    "tag":["layer 2", "another tag"]
+    "tag":["layer 2", "networking", "advanced"]
 }
 </meta>-->
 
