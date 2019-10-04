@@ -267,5 +267,5 @@ The Verbose option will show any possible issues during the attach process. If t
 
 ### [Extending Storage Volume](extending_blockstorage.md)
 
-Follow [this link](extending_blockstorage.md) to learn hot extend/grow your block stroage volume.
+Follow [this link](extending_blockstorage.md) to learn how to extend/grow your block stroage volume.
 
