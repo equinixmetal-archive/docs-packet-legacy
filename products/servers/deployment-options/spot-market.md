@@ -21,9 +21,7 @@ In short: the spot market is a marketplace with constantly changing inventory.  
 
 For example, you can provision five instances and pass the **_spot_price_max_**  parameter with the maximum price you want to pay per hour per instance.  If your price is equal to or greater than the current spot price for the given facility / plan, then the instances will be created for you.
 
-{% hint style="warning" %}
 These instances are volatile, which means that they can be revoked by Packet at any time if another user bids with a higher price.
-{% endhint %}
 
 ### Spot Instance Creation
 
@@ -35,6 +33,7 @@ This works much like creating a traditional instance.  The only difference in th
 * __spot_price_max:__ the maximum price you are willing to pay for the instance, per hour. This should be greater or equal than the current spot price for the given facility and plan.
 
 Here is an example in JSON format of making a spot instance request:
+
 ```
 {
     "hostname": "spot-instance",
@@ -47,6 +46,7 @@ Here is an example in JSON format of making a spot instance request:
     "spot_price_max":0.3
 }
 ```
+
 **Please Note:** Date/Time is ISO8601.
 
 ### Persistent Spot Market
@@ -54,7 +54,8 @@ Here is an example in JSON format of making a spot instance request:
 Persistent Spot Market  is the ability to create spot instances whenever the market price drops below a certain threshold without having to query the API constantly and issue device creation requests.
 
 ### API Examples of Persistent Spot Market
-  **Create:**
+
+**Create:**
 ```
 POST /projects/acc88c1a-1ec3-4a9d-86bc-8febab4ef45b/spot-market-requests with the payload:
       """
@@ -75,11 +76,15 @@ POST /projects/acc88c1a-1ec3-4a9d-86bc-8febab4ef45b/spot-market-requests with th
       """
 This should prompt a 200 response.
 ```
+
 **Delete:**
+
 ```
 DELETE /spot-market-requests/f01b4bb1-f93f-46d2-ab44-e1709878208b?force_termination=true
 ```
+
 **Additional parameters:**
+
 ```
 devices_min = 5
 devices_max = 10
@@ -88,17 +93,21 @@ max_bid_price
 device-specific parameters:planoperating systemuserdatapublic_ipv4_subnet_sizessh_keysoperating_systemhostnames
 end_at
 ```
+
 ### Spot Market Termination
 
 Ascertaining when an instance will be terminated is not visible through our customer portal.  Instead, you will need to curl against our API to get this information.
 
-* **From the API:**
+* __From the API:__
+
 ```
 curl -X GET --header 'Accept: application/json' --header 'X-Auth-Token: token' 'https://api.packet.net/projects/projectUUID/devices' | jq '.termination_time'
 ```
+
 The above will output the time when an instance will be revoked/terminated.  If the response is `null` , it indicates that no termination time has been set.
 
-* **From within an instance:**
+* __From within an instance:__
+
 ```
 curl -s https://metadata.packet.net/metadata | jq '.termination_date'
 ```

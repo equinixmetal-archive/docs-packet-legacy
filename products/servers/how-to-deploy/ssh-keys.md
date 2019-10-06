@@ -34,9 +34,7 @@ Your public SSH key is commonly located here `/home/yourname/.ssh/<key-name>.pub
 
 `cat ~/.ssh/id_rsa.pub`
 
-
 ### The PuTTY Way (Windows)
-
 
 First, Download [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). The two binaries you will need are:
 
@@ -60,6 +58,7 @@ Click the Save private key button, name it whatever you like and choose a secure
 Repeat the same thing after clicking on Save public key. This time, make sure to give it an extension like ".txt", so you can open it later in a regular text editor.
 
 **Note!** If you open the public key text file you just saved, you will probably see that it contains something that looks like the following:
+
 ```
 ---- BEGIN SSH2 PUBLIC KEY ----
 
@@ -69,15 +68,14 @@ Comment: "rsa-key-xxxxxx"
 
 ---- END SSH2 PUBLIC KEY ----
 ```
+
 Why Putty saves it in this format is unclear, but it is not an accepted form of adding the public key.
 
 So, for that reason, you might want to copy whatever the Putty Generator shows on the Public key window and paste it on the document, after deleting everything that was there before.
 
 It should look like: `ssh-rsa AAAA............== rsa-key-xxxxxxx`
 
-
 ### Adding Your Key to the Packet Portal
-
 
 Once you have generated an SSH key pair you can upload the public key to your account. Via the packet portal, go to "SSH Keys" on the left-hand side and click "Add SSH Key" In the lower right-hand corner.
 
@@ -117,16 +115,12 @@ SSH access on Mac and Linux is straightforward. Simply run the command:
 
 `ssh root@<your_Public IPv4>`
 
-
 Windows
 Run the PuTTY.exe binary downloaded earlier go to "Data" under "Connection", and add root in the field of the username.
 
-
 Go to Authentication, under SSH, and click the Browse button, to add the private SSH key created earlier.
 
-
 ![PuTTy login 1](/images/ssh-access/PuTTY-SSH-Login-1.png)
-
 
 Now go to Session, enter the public IP address of your server, give a name to the session, and click Open.
 
