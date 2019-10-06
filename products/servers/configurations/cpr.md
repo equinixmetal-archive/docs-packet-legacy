@@ -1,7 +1,7 @@
 <!--<meta>
 {
     "title":"Custom Partitioning and RAID",
-    "description":"Setting up CPR (Custom Partitioning & RAID)",
+    "description":"Setting up CPR (Custom Partitioning & RAID).",
     "date": "09/20/2019",
     "tag":["CPR", "Custom RAID", "RAID", "Partition"]
 }
@@ -14,19 +14,19 @@ _Please note: this feature is not available for on-demand instances.  A reserved
 
 ### Getting Started
 
-First things first, you should be familiar with the API calls available for device provisioning ([view them here](https://www.packet.com/developers/api/devices/)).   You'll need them!
+First things first, you should be familiar with the [API calls available for device provisioning](https://www.packet.com/developers/api/devices/), you'll need them!
 
 You should also be aware of our standard disk configurations for each server type.  With a few hardware-specific exceptions, generally speaking, this looks like:
 
-*   **t1.small.x86**:   1 × 80 GB, no RAID
-*   **c1.small.x86**:   2 × 120 GB SSD in RAID 1
-*   **x1.small.x86**:   240 GB of SSD (1 × 240 GB)
-*   **m1.xlarge.86:**   2.8 TB of SSD (6 × 480GB SSD)
-*   **m2.xlarge.x86** (Intel Scalable): 2 × 120 GB in RAID 1 & 3.8 TB of NVMe Flash
-*   **c1.larger.arm**: 1 × 340 GB SSD, no RAID
-*   **c1.xlarge.x86**:  2 × 120 GB SSD in RAID 1
-*   **c2.medium.x86 (EPYC)**: 960 GB of SSD (2 x 480 GB)
-*   **s1.large.x86**:  2 x 480 GB SSD in RAID 1, with 120 GB SSD as cache in front of 12 X 2 TB HDD.
+*   __t1.small.x86__:   1 × 80 GB, no RAID
+*   __c1.small.x86__:   2 × 120 GB SSD in RAID 1
+*   __x1.small.x86__:   240 GB of SSD (1 × 240 GB)
+*   __m1.xlarge.86:__   2.8 TB of SSD (6 × 480GB SSD)
+*   __m2.xlarge.x86__ (Intel Scalable): 2 × 120 GB in RAID 1 & 3.8 TB of NVMe Flash
+*   __c1.larger.arm__: 1 × 340 GB SSD, no RAID
+*   __c1.xlarge.x86__:  2 × 120 GB SSD in RAID 1
+*   __c2.medium.x86 (EPYC)__: 960 GB of SSD (2 x 480 GB)
+*   __s1.large.x86__:  2 x 480 GB SSD in RAID 1, with 120 GB SSD as cache in front of 12 X 2 TB HDD.
 
 ### Using CPR During Provisioning
 
@@ -41,10 +41,10 @@ Note: 'storage' and 'string' are where you would specifically state your configu
 
 Using a simple t1.small.x86 to start, the following example shows you how to:
 
-*   State which disks you want to format.
-*   How you want these disks formatted.
-*   What filesystem should be created.  
-*   Where to mount the partition once created.
+* State which disks you want to format.
+* How you want these disks formatted.
+* What filesystem should be created.
+* Where to mount the partition once created.
 
 ```
 {
