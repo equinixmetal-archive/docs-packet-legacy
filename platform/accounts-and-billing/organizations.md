@@ -9,7 +9,6 @@
 
 ### About Organizations
 
-
 Organizations are a billing entity that sit one level above users and projects.  
 
 Much like with GitHub and other popular SaaS tools, at Packet every user has their own account and infrastructure is deployed into a project.  In the past each Packet project was like an island, with different rates, collaborators, etc.  Even if owned by the same person, setting up a new project meant starting from scratch.
@@ -32,7 +31,6 @@ Each organization has a primary owner, who is ultimately responsible for all act
 * __Billing__ - will have access to the billing portion of the account.
 
 ### Adding Members to an Organization?
-
 
 If you are an Owner or an Admin, you can invite new users via the `User Icon > Team > Invite New Member`.
 

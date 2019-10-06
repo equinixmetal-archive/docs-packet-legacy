@@ -1,4 +1,13 @@
-**What's the difference between "Core" and "Custom"?**  
+<!--<meta>
+{
+    "title":"Data Centers",
+    "description":"Locations, certifications, & speed tests for our global data centers.",
+    "date": "09/20/2019",
+    "tag":["datacenters", "locations", "facilities"]
+}
+</meta>-->
+
+### What's the difference between "Core" and "Custom"?  
 Packet has two types of facilities: Core and Custom. All [locations](https://www.packet.com/locations/) feature our entire software / automation platform and network topology. Everything that you can do from an automation and networking perspective is the same across all locations.
 
 The only difference is inventory. In our custom locations we stock a more limited number of configurations (currently a single "[x1.small.x86](https://www.packet.com/cloud/servers/x1-small/)"), and we don't have block storage at the custom sites.
@@ -6,7 +15,7 @@ The only difference is inventory. In our custom locations we stock a more limite
 Note: all sites are available for Private Deployments, which allow you to customize configurations in private racks on a commitment.   
 
 
-**Where is each data center located? Do you have a speedtest?**  
+### Where is each data center located? Do you have a speedtest?
 You can access various speedtest and ping url's from this central page on our website.
 
 Core Facilities:  
