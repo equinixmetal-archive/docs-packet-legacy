@@ -80,8 +80,8 @@ curl -X PUT https://api.packet.net/storage/$VOLUMEID \
     -H "X-Auth-Token: $TOKEN" \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    -d "{\"size\": $SIZE}" \
-    | jq .
+    -d "{\"size\": $SIZE}" | \
+    jq .
 ```
 That should have outputted all of the volume info with it's new size!
 
@@ -109,7 +109,7 @@ curl -X POST https://api.packet.net/storage/$VOLUMEID/attachments \
     -H "X-Auth-Token: $TOKEN" \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    -d "{\"device_id\": \"$SERVERID\"}" \
+    -d "{\"device_id\": \"$SERVERID\"}" | \
     jq .
 ```
 
