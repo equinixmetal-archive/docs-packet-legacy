@@ -2,7 +2,8 @@
 
 ---
 
-#	Packet Documentation
+# Packet Documentation
+
 ![GitHub Watchers](https://img.shields.io/github/watchers/packethost/docs?color=success)
 ![GitHub Forks](https://img.shields.io/github/forks/packethost/docs?color=success)
 ![GitHub Contributors](https://img.shields.io/github/contributors/packethost/docs?color=success)
