@@ -1,19 +1,13 @@
-<p align="center">
-  ![Packetbot](images/packetbot.png)
-</p>
+![Packetbot](images/packetbot.png)
 
 ---
 
-<h1 align="center">
-	Packet Documentation
-</h1>
-<p align="center">
+#	Packet Documentation
 ![GitHub Watchers](https://img.shields.io/github/watchers/packethost/docs?color=success)
 ![GitHub Forks](https://img.shields.io/github/forks/packethost/docs?color=success)
 ![GitHub Contributors](https://img.shields.io/github/contributors/packethost/docs?color=success)
 ![GitHub License](https://img.shields.io/github/license/packethost/docs?color=success)
 [![Build Status](https://drone.packet.net/api/badges/packethost/docs/status.svg)](https://drone.packet.net/packethost/docs)
-</p>
 
 ---
 
