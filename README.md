@@ -1,8 +1,8 @@
+# Packet Documentation
+
 ![Packetbot](images/packetbot.png)
 
 ---
-
-# Packet Documentation
 
 ![GitHub Watchers](https://img.shields.io/github/watchers/packethost/docs?color=success)
 ![GitHub Forks](https://img.shields.io/github/forks/packethost/docs?color=success)
