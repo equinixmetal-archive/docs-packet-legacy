@@ -13,17 +13,11 @@ Users can also leverage a wide range of integrations and tooling - some that we�
 
 Interacting with Packet bare metal is a lot like dealing with VM’s at a public cloud.  So if you are comfortable with AWS or Digital Ocean then working with Packet should feel familiar.
 
-
-
 ### Prerequisites
-
 
 The first thing you’ll want to do once you’ve signed up and added your SSH key, is to grab an API key. Your API keys operate with all the permissions your user account in the portal does, so be sure to keep them safe. Name your keys something that will remind you where you are using them, e.g. the name of a workstation or application.
 
-
-
 ### Project Level API Key
-
 
 Limit API access  to a particular project. To create one, go to your specific project, and then project settings as shown below.
 
@@ -43,7 +37,6 @@ The next thing that you need to know is that most integrations require a project
 
 ### Consuming the API
 
-
 Everything that you with Packet, you can do via our API, which is modern, RESTful and easy to use!
 
 * __API Docs:__ check out our API [documentation](https://www.packet.com/developers/api/).
@@ -53,8 +46,6 @@ Everything that you with Packet, you can do via our API, which is modern, RESTfu
 
 
 No matter how you're interacting with our API, there are a few things to point out that will help you get started on the right foot:
-
-
 
 * Servers are called "Plans" in the API, and are specified with slugs that start with “baremetal”, e.g. “c1.small.x86” represents our c1.small server. You can get the full list of available plans by calling the [/plans endpoint](https://www.packet.com/developers/api/devices/#devices-plans).  
 * Our Block Storage service is managed in the block-storage name space, the actual [block storage instances](https://www.packet.com/developers/api/volumes/) are referred to as "volumes" there.  

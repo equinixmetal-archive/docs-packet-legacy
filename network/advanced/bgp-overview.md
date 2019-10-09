@@ -9,26 +9,23 @@
 
 ### About Packet's BGP Support
 
-  
-
-Packet supports BGP (Border Gateway Protocol, read up more [here](https://en.wikipedia.org/wiki/Border_Gateway_Protocol)) as a protocol for advertising routes to Packet servers in a local environment (called Local BGP), as well as to the greater Internet (called Global BGP).
+Packet supports BGP ([Border Gateway Protocol](https://en.wikipedia.org/wiki/Border_Gateway_Protocol)) as a protocol for advertising routes to Packet servers in a local environment (called Local BGP), as well as to the greater Internet (called Global BGP).
 
 Leveraging the powerful routing features of BGP will require that you operate a BGP speaking routing client, such as [BIRD](http://bird.network.cz/?get_doc&f=bird.html), Quagga or ExaBGP on your server. This routing client will control route advertisements via a BGP session to Packet's upstream routers. Packet will learn the routes that you are advertising (or not) and appropriately send traffic to your server(s).
 
-
 ### Local BGP versus Global BGP
 
-As mentioned above, Packet supports both Local and Global BGP options. In a Local BGP deployment, a customer uses an internal ASN (Autonomous System Number—more [here](https://en.wikipedia.org/wiki/Autonomous_system_(Internet))) to control routes within a single Packet datacenter. This means that the routes are never advertised to the global Internet and the customer does not need to pay for or maintain a registered ASN with a Regional Internet Registry (RIR) like ARIN, APNIC or RIPE. The top use case for operating local BGP would be to perform failover or IP mobility between a collection of servers in a local datacenter.
+As mentioned above, Packet supports both Local and Global BGP options. In a Local BGP deployment, a customer uses an internal ASN ([Autonomous System Number](https://en.wikipedia.org/wiki/Autonomous_system_(Internet))) to control routes within a single Packet datacenter. This means that the routes are never advertised to the global Internet and the customer does not need to pay for or maintain a registered ASN with a Regional Internet Registry (RIR) like ARIN, APNIC or RIPE. The top use case for operating local BGP would be to perform failover or IP mobility between a collection of servers in a local datacenter.
 
 Global BGP, on the other hand, requires a customer to have a registered ASN through one of the regional registries and advertise their own IP space.
 
-  
-
 ### Default BGP Route  
-  
 
-When utilizing virtual routing software (e.g. VyOS, OpnSense, etc)  this would allow you to see all the routes learned instead of creating them statically. This can be set up utilizing [Terraform](https://www.terraform.io/docs/providers/packet/r/bgp_session.html), or directly through our customer portal \[[1](https://imgur.com/a/oSdzcBj),[2](https://imgur.com/a/suzxcio)\].  
-  
+When utilizing virtual routing software (e.g. VyOS, OpnSense, etc)  this would allow you to see all the routes learned instead of creating them statically. This can be set up utilizing [Terraform](https://www.terraform.io/docs/providers/packet/r/bgp_session.html), or directly through our customer portal, as shown below.
+
+![enable default route 1](/images/bgp/Enable-Default-Route-1.png)
+
+![enable default route 2](/images/bgp/Enable-Default-Route-2.png)    
 
 ### Communities Supported
 
@@ -45,8 +42,7 @@ Packet supports the following [BGP communities](http://noc.packet.net/) on route
 *   Function: Anycast routing
 *   By tagging your routes with this community, Packet will advertise your routes to only transit and peering we maintain consistently on a global basis.  Regional ISPs we connect with (e.g. Verizon in the New York metro area) will not learn your routes, as advertising to them may result in "scenic" routing for customers with global Anycast configurations.
 *   Please note that this community is not advised for normal use, as it will limit the number of available paths/providers you have access to.  It should only be deployed by customers seeking BGP anycast topology, with multiple server instances deployed in each Packet datacenter.
-*   _**NOTE: This community is in beta testing at this time.**_
-
+*   _NOTE: This community is in beta testing at this time._
 
 ### Pricing
 
@@ -55,43 +51,31 @@ BGP requests are approved on a per project basis:
 *   Global BGP - Free (required on-boarding and review)
 *   Local BGP - Free
 
-
 ### Getting Started
 
-  
 To get started, please create a Project in the Packet portal or navigate to an existing project that you'd like to enable for BGP support. Click on the IPs & Networks tab and navigate to the BGP request form (as shown below).
 
 On the form, select either Global BGP or Local BGP. For Local BGP we default to using a private ASN of 65000. If you choose Global BGP, please enter your own public ASN. You may then enter an MD5 password for your BGP session. This is optional but highly recommended.
 
 Lastly, please enter a few details about your use case and deployment so our engineers can quickly evaluate and approve your request.
 
-![](https://deskpro-cloud.s3.amazonaws.com/files/26944/47/46225XADJQXCDKDDCDAR0-1539907873207.png)
-
-  
+![enable BGP at project level 1](/images/bgp/Enable-BGP-Project-1.png)
 
 Once you submit the request, Packet will review the details and get back to you shortly (usually in 24-48 hours). If we have any questions, we may contact you or we will advise you when BGP has been enabled for your project and you will then see your BGP details show up in the IPs & Networks tab, as follows:
 
-![](https://deskpro-cloud.s3.amazonaws.com/files/26944/47/46223YKTMJNQQZJBTYDC0-1539907874197.png)
-
-  
+![enable BGP at project level 2](/images/bgp/Enable-BGP-Project-2.png)
 
 Additionally, you will see some extra options on the server management page for any active devices in the specified project. You can choose to enable or disable IPv4 and IPv6 BGP for each server.
 
-![](https://deskpro-cloud.s3.amazonaws.com/files/26944/47/46224WSASAPSSQPPPSPM0-1539907874999.png)
+![enable BGP at server level](/images/bgp/Enable-BGP-Server.png)️
 
-️
-
-**Note: **Do not assign the subnet to any server, as that will create a static route thus causing an issue with the BGP setup.
-
+Note: Do not assign the subnet to any server, as that will create a static route thus causing an issue with the BGP setup.
 
 ### Sample Local BGP Configuration
 
-  
+For this example, we will deploy a t1.small server with Ubuntu, and then use BIRD to announce a public IP with BGP.
 
-For this example, I will deploy a t1.small server, with Ubuntu on it, and then I will use BIRD to announce a public IP with BGP.
-
-####
-1\. Configure the Elastic Ip that we will announce as a virtual loopback
+#### 1. Configure the Elastic Ip that we will announce as a virtual loopback
 
 Edit your interfaces file (`/etc/network/interfaces`) and add the following (where the _147.75.97.125_ is the elastic IP):
 
@@ -101,20 +85,18 @@ iface lo:0 inet static
    address 147.75.97.125
    netmask 255.255.255.255
 ```
-  
 
 Once you save that bring up the interface with `ifup lo:0`
 
 Note: If you try to ping 147.75.97.125 (your elastic IP) from another computer you will see that it won’t work. After we configure BGP, we will be able to ping it.
 
-
-### 2\. Installing BIRD
+#### 2. Installing BIRD
 
 BIRD is an open source implementation for routing Internet Protocol packets on Unix-like operating systems. Later on in the configuration we will peer with the server's gateway, and we will exchange routes where we will announce our elastic Public IP.
 
 `apt-get install bird`
 
-### 3\. Configuring IP forwarding
+#### 3. Configuring IP forwarding
 
 Depending on your operating system, you may need to adjust these commands.
 
@@ -122,25 +104,19 @@ Depending on your operating system, you may need to adjust these commands.
 
 `sysctl net.ipv4.ip\_forward=1`
 
-  
-
 **For IPv6:**
 
 `sysctl net.ipv6.conf.all.forwarding=1`
 
-  
+#### 4. Edit the bird configuration file
 
----
+You will find the file that BIRD uses at `/etc/bird/bird.conf`
 
-### 4\. Edit the bird configuration file
-
-You will find the file that BIRD uses at _/etc/bird/bird.conf_
-
-I like to backup the existing file, which has some good explanations and examples.
+The existing file has some good explanations and examples, so we'll make a backup.
 
 `mv /etc/bird/bird.conf /etc/bird/bird.conf.original`
 
-Then write a new configuration file for our setup, as follows:
+Then, write a new configuration file for our setup as follows:
 
 `nano /etc/bird/bird.conf`
 
@@ -174,29 +150,25 @@ protocol bgp {
 export filter packetdns;
 local as 65000;
 neighbor 10.10.10.237.128 as 65530;
-#password "md5password"; 
+#password "md5password";
 }
 ```
-  
 
-Save that and restart the bird service, as follows:
+Save that and restart the bird service.
 
-`service bird restart
-`
+`service bird restart`
 
-### 5\. Enable BGP for the server in the portal via the server detail page:
+### 5. Enable BGP for the server in the portal via the server detail page:
 
 Go to the BGP Tab of the Server's Detail Page, and click Manage for IPv4 or IPv6.
 
 Here you can find a sample BGP config for the specific server, as it includes the right router ID and Neighbor IP. Click Enable.
 
-![](https://deskpro-cloud.s3.amazonaws.com/files/26944/47/46226BWGAZKDDWPDJZHS0-1539907876353.png)
+![BIRD example config](/images/bgp/Bird-Example.png)
 
-  
+**Note:** It takes up to 5-10 minutes for BGP to come up, and it will learn the route(s) that we are announcing from our server.
 
-**Note! It takes up to 5-10 minutes for BGP to come up, and it will learn the route(s) that we are announcing from our server.**
-
-In the server we can check the status by opening the bird daemon with the birdc command. Then we check the status of the BGP announcement with:
+In the server we can check the status by opening the bird daemon with the `birdc` command. Then we check the status of the BGP announcement with:
 
 `show protocols all bgp1`
 
@@ -230,7 +202,7 @@ As you can see, the BGP state is Established and we are exporting 1 route.
 
 If you check the server detail page, you will also see the route learned.
 
-![](https://deskpro-cloud.s3.amazonaws.com/files/26944/47/46222JCSQQYPRDBQATMQ0-1539907871756.png)
+![BGP enabled](/images/bgp/BGP-Enabled-State.png)
 
 
 Now, finally, everything seems good and we should be able to ping that IP.

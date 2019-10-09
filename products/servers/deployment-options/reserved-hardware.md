@@ -66,6 +66,7 @@ To create a device using a specific hardware reservation, there is a new JSON pa
 `POST https://api.packet.net/projects/<id>/devices -d '{"hardware_reservation_id":"uuid"}'`
 
 An example of provisioning reserved hardware in EWR:
+
 ```
 curl -X POST \
 -H "Content-Type: application/json" \

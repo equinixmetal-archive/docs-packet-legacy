@@ -11,7 +11,6 @@ There are times when a server becomes unreachable over SSH due to broken network
 
 If you have your server's root password and your SSH key, you should use our [S.O.S (Serial over SSH) service](https://help.packet.com/technical/networking/sos-serial-over-ssh).
 
-
 ### Using Rescue Mode
 
 When you can’t log into your server at all (e.g. you don't have the root password or the server won’t boot up) you can use our Rescue Mode, which loads a vanilla Alpine Linux image into your server's RAM.
@@ -21,6 +20,7 @@ To enter Rescue Mode, you need to access the server’s detail page via the Pack
 Clicking on `Rescue` reboots the server and loads the Rescue OS. Once Rescue OS is loaded, the server boots into it.
 
 Now you can SSH in as root using authorized SSH Keys:
+
 ```
 ssh -i /path/to/private.key root@SERVER_IP_HERE
 ===============================================
@@ -29,6 +29,7 @@ Use "apk" package manager for additional utilities.
 See docs at http://wiki.alpinelinux.org
 localhost:~#
 ```
+
 ### Mount Original Root Partition
 
 Next, you'll need to mount the original OS's root partition.
@@ -44,12 +45,14 @@ For c1.small, m1.xlarge, and c1.xlarge servers, the root partition is located in
 **note:** replace xxx with the actual number of the md device.
 
 Once you have access to the root partition you can repair it.
+
 ```
 localhost:/mnt#ls
 bin    dev    home    lib64    media opt        root
 sbin   sys    usrboot etc      lib   lost+found mnt
 proc   run    srv     tmp      var
 ```
+
 In order to get back to the Original OS, we can simply reboot the server.
 
 ### Two Common Use Cases / Situations
@@ -60,6 +63,7 @@ In cases when you can normally SSH into your server and can’t use SOS because 
 * Option 1:
 
   After mounting the root filesystem to /mnt, we can use chroot to load the mounted filesystem and directly use the sudo passwd command to modify the existing root password.
+
   ```
   chroot /mnt /bin/bash
 
