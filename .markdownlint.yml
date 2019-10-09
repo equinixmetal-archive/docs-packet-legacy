@@ -1,4 +1,4 @@
-# This is a custom made rules for Drone CI
+# These are custom made rules for Drone CI
 {
     "default": true,
     "MD013": false,
