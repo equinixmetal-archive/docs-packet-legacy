@@ -264,3 +264,8 @@ After a few seconds, reattach the volume with:
 `packet-block-storage-attach -v -m queue {volume-id}`
 
 The Verbose option will show any possible issues during the attach process. If the attach command is not successful, or if it shows any problems, please contact us. 
+
+### [Extending Storage Volume](extending_blockstorage.md)
+
+Follow [this link](extending_blockstorage.md) to learn how to extend/grow your block stroage volume.
+
