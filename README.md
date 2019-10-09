@@ -11,7 +11,6 @@
 ![GitHub License](https://img.shields.io/github/license/packethost/docs?color=success)
 [![Build Status](https://drone.packet.net/api/badges/packethost/docs/status.svg)](https://drone.packet.net/packethost/docs)
 
-
 <!--- Headline Description --->
 This is the public documentation for Packet's public services.
 View our documentation page at [Packet Docs](https://www.packet.com/developers/).
@@ -43,4 +42,5 @@ The Packet Documentation is an open source project under the [MIT License](https
 
 <!--- Reach out --->
 ## Reach Out
+
 We would love to hear from you! If you have any questions not covered here, please reach us out at support@packet.com.
