@@ -26,7 +26,7 @@ steps:
     image: node:current-alpine
     commands:
       - yarn global add markdownlint-cli --silent
-      - markdownlint-cli README.md
+      - markdownlint README.md
     depends_on: [clone]
 
   - name: yamllint
