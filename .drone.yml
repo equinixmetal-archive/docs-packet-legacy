@@ -23,7 +23,7 @@ steps:
     depends_on: [clone]
 
   - name: markdownlint
-    image: ruby:alpine
+    image: node:current-alpine
     commands:
       - yarn global add markdownlint-cli --silent
       - markdownlint-cli README.md
