@@ -30,22 +30,21 @@ View our documentation page at [Packet Docs](https://www.packet.com/developers/)
 <!--- What We Have Here --->
 ## What We Have Here
 
-- Documentation
-- Guides
-- Features
-- Product
-
-***This section is to be updated once we have the latest changes in this repo***
+- [Guides](https://github.com/packethost/docs/tree/master/guides)
+- [Libraries](https://github.com/packethost/docs/tree/master/libraries)
+- [Network](https://github.com/packethost/docs/tree/master/network)
+- [Platform](https://github.com/packethost/docs/tree/master/platform)
+- [Products](https://github.com/packethost/docs/tree/master/products)
 
 <!--- How To Contribute --->
 ## How To Contribute
 
-***To be updated soon***
+Please, feel free to make a new Pull Request.
 
 <!--- Issues --->
 ## Issues
 
-***To be updated soon***
+Please, feel free to open a new issue.
 
 <!--- License --->
 ## License
