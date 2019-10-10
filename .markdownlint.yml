@@ -1,3 +1,4 @@
+---
 # These are custom made rules for Drone CI
 {
     "default": true,
