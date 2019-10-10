@@ -35,17 +35,11 @@ View our documentation page at [Packet Docs](https://www.packet.com/developers/)
 - Features
 - Product
 
-***This section is to be updated once we have the latest changes in this repo***
-
 <!--- How To Contribute --->
 ## How To Contribute
 
-***To be updated soon***
-
 <!--- Issues --->
 ## Issues
-
-***To be updated soon***
 
 <!--- License --->
 ## License
