@@ -5,11 +5,23 @@
 </p>
 
 <!--- Badges --->
-![GitHub Watchers](https://img.shields.io/github/watchers/packethost/docs?color=success)
-![GitHub Forks](https://img.shields.io/github/forks/packethost/docs?color=success)
-![GitHub Contributors](https://img.shields.io/github/contributors/packethost/docs?color=success)
-![GitHub License](https://img.shields.io/github/license/packethost/docs?color=success)
-[![Build Status](https://drone.packet.net/api/badges/packethost/docs/status.svg)](https://drone.packet.net/packethost/docs)
+<p align="center">
+    <a href="https://github.com/packethost/docs/watchers">
+        <img src="https://img.shields.io/github/watchers/packethost/docs?color=success" alt="Watchers"/>
+    </a>
+    <a href="https://github.com/packethost/docs/network/members">
+        <img src="https://img.shields.io/github/forks/packethost/docs?color=success" alt="Forks"/>
+    </a>
+    <a href="https://github.com/packethost/docs/graphs/contributors">
+        <img src="https://img.shields.io/github/contributors/packethost/docs?color=success" alt="Contributors"/>
+    </a>
+    <a href="https://github.com/packethost/docs/blob/master/LICENSE.md">
+        <img src="https://img.shields.io/github/license/packethost/docs?color=success" alt="License"/>
+    </a>
+    <a href="https://cloud.drone.io/packethost/docs">
+        <img src="https://img.shields.io/drone/build/packethost/docs" alt="License"/>
+    </a>
+</p>
 
 <!--- Headline Description --->
 This is the public documentation for Packet's public services.
