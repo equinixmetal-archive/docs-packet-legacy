@@ -1,8 +1,37 @@
-pipeline:
-    build:
-        image: alpine
-        commands:
-          - apk --no-cache add npm jq curl
-          - npm config set unsafe-perm true // to make the next line run properly, which is caused by node version, apparently
-          - npm install -g markdownlint-cli
-          - markdownlint README.md
+---
+kind: pipeline
+type: docker
+name: Linters
+
+trigger:
+  branch:
+    - master
+
+steps:
+  - name: write-good
+    image: node:current-alpine
+    commands:
+      - yarn global add write-good --silent
+      - write-good README.md
+    depends_on: [clone]
+
+  - name: alex
+    image: node:current-alpine
+    commands:
+      - yarn global add alex --silent
+      - alex README.md
+    depends_on: [clone]
+
+  - name: markdownlint
+    image: node:current-alpine
+    commands:
+      - yarn global add markdownlint-cli --silent
+      - markdownlint README.md
+    depends_on: [clone]
+
+  - name: yamllint
+    image: python:alpine
+    commands:
+      - pip3 install --quiet yamllint
+      - yamllint  --config-file .yamllint.config --strict .*.yml
+    depends_on: [clone]
