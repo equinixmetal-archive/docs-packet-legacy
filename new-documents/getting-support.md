@@ -19,4 +19,4 @@ We don't operate a phone support service. This is because it's generally much ea
 
 **Slack**
 
-Our community slack channel is a good resource for support our agents may not be able to provide. This includes questions or problems regarding third party software and services. Packet's services are not managed, so any questions not related to Packet hardware or services would best be addressed to the community slack.
+Our [community slack](https://slack.packet.com) is a good resource for support our agents may not be able to provide. This includes questions or problems regarding third party software and services. Packet's services are not managed, so any questions not related to Packet hardware or services would best be addressed to the community slack.
