@@ -70,5 +70,5 @@
 
 - [ ] Overview
 - [ ] Official Operating Systems
-- [ ] [Custom iPXE](/products/operating-systems/custom-ipxe.md) - [DeskPro](https://support.packet.com/kb/articles/custom-ipxe)
+- [x] [Custom iPXE](/products/operating-systems/custom-ipxe.md) - [DeskPro](https://support.packet.com/kb/articles/custom-ipxe)
 - [ ] Building Your Own O.S. (Custom Images) - [DeskPro](https://support.packet.com/kb/articles/custom-images)
