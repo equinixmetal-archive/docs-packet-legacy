@@ -93,3 +93,11 @@
 - [ ] Billing Procedures
 - [ ] Account Reviews
 - [x] [Organizations](/products/accounts-and-billing/organizations.md) - [DeskPro](https://support.packet.com/kb/articles/organizations)
+
+## Platform Overview
+
+- [ ] Datacenter Topology
+- [ ] Server & OS Availability
+- [ ] Getting Support
+- [ ] Status Page
+- [ ] Maintenance Events
