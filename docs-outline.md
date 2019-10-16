@@ -76,4 +76,6 @@
 ## API Overview
 
 - [ ] Overview
-- [ ]
+- [x] [API Integrations](products/api-overview) - [DeskPro](https://support.packet.com/kb/articles/api-integrations)
+- [ ] API Libraries - the same thing as API Integrations? 
+- [ ] Integrating with Packet - the same thing as API Integrations?
