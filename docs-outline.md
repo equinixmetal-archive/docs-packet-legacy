@@ -1,7 +1,5 @@
 # [Product Docs Outline](https://github.com/packethost/docs/tree/master/products)
 
-## Main Page
-
 - [x] [Getting Started](/products/getting-started.md) - [DeskPro](https://support.packet.com/kb/articles/general)
 
 ## Common Questions
