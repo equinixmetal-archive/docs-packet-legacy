@@ -65,3 +65,10 @@
 
 - [x] [Elastic Block Storage](/products/storage/blockstorage.md) - [DeskPro](https://support.packet.com/kb/articles/elastic-block-storage)
 - [x] [Extending Block Storage](/products/storage/extending_blockstorage.md)
+
+## Operating Systems
+
+- [ ] Overview
+- [ ] Official Operating Systems
+- [ ] [Custom iPXE](/products/operating-systems/custom-ipxe.md) - [DeskPro](https://support.packet.com/kb/articles/custom-ipxe)
+- [ ] Building Your Own O.S. (Custom Images) - [DeskPro](https://support.packet.com/kb/articles/custom-images)
