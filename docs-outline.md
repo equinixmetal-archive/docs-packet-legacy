@@ -28,3 +28,10 @@
 - [x] [Spot Market](/products/servers/deployment-options/spot-market.md) - [DeskPro](https://support.packet.com/kb/articles/spot-market)
 - [x] [Batch Deployment](/products/servers/deployment-options/deployment-batch.md) - [DeskPro](https://support.packet.com/kb/articles/batch-deployment)
 - [ ] Deploy via the API - [DeskPro](https://support.packet.com/kb/articles/deploy-via-the-api)
+
+### How to Deploy
+
+- [x] [SSH Keys](/products/servers/how-to-deploy/ssh-keys.md) - [DeskPro](https://support.packet.com/kb/articles/generate-ssh-keys)
+- [x] [Reset Root Password (Rescue Mode)](/products/servers/how-to-deploy/rescue-mode.md) - [DeskPro](https://support.packet.com/kb/articles/rescue-mode)
+- [x] [SOS: Serial over SSH](/products/servers/how-to-deploy/sos-serial-over-ssh.md) - [DeskPro](https://support.packet.com/kb/articles/sos-serial-over-ssh)
+- [ ] Capacity 
