@@ -34,7 +34,7 @@
 - [x] [SSH Keys](/products/servers/how-to-deploy/ssh-keys.md) - [DeskPro](https://support.packet.com/kb/articles/generate-ssh-keys)
 - [x] [Reset Root Password (Rescue Mode)](/products/servers/how-to-deploy/rescue-mode.md) - [DeskPro](https://support.packet.com/kb/articles/rescue-mode)
 - [x] [SOS: Serial over SSH](/products/servers/how-to-deploy/sos-serial-over-ssh.md) - [DeskPro](https://support.packet.com/kb/articles/sos-serial-over-ssh)
-- [ ] Capacity 
+- [ ] Capacity
 
 ## Network
 
@@ -45,7 +45,7 @@
 
 - [x] [Elastic IPs](/products/network/basic/ips-elastic.md) - [DeskPro](https://support.packet.com/kb/articles/elastic-ips)
 - [x] [Global Anycast IPs](/products/network/basic/ips-anycast.md) - [DeskPro](https://support.packet.com/kb/articles/global-anycast-ips)
-- [ ] Private Networking 
+- [ ] Private Networking
 - [x] [Backend Transfer](/products/network/basic/backend-transfer.md) - [DeskPro](https://support.packet.com/kb/articles/backend-transfer)
 
 ### Advanced
@@ -77,7 +77,7 @@
 
 - [ ] Overview
 - [x] [API Integrations](products/api-overview) - [DeskPro](https://support.packet.com/kb/articles/api-integrations)
-- [ ] API Libraries - the same thing as API Integrations? 
+- [ ] API Libraries - the same thing as API Integrations?
 - [ ] Integrating with Packet - the same thing as API Integrations?
 
 ## Sparing & Diversity
