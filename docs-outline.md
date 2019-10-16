@@ -21,3 +21,10 @@
 - [ ] Custom Configurations
 - [x] [CPR](/products/servers/configurations/cpr.md) – [DeskPro](https://support.packet.com/kb/articles/custom-partitioning-raid)
 
+### Deployment Options
+
+- [ ] On Demand
+- [x] [Reserved Hardware](/products/servers/deployment-options/reserved-hardware.md) – [DeskPro](https://support.packet.com/kb/articles/reserved-hardware)
+- [x] [Spot Market](/products/servers/deployment-options/spot-market.md) – [DeskPro](https://support.packet.com/kb/articles/spot-market)
+- [x] [Batch Deployment](/products/servers/deployment-options/deployment-batch.md) - [DeskPro](https://support.packet.com/kb/articles/batch-deployment)
+- [ ] Deploy via the API – [DeskPro](https://support.packet.com/kb/articles/deploy-via-the-api)
