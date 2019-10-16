@@ -35,3 +35,8 @@
 - [x] [Reset Root Password (Rescue Mode)](/products/servers/how-to-deploy/rescue-mode.md) - [DeskPro](https://support.packet.com/kb/articles/rescue-mode)
 - [x] [SOS: Serial over SSH](/products/servers/how-to-deploy/sos-serial-over-ssh.md) - [DeskPro](https://support.packet.com/kb/articles/sos-serial-over-ssh)
 - [ ] Capacity 
+
+## Network
+
+- [x] [Network Overview](/products/network/network-overview.md) - [DeskPro](https://support.packet.com/kb/articles/networking-faq)
+- [x] [Doorman](/products/network/doorman.md) - [DeskPro](https://support.packet.com/kb/articles/doorman-customer-vpn)
