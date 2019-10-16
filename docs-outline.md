@@ -17,7 +17,7 @@
 
 ### Configurations
 
-- [x] [Compute Classes](https://github.com/packethost/docs/blob/master/products/servers/configurations/computeclasses.md) – [DeskPro](https://support.packet.com/kb/articles/compute-classes)
+- [x] [Compute Classes](/products/servers/configurations/computeclasses.md) – [DeskPro](https://support.packet.com/kb/articles/compute-classes)
 - [ ] Custom Configurations
 - [x] [CPR](/products/servers/configurations/cpr.md) – [DeskPro](https://support.packet.com/kb/articles/custom-partitioning-raid)
 
