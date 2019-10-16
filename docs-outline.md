@@ -10,7 +10,7 @@
 - [x] [Datacenter Locations](/products/common-questions/datacenters.md) - [DeskPro](https://support.packet.com/kb/articles/data-centers)
 - [ ] Managed Services
 - [ ] Security & Compliance
-- [x] [Facility Certifications (on getting started)](/products/getting-started.md) - needs to be moved to a seperate file?
+- [x] [Facility Certifications (on getting started)](/products/getting-started.md) - move to a seperate file?
 - [x] [Billing](/products/common-questions/billing.md) - [DeskPro1](https://support.packet.com/kb/articles/billing) - [DeskPro2](https://support.packet.com/kb/articles/pricing)
 
 ## Servers
@@ -50,7 +50,7 @@
 
 ### Advanced
 
-- [x] [BGP Overview](/products/network/advanced/bgp-overview.md) - [DeskPro](https://support.packet.com/kb/articles/bgp) - According to our notes, this file should be divided into two section below.
+- [x] [BGP Overview](/products/network/advanced/bgp-overview.md) - [DeskPro](https://support.packet.com/kb/articles/bgp) - According to our notes, this file should be in two seperate sections below:
 - [ ] BGP Local
 - [ ] BGP Global
 - [x] [Layer 2 Overview](/products/network/advanced/layer-2-overview.md) - [DeskPro](https://support.packet.com/kb/articles/layer-2-overview)
