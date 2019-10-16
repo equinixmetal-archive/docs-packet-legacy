@@ -92,4 +92,4 @@
 - [ ] Getting Started
 - [ ] Billing Procedures
 - [ ] Account Reviews
-- [ ] [Organizations](/products/accounts-and-billing/organizations.md) - [DeskPro](https://support.packet.com/kb/articles/organizations)
+- [x] [Organizations](/products/accounts-and-billing/organizations.md) - [DeskPro](https://support.packet.com/kb/articles/organizations)
