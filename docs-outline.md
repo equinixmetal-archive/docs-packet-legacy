@@ -60,3 +60,8 @@
 - [x] [Deploy Without Public IP](/products/network/advanced/deploy_nopublicip.md) - [DeskPro](https://support.packet.com/kb/articles/deploy-without-public-ip)
 - [x] [Packet Connect (Overview)](/products/network/advanced/packetconnect-overview.md) - [DeskPro](https://support.packet.com/kb/articles/packet-connect-overview-7)
 - [x] [Packet Connect (Azure)](/products/network/advanced/packetconnect-azure.md) - [DeskPro](https://support.packet.com/kb/articles/packet-connect-azure)
+
+## Storage
+
+- [x][Elastic Block Storage](/products/storage/blockstorage.md) - [DeskPro](https://support.packet.com/kb/articles/elastic-block-storage)
+- [x][Extending Block Storage](/products/storage/extending_blockstorage.md)
