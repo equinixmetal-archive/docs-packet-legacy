@@ -53,3 +53,10 @@
 - [x] [BGP Overview](/products/network/advanced/bgp-overview.md) - [DeskPro](https://support.packet.com/kb/articles/bgp) - According to our notes, this file should be divided into two section below.
 - [ ] BGP Local
 - [ ] BGP Global
+- [x] [Layer 2 Overview](/products/network/advanced/layer-2-overview.md) - [DeskPro](https://support.packet.com/kb/articles/layer-2-overview)
+- [x] [Layer 2 Configurations](/products/network/advanced/layer-2-configurations.md) - [DeskPro](https://support.packet.com/kb/articles/layer-2-configurations)
+- [ ] Layer 2 on x1.small - [DeskPro](https://support.packet.com/kb/articles/layer-2-on-the-x1-small)
+- [x] [Native VLAN](https://github.com/packethost/docs/blob/master/products/network/advanced/native-vlan.md) - [DeskPro](https://support.packet.com/kb/articles/native-vlan)
+- [x] [Deploy Without Public IP](/products/network/advanced/deploy_nopublicip.md) - [DeskPro](https://support.packet.com/kb/articles/deploy-without-public-ip)
+- [x] [Packet Connect (Overview)](/products/network/advanced/packetconnect-overview.md) - [DeskPro](https://support.packet.com/kb/articles/packet-connect-overview-7)
+- [x] [Packet Connect (Azure)](/products/network/advanced/packetconnect-azure.md) - [DeskPro](https://support.packet.com/kb/articles/packet-connect-azure)
