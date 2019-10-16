@@ -17,6 +17,7 @@ steps:
     commands:
       - yarn global add write-good --silent
       - write-good README.md
+      - write-good docs-outline.md
     depends_on: [clone]
 
   - name: alex
@@ -24,6 +25,7 @@ steps:
     commands:
       - yarn global add alex --silent
       - alex README.md
+      - alex docs-outline.md
     depends_on: [clone]
 
   - name: markdownlint
@@ -31,6 +33,7 @@ steps:
     commands:
       - yarn global add markdownlint-cli --silent
       - markdownlint README.md
+      - markdownlint docs-outline.md
     depends_on: [clone]
 
   - name: yamllint
