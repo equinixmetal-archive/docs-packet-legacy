@@ -11,7 +11,7 @@
 - [ ] Managed Services
 - [ ] Security & Compliance
 - [x] [Facility Certifications (on getting started)](/products/getting-started.md) – need to be moved to a seperate file?
-- [x] [Billing](/products/commond-questions/billing.md) – [DeskPro1](https://support.packet.com/kb/articles/billing) – [DeskPro2](https://support.packet.com/kb/articles/pricing)
+- [x] [Billing](/products/common-questions/billing.md) – [DeskPro1](https://support.packet.com/kb/articles/billing) – [DeskPro2](https://support.packet.com/kb/articles/pricing)
 
 
 <!-- - [ ] Official Operating Systems
