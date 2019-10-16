@@ -40,3 +40,10 @@
 
 - [x] [Network Overview](/products/network/network-overview.md) - [DeskPro](https://support.packet.com/kb/articles/networking-faq)
 - [x] [Doorman](/products/network/doorman.md) - [DeskPro](https://support.packet.com/kb/articles/doorman-customer-vpn)
+
+### Basic
+
+- [x] [Elastic IPs](/products/network/basic/ips-elastic.md) - [DeskPro](https://support.packet.com/kb/articles/elastic-ips)
+- [x] [Global Anycast IPs](/products/network/basic/ips-anycast.md) - [DeskPro](https://support.packet.com/kb/articles/global-anycast-ips)
+- [ ] Private Networking 
+- [x] [Backend Transfer](/products/network/basic/backend-transfer.md) - [DeskPro](https://support.packet.com/kb/articles/backend-transfer)
