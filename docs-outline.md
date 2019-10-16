@@ -82,7 +82,7 @@
 
 ## Sparing & Diversity
 
+<!-- alex ignore Failure -->
 - [ ] Hardware Monitoring & Failure
 - [ ] Sparing
 - [ ] Rack Level Diversity
-
