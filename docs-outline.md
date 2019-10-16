@@ -47,3 +47,9 @@
 - [x] [Global Anycast IPs](/products/network/basic/ips-anycast.md) - [DeskPro](https://support.packet.com/kb/articles/global-anycast-ips)
 - [ ] Private Networking 
 - [x] [Backend Transfer](/products/network/basic/backend-transfer.md) - [DeskPro](https://support.packet.com/kb/articles/backend-transfer)
+
+### Advanced
+
+- [x] [BGP Overview](/products/network/advanced/bgp-overview.md) - [DeskPro](https://support.packet.com/kb/articles/bgp) - According to our notes, this file should be divided into two section below.
+- [ ] BGP Local
+- [ ] BGP Global
