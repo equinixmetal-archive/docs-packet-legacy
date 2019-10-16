@@ -1,4 +1,4 @@
-# Product Docs Outline
+# [Product Docs Outline](https://github.com/packethost/docs/tree/master/products)
 
 ## Overview
 
