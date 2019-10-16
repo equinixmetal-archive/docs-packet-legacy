@@ -10,7 +10,7 @@
 - [ ] Datacenter Locations – [DeskPro](https://support.packet.com/kb/articles/data-centers)
 - [ ] Managed Services
 - [ ] Security & Compliance
-- [x] [Facility Certifications (on getting started)](/products/getting-started.md) – need to be moved to a seperate file?
+- [x] [Facility Certifications (on getting started)](/products/getting-started.md) – needs to be moved to a seperate file?
 - [x] [Billing](/products/common-questions/billing.md) – [DeskPro1](https://support.packet.com/kb/articles/billing) – [DeskPro2](https://support.packet.com/kb/articles/pricing)
 
 
