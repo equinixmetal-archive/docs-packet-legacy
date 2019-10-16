@@ -4,7 +4,7 @@
 
 - [x] [Getting Started](/products/getting-started.md) – [DeskPro](https://support.packet.com/kb/articles/general)
 
-## Commons Questions
+## Common Questions
 
 - [ ] Packet vs other Clouds
 - [ ] Datacenter Locations – [DeskPro](https://support.packet.com/kb/articles/data-centers)
