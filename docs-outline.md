@@ -63,5 +63,5 @@
 
 ## Storage
 
-- [x][Elastic Block Storage](/products/storage/blockstorage.md) - [DeskPro](https://support.packet.com/kb/articles/elastic-block-storage)
-- [x][Extending Block Storage](/products/storage/extending_blockstorage.md)
+- [x] [Elastic Block Storage](/products/storage/blockstorage.md) - [DeskPro](https://support.packet.com/kb/articles/elastic-block-storage)
+- [x] [Extending Block Storage](/products/storage/extending_blockstorage.md)
