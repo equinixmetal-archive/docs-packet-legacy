@@ -1,16 +1,4 @@
-# Product Docs Outline
-
-## How to use this document (Examples)
-
-If the document is complete and uploaded to GitHub:
-
-- [x] [Complete example](/products/getting-started.md) - any links to Deskpro and comments if applicable
-
-If the document is not uploaded to GitHub yet:
-
-- [ ] Incomplete example
-
-## [Products](/products)
+# [Products](/products)
 
 - [x] [Getting Started](/products/getting-started.md) - [DeskPro](https://support.packet.com/kb/articles/general)
 
