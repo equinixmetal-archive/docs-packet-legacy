@@ -16,21 +16,21 @@ steps:
     image: node:current-alpine
     commands:
       - yarn global add write-good --silent
-      - write-good README.md
+      - write-good README.md product-docs-outline.md
     depends_on: [clone]
 
   - name: alex
     image: node:current-alpine
     commands:
       - yarn global add alex --silent
-      - alex README.md
+      - alex README.md product-docs-outline.md
     depends_on: [clone]
 
   - name: markdownlint
     image: node:current-alpine
     commands:
       - yarn global add markdownlint-cli --silent
-      - markdownlint README.md
+      - markdownlint README.md product-docs-outline.md
     depends_on: [clone]
 
   - name: yamllint
