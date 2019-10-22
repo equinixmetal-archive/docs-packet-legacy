@@ -1,5 +1,7 @@
 # [Products](/products)
 
+Progress: 29/57 files completed - 51%.
+
 - [x] [Getting Started](/products/getting-started.md) - [DeskPro](https://support.packet.com/kb/articles/general)
 
 ## [Common Questions](/products/common-questions)
