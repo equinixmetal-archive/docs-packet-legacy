@@ -1,6 +1,7 @@
 # Accounts & Billing
 
-Welcome to Accounts & Billing! Please follow the links below to learn more about our services:
+Welcome to Accounts & Billing!
+Please follow the links below to learn more about our services:
 
 - [Basics of our platform](https://github.com/packethost/docs/blob/master/products/getting-started.md)
 
@@ -14,6 +15,6 @@ Welcome to Accounts & Billing! Please follow the links below to learn more about
 
 ## Contact
 
-To obtain help with your account and services, please reach out to [support@packet.com](mailto:support@packet.com).
+To get help with your account and services, please reach out to [support@packet.com](mailto:support@packet.com).
 
 For plan arrangements and upgrades, please contact [sales@packet.com](mailto:sales@packet.com).
