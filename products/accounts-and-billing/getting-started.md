@@ -11,3 +11,9 @@ Welcome to Accounts & Billing! Please follow the links below to learn more about
 - [Account Reviews](https://github.com/packethost/docs/blob/products/billing/products/accounts-and-billing/account-reviews.md)
 
 - [Organizations](https://github.com/packethost/docs/blob/products/billing/products/accounts-and-billing/organizations.md)
+
+## Contact
+
+To obtain help with your account and services, please reach out to [support@packet.com](mailto:support@packet.com).
+
+For plan arrangements and upgrades, please contact [sales@packet.com](mailto:sales@packet.com).
