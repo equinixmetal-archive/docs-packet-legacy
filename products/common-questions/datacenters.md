@@ -7,7 +7,7 @@
 }
 </meta>-->
 
-### What's the difference between "Core" and "Custom"?  
+### Facility Types  
 Packet has two types of public cloud facilities: Core and Custom. All [locations](https://www.packet.com/locations/) feature our full automation experience and a consistent, carrier-grade network topology. In other words: everything that you can do from an automation and networking perspective is the same across all locations. The only difference between sites is inventory. 
 
 In our Core Cloud locations we stock abundant capacity of our most popular configurations, and support each site with our multi-tenant block storage service. Servers are available by the hour, and discounts are available for longer commitments. Custom infrastructure can be deploy in Core Cloud sites with a commitment.
