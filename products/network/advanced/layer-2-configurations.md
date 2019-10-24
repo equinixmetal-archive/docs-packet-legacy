@@ -7,7 +7,7 @@
 }
 </meta>-->
 
-Layer 2 feature lets you provision between one and twelve (per project) project-specific layer 2 networks.  For more details about the basics of this feature, please read our [overview article](/network/advanced/layer-2-overview).
+Layer 2 feature lets you provision between one and twelve (per project) project-specific layer 2 networks.  For more details about the basics of this feature, please read our [overview article](/products/network/advanced/layer-2-overview.md).
 
 
 ### Common Use Cases
