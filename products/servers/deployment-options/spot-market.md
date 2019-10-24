@@ -49,6 +49,14 @@ Here is an example in JSON format of making a spot instance request:
 
 **Please Note:** Date/Time is ISO8601.
 
+### Termination time for self-destructing systems
+
+You may be creating systems which you know will have
+a finite lifespan, for instance in a CI/CD environment.
+The `termination_time` parameter can be set to a time
+in the near future to ensure that temporary or ephemeral
+instances are automatically destroyed at a specific date.
+
 ### Persistent Spot Market
 
 Persistent Spot Market  is the ability to create spot instances whenever the market price drops below a certain threshold without having to query the API constantly and issue device creation requests.
