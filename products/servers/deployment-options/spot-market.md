@@ -56,6 +56,7 @@ a finite lifespan, for instance in a CI/CD environment.
 The `termination_time` parameter can be set to a time
 in the near future to ensure that temporary or ephemeral
 instances are automatically destroyed at a specific date.
+For further information please refer to [API Docs](https://www.packet.com/developers/api/#batches).
 
 ### Persistent Spot Market
 
