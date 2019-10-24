@@ -21,10 +21,7 @@ If you've used EC2 (AWS) or various compute services from Google Cloud, Microsof
 Since we are 100% focused on the infrastructure layer, we do not provide higher level services like managed databases or serverless offerings. Instead we invest in a vibrant [http://staging.packet.net/community/partners/](partner ecosystem).
 
 ### Working with Packet
-Although our platform is fully automated at all levels, we do form close relationships with many of our customers. If you have questions or feedback, we would love for you to get in touch.
-
-### Need help?
-While users are responsible for managing their own infrastructure at Packet, we offer 24/7/365 support through a variety of channels. If you experience issues, please reach out to our support team via [email](mailto:support@packet.com) or [Slack](https://slack.packet.com/).
+Although our platform is fully automated at all levels and users are responsible for managing their own infrastructure, we do form close relationships with many of our customers. If you have questions or feedback, we would love for you to get in touch. We offer 24/7/365 support, so please reach out to our team via [email](mailto:support@packet.com) or [Slack](https://slack.packet.com/) as needed.
 
 | Source  | Content |
 | ------------- | ------------- |
