@@ -36,4 +36,4 @@ If you are an Owner or an Admin, you can invite new users via the `User Icon > T
 
  You are able to add a single member or multiples at once. Each email added, will receive an automated response from our platform with a verification link (to either accept/deny) the invitation.
 
-![organization settings](/images/Organizations/Add-Members.png)
+![organization settings](/images/organizations/add-members.png)
