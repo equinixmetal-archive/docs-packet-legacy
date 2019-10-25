@@ -1,0 +1,41 @@
+---
+kind: pipeline
+type: docker
+name: Linters
+
+trigger:
+  repo:
+    - packethost/docs
+  event:
+    - push
+    - pull-request
+
+
+steps:
+  - name: write-good
+    image: node:current-alpine
+    commands:
+      - yarn global add write-good --silent
+      - write-good README.md product-docs-outline.md
+    depends_on: [clone]
+
+  - name: alex
+    image: node:current-alpine
+    commands:
+      - yarn global add alex --silent
+      - alex README.md product-docs-outline.md
+    depends_on: [clone]
+
+  - name: markdownlint
+    image: node:current-alpine
+    commands:
+      - yarn global add markdownlint-cli --silent
+      - markdownlint README.md product-docs-outline.md
+    depends_on: [clone]
+
+  - name: yamllint
+    image: python:alpine
+    commands:
+      - pip3 install --quiet yamllint
+      - yamllint  --config-file .yamllint.config --strict .*.yml
+    depends_on: [clone]
