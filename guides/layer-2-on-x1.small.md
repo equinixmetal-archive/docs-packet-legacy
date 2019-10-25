@@ -9,7 +9,7 @@
 
 Our Layer 2 feature on the x1.small (which is found in our 11 custom locations) has some differences in both scope and implementation when compared to our other supported machines.
 
-## #1 - Create a VLAN in your Packet Project
+## 1 - Create a VLAN in your Packet Project
 
 The x1.small will need at least one Ethernet port connected to a VLAN network for layer 2
 connectivity. VLANs can be created via the "IPs and Networks" tab in your Packet project,
@@ -30,7 +30,7 @@ At the bottom of the server's "Networking" page, you will see an option to add a
 ![add_a_vlan_2](/images/layer-2-on-x1.small/add_a_vlan_2.jpg)
 
 
-## #2 - Server Configuration
+## 2 - Server Configuration
 
 Since the x1.small only utilizes a single NIC, the only configuration supported on this server
 is the following:
