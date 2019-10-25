@@ -15,4 +15,4 @@ The x1.small will need at least one Ethernet port connected to a VLAN network fo
 connectivity. VLANs can be created via the "IPs and Networks" tab in your Packet project,
 and under "Layer 2".
 
-![create-vlan](images/layer-2-on-x1.small/create_vlan.jpg)
+![create-vlan](/images/layer-2-on-x1.small/create_vlan.jpg)
