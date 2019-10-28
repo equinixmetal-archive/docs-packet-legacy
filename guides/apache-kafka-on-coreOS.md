@@ -7,7 +7,7 @@
     "github":"zalkar-z",
     "date": "2019/09/05",
     "email":"zak@packet.com",
-    "tag":["apache", "kafka", "coreOS]
+    "tag":["apache", "kafka", "coreOS"]
 }
 </meta>
 -->
