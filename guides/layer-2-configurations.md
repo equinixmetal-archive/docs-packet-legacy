@@ -1,11 +1,16 @@
-<!--<meta>
+<!--
+<meta>
 {
     "title":"Layer 2 Configurations",
     "description":"How to configure some possible layer 2 environments.",
-    "date": "2019/09/20",
+    "author":"Zak",
+    "github":"zalkar-z",
+    "date": "2019/10/25",
+    "email":"zak@packet.com",
     "tag":["layer 2", "networking", "advanced"]
 }
-</meta>-->
+</meta>
+-->
 
 Layer 2 feature lets you provision between one and twelve (per project) project-specific layer 2 networks.  For more details about the basics of this feature, please read our [overview article](/products/network/advanced/layer-2-overview.md).
 
