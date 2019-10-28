@@ -1,3 +1,17 @@
+<!--
+<meta>
+{
+    "title":"Kubernetes Cluster Autoscaler",
+    "description":"Kubernetes Cluster Autoscaler on Packet",
+    "author":"Enkel",
+    "github":"enkelprifti98",
+    "date": "2019/9/19",
+    "email":"enkel@packet.com",
+    "tag":["Kubernetes", "Cluster", "Autoscaler"]
+}
+</meta>
+-->
+
 # Kubernetes Cluster Autoscaler on Packet
 
 ## Introduction
