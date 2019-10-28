@@ -1,3 +1,17 @@
+<!--
+<meta>
+{
+    "title":"Self-Hosted Zoom Meetings",
+    "description":"Self-Hosted Zoom Meetings",
+    "author":"Zak",
+    "github":"zalkar-z",
+    "date": "2019/9/5",
+    "email":"zak@packet.com",
+    "tag":["Self-Hosted", "Zoom"]
+}
+</meta>
+-->
+
 Self-Hosted Zoom Meetings
 
 # Introduction
