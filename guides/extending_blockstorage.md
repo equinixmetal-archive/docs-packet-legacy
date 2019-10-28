@@ -1,3 +1,17 @@
+<!--
+<meta>
+{
+    "title":"Extending Blockstorage",
+    "description":"Extending Storage Volume on Packet",
+    "author":"Zak",
+    "github":"zalkar-z",
+    "date": "2019/10/25",
+    "email":"zak@packet.com",
+    "tag":["Extending", "Storage", "Blockstorage"]
+}
+</meta>
+-->
+
 # Extending Storage Volume
 You may want to extend (grow) your storage volume if you are running low on disk space. This is currently an "Offline" operation which means you will need to unmount and detach your volume from your server. The safest way to do this by powering off the server that your volume is attached to. This is also currently an API only feature for the time being. Also, although a lot of the information below will be easily gatherable thought the Packet Portal, we'll be using the RestAPI for this procedure.
 
