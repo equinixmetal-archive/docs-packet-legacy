@@ -1,3 +1,17 @@
+<!--
+<meta>
+{
+    "title":"Deploy Flynn on Packet",
+    "description":"Deploy Flynn on Packet",
+    "author":"Zak",
+    "github":"zalkar-z",
+    "date": "2019/09/05",
+    "email":"zak@packet.com",
+    "tag":["Flynn"]
+}
+</meta>
+-->
+
 Deploy Flynn on Packet
 
 In this guide we'll walk you through the basics of why you'd want a platform, how to install [Flynn](https://flynn.io/) on Packet, and the basics of deploying your apps and managing databases.

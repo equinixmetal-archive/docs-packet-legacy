@@ -1,3 +1,17 @@
+<!--
+<meta>
+{
+    "title":"Crosscloud VPN with Wireguard",
+    "description":"Setup a Crosscloud VPN with Wireguard",
+    "author":"Zak",
+    "github":"zalkar-z",
+    "date": "2019/9/16",
+    "email":"zak@packet.com",
+    "tag":["Crosscloud VPN", "Wireguard"]
+}
+</meta>
+-->
+
 <!--- HTML markdown to center the headline --->
 <p align="center">
 	<img alt="wireguard-logo" src="../images/setup-crosscloud-vpn-with-wireguard/wireguard-logo.svg" width="350px" />

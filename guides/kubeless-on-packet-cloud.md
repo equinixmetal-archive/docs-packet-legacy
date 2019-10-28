@@ -1,4 +1,5 @@
-<!--<meta>
+<!--
+<meta>
 {
     "title":"Kubeless on Packet",
     "description":"Setup Kubeless on a bare metal K8s cluster",
@@ -8,7 +9,8 @@
     "email":"ronggur.mh@gmail.com",
     "tag":["kubeless", "another tag"]
 }
-</meta>-->
+</meta>
+-->
 
 _This post was originally posted by Bitnami's Sameer Naik on [Medium.com](https://medium.com/bitnami-perspectives/kubeless-on-packet-cloud-9e5605b8bb97)._
 

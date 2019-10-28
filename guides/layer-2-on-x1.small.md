@@ -1,11 +1,16 @@
-<!--<meta>
+<!--
+<meta>
 {
     "title":"Layer 2 on x1.small",
     "description":"How to configure layer 2 on x1.small",
+    "author":"Zak",
+    "github":"zalkar-z",
     "date": "2019/10/25",
+    "email":"zak@packet.com",
     "tag":["layer 2", "networking", "advanced", "x1.small"]
 }
-</meta>-->
+</meta>
+-->
 
 Our Layer 2 feature on the x1.small (which is found in our 11 custom locations) has some differences in both scope and implementation when compared to our other supported machines.
 
