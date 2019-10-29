@@ -2,11 +2,12 @@
 <meta>
 {
     "title":"OpenStack DevStack",
+    "description":"Testing OpenStack using DevStack",
     "author":"Ronggur",
-    "description":"Some description goes here",
+    "github":"ronggur",
     "email":"ronggur.mh@gmail.com",
     "date": "2019/06/06",
-    "tag":["virtual Machines", "another tag"]
+    "tag":["DevStack", "OpenStack"]
 }
 </meta> 
 -->
