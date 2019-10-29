@@ -1,13 +1,16 @@
-<!-- <meta>
+<!-- 
+<meta>
 {
     "title":"Explore Weave and Kubernetes",
+    "description":"Use Weave Cloud to explore and troubleshoot a microservices app running in Kubernetes on Packet’s bare metal cloud.",
     "author":"Ronggur",
-    "description":"Some description goes here",
+    "github":"ronggur",
     "email":"ronggur.mh@gmail.com",
     "date": "2019/06/06",
-    "tag":["containers", "networking"]
+    "tag":["Weave Cloud"]
 }
-</meta> -->
+</meta> 
+-->
 
 `Note: This post was prepared by our friends at [Weaveworks](https://weave.works).`
 
