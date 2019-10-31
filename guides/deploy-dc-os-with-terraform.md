@@ -323,7 +323,7 @@ If everything is good... go ahead and build your DC/OS cluster!
 
 Now we wait! Not long, probably around 7 minutes. You could check the status of the servers you just deployed from the Packet portal.
 
-![](/media/images/rL7t-mesos.provisioning.jpg)
+![provisioning](/images/deploy-dc-os-with-terraform/provisioning.jpg)
 
 **_Note, once Terraform finishes its thing be sure to copy and save (or just don't clear out your terminal window) all the IP related output, you'll need it!_**
 
@@ -366,7 +366,7 @@ The rest should hopefully be pretty self-explanatory.
 
 Here is an example of what it looks like completed.
 
-![](/media/images/YcDS-mesos.settings.png)
+![settings](/images/deploy-dc-os-with-terraform/settings.png)
 
 Next hit the big green button!
 
@@ -378,7 +378,7 @@ And one last time, no errors, hit the big green button!
 
 If everything has gone according to plan you should now be logging into your DC/OS management portal located on the master node.
 
-![](/media/images/0ia3-mesos.dash.jpg)
+![dash](/images/deploy-dc-os-with-terraform/dash.jpg)
 
 # Step 8: Install the DC/OS CLI
 
