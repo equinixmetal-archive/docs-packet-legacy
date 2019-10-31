@@ -2,7 +2,7 @@
 {
     "title":"KVM and Libvirt on Ubuntu 16.04",
     "description":"KVM and Libvirt on Ubuntu 16.04 description",
-    "author":"Ronggur",
+    "author":"Ronggur Habibun",
     "github":"ronggur",
     "email":"ronggur.mh@gmail.com",
     "date": "2019/06/06",

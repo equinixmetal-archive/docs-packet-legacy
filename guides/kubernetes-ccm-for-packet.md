@@ -3,7 +3,7 @@
 {
     "title":"Kubernetes CCM for Packet",
     "description":"Kubernetes CCM (Cloud Controller Manager) for Packet",
-    "author":"Enkel",
+    "author":"Enkel Prifti",
     "github":"enkelprifti98",
     "date": "2019/9/19",
     "email":"enkel@packet.com",

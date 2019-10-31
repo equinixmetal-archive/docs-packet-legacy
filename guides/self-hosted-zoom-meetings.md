@@ -3,7 +3,7 @@
 {
     "title":"Self-Hosted Zoom Meetings",
     "description":"Self-Hosted Zoom Meetings",
-    "author":"Zak",
+    "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
     "date": "2019/9/5",
     "email":"zak@packet.com",

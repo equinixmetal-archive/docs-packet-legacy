@@ -3,7 +3,7 @@
 {
     "title":"Stress Testing Big Data Setups",
     "description":"Stress Testing Big Data Setups",
-    "author":"Zak",
+    "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
     "date": "2019/9/5",
     "email":"zak@packet.com",

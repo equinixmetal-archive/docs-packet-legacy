@@ -3,7 +3,7 @@
 {
     "title":"Crosscloud VPN with Wireguard",
     "description":"Setup a Crosscloud VPN with Wireguard",
-    "author":"Zak",
+    "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
     "date": "2019/9/16",
     "email":"zak@packet.com",
