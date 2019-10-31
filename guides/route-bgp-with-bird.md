@@ -30,9 +30,9 @@ For this guide, we're deploying a [Tiny But Mighty](https://www.packet.net/clou
 
 Navigate over to **IPs & Networks** in your BGP enabled project and click on _Manage Block_ for the IPv4 block in the data center location that corresponds with your server deployment. Choose an available IP that will act as your broadcast IP. In this guide, we'll be using 10.99.12.138.
 
-![](/media/images/c1c0-screen.shot.2017.01.13.at.15.25.00.png)
+![manage-ips](/images/route-bgp-with-bird/manage-ips.png)
 
-![](/media/images/fKXl-screen.shot.2017.01.13.at.15.34.55.png)
+![manage-ips-2](/images/route-bgp-with-bird/manage-ips-2.png)
 
 # Step 2 - Update Network Interface
 
@@ -139,7 +139,7 @@ service bird restart
 
 Enable BGP for the server in the portal via the server detail page.
 
-![](/media/images/JmLo-screenshot.2016.12.10.13.05.49.png)
+![enable-bgp](/images/route-bgp-with-bird/enable-bgp.png)
 
 # Finishing Up
 
@@ -176,7 +176,7 @@ As you can see, the BGP state is Established and we are exporting 1 route.
 
 If you check the server detail page, you will also see the learned route.
 
-![](/media/images/Zcfh-screenshot.2016.12.10.13.10.42.png)
+![server-details](/images/route-bgp-with-bird/server-details.png)
 
 To test, you can ping the IP address in a command line - `ping 10.99.12.138`. _Remember this is Local BGP so you'll have to be connected to the private network for the data center you're running Local BGP in. You can do that by SSHing into another server in that data center or by connected to [Doorman](https://www.packet.net/developers/guides/route-bgp-with-bird/), Packet's private VPN._
 
