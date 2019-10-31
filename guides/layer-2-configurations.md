@@ -30,7 +30,7 @@ Over time, this feature may evolve to support security, provisioning updates, an
 ### Bonding on Packet
 By default, each server has two interfaces that are setup in an LACP bond that is configured both in the Host OS and on the switch:  
 
-![bonding](/images/layer-2-configurations/Bonding.png)
+![bonding](/images/layer-2-configurations/bonding.png)
 
 ### Steps for Common Configurations
 
@@ -42,15 +42,15 @@ In this example, you will need at least 2 servers (m1.xlarge or c1.xlarge) in th
 
 You will still be able to connect to the server via its public IPv4/IPv6 addresses that are visible in the portal/API because we are leaving eth0 and bond0 intact.  
 
-![hybrid configuration](/images/layer-2-configurations/Config-1.png)
+![hybrid configuration](/images/layer-2-configurations/config-1.png)
 
 1. From the portal, browse to both servers' networking overview pages, click "Convert To Other Network Type" and choose "mixed/hybrid."  
 
-    ![convert network type](/images/layer-2-configurations/Convert-Network-Type.png)  
+    ![convert network type](/images/layer-2-configurations/convert-network-type.png)  
 
 2. From the networking page for both servers click "Add New Vlan", and choose eth1 as the interface and select the Virtual Network ID (VNID, or VLAN ID) you wish to use. The VNIDs must be the same for both servers for intra-host communication to work.  
 
-    ![add VLAN](/images/layer-2-configurations/Add-VLAN.png)  
+    ![add VLAN](/images/layer-2-configurations/add-vlan.png)  
 
 3.  From your Host OS, follow the steps below, depending on your operating system:
 
@@ -130,7 +130,7 @@ rtt min/avg/max/mdev = 0.106/0.110/0.115/0.009 ms
 
 In this case, we will be keeping the same configuration for eth0, except we will be assigning a second VLAN to eth1.
 
-![multiple VLANs](/images/layer-2-configurations/Config-2.png)
+![multiple VLANs](/images/layer-2-configurations/config-2.png)
 
 In this scenario, IP packets that arrive at the host will have the VLAN ID populated. You will need to setup two interfaces that will receive packets destined for each VLAN.
 
@@ -207,8 +207,8 @@ sudo ifup eth1.1001
 
 ### Combined hybrid and layer 2 modes
 
-![pure layer 2](/images/layer-2-configurations/Config-3.png)
-![hybrid network mode](/images/layer-2-configurations/Config-1.png)
+![pure layer 2](/images/layer-2-configurations/config-3.png)
+![hybrid network mode](/images/layer-2-configurations/config-1.png)
 
 For this configuration you'll need two nodes, one in hybrid and one in layer 2 networking mode, and one VLAN (although you could change it to use more, as in configuration 2).
 
