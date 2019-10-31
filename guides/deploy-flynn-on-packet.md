@@ -141,9 +141,10 @@ The built-in dashboard can be accessed at http://dashboard.demo.packetflynn.com
 
 When you access the dashboard, you will need to install the certificate in your browser before you can proceed and navigate through the other functions. You can refer to the screenshots below on how to install the SSL certificate in your browser, or just simply follow the guide shown in the Flynn dashboard.
 
-![](/media/images/mQ7F-dashboard1.png)
+![dashboard](/images/deploy-flynn-on-packet/dashboard.png)
 
-![](/media/images/0wYs-dashboard2.png)![](/media/images/Z810-dashboard3.png)
+![dashboard-2](/images/deploy-flynn-on-packet/dashboard-2.png)
+![dashboard-3](/images/deploy-flynn-on-packet/dashboard-3.png)
 
 The flynn dashboard will now prompt for your login token, which you can find with the following command:
 
@@ -250,11 +251,11 @@ OR
 
 You can open this to any browser using the default route for the app:
 
-![](/media/images/cWJG-dashboard4.png)
+![dashboard-4](/images/deploy-flynn-on-packet/dashboard-4.png)
 
 At this point, you may now use the Dashboard to manage your app. The sample screenshot below display the application that we have deployed:
 
-![](/media/images/N3fb-dashboard5.png)
+![dashboard-5](/images/deploy-flynn-on-packet/dashboard-5.png)
 
 ## Scaling Up
 
