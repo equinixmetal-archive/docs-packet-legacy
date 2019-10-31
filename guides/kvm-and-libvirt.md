@@ -60,7 +60,7 @@ _Note: If you don't already have a public /30 IPv4 block assigned to your projec
 Go ahead and assign all the IPs to the server that you're on.
 
   
-![subnet info](/media/images/sX4V-screen.shot.2018.10.08.at.11.21.18.am.png)
+![ips](/images/kvm-and-libvirt/ips.png)
 
 We'll be using the _[net-define](https://libvirt.org/sources/virshcmdref/html/sect-net-define.html)_ command to configure the virtual machine.
 
