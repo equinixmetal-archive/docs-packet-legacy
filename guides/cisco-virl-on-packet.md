@@ -3,7 +3,7 @@
 {
     "title":"Cisco VIRL on Packet",
     "description":"Using Cisco VIRL on Packet",
-    "author":"Zak",
+    "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
     "date": "2019/09/05",
     "email":"zak@packet.com",

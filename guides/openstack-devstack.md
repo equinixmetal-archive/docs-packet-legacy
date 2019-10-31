@@ -3,7 +3,7 @@
 {
     "title":"OpenStack DevStack",
     "description":"Testing OpenStack using DevStack",
-    "author":"Ronggur",
+    "author":"Ronggur Habibun",
     "github":"ronggur",
     "email":"ronggur.mh@gmail.com",
     "date": "2019/06/06",

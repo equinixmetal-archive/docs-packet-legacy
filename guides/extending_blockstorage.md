@@ -3,7 +3,7 @@
 {
     "title":"Extending Blockstorage",
     "description":"Extending Storage Volume on Packet",
-    "author":"Zak",
+    "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
     "date": "2019/10/25",
     "email":"zak@packet.com",

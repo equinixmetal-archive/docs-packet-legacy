@@ -3,7 +3,7 @@
 {
     "title":"Route BGP with BIRD",
     "description":"Route BGP with BIRD on Packet",
-    "author":"Zak",
+    "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
     "date": "2019/9/5",
     "email":"zak@packet.com",

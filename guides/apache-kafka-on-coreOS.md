@@ -3,7 +3,7 @@
 {
     "title":"Apache Kafka on CoreOS",
     "description":"Setup Kafka cluster on a single Packet bare-metal machine",
-    "author":"Zak",
+    "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
     "date": "2019/09/05",
     "email":"zak@packet.com",

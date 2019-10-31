@@ -3,7 +3,7 @@
 {
     "title":"Layer 2 Configurations",
     "description":"How to configure some possible layer 2 environments.",
-    "author":"Zak",
+    "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
     "date": "2019/10/25",
     "email":"zak@packet.com",

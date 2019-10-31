@@ -3,7 +3,7 @@
 {
     "title":"Ditch Cobbler for RackN",
     "description":"Ditch Cobbler for RackN on Packet",
-    "author":"Zak",
+    "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
     "date": "2019/09/05",
     "email":"zak@packet.com",

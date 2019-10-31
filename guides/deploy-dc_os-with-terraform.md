@@ -3,7 +3,7 @@
 {
     "title":"Deploy DC/OS with Terraform",
     "description":"Deploy DC/OS with Terraform",
-    "author":"Zak",
+    "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
     "date": "2019/09/05",
     "email":"zak@packet.com",

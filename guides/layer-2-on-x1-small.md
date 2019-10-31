@@ -3,7 +3,7 @@
 {
     "title":"Layer 2 on x1.small",
     "description":"How to configure layer 2 on x1.small",
-    "author":"Zak",
+    "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
     "date": "2019/10/25",
     "email":"zak@packet.com",

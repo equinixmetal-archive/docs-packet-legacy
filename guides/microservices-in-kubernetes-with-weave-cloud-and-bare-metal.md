@@ -3,7 +3,7 @@
 {
     "title":"Explore Weave and Kubernetes",
     "description":"Use Weave Cloud to explore and troubleshoot a microservices app running in Kubernetes on Packet’s bare metal cloud.",
-    "author":"Ronggur",
+    "author":"Ronggur Habibun",
     "github":"ronggur",
     "email":"ronggur.mh@gmail.com",
     "date": "2019/06/06",
