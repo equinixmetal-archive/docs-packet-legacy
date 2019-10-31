@@ -20,19 +20,19 @@ The x1.small will need at least one Ethernet port connected to a VLAN network fo
 connectivity. VLANs can be created via the "IPs and Networks" tab in your Packet project,
 and under "Layer 2".
 
-![create-vlan](/images/layer-2-on-x1.small/create_vlan.jpg)
+![create-vlan](/images/layer-2-on-x1-small/create-vlan.jpg)
 
 Unlike our other layer 2 supporting server types, the x1.small is provisioned in hybrid
 networking mode by default. This means one of the server's ethernet interfaces has been
 removed from bond0 on our switch and is ready to be attached to a VLAN network. This
 networking mode cannot be changed on the x1.small server type.
 
-![hybrid_mode](/images/layer-2-on-x1.small/hybrid_mode.jpg)
+![hybrid_mode](/images/layer-2-on-x1-small/hybrid-mode.jpg)
 
 At the bottom of the server's "Networking" page, you will see an option to add a VLAN. Note: VLANs are facility-specific, so make sure your VLAN and your server are in the same facility, or you will not be able to add it to the server's Ethernet port.
 
-![add_a_vlan](/images/layer-2-on-x1.small/add_a_vlan.jpg)
-![add_a_vlan_2](/images/layer-2-on-x1.small/add_a_vlan_2.jpg)
+![add-vlan](/images/layer-2-on-x1-small/add-vlan.jpg)
+![add-vlan-2](/images/layer-2-on-x1-small/add-vlan-2.jpg)
 
 
 ## 2 - Server Configuration
@@ -42,7 +42,7 @@ is the following:
 
 Leave eth0 in bond0 and add a single VLAN to eth1.
 
-![server-config](/images/layer-2-on-x1.small/server-config.png)
+![server-config](/images/layer-2-on-x1-small/server-config.png)
 
 In this example, where we configure a VLAN on the second interface in order to be able to ping between the hosts, you will need at least two servers in the same project, and a single Virtual Network.  
 
