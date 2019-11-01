@@ -3,7 +3,7 @@
     "title":"Compute Classes",
     "description":"Our various device type classes",
     "date": "09/20/2019",
-    "tag":["Device Types", "Devices", "Compute Classes]
+    "tag":["Device Types", "Devices", "Compute Classes"]
 }
 </meta>-->
 
