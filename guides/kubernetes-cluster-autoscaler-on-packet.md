@@ -1,3 +1,17 @@
+<!--
+<meta>
+{
+    "title":"Kubernetes Cluster Autoscaler",
+    "description":"Kubernetes Cluster Autoscaler on Packet",
+    "author":"Enkel Prifti",
+    "github":"enkelprifti98",
+    "date": "2019/9/19",
+    "email":"enkel@packet.com",
+    "tag":["Kubernetes", "Cluster", "Autoscaler"]
+}
+</meta>
+-->
+
 # Kubernetes Cluster Autoscaler on Packet
 
 ## Introduction
@@ -6,7 +20,7 @@ If you are deploying your applications with Kubernetes or are just diving into t
 
 The Kubernetes Cluster Autoscaler is designed to dynamically scale your cluster nodepools based on unschedulable pods or nodes that aren’t needed anymore. While this has been supported on cloud providers that use VMs, Packet is the first public cloud provider to support the Cluster Autoscaler on Baremetal servers. In this guide, we’ll be configuring the cluster autoscaler on a bare metal cluster that you have already deployed. If you’re looking for a script that quickly deploys a cluster with a master and two worker nodes, we have a great [demo](https://github.com/packet-labs/kubernetes-bgp) at the Packet-Labs github repo. The following is the example cluster with 1 master and 2 workers that we’ll be using for this guide:
 
-![alt text](/images/kubernetes-cluster-autoscaler-on-packet/k8s-cluster-overview.png)
+![k8s-cluster-overview](/images/kubernetes-cluster-autoscaler-on-packet/k8s-cluster-overview.png)
 
 ## Configuration
 
@@ -52,11 +66,11 @@ Once you’ve configured the secret file accordingly, you can deploy the secret 
 Next we’ll need to setup the nodepool and cluster names by using Packet tags. The Packet API does not yet have native support for groups or pools of devices, so we use tags to specify them. Each Packet device that is a member of the “cluster1” cluster should have the tag “k8s-cluster-cluster1”. The devices that are members of the “pool1” nodepool should also have the tag “k8s-nodepool-pool1”. Once you have a Kubernetes cluster running on Packet, use the Packet Portal or API to tag the nodes accordingly. The master node should have the cluster1 tag but not the pool1 tag as that is only needed for the worker nodepool that will be autoscaled. You can also simply have a master node without any worker nodes and the autoscaler will deploy new workers as needed. The tags should looks like the following images:
 
 Master tags:
-![alt text](/images/kubernetes-cluster-autoscaler-on-packet/master-tags.png)
+![master-tags](/images/kubernetes-cluster-autoscaler-on-packet/master-tags.png)
 
 
 Worker tags:
-![alt text](/images/kubernetes-cluster-autoscaler-on-packet/worker-tags.png)
+![worker-tags](/images/kubernetes-cluster-autoscaler-on-packet/worker-tags.png)
 
 
 Once you have setup the nodepool with the appropriate Packet tags, we can now configure the autoscaler deployment. An example Deployment is given in [examples/cluster-autoscaler-deployment.yaml](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/cloudprovider/packet/examples/cluster-autoscaler-deployment.yaml).yaml but you’ll need to adjust the following arguments:

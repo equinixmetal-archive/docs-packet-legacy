@@ -1,3 +1,17 @@
+<!--
+<meta>
+{
+    "title":"Self-Hosted Zoom Meetings",
+    "description":"Self-Hosted Zoom Meetings",
+    "author":"Zalkar Ziiaidin",
+    "github":"zalkar-z",
+    "date": "2019/9/5",
+    "email":"zak@packet.com",
+    "tag":["Self-Hosted", "Zoom"]
+}
+</meta>
+-->
+
 Self-Hosted Zoom Meetings
 
 # Introduction
@@ -185,4 +199,4 @@ The host of a meeting needs to be set to **Type** _Corp_ to take advantage of 
 
 And that's it! Now, all of your Zoom conference audio and video data is accepted and distributed on Packet hardware.
 
-![](/media/images/G5eY-screen.shot.2017.01.11.at.15.24.34.png)
+![success](/images/self-hosted-zoom-meetings/success.png)

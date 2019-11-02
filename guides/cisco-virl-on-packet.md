@@ -1,3 +1,17 @@
+<!--
+<meta>
+{
+    "title":"Cisco VIRL on Packet",
+    "description":"Using Cisco VIRL on Packet",
+    "author":"Zalkar Ziiaidin",
+    "github":"zalkar-z",
+    "date": "2019/09/05",
+    "email":"zak@packet.com",
+    "tag":["Cisco", "VIRL"]
+}
+</meta>
+-->
+
 Cisco VIRL on Packet
 
 # What Is Cisco VIRL?
@@ -59,7 +73,7 @@ Deploying VIRL on Packet is easy using Packet's IPXE / custom-image service.  
 
 4. Select ' **Deploy Server**' from the portal menu.
 
-![](/media/images/JPTF-screenshot.2018.01.23.15.37.52.png)
+![deploy-server](/images/cisco-virl-on-packet/deploy-server.png)
 
 5. a) Enter your **hostname**.
 
@@ -71,11 +85,11 @@ Deploying VIRL on Packet is easy using Packet's IPXE / custom-image service.  
 
    e) Enter ' **http://packet.virl.info**' into the iPXE URL box.
 
-![](/media/images/7l8y-screenshot.2018.01.23.15.39.42.png)
+![ipxe-url](/images/cisco-virl-on-packet/ipxe-url.png)
 
 6. Select ' **SSH & USER DATA**' and scroll down to ' **Add optional user data**' box.
 
-![](/media/images/YwSX-screenshot.2018.01.23.15.58.31.png)
+![optional-user-data](/images/cisco-virl-on-packet/optional-user-data.png)
 
 7. Define your license and password settings by entering (or pasting) your 'cloud-init' YAML into the ' **Add optional user data**' box.
 
@@ -120,15 +134,15 @@ Ensuring that the format carries over when pasted into a text editor it is sugge
 
 When you've entered your user-data it should appear like the following, except with your confidential passwords and license information:
 
-![\\vmware-host\Shared Folders\Desktop\Deploying VIRL on Packet_files\packet.userdata.png](https://lh5.googleusercontent.com/a5lFg3jRMZ4WuVjT9qVYx7Limi-RpOeRKFOJzEiOmbe4V9Cln41CTVms6ZOBuGRqPSps-ukyI42luWUQOmWt7ygn1aRYeRukpTOCH0tc2xwvhjKhu7mJotaqCrKMwDzFxjGQ76q3ByGPTqZCkQ)
+![confirmation](/images/cisco-virl-on-packet/confirmation.png)
 
 8. Click **Save** and then select ' **Deploy Servers**' to begin the deployment process.
 
-![](/media/images/wUAv-screenshot.2018.01.23.16.08.53.png)
+![save](/images/cisco-virl-on-packet/save.png)
 
 9. Wait for your the server to be completely deployed, then select the host name to get into server's details page.
 
-![](/media/images/8dCg-screenshot.2018.01.23.16.12.13.png)
+![server-complete](/images/cisco-virl-on-packet/server-complete.png)
 
 10. After the server is deployed, VIRL will go through the configuration process wich should take another 5-7 minute.
 
@@ -136,46 +150,46 @@ If you switch to the 'Timeline' tab you can observe all of the User Events that 
 
 Once VIRL is completely configured and ready for use you will see a message indicating success in the and the URL at which the VIRL UWM interface can be reached for management.
 
-![](/media/images/K2IW-screenshot.2018.01.23.16.17.00.png)
+![details](/images/cisco-virl-on-packet/details.png)
 
 11. Navigate to the UWM address and login as either 'guest' or 'uwmadmin'. If you set custom passwords use these. If not, the defaults are 'guest', and 'password', respectively.
 
 12. If you do not already have the VM Maestro client use the menu on the left to navigate to ' **VIRL Server**' and ' **Downloads**', download the appropriate version, and install it locally:
 
-![](https://lh3.googleusercontent.com/-Q2o1QuTMsU72XCxhiROJQSnfMGb1vjnIJlpJPJTCtUch3XNV2LRIqAQ99Lz8JJH5DzrQvnBaZg73Ax9yvlgs-V-_HtIFqZfnbISJ3ATdJiDAAjrea0lIYmGr-Hs1g_lwd8AA5wnNjh_56RqUw)
+![downloads](/images/cisco-virl-on-packet/downloads.png)
 
 13. Open VM Maestro and connect to your Packet VIRL deployment. If you're starting VM Maestro for the first time: 
 
 * Read and acknowledge the License Agreement.
 * When prompted, enter the IP address of your Packet VIRL deployment and your 'guest' user credentials. Once you've done that you should see 'All web services are verified':
 
-![](https://lh3.googleusercontent.com/iqKxKg0LfUWU3X3iRoVGJV-QhHBihyOwyzrrRra8xGbLzaMPcptf5EyAwrfhDet09uoxU8IFgpeTlRdO5wPqgpGDYRVhO6oLDpWxbd2u61asJJ5Ep7Ddq6npBrsXc-1ZqsjdzQRWa-9UWHGfzg)
+![verified](/images/cisco-virl-on-packet/verified.png)
 
 If you already have VM Maestro installed you can create another profile to connect to your Packet VIRL deployment:
 
 * After VM Maestro opens select the 'Active Profile' button on the status bar:
 
-![](https://lh3.googleusercontent.com/iuHEpw5w5Vix0j9x4sEWUZ0c2fg_ZjLPl7w1WBTS1LaATR2OuUeqrrvXzB9Dc0NMU9zFqnRednIR7injKkOD8yd7o7rEQRiOYBLgxR_DzWMxtrhLuyjKHvclLZeOVDoMt-VBUnkMGhEdsx0MWg)
+![active-profile](/images/cisco-virl-on-packet/active-profile.png)
 
 * Select the 'Add' button in the Web Services dialog box:
 
-![](https://lh5.googleusercontent.com/HS3lG8u6IVmuM7G88eya7jDuOvH9ud2YxKuMmSXqqM9BslCdKJa4oKLyGF9CSHkPMSiSd79NkH0-UTqe7KJUvSOgecFio48Gc7gpBncgQuk4-0rpqkwvdbmYQRE86VfImPrdnOGo1x0-SYjElw)
+![add-web-services](/images/cisco-virl-on-packet/add-web-services.png)
 
 * Enter a name for the connection profile and replace 'localhost' with the address of your Packet VIRL deployment, then select 'OK':
 
-![](https://lh6.googleusercontent.com/4SaLVMAB9Rkjhww-4MrcEfR2a8oUrqEfoh_OJlOwcH5UyfjmXvoBcnyUnOfAA00fpZGuRF2jDpDVbtR6gJ-Yhlf86HiP72avDf31g3Ugmez7ZRJ8pk66y7pc1MeqxUr_hXO54_NXy7Og9Wgj6Q)
+![localhost](/images/cisco-virl-on-packet/localhost.png)
 
 * Select the 'Credentials' button:
 
-![](https://lh6.googleusercontent.com/Ws6wlgtpM3NU0NlowAgt_x2ZN7Kyoh2O8QOpDoS3iQd87oa35RHImgHjzR23ZsPmuek0iVDx8_bTtYWYbEaEn7Y_6nmiholmNCN8hn2-0kJJ2c48HJmigy6srtuV7WCjMXXZAY2NJeO4PhgF6Q)
+![credentials](/images/cisco-virl-on-packet/credentials.png)
 
 * Enter the 'guest' username and password and select 'OK':
 
-![](https://lh3.googleusercontent.com/wGg8HqfB06z8G-1bHFyCQkA5D9DJWVoiNUr0Da5HrfbAAcY39HxXcSwIn90qCwOj7faRHhePDZa9uJp8ZQLtxJav-wx4v2r8BEBcFIAcmEm2jKpcUwWScVT-o1jbv1gPLKajN4lEgOZOp4QsVw)
+![guest-username](/images/cisco-virl-on-packet/guest-username.png)
 
 * Verify that all of the web services show as 'Compatible':
 
-![](https://lh3.googleusercontent.com/XNf2VJK5hyiQgJug2HMtegg-FNjtUP_rQTynLNFQy64SkFpsNMTMzE1DFUAAAXWq60oKJjHkQzSVZRkm0xC1nVZOm6Lb_QKn_buAp9TOKFa0dDjJVc51U6eDlr1wUMwbEqH4NPviX_glpKffow)
+![verify-compatibility](/images/cisco-virl-on-packet/verify-compatibility.png)
 
 That's it – you're now ready to use VIRL!
 

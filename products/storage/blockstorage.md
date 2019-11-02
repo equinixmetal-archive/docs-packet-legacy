@@ -3,7 +3,7 @@
     "title":"Elastic Block Storage",
     "description":"Deploy block storage volumes",
     "date": "09/20/2019",
-    "tag":["Elastic Block Storage", "Storage", "Block Storage]
+    "tag":["Elastic Block Storage", "Storage", "Block Storage"]
 }
 </meta>-->
 
