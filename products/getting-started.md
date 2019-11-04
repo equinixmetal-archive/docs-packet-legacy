@@ -1,12 +1,4 @@
-<!--<meta>
-{
-    "title":"Overview",
-    "description":"Platform Overview",
-    "date": "09/20/2019",
-    "tag":["Packet Platform", "FAQ"]
-}
-</meta>-->
-
+![enable backend transfer](/images/packet-product-docs.jpg)
 
 # Getting Started
 
