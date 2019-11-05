@@ -71,7 +71,7 @@ Lastly, reboot the system, the new Proxmox kernel should automatically boot from
 
 
 #### Connect to the Proxmox Interface
-COnnect to the intercia via https://youripaddressL8006). The default username will be `root` and the password listed in the portal or if you have changed it, it would be that. Should you not recall the root password, [reset directions(found here)]
+COnnect to the intercia via https://youripaddress:8006). The default username will be `root` and the password listed in the portal or if you have changed it, it would be that. Should you not recall the root password, [reset directions(found here)]
 
 Once logged in, create a Linux Bridge called vmbr0, and add your first network interface to it. In this example it would be `bond0`. In short, move the IP addresses from bond0 to vmbr0s of `bond0` to vmbr0. 
 
