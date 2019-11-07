@@ -1,18 +1,24 @@
-<!--<meta>
+<!-- 
+<meta>
 {
     "title":"Elastic Block Storage",
-    "description":"Deploy block storage volumes",
-    "date": "09/20/2019",
-    "tag":["Elastic Block Storage", "Storage", "Block Storage"]
+    "description":"Deploying Block Storage on Packet",
+    "author":"Mo",
+    "github":"usrdev",
+    "email":"mo@usr.dev",
+    "date": "2019/11/07",
+    "tag":["Storage", "Block Storage", "Elastic Block Storage"]
 }
-</meta>-->
+</meta> 
+-->
 
+### Elastic Block Storage
 
-Packet's Block Storage service looks and smells a lot like Amazon’s EBS. You can create volumes of different performance profiles, leverage snapshot policies and more - all via our API or portal.  The service is highly redundant.
+To create a new volume, click on the 'Deploy Storage Volume' button.  On the following screen, give the volume a description, choose the size of the volume in GB, and select the location, then performance tier.
 
-Comparing our block storage service to similar offerings at other clouds, an important difference is that at Packet you don’t have the benefit of a platform-managed hypervisor layer (we only offer bare metal compute and never leave an agent or any other tools/software on your server after it is deployed).
+![elastic-block-storage](/images/elastic-block-storage/storage2.png)
 
-As such, there is a bit more you should know about how to troubleshoot or deal with any issues that may arise.  Check out the tips below.
+A snapshot is a differential copy of your volume made at a specific moment in time. If you have a 500GB volume, but only 250 GB of data on it, your snapshot is only 250 GB. With a snapshots, you are only billed for the changes to the original block device from the time the snapshot is made — as such, a policy of 5 snapshots may end up being only a small amount of storage if your rate of change on the device is low. Billing for all snapshots is at our lower $0.07/GB per month tier.
 
 ### Performance Tiers
 
@@ -23,29 +29,6 @@ When you need persistent storage, with built-in replication and snapshots, our b
 * **Premium Tier:** ($0.000223/GB per hour) - With 15,000 IOPS per volume this is targeted at higher I/O heavy workloads.
 
 
-### Use Cases
-
-While our Block Storage product is the perfect match for a wide variety of use cases, the first and most important step is to understand when *not* to use block storage at Packet.
-
-As a general rule of thumb, databases are not a good fit for our Block Storage, especially those that are not resilient due to minor hiccups.  While uncommon, even a small loss of connectivity to some databases can cause major issues.  
-
-If block storage doesn't meet your needs, we offer two other options, various local disk options (SSD's and NVMe Flash) on each server config. The s1.large storage-focused server includes 24 TB of SATA w/ SSD's for cache.
-
-
-
-### Deploying & Managing Block Volumes (Linux)
-
-Creating a storage volume
-
-If you have not yet created a volume and click on the Storage view within your Project, you would see the following message:
-
-
-To create a new volume, click on the 'Deploy Storage Volume' button.  On the following screen, give the volume a description, choose the size of the volume in GB, and select the location, then performance tier.   If you'd like to set up automated snapshots, you can do so via the optional snapshot settings button.
-
-
-### What are snapshots and how do they work?
-
-A snapshot is a differential copy of your volume made at a specific moment in time. If you have a 500GB volume, but only 250 GB of data on it, your snapshot is only 250 GB. With a snapshots, you are only billed for the changes to the original block device from the time the snapshot is made — as such, a policy of 5 snapshots may end up being only a small amount of storage if your rate of change on the device is low. Billing for all snapshots is at our lower $0.07/GB per month tier.
 
 ### Attach / Detach the Volume to the Server
 
@@ -53,6 +36,8 @@ After your volume is created, you need to route it to the server you would like 
 
 
 Once attached to your server, you will see the volume name, size & where it is located: 
+
+![elastic-block-storage](/images/elastic-block-storage/storage-attach-ui.png)
 
 
 ### Attach / Detach Scripts
