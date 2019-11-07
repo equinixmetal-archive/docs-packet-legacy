@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Layer 2 Overview",
+    "title":"Layer 2",
     "description":"A quick look at the layer 2 feature.",
     "date": "2019/09/20",
     "tag":["layer 2", "networking", "advanced"]
