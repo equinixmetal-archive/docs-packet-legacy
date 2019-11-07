@@ -1,9 +1,9 @@
 <!--<meta>
 {
-    "title":"Compute Classes",
-    "description":"Our various device type classes",
+    "title":"Overview",
+    "description":"Learn more about compute classes and custom configurations.",
     "date": "09/20/2019",
-    "tag":["Device Types", "Devices", "Compute Classes"]
+    "tag":["Device Types", "Devices", "Compute Classes", "Custom Configurations"]
 }
 </meta>-->
 

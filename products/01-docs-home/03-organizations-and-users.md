@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Organizations",
+    "title":"Organizations and Users",
     "description":"An overview of Packet organizations.",
     "date": "2019/09/28",
     "tag":["organizations", "accounts", "platform"]

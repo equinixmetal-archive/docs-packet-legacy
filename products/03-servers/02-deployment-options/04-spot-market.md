@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Deploy: Spot Market",
+    "title":"Spot Market",
     "description":"Deploying Devices in Spot Market",
     "date": "09/20/2019",
     "tag":["Spot Market", "Deploy"]
