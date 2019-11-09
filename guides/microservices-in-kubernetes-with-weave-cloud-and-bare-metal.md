@@ -1,13 +1,16 @@
-<!-- <meta>
+<!-- 
+<meta>
 {
     "title":"Explore Weave and Kubernetes",
-    "author":"Ronggur",
-    "description":"Some description goes here",
+    "description":"Use Weave Cloud to explore and troubleshoot a microservices app running in Kubernetes on Packet’s bare metal cloud.",
+    "author":"Ronggur Habibun",
+    "github":"ronggur",
     "email":"ronggur.mh@gmail.com",
     "date": "2019/06/06",
-    "tag":["containers", "networking"]
+    "tag":["Weave Cloud"]
 }
-</meta> -->
+</meta> 
+-->
 
 `Note: This post was prepared by our friends at [Weaveworks](https://weave.works).`
 
@@ -44,7 +47,7 @@ To begin, you’ll need to sign up for Weave Cloud and make a note of the Weave 
 2.  Sign up using either a Github, or Google account or use an email address.
 3.  Obtain the cloud service token from the user settings screen. You will use the token later on in this tutorial:
 
-![](/assets/images/giudes-kubernetes/image08.png)
+![obtain-token](/images/microservices-in-kubernetes-with-weave-cloud-and-bare-metal/obtain-token.png)
 
 Weave Cloud Token
 
@@ -55,7 +58,7 @@ Create a new account here at [Packet.com](https://www.packet.com/) (or login to
 
 **Next, you'll want to create three Ubuntu servers.  **From the Packet setup console, create three Ubuntu 16.04 servers with at least 8GB of memory on each.  For this tutorial, I used three “Type 0” servers, which at only $.05/hr should still be more than sufficient to run our sample app in Kubernetes.
 
-![](/assets/images/giudes-kubernetes/image05.png)
+![shop](/images/microservices-in-kubernetes-with-weave-cloud-and-bare-metal/shop.png)
 
 Defining a Project in Packet
 
@@ -174,7 +177,7 @@ On Packet.net there are few extra steps you must take to avoid collisions with t
 
 From within the Packet console, you can conveniently view, request and manage IP address blocks for all of your deployed servers.
 
-![](/assets/images/giudes-kubernetes/image01.png)
+![manage-ips](/images/microservices-in-kubernetes-with-weave-cloud-and-bare-metal/manage-ips.png)
 
 Manage IP Blocks from within Packet
 
@@ -286,7 +289,7 @@ Relaunch all of the probes by re-running the above command.
 
 Go to Weave Cloud, click Explore and then select the Pods view. To see the kubernetes containers, ensure that the Kube-system namespace is selected from the left-hand corner of the screen.
 
-![](/assets/images/giudes-kubernetes/image02.png)
+![explore](/images/microservices-in-kubernetes-with-weave-cloud-and-bare-metal/explore.png)
 
 Kubernetes in Weave Cloud
 
@@ -309,7 +312,7 @@ Check that all of the containers are appearing correctly:
 
 You can also watch as the Sock Shop containers spin up from within Weave Cloud by selecting the Containers view.
 
-![](/assets/images/giudes-kubernetes/image02.png)
+![explore](/images/microservices-in-kubernetes-with-weave-cloud-and-bare-metal/explore.png)
 
 The Sock Shop in Weave Cloud
 
@@ -329,7 +332,7 @@ The node port should be 30001, but you can check that by running:
 
 Next add few pairs of socks to the cart and then return to Weave Cloud.
 
-![](/assets/images/giudes-kubernetes/image06.png)
+![main-page](/images/microservices-in-kubernetes-with-weave-cloud-and-bare-metal/main-page.png)
 
 #### Interacting with Containers, Pods and Hosts
 
@@ -339,7 +342,7 @@ One of the most powerful features of Weave Cloud is the ability to interact with
 
 Select the Pods view and then enter ‘kube-api\` into the search field.  Click on the kube-api container to view its details and metrics.  From the container details panel, display the current Pods logs.  Popping out this window provides live stream of the logs as you investigate other areas of your app or cluster.
 
-![](/assets/images/giudes-kubernetes/image00.png)
+![logs](/images/microservices-in-kubernetes-with-weave-cloud-and-bare-metal/logs.png)
 
 #### Interact With Containers & Hosts in Real Time
 
@@ -347,7 +350,7 @@ Another powerful feature of Weave Cloud is the ability to interact directly with
 
 As an example, click on Hosts and select the Master node.  From the details panel that appears, select \`<\` to open a terminal.  From here you can type ‘kubectl’ commands or any UNIX command, as you troubleshoot issues with your running kubernetes cluster.  You can do the same with Containers and Processes.  For example, select the Cart container, click \`<\` to open a terminal and enter ‘top\` to see a list of all processes running inside that container.
 
-![](/assets/images/giudes-kubernetes/image04.png)
+![terminal](/images/microservices-in-kubernetes-with-weave-cloud-and-bare-metal/terminal.png)
 
 Running Commands inside of Container
 
@@ -359,7 +362,7 @@ With the Weave Cortex probes already connected in this tutorial, you can click o
 
 The query below displays the CPU usage by Pod:
 
-![](/assets/images/giudes-kubernetes/image07.png)
+![cpu-usage](/images/microservices-in-kubernetes-with-weave-cloud-and-bare-metal/cpu-usage.png)
 
 CPU Usage by Kubernetes Pods
 

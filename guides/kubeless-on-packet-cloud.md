@@ -1,14 +1,16 @@
-<!--<meta>
+<!--
+<meta>
 {
     "title":"Kubeless on Packet",
     "description":"Setup Kubeless on a bare metal K8s cluster",
-    "author":"Edo",
+    "author":"Edo Aria",
     "github":"ariaedo",
     "date": "2019/06/06",
     "email":"ronggur.mh@gmail.com",
     "tag":["kubeless", "another tag"]
 }
-</meta>-->
+</meta>
+-->
 
 _This post was originally posted by Bitnami's Sameer Naik on [Medium.com](https://medium.com/bitnami-perspectives/kubeless-on-packet-cloud-9e5605b8bb97)._
 
@@ -72,7 +74,7 @@ From the Packet cloud console create two more servers named `kube-worker-1` and 
 
 Next, invoke the `kubeadm join` command on each worker node to join the Kubernetes cluster. The same command that was obtained earlier from the output of `kubeadm init` command on the master node.
 
-![](/media/images/XP4W-kc1.png)
+![interface](/images/kubeless-on-packet-cloud/interface.png)
 
 From this point, unless specified otherwise, all listed commands should be executed on the master node as the `packet` user.  
 Check the status of the nodes in the cluster by executing the following command :

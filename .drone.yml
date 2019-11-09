@@ -4,8 +4,12 @@ type: docker
 name: Linters
 
 trigger:
-  branch:
-    - master
+  repo:
+    - packethost/docs
+  event:
+    - push
+    - pull-request
+
 
 steps:
   - name: write-good
