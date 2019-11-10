@@ -73,7 +73,7 @@ Worker tags:
 ![worker-tags](/images/kubernetes-cluster-autoscaler-on-packet/worker-tags.png)
 
 
-Once you have setup the nodepool with the appropriate Packet tags, we can now configure the autoscaler deployment. An example Deployment is given in [examples/cluster-autoscaler-deployment.yaml](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/cloudprovider/packet/examples/cluster-autoscaler-deployment.yaml).yaml but you’ll need to adjust the following arguments:
+Once you have setup the nodepool with the appropriate Packet tags, we can now configure the autoscaler deployment. An example Deployment is given in [examples/cluster-autoscaler-deployment.yaml](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/cloudprovider/packet/examples/cluster-autoscaler-deployment.yaml) but you’ll need to adjust the following arguments:
 
 | Argument         | Usage                                                                                                      |
 |------------------|------------------------------------------------------------------------------------------------------------|
