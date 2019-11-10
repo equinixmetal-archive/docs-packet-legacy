@@ -105,3 +105,6 @@ Now that you've created your custom image, you can deploy it by specifying the r
 ️The image_repo is the clone link of your github/lab repository, and the image tag should be the ID of your last git commit.
 
 In the portal you'll add the UserData using the "options" slide out.
+
+![deploy server](/images/custom-images/Deploy-Custom-Image-1.png)
+![add userdata](/images/custom-images/Deploy-Custom-Image-2.png)
