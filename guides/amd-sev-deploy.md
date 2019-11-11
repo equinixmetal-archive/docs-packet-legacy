@@ -1,3 +1,17 @@
+<!--
+<meta>
+{
+    "title":"AMD Sev with Anjuna",
+    "description":"Deploying AMD SEV with Anjuna",
+    "author":"mo",
+    "github":"usrdev",
+    "date": "2019/11/11",
+    "email":"mo@packet.com",
+    "tag":["AMD", "SEV"]
+}
+</meta>
+-->
+
 
 ![deploy-anjuna-logo](/images/amd-sev/anjuna-logo.png)
 
