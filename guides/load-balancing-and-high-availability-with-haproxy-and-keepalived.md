@@ -437,7 +437,7 @@ vrrp_instance VI_1 {
 
 vrrp_instance VI_2 {
     state MASTER
-    interface ens14f1	(This would be bond0 if servers have different interface names)
+    interface ens14f1	           (This would be bond0 if servers have different interface names)
     unicast_src_ip 10.99.181.141
     unicast_peer {
         10.99.181.129
