@@ -109,7 +109,7 @@ $ cd amd-epyc-packet
 ```
 ###### ⚠️ Note: You can choose your own name for the directory
 
-Next up, we will create three configuration files: `cloudinit.cfg`, `packet.tf`, and `userconfig.tf`
+Next up, we will create three configuration files: cloudinit.cfg, packet.tf, and userconfig.tf
 
 **cloudinit.cfg:** 
 ```
