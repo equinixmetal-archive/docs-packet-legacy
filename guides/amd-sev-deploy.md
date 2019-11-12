@@ -61,7 +61,7 @@ If you used the cloud-config script above when provisioning the server, you may 
 
 #### Basic host setup
 
-#### ⚠️ Note: SEV support is available in Linux kernel 4.16 and onwards.
+###### ⚠️ Note: SEV support is available in Linux kernel 4.16 and onwards.
 
 Run the following commands to verify that the system supports SEV:
 
@@ -107,7 +107,7 @@ Follow [these steps](https://github.com/AMDESE/AMDSEV) to clone and build versio
 $ mkdir amd-epyc-packet
 $ cd amd-epyc-packet
 ```
-**NOTE:** You can choose your own name for the directory
+###### ⚠️ Note: You can choose your own name for the directory
 
 Next up, we will create three configuration files: `cloudinit.cfg`, `packet.tf`, and `userconfig.tf`
 
@@ -184,7 +184,7 @@ Provision an instance by running:
 $ terraform apply
 ```
 
-**NOTE:** You can later on destroy the instance by running: 
+###### ⚠️ Note: You can later on destroy the instance by running: 
 ```
 $ terraform destroy
 ```
