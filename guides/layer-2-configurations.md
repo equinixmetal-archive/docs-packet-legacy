@@ -3,8 +3,8 @@
 {
     "title":"Layer 2 Configurations",
     "description":"How to configure some possible layer 2 environments.",
-    "author":"Zalkar Ziiaidin",
-    "github":"zalkar-z",
+    "author":"Enkel Prifti",
+    "github":"enkelprifti98",
     "date": "2019/10/25",
     "email":"zak@packet.com",
     "tag":["layer 2", "networking", "advanced"]
@@ -12,33 +12,41 @@
 </meta>
 -->
 
-Layer 2 feature lets you provision between one and twelve (per project) project-specific layer 2 networks.  For more details about the basics of this feature, please read our [overview article](/products/network/advanced/layer-2-overview.md).
+# Creating private networking environments on Packet
+
+## Introduction
+
+Private cloud environments are different on Packet compared to other cloud providers. There are essentially two ways of achieving private connectivity between different hosts on Packet. 
+
+The first method is by utilizing the private IPv4 space (10.x.x.x) that is assigned and configured in each server instance on the same project by default so you don't have to do any additional configuation. If you need cross datacenter private connectivity, you can enable Backend Transfer but be aware that you will be charged for bandwidth traffic at a reduced rate of $0.03 / GB.
+
+The second method which we will be covering in this guide is by utilizing Packet's Layer 2 VLAN feature which lets you create more traditional private / hybrid networking environments. The Layer 2 feature lets you provision between one and twelve (per project) project-specific layer 2 networks (VLANs). For more details about the basics of this feature, please read our [overview article](/products/04-network/03-advanced/03-layer-2.md).
 
 
-### Common Use Cases
-
-Over time, this feature may evolve to support security, provisioning updates, and other use cases. While there are other possibilities, we have outlined steps to achieve three technical scenarios below:
-
-* Hybrid mode: Leaving eth0 in bond0 and adding a single VLAN to eth1.
-* Hybrid mode: Leaving eth0 on bond0 and adding (trunking) multiple VLANs to eth1.
-* Hybrid and pure L2: Dismantling bond0 on one or more nodes and using a single node in hybrid mode as an internet gateway.  
-
-
-**Please Note:** For the purposes of this documentation, we are using eth0/eth1 to represent the first and second NIC. The actual interface name will depend on what operating system and hardware config you are using.**
-
-
-### Bonding on Packet
-By default, each server has two interfaces that are setup in an LACP bond that is configured both in the Host OS and on the switch:  
+## Bonding on Packet
+Before we get to the nitty gritty details of the guide, it's important to understand the networking configuration of Packet servers. By default, each server has two networking interfaces that are setup in an LACP (mode 4) bond that is configured both in the Host OS and on the switch.  
 
 ![bonding](/images/layer-2-configurations/bonding.png)
 
-### Steps for Common Configurations
+Packet allows users to change the networking mode of each server from the default Layer 3 Bonded mode to either Hybrid or Layer 2 networking. In Hybrid mode, the first interface is left in the LACP bond but the second interface is separated from the bond so that you can attach VLANs to it. In Layer 2 mode, you can either have both interface in a bonded configuration or you can have both interfaces separated so that you can attach different VLANs to each interface.
 
-**Configuration #1: Leaving eth0 in bond0 and adding a single VLAN to eth1.**  
 
-In this example, you will need at least 2 servers (m1.xlarge or c1.xlarge) in the same project and at least 1 Virtual Network. We will be removing eth1 from bond0, attaching a VLAN to it, and pinging between the hosts.
+## Common Use Cases
 
-**Note:** this is the only layer 2 configuration available on the x1.small server type.
+The following are different scenarios that we will be covering in this guide:
+
+* Hybrid mode: Leaving the first interface in the bond and adding a single VLAN to the second interface.
+* Hybrid mode: Leaving the first interface in the bond and adding (trunking) multiple VLANs to the second interface.
+* Hybrid and pure L2: A cluster of private hosts in layer 2 mode and using a single node in hybrid mode as an internet gateway.  
+
+
+**Please Note:** For the purpose of this guide, we are using eth0/eth1 to represent the first and second interfaces. The actual interface name will depend on what operating system and server configuration you are using.**
+
+## Configuration #1: Leaving eth0 in bond0 and adding a single VLAN to eth1. 
+
+In this example, you will need at least 2 servers in the same project and at least 1 Virtual Network (VLAN). We will be removing eth1 from bond0, attaching a VLAN to it, and pinging between the hosts.
+
+**Note:** this is the only layer 2 configuration available on the x1.small.x86 server type.
 
 You will still be able to connect to the server via its public IPv4/IPv6 addresses that are visible in the portal/API because we are leaving eth0 and bond0 intact.  
 
