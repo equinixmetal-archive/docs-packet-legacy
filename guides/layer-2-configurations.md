@@ -79,7 +79,7 @@ Bring down the eth1 interface:
 
 Configure `/etc/sysconfig/network-scripts/ifcfg-eth1` on each server, changing the IPADDR field to the desired IP and network. Ensure the IP addresses are different on each host, but belong to the same network.
 
-````
+```
 DEVICE=eth1
 ONBOOT=yes
 HWADDR=e4:1d:2d:11:22:33
@@ -87,12 +87,12 @@ IPADDR=192.168.1.2
 NETMASK=255.255.255.0
 NETWORK=192.168.1.0
 BOOTPROTO=none
-````
+```
 
 Bring up the interface:  
 `sudo ifup eth1`
 
-#### Ubuntu/Debian
+#### Ubuntu / Debian
 
 make sure eth1 has been removed from `bond0`
 
@@ -108,12 +108,12 @@ Bring down the eth1 interface:
 
 Configure /etc/network/interfaces on each server, changing the IP address to the desired IP from your chosen block:
 
-````
+```
 auto eth1
 iface eth1 inet static
     address 192.168.1.2
     netmask 255.255.255.0
-````
+```
 
 Bring up the interface:  
 `sudo ifup eth1`
@@ -132,9 +132,9 @@ PING 192.168.1.3 (192.168.1.3) from 192.168.1.4 eth1: 56(84) bytes of data.
 rtt min/avg/max/mdev = 0.106/0.110/0.115/0.009 ms
 ```
 
-**Please Note:** It is not recommended to use the subnet starting with 10.x.x.x as we use this for server's private networking and collisions could occur if you used the same private addressing as was configured on your host.
+**Please Note:** It is not recommended to use the subnet starting with 10.x.x.x as we use this for the server's private networking and collisions could occur if you used the same private addressing as was configured on your host.
 
-### Leaving eth0 in bond0 and adding multiple VLANs to eth1
+## Configuration #2: Leaving eth0 in bond0 and adding multiple VLANs to eth1
 
 In this case, we will be keeping the same configuration for eth0, except we will be assigning a second VLAN to eth1.
 
@@ -149,7 +149,7 @@ Install the prerequisites for VLANs:
 ```
 sudo modprobe 8021q
 sudo echo "8021q" >> /etc/modules
-````
+```
 
 bring down eth1:
 
@@ -213,7 +213,7 @@ sudo ifup eth1.1000
 sudo ifup eth1.1001
 ```
 
-### Combined hybrid and layer 2 modes
+## Configuration #3: Combined hybrid and layer 2 modes
 
 ![pure layer 2](/images/layer-2-configurations/config-3.png)
 ![hybrid network mode](/images/layer-2-configurations/config-1.png)
@@ -280,7 +280,7 @@ At this point your hybrid and isolated node can talk to each other, but the isol
 
 First, make sure IP forwarding is enabled on the hybrid node.
 
-`sysctl net.ipv4.ip\_forward=1`
+`sysctl net.ipv4.ip_forward=1`
 
 Now add a new IP masquerade rule to the NAT table with iptables. We want this to route traffic from any of our private IPs through the internet facing network interface, in this case, bond0.
 
@@ -288,7 +288,7 @@ Now add a new IP masquerade rule to the NAT table with iptables. We want this to
 
 Now your isolated node should be able to ping outside the network.
 
-````
+```
 ping 8.8.8.8  
 PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.  
 64 bytes from 8.8.8.8: icmp\_seq=1 ttl=120 time=1.85 ms  
@@ -296,4 +296,6 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 64 bytes from 8.8.8.8: icmp\_seq=3 ttl=120 time=1.87 ms  
 64 bytes from 8.8.8.8: icmp\_seq=4 ttl=120 time=1.86 ms  
 64 bytes from 8.8.8.8: icmp\_seq=5 ttl=120 time=1.81 ms
-````
+```
+
+Congratulations! You've now deployed private / hybrid networking environments successfully on Packet.
