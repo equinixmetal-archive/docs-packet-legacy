@@ -1,10 +1,12 @@
 <!--
 <meta>
 {
-    "title":"PLoad Balancing and High Availability with HAProxy and Keepalived",
-    "author":"enkel",
+    "title":"Load Balancing and High Availability with HAProxy and Keepalived",
+    "description":"",
+    "author":"Enkel Prifti",
+    "github":"enkelprifti98",
     "date": "2019/11/13",
-    "email":"@enkel @packet.com",
+    "email":"enkel@packet.com",
     "tag":["HA", "LB", "HAPRoxy"]
 }
 </meta>
