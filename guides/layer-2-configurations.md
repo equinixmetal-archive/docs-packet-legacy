@@ -16,7 +16,7 @@
 
 ## Introduction
 
-Private cloud environments are different on Packet compared to other cloud providers. There are essentially two ways of achieving private connectivity between different hosts on Packet. 
+Private networking environments are different on Packet compared to other cloud providers. There are essentially two ways of achieving private connectivity between different hosts on Packet. 
 
 The first method is by utilizing the private IPv4 space (10.x.x.x) that is assigned and configured in each server instance on the same project by default so you don't have to do any additional configuation. If you need cross datacenter private connectivity, you can enable Backend Transfer but be aware that you will be charged for bandwidth traffic at a reduced rate of $0.03 / GB.
 
