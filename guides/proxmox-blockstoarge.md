@@ -7,7 +7,7 @@
     "github":"usrdev",
     "date": "2019/11/12",
     "email":"mo@packet.com",
-    "tag":["Proxmox", "EBS", "BlockStorage]
+    "tag":["Proxmox", "EBS", "BlockStorage"]
 }
 </meta>
 -->
