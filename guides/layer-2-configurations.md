@@ -20,7 +20,7 @@ Private networking environments are different on Packet compared to other cloud 
 
 The first method is by utilizing the private IPv4 space (10.x.x.x) that is assigned and configured in each server instance on the same project by default so you don't have to do any additional configuation. If you need cross datacenter private connectivity, you can enable Backend Transfer but be aware that you will be charged for bandwidth traffic at a reduced rate of $0.03 / GB.
 
-The second method which we will be covering in this guide is by utilizing Packet's Layer 2 VLAN feature which lets you create more traditional private / hybrid networking environments. The Layer 2 feature lets you provision between one and twelve (per project) project-specific layer 2 networks (VLANs). For more details about the basics of this feature, please read our [overview article](/products/04-network/03-advanced/03-layer-2.md).
+The second method which we will be covering in this guide is by utilizing Packet's Layer 2 VLAN feature which lets you create more traditional private / hybrid networking environments. The Layer 2 feature lets you provision between one and twelve (per project) project-specific layer 2 networks (VLANs). However, this option does not offer the ability to have private cross datacenter connections. For more details about the basics of this feature, please read our [overview article](/products/04-network/03-advanced/03-layer-2.md).
 
 
 ## Bonding on Packet
