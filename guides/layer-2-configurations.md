@@ -24,7 +24,7 @@ The second method which we will be covering in this guide is by utilizing Packet
 
 
 ## Bonding on Packet
-Before we get to the nitty gritty details of the guide, it's important to understand the networking configuration of Packet servers. By default, each server has two networking interfaces that are setup in an LACP (mode 4) bond that is configured both in the Host OS and on the switch.  
+Before we get to the nitty gritty details of the guide, it's important to understand the [networking configuration](/products/04-network/01-overview.md) of Packet servers. By default, each server has two networking interfaces that are setup in an LACP (mode 4) bond that is configured both in the Host OS and on the switch.  
 
 ![bonding](/images/layer-2-configurations/bonding.png)
 
