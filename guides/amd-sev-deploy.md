@@ -12,11 +12,6 @@
 </meta>
 -->
 
-
-![deploy-anjuna-logo](/images/amd-sev/anjuna-logo.png)
-
-
-
 AMD SEV is a powerful technology that provides an unprecedented level of security for confidential workloads. [Anjuna](http://.anjuna.io) abstracts the low-level details and further leverages SEV to provide a hardware-grade security perimeter around the application itself, eliminating concerns about the security of the host itself, and potential attackers that obtain full control of the host OS or hypervisor.
 
 ## Deploying AMD SEV enabled instances on Packet with Anjuna
@@ -190,3 +185,9 @@ $ terraform destroy
 ```
 from within Terraform directory. 
 
+<br> 
+<br>
+<br>
+<br>
+
+![deploy-anjuna-logo](/images/amd-sev/anjuna-logo.png)

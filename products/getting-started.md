@@ -1,5 +1,3 @@
-![enable backend transfer](/images/packet-product-docs.jpg)
-
 # Getting Started
 
 ### Our History
