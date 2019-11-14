@@ -11,7 +11,6 @@
 }
 </meta>
 -->
-# Load Balancing and High Availability with HAProxy and Keepalived
 
 ## Introduction
 
