@@ -1,9 +1,9 @@
 <!--<meta>
 {
-    "title":"Deployment: Batch",
-    "description":"Deploying devices in Batch,
+    "title":"Batch Deployment",
+    "description":"Deploying devices in Batch",
     "date": "09/20/2019",
-    "tag":["Deploy", "Btach Deployment"]
+    "tag":["Deploy", "Batch Deployment"]
 }
 </meta>-->
 

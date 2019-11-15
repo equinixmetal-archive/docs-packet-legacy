@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Resque Mode",
+    "title":"Reset Root Password (Rescue Mode)",
     "description":"How to access your server when it becomes unreachable and you cannot use our SOS (Serial Over SSH) service.",
     "date": "2019/09/28",
     "tag":["rescue", "password", "reset"]

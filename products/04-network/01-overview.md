@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Network: Overview",
+    "title":"Overview",
     "description":"Overview of our Network Offeringst",
     "date": "09/20/2019",
     "tag":["Network", "Private Network"]
@@ -20,9 +20,9 @@ Each server has dedicated dual network connections going into two Top-of-Rack (T
 
 | Type  | Network |
 | ------------- | ------------- |
-| t1.small|  1 Gbps Network (2 × Intel NICs 1Gbps w/ TLB) full hardware redundancy but no active/active bond.
+| t1.small|  2.5 Gbps Network (2 × Intel NICs 2.5Gbps w/ TLB) full hardware redundancy but no active/active bond.
 | c1.small|  2 Gbps Bonded Network (2 × Intel NICs 1Gbps w/ LACP) full hardware redundancy and active/active bond.
-| x1.small| 10 Gbps Network (Intel X710 NIC)
+| x1.small| 10 Gbps Network (2 x Intel X710 NICs 10 Gbps w/ TLB) full hardware redundancy but no active/active bond.
 | m1.xlarge| 20 Gbps Bonded Network (2 × Mellanox ConnectX NICs, 10Gbps w/ LACP) full hardware redundancy and active/active bond.
 |c1.xlarge| 20 Gbps Bonded Network (2 × Mellanox ConnectX NICs, 10Gbps w/ LACP) full hardware redundancy and active/active bond.
 |s1.large|20 Gbps Bonded Network ( 2 × Mellanox ConnectX NICs, 10 Gbps w/ LACP) full hardware redundancy and active/active bond.
