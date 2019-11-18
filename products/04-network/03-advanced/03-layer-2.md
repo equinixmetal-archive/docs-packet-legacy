@@ -13,15 +13,15 @@ Our network is designed around a pure Layer 3 network topology, where we bring a
 
 A few notes to help set the stage:
 
-* availability in all datacenters,
-* available on all server types except our t1.small & c1.small,
-* virtual networks are confined to a single datacenter.
+* Availability in all datacenters.
+* Available on all server types except our t1.small.x86 and c1.small.x86. The x1.small.x86 supports hybrid mode only.
+* Virtual networks are confined to a single datacenter.
 * There are no fees for the use of the Layer 2 feature.
 
 
 **Network configuration types**
 
-When converting from layer 3 to another network type there are 3 possible configurations to choose from: hybride mode, bonded layer two, or layer 2 with a broken network bond.
+When converting from layer 3 to another network type there are 3 possible configurations to choose from: hybrid mode, bonded layer two, or layer 2 with a broken network bond.
 
 In hybrid mode only one network interface is removed from bond and placed in layer two mode. VLANs can then be attached to this interface for Layer 2 connectivity. This preserves layer 3 connectivity to the server via bond0, so it can be accessed via the public IP.
 
