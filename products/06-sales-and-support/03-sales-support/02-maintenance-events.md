@@ -6,7 +6,6 @@
     "tag":["Sales", "Maintenance Events"]
 }
 </meta>-->
-Content coming soon...
 
 # Scheduled maintenance
 We do our best to ensure maximum uptime at Packet, but sometimes we still need
