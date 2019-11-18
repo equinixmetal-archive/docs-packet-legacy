@@ -27,9 +27,12 @@ may not receive prior warning of the maintenance event or related outages.
 
 ### Email Notifications
 If we have determined that any packet services you are using will be impacted by
-a scheduled maintenance event you will receive a notice by email of the event.
-If your organization was assigned a Packet account representative then they may
-contact you directly.
+a scheduled maintenance event you will receive a notice by email informing you
+of which servers will be effected and how. If your organization was assigned a
+Packet account representative then they may contact you directly. If multiple
+parties within your organization must be informed of any maintenance events that
+may effect your servers or service, then you may add a centralized, maintenance
+email to your packet organization via the organization settings.
 
 ### Status Page
 In addition to user emails, maintenance events will be announced on our
