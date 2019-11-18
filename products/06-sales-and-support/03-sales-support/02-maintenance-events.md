@@ -6,6 +6,7 @@
     "tag":["Sales", "Maintenance Events"]
 }
 </meta>-->
+Content coming soon...
 
 # Scheduled maintenance
 We do our best to ensure maximum uptime at Packet, but sometimes we still need
@@ -26,7 +27,7 @@ may not receive prior warning of the maintenance event or related outages.
 
 ### Email Notifications
 If we have determined that any packet services you are using will be impacted by
-a scheduled maintenance event you will receive a notice by email informing you
+a scheduled maintenance event, you will receive a notice by email informing you
 of which servers will be effected and how. If your organization was assigned a
 Packet account representative then they may contact you directly. If multiple
 parties within your organization must be informed of any maintenance events that
