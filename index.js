@@ -26,8 +26,9 @@ var contents = fs.readFileSync('./test.md', 'utf8');
 
 // console.log(getValueByKey(contents, "images"));
 
-var paragraph = 'The quick brown fox jumps over the lazy dog. It barked.';
-var regex = /!\images/g;
+var regex = /(\!\[.+\]\(.+\))/g;
 var found = contents.match(regex);
 
-console.log(found);
+for (var i = 0; i < found.length; i++) {
+    console.log(found[i], typeof[found[i]]);
+}
