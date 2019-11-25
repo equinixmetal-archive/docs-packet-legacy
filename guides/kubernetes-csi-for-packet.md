@@ -79,4 +79,4 @@ kubectl -n kube-system apply -f deploy/kubernetes/node.yaml
 kubectl -n kube-system apply -f deploy/kubernetes/controller.yaml
 ```
 
-or by using the Packet CSI [Helm Chart for CSI](https://github.com/packet-labs/helm-charts/).
+or by using the Packet [Helm Chart for CSI](https://github.com/packet-labs/helm-charts/).
