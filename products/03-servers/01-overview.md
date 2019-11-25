@@ -7,6 +7,10 @@
 }
 </meta>-->
 
+As our server lineup grows, it has become harder to scale the very simplistic naming convention we started with (e.g. Type 1, Type 2, etc).
+
+While we deeply value simplicity, we place a premium on clarity.  As such, to help users identify and leverage the right configurations more easily, we are introducing Classes in February 2018.
+
 #### What are Classes?
 
 Classes are groupings derived from common use cases.  If you're an AWS user, this will seem pretty familiar.  Packet organizes servers into the following classes:
@@ -41,34 +45,33 @@ However, new instances (such as our AMD configuration introduced in February, 20
 
 #### List of All Servers / Names
 
-The following represents our current lineup of servers.  Previous names are mentioned in parentheses.  
+The following represents our current lineup of servers, publicly available in February 2018.  Previous names are mentioned in parentheses.  
 
 ---
 __Tiny (t)__
-* t1.small.x86
+* t1.small
 
 __Compute (c)__
-* c1.small.x86
-* c2.medium.x86
-* c3.medium.x86
+* c1.small
+* c2.medium
 * c1.large.arm
 * c2.large.arm
-* c1.xlarge.x86
+* c1.xlarge
 * c1.large.arm.xda
 
 __GPU (g)__
-* g2.large.x86
+* g2.large
 
 __Memory (m)__
-* m1.xlarge.x86
-* m2.xlarge.x86
+* m1.xlarge
+* m2.xlarge
 
 __Network (n)__
-* n2.xlarge.x86
+* There are no 'n' class servers yet.
 
 __Storage (s)__
-* s1.large.x86
+* s1.large
 
 __Accelerator (x)__
-* x1.small.x86
-* x2.xlarge.x86
+* x1.small
+* x2.xlarge
