@@ -3,11 +3,11 @@
 {
     "title":"Proxmox & Block Storage",
     "description":"Utilizing Block Storage with Proxmox",
-    "author":"mo",
+    "author":"Mo Lawler",
     "github":"usrdev",
     "date": "2019/11/12",
     "email":"mo@packet.com",
-    "tag":["Proxmox", "EBS", "BlockStorage]
+    "tag":["Proxmox", "EBS", "BlockStorage"]
 }
 </meta>
 -->
