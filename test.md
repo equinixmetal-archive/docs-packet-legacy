@@ -1,71 +1,71 @@
 <!--<meta>
 {
-    "title":"Integrations & Libraries ",
-    "description":"A quick look at our various API integrations.",
-    "date": "2019/09/28",
-    "tag":["API", "Integrations", "Libraries"]
+    "title":"Custom iPXE",
+    "description":"Setting Up & Using Custom PXE on Packet",
+    "date": "09/20/2019",
+    "tag":["iPxe", "Custom OS", "Custom PXE"]
 }
 </meta>-->
 
-![pr12](/images/api-integrations/Project-ID.png)
-![pr12%](/images/api-integrations/Project-ID.png)
-![pr12%](/images/api-integrations/Project-ID.png)
+### Introduction
 
-Packet was built for a developer-centric world, which means that our API is the heart and soul of the platform. In fact, the Packet portal is just a consumer of our API - so anything you can do in the portal you can also do via the API! (protip: “undocumented” api calls can be found and used by using your browser’s inspection console)
+Packet supports passing custom iPXE scripts during provisioning, which allows you to install a custom operating system manually, or via automated kickstart.
 
-Users can also leverage a wide range of integrations and tooling - some that we’ve produced (like our Docker Machine driver and various API libraries) and others that are supported by their respective communities (like Docker Cloud, Terraform, or Ansible).
+Since we don’t test any manually installed operating system, it goes without saying that you’ll need to be familiar with our [S.O.S. and rescue mode](https://support.packet.com/kb/articles/rescue-mode) services in case you need to troubleshoot your server.
 
-Interacting with Packet bare metal is a lot like dealing with VM’s at a public cloud.  So if you are comfortable with AWS or Digital Ocean then working with Packet should feel familiar.
+### Step-by-Step Usage
 
-### Prerequisites
+Select the "Custom iPXE" operating system from the portal, or the custom_ipxe slug if using the API.
 
-The first thing you’ll want to do once you’ve signed up and added your SSH key, is to grab an API key. Your API keys operate with all the permissions your user account in the portal does, so be sure to keep them safe. Name your keys something that will remind you where you are using them, e.g. the name of a workstation or application.
+![deploy iPXE 1](/images/custom-ipxe/Deploy-iPXE-1.png)
 
-### Project Level API Key
+If you have your iPXE script hosted at a publicly accessible http(s) location, put the URL to your script in the text field, or use the ipxe_script_url API parameter. When we serve up iPXE during the boot process we will chain-load your iPXE script URL.  
 
-Limit API access  to a particular project. To create one, go to your specific project, and then project settings as shown below.
+![deploy iPXE 2](/images/custom-ipxe/Deploy-iPXE-2.png)
 
-![project settings](/images/api-integrations/Project-API-Key.png)
+Should the device fail during ipxe boot, with your device set to persistently boot from iPXE you can edit your iPXE URL  reboot the device to try again.
 
-### User Level API Key
+![deploy options 2](/images/custom-ipxe/Deploy-Options-2.png)
 
-User level API permits complete access to all projects/ORGs assigned to the particular user. To create one, click user icon top right then click API Keys.
+Alternatively, you can pass the contents of your iPXE script directly via user-data with the #!ipxe hashbang. User data is also a feature in which you can edit should your provisioning with iPXE fail.
 
-![user API key](/images/api-integrations/User-API-key.png)
+![deploy options 1](/images/custom-ipxe/Deploy-Options-1.png)
 
-### Obtain project ID
+After serving up iPXE via DHCP, the device will be marked as active in our API and portal. Since the server is sitting on the Bootloader Options and it has no ssh access, we will have to use our [Console Access](/product/servers/how-to-deploy/sos-serial-over-ssh.md).
 
-The next thing that you need to know is that most integrations require a project ID, so once you’ve created your first project, navigate to the settings area for that project to find the project ID.
+`ssh device-id@sos.facility-code.packet.net`
 
-![project ID](/images/api-integrations/Project-ID.png)
+### Netboot.xyz
 
-### Consuming the API
+If you're using netboot.xyz to manually install your operating system, once you connect to our S.O.S. service, you will see the following:
 
-Everything that you with Packet, you can do via our API, which is modern, RESTful and easy to use!
+![netboot.xyz](/images/custom-ipxe/Netboot.xyz.png)
 
-* __API Docs:__ check out our API [documentation](https://www.packet.com/developers/api/).
-* __API Libraries:__ browse our full list of [official API clients](https://www.packet.com/developers/integrations/).
-* __DevOps Tools:__ we integrate with a broad array of [popular tools](https://www.packet.com/developers/integrations/).
-* __CLI:__ interact with our API through our [official command line interface](https://github.com/packethost/packet-cli).
+For more information about each of the OSes, you can go to [netboot.xyz](https://netboot.xyz/)
 
+If the operating System is not listed there, you can install via ISO by selecting the iPXE shell option and enter the following;
 
-No matter how you're interacting with our API, there are a few things to point out that will help you get started on the right foot:
+```
+kernel https://boot.netboot.xyz/memdisk iso raw
+initrd http://url/to/iso
+boot
+```
 
-* Servers are called "Plans" in the API, and are specified with slugs that start with “baremetal”, e.g. “c1.small.x86” represents our c1.small server. You can get the full list of available plans by calling the [/plans endpoint](https://www.packet.com/developers/api/devices/#devices-plans).  
-* Our Block Storage service is managed in the block-storage name space, the actual [block storage instances](https://www.packet.com/developers/api/volumes/) are referred to as "volumes" there.  
-* IP's are managed in a few places in the API. You can view the list of them in the projects namespace and you can assign/unassigned them to devices in the devices namespace.
-* You can also query the [capacity endpoint](https://www.packet.com/developers/api/capacity/#capacity-capacity) to get a status on   availability of server types in various facilities.
+If it fails during initramfs trying to load the CD device, update the install media to look for install media via the memdisk. More information can be found about this issue [here](https://www.reversengineered.com/2016/01/07/booting-linux-isos-with-memdisk-and-ipxe/).
 
-### Orchestration Tools
+### Persisting PXE
 
-A lot of users interact with our platform through tools like Ansible, Terraform or Libcloud.  While each of these tools have their own special approach, they essentially help you manage infrastructure across environments and cloud providers.
+When provisioning the Custom iPXE operating system kicks off, we set the next boot option to PXE on first boot.  By default, this PXE process only happens once on the first boot. To set your device to continuously boot to iPXE first, you can edit it under 'server actions' through the customer portal.
 
-Packet has helped write drivers (often called 'providers') for these tools, which means there is native support available. A good example is [Terraform](https://www.terraform.io/docs/providers/packet/).
+![](/images/custom-ipxe/Persisting-PXE.png)
 
-You can also take a loot at our [full list of orchestration tools](https://www.packet.com/developers/integrations/).
+If true, PXE will persist as the first boot option past initial provisioning reboots. This is great for testing your iPXE provisioning script and lays the foundation for future, "always-pxe-based OS's" on Packet.
 
-### External Platforms
+### Custom iPXE Usage Notes
 
-This is the easiest of them all!
+*   If you would like to interact with your device via S.O.S. to perform a manual install and are not using netboot.xyz, our x86 servers require console=ttyS1,115200n8, and our aarch64 servers require console=ttyAMA0,115200.
+*   DHCP is available during a Custom iPXE device's entire life, so you can get network configured via DHCP and then setup networking statically in the OS by discovering the IP address information from our ec2-style metadata service. From the host server, run `curl https://metadata.packet.net/metadata`.
+*   We load up our own iPXE build which chain-loads a Packet-managed /auto.ipxe script that will serve up either the chain-loaded iPXE script URL that you specify or the #!ipxe script if you've passed in your script directly via userdata.
+*   We set the variable set ipxe\_cloud\_config packet prior to any chain-loading or running your iPXE script. You can use this to perform Packet-specific iPXE commands if you want to maintain a unified iPXE script.
 
-A number of platforms, such as Docker Cloud, Cloud66, Containership, and StackpointCloud have directly integrated with the Packet API.  This means you simply need to have an active Packet account and an API key to get started. Grab your API key from the Packet portal, provide it in the portal of the integration you’re working with, and you should be off to the races.
+**_Please Note_**: If you chain-load your own iPXE build/version, you'll likely lose the ipxe_cloud_config variable._
