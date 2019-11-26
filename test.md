@@ -9,7 +9,7 @@
 
 ![pr12](/images/api-integrations/Project-ID.png)
 ![pr12%](/images/api-integrations/Project-ID.png)
-![pr12---==+#@](/images/api-integrations/Project-ID.png)
+![pr12%](/images/api-integrations/Project-ID.png)
 
 Packet was built for a developer-centric world, which means that our API is the heart and soul of the platform. In fact, the Packet portal is just a consumer of our API - so anything you can do in the portal you can also do via the API! (protip: “undocumented” api calls can be found and used by using your browser’s inspection console)
 
