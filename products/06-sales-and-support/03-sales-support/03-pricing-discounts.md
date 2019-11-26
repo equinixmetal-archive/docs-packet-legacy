@@ -13,5 +13,5 @@ Packet’s standard pricing for public cloud services like [compute](https://www
 
 For our public cloud we provide discounts based upon both volume and length of commitment. You can secure a quote from our sales team (just hit us up via live chat, or fill out a [contact form](https://packet.com/contact)) for contracts that are based on monthly, annual or multi-year terms. For those that need more flexibility, we also offer discounts based upon revenue commitments. 
 
-With our Enterprise Edge cloud we also offer a variety of custom deployment options, including private facilities, non-standard infrastructure and various software tools.  Please contact us to schedule a conversation.
+With our Enterprise Edge cloud we also offer a variety of custom deployment options, including private facilities, non-standard infrastructure and various software tools.  [Please contact us to schedule a conversation](https://packet.com/contact).
 
