@@ -3,10 +3,6 @@
 {
     "title":"Resources for deploying Kubernetes on Packet",
     "description":"Deploying Kubernetes on Packet",
-    "author":"Joseph Marhee",
-    "github":"jmarhee",
-    "date": "2019/11/27",
-    "email":"joseph@packet.com",
     "tag":["Kubernetes"]
 }
 </meta>
