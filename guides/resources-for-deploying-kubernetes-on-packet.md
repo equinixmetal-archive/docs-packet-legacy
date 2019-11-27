@@ -36,7 +36,8 @@ Kubernetes is free, but sometimes deploying and managing it takes work.  A numbe
 
 ## Commercial Deployment Solutions
 
-* [Stackpoint.io](https://stackpoint.io): Packet is the only bare metal provider supported by Stackpoint, which offers a universal control plane for managed Kubernetes. 
+* [Loodse](https://www.loodse.com/): Enterprise software that automates multicloud, on-prem, and edge operations with a single management UI for Kubernetes.
+* [NetApp Kubernetes Service](https://stackpoint.io): Packet is the only bare metal provider supported by Stackpoint, which offers a universal control plane for managed Kubernetes. 
 * [Platform9](https://platform9.com): Packet works closely with Platform9, a managed cloud provider, to enable users with Kubernetes, Openstack, and Serverless solutions.
 * [Cloud66](https://www.cloud66.com/): London-based Cloud66 offers a managed Kubernetes container service called Maestro, which is tested against Packet.
 * [RedHat OpenShift](https://www.openshift.com/): OpenShift is an open source container application platform by Red Hat based on the Kubernetes container orchestrator for enterprise app development and deployment.
