@@ -1,3 +1,17 @@
+<!--
+<meta>
+{
+    "title":"Resources for deploying Kubernetes on Packet",
+    "description":"Deploying Kubernetes on Packet",
+    "author":"Joseph Marhee",
+    "github":"jmarhee",
+    "date": "2019/11/27",
+    "email":"joseph@packet.com",
+    "tag":["Kubernetes"]
+}
+</meta>
+-->
+
 # Resources for deploying Kubernetes on Packet.
 
 With modern web services, users expect applications to be available 24/7, and developers expect to deploy new versions of those applications several times a day. Containerization helps package software to serve these goals, enabling applications to be released and updated in an easy and fast way without downtime.
