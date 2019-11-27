@@ -3,7 +3,7 @@
     "title":"Legal Overview",
     "description":"Learn more about our legal terms",
     "date": "11/26/2019",
-    "tag":["ToS,"Terms","GDPR"]
+    "tag":["ToS","Terms","GDPR"]
 }
 </meta>-->
 
