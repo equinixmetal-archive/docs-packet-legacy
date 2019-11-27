@@ -5,7 +5,6 @@
     "description":"Extending Storage Volume on Packet",
     "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
-    "date": "2019/10/25",
     "email":"zak@packet.com",
     "tag":["Extending", "Storage", "Blockstorage"]
 }

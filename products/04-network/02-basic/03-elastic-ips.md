@@ -2,7 +2,6 @@
 {
     "title":"Elastic IPs",
     "description":"Setting Up & Using Elastic IPs",
-    "date": "09/20/2019",
     "tag":["Network", "Elastic IPs"]
 }
 </meta>-->

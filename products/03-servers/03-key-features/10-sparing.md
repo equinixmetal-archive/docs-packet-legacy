@@ -2,7 +2,6 @@
 {
     "title":"Sparing",
     "description":"Learn more about sparing.",
-    "date": "2019/11/27",
     "tag":["Sparing"]
 }
 </meta>-->

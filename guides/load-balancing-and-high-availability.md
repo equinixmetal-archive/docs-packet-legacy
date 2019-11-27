@@ -5,7 +5,6 @@
     "description":"How to setup a cluster with LB & HA",
     "author":"Enkel Prifti",
     "github":"enkelprifti98",
-    "date": "2019/11/13",
     "email":"enkel@packet.com",
     "tag":["HA", "LB", "HAPRoxy"]
 }

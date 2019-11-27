@@ -5,7 +5,6 @@
     "description":"Deploying AMD SEV with Anjuna",
     "author":"Mo Lawler",
     "github":"usrdev",
-    "date": "2019/11/11",
     "email":"mo@packet.com",
     "tag":["AMD", "SEV"]
 }

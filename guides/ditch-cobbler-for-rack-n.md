@@ -5,7 +5,6 @@
     "description":"Ditch Cobbler for RackN on Packet",
     "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
-    "date": "2019/09/05",
     "email":"zak@packet.com",
     "tag":["Ditch Cobbler", "RackN"]
 }

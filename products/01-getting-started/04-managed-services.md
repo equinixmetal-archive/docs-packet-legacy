@@ -2,7 +2,6 @@
 {
     "title":"Managed Services",
     "description":"Learn more about managed services at Packet",
-    "date": "2019/11/26",
     "tag":["Managed services"]
 }
 </meta>-->

@@ -5,7 +5,6 @@
     "description":"Utilizing Block Storage with Proxmox",
     "author":"Mo Lawler",
     "github":"usrdev",
-    "date": "2019/11/12",
     "email":"mo@packet.com",
     "tag":["Proxmox", "EBS", "BlockStorage"]
 }
