@@ -2,7 +2,7 @@
 <meta>
 {
     "title":"Load Balancing and High Availability with HAProxy and Keepalived",
-    "description":"",
+    "description":"How to setup a cluster with LB & HA",
     "author":"Enkel Prifti",
     "github":"enkelprifti98",
     "date": "2019/11/13",
