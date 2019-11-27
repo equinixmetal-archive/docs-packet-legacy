@@ -5,7 +5,6 @@
     "description":"Setup Kubeless on a bare metal K8s cluster",
     "author":"Edo Aria",
     "github":"ariaedo",
-    "date": "2019/06/06",
     "email":"ronggur.mh@gmail.com",
     "tag":["kubeless", "another tag"]
 }

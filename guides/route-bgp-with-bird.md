@@ -5,7 +5,6 @@
     "description":"Route BGP with BIRD on Packet",
     "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
-    "date": "2019/9/5",
     "email":"zak@packet.com",
     "tag":["Route BGP", "BIRD"]
 }

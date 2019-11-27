@@ -2,7 +2,6 @@
 {
     "title":"Standard IPs",
     "description":"Standard IP addresses at Packet",
-    "date": "09/20/2019",
     "tag":["Network", "IPs"]
 }
 </meta>-->

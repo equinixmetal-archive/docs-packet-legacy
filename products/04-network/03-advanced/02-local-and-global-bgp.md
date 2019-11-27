@@ -2,7 +2,6 @@
 {
     "title":"Local and Global BGP",
     "description":"Using BGP Global/Local on Packet",
-    "date": "09/20/2019",
     "tag":["BGP", "BGP Local", "BGP Global"]
 }
 </meta>-->

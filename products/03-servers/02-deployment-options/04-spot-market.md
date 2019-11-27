@@ -2,12 +2,9 @@
 {
     "title":"Spot Market",
     "description":"Deploying Devices in Spot Market",
-    "date": "09/20/2019",
     "tag":["Spot Market", "Deploy"]
 }
 </meta>-->
-
-# Spot Market
 
 Packet's Spot Market allows users to bid on spare server capacity at reduced rates.  
 

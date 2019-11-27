@@ -2,7 +2,6 @@
 {
     "title":"Reinstall",
     "description":"Learn more about reinstalling a server at Packet!",
-    "date": "2019/11/5",
     "tag":["Reinstall", "Server"]
 }
 </meta>-->

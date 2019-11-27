@@ -2,7 +2,6 @@
 {
     "title":"Packet Inventory",
     "description":"Learn more about Packet inventory",
-    "date": "2019/11/26",
     "tag":["API", "Inventory"]
 }
 </meta>-->

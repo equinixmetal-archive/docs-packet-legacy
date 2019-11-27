@@ -2,7 +2,6 @@
 {
     "title":"Global Anycast IPs",
     "description":"Obtaining & Utilizing Global Anycast IPs",
-    "date": "09/20/2019",
     "tag":["Network", "Elastic IPs", "Anycast"]
 }
 </meta>-->

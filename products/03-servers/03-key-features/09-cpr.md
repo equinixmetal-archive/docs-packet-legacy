@@ -2,7 +2,6 @@
 {
     "title":"Custom Partitioning and RAID",
     "description":"Setting up CPR (Custom Partitioning & RAID).",
-    "date": "09/20/2019",
     "tag":["CPR", "Custom RAID", "RAID", "Partition"]
 }
 </meta>-->

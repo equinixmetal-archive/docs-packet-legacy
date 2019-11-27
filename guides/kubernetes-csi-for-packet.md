@@ -5,7 +5,6 @@
     "description":"Kubernetes CSI (Container Storage Interface) for Packet",
     "author":"Joseph Marhee",
     "github":"jmarhee",
-    "date": "2019/11/25",
     "email":"jmarhee@packet.com",
     "tag":["Kubernetes", "CSI", "Container Storage Interface"]
 }

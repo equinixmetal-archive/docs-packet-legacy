@@ -5,7 +5,6 @@
     "description":"Stress Testing Big Data Setups",
     "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
-    "date": "2019/9/5",
     "email":"zak@packet.com",
     "tag":["Stress Testing", "Big Data"]
 }

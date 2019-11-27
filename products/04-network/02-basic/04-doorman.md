@@ -2,7 +2,6 @@
 {
     "title":"Doorman",
     "description":"Utilizing Doorman to access your Device",
-    "date": "09/20/2019",
     "tag":["VPN", "Private Network", "Doorman"]
 }
 </meta>-->

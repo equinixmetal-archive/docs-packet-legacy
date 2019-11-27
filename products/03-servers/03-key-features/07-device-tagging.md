@@ -2,7 +2,6 @@
 {
     "title":"Device Tagging",
     "description":"Create Device Tags",
-    "date": "11/06/2019",
     "tag":["API", "Tagging", "Device Tagging"]
 }
 </meta>-->

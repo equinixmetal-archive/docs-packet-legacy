@@ -5,7 +5,6 @@
     "description":"How to configure some possible layer 2 environments.",
     "author":"Enkel Prifti",
     "github":"enkelprifti98",
-    "date": "2019/10/25",
     "email":"zak@packet.com",
     "tag":["layer 2", "networking", "advanced"]
 }
