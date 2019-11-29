@@ -6,8 +6,6 @@
 }
 </meta>-->
 
-
-**Support Portal**
 All packet support channels are available from the [customer portal](https://app.packet.net/support). From there you can open a ticket, send us an email, open our community slack, @ us on twitter, or open a chat with our support engineers. You can also log into the [support portal](https://support.packet.com), where you can track the status of your open tickets.
 
 **Tickets VS Chat** -- Most minor issues can be resolved over chat. However, it's best to submit a ticket if you encounter a problem with some faulty packet hardware, find a bug in a packet service, or have any other issue that might require long term investigation. Our support agents can do this for you if you discover you're problem is more extensive than it initially appeared while you are in chat.
