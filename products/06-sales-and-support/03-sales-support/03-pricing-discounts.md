@@ -2,7 +2,6 @@
 {
     "title":"Pricing & Discounts",
     "description":"Learn more about Pricing & Discounts at Packet",
-    "date": "11/26/2019",
     "tag":["Pricing", "Discounts"]
 }
 </meta>-->

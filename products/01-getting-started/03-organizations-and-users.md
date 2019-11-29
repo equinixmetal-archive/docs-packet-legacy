@@ -2,12 +2,10 @@
 {
     "title":"Organizations and Users",
     "description":"An overview of Packet organizations.",
-    "date": "2019/09/28",
     "tag":["organizations", "accounts", "platform"]
 }
 </meta>-->
 
-### About Organizations
 
 Organizations are a billing entity that sit one level above users and projects.  
 

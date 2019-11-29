@@ -2,7 +2,6 @@
 {
     "title":"Overview",
     "description":"Learn more about support channels at Packet",
-    "date": "09/20/2019",
     "tag":["Sales", "Support", "Accounts"]
 }
 </meta>-->

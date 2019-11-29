@@ -2,7 +2,6 @@
 {
     "title":"Reserved Hardware",
     "description":"Deploy from a pool of reserved hardware available only to you!.",
-    "date": "2019/09/28",
     "tag":["reserve", "Deploy"]
 }
 </meta>-->

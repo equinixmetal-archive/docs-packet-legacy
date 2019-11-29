@@ -5,7 +5,6 @@
     "description":"Kubernetes Cluster Autoscaler on Packet",
     "author":"Enkel Prifti",
     "github":"enkelprifti98",
-    "date": "2019/9/19",
     "email":"enkel@packet.com",
     "tag":["Kubernetes", "Cluster", "Autoscaler"]
 }

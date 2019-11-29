@@ -2,14 +2,11 @@
 {
     "title":"Overview",
     "description":"Learn more about Packet and get started!",
-    "date": "2019/10/11",
     "tag":["Product documentation", "Getting started", "Contact us"]
 }
 </meta>-->
 
-# Getting Started
 
-### Our History
 Packet was founded in July 2014 with a passion to build a better internet. Our mission is to empower SaaS companies and Fortune 100's alike to make infrastructure a competitive advantage with automated bare metal that can be deployed anywhere. 
 
 With 20+ global public cloud locations, a seamless API experience, and the ability to deploy and manage custom hardware on-premises or in privately managed availability zones, Packet is ideal for both traditional and cloud native workloads. At least we think so!  :-)  

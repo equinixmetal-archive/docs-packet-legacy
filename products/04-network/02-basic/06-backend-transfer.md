@@ -2,7 +2,6 @@
 {
     "title":"Backend Transfer",
     "description":"Setting Up & Using Backend Transfer on Packet",
-    "date": "09/20/2019",
     "tag":["Backend Transfer", "Private Network"]
 }
 </meta>-->

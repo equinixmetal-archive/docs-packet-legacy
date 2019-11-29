@@ -2,15 +2,19 @@
 {
     "title":"Rack Level Diversity",
     "description":"Learn more about Rack Level Diversity.",
-    "date": "2019/11/26",
     "tag":["Rack Level Diversity"]
 }
 </meta>-->
 
-Packet deploys Bare Metal servers across various racks in our facilities. Depending on the facility size, a specific server type will be available in multiple racks.
+Packet offers single-tenant, dedicated servers in its cloud. This requires a more nuanced approach to diversity planning that involves switch pairs as points of failure (for redundancy we deploy a pair of switches per rack).
 
-Although this information is not public yet on the customer side, Packet provides a Switch ID hash, in Portal or through API, as part of the instance details. Through this Switch ID hash, every customer should be able to understand the diversity of their servers. For the On Demand servers, a customer would provision the next available server, and we cannot always provide the diversity.
+Depending on a variety of factors — including the size of each of our global facilities — servers may be available in multiple racks.
 
-For the Reserved servers, Packet can work with the customer, to provide the needed diversity, pending availability on the specific facility.
+Although users are not able to query rack information in advance of a deploy, we do provide a Switch ID hash (in the Portal or via our API) as part of the details for any already-deployed instance. Each Switch ID hash represents a switch pair, which allows you to understand the diversity of your infrastructure. 
+
+If you are looking to achieve a certain diversity (or concentration) of infrastructure, these are your options:
+On Demand: You can destroy and then provision another available server to achieve a particular setup. We cannot always provide the diversity.
+Reserved: We can work with you to provide the needed setup, pending availability.
+
 
 
