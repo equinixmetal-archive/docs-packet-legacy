@@ -56,7 +56,7 @@ If it fails during initramfs trying to load the CD device, update the install me
 
 When provisioning the Custom iPXE operating system kicks off, we set the next boot option to PXE on first boot.  By default, this PXE process only happens once on the first boot. To set your device to continuously boot to iPXE first, you can edit it under 'server actions' through the customer portal.
 
-![](/images/custom-ipxe/Persisting-PXE.png)
+![Persisting-PXE](/images/custom-ipxe/Persisting-PXE.png)
 
 If true, PXE will persist as the first boot option past initial provisioning reboots. This is great for testing your iPXE provisioning script and lays the foundation for future, "always-pxe-based OS's" on Packet.
 
