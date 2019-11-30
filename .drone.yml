@@ -43,7 +43,7 @@ steps:
 ---
 kind: pipeline
 type: docker
-name: Markdown Image Linter
+name: Markdown Image Linters
 
 trigger:
   repo:
