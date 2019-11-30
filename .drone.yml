@@ -1,7 +1,7 @@
 ---
 kind: pipeline
 type: docker
-name: Linters
+name: Markdown Structure Linters
 
 trigger:
   repo:
@@ -38,4 +38,25 @@ steps:
     commands:
       - pip3 install --quiet yamllint
       - yamllint  --config-file .yamllint.config --strict .*.yml
+    depends_on: [clone]
+
+---
+kind: pipeline
+type: docker
+name: Markdown Image Linters
+
+trigger:
+  repo:
+    - packethost/docs
+  event:
+    - push
+    - pull-request
+
+
+steps:
+  - name: markdown-image-cli
+    image: node:current-alpine
+    commands:
+      - npm i -g markdown-image-cli
+      - markdown-image-cli -d ./products
     depends_on: [clone]
