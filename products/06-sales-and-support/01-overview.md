@@ -47,7 +47,7 @@ There is a billing tab in each of your projects which shows estimated total usag
 
 Packet enables users to deploy a growing list of commercial software solutions directly through the Packet portal or API.  These solutions do incur additional fees, which are often based on the socket \(e.g. physical CPU\) or allocated resources \(for instance GB's of storage\).    
 
-![Screen-Shot-2018-12-03-at-8.31.48-PM.png](https://support.packet.com/file.php/local/303905WCCXWAGDARANNMD0/Screen-Shot-2018-12-03-at-8.31.48-PM.png)
+![Software types and fees](/images/sales-support-overview/software-types.png)
 
 ### What about bandwidth?
 
