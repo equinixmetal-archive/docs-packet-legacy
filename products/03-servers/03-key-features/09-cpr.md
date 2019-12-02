@@ -17,15 +17,20 @@ First things first, you should be familiar with the [API calls available for dev
 
 You should also be aware of our standard disk configurations for each server type.  With a few hardware-specific exceptions, generally speaking, this looks like:
 
-*   __t1.small.x86__:   1 × 80 GB, no RAID
-*   __c1.small.x86__:   2 × 120 GB SSD in RAID 1
-*   __x1.small.x86__:   240 GB of SSD (1 × 240 GB)
-*   __m1.xlarge.86:__   2.8 TB of SSD (6 × 480GB SSD)
-*   __m2.xlarge.x86__ (Intel Scalable): 2 × 120 GB in RAID 1 & 3.8 TB of NVMe Flash
-*   __c1.larger.arm__: 1 × 340 GB SSD, no RAID
-*   __c1.xlarge.x86__:  2 × 120 GB SSD in RAID 1
-*   __c2.medium.x86 (EPYC)__: 960 GB of SSD (2 x 480 GB)
-*   __s1.large.x86__:  2 x 480 GB SSD in RAID 1, with 120 GB SSD as cache in front of 12 X 2 TB HDD.
+*   __t1.small.x86__:   1 × 80 GB SSD (Boot)
+*   __c1.small.x86__:   2 × 120 GB SSD in RAID 1 (Boot)
+*   __x1.small.x86__:   1 × 240 GB SSD (Boot)
+*   __m1.xlarge.x86__:   6 × 480GB SSD (1 for Boot)
+*   __m2.xlarge.x86__: 2 × 120 GB SSD (1 for Boot) & 3.8 TB of NVMe Flash
+*   __c1.large.arm__: 1 × 340 GB SSD (Boot)
+*   __c2.large.arm__: 1 × 480 GB SSD (Boot)
+*   __c1.xlarge.x86__:  2 × 120 GB SSD in RAID 1 (Boot) & 1.6 TB of NVMe Flash
+*   __c2.medium.x86__: 960 GB of SSD (2 x 480 GB) (1 for Boot)
+*   __c3.medium.x86__: 960 GB of SSD (2 x 480 GB) (1 for Boot)
+*   __x2.xlarge.x86__: 1 × 120 GB SSD (Boot) , 2 × 240 GB SSD & 3.8 TB of NVMe Flash
+*   __n2.xlarge.x86__: 2 × 240 GB SSD in Hardware RAID 1 (Boot) & 3.8 TB of NVMe Flash
+*   __g2.large.x86__: 1 x 150 GB SSD (Boot), 2 x 480 GB SSD 
+*   __s1.large.x86__:  1 x 120 GB SSD (Boot), 2 x 480 GB SSD & 12 X 2 TB HDD.
 
 ### Using CPR During Provisioning
 
