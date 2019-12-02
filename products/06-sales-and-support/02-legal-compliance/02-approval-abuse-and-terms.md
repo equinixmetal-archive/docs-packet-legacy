@@ -2,11 +2,9 @@
 {
     "title":"Approval, Abuse and Terms",
     "description":"Learn more about Approval, Abuse and Terms at Packet",
-    "date": "09/20/2019",
     "tag":["Approval, Abuse and Terms", "Accounts"]
 }
 </meta>-->
-### Why we review Accounts
 
 When signing up for a Packet account you may receive a notification informing you that your account has been flagged for manual review. Please note: this is in no way a judgment of your character, and the decision to flag an account is made by an algorithm, not a Packet employee.
 

@@ -5,7 +5,6 @@
     "description":"Kubernetes CSI (Container Storage Interface) for Packet",
     "author":"Joseph Marhee",
     "github":"jmarhee",
-    "date": "2019/11/25",
     "email":"jmarhee@packet.com",
     "tag":["Kubernetes", "CSI", "Container Storage Interface"]
 }
@@ -79,4 +78,4 @@ kubectl -n kube-system apply -f deploy/kubernetes/node.yaml
 kubectl -n kube-system apply -f deploy/kubernetes/controller.yaml
 ```
 
-or by using the Packet CSI [Helm Chart for CSI](https://github.com/packet-labs/helm-charts/).
+or by using the Packet [Helm Chart for CSI](https://github.com/packet-labs/helm-charts/).

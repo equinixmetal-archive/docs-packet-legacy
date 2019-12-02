@@ -5,7 +5,6 @@
     "description":"Self-Hosted Zoom Meetings",
     "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
-    "date": "2019/9/5",
     "email":"zak@packet.com",
     "tag":["Self-Hosted", "Zoom"]
 }

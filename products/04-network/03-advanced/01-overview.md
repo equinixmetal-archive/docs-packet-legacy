@@ -1,9 +1,9 @@
 <!--<meta>
 {
     "title":"Overview",
-    "description":"Learn more about Advanced Network at Packet",
-    "date": "09/20/2019",
-    "tag":["Network", "Advanced Network"]
+    "description":"Using advanced network features",
+    "tag":["Layer2", "Native VLAN", "BGP"]
 }
 </meta>-->
-Content coming soon...
+
+content coming soon

@@ -1,18 +1,14 @@
 <!--<meta>
 {
-    "title":"Doorman",
+    "title":"Doorman VPN",
     "description":"Utilizing Doorman to access your Device",
-    "date": "09/20/2019",
     "tag":["VPN", "Private Network", "Doorman"]
 }
 </meta>-->
 
+Doorman is a VPN (virtual private network) service that helps to secure traffic between you and your servers for management purposes. This is not a VPN solution between servers for web traffic. 
 
-# Doorman
-
-### Enable Two Factor Authentication
-
-In order to use the Doorman VPN service, you will need to have Two Factor Authentication (2FA) enabled via the Packet app. To enable 2FA, simply log in to the Packet Portal, then go to _"Settings" > "Security"_ where you will find the option to enable 2FA under Set Up Using an App.
+To leverage Doorman, you’ll need to follow the following steps. You will need to have Two Factor Authentication (2FA) enabled via the Packet app. To enable 2FA, simply log in to the Packet Portal, then go to _"Settings" > "Security"_ where you will find the option to enable 2FA under Set Up Using an App.
 
 You can use your favorite 2FA app, as long as is supports Time-based One-time Password Algorithm (TOTP) which is an open standard. Example: Google Authenticator, Authy, Duo Security, should all work fine.
 

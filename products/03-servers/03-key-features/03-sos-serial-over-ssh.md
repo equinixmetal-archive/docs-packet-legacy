@@ -2,7 +2,6 @@
 {
     "title":"SOS: Serial over SSH",
     "description":"Accesisng Serial Console (SOS)",
-    "date": "09/20/2019",
     "tag":["SOS", "Console"]
 }
 </meta>-->

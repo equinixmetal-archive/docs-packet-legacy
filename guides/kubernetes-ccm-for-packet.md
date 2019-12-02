@@ -5,7 +5,6 @@
     "description":"Kubernetes CCM (Cloud Controller Manager) for Packet",
     "author":"Enkel Prifti",
     "github":"enkelprifti98",
-    "date": "2019/9/19",
     "email":"enkel@packet.com",
     "tag":["Kubernetes", "CCM", "Cloud Controller Manager"]
 }
@@ -88,3 +87,5 @@ You can apply the rest of the CCM by running:
 ```bash
 kubectl apply -f deployment.yaml
 ```
+
+or by using the Packet [Helm Chart for CCM](https://github.com/packet-labs/helm-charts/).

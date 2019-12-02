@@ -2,7 +2,6 @@
 {
     "title":"Integrations & Libraries ",
     "description":"A quick look at our various API integrations.",
-    "date": "2019/09/28",
     "tag":["API", "Integrations", "Libraries"]
 }
 </meta>-->
