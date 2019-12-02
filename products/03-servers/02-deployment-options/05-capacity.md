@@ -1,8 +1,8 @@
 <!--<meta>
 {
-    "title":"Packet Inventory",
-    "description":"Learn more about Packet inventory",
-    "tag":["API", "Inventory"]
+    "title":"Packet Capacity",
+    "description":"Learn more about Packet capacity",
+    "tag":["API", "Inventory", "Capacity"]
 }
 </meta>-->
 
