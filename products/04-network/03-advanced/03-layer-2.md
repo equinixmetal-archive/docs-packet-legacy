@@ -6,8 +6,6 @@
 }
 </meta>-->
 
-**Feature Overview**
-
 Our network is designed around a pure Layer 3 network topology, where we bring a routed interface to each server.  However, many environments expect a Layer 2 network. To support these use cases we’ve developed a feature that allows users to create and connect Layer 2 networks to their Packet infrastructure.
 
 A few notes to help set the stage:

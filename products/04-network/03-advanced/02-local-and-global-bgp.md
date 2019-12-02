@@ -6,8 +6,6 @@
 }
 </meta>-->
 
-### About Packet's BGP Support
-
 Packet supports BGP ([Border Gateway Protocol](https://en.wikipedia.org/wiki/Border_Gateway_Protocol)) as a protocol for advertising routes to Packet servers in a local environment (called Local BGP), as well as to the greater Internet (called Global BGP).
 
 Leveraging the powerful routing features of BGP will require that you operate a BGP speaking routing client, such as [BIRD](http://bird.network.cz/?get_doc&f=bird.html), Quagga or ExaBGP on your server. This routing client will control route advertisements via a BGP session to Packet's upstream routers. Packet will learn the routes that you are advertising (or not) and appropriately send traffic to your server(s).

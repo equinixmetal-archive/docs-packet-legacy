@@ -5,6 +5,8 @@
     "tag":["Operating Systems"]
 }
 </meta>-->
+
+
 ### Supported Operating Systems
 Packet provides a range of officially supported Linux, BSD, Windows, and VMware operating systems. Images for our supported operating systems are built specifically for Packet server types and stored on our public [Github repository](https://github.com/packethost/packet-images). All supported operating systems are available for automatic installation when provisioning Packet servers via the customer portal, Packet API, or Terraform script. Visit our [main webpage](https://www.packet.com/developers/grid/) for a list of all supported operating systems and compatible server types.
 

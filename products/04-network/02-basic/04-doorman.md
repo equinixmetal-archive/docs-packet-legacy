@@ -6,11 +6,6 @@
 }
 </meta>-->
 
-
-# Doorman
-
-### Enable Two Factor Authentication
-
 In order to use the Doorman VPN service, you will need to have Two Factor Authentication (2FA) enabled via the Packet app. To enable 2FA, simply log in to the Packet Portal, then go to _"Settings" > "Security"_ where you will find the option to enable 2FA under Set Up Using an App.
 
 You can use your favorite 2FA app, as long as is supports Time-based One-time Password Algorithm (TOTP) which is an open standard. Example: Google Authenticator, Authy, Duo Security, should all work fine.
