@@ -215,6 +215,6 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
 
 ### c1.large.arm Partition Requirement
 
-For the c1.large.arm server, it requires a FAT32 boot partition for `/boot/efi` - an example of this particular partition would be:
+For the c1.large.arm and c2.medium.x86 servers, it requires a FAT32 boot partition for `/boot/efi` - an example of this particular partition would be:
 
 `format": "vfat", "create":{"options":\[32, "-n", "BIOS"\]}, "point":"/boot/efi`
