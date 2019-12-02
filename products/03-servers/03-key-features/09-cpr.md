@@ -46,7 +46,7 @@ curl -H "X-Auth-Token: token" -H "Content-Type: application/json" -d '
   "billing_cycle": "string",
   "operating_system": "string",
   "userdata": "string",
-  "tags": \[    "string"\]
+  "tags": ["string"]
 }'
 ```
 Note: 'storage' and 'string' are where you would specifically state your configuration requirements.
