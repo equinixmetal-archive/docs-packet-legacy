@@ -42,9 +42,9 @@ curl -H "X-Auth-Token: token" -H "Content-Type: application/json" -d '
   "facility": "string",
   "plan": "string",
   "hostname": "string",
-  "storage":"string",
-  "billing\_cycle": "string",
-  "operating\_system": "string",
+  "storage": "string",
+  "billing_cycle": "string",
+  "operating_system": "string",
   "userdata": "string",
   "tags": \[    "string"\]
 }'
