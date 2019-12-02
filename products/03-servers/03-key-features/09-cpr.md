@@ -37,7 +37,17 @@ You should also be aware of our standard disk configurations for each server typ
 Let's say you are going to deploy one of your reserved instances. An example [call to the API](https://www.packet.com/developers/api/devices/) might look like this:
 
 ```
-curl -H "X-Auth-Token: token" -H "Content-Type: application/json" -d  '{ "facility": "string", "plan": "string", "hostname": "string", "storage":"string",  "billing\_cycle": "string",    "operating\_system": "string", "userdata": "string", "tags": \[    "string"\] }'
+curl -H "X-Auth-Token: token" -H "Content-Type: application/json" -d '
+{
+  "facility": "string",
+  "plan": "string",
+  "hostname": "string",
+  "storage":"string",
+  "billing\_cycle": "string",
+  "operating\_system": "string",
+  "userdata": "string",
+  "tags": \[    "string"\]
+}'
 ```
 Note: 'storage' and 'string' are where you would specifically state your configuration requirements.
 
