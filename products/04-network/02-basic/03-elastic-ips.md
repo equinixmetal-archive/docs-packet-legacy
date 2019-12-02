@@ -6,7 +6,6 @@
 }
 </meta>-->
 
-### Elastic IPs in Brief
 
 If you request four elastic IPs from us, we will assign you a /30 which contains four IP addresses, e.g. 147.75.1.2/30.
 

@@ -6,8 +6,6 @@
 }
 </meta>-->
 
-### Introduction
-
 Packet supports passing custom iPXE scripts during provisioning, which allows you to install a custom operating system manually, or via automated kickstart.
 
 Since we don’t test any manually installed operating system, it goes without saying that you’ll need to be familiar with our [S.O.S. and rescue mode](https://support.packet.com/kb/articles/rescue-mode) services in case you need to troubleshoot your server.

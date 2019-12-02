@@ -6,7 +6,6 @@
 }
 </meta>-->
 
-## Device Tagging
 
 Tagging is a feature allowing you to apply custom labels to a single device or multiple devices. Device tagging is purely for filtering purposes at this time. 
 

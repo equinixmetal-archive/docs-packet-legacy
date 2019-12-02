@@ -6,8 +6,6 @@
 }
 </meta>-->
 
-### Server Reinstall
-
 
 The Server Reinstall feature enables you to provision a new instance on the same hardware, which is perfect if you want to keep the assigned IP addresses, userdata, etc.  
 
