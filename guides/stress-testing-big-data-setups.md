@@ -57,7 +57,9 @@ Here is a summary of the Server Configuration (for further details, please check
 
 The diagram below shows how Kafka, Spark, and Cassandra were installed on each of the five nodes under consideration.
 
-![nodes-and-software](/images/stress-testing-big-data-setups/nodes-and-software.png) Figure 1: Nodes and Software Framework
+![nodes-and-software](/images/stress-testing-big-data-setups/nodes-and-software.png) 
+
+Figure 1: Nodes and Software Framework
 
 In the sections below, we explain the details of each software stack.
 
