@@ -47,11 +47,7 @@ The packet has [4 types of servers](https://www.packet.net/bare-metal/) and comp
 
 Here is a summary of the Server Configuration (for further details, please check the [Packet.net website](https://www.packet.net/bare-metal/)):
 
-| Infrastructure Element | Type 1 | Type 2 |
-| Compute | 4 Physical Cores @ 3.4 GHz (1 × E3-1240 v3) | 24 Physical Cores @ 2.2 GHz |
-| Memory | 32 GB of DDR3 RAM | 256 GB of DDR4 ECC RAM |
-| Storage | 120 GB of SSD (2 x 120 GB in RAID 1) | 2.8 TB of SSD (6 x 480GB SSD) |
-| Network | 2 Gbps Bonded Network | 20 Gbps Bonded Network |
+![Server Configuration](/images/stress-testing-big-data-setups/server-configuration-table.png)
 
 ## Design considerations
 
