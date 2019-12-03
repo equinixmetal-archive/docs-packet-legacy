@@ -179,11 +179,17 @@ Figure 5: Spark performance test: scale factor vs various metrics
   4. So in order to scale gracefully, the Master memory needs to be scaled up while the number of available workers needs to be increased which will result in more CPU available.
   5. In conclusion, we have successfully figured out which resource dimensions we need to scale in as the problem size increases.
 
-![scale-factor-3](/images/stress-testing-big-data-setups/scale-factor-3.png) Figure 6: Scale factor 3 CPU stats show worker 1 at ~90
+![scale-factor-3](/images/stress-testing-big-data-setups/scale-factor-3.png) 
 
-![memory-used](/images/stress-testing-big-data-setups/memory-used.png) Figure 7: Memory used on Master is saturate
+Figure 6: Scale factor 3 CPU stats show worker 1 at ~90
 
-![memory-workers](/images/stress-testing-big-data-setups/memory-workers.png) Figure 8: Memory on the Workers is at ~46GB out of 256 Gb that is available
+![memory-used](/images/stress-testing-big-data-setups/memory-used.png) 
+
+Figure 7: Memory used on Master is saturate
+
+![memory-workers](/images/stress-testing-big-data-setups/memory-workers.png) 
+
+Figure 8: Memory on the Workers is at ~46GB out of 256 Gb that is available
 
 #### **Infrastructure Observations**
 
@@ -214,7 +220,9 @@ The below observations are for scale factor less than
 
 The Cassandra test setup comprises of 3 nodes namely Spark-Cassandra-Master, Spark-Cassandra-Worker01 and Spark-Cassandra-Worker02. All nodes run in the Cassandra ring topology with 256 tokens. We run Cassandra Stress on this cluster with a mixed write-read ratio of 1:3, operations happen for a duration of 45 mins, which correspond to ~70+ million operations with a uniform key distribution in the range of 0 - 1M. The number of threads attempting to do this is limited to 16 - 256 client threads
 
-![cassandra](/images/stress-testing-big-data-setups/cassandra.png) Figure 11: The Cassandra cluster in the ring topology in our benchmark
+![cassandra](/images/stress-testing-big-data-setups/cassandra.png) 
+
+Figure 11: The Cassandra cluster in the ring topology in our benchmark
 
 ### Test Results
 
@@ -235,11 +243,29 @@ The table below shows operations rate and the latency for the duration of the te
   - On average 30% of the worker nodes with a peak utilization of ~40%
 * We reached a maximum of 22GB memory utilization on the worker nodes and 27GB on the master node.
 * The network was not at all saturated, the maximum bandwidth we observed was close to 1 Gbps on the type 2 worker nodes.
-* This time, given that we were running on Type 2 nodes with SSD and no RAID, we got almost double the performance with 113K write operations/second.![number](/images/stress-testing-big-data-setups/number.png) Figure 12: Number of writes on the worke ![number-1](/images/stress-testing-big-data-setups/number-1.png) Figure 13: Number of writes on the master
+* This time, given that we were running on Type 2 nodes with SSD and no RAID, we got almost double the performance with 113K write operations/second.
+
+![number](/images/stress-testing-big-data-setups/number.png) 
+
+Figure 12: Number of writes on the worke 
+
+![number-1](/images/stress-testing-big-data-setups/number-1.png) 
+
+Figure 13: Number of writes on the master
+
 
 #### Test Summary
 
-* Cassandra is mostly CPU bound ; however, given the configuration of Type 2 servers, we didn't run into any limits. As shown in the figures below, Cassandra stress run on Type 2 has a max CPU utilization of ~40%. When the same test is run on Type 1 the average CPU utilization ~80%.![cpu](/images/stress-testing-big-data-setups/cpu.png) Figure 14: CPU utilization on type 2 worker nod ![cpu-1](/images/stress-testing-big-data-setups/cpu-1.png) Figure 15: CPU utilization on type 1 master nod
+* Cassandra is mostly CPU bound ; however, given the configuration of Type 2 servers, we didn't run into any limits. As shown in the figures below, Cassandra stress run on Type 2 has a max CPU utilization of ~40%. When the same test is run on Type 1 the average CPU utilization ~80%.
+
+![cpu](/images/stress-testing-big-data-setups/cpu.png) 
+
+Figure 14: CPU utilization on type 2 worker nod 
+
+![cpu-1](/images/stress-testing-big-data-setups/cpu-1.png) 
+
+Figure 15: CPU utilization on type 1 master nod
+
 * Cassandra should run on type-2 or type-3 nodes depending on the storage required. The advantage with Type-3 is Cassandra can run in isolation given the 20Gbps network between Type-2 and Type-3 nodes. Type-2 can host spark workers.
 
 ## Test 4: Combined Testing
@@ -258,7 +284,9 @@ Finally, we have a Cassandra cluster on Spark-Cassandra-Master, Spark-Cassandra-
 
 The setup details are also shown in the figure below. Spark-Cassandra-Worker01 is the node which is running Spark streaming performance as a Spark worker, Kafka consumer, and Cassandra stress.
 
-![cassandra-1](/images/stress-testing-big-data-setups/cassandra-1.png) Figure 16: Running all the performance tests together to stress test Spark-Cassandra-Worker0
+![cassandra-1](/images/stress-testing-big-data-setups/cassandra-1.png) 
+
+Figure 16: Running all the performance tests together to stress test Spark-Cassandra-Worker0
 
 ### Test Results
 
@@ -298,12 +326,31 @@ The above shows that the rate of data consumption has decreased by ~27% when the
 
 * CPU usage was as follows:
   - On average 26% utilization for the master node with a peak utilization of 75%
-  - On average 41-58% utilization for the worker nodes with a peak utilization of 88%![cu-stats](/images/stress-testing-big-data-setups/cu-stats.png) Figure 17: CU stats across all the nodes. Worker01 is node under stress
-* We reached a maximum of 48GB (256GB total) memory utilization on the worker nodes and close to 32GB (total: 32GB) on the master node.![global-memory-usage](/images/stress-testing-big-data-setups/global-memory-usage.png) Figure 18: Memory used by all the node
-* The maximum achievable network bandwidth we observed was 1.2 Gbps.![tcp-segments](/images/stress-testing-big-data-setups/tcp-segments.png) Figure 19: TCP segments sent and receive
+  - On average 41-58% utilization for the worker nodes with a peak utilization of 88%
+  
+  ![cu-stats](/images/stress-testing-big-data-setups/cu-stats.png) 
+  
+  Figure 17: CU stats across all the nodes. Worker01 is node under stress
+
+* We reached a maximum of 48GB (256GB total) memory utilization on the worker nodes and close to 32GB (total: 32GB) on the master node.
+
+![global-memory-usage](/images/stress-testing-big-data-setups/global-memory-usage.png) 
+
+Figure 18: Memory used by all the node
+
+* The maximum achievable network bandwidth we observed was 1.2 Gbps.
+
+![tcp-segments](/images/stress-testing-big-data-setups/tcp-segments.png) 
+
+Figure 19: TCP segments sent and receive
+
 * We did see similar numbers for storage performance as seen before
   - 633K writes/sec on the Spark-Cassandra master node
-  - 333K writes/sec on the Spark-Cassandra worker nodes and the Kafka nodes ![ssd-global](/images/stress-testing-big-data-setups/ssd-global.png) Figure 20: SSD writes across all the cluster
+  - 333K writes/sec on the Spark-Cassandra worker nodes and the Kafka nodes 
+  
+  ![ssd-global](/images/stress-testing-big-data-setups/ssd-global.png) 
+  
+  Figure 20: SSD writes across all the cluster
 
 # Conclusions
 
