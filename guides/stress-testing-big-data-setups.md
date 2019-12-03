@@ -103,11 +103,7 @@ Figure 2: The nodes in the Kafka cluster showing their respective role
 
 The table below shows throughput and latency numbers for each Producer test,
 
-| Produce rate (Records/sec) | Records sent | Throughput | Latency |
-| Median | 95th %tile |
-| 100 K | 50 Million | 99.99K records/sec | 7.79 ms | 1 ms |
-| 1 Million | 50 Million | 977K records/sec | 154.95 ms | 586 ms |
-| 10 Million | 50 Million | 1.3M records/sec 123.31MB/sec peak Network throughput | 160.42 ms | 514 ms |
+![Kafka Statistics Table](/images/stress-testing-big-data-setups/kafka-statistics-table.png)
 
 The performance of the Kafka consumer peaked at about 1.68 million messages/sec with 10 Million/sec as the producer rate. However, there was minimal effect on latency between 1 Million and 10 Million records/second although the system was saturated. The system scales well since on most systems latency lags bandwidth.
 
@@ -150,15 +146,13 @@ Figure 4: Spark cluster depicting Master and Worker node
 
 #### **Spark Statistics**
 
-| Scale factor | Tasks/stage | Input for Shuffle Write Tasks | Shuffle Read (MB/stage) | Max Shuffle Read time (secs) | Shuffle Write (MB/stage) | Max Shuffle Write time (secs) | Total time (secs) |
-| 0.1 | 40 | 2.9 GB | 0.8 | 0.097 | 0.8 | 2 | 66 |
-| 1 | 400 | 29.1 GB | 89.8 | 3 | 89.8 | 16 | 366 |
-| 2 | 800 | 37.7 GB | 367.3 | 57 | 367.4 | 438 | 5040 |
-| 3 | 1200 | 37.8 GB | 842.2 | 132 | 842.2 | 1020 | 7920+ |
+![Spark Statistics Table](/images/stress-testing-big-data-setups/spark-statistics-table.png)
 
-| ![scale-vs-task-per-stage](/images/stress-testing-big-data-setups/scale-vs-task-per-stage.png) | ![scale-vs-shuffle-read](/images/stress-testing-big-data-setups/scale-vs-shuffle-read.png) |
-| ![scale-vs-shuffle-read-time](/images/stress-testing-big-data-setups/scale-vs-shuffle-read-time.png) | ![scale-vs-shuffle-read-1](/images/stress-testing-big-data-setups/scale-vs-shuffle-read-1.png) |
-| ![scale-vs-shuffle-write](/images/stress-testing-big-data-setups/scale-vs-shuffle-write.png) |  |
+![scale-vs-task-per-stage](/images/stress-testing-big-data-setups/scale-vs-task-per-stage.png)
+![scale-vs-shuffle-read](/images/stress-testing-big-data-setups/scale-vs-shuffle-read.png)
+![scale-vs-shuffle-read-time](/images/stress-testing-big-data-setups/scale-vs-shuffle-read-time.png)
+![scale-vs-shuffle-read-1](/images/stress-testing-big-data-setups/scale-vs-shuffle-read-1.png)
+![scale-vs-shuffle-write](/images/stress-testing-big-data-setups/scale-vs-shuffle-write.png)
 
 Figure 5: Spark performance test: scale factor vs various metrics
 
@@ -226,11 +220,7 @@ Figure 11: The Cassandra cluster in the ring topology in our benchmark
 
 The table below shows operations rate and the latency for the duration of the test. These are great numbers especially with the low latency numbers which usually lags bandwidth
 
-| Op Type | Op Rate (ops/sec) | Latency (in ms) |
-| Mean | Median | 95th %tile | 99th %tile |
-| Mix | 26,195 op/s | 0.6 ms | 0.4 ms | 1.0 ms | 1.3 ms |
-| Read | 19,641 op/s | 0.7 ms | 0.6 ms | 1.0 ms | 1.3 ms |
-| Write | 6,553 op/s | 0.3 ms | 0.2 ms | 0.3 ms | 0.4 ms |
+![Cassandra Statistics Table](/images/stress-testing-big-data-setups/cassandra-statistics-table.png)
 
 #### Infrastructure Observations
 
@@ -290,11 +280,7 @@ Figure 16: Running all the performance tests together to stress test Spark-Cassa
 
 Cassandra stress runs well with similar numbers as if it was running by itself. This is a key to a well-performing pipeline since we always want the database to work as if it had a cluster by itself
 
-| Op Type | Op Rate (ops/sec) | Latency (in ms) |
-| Mean | Median | 95th %tile | 99th %tile |
-| Mix | 26,416 op/s | 0.6 ms | 0.4 ms | 1.0 ms | 1.4 ms |
-| Read | 19,810 op/s | 0.7 ms | 0.6 m | 1.1 ms | 1.5 ms |
-| Write | 6,610 op/s | 0.2 ms | 0.2 ms | 0.3 ms | 0.3 ms |
+![Cassandra Results Table](/images/stress-testing-big-data-setups/cassandra-results.png)
 
 Cassandra test results as compared to the standalone test show that there is minimal difference in the results. We again are able to achieve low latency which is great for building a Real-Time data pipeline. Type 2 nodes for the Cassandra cluster are therefore highly recommended
 
@@ -302,9 +288,7 @@ Cassandra test results as compared to the standalone test show that there is min
 
 The table shows the performance of the Spark cluster when run in isolation and when run with the Spark and Cassandra tests (Combined) using the spark-perf utility.
 
-| Test | Input for Shuffle Write Tasks | Shuffle Read (MB) | Max Shuffle Read time (secs) | Shuffle Write (MB) | Max Shuffle Write time (secs) | Total time (secs) |
-| Individual | 37.7 GB | 367.3 | 57 | 367.4 | 438 | 5040 |
-| Combined | 37.7 GB | 367.3 | 90 | 367.4 | 468 | 5362 |
+![Spark Results Table](/images/stress-testing-big-data-setups/spark-results.png)
 
 Running comparable spark-perf tests particularly show that shuffle read times increased to almost double for the combined test. This is because of high network activity on the cluster on account of the Kafka and Cassandra tests
 
@@ -312,9 +296,7 @@ Running comparable spark-perf tests particularly show that shuffle read times in
 
 The table below shows the performance of the Kafka consumer for both the individual and combined test
 
-| Test | Time taken (secs) | Data consumed in MB | MB/sec | Data consumed in number of messages | Number of messages/sec |
-| Individual | 291 | 26,644 | 91.33 | 279,387,227 | 957760 |
-| Combined | 372 | 28,610 | 66.31 | 300,000,000 | 695350 |
+![Kafka Results Table](/images/stress-testing-big-data-setups/kafka-results.png)
 
 The above shows that the rate of data consumption has decreased by ~27% when the test ran individually compared with when it was run with all the other components
 
