@@ -97,7 +97,9 @@ For testing, we used the Kafka stress test utility, that is bundled with Apache 
 2. Consumer Perf test on Kafka02. This test consumes the 50 million messages earlier produced to the topic. The consumption rate, messages per second, throughput are measured while this test is run.
 3. Simultaneous producer perf on Kafka01 and consumer perf on Kafka02. The producer perf will generate 50 million messages to a topic and simultaneously the consumer perf will consume the messages as they are getting generated.
 
-![nodes-in-cluster](/images/stress-testing-big-data-setups/nodes-in-cluster.png) Figure 2: The nodes in the Kafka cluster showing their respective role
+![nodes-in-cluster](/images/stress-testing-big-data-setups/nodes-in-cluster.png) 
+
+Figure 2: The nodes in the Kafka cluster showing their respective role
 
 ### Test Results
 
@@ -122,7 +124,9 @@ While running the test we observed the following out from our analytics:
 * CPU usage was minimal as expected (less than 23% utilization), therefore the CPU can be used for other tasks like number crunching; so it helps to have the right job mix.
 * Memory on all three nodes (Kafka-01, Kafka-02 and Spark-Cassandra-Master) was pretty much close to the total memory available 32GB utilization for the duration of the test and used swap space on the Kafka nodes was minimal (< 5MB). This leads us to believe that Kafka is pre-allocating memory.
 
-![memory-usage](/images/stress-testing-big-data-setups/memory-usage.png) Figure 3: Memory usage on the Kafka Node
+![memory-usage](/images/stress-testing-big-data-setups/memory-usage.png) 
+
+Figure 3: Memory usage on the Kafka Node
 
 * As expected network performance bounds the performance of Kafka and as we can see from the above table we hit the ceiling of 1 Gbps/sec when we tried to saturate the cluster with a record rate of 10 million/sec. We were able to reach a peak rate of 90K TCP segments sent /second and 45K TCP segments received / second.
 * From a storage perspective, we saw that it definitely helps to have SSD; since we saw disk performance go up to 300K write operations/sec across the two SSDs in a RAID1 configuration.
@@ -142,7 +146,9 @@ To summarize the results from the tests:
 
 The Spark-Perf benchmark was run with Spark batch tests and the tests were scaled up gradually in order to stress the cluster under test ultimately saturating the cluster to establish the peak operation rate achieved and the infrastructure resource that bound the operation rate. The spark jobs were sent to the executors, which are running on Spark-Cassandra-Worker01 and Spark-Cassandra-Worker02. Note: When we ran the Spark tests, although we had the Cassandra servers up and running we did not run any other tests at the same time
 
-![spark-cluster](/images/stress-testing-big-data-setups/spark-cluster.png) Figure 4: Spark cluster depicting Master and Worker node
+![spark-cluster](/images/stress-testing-big-data-setups/spark-cluster.png) 
+
+Figure 4: Spark cluster depicting Master and Worker node
 
 ### Test Results
 
