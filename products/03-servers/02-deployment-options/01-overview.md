@@ -5,4 +5,9 @@
     "tag":["Deployment Options"]
 }
 </meta>-->
-Content coming soon...
+
+| Source  | Content |
+| ------------- | ------------- |
+| On Demand | Our most popular deployment Option |
+| Reserved Hardware | A specific device reserved via our sales team |
+| Spot Market | | What is it here.... |
