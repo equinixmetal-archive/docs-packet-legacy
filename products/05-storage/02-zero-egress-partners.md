@@ -14,7 +14,5 @@ Packet [whitelists associated IPs to Wasabi’s service domains](https://wasabi-
 * [BackBlaze](https://backblaze.com) — Packet zero rates egress data charges to BackBlaze’s North American and Amsterdam locations.
 Packet whitelists IPs to Backblaze’s IPs as listed [here](https://help.backblaze.com/hc/en-us/articles/217664588-Backblaze-IP-Address-List?mobile_site=true)
 
-* [Cloudflare](https://cloudflare.com/) — Packet zero rates egress data charges to Cloudflare from all locations.
-Packet [whitelists IPs from Cloudflares public list](https://www.cloudflare.com/ips/)
 
 If you have questions about how our egress partnerships will impact your billable usage, please reach out to support@packet.com for a conversation.
