@@ -5,7 +5,6 @@
     "author":"Ronggur Habibun",
     "github":"ronggur",
     "email":"ronggur.mh@gmail.com",
-    "date": "2019/06/06",
     "tag":["virtual machines", "another tag"]
 }
 </meta> -->

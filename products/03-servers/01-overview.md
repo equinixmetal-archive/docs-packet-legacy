@@ -2,12 +2,10 @@
 {
     "title":"Overview",
     "description":"Learn more about compute classes and custom configurations.",
-    "date": "09/20/2019",
     "tag":["Device Types", "Devices", "Compute Classes", "Custom Configurations"]
 }
 </meta>-->
 
-#### What are Classes?
 
 Classes are groupings derived from common use cases.  If you're an AWS user, this will seem pretty familiar.  Packet organizes servers into the following classes:
 
@@ -37,38 +35,3 @@ Packet previously labeled servers using Types, such as "Type 1" which was repres
 
 _These will still work_--we have simply made an alias in which baremetal_1 translates to its new name:  "c1.small.x86".  
 
-However, new instances (such as our AMD configuration introduced in February, 2018) can only be accessed by the new class-based name or nickname.  In this case: "c2.medium.x86" or just "c2.medium" for short.
-
-#### List of All Servers / Names
-
-The following represents our current lineup of servers.  Previous names are mentioned in parentheses.  
-
----
-__Tiny (t)__
-* t1.small.x86
-
-__Compute (c)__
-* c1.small.x86
-* c2.medium.x86
-* c3.medium.x86
-* c1.large.arm
-* c2.large.arm
-* c1.xlarge.x86
-* c1.large.arm.xda
-
-__GPU (g)__
-* g2.large.x86
-
-__Memory (m)__
-* m1.xlarge.x86
-* m2.xlarge.x86
-
-__Network (n)__
-* n2.xlarge.x86
-
-__Storage (s)__
-* s1.large.x86
-
-__Accelerator (x)__
-* x1.small.x86
-* x2.xlarge.x86

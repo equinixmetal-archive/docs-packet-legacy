@@ -2,12 +2,10 @@
 {
     "title":"Device Tagging",
     "description":"Create Device Tags",
-    "date": "11/06/2019",
     "tag":["API", "Tagging", "Device Tagging"]
 }
 </meta>-->
 
-## Device Tagging
 
 Tagging is a feature allowing you to apply custom labels to a single device or multiple devices. Device tagging is purely for filtering purposes at this time. 
 

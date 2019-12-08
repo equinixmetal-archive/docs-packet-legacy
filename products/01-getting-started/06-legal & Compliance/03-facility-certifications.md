@@ -2,7 +2,6 @@
 {
     "title":"Facility Certifications",
     "description":"Learn more about Facility Certifications at Packet",
-    "date": "11/26/2019",
     "tag":["Facility Certifications", "Legal Compliance"]
 }
 </meta>-->

@@ -5,7 +5,6 @@
     "description":"Deploy DC/OS with Terraform",
     "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
-    "date": "2019/09/05",
     "email":"zak@packet.com",
     "tag":["DC/OS", "Terraform", "Datacenter Operating System"]
 }

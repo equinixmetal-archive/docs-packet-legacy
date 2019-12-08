@@ -2,12 +2,10 @@
 {
     "title":"Global Anycast IPs",
     "description":"Obtaining & Utilizing Global Anycast IPs",
-    "date": "09/20/2019",
     "tag":["Network", "Elastic IPs", "Anycast"]
 }
 </meta>-->
 
-### Global Anycast IPs
 
 Global Anycast IPs are public IPv4 addresses pulled from Packet-owned IP space and announced in all of our core facilities (custom sites coming soon). This allows you to perform Anycast without having to go through the effort of registering your own AS.
 

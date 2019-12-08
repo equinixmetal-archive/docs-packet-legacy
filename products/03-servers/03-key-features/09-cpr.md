@@ -2,7 +2,6 @@
 {
     "title":"Custom Partitioning and RAID",
     "description":"Setting up CPR (Custom Partitioning & RAID).",
-    "date": "09/20/2019",
     "tag":["CPR", "Custom RAID", "RAID", "Partition"]
 }
 </meta>-->
@@ -18,23 +17,38 @@ First things first, you should be familiar with the [API calls available for dev
 
 You should also be aware of our standard disk configurations for each server type.  With a few hardware-specific exceptions, generally speaking, this looks like:
 
-*   __t1.small.x86__:   1 × 80 GB, no RAID
-*   __c1.small.x86__:   2 × 120 GB SSD in RAID 1
-*   __x1.small.x86__:   240 GB of SSD (1 × 240 GB)
-*   __m1.xlarge.86:__   2.8 TB of SSD (6 × 480GB SSD)
-*   __m2.xlarge.x86__ (Intel Scalable): 2 × 120 GB in RAID 1 & 3.8 TB of NVMe Flash
-*   __c1.larger.arm__: 1 × 340 GB SSD, no RAID
-*   __c1.xlarge.x86__:  2 × 120 GB SSD in RAID 1
-*   __c2.medium.x86 (EPYC)__: 960 GB of SSD (2 x 480 GB)
-*   __s1.large.x86__:  2 x 480 GB SSD in RAID 1, with 120 GB SSD as cache in front of 12 X 2 TB HDD.
+*   __t1.small.x86__:   1 × 80 GB SSD (Boot)
+*   __c1.small.x86__:   2 × 120 GB SSD in RAID 1 (Boot)
+*   __c1.large.arm__: 1 × 340 GB SSD (Boot)
+*   __c2.large.arm__: 1 × 480 GB SSD (Boot)
+*   __c1.xlarge.x86__:  2 × 120 GB SSD in RAID 1 (Boot) & 1.6 TB of NVMe Flash
+*   __c2.medium.x86__: 960 GB of SSD (2 x 480 GB) (1 for Boot)
+*   __c3.medium.x86__: 960 GB of SSD (2 x 480 GB) (1 for Boot)
+*   __m1.xlarge.x86__:   6 × 480GB SSD (1 for Boot)
+*   __m2.xlarge.x86__: 2 × 120 GB SSD (1 for Boot) & 3.8 TB of NVMe Flash
+*   __x1.small.x86__:   1 × 240 GB SSD (Boot)
+*   __x2.xlarge.x86__: 1 × 120 GB SSD (Boot) , 2 × 240 GB SSD & 3.8 TB of NVMe Flash
+*   __n2.xlarge.x86__: 2 × 240 GB SSD in Hardware RAID 1 (Boot) & 3.8 TB of NVMe Flash
+*   __g2.large.x86__: 1 x 150 GB SSD (Boot), 2 x 480 GB SSD 
+*   __s1.large.x86__:  1 x 120 GB SSD (Boot), 2 x 480 GB SSD & 12 X 2 TB HDD.
 
 ### Using CPR During Provisioning
 
 Let's say you are going to deploy one of your reserved instances. An example [call to the API](https://www.packet.com/developers/api/devices/) might look like this:
 
 ```
-curl -H "X-Auth-Token: token" -H "Content-Type: application/json" -d  '{ "facility": "string", "plan": "string", "hostname": "string", "storage":"string",  "billing\_cycle": "string",    "operating\_system": "string", "userdata": "string", "tags": \[    "string"\] }'
-````
+curl -H "X-Auth-Token: token" -H "Content-Type: application/json" -d '
+{
+  "facility": "string",
+  "plan": "string",
+  "hostname": "string",
+  "storage": "string",
+  "billing_cycle": "string",
+  "operating_system": "string",
+  "userdata": "string",
+  "tags": ["string"]
+}'
+```
 Note: 'storage' and 'string' are where you would specifically state your configuration requirements.
 
 ### t1.small.x86 Partition Example
@@ -201,6 +215,6 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
 
 ### c1.large.arm Partition Requirement
 
-For the c1.large.arm server, it requires a FAT32 boot partition for `/boot/efi` - an example of this particular partition would be:
+For the c1.large.arm and c2.medium.x86 servers, it requires a FAT32 boot partition for `/boot/efi` - an example of this particular partition would be:
 
 `format": "vfat", "create":{"options":\[32, "-n", "BIOS"\]}, "point":"/boot/efi`

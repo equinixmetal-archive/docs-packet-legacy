@@ -6,7 +6,6 @@
     "author":"Mo",
     "github":"usrdev",
     "email":"mo@usr.dev",
-    "date": "2019/11/07",
     "tag":["Storage", "Block Storage", "Elastic Block Storage"]
 }
 </meta> 

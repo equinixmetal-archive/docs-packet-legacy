@@ -2,12 +2,9 @@
 {
     "title":"Reinstall",
     "description":"Learn more about reinstalling a server at Packet!",
-    "date": "2019/11/5",
     "tag":["Reinstall", "Server"]
 }
 </meta>-->
-
-### Server Reinstall
 
 
 The Server Reinstall feature enables you to provision a new instance on the same hardware, which is perfect if you want to keep the assigned IP addresses, userdata, etc.  

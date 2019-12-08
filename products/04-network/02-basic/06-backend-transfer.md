@@ -2,12 +2,9 @@
 {
     "title":"Backend Transfer",
     "description":"Setting Up & Using Backend Transfer on Packet",
-    "date": "09/20/2019",
     "tag":["Backend Transfer", "Private Network"]
 }
 </meta>-->
-
-# Backend Transfer
 
 All servers within a Project can talk to each other via private RFC1918 address space (e.g. 10.x.x.x), but cannot communicate over private address space with devices outside of that Project. This is also referred to as "backend" networking.
 
