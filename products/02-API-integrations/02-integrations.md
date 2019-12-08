@@ -8,7 +8,7 @@
 
 While you can curl our API directly, most users leverage an API library in a language of their choice. 
 
-We maintain official in a variety of popular programming languages, including Golang, PHP and Ruby. [View the full list](https://www.packet.com/developers/libraries/).
+We maintain official libraries in a variety of popular programming languages (including Golang, PHP and Ruby) as well as a Command Line Interface (CLI) tool. [View the full list](https://www.packet.com/developers/libraries/).
 
 ### Official Integrations
 
