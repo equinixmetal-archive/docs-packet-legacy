@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Overview",
+    "title":"Elastic Block Storage",
     "description":"Overview of our Storage Offering",
     "tag":["EBS", "Block storage"]
 }
