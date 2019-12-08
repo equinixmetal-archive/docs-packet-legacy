@@ -63,4 +63,4 @@ You can also take a loot at our [full list of orchestration tools](https://www.p
 
 This is the easiest of them all!
 
-A number of platforms, such as Docker Cloud, Cloud66, Containership, and StackpointCloud have directly integrated with the Packet API.  This means you simply need to have an active Packet account and an API key to get started. Grab your API key from the Packet portal, provide it in the portal of the integration you’re working with, and you should be off to the races.
+A number of platforms, such as Cycle.io have directly integrated with the Packet API.  This means you simply need to have an active Packet account and an API key to get started. Grab your API key from the Packet portal, provide it in the portal of the integration you’re working with, and you should be off to the races.
