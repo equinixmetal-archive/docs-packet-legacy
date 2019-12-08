@@ -71,12 +71,11 @@ sysctl net.ipv4.ip_forward=1
 
 # Step 6 - Edit the BIRD Configuration File
 
-First, backup the original file.
+Backup the original file, because that's the right thing to do ; )
 
 ```bash
 mv /etc/bird/bird.conf /etc/bird/bird.conf.original
 ```
-Now edit your bird.conf file to looks like the below.
 
 ```bash
 vim /etc/bird/bird.conf
@@ -117,7 +116,9 @@ protocol bgp {
 }
 ```
 
-Note: You'll probably want to automate a setup like this using [user data](https://support.packet.com/kb/articles/user-data). That way you can provision your servers and configure their network without ever having to SSH into the server! To do that, you would curl the metadata service and parse the response using something like [jq](https://stedolan.github.io/jq/download/). For example:
+### **NOTE:**
+
+You'll probably want to automate a setup like this using [user data](https://support.packet.com/kb/articles/user-data). That way you can provision your servers and configure their network without ever having to SSH into the server! To do that you would hit the metadata service and parse the response using something like [jq](https://stedolan.github.io/jq/download/). For example:
 
 ```bash
 json=$(curl https://metadata.packet.net/metadata)
@@ -125,7 +126,7 @@ router=$(echo $json | jq -r ".network.addresses[] | select(.public == false) | .
 gateway=$(echo $json | jq -r ".network.addresses[] | select(.public == false) | .gateway")
 ```
 
-_Note that we're specifically looking for the servers private addresses._
+**_Note that we're specifically looking for the servers private addresses._**
 
 # Step 7 - Restart BIRD
 
@@ -176,6 +177,6 @@ If you check the server detail page, you will also see the learned route.
 
 ![server-details](/images/route-bgp-with-bird/server-details.png)
 
-To test, you can ping the IP address in a command line - `ping 10.99.12.138`. _Remember, Local BGP is announcing a private IP address, so you'll have to be connected to the private network for the data center you're running Local BGP in. You can do that by SSHing into another server in that data center or by connected to [Doorman](https://www.packet.net/developers/guides/route-bgp-with-bird/), Packet's private VPN._
+To test, you can ping the IP address in a command line - `ping 10.99.12.138`. _Remember this is Local BGP so you'll have to be connected to the private network for the data center you're running Local BGP in. You can do that by SSHing into another server in that data center or by connected to [Doorman](https://www.packet.net/developers/guides/route-bgp-with-bird/), Packet's private VPN._
 
 **Congratulations! You've just configured a BGP routing protocol.**

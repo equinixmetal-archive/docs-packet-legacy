@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Capacity",
+    "title":"Packet Capacity",
     "description":"Learn more about Packet capacity",
     "tag":["API", "Inventory", "Capacity"]
 }
