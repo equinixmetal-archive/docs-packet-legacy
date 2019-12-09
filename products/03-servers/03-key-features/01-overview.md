@@ -5,6 +5,7 @@
     "tag":["Key Features"]
 }
 </meta>-->
+
 Deploying servers at Packet is very similar to working with compute instances at AWS, GCP, Digital Ocean and others. 
 
 For example, we have full support for User Data, which can be used to perform various automation tasks after the server is ready (e.g. executing common scripts / packages or triggering other more advanced configuration processes).
