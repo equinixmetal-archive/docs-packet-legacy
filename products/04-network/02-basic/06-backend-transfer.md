@@ -6,17 +6,17 @@
 }
 </meta>-->
 
+Backend Transfer extends the normal private / backend networking capability across our global facilities.
+
+This means you can use the same easy and secure method to communicate between servers in a project, even if they are not located in the same datacenter.
+
+### How does it work?
+
 All servers within a Project can talk to each other via private RFC1918 address space (e.g. 10.x.x.x), but cannot communicate over private address space with devices outside of that Project. This is also referred to as "backend" networking.
 
 This feature ensures that when you're communicating between servers, you are able to do so in a private / secure manner without needing to worry about establishing VPN tunnels or sending data over the public internet.
 
 The only restriction is that all servers must be within a single project.
-
-## What is Backend Transfer?
-
-Backend Transfer extends the normal private / backend networking capability across our global facilities.
-
-This means you can use the same easy and secure method to communicate between servers in a project, even if they are not located in the same datacenter.
 
 ### Is there a cost to Backend Transfer?
 
