@@ -6,11 +6,11 @@
 }
 </meta>-->
 
-Packet’s network and datacenter topology is designed with performance and redundancy as top priorities. Two unique features include a full Layer-3 topology and a native dual-stack (IPv4 / IPv6) capability.
+Packet’s network and datacenter topology is designed with performance and redundancy as top priorities. Two unique features include a Layer-3 topology and native dual-stack (IPv4 / IPv6) capability.
 
-With a pure Layer-3 network design, each server is directly attached to a physical switch via either 2 x 1Gbps copper or 2 x 10Gbps SFP+ connections - providing elastic, cloud-style networking without the slow, latency-inducing characteristics often associated with overlays and Layer-2 vLans.
+With our Layer-3 network design, each server is directly attached to a physical switch via either 2 x 1Gbps copper or 2 x 10Gbps SFP+ connections. This provides elastic, cloud-style networking without the slow, latency-inducing characteristics often associated with complex overlays. For use cases that require Layer 2 functionality, please check out our [Layer 2 feature](/products/network/advanced/layer-2.md).
 
-Each server has dedicated dual network connections going into two Top-of-Rack (ToR) switches. These two physical connections are virtually bonded together as follows:
+For redundancy, each server has dedicated dual network connections going into two Top-of-Rack (ToR) switches. These two physical connections are virtually bonded together as follows:
 
 
 | Type  | Network |
