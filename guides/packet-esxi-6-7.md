@@ -1,6 +1,6 @@
-# Deploy VMWare ESXi 6.7 on Packet Bare Metal Servers
+# Deploy VMware ESXi 6.7 on Packet Bare Metal Servers
 
-To get a VMWare ESXi 6.7 server up and running on Packet, you need to deploy an ESXi 6.5 server and run the ESXi 6.7 update through an SSH session on the server.
+To get a VMware ESXi 6.7 server up and running on Packet, you need to deploy an ESXi 6.5 server and run the ESXi 6.7 update through an SSH session on the server.
 
 First make sure that SSH and Shell are enabled on the server, they should be enabled by default on Packet but if not, run the following:
 
@@ -15,7 +15,7 @@ esxcli sched swap system set --datastore-enabled true
 esxcli sched swap system set --datastore-name datastore1
 ```
 
-Prepare the server for the update and run the update. You can get the latest VMWare ESXi update versions [here](https://esxi-patches.v-front.de/ESXi-6.7.0.html).
+Prepare the server for the update and run the update. You can get the latest VMware ESXi update versions [here](https://esxi-patches.v-front.de/ESXi-6.7.0.html).
 
 ```
 vim-cmd /hostsvc/maintenance_mode_enter
@@ -32,6 +32,6 @@ vim-cmd /hostsvc/maintenance_mode_exit
 reboot
 ```
 
-Once the update has completed, the server should now be running VMWare ESXi 6.7!
+Once the update has completed, the server should now be running VMware ESXi 6.7!
 
-If you are looking for an automated way of doing this, we have a Terraform script that lets you deploy multiple servers with VMWare ESXi 6.7 [here](https://github.com/enkelprifti98/packet-esxi-6-7).
+If you are looking for an automated way of doing this, we have a Terraform script that lets you deploy multiple servers with VMware ESXi 6.7 [here](https://github.com/enkelprifti98/packet-esxi-6-7).
