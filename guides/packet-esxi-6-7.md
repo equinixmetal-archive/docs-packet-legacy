@@ -9,7 +9,7 @@ vim-cmd hostsvc/enable_ssh
 vim-cmd hostsvc/start_ssh
 ```
 
-Swap must be enabled on the datastore. Otherwise, the upgrade may fail with a "no space left" error.
+Swap must be enabled on the datastore. Otherwise, the update may fail with a "no space left" error.
 ```
 esxcli sched swap system set --datastore-enabled true
 esxcli sched swap system set --datastore-name datastore1
