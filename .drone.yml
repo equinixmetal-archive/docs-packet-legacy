@@ -59,4 +59,5 @@ steps:
     commands:
       - npm i -g markdown-image-cli
       - markdown-image-cli -d ./products
+      - markdown-image-cli -d ./guides
     depends_on: [clone]

@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Legal Overview",
+    "title":"Legal Compliance",
     "description":"Learn more about our legal terms",
     "tag":["ToS","Terms","GDPR"]
 }
