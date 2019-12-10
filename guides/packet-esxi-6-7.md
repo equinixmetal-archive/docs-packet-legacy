@@ -1,4 +1,17 @@
-# Deploy VMware ESXi 6.7 on Packet Bare Metal Servers
+<!--
+<meta>
+{
+    "title":"VMware ESXi 6.7 on Packet",
+    "description":"Deploy VMware ESXi 6.7 on Packet Bare Metal Servers",
+    "author":"Enkel Prifti",
+    "github":"enkelprifti98",
+    "email":"enkel@packet.com",
+    "tag":["VMware", "ESXi", "Virtualization"]
+}
+</meta>
+-->
+
+# VMware ESXi 6.7 on Packet Bare Metal Servers
 
 To get a VMware ESXi 6.7 server up and running on Packet, you need to deploy an ESXi 6.5 server and run the ESXi 6.7 update through an SSH session on the server.
 
