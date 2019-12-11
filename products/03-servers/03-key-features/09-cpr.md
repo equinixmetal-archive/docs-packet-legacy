@@ -7,13 +7,13 @@
 </meta>-->
 
 
-Custom Partitioning & Raid (CPR) is powerful and yet easy to use feature that helps you configure Reserved Hardware instances during deployment.  
+Custom Partitioning & Raid (CPR) is a powerful and yet easy to use feature that helps you configure the disk configuration of Reserved Hardware instances during deployment.  
 
 _Please note: this feature is not available for on-demand instances.  A reserved device is required.  This is because with reserved devices, our system knows the exact drive scheme to allow such customization.  However, all of our machine types can be converted to reserved hardware, so just reach out to [support@packet.com](mailto:support@packet.com) to arrange a reservation._
 
 ### Getting Started
 
-First things first, you should be familiar with the [API calls available for device provisioning](https://www.packet.com/developers/api/devices/), you'll need them!
+First things first, you should be familiar with the [API calls available for device provisioning](https://www.packet.com/developers/api/devices/), you'll need them! You can find examples for deploying reserved hardware [here](/products/01-getting-started/03-deployment-options/03-reserved-hardware.md).
 
 You should also be aware of our standard disk configurations for each server type.  With a few hardware-specific exceptions, generally speaking, this looks like:
 
@@ -37,21 +37,21 @@ You should also be aware of our standard disk configurations for each server typ
 Let's say you are going to deploy one of your reserved instances. An example [call to the API](https://www.packet.com/developers/api/devices/) might look like this:
 
 ```
-curl -H "X-Auth-Token: token" -H "Content-Type: application/json" -d '
+curl -H "X-Auth-Token: token" -H "Content-Type: application/json" "https://api.packet.net/projects/{ID}/devices" -d '
 {
   "facility": "string",
   "plan": "string",
   "hostname": "string",
-  "storage": "string",
   "billing_cycle": "string",
   "operating_system": "string",
+  "storage": {JSON Object},
   "userdata": "string",
   "tags": ["string"]
 }'
 ```
-Note: 'storage' and 'string' are where you would specifically state your configuration requirements.
+Note: 'storage' and 'JSON Object' are where you would specifically state your storage configuration requirements.
 
-### t1.small.x86 Partition Example
+### t1.small.x86 CPR Example
 
 Using a simple t1.small.x86 to start, the following example shows you how to:
 
@@ -62,11 +62,11 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
 
 ```
 {
-  "disks": \[
+  "disks": [
     {
       "device": "/dev/sda",
       "wipeTable": true,
-      "partitions": \[
+      "partitions": [
         {
           "label": "BIOS",
           "number": 1,
@@ -82,20 +82,20 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
           "number": 3,
           "size": 0
         }
-      \]
+      ]
     }
-  \],
-  "filesystems": \[
+  ],
+  "filesystems": [
     {
       "mount": {
         "device": "/dev/sda3",
         "format": "ext4",
         "point": "/",
         "create": {
-          "options": \[
+          "options": [
             "-L",
             "ROOT"
-          \]
+          ]
         }
       }
     },
@@ -105,26 +105,26 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
         "format": "swap",
         "point": "none",
         "create": {
-          "options": \[
+          "options": [
             "-L",
             "SWAP"
-          \]
+          ]
         }
       }
     }
-  \]
+  ]
 }
 ```
 
 #### m1.xlarge example
-
+The next exmaple is a slightly more complicated configuration that includes RAID.
 ```
 {  
-   "disks":\[  
+   "disks": [  
       {  
          "device":"/dev/sda",
          "wipeTable":true,
-         "partitions":\[  
+         "partitions": [  
             {  
                "label":"BIOS",
                "number":1,
@@ -140,12 +140,12 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
                "number":3,
                "size":0
             }
-         \]
+         ]
       },
       {  
          "device":"/dev/sdb",
          "wipeTable":true,
-         "partitions":\[  
+         "partitions": [  
             {  
                "label":"BIOS",
                "number":1,
@@ -161,38 +161,38 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
                "number":3,
                "size":0
             }
-         \]
+         ]
       }
-   \],
-   "raid":\[  
+   ],
+   "raid": [  
       {  
-         "devices":\[  
+         "devices": [  
             "/dev/sda2",
             "/dev/sdb2"
-         \],
+         ],
          "level":"1",
          "name":"/dev/md/SWAP"
       },
       {  
-         "devices":\[  
+         "devices": [  
             "/dev/sda3",
             "/dev/sdb3"
-         \],
+         ],
          "level":"1",
          "name":"/dev/md/ROOT"
       }
-   \],
-   "filesystems":\[  
+   ],
+   "filesystems": [  
       {  
          "mount":{  
             "device":"/dev/md/ROOT",
             "format":"ext4",
             "point":"/",
             "create":{  
-               "options":\[  
+               "options": [  
                   "-L",
                   "ROOT"
-               \]
+               ]
             }
          }
       },
@@ -202,19 +202,19 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
             "format":"swap",
             "point":"none",
             "create":{  
-               "options":\[  
+               "options": [  
                   "-L",
                   "SWAP"
-               \]
+               ]
             }
          }
       }
-   \]
+   ]
 }
 ```
 
-### c1.large.arm Partition Requirement
+### Partition Requirement for UEFI servers
 
-For the c1.large.arm and c2.medium.x86 servers, it requires a FAT32 boot partition for `/boot/efi` - an example of this particular partition would be:
+For the c1.large.arm, c2.large.arm, c2.medium.x86, and c3.medium.x86 servers, you are required to use a FAT32 boot partition for `/boot/efi` - an example of this particular partition would be:
 
 `format": "vfat", "create":{"options":\[32, "-n", "BIOS"\]}, "point":"/boot/efi`
