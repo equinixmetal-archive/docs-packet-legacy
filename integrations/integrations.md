@@ -1,3 +1,15 @@
+<!-- <meta>
+{
+    "title":"Integrations",
+    "slug":"intagrations",
+    "description":"All integrations as a single file",
+    "author":"Zalkar Ziiaidin",
+    "github":"zalkar-z",
+    "date": "2019/12/11",
+    "tag":[""]
+}
+</meta> -->
+
 ## Terraform
 
 Terraform enables you to safely and predictably create, change, and improve production infrastructure by using configuration files.
