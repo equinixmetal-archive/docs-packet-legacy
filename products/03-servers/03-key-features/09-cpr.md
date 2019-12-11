@@ -39,10 +39,9 @@ _Some servers are UEFI only and require an extra step for the CPR configuration.
 Let's say you are going to deploy one of your reserved instances. An example [call to the API](https://www.packet.com/developers/api/devices/) might look like this:
 
 ```
-curl -H "X-Auth-Token: token" -H "Content-Type: application/json" -d '
+curl -X POST -H "X-Auth-Token: token" -H "Content-Type: application/json" -d '
 {
-  "facility": "string",
-  "plan": "string",
+  "hardware_reservation_id": "string",
   "hostname": "string",
   "billing_cycle": "string",
   "operating_system": "string",
