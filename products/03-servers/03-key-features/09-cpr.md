@@ -33,7 +33,7 @@ You should also be aware of our standard disk configurations for each server typ
 *   __g2.large.x86__: 1 x 150 GB SSD (Boot), 2 x 480 GB SSD 
 *   __s1.large.x86__:  1 x 120 GB SSD (Boot), 2 x 480 GB SSD & 12 X 2 TB HDD.
 
-_Some servers are UEFI only and require an extra step for the CPR configuration. Please check the [last section](#EFI Partition Requirement for UEFI only servers) of this article for the details of UEFI only servers._
+_Some servers are UEFI only and require an extra step for the CPR configuration. Please check the [last section](## EFI Partition Requirement for UEFI only servers) of this article for the details of UEFI only servers._
 
 ## Using CPR During Provisioning
 
