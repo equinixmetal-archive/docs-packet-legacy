@@ -339,7 +339,7 @@ This example is more complex than the others as it involves different RAID setup
             }
         ]
     }
-    ```
+```
 
 
 ### Partition Requirement for UEFI only servers
