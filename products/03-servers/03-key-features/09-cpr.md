@@ -343,7 +343,7 @@ This example is more complex than the others as it involves different RAID setup
 ```
 
 
-### Partition Requirement for UEFI only servers
+### EFI Partition Requirement for UEFI only servers
 
 For the c1.large.arm, c2.large.arm, c2.medium.x86, and c3.medium.x86 servers which are UEFI only, you are required to use a FAT32 EFI partition for `/boot/efi` - The default c2.medium.x86 CPR configuration looks like the following:
 
