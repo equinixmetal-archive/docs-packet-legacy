@@ -32,6 +32,8 @@ You should also be aware of our standard disk configurations for each server typ
 *   __g2.large.x86__: 1 x 150 GB SSD (Boot), 2 x 480 GB SSD 
 *   __s1.large.x86__:  1 x 120 GB SSD (Boot), 2 x 480 GB SSD & 12 X 2 TB HDD.
 
+_Some servers are UEFI only and require an extra step for the CPR configuration. Please check the end of this article for the details of UEFI only servers._
+
 ### Using CPR During Provisioning
 
 Let's say you are going to deploy one of your reserved instances. An example [call to the API](https://www.packet.com/developers/api/devices/) might look like this:
@@ -348,119 +350,70 @@ For the c1.large.arm, c2.large.arm, c2.medium.x86, and c3.medium.x86 servers whi
 
 ```
 {
-        "disks": [
-            {
-                "device": "/dev/sda",
-                "wipeTable": true,
-                "partitions": [
-                    {
-                        "label": "BIOS",
-                        "number": 1,
-                        "size": 4096
-                    },
-                    {
-                        "label": "SWAP",
-                        "number": 2,
-                        "size": "8G"
-                    },
-                    {
-                        "label": "ROOT",
-                        "number": 3,
-                        "size": 0
-                    }
-                ]
-            },
-            {
-                "device": "/dev/sdb",
-                "wipeTable": true,
-                "partitions": [
-                    {
-                        "label": "BIOS",
-                        "number": 1,
-                        "size": 4096
-                    },
-                    {
-                        "label": "SWAP",
-                        "number": 2,
-                        "size": "8G"
-                    },
-                    {
-                        "label": "ROOT",
-                        "number": 3,
-                        "size": 0
-                    }
-                ]
-            },
-            {
-                "device": "/dev/nvme0n1",
-                "wipeTable": true,
-                "partitions": [
-                    {
-                        "label": "VAR1",
-                        "number": 1,
-                        "size": 0
-                    }
-                ]
-            }            
-        ],
-        "raid": [
-            {
-                "devices": [
-                    "/dev/sda3",
-                    "/dev/sdb3"
-                ],
-                "level": "0",
-                "name": "/dev/md/ROOT"
-            },
-            {  
-                "devices":[  
-                   "/dev/sda2",
-                   "/dev/sdb2"
-                ],
-                "level":"1",
-                "name":"/dev/md/SWAP"
-             }
-        ],
-        "filesystems": [
-            {
-                "mount": {
-                    "device": "/dev/md/ROOT",
-                    "format": "ext4",
-                    "point": "/",
-                    "create": {
-                        "options": [
-                            "-L",
-                            "ROOT"
-                        ]
-                    }
-                }
-            },
-            {
-                "mount": {
-                    "device": "/dev/nvme0n1p1",
-                    "format": "ext4",
-                    "point": "/var",
-                    "create": {
-                        "options": [
-                            "-L",
-                            "VAR1"
-                        ]
-                    }
-                }
-            },
-            {  
-                "mount":{  
-                   "device":"/dev/md/SWAP",
-                   "format":"swap",
-                   "point":"none",
-                   "create":{  
-                      "options":[  
-                         "-L",
-                         "SWAP"
-                      ]
-                   }
-                }
-            }
-        ]
-    }
+		"disks": [
+			{
+				"device": "/dev/sda",
+				"wipeTable": true,
+				"partitions": [
+					{
+						"label": "BIOS",
+						"number": 1,
+						"size": "512M"
+					},
+					{
+						"label": "SWAP",
+						"number": 2,
+						"size": "3993600"
+					},
+					{
+						"label": "ROOT",
+						"number": 3,
+						"size": 0
+					}
+				]
+			}
+		],
+		"filesystems": [
+			{
+				"mount": {
+					"device": "/dev/sda1",
+					"format": "vfat",
+					"point": "/boot/efi",
+					"create": {
+						"options": [
+							"32",
+							"-n",
+							"EFI"
+						]
+					}
+				}
+			},
+			{
+				"mount": {
+					"device": "/dev/sda3",
+					"format": "ext4",
+					"point": "/",
+					"create": {
+						"options": [
+							"-L",
+							"ROOT"
+						]
+					}
+				}
+			},
+			{
+				"mount": {
+					"device": "/dev/sda2",
+					"format": "swap",
+					"point": "none",
+					"create": {
+						"options": [
+							"-L",
+							"SWAP"
+						]
+					}
+				}
+			}
+		]
+	}
 ```
