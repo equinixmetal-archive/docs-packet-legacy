@@ -10,7 +10,7 @@
 }
 </meta> -->
 
-Welcome to [Packet Node.js CLI](https://github.com/packethost/packet-nodejs).
+Welcome to [Packet Node.js API Client](https://github.com/packethost/packet-nodejs).
 
 This is a library to help you consume our API routes effectively, making your experience as a developer with Packet a breeze!
 
@@ -24,7 +24,7 @@ There are two ways to get started:
 
 2) Clone our public repo in GitHub: `git clone git@github.com:packethost/packet-nodejs.git`
 
-## Using the library
+## Usage
 
 ```
 Packet = require('packet-nodejs');
