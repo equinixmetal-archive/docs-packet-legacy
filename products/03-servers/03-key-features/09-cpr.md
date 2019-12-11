@@ -2,7 +2,7 @@
 {
     "title":"Custom Partitioning and RAID",
     "description":"Setting up CPR (Custom Partitioning & RAID).",
-    "tag":["CPR", "Custom RAID", "RAID", "Partition"]
+    "tag":["CPR", "Custom RAID", "RAID", "Partition", "Disk Configuration", "SATA", "HDD", "SSD", "NVMe"]
 }
 </meta>-->
 
