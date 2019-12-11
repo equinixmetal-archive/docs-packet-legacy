@@ -6,12 +6,13 @@
 }
 </meta>-->
 
+# Custom Partitioning & Raid (CPR)
 
 Custom Partitioning & Raid (CPR) is a powerful and yet easy to use feature that helps you configure the disk configuration of Reserved Hardware instances during deployment.  
 
 _Please note: this feature is not available for on-demand instances.  A reserved device is required.  This is because with reserved devices, our system knows the exact drive scheme to allow such customization.  However, all of our machine types can be converted to reserved hardware, so just reach out to [support@packet.com](mailto:support@packet.com) to arrange a reservation._
 
-### Getting Started
+## Getting Started
 
 First things first, you should be familiar with the [API calls available for device provisioning](https://www.packet.com/developers/api/devices/), you'll need them! You can find examples for deploying reserved hardware [here](/products/01-getting-started/03-deployment-options/03-reserved-hardware.md).
 
@@ -34,7 +35,7 @@ You should also be aware of our standard disk configurations for each server typ
 
 _Some servers are UEFI only and require an extra step for the CPR configuration. Please check the end of this article for the details of UEFI only servers._
 
-### Using CPR During Provisioning
+## Using CPR During Provisioning
 
 Let's say you are going to deploy one of your reserved instances. An example [call to the API](https://www.packet.com/developers/api/devices/) might look like this:
 
@@ -52,12 +53,12 @@ curl -X POST -H "X-Auth-Token: token" -H "Content-Type: application/json" -d '
 ```
 Note: 'storage' and 'JSON Object' are where you would specifically state your storage configuration requirements.
 
-### Drive Type Name Differences (SATA HDDs, SATA SSDs, and NVMe Flash)
+## Drive Type Name Differences (SATA HDDs, SATA SSDs, and NVMe Flash)
 It's worth noting that the OS will use a different naming scheme for NVMe drives compared to standard SSDs and HDDs which are usually seen in the format of `sda`, `sdb` etc. On the other hand, NVMe drives usually follow the naming scheme of `nvme0n1`, `nvme0n2` etc.
 
 When partitioning, standard drives are usually followed by a number, so `sda1` and `sda2` while NVMe drives are usually followed by a `p` and number, so it would be `nvme0n1p1` and `nvme0n1p2`.
 
-### t1.small.x86 CPR Example
+## t1.small.x86 CPR Example
 
 Using a simple t1.small.x86 to start, the following example shows you how to:
 
@@ -122,7 +123,7 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
 }
 ```
 
-### m1.xlarge.x86 example
+## m1.xlarge.x86 example
 The next exmaple is a slightly more complicated configuration that includes RAID.
 ```
 {  
@@ -219,7 +220,7 @@ The next exmaple is a slightly more complicated configuration that includes RAID
 }
 ```
 
-### m2.xlarge.x86 with RAID and NVMe drive example
+## m2.xlarge.x86 with RAID and NVMe drive example
 
 This example is more complex than the others as it involves different RAID setups for the ROOT and SWAP partitions as well as mounting the NVMe drive during deployment.
 
@@ -343,7 +344,7 @@ This example is more complex than the others as it involves different RAID setup
 ```
 
 
-### EFI Partition Requirement for UEFI only servers
+## EFI Partition Requirement for UEFI only servers
 
 For the c1.large.arm, c2.large.arm, c2.medium.x86, and c3.medium.x86 servers which are UEFI only, you are required to use a FAT32 EFI partition for `/boot/efi` - The default c2.medium.x86 CPR configuration looks like the following:
 
