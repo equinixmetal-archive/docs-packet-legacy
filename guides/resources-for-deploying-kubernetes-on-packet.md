@@ -32,7 +32,8 @@ As the Kubernetes ecosystem matures, it has adopted formal specifications to hel
 
 Kubernetes is free, but sometimes deploying and managing it takes work.  A number of projects and distributions exist to help ease that operational pain - here are some that are validated against Packet (note: this is an easily outdated list):
 
-* [Kubeadm](https://v1-16.docs.kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/): https://v1-16.docs.kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+* [Kubeadm](https://v1-16.docs.kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/): kubeadm bootstraps a minimal Kubernetes cluster, meeting conformance standards, and automating many cluster operations through its toolchain.
+* [Lokomotive](https://github.com/kinvolk/lokomotive-kubernetes): an open source project by [Kinvolk](https://kinvolk.io/) which distributes pure upstream Kubernetes.
 * [Rancher Kubernetes Engine (RKE)](https://rancher.com/docs/rke/latest/en/): RKE solves the problem of installation complexity, a common issue in the Kubernetes community. With RKE, the installation and operation of Kubernetes is both simplified and easily automated, and it’s entirely independent of the operating system and platform you’re running.
 * [Crossplane](https://crossplane.io/): Manage cluster deployments across cloud providers. 
 * [K3s](https://k3s.io/): Lightweight certified Kubernetes distribution for IoT & Edge computing.
