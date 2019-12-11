@@ -51,6 +51,11 @@ curl -H "X-Auth-Token: token" -H "Content-Type: application/json" "https://api.p
 ```
 Note: 'storage' and 'JSON Object' are where you would specifically state your storage configuration requirements.
 
+### Drive Type Name Differences (SATA SSDs and NVMe Flash)
+It's worth noting that the OS will use a different naming scheme for NVMe drives compared to standard SSDs and HDDs which are usually seen in the format of `sda`, `sdb` etc. On the other hand, NVMe drives usually follow the naming scheme of `nvme0n1`, `nvme0n2` etc.
+
+When partitioning, standard drives are usually followed by a number, so `sda1` and `sda2` while NVMe drives are usually followed by a `p` and number, so it would be `nvme0n1p1` and `nvme0n1p2`.
+
 ### t1.small.x86 CPR Example
 
 Using a simple t1.small.x86 to start, the following example shows you how to:
@@ -116,7 +121,7 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
 }
 ```
 
-#### m1.xlarge example
+### m1.xlarge.x86 example
 The next exmaple is a slightly more complicated configuration that includes RAID.
 ```
 {  
@@ -213,8 +218,200 @@ The next exmaple is a slightly more complicated configuration that includes RAID
 }
 ```
 
-### Partition Requirement for UEFI servers
+### m2.xlarge.x86 with RAID and NVMe drive example
 
-For the c1.large.arm, c2.large.arm, c2.medium.x86, and c3.medium.x86 servers, you are required to use a FAT32 boot partition for `/boot/efi` - an example of this particular partition would be:
+This example is more complex than the others as it involves different RAID setups for the ROOT and SWAP partitions as well as mounting the NVMe drive during deployment.
 
-`format": "vfat", "create":{"options":\[32, "-n", "BIOS"\]}, "point":"/boot/efi`
+```
+{
+        "disks": [
+            {
+                "device": "/dev/sda",
+                "wipeTable": true,
+                "partitions": [
+                    {
+                        "label": "BIOS",
+                        "number": 1,
+                        "size": 4096
+                    },
+                    {
+                        "label": "SWAP",
+                        "number": 2,
+                        "size": "8G"
+                    },
+                    {
+                        "label": "ROOT",
+                        "number": 3,
+                        "size": 0
+                    }
+                ]
+            },
+            {
+                "device": "/dev/sdb",
+                "wipeTable": true,
+                "partitions": [
+                    {
+                        "label": "BIOS",
+                        "number": 1,
+                        "size": 4096
+                    },
+                    {
+                        "label": "SWAP",
+                        "number": 2,
+                        "size": "8G"
+                    },
+                    {
+                        "label": "ROOT",
+                        "number": 3,
+                        "size": 0
+                    }
+                ]
+            },
+            {
+                "device": "/dev/nvme0n1",
+                "wipeTable": true,
+                "partitions": [
+                    {
+                        "label": "VAR1",
+                        "number": 1,
+                        "size": 0
+                    }
+                ]
+            }            
+        ],
+        "raid": [
+            {
+                "devices": [
+                    "/dev/sda3",
+                    "/dev/sdb3"
+                ],
+                "level": "0",
+                "name": "/dev/md/ROOT"
+            },
+            {  
+                "devices":[  
+                   "/dev/sda2",
+                   "/dev/sdb2"
+                ],
+                "level":"1",
+                "name":"/dev/md/SWAP"
+             }
+        ],
+        "filesystems": [
+            {
+                "mount": {
+                    "device": "/dev/md/ROOT",
+                    "format": "ext4",
+                    "point": "/",
+                    "create": {
+                        "options": [
+                            "-L",
+                            "ROOT"
+                        ]
+                    }
+                }
+            },
+            {
+                "mount": {
+                    "device": "/dev/nvme0n1p1",
+                    "format": "ext4",
+                    "point": "/var",
+                    "create": {
+                        "options": [
+                            "-L",
+                            "VAR1"
+                        ]
+                    }
+                }
+            },
+            {  
+                "mount":{  
+                   "device":"/dev/md/SWAP",
+                   "format":"swap",
+                   "point":"none",
+                   "create":{  
+                      "options":[  
+                         "-L",
+                         "SWAP"
+                      ]
+                   }
+                }
+            }
+        ]
+    }
+    ```
+
+
+### Partition Requirement for UEFI only servers
+
+For the c1.large.arm, c2.large.arm, c2.medium.x86, and c3.medium.x86 servers which are UEFI only, you are required to use a FAT32 EFI partition for `/boot/efi` - The default c2.medium.x86 CPR configuration looks like the following:
+
+```
+{
+		"disks": [
+			{
+				"device": "/dev/sda",
+				"wipeTable": true,
+				"partitions": [
+					{
+						"label": "BIOS",
+						"number": 1,
+						"size": "512M"
+					},
+					{
+						"label": "SWAP",
+						"number": 2,
+						"size": "3993600"
+					},
+					{
+						"label": "ROOT",
+						"number": 3,
+						"size": 0
+					}
+				]
+			}
+		],
+		"filesystems": [
+			{
+				"mount": {
+					"device": "/dev/sda1",
+					"format": "vfat",
+					"point": "/boot/efi",
+					"create": {
+						"options": [
+							"32",
+							"-n",
+							"EFI"
+						]
+					}
+				}
+			},
+			{
+				"mount": {
+					"device": "/dev/sda3",
+					"format": "ext4",
+					"point": "/",
+					"create": {
+						"options": [
+							"-L",
+							"ROOT"
+						]
+					}
+				}
+			},
+			{
+				"mount": {
+					"device": "/dev/sda2",
+					"format": "swap",
+					"point": "none",
+					"create": {
+						"options": [
+							"-L",
+							"SWAP"
+						]
+					}
+				}
+			}
+		]
+	}
+```
