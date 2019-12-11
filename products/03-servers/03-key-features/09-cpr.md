@@ -124,7 +124,7 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
 ```
 
 ## m1.xlarge.x86 example
-The next exmaple is a slightly more complicated configuration that includes RAID.
+The next exmaple is a slightly more complicated configuration that includes RAID. It's worth noting that RAID created through CPR is software RAID, not hardware RAID.
 ```
 {  
    "disks": [  
