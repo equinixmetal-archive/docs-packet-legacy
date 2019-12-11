@@ -21,6 +21,7 @@ For more information about our API endpoints, please visit our [API Documentatio
 There are two ways to get started:
 
 1) Install our Node.js CLI as npm package: `npm install packet-nodejs`
+
 2) Clone our public repo in GitHub: `git clone git@github.com:packethost/packet-nodejs.git`
 
 ## Using the library
