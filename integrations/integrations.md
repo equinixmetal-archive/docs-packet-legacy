@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Integrations",
-    "slug":"intagrations",
+    "slug":"integrations",
     "description":"All integrations as a single file",
     "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
