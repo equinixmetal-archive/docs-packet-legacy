@@ -54,7 +54,7 @@ curl -X POST -H "X-Auth-Token: token" -H "Content-Type: application/json" -d '
 Note: 'storage' and 'JSON Object' are where you would specifically state your storage configuration requirements.
 
 ## Drive Type Name Differences (SATA HDDs, SATA SSDs, and NVMe Flash)
-It's worth noting that the OS will use a different naming scheme for NVMe drives compared to standard SSDs and HDDs which are usually seen in the format of `sda`, `sdb` etc. On the other hand, NVMe drives usually follow the naming scheme of `nvme0n1`, `nvme0n2` etc. To get accurate drive names, we suggest that you deploy the server and go into rescue mode (Alpine OS). Then run `lsblk` to list all drives.
+It's worth noting that the OS will use a different naming scheme for NVMe drives compared to standard SSDs and HDDs which are usually seen in the format of `sda`, `sdb` etc. On the other hand, NVMe drives usually follow the naming scheme of `nvme0n1`, `nvme1n1` etc. To get accurate drive names, we suggest that you deploy the server and go into rescue mode (Alpine OS). Then run `lsblk` to list all drives.
 
 When partitioning, standard drives are usually followed by a number, so `sda1` and `sda2` while NVMe drives are usually followed by a `p` and number, so it would be `nvme0n1p1` and `nvme0n1p2`.
 
