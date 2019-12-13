@@ -12,7 +12,7 @@ Packet was founded in July 2014 with a passion to build a better internet. Our m
 With 20+ global public cloud locations, a seamless API experience, and the ability to deploy and manage custom hardware on-premises or in privately managed availability zones, Packet is ideal for both traditional and cloud native workloads. At least we think so!  :-)  
 
 ### Deploying on Packet
-If you've used EC2 (AWS) or various compute services from Google Cloud, Microsoft Azure, or DigitalOdean then Packet will feel quite familiar. We support core concepts such as user data, and everything that can be done in our portal can be accomplished via our API.  The difference is that we only provide single-tenant bare metal compute, instead of virtual machines. 
+If you've used EC2 (AWS) or various compute services from Google Cloud, Microsoft Azure, or DigitalOcean then Packet will feel quite familiar. We support core concepts such as user data, and everything that can be done in our portal can be accomplished via our API.  The difference is that we only provide single-tenant bare metal compute, instead of virtual machines. 
 
 Since we are 100% focused on the infrastructure layer, we do not provide higher level services like managed databases or serverless offerings. Instead we invest in a vibrant [http://staging.packet.net/community/partners/](partner ecosystem).
 
