@@ -29,7 +29,7 @@ You should also be aware of our standard disk configurations for each server typ
 *   __x1.small.x86__:   1 × 240 GB SSD (Boot)
 *   __x2.xlarge.x86__: 1 × 120 GB SSD (Boot) , 2 × 240 GB SSD & 3.8 TB of NVMe Flash
 *   __n2.xlarge.x86__: 2 × 240 GB SSD in Hardware RAID 1 (Boot) & 3.8 TB of NVMe Flash
-*   __g2.large.x86__: 1 x 150 GB SSD (Boot), 2 x 480 GB SSD 
+*   __g2.large.x86__: 1 x 150 GB SSD (Boot), 2 x 480 GB SSD
 *   __s1.large.x86__:  1 x 120 GB SSD (Boot), 2 x 480 GB SSD & 12 X 2 TB HDD.
 
 ### Using CPR During Provisioning
@@ -62,11 +62,11 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
 
 ```
 {
-  "disks": \[
+  "disks": [
     {
       "device": "/dev/sda",
       "wipeTable": true,
-      "partitions": \[
+      "partitions": [
         {
           "label": "BIOS",
           "number": 1,
@@ -82,20 +82,20 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
           "number": 3,
           "size": 0
         }
-      \]
+      ]
     }
-  \],
-  "filesystems": \[
+  ],
+  "filesystems": [
     {
       "mount": {
         "device": "/dev/sda3",
         "format": "ext4",
         "point": "/",
         "create": {
-          "options": \[
+          "options": [
             "-L",
             "ROOT"
-          \]
+          ]
         }
       }
     },
@@ -105,14 +105,14 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
         "format": "swap",
         "point": "none",
         "create": {
-          "options": \[
+          "options": [
             "-L",
             "SWAP"
-          \]
+          ]
         }
       }
     }
-  \]
+  ]
 }
 ```
 
@@ -120,11 +120,11 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
 
 ```
 {  
-   "disks":\[  
+   "disks":[  
       {  
          "device":"/dev/sda",
          "wipeTable":true,
-         "partitions":\[  
+         "partitions":[  
             {  
                "label":"BIOS",
                "number":1,
@@ -140,12 +140,12 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
                "number":3,
                "size":0
             }
-         \]
+         ]
       },
       {  
          "device":"/dev/sdb",
          "wipeTable":true,
-         "partitions":\[  
+         "partitions":[  
             {  
                "label":"BIOS",
                "number":1,
@@ -161,38 +161,38 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
                "number":3,
                "size":0
             }
-         \]
+         ]
       }
-   \],
-   "raid":\[  
+   ],
+   "raid":[  
       {  
-         "devices":\[  
+         "devices":[  
             "/dev/sda2",
             "/dev/sdb2"
-         \],
+         ],
          "level":"1",
          "name":"/dev/md/SWAP"
       },
       {  
-         "devices":\[  
+         "devices":[  
             "/dev/sda3",
             "/dev/sdb3"
-         \],
+         ],
          "level":"1",
          "name":"/dev/md/ROOT"
       }
-   \],
-   "filesystems":\[  
+   ],
+   "filesystems":[  
       {  
          "mount":{  
             "device":"/dev/md/ROOT",
             "format":"ext4",
             "point":"/",
             "create":{  
-               "options":\[  
+               "options":[  
                   "-L",
                   "ROOT"
-               \]
+               ]
             }
          }
       },
@@ -202,14 +202,14 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
             "format":"swap",
             "point":"none",
             "create":{  
-               "options":\[  
+               "options":[  
                   "-L",
                   "SWAP"
-               \]
+               ]
             }
          }
       }
-   \]
+   ]
 }
 ```
 
@@ -217,4 +217,4 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
 
 For the c1.large.arm and c2.medium.x86 servers, it requires a FAT32 boot partition for `/boot/efi` - an example of this particular partition would be:
 
-`format": "vfat", "create":{"options":\[32, "-n", "BIOS"\]}, "point":"/boot/efi`
+`format": "vfat", "create":{"options":[32, "-n", "BIOS"]}, "point":"/boot/efi`
