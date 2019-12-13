@@ -1,7 +1,7 @@
 <!--<meta>
 {
-    "title":"Integrations & Libraries ",
-    "description":"A quick look at our various API integrations.",
+    "title":"Overview",
+    "description":"An introduction to the Packet API.",
     "tag":["API", "Integrations", "Libraries"]
 }
 </meta>-->
@@ -50,17 +50,3 @@ No matter how you're interacting with our API, there are a few things to point o
 * Our Block Storage service is managed in the block-storage name space, the actual [block storage instances](https://www.packet.com/developers/api/volumes/) are referred to as "volumes" there.  
 * IP's are managed in a few places in the API. You can view the list of them in the projects namespace and you can assign/unassigned them to devices in the devices namespace.
 * You can also query the [capacity endpoint](https://www.packet.com/developers/api/capacity/#capacity-capacity) to get a status on   availability of server types in various facilities.
-
-### Orchestration Tools
-
-A lot of users interact with our platform through tools like Ansible, Terraform or Libcloud.  While each of these tools have their own special approach, they essentially help you manage infrastructure across environments and cloud providers.
-
-Packet has helped write drivers (often called 'providers') for these tools, which means there is native support available. A good example is [Terraform](https://www.terraform.io/docs/providers/packet/).
-
-You can also take a loot at our [full list of orchestration tools](https://www.packet.com/developers/integrations/).
-
-### External Platforms
-
-This is the easiest of them all!
-
-A number of platforms, such as Docker Cloud, Cloud66, Containership, and StackpointCloud have directly integrated with the Packet API.  This means you simply need to have an active Packet account and an API key to get started. Grab your API key from the Packet portal, provide it in the portal of the integration you’re working with, and you should be off to the races.

@@ -1,7 +1,7 @@
 <!--<meta>
 {
-    "title":"Deploy: without Public IP",
-    "description":"Deploying Devices With No Public IP.",
+    "title":"Deploy Without Public IP",
+    "description":"Deploying Devices Without a Public IP.",
     "tag":["Deploy", "No IP"]
 }
 </meta>-->

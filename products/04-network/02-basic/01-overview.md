@@ -6,4 +6,4 @@
 }
 </meta>-->
 
-content coming soon
+This section is focused on the network services that are useful for basic deployments: default IP addresses, Elastic IP's, using our Doorman VPN, and taking advantage of Backend Transfer for private networking.
