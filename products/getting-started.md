@@ -1,4 +1,4 @@
-![enable backend transfer](/images/packet-product-docs.jpg)
+![enable backend transfer](/images/packet-product-docs.png)
 
 ### Welcome to our Product Docs!
 The purpose of this section is to provide you with a clear, concise overview of our product features. All content is sourced from a GitHub repository, so if you see issues or gaps, please [open an issue](https://github.com/packethost/docs/issues/new).
