@@ -10,14 +10,6 @@
 }
 </meta> -->
 
-Welcome to [Docker Machine driver from Packet](https://github.com/packethost/docker-machine-driver-packet).
-
-This is a tool to help you consume our API routes effectively, making your experience as a developer with Packet a breeze!
-
-For more information about our API endpoints, please visit our [API Documentation](https://www.packet.com/developers/api/).
-
-## Usage
-
 You can provision bare-metal hosts once you have built and installed the docker-machine driver. The binary will be placed in your `$PATH` directory.
 
 Test that the installation worked by typing in:
