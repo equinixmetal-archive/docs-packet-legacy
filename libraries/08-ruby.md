@@ -10,13 +10,8 @@
 }
 </meta> -->
 
-Welcome to [Packet Ruby API Client](https://github.com/packethost/packet-rb).
 
-This is a library to help you consume our API routes effectively, making your experience as a developer with Packet a breeze!
-
-For more information about our API endpoints, please visit our [API Documentation](https://www.packet.com/developers/api/).
-
-## Installation
+### Installation
 
 ```
 gem install packethost

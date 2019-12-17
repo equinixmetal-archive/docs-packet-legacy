@@ -10,12 +10,6 @@
 }
 </meta> -->
 
-Welcome to [Packet PHP API Client](https://github.com/packethost/packet-php).
-
-This is a library to help you consume our API routes effectively, making your experience as a developer with Packet a breeze!
-
-For more information about our API endpoints, please visit our [API Documentation](https://www.packet.com/developers/api/).
-
 ## Install with Composer
 
 ```
