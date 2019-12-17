@@ -26,38 +26,64 @@ From the deploy screen, ensure you are selecting c2.med as this is the only devi
 * Type: You **MUST** select c2.medium as it uses an AMD EPYC processor that supports SEV (see https://www.packet.net/bare-metal/servers/ for available hardware).
 
 * OS: Ubuntu 18.04 LTS.
-    Provide some extra data to provision the newly created host. Select the SSH & USER DATA option and add the following user data (this will automatically provision some users when the host is provisioned):
-
-
-```
-#cloud-config
-users:
-  - name: "sev"
-    sudo: ALL=(ALL) NOPASSWD:ALL
-    groups:
-      "sudo"
-package_update: true
-packages:
- - git
- - flex
-runcmd:
-  - [cd, /home/sev]
-  - [git, clone, --single-branch, -b, master, "https://github.com/AMDESE/AMDSEV.git"]
-  - [cd, AMDSEV/distros/ubuntu-18.04]
-  - [./build.sh]
-```
+    
 * Select the Deploy Servers option.
 
-
-#### Setting up the host
-
-If you used the cloud-config script above when provisioning the server, you may skip some of the following steps.
-
-#### Basic host setup
+#### Host setup
 
 ###### ⚠️ Note: SEV support is available in Linux kernel 4.16 and onwards.
 
-Run the following commands to verify that the system supports SEV:
+Our Ubuntu 18.04 image comes with 4.15 kernel. The following will get your instance configured with the SEV supported version fo 4.16. 
+
+```
+cd /tmp/
+
+wget -c http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16/linux-headers-4.16.0-041600_4.16.0-041600.201804012230_all.deb
+
+wget -c http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16/linux-headers-4.16.0-041600-generic_4.16.0-041600.201804012230_amd64.deb
+
+wget -c http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16/linux-image-4.16.0-041600-generic_4.16.0-041600.201804012230_amd64.deb
+
+sudo dpkg -i *.deb
+```
+Reboot the device one the headers/kernel is installed. Upon reboot, issue a `uname -a` you should see the following: 
+
+```
+Linux hostname 4.16.0-041600-generic #201804012230 SMP Sun Apr 1 22:31:39 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+```
+
+Add: 
+
+```
+mem_encrypt=on kvm_amd.sev=1
+```
+to `/etc/defaults/grub` on the 
+
+```
+GRUB_CMDLINE_LINUX_DEFAULT=
+```
+
+then regenerate your grub configuration by issuing: 
+
+```
+grub-mkconfig -o /boot/grub2/grub.cfg
+```
+Another system reboot is required. When the device is accessible again, the following steps will clone the AMDSEV repo and build it out. Including all the necessary depdents and correct versions of libvert and qemu. 
+
+```
+git clone https://github.com/AMDESE/AMDSEV.git
+```
+```
+cd AMDSEV/distros/ubuntu-18.04
+```
+```
+./build.sh
+```
+**NOTE:** This build script downloads source tarballs and builds from source, this can take ~20 minutes. 
+
+
+
+Once the build script has completed use the following commands to verify that the system supports SEV:
 
 ```
 # verify the /dev/sev exist
@@ -91,102 +117,6 @@ sudo apt install git flex
 #### Clone and build QEMU with SEV support
 Follow [these steps](https://github.com/AMDESE/AMDSEV) to clone and build versions of QEMU and KVM that support Secure Encrypted Virtualization.
 
-## Automate Deployment on Packet using Terraform
+<br><br><br>
 
-[Terraform](https://hashicorp.com/terraform) is an extremely convenient tool for defining infrastructure as code. Using Terraform you can essentially provision a new AMD EPYC server on Packet with a single shell command, as described below:
-
-* Download & install Terraform
-* Open a command shell and create a new directory, such as:
-```
-$ mkdir amd-epyc-packet
-$ cd amd-epyc-packet
-```
-###### ⚠️ Note: You can choose your own name for the directory
-
-Next up, we will create three configuration files: cloudinit.cfg, packet.tf, and userconfig.tf
-
-**cloudinit.cfg:** 
-```
-#cloud-config
-bootcmd:
-  - echo 127.0.1.1 cloud.init > /etc/hosts
-users:
-  - name: "sev"
-    sudo: ALL=(ALL) NOPASSWD:ALL
-    groups:
-      "sudo"
-package_update: true
-packages:
- - git
- - flex
-runcmd:
-  - [cd, /home/sev]
-  - [git, clone, --single-branch, -b, master, "https://github.com/AMDESE/AMDSEV.git"]
-  - [cd, AMDSEV/distros/ubuntu-18.04]
-  - [./build.sh]
-```
-
-**packet.tf**
-```
-# Configure the Packet Provider
-provider "packet" {
-  auth_token = "${var.packet_api_key}"
-}
-# Create a device and add it to project
-resource "packet_device" "epyc_server" {
-  hostname         = "epyc.ubuntu"
-  plan             = "c2.medium.x86"
-  facilities       = ["${var.packet_facility}"]
-  operating_system = "ubuntu_18_04"
-  billing_cycle    = "hourly"
-  project_id       = "${var.packet_project_id}"
-  user_data        = "${file("./cloudinit.cfg")}"
-}
-```
-
-**userconfig.tf**
-```
-variable "packet_api_key" {
-  description = "Your packet API key"
-}
-
-variable "packet_project_id" {
-  description = "Packet Project ID"
-}
-
-variable "packet_facility" {
-  description = "Location - US East (ewr1), US West (sjc1), or EU (ams1)"
-  default = "sjc1"
-}
-```
-
-**output.tf**
-```
-output "server-ip" {
-   value = "${packet_device.epyc_server.network.0.address}"
-}
-
-```
-
-Initialize Terraform inside the directory:
-```
-$ terraform init
-```
-
-Provision an instance by running:
-```
-$ terraform apply
-```
-
-###### ⚠️ Note: You can later on destroy the instance by running: 
-```
-$ terraform destroy
-```
-from within Terraform directory. 
-
-<br> 
-<br>
-<br>
-<br>
-
-![deploy-anjuna-logo](/images/amd-sev/anjuna-logo.png)
+<center>![deploy-anjuna-logo](/images/amd-sev/anjuna-logo.png)</center>
