@@ -10,10 +10,6 @@
 }
 </meta> -->
 
-Welcome to [Packet Java API Client](https://github.com/packethost/packet-java).
-
-This is a library to help you consume our API routes effectively, making your experience as a developer with Packet a breeze!
-
 Lightweight Java client library for accessing Packet REST APIs with project based (JVM hosted languages) on Java, Groovy, Scala, Clojure, etc.
 
 For more information about our API endpoints, please visit our [API Documentation](https://www.packet.com/developers/api/).
