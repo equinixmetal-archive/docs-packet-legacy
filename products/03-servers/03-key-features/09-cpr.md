@@ -30,7 +30,7 @@ You should also be aware of our standard disk configurations for each server typ
 *   __x1.small.x86__:   1 × 240 GB SSD (Boot)
 *   __x2.xlarge.x86__: 1 × 120 GB SSD (Boot) , 2 × 240 GB SSD & 3.8 TB of NVMe Flash
 *   __n2.xlarge.x86__: 2 × 240 GB SSD in Hardware RAID 1 (Boot) & 3.8 TB of NVMe Flash
-*   __g2.large.x86__: 1 x 150 GB SSD (Boot), 2 x 480 GB SSD 
+*   __g2.large.x86__: 1 x 150 GB SSD (Boot), 2 x 480 GB SSD
 *   __s1.large.x86__:  1 x 120 GB SSD (Boot), 2 x 480 GB SSD & 12 X 2 TB HDD.
 
 _Some servers are UEFI only and require an extra step for the CPR configuration. Please check the [last section](#efi-partition-requirement-for-uefi-only-servers) of this article for the details of UEFI only servers._
@@ -127,11 +127,19 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
 The next exmaple is a slightly more complicated configuration that includes RAID. It's worth noting that RAID created through CPR is software RAID, not hardware RAID.
 ```
 {  
+<<<<<<< HEAD
+   "disks":[  
+      {  
+         "device":"/dev/sda",
+         "wipeTable":true,
+         "partitions":[  
+=======
    "disks": [  
       {  
          "device":"/dev/sda",
          "wipeTable":true,
          "partitions": [  
+>>>>>>> master
             {  
                "label":"BIOS",
                "number":1,
@@ -152,7 +160,11 @@ The next exmaple is a slightly more complicated configuration that includes RAID
       {  
          "device":"/dev/sdb",
          "wipeTable":true,
+<<<<<<< HEAD
+         "partitions":[  
+=======
          "partitions": [  
+>>>>>>> master
             {  
                "label":"BIOS",
                "number":1,
@@ -171,9 +183,15 @@ The next exmaple is a slightly more complicated configuration that includes RAID
          ]
       }
    ],
+<<<<<<< HEAD
+   "raid":[  
+      {  
+         "devices":[  
+=======
    "raid": [  
       {  
          "devices": [  
+>>>>>>> master
             "/dev/sda2",
             "/dev/sdb2"
          ],
@@ -181,7 +199,11 @@ The next exmaple is a slightly more complicated configuration that includes RAID
          "name":"/dev/md/SWAP"
       },
       {  
+<<<<<<< HEAD
+         "devices":[  
+=======
          "devices": [  
+>>>>>>> master
             "/dev/sda3",
             "/dev/sdb3"
          ],
@@ -189,14 +211,22 @@ The next exmaple is a slightly more complicated configuration that includes RAID
          "name":"/dev/md/ROOT"
       }
    ],
+<<<<<<< HEAD
+   "filesystems":[  
+=======
    "filesystems": [  
+>>>>>>> master
       {  
          "mount":{  
             "device":"/dev/md/ROOT",
             "format":"ext4",
             "point":"/",
             "create":{  
+<<<<<<< HEAD
+               "options":[  
+=======
                "options": [  
+>>>>>>> master
                   "-L",
                   "ROOT"
                ]
@@ -209,7 +239,11 @@ The next exmaple is a slightly more complicated configuration that includes RAID
             "format":"swap",
             "point":"none",
             "create":{  
+<<<<<<< HEAD
+               "options":[  
+=======
                "options": [  
+>>>>>>> master
                   "-L",
                   "SWAP"
                ]
@@ -224,6 +258,9 @@ The next exmaple is a slightly more complicated configuration that includes RAID
 
 This example is more complex than the others as it involves different RAID setups for the ROOT and SWAP partitions as well as mounting the NVMe drive during deployment.
 
+<<<<<<< HEAD
+`format": "vfat", "create":{"options":[32, "-n", "BIOS"]}, "point":"/boot/efi`
+=======
 ```
 {
         "disks": [
@@ -417,3 +454,4 @@ For the c1.large.arm, c2.large.arm, c2.medium.x86, and c3.medium.x86 servers whi
 		]
 	}
 ```
+>>>>>>> master
