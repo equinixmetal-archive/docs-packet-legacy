@@ -10,4 +10,6 @@
 }
 </meta> -->
 
-content coming soon...
+Packet provides a Container-Storage-Interface (CSI) plugin for Kubernetes.
+
+[GitHub](https://github.com/packethost/csi-packet)

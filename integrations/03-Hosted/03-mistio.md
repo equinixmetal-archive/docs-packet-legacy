@@ -10,4 +10,8 @@
 }
 </meta> -->
 
-content coming soon...
+Mist.io provides mobile management, monitoring, and automation for servers across clouds through a touch-friendly interface.
+
+[Docs](http://docs.mist.io/article/100-adding-packet)
+[Website](https://mist.io/)
+[GitHub](https://github.com/mistio/mist.io)

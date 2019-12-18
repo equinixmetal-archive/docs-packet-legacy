@@ -10,4 +10,8 @@
 }
 </meta> -->
 
-content coming soon...
+Kubernetes Cluster Manager for Kubeadm, with support for Packet.
+
+[Docs](https://github.com/pharmer/docs/blob/master/docs/guides/packet/README.md)
+[Website](https://appscode.com/products/pharmer/)
+[GitHub](https://github.com/pharmer/pharmer)

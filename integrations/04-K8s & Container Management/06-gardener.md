@@ -10,4 +10,7 @@
 }
 </meta> -->
 
-content coming soon...
+The foundation of Gardener is Kubernetes itself. Gardener applies a special pattern catering to the needs of operating a huge number of clusters with minimal total cost of ownership.
+
+[Website](https://gardener.cloud/)
+[GitHub](https://github.com/gardener)
