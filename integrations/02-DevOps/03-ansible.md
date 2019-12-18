@@ -10,4 +10,8 @@
 }
 </meta> -->
 
-content coming soon...
+App deployment, configuration management, and orchestration - all from one system. Ansible is powerful IT automation that you can learn quickly.
+
+[Docs](https://docs.ansible.com/ansible/latest/guide_packet.html)
+[Website](https://www.ansible.com/resources/get-started)
+[GitHub](https://github.com/ansible/ansible)

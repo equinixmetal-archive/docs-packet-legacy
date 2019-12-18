@@ -10,4 +10,7 @@
 }
 </meta> -->
 
-content coming soon...
+Packet has released a beta version of the Kubernetes cloud controller manager implementation for Packet.
+
+[Docs](https://github.com/packethost/packet-ccm/tree/master/deploy/releases)
+[GitHub](https://github.com/packethost/packet-ccm)

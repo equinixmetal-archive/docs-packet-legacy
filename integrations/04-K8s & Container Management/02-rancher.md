@@ -10,4 +10,8 @@
 }
 </meta> -->
 
-content coming soon...
+A complete open source platform for deploying and managing containers in production.
+
+[Docs](https://rancher.com/docs/rancher/latest/en/hosts/packet/)
+[Website](http://rancher.com/)
+[GitHub](https://github.com/rancherio/rancher)

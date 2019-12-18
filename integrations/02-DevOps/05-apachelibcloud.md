@@ -10,4 +10,7 @@
 }
 </meta> -->
 
-content coming soon...
+Libcloud is a Python library for interacting with many of the popular cloud service providers using a unified API.
+
+[Docs](https://libcloud.readthedocs.io/en/latest/compute/drivers/packet.html)
+[GitHub](https://github.com/apache/libcloud)
