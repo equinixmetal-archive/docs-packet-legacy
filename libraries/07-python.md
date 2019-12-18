@@ -12,6 +12,8 @@
 
 Welcome to [Packet Python API Client](https://github.com/packethost/packet-python).
 
+For more information about our API endpoints, please visit our [API Documentation](https://www.packet.com/developers/api/).
+
 ### Installation
 
 `pip install packet-python`
