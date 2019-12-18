@@ -10,6 +10,8 @@
 }
 </meta> -->
 
+Welcome to [Packet Node.js API Client](https://github.com/packethost/packet-nodejs).
+
 For more information about our API endpoints, please visit our [API Documentation](https://www.packet.com/developers/api/).
 
 ## Installation
