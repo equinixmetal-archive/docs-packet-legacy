@@ -10,6 +10,7 @@
 }
 </meta> -->
 
+Welcome to [Packet Ruby API Client](https://github.com/packethost/packet-rb).
 
 ### Installation
 
