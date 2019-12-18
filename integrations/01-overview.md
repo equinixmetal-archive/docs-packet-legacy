@@ -1,11 +1,11 @@
 <!-- <meta>
 {
-    "title":"Integrations",
-    "slug":"integrations",
-    "description":"All integrations as a single file",
-    "author":"Jacob Smith",
-    "github":"fill-this-in",
-    "date": "2019/12/17",
+    "title":"Overivew",
+    "slug":"overview",
+    "description":"Overview of Integrations",
+    "author":"mo lawler",
+    "github":"usrdev",
+    "date": "2019/12/18",
     "tag":[""]
 }
 </meta> -->
