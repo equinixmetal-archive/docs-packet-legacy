@@ -1,6 +1,6 @@
 <!-- <meta>
 {
-    "title":"Official Kubernetes,
+    "title":"Overview,
     "slug":"official kubernetes",
     "description":"Our offical Kubernets Offering",
     "author":"Mo Lawler",

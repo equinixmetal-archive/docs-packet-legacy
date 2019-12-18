@@ -1,6 +1,6 @@
 <!-- <meta>
 {
-    "title":"K8s & Container Management",
+    "title":"Overview",
     "slug":"k8s & contaniner management",
     "description":"A overview of using K8s & Container Management on Packet",
     "author":"Mo Lawler",
