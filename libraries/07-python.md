@@ -10,6 +10,8 @@
 }
 </meta> -->
 
+Welcome to [Packet Python API Client](https://github.com/packethost/packet-python).
+
 ### Installation
 
 `pip install packet-python`
