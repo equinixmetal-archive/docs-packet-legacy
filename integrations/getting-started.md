@@ -1,4 +1,5 @@
-### Integrations
-The purpose of this section is to provide you with a clear, concise overview of our supported integrations. All content is sourced from a GitHub repository, so if you see issues or gaps, please [open an issue](https://github.com/packethost/docs/issues/new).
+One of the most important things we do as a cloud provider is to ensure that we support an enjoyable and productive experience for users. 
 
-If you're looking for in-depth "how to" content around particular features or use cases, please check out our resources section, especially our [Technical Guides](/resources/guides/).
+The vast majority of utilization on our cloud occurs via our API, usually through a tool like Terraform or Ansible, but also through native API libraries, hosted integrations, or tie-ins via Kubernetes. 
+
+If you have feedback about our support for a tool (or see a gap we can fill) please open an issue or email us via [support@packet.com](mailto:support@packet.com).
