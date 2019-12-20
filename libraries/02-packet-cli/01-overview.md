@@ -3,7 +3,7 @@
     "title":"Packet CLI",
     "description":"Packet Go SDK",
     "author":"Mo Lawler",
-    "github":"usrdev,
+    "github":"usrdev",
     "date": "2019/12/17",
     "tag":["API", "Libraries"]
 }
