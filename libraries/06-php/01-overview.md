@@ -10,6 +10,8 @@
 }
 </meta> -->
 
+![Image of PHP](https://www.packet.com/media/images/2Bry-packetphp.png)
+
 Welcome to [Packet PHP API Client](https://github.com/packethost/packet-php).	
 
 For more information about our API endpoints, please visit our [API Documentation](https://www.packet.com/developers/api/).
