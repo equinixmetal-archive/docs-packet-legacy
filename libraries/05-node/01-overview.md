@@ -10,6 +10,8 @@
 }
 </meta> -->
 
+![Image of NodeJS](https://www.packet.com/media/images/ruM4-packetnode.png)
+
 Welcome to [Packet Node.js API Client](https://github.com/packethost/packet-nodejs).
 
 For more information about our API endpoints, please visit our [API Documentation](https://www.packet.com/developers/api/).
