@@ -1,7 +1,7 @@
 <!-- <meta>
 {
-    "title":"Konetena",
-    "slug":"konetena",
+    "title":"Kontena",
+    "slug":"kontena",
     "description":"Using Kontena on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",
@@ -10,4 +10,8 @@
 }
 </meta> -->
 
-content coming soon...
+Kontena is a simple, solid, certified Kubernetes distribution that just works. Deploy and run containers at any scale on any infrastructure. All batteries included.
+
+Kontena supports bare metal, including both x86 and Arm, and is well tested on Packet.
+
+[View the docs](https://pharos.sh/docs/).
