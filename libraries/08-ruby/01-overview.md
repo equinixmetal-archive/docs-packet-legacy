@@ -10,6 +10,8 @@
 }
 </meta> -->
 
+![Image of Ruby](https://www.packet.com/media/images/Rkhv-packetruby.png)
+
 Welcome to [Packet Ruby API Client](https://github.com/packethost/packet-rb).
 
 ### Installation
