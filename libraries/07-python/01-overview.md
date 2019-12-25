@@ -10,6 +10,8 @@
 }
 </meta> -->
 
+![Image of Python](https://www.packet.com/media/images/9zB4-packet.python.png)
+
 Welcome to [Packet Python API Client](https://github.com/packethost/packet-python).
 
 For more information about our API endpoints, please visit our [API Documentation](https://www.packet.com/developers/api/).
