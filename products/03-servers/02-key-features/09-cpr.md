@@ -126,56 +126,44 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
 ## m1.xlarge.x86 example
 The next exmaple is a slightly more complicated configuration that includes RAID. It's worth noting that RAID created through CPR is software RAID, not hardware RAID.
 ```
-{  
-<<<<<<< HEAD
-   "disks":[  
-      {  
+{
+   "disks":[
+      {
          "device":"/dev/sda",
          "wipeTable":true,
-         "partitions":[  
-=======
-   "disks": [  
-      {  
-         "device":"/dev/sda",
-         "wipeTable":true,
-         "partitions": [  
->>>>>>> master
-            {  
+         "partitions":[
+            {
                "label":"BIOS",
                "number":1,
                "size":4096
             },
-            {  
+            {
                "label":"SWAPA1",
                "number":2,
                "size":"3993600"
             },
-            {  
+            {
                "label":"ROOTA1",
                "number":3,
                "size":0
             }
          ]
       },
-      {  
+      {
          "device":"/dev/sdb",
          "wipeTable":true,
-<<<<<<< HEAD
-         "partitions":[  
-=======
-         "partitions": [  
->>>>>>> master
-            {  
+         "partitions":[
+            {
                "label":"BIOS",
                "number":1,
                "size":4096
             },
-            {  
+            {
                "label":"SWAPA2",
                "number":2,
                "size":"3993600"
             },
-            {  
+            {
                "label":"ROOTA2",
                "number":3,
                "size":0
@@ -183,27 +171,17 @@ The next exmaple is a slightly more complicated configuration that includes RAID
          ]
       }
    ],
-<<<<<<< HEAD
-   "raid":[  
-      {  
-         "devices":[  
-=======
-   "raid": [  
-      {  
-         "devices": [  
->>>>>>> master
+   "raid":[
+      {
+         "devices":[
             "/dev/sda2",
             "/dev/sdb2"
          ],
          "level":"1",
          "name":"/dev/md/SWAP"
       },
-      {  
-<<<<<<< HEAD
-         "devices":[  
-=======
-         "devices": [  
->>>>>>> master
+      {
+         "devices":[
             "/dev/sda3",
             "/dev/sdb3"
          ],
@@ -211,39 +189,27 @@ The next exmaple is a slightly more complicated configuration that includes RAID
          "name":"/dev/md/ROOT"
       }
    ],
-<<<<<<< HEAD
-   "filesystems":[  
-=======
-   "filesystems": [  
->>>>>>> master
-      {  
-         "mount":{  
+   "filesystems":[
+      {
+         "mount":{
             "device":"/dev/md/ROOT",
             "format":"ext4",
             "point":"/",
-            "create":{  
-<<<<<<< HEAD
-               "options":[  
-=======
-               "options": [  
->>>>>>> master
+            "create":{
+               "options":[
                   "-L",
                   "ROOT"
                ]
             }
          }
       },
-      {  
-         "mount":{  
+      {
+         "mount":{
             "device":"/dev/md/SWAP",
             "format":"swap",
             "point":"none",
-            "create":{  
-<<<<<<< HEAD
-               "options":[  
-=======
-               "options": [  
->>>>>>> master
+            "create":{
+               "options":[
                   "-L",
                   "SWAP"
                ]
@@ -258,9 +224,6 @@ The next exmaple is a slightly more complicated configuration that includes RAID
 
 This example is more complex than the others as it involves different RAID setups for the ROOT and SWAP partitions as well as mounting the NVMe drive during deployment.
 
-<<<<<<< HEAD
-`format": "vfat", "create":{"options":[32, "-n", "BIOS"]}, "point":"/boot/efi`
-=======
 ```
 {
         "disks": [
@@ -327,8 +290,8 @@ This example is more complex than the others as it involves different RAID setup
                 "level": "0",
                 "name": "/dev/md/ROOT"
             },
-            {  
-                "devices":[  
+            {
+                "devices":[
                    "/dev/sda2",
                    "/dev/sdb2"
                 ],
@@ -363,13 +326,13 @@ This example is more complex than the others as it involves different RAID setup
                     }
                 }
             },
-            {  
-                "mount":{  
+            {
+                "mount":{
                    "device":"/dev/md/SWAP",
                    "format":"swap",
                    "point":"none",
-                   "create":{  
-                      "options":[  
+                   "create":{
+                      "options":[
                          "-L",
                          "SWAP"
                       ]
@@ -454,4 +417,3 @@ For the c1.large.arm, c2.large.arm, c2.medium.x86, and c3.medium.x86 servers whi
 		]
 	}
 ```
->>>>>>> master
