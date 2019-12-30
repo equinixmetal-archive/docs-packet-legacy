@@ -22,7 +22,7 @@ When utilizing virtual routing software (e.g. VyOS, OpnSense, etc) this would al
 ![enable default route 2](/images/bgp/Enable-Default-Route-2.png)    
 
 ### Communities Supported
-If you are interested in utilizing BGP communities, there is an in depth guide that lists all of the supported communities ![here](/guides/BGP-global-communities.md).
+If you are interested in utilizing BGP communities, there is an in depth guide that lists all of the supported communities [here](/guides/BGP-global-communities.md).
 
 
 ### Getting Started
