@@ -11,7 +11,7 @@ Packet supports BGP ([Border Gateway Protocol](https://en.wikipedia.org/wiki/Bor
 
 BGP's features require you to run a BGP speaking routing client, such as [BIRD](http://bird.network.cz/?get_doc&f=bird.html), Quagga or ExaBGP on your server. This routing client will control route advertisements via a BGP session to Packet's upstream routers. Packet will learn the routes that you are advertising and appropriately send traffic to your server(s).
 
-## Local BGP versus Global BG
+## Local BGP versus Global BGP
 In a Local BGP deployment, a customer uses an internal ASN
 ([Autonomous System Number](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) to control routes within a single Packet datacenter. This means that the routes are never advertised to the global Internet and the customer does not need to pay for or maintain a registered ASN with a Regional Internet Registry (RIR) like ARIN, APNIC or RIPE. The top use case for operating local BGP would be to perform failover or IP mobility between a collection of servers in a local datacenter. Global BGP, on the other hand, requires a customer to have a registered ASN and IP space.
 
