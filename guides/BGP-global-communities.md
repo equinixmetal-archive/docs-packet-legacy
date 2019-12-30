@@ -65,6 +65,7 @@ Available in All Facilities (except SYD2, NRT, SIN, HKG)
 **Hibernia Communities - ASN 5580**
 
 Available in NRT1
+
 | Community | Function |
 |--|--|
 | 54825:520 | Advertise to Hibernia|
