@@ -22,20 +22,7 @@ When utilizing virtual routing software (e.g. VyOS, OpnSense, etc) this would al
 ![enable default route 2](/images/bgp/Enable-Default-Route-2.png)    
 
 ### Communities Supported
-Packet supports the following [BGP communities](http://noc.packet.net/) on routes learned from customers.
-
-**54825:666**
-
-*   Function: BGP blackhole.  
-*   Packet will blackhole traffic to your prefix, as well as signal supporting transit providers and peering partners to do the same.
-*   We support de-aggregation down to the /32 (IPv4) and /128 (IPv6) level with this community only.
-
-**54825:222**
-
-*   Function: Anycast routing
-*   By tagging your routes with this community, Packet will advertise your routes to only transit and peering we maintain consistently on a global basis.  Regional ISPs we connect with (e.g. Verizon in the New York metro area) will not learn your routes, as advertising to them may result in "scenic" routing for customers with global Anycast configurations.
-*   Please note that this community is not advised for normal use, as it will limit the number of available paths/providers you have access to.  It should only be deployed by customers seeking BGP anycast topology, with multiple server instances deployed in each Packet datacenter.
-*   _NOTE: This community is in beta testing at this time._
+If you are interested in utilizing BGP communities, there is an in depth guide that lists all of the supported communities ![here](/guides/BGP-global-communities.md).
 
 
 ### Getting Started
