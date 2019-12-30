@@ -11,9 +11,7 @@
 </meta>
 -->
 
-Self-Hosted Zoom Meetings
-
-# Introduction
+## Introduction
 
 We're big fans of Zoom.us - it's one of the best online meeting services in terms of quality, features and price.  What we also love is the "self hosted" or "on premise" feature, which allows you to host Zoom on your servers.  
 
@@ -21,7 +19,7 @@ Why host Zoom on your own servers?   Well, the benefits are mainly around perfo
 
 In this guide, we'll walk you through how to implement [Zoom's Meeting Connector](https://support.zoom.us/hc/en-us/sections/200305473-Meeting-Connector) (which is the application that runs  Zoom) on a pair of low cost Packet servers.  Note: the Meeting Connector still leverages Zoom's portal to run stuff like user management, meeting schedules, etc so this is just about installing the meeting software. 
 
-# Getting Started
+## Getting Started
 
 First, you'll you need to have a Business or Education account with Zoom.us, and you'll need to subscribe for over 10 Pro hosts. Once that's ready, navigate to "Enable Meeting Connector" on your [admin page](https://zoom.us/account/hybrid). Enabling the meeting connector allows you to leverage the on-premise, super fast, and private hosted version of Zoom!
 
@@ -31,17 +29,17 @@ We chose to run the meeting connector on two of our smallest instances - the $.
 
 Links to the Zoom Meeting Connector configuration files can be found in the Zoom portal. 
 
-# Implementation
+## Implementation
 
 The next step is to setup a virtualized environment.  To manage the virtual machines we went with [VirtualBox](https://www.virtualbox.org/).
 
-### **1**  . Update the apt sources list with a mirror for the VirtualBox download.
+#### **1**  . Update the apt sources list with a mirror for the VirtualBox download.
 
 ```bash
 echo "deb http://download.virtualbox.org/virtualbox/debian xenial contrib" >> /etc/apt/sources.list
 ```
 
-### **2**  . Download some packages along with VirtualBox.
+#### **2**  . Download some packages along with VirtualBox.
 
 * _**dkms (Dynamic Kernel Module Support)**_ is "designed to create a framework where kernel dependant module source can reside so that it is very easy to rebuild modules as you upgrade kernels."
 * _**unzip**_ lets you extract files from a ZIP archive.
@@ -53,7 +51,7 @@ echo "deb http://download.virtualbox.org/virtualbox/debian xenial contrib" >> /e
 apt-get install build-essential dkms unzip wget bridge-utils linux-headers-4.8.0-32-lowlatency virtualbox-5.1
 ```
 
-### **3**  . Download and install the VirtualBox extension pack.
+#### **3**  . Download and install the VirtualBox extension pack.
 
 ```bash
 cd /tmp
@@ -64,17 +62,17 @@ Oracle_VM_VirtualBox_Extension_Pack-5.1.0-108711.vbox-extpack
 VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-5.1.0-108711.vbox-extpack
 ```
 
-### **4**  . Reboot the machine.
+#### **4**  . Reboot the machine.
 
 The kernel installed by VirtualBox needs to boot up; at the time of this writing, that's [linux-image-4.8.0-32-lowlatency](http://packages.ubuntu.com/xenial/kernel/linux-image-4.8.0-32-lowlatency). 
 
-### **5**  . When you're back up and running, build the VirtualBox kernel modules and start the VirtualBox services.
+#### **5**  . When you're back up and running, build the VirtualBox kernel modules and start the VirtualBox services.
 
 ```bash
 sudo /sbin/vboxconfig
 ```
 
-### **6**  . Setup the network.
+#### **6**  . Setup the network.
 
 ```bash
 # This virtual loopback interface is a workaround to avoid the bridge not being available on reboot.
@@ -107,7 +105,7 @@ ifup vmbr0
 sed -i "/net.ipv4.ip_forward=1/ s/# *//" /etc/sysctl.conf
 ```
 
-### **7**  . Download the OVM and VMDK files from Zoom and add them to VirtualBox.
+#### **7**  . Download the OVM and VMDK files from Zoom and add them to VirtualBox.
 
 ```bash
 
@@ -126,7 +124,7 @@ VBoxManage modifyvm "Zoom Meeting Connector-Controller" --bridgeadapter1 vmbr0
 VBoxManage modifyvm "Zoom Meeting Connector-Controller" --vrde on
 ```
 
-### **8**  . Configure the Zoom Meeting Connector-Controller so that it starts automatically in the event of a reboot.
+#### **8**  . Configure the Zoom Meeting Connector-Controller so that it starts automatically in the event of a reboot.
 
 ```bash
 
@@ -143,23 +141,23 @@ VBoxManage modifyvm "Zoom Meeting Connector-Controller" --autostart-enabled on
 VBoxManage modifyvm "Zoom Meeting Connector-Controller" --autostart-delay 30
 ```
 
-### **9**  . Start the Zoom Meeting Connector-Controller! : )
+#### **9**  . Start the Zoom Meeting Connector-Controller! : )
 
 ```bash
 VBoxManage startvm "Zoom Meeting Connector-Controller" --type headless
 ```
 
-### **10**  . Configure the Virtual Machine's networking interface.
+#### **10**  . Configure the Virtual Machine's networking interface.
 
 We used [Microsoft Remote Desktop](https://itunes.apple.com/us/app/microsoft-remote-desktop/id715768417?mt=12) for MacOS. To log in use your machine's IP along with the port Zoom Meeting Connector-Controller was running on, in this case, that's 3389. You can check the port by running VBoxManage `showvminfo`.
 
-### **11**  . Remove ifcfg-eth0:0...
+#### **11**  . Remove ifcfg-eth0:0...
 
 ```bash
 rm -f /etc/sysconfig/network-scripts/ifcfg-eth0:0
 ```
 
-### **12**  . Edit ifcfg-eth0.
+#### **12**  . Edit ifcfg-eth0.
 
 IPADDR is the second IP mentioned in the comments above. The first IP was used to configure our bridge network to function as the gateway. The machine runs CentOS so the most convenient option is to use the default editor, vi.
 
@@ -180,19 +178,19 @@ GATEWAY=147.75.192.212
 BROADCAST=147.75.192.211
 ```
 
-### **13**  . Restart the network.
+#### **13**  . Restart the network.
 
 ```bash
 service network restart
 ```
 
-### **14**  . Reboot the host machine.
+#### **14**  . Reboot the host machine.
 
 # Finishing Up
 
 To finalize the installation navigate to the machine at port 5480 over https and follow [these steps](https://support.zoom.us/hc/en-us/sections/200305473-Meeting-Connector). Additionally, you can and should configure your firewall to allow the necessary connections from Zoom. You can find that information on Zoom [here](https://support.zoom.us/hc/en-us/articles/202342006-Network-Firewall-Settings-for-Meeting-Connector). 
 
-# Starting Meetings On Zoom's Meeting Connector
+## Starting Meetings On Zoom's Meeting Connector
 
 The host of a meeting needs to be set to **Type** _Corp_ to take advantage of all your hard work and the newly configured Zoom Meeting Connector. Navigate to the [user management section](https://zoom.us/account/user) on Zoom, check the user you'd like to change and click on _Type_ under **Change**to update a user to _Corp._
 

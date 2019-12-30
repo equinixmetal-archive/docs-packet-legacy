@@ -10,13 +10,13 @@
 }
 </meta> -->
 
-Welcome to [Packet Python API Client](https://github.com/packethost/packet-python).
+![Image of Python](https://www.packet.com/media/images/9zB4-packet.python.png)
 
-This is a library to help you consume our API routes effectively, making your experience as a developer with Packet a breeze!
+Welcome to [Packet Python API Client](https://github.com/packethost/packet-python).
 
 For more information about our API endpoints, please visit our [API Documentation](https://www.packet.com/developers/api/).
 
-## Installation
+### Installation
 
 `pip install packet-python`
 

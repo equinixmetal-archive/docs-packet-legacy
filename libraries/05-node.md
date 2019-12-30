@@ -10,9 +10,9 @@
 }
 </meta> -->
 
-Welcome to [Packet Node.js API Client](https://github.com/packethost/packet-nodejs).
+![Image of NodeJS](https://www.packet.com/media/images/ruM4-packetnode.png)
 
-This is a library to help you consume our API routes effectively, making your experience as a developer with Packet a breeze!
+Welcome to [Packet Node.js API Client](https://github.com/packethost/packet-nodejs).
 
 For more information about our API endpoints, please visit our [API Documentation](https://www.packet.com/developers/api/).
 

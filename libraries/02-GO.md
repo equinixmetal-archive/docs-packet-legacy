@@ -10,6 +10,8 @@
 }
 </meta> -->
 
+![Image of packngo](https://www.packet.com/media/images/LuU7-packetgolang.png)
+
 Welcome to [Packet Go API Client](https://github.com/packethost/packngo).
 
 This is a library to help you consume our API routes effectively, making your experience as a developer with Packet a breeze!

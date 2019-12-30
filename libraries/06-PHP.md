@@ -10,9 +10,9 @@
 }
 </meta> -->
 
-Welcome to [Packet PHP API Client](https://github.com/packethost/packet-php).
+![Image of PHP](https://www.packet.com/media/images/2Bry-packetphp.png)
 
-This is a library to help you consume our API routes effectively, making your experience as a developer with Packet a breeze!
+Welcome to [Packet PHP API Client](https://github.com/packethost/packet-php).	
 
 For more information about our API endpoints, please visit our [API Documentation](https://www.packet.com/developers/api/).
 

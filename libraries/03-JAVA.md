@@ -10,9 +10,9 @@
 }
 </meta> -->
 
-Welcome to [Packet Java API Client](https://github.com/packethost/packet-java).
+![Image of Java](https://www.packet.com/media/images/AHOS-packet.java.png)
 
-This is a library to help you consume our API routes effectively, making your experience as a developer with Packet a breeze!
+Welcome to [Packet Java API Client](https://github.com/packethost/packet-java).
 
 Lightweight Java client library for accessing Packet REST APIs with project based (JVM hosted languages) on Java, Groovy, Scala, Clojure, etc.
 
