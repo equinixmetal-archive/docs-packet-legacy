@@ -1,4 +1,4 @@
-# Using BGP Global Communities
+# BGP Global Communities
 
 ## Default Behavior
 
