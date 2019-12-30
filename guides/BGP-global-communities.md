@@ -1,3 +1,16 @@
+<!--
+<meta>
+{
+    "title":"BGP Global Communities",
+    "description":"Using BGP communities on Packet",
+    "author":"Enkel Prifti",
+    "github":"enkelprifti98",
+    "email":"enkel@packet.com",
+    "tag":["BGP", "Communities", "Peering"]
+}
+</meta>
+-->
+
 # BGP Global Communities
 
 ## Default Behavior
