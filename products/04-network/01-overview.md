@@ -8,7 +8,7 @@
 
 Packet’s network and datacenter topology is designed with performance and redundancy as top priorities. Two unique features include a Layer-3 topology and native dual-stack (IPv4 / IPv6) capability.
 
-With our Layer-3 network design, each server is directly attached to a physical switch via either 2 x 1Gbps copper or 2 x 10Gbps SFP+ connections. This provides elastic, cloud-style networking without the slow, latency-inducing characteristics often associated with complex overlays. For use cases that require Layer 2 functionality, please check out our [Layer 2 feature](/products/network/advanced/layer-2.md).
+With our Layer-3 network design, each server is directly attached to a physical switch via either 2 x 1Gbps copper or 2 x 10Gbps SFP+ connections. This provides elastic, cloud-style networking without the slow, latency-inducing characteristics often associated with complex overlays. For use cases that require Layer 2 functionality, please check out our [Layer 2 feature](https://www.packet.com/developers/docs/network/advanced/layer-2).
 
 For redundancy, each server has dedicated dual network connections going into two Top-of-Rack (ToR) switches. These two physical connections are virtually bonded together as follows:
 
@@ -25,4 +25,3 @@ For redundancy, each server has dedicated dual network connections going into tw
 |c2.medium| 20Gbps Network Pipe with 2 x 10 Gbps Bonded NICs in an HA configuration (2 x Mellanox ConnectX NICs)
 |g2.large| 20Gbps Bonded Network 2 × 10GBPS W/ LACP
 |n2.large| Quad-port Intel x710  (4 × 10GBPS W/ LACP)
-

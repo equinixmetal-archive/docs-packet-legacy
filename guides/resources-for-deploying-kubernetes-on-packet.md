@@ -15,7 +15,7 @@ Kubernetes helps you make sure those containerized applications run where and wh
 ## Guides
 
 * [How to deploy on bare-metal in ~10 minutes](https://blog.alexellis.io/kubernetes-in-10-minutes/)
-* [Packet: Explore Weave & Kubernetes](https://www.packet.com/developers/guides/microservices-in-kubernetes-with-weave-cloud-and-bare-metal/)
+* [Packet: Explore Weave & Kubernetes](https://www.packet.com/resources/guides/microservices-in-kubernetes-with-weave-cloud-and-bare-metal)
 
 
 ## Plugins and Official Integrations
@@ -35,18 +35,18 @@ Kubernetes is free, but sometimes deploying and managing it takes work.  A numbe
 * [Kubeadm](https://v1-16.docs.kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/): kubeadm bootstraps a minimal Kubernetes cluster, meeting conformance standards, and automating many cluster operations through its toolchain.
 * [Lokomotive](https://github.com/kinvolk/lokomotive-kubernetes): an open source project by [Kinvolk](https://kinvolk.io/) which distributes pure upstream Kubernetes.
 * [Rancher Kubernetes Engine (RKE)](https://rancher.com/docs/rke/latest/en/): RKE solves the problem of installation complexity, a common issue in the Kubernetes community. With RKE, the installation and operation of Kubernetes is both simplified and easily automated, and it’s entirely independent of the operating system and platform you’re running.
-* [Crossplane](https://crossplane.io/): Manage cluster deployments across cloud providers. 
+* [Crossplane](https://crossplane.io/): Manage cluster deployments across cloud providers.
 * [K3s](https://k3s.io/): Lightweight certified Kubernetes distribution for IoT & Edge computing.
 * [Kubicorn](http://kubicorn.io/: is an unofficial project that solves the Kubernetes infrastructure problem and gives users a rich golang library to work with infrastructure.
-* [Kubespray](https://kubespray.io/): runs perfectly on Packet, using Ansible as its substrate for provisioning and orchestration. Kops performs the provisioning and orchestration itself, and as such is less flexible in deployment platforms. 
-* [Pharmer](https://pharmer.io/): a technical preview from Appscode of a Kubernetes cluster manager for kubeadm. Pharmer lets you set up, tear down, and scale clusters up and down on Packet. 
+* [Kubespray](https://kubespray.io/): runs perfectly on Packet, using Ansible as its substrate for provisioning and orchestration. Kops performs the provisioning and orchestration itself, and as such is less flexible in deployment platforms.
+* [Pharmer](https://pharmer.io/): a technical preview from Appscode of a Kubernetes cluster manager for kubeadm. Pharmer lets you set up, tear down, and scale clusters up and down on Packet.
 * [Pharos](https://pharos.sh/docs/): Pharos is a free Kubernetes distribution offered by Kontena, which offers support for setup and management in addition to orchestration tooling.  Kontena tests against Packet x86 and Armv8 servers.
 
 
 ## Commercial Deployment Solutions
 
 * [Loodse](https://www.loodse.com/): Enterprise software that automates multicloud, on-prem, and edge operations with a single management UI for Kubernetes.
-* [NetApp Kubernetes Service](https://stackpoint.io): Packet is the only bare metal provider supported by Stackpoint, which offers a universal control plane for managed Kubernetes. 
+* [NetApp Kubernetes Service](https://stackpoint.io): Packet is the only bare metal provider supported by Stackpoint, which offers a universal control plane for managed Kubernetes.
 * [Platform9](https://platform9.com): Packet works closely with Platform9, a managed cloud provider, to enable users with Kubernetes, Openstack, and Serverless solutions.
 * [Cloud66](https://www.cloud66.com/): London-based Cloud66 offers a managed Kubernetes container service called Maestro, which is tested against Packet.
 * [RedHat OpenShift](https://www.openshift.com/): OpenShift is an open source container application platform by Red Hat based on the Kubernetes container orchestrator for enterprise app development and deployment.
@@ -77,4 +77,3 @@ Packet is actively involved in supporting the cloud native space, including Kube
 * [Kubernetes Documentation](https://kubernetes.io/docs/home/)
 * [Kubernetes Community Public Slack](https://slack.kubernetes.io/)
 * [#k8s on Packet's Community Slack](https://packetcommunity.slack.com)
-

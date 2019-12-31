@@ -14,7 +14,7 @@ _Please note: this feature is not available for on-demand instances.  A reserved
 
 ## Getting Started
 
-First things first, you should be familiar with the [API calls available for device provisioning](https://www.packet.com/developers/api/devices/), you'll need them! You can find examples for deploying reserved hardware [here](/products/getting-started/deployment-options/reserved-hardware.md).
+First things first, you should be familiar with the [API calls available for device provisioning](https://www.packet.com/developers/api/devices/), you'll need them! You can find examples for deploying reserved hardware [here](https://www.packet.com/developers/docs/getting-started/deployment-options/reserved-hardware).
 
 You should also be aware of our standard disk configurations for each server type.  With a few hardware-specific exceptions, generally speaking, this looks like:
 

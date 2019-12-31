@@ -10,19 +10,19 @@
 
 # Helm Charts for Kubernetes Package Management
 
-[Helm](https://helm.sh/) is a package manager for Kubernetes clusters, much like `apt` or `yum` on a traditional operating system, which can pull, download, deploy, and manage packaged workloads from a central repository, or from a local project. 
+[Helm](https://helm.sh/) is a package manager for Kubernetes clusters, much like `apt` or `yum` on a traditional operating system, which can pull, download, deploy, and manage packaged workloads from a central repository, or from a local project.
 
 A typical Helm chart will usually include all of the manifests one might typically manually apply individually with `kubectl` as templates, along with a `Values.yaml` file for quick management of user preferences, so it becomes a one-step process to manage all of these resources as a single resource.
 
-A given package may include everything from `Deployment` resources, to `StorageClass` resources, to any set of Kubernetes resources. 
+A given package may include everything from `Deployment` resources, to `StorageClass` resources, to any set of Kubernetes resources.
 
-Key benefits of Helm, the simplification of complex workloads aside, include the ability to version control the entire pipeline of YAML configs that might be required to deploy an application, as well as simplified update and rollback management. 
+Key benefits of Helm, the simplification of complex workloads aside, include the ability to version control the entire pipeline of YAML configs that might be required to deploy an application, as well as simplified update and rollback management.
 
 ## Setup
 
 Helm will require:
 
-- A Kubernetes cluster of any type, many of [our guides](https://www.packet.com/developers/guides/) cover options for choosing a cluster deployment.
+- A Kubernetes cluster of any type, many of [our guides](https://www.packet.com/resources/guides/) cover options for choosing a cluster deployment.
 - The [Helm client](https://v3.helm.sh/docs/intro/install/)
 
 There are many central repositories for Helm packages one can install, Helm's maintainers offer one such repo for common software packages that can be installed as packages:
@@ -60,7 +60,7 @@ Helm can also install packages from a local source:
 helm install <name> ./local-src-dir
 ```
 
-with common optional flags like `--generate-name` to assign one automatically, or `--dry-run` to run through a deployment, and `--debug` to increase output verbosity. 
+with common optional flags like `--generate-name` to assign one automatically, or `--dry-run` to run through a deployment, and `--debug` to increase output verbosity.
 
 Viewing your workloads and status can be done using `helm ls`.
 
@@ -167,7 +167,7 @@ metadata:
 ...
 ```
 
-to modify, in this case, the labels applied to this service. 
+to modify, in this case, the labels applied to this service.
 
 Then, to apply this local chart, `helm install` will run as it might for any other package:
 
@@ -177,9 +177,9 @@ helm install --dry-run ./my-new-chart
 
 ## Plugins for Sensitive Data
 
-Some applications require sensitive data, and the Kubernetes `Secret` resource is supported by Helm, but for encryption and decryption of these managed Secrets, Helm's plugin system allows developers to create tools like [futuresimple/helm-secrets](https://github.com/futuresimple/helm-secrets) to manage these resources a little more safelty. 
+Some applications require sensitive data, and the Kubernetes `Secret` resource is supported by Helm, but for encryption and decryption of these managed Secrets, Helm's plugin system allows developers to create tools like [futuresimple/helm-secrets](https://github.com/futuresimple/helm-secrets) to manage these resources a little more safelty.
 
-Other plugins along this line include [technosophos/helm-keybase](https://github.com/technosophos/helm-keybase) to create secured repos, and [technosophos/helm-gpg](https://github.com/technosophos/helm-gpg) to verify and sign your charts, amongst others. 
+Other plugins along this line include [technosophos/helm-keybase](https://github.com/technosophos/helm-keybase) to create secured repos, and [technosophos/helm-gpg](https://github.com/technosophos/helm-gpg) to verify and sign your charts, amongst others.
 
 ## Additional Resources
 

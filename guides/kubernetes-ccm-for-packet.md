@@ -19,7 +19,7 @@
 The Kubernetes CCM plugin is designed to implement cloud-vendor specific features such as properly labeling nodes and providing LoadBalancer services. The Packet-CCM currently implements the following:
 * [nodecontroller](https://kubernetes.io/docs/concepts/architecture/cloud-controller/#node-controller) - updates nodes with cloud provider specific labels and addresses
 
-The CCM is great when paired with the [Cluster Autoscaler](/guides/kubernetes-cluster-autoscaler-on-packet.md) as you don’t need to manually remove the logical nodes from the cluster.
+The CCM is great when paired with the [Cluster Autoscaler](https://www.packet.com/resources/guides/kubernetes-cluster-autoscaler-on-packet.md) as you don’t need to manually remove the logical nodes from the cluster.
 
 ## Requirements:
 

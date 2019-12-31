@@ -22,7 +22,7 @@ These instances are volatile, which means that they can be revoked by Packet at 
 
 ### Spot Instance Creation
 
-_For more information regarding the spot market API endpoint, review the [relevant API docs](https://www.packet.net/developers/api/market/)._    
+_For more information regarding the spot market API endpoint, review the [relevant API docs](https://www.packet.com/developers/api/#market)._    
 
 This works much like creating a traditional instance.  The only difference in the API call is that we need two additional parameters:
 
@@ -107,7 +107,7 @@ Ascertaining when an instance will be terminated is not visible through our cust
 * __From the API:__
 
 ```
-curl -X GET --header 'Accept: application/json' --header 'X-Auth-Token: token' 'https://api.packet.net/projects/projectUUID/devices' | jq '.termination_time'
+curl -X GET --header 'Accept: application/json' --header 'X-Auth-Token: token' 'https://api.packet.net/projects/<project_UUID>/devices' | jq '.termination_time'
 ```
 
 The above will output the time when an instance will be revoked/terminated.  If the response is `null` , it indicates that no termination time has been set.

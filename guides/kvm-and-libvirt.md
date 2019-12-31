@@ -15,7 +15,7 @@ Turns out booting virtual machines from scratch using the [KVM](http://www.linux
 
 All of Packet's hardware can be virtualized but for this guide, we'll be deploying a [Tiny But Mighty](https://www.packet.net/cloud/servers/t1-small/) server with Ubuntu 16.04 installed.
 
-_**Note: This installation is completed entirely using the command line (no GUI!). Also, you will need a public /30 IPv4 block assigned to your account if you plan to route public traffic to your virtual machine. You can request the [IP block](/products/network/basic/elastic-ips.md) from our portal.**_
+_**Note: This installation is completed entirely using the command line (no GUI!). Also, you will need a public /30 IPv4 block assigned to your account if you plan to route public traffic to your virtual machine. You can request the [IP block](https://www.packet.com/developers/docs/network/basic/elastic-ips) from our portal.**_
 
 ### Step 1: Install Virtualization Software
 
