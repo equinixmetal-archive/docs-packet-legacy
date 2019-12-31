@@ -31,7 +31,7 @@ Core Cloud:
 
 Custom Cloud:
 * [ATL2](https://www.packet.com/cloud/locations/atlanta/) is located in Atlanta, Georgia.
-* [DTW1](https://www.packet.com/cloud/locations/detriot/) is located in Detroit, Michigan
+* [DTW1](https://www.packet.com/cloud/locations/detroit/) is located in Detroit, Michigan
 * [FRA2](https://www.packet.com/cloud/locations/frankfurt/) is located in Frankfurt, Germany.
 * [HKG2](https://www.packet.com/cloud/locations/hong-kong/) is located in Hong Kong.
 * [IAH1](https://www.packet.com/cloud/locations/houston/) is located in Houston, Texas.
