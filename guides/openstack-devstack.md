@@ -27,7 +27,7 @@ If you do not have a preference, Ubuntu 16.04 is the most tested, and will proba
 
 For this guide, I will be using the official [DevStack](https://docs.openstack.org/devstack/latest/guides/single-machine.html) documentation, but we will do some modifications on the local.conf file.
 
-I have deployed a Type1 server with a [custom /29](/products/network/basic/standard-ips.md) subnet running Ubuntu 16.04.
+I have deployed a Type1 server with a [custom /29](https://www.packet.com/developers/docs/network/basic/standard-ips) subnet running Ubuntu 16.04.
 
 You should specify the larger custom subnet so that you can give Public IPs to some test VMs, making them easily reach them from the public internet.
 

@@ -6,7 +6,7 @@
 }
 </meta>-->
 ### Deployment
-Servers can be deployed On-Demand via the customer portal, API, API integration, or Terraform script. All server types found on [our webpage](https://www.packet.com/cloud/servers/) are eligible for On-Demand deployment--availability permitting. Available inventory is not guaranteed for On-Demand instance provisioning requests, see our documentation on [capacity](products/03-servers/02-deployment-options/05-capacity.md) for more information about availability.
+Servers can be deployed On-Demand via the customer portal, API, API integration, or Terraform script. All server types found on [our webpage](https://www.packet.com/cloud/servers/) are eligible for On-Demand deployment--availability permitting. Available inventory is not guaranteed for On-Demand instance provisioning requests, see our documentation on [capacity](https://www.packet.com/developers/docs/servers/deployment-options/capacity) for more information about availability.
 
 ### Rate
 On-Demand servers are charged a fixed rate hourly. Billing begins as soon as the server is successfully provisioned, and ends when the server has been deleted from the user's project.

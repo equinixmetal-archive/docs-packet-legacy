@@ -199,7 +199,7 @@ sysctl --system
 
 #### Step 6 - Setup VLAN at EWR1
 
-Follow the packet guide [“layer 2 configuration”](/guides/layer-2-configurations.md) to setup the following:
+Follow the packet guide [“layer 2 configuration”](https://www.packet.com/resources/guides/layer-2-configurations) to setup the following:
 
 1. Create a VLAN at EWR1
 2. Node 1 is in hybrid mode, i.e. eth0 is on bond0 (internet accessible) but eth1 on layer 2 (on the VLAN 1092 in this example)

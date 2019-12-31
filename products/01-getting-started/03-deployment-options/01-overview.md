@@ -5,7 +5,7 @@
     "tag":["Deployment Options"]
 }
 </meta>-->
-Our [customer portal](https://app.packet.net) provides an intuitive GUI for using the Packet platform, including deploying and managing servers. Navigate to your desired project and click "new server" to get started. From there you'll be able to choose between [On Demand](products/03-servers/02-deployment-options/02-on-demand.md) instances, [Reserved Hardware](products/03-servers/02-deployment-options/03-reserved-hardware.md), and [Spot Market](products/03-servers/02-deployment-options/04-spot-market.md) deployment options.
+Our [customer portal](https://app.packet.net) provides an intuitive GUI for using the Packet platform, including deploying and managing servers. Navigate to your desired project and click "new server" to get started. From there you'll be able to choose between [On Demand](https://www.packet.com/developers/docs/servers/deployment-options/on-demand) instances, [Reserved Hardware](https://www.packet.com/developers/docs/servers/deployment-options/reserved-hardware), and [Spot Market](https://www.packet.com/developers/docs/servers/deployment-options/spot-market) deployment options.
 
 ### API & Integrations
 Prefer a more programmatic approach? Leverage our extensive, RESTful [API](https://www.packet.com/developers/api/) with Curl to deploy and manage hardware directly from the command line or Bash script.

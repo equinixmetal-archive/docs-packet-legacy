@@ -13,15 +13,13 @@
 
 Route BGP with BIRD
 
-# Demo
-
 # Introduction
 
 BGP isn't new, but having it be this accessible is! Leveraging dynamic hosting for a cluster of servers at a particular data center offers your workloads a safe, effective, and quick failover channel. In this guide, we'll walk you through configuring Local BGP using [BIRD](http://bird.network.cz/) so that you can broadcast a specific local IP address to a host of your choice.
 
 # Getting Started
 
-If you haven't already requested that BGP be added to your account you'll need to get that sorted before continuing with this guide - see more info about getting started [here](https://www.packet.net/developers/guides/route-bgp-with-bird/).
+If you haven't already requested that BGP be added to your account you'll need to get that sorted before continuing with this guide - see more info about getting started [here](https://www.packet.com/developers/docs/network/advanced/local-and-global-bgp).
 
 For this guide, we're deploying a [Tiny But Mighty](https://www.packet.net/cloud/servers/t1-small/) server with Ubuntu 16, and [BIRD](https://bird.network.cz/) to broadcast a local IP with BGP.
 
@@ -176,6 +174,6 @@ If you check the server detail page, you will also see the learned route.
 
 ![server-details](/images/route-bgp-with-bird/server-details.png)
 
-To test, you can ping the IP address in a command line - `ping 10.99.12.138`. _Remember, Local BGP is announcing a private IP address, so you'll have to be connected to the private network for the data center you're running Local BGP in. You can do that by SSHing into another server in that data center or by connected to [Doorman](https://www.packet.net/developers/guides/route-bgp-with-bird/), Packet's private VPN._
+To test, you can ping the IP address in a command line - `ping 10.99.12.138`. _Remember, Local BGP is announcing a private IP address, so you'll have to be connected to the private network for the data center you're running Local BGP in. You can do that by SSHing into another server in that data center or by connected to [Doorman](https://www.packet.com/developers/docs/network/basic/doorman), Packet's private VPN._
 
 **Congratulations! You've just configured a BGP routing protocol.**

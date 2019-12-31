@@ -251,4 +251,4 @@ The Verbose option will show any possible issues during the attach process. If t
 
 ### Extending Storage Volume
 
-You can also [extend/grow](/guides/extending-blockstorage.md) your block storage volume after it's been deployed.
+You can also [extend/grow](https://www.packet.com/resources/guides/extending-blockstorage) your block storage volume after it's been deployed.
