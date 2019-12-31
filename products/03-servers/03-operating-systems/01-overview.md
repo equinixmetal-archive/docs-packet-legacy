@@ -8,12 +8,12 @@
 
 Packet provides a range of officially supported operated systems including Linux, BSD, Windows, and VMware distributions.
 
-Images for supported operating systems are built specifically for each Packet server type and stored on our public [Github repository](https://github.com/packethost/packet-images). All supported operating systems are available for automatic installation when provisioning Packet servers via the customer portal, Packet API, or integration (e.g. Terraform). 
+Images for supported operating systems are built specifically for each Packet server type and stored on our public [Github repository](https://github.com/packethost/packet-images). All supported operating systems are available for automatic installation when provisioning Packet servers via the customer portal, Packet API, or integration (e.g. Terraform).
 
 Visit our [main webpage](https://www.packet.com/developers/os-compability/) for a list of all supported operating systems and compatible server types.
 
 ### Custom iPXE
-Don't see the OS you need in our supported list? No problem! 
+Don't see the OS you need in our supported list? No problem!
 
 With [custom iPXE](/products/03-servers/03-operating-systems/02-custom-ipxe.md) you can bring your own Operating System image. Just choose iPXE as the OS when provisioning any Packet server type, and you'll be able to supply a URL to PXE installation tools like netboot.xyz, or your own iPXE script.
 

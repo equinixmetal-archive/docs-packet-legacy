@@ -8,7 +8,7 @@
 
 There are times when a server becomes unreachable over SSH due to broken networking, a bad install, misconfiguration, a kernel upgrade, bad firewall rules, etc.
 
-If you have your server's root password and your SSH key, please follow the instructions below.  If you do not have these assets, you should [_leverage our Rescue Mode_](/products/servers/how-to-deploy/rescue-mode.md).
+If you have your server's root password and your SSH key, please follow the instructions below.  If you do not have these assets, you should [_leverage our Rescue Mode_](/products/servers/key-features/rescue-mode.md).
 
 #### Using SOS for Out of Band Access
 
@@ -19,7 +19,7 @@ Packet offers an out of band access method that we call "SOS" - which stands for
 `ssh {server-uuid}@sos.{facility-code}.packet.net`  
 
 *   You can find the **{server-uuid}** on the server details section in our user portal.
-*   For a full list of **{facility-code}** options (e.g. ewr1, sjc1, ams1, etc) see our [Data Centers](/products/common-questions/datacenters.md) article.
+*   For a full list of **{facility-code}** options (e.g. ewr1, sjc1, ams1, etc) see our [Data Centers](/products/getting-started/datacenters-ha/overview.md) article.
 *   If you have multiple keys locally, use the`-i` flag to specifically choose the correct key.
 
   ````
@@ -42,6 +42,6 @@ A few things to note:
 
 ### Disconnect
 
-In order to disconnect from the server you need to enter `~.` (tilde followed by period). SSH only accepts the escape character after a new line, so you may need to press enter/return first, followed by `~.` .
+In order to disconnect from the server you need to enter `~.` (tilde followed by period). SSH only accepts the escape character after a new line, so you may need to press enter/return first, followed by `~.`.
 
 This method of disconnection is built into SSH, not part of our console service.

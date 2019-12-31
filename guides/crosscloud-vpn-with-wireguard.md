@@ -20,7 +20,7 @@
 ## Introduction
 
 
-In the world of VPNs, [WireGuard](https://www.wireguard.com/) is the new kid on the block. Comparing to other existing VPN protocols, Wireguard offers many advantages, such as reliability, updated encryption, simpler configuration, quicker handshake and faster speeds. This article provides two basic wireguard use cases and the steps to setup the WireGuard VPN in Packet’s facilities. 
+In the world of VPNs, [WireGuard](https://www.wireguard.com/) is the new kid on the block. Comparing to other existing VPN protocols, Wireguard offers many advantages, such as reliability, updated encryption, simpler configuration, quicker handshake and faster speeds. This article provides two basic wireguard use cases and the steps to setup the WireGuard VPN in Packet’s facilities.
 
 
 ## Use Case#1 - Setup a site-to-site WireGuard VPN tunnel between two Packet servers located at different Packet facilities
@@ -71,11 +71,11 @@ AllowedIPs = 10.168.1.1
 Endpoint = 139.178.68.53:51820
 ```
 
-Note: 
+Note:
 1. 192.168.1.1 is a random chosen private IP address for the EWR1 server’s VPN tunnel. Please make sure to NOT use the private IP blocks that’s assigned to your project at EWR1, such as 10.99.x.x/25
 2. 10.168.1.1 is a random chosen private IP address for the SJC1 server’s VPN tunnel. Please make sure to NOT use the private IP blocks that’s assigned to your project at SJC1, such as 10.88.x.x/25
 3. 139.178.68.53 is the SJC1 server’s public IP
-4. 51820 is a random chosen UDP port number 
+4. 51820 is a random chosen UDP port number
 
 
 #### Step 4 - Setup WireGuard Interfaces at SJC1 site:
@@ -97,9 +97,9 @@ Endpoint = 147.75.72.241:51820
 
 Note:
 1. 147.75.72.241  is the EWR1 server’s public IP
-2. 51820 is a random chosen UDP port number and has to match the port number used for the EWR1 server 
+2. 51820 is a random chosen UDP port number and has to match the port number used for the EWR1 server
 
-    
+
 
 
 #### Step 5 - Enable & Start WireGuard on both servers
@@ -131,10 +131,10 @@ PING 192.168.1.1 (192.168.1.1) 56(84) bytes of data.
 ```
 
 
-## Use Case 2 - Setup a WireGuard VPN and NAT gateway using a Packet server 
+## Use Case 2 - Setup a WireGuard VPN and NAT gateway using a Packet server
 
 
-The following diagram illustrates that one server (node 1) at our EWR1 facility serves as a VPN and NAT gateway (internet accessible) and is also on a VLAN (VLAN ID: 1092). Two more servers (node 2, node 3) are on the same VLAN (1092) but have no direct internet access. Another server at our SJC1 facility serves as another VPN gateway. 
+The following diagram illustrates that one server (node 1) at our EWR1 facility serves as a VPN and NAT gateway (internet accessible) and is also on a VLAN (VLAN ID: 1092). Two more servers (node 2, node 3) are on the same VLAN (1092) but have no direct internet access. Another server at our SJC1 facility serves as another VPN gateway.
 
 All traffic between node 2 or 3 in EWR1 and SJC1 server are “forwarded” via node 1 in EWR1 through the WireGuard VPN tunnel between the SJC1 server and EWR1’s node 1.
 
@@ -189,7 +189,7 @@ Endpoint = 147.75.72.241:51820
 
 #### Step 5 - Setup the routing for node 1 of EWR1
 
-Issue the following commands at EWR1 node 1 to enable IPv4 and IPv6 routing, so that it can forward packets for node 2 and node 3: 
+Issue the following commands at EWR1 node 1 to enable IPv4 and IPv6 routing, so that it can forward packets for node 2 and node 3:
 
 ```
 echo "net.ipv4.ip_forward = 1
@@ -199,7 +199,7 @@ sysctl --system
 
 #### Step 6 - Setup VLAN at EWR1
 
-Follow the packet article [“layer 2 configuration”](https://support.packet.com/kb/articles/layer-2-configurations) to setup the following:
+Follow the packet guide [“layer 2 configuration”](/guides/layer-2-configurations.md) to setup the following:
 
 1. Create a VLAN at EWR1
 2. Node 1 is in hybrid mode, i.e. eth0 is on bond0 (internet accessible) but eth1 on layer 2 (on the VLAN 1092 in this example)
@@ -213,7 +213,5 @@ Follow the packet article [“layer 2 configuration”](https://support.packet.c
 3. Node 2, 3 ping SJC1 server and vice versa
 
 
-## Final remarks 
-The above configurations work just fine across different cloud providers, for example, you can follow the same steps to setup a Wireguard VPN between AWS and Packet. Besides the two use cases provided in this article, there are many other use cases for WireGuard. For example, [kilo](https://github.com/squat/kilo) uses WireGuard to create a mesh between the different nodes in a Kubernetes cluster. 
-
-
+## Final remarks
+The above configurations work just fine across different cloud providers, for example, you can follow the same steps to setup a Wireguard VPN between AWS and Packet. Besides the two use cases provided in this article, there are many other use cases for WireGuard. For example, [kilo](https://github.com/squat/kilo) uses WireGuard to create a mesh between the different nodes in a Kubernetes cluster.
