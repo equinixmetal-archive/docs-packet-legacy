@@ -15,15 +15,15 @@
 
 ## Introduction
 
-Private networking environments are different on Packet compared to other cloud providers. There are essentially two ways of achieving private connectivity between different hosts on Packet. 
+Private networking environments are different on Packet compared to other cloud providers. There are essentially two ways of achieving private connectivity between different hosts on Packet.
 
 The first method is by utilizing the private IPv4 space (10.x.x.x) that is assigned and configured in each server instance on the same project by default so you don't have to do any additional configuation. If you need cross datacenter private connectivity, you can enable Backend Transfer but be aware that you will be charged for bandwidth traffic at a reduced rate of $0.03 / GB.
 
-The second method which we will be covering in this guide is by utilizing Packet's Layer 2 VLAN feature which lets you create more traditional private / hybrid networking environments. The Layer 2 feature lets you provision between one and twelve (per project) project-specific layer 2 networks (VLANs). However, this option does not offer the ability to have private cross datacenter connections. For more details about the basics of this feature, please read our [overview article](/products/04-network/03-advanced/03-layer-2.md).
+The second method which we will be covering in this guide is by utilizing Packet's Layer 2 VLAN feature which lets you create more traditional private / hybrid networking environments. The Layer 2 feature lets you provision between one and twelve (per project) project-specific layer 2 networks (VLANs). However, this option does not offer the ability to have private cross datacenter connections. For more details about the basics of this feature, please read our [overview article](/products/network/advanced/layer-2.md).
 
 
 ## Bonding on Packet
-Before we get to the nitty gritty details of the guide, it's important to understand the [networking configuration](/products/04-network/01-overview.md) of Packet servers. By default, each server has two networking interfaces that are setup in an LACP (mode 4) bond that is configured both in the Host OS and on the switch.  
+Before we get to the nitty gritty details of the guide, it's important to understand the [networking configuration](/products/network/overview.md) of Packet servers. By default, each server has two networking interfaces that are setup in an LACP (mode 4) bond that is configured both in the Host OS and on the switch.  
 
 ![bonding](/images/layer-2-configurations/bonding.png)
 
@@ -41,7 +41,7 @@ The following are different scenarios that we will be covering in this guide:
 
 **Please Note:** For the purpose of this guide, we are using eth0/eth1 to represent the first and second interfaces. The actual interface name will depend on what operating system and server configuration you are using.**
 
-## Configuration #1: Leaving eth0 in bond0 and adding a single VLAN to eth1. 
+## Configuration #1: Leaving eth0 in bond0 and adding a single VLAN to eth1.
 
 In this example, you will need at least 2 servers in the same project and at least 1 Virtual Network (VLAN). We will be removing eth1 from bond0, attaching a VLAN to it, and pinging between the hosts.
 

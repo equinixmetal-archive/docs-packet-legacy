@@ -8,7 +8,7 @@
 
 Packet supports passing custom iPXE scripts during provisioning, which allows you to install a custom operating system manually, or via automated kickstart.
 
-Since we don’t test any manually installed operating system, it goes without saying that you’ll need to be familiar with our [S.O.S. and rescue mode](https://support.packet.com/kb/articles/rescue-mode) services in case you need to troubleshoot your server.
+Since we don’t test any manually installed operating system, it goes without saying that you’ll need to be familiar with our [S.O.S. and rescue mode](/products/servers/key-features/sos-serial-over-ssh.md) services in case you need to troubleshoot your server.
 
 ### Step-by-Step Usage
 
@@ -28,7 +28,7 @@ Alternatively, you can pass the contents of your iPXE script directly via user-d
 
 ![deploy options 1](/images/custom-ipxe/Deploy-Options-1.png)
 
-After serving up iPXE via DHCP, the device will be marked as active in our API and portal. Since the server is sitting on the Bootloader Options and it has no ssh access, we will have to use our [Console Access](/product/servers/how-to-deploy/sos-serial-over-ssh.md).
+After serving up iPXE via DHCP, the device will be marked as active in our API and portal. Since the server is sitting on the Bootloader Options and it has no ssh access, we will have to use our [Console Access](/products/servers/key-features/sos-serial-over-ssh.md).
 
 `ssh device-id@sos.facility-code.packet.net`
 

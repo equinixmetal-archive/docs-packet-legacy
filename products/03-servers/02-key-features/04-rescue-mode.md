@@ -8,7 +8,7 @@
 
 There are times when a server becomes unreachable over SSH due to broken networking, a bad install, misconfiguration, a kernel upgrade, bad firewall rules, etc.
 
-If you have your server's root password and your SSH key, you should use our [S.O.S (Serial over SSH) service](/products/servers/how-to-deploy/sos-serial-over-ssh.md).
+If you have your server's root password and your SSH key, you should use our [S.O.S (Serial over SSH) service](/products/servers/key-features/sos-serial-over-ssh.md).
 
 ### Using Rescue Mode
 
