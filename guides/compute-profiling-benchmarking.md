@@ -51,7 +51,7 @@ which can be used to base the rest of your `dtrace` script around, or turn into 
 
 Extended BPF (eBPF) adds additional functionality to classical BPF, which can be used for tracing operations like attaching a filter onto a socket, and then filtering traffic through that socket, which in eBPF, can be used to assist in aggregation and metrics collection, but because programming eBPF directly isn't entirely accessible, there are many frontend tools that assist in building such eBPF programs, or can further extend this functionality of other tracing tools.
 
-eBPF-based tools to trace different types of activity are: 
+Some examples of eBPF-based tools to trace different types of activity are: 
 
 - `tcplife` to show completed TCP sessions, their process ID, and the command associated.
 - `bpftrace`, like the `dtrace` examples above, can be used to trace specific functions or systemcalls and enumerate them, and built into a suite of [one-liners](http://www.brendangregg.com/ebpf.html#bpftrace). The syntax is similar to other examples, `bpftrace -e 'tracepoint:$probe:$syscall { ... }'`, to specify what to trace, and what do with that input. 
