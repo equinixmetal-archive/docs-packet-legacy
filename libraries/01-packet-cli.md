@@ -9,7 +9,7 @@
 }
 </meta> -->
 
-![Image of Packe CLI](https://www.packet.com/media/images/p59m-packetcli.png)
+![Packet CLI Banner](/images/libraries/packet-cli/cli-banner.png)
 
 Packet provides an API-driven bare metal platform that combines the automation experience of the cloud with the benefits of physical, bare metal servers.
 

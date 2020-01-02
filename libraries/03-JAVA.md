@@ -10,7 +10,7 @@
 }
 </meta> -->
 
-![Image of Java](https://www.packet.com/media/images/AHOS-packet.java.png)
+![Packet Java API Client Banner](/images/libraries/java/java-banner.png)
 
 Welcome to [Packet Java API Client](https://github.com/packethost/packet-java).
 
