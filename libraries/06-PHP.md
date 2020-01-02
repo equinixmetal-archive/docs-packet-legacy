@@ -10,7 +10,7 @@
 }
 </meta> -->
 
-![Image of PHP](https://www.packet.com/media/images/2Bry-packetphp.png)
+![Packet PHP API Client Banner](/images/libraries/php/php-banner.png)
 
 Welcome to [Packet PHP API Client](https://github.com/packethost/packet-php).	
 

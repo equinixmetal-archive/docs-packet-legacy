@@ -10,7 +10,7 @@
 }
 </meta> -->
 
-![Image of Ruby](https://www.packet.com/media/images/Rkhv-packetruby.png)
+![Packet Ruby API Client Banner](/images/libraries/ruby/ruby-banner.png)
 
 Welcome to [Packet Ruby API Client](https://github.com/packethost/packet-rb).
 
