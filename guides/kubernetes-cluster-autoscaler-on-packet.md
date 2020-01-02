@@ -52,7 +52,7 @@ The credentials for authenticating with Packet are stored in a `secret` and prov
 | cluster-autoscaler-cloud-config | Global/cloudinit        | The base64 encoded [user data](https://support.packet.com/kb/articles/user-data) submitted when provisioning devices. In the example file, the default value has been tested with Ubuntu 18.04 to install Docker & kubelet and then to bootstrap the node into the cluster using kubeadm. For a different base OS or bootstrap method, this needs to be customized accordingly.  |
 | cluster-autoscaler-cloud-config | Global/reservation      | The values “require” or “prefer” will request the next available hardware reservation for new devices in selected facility & plan. If no hardware reservations match, “require” will trigger a failure, while “prefer” will launch on-demand devices instead (default: none).  |
 | cluster-autoscaler-cloud-config | Global/hostname-pattern | The pattern for the names of new Packet devices (default: “k8s-{{.ClusterName}}-{{.NodeGroup}}-{{.RandString8}}” ).                  
-| bootstrap-token-cluster-autoscaler-packet  | token-id   | You cluster token-id. If you don’t have a token setup, you can refer to the official K8s [guide](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-token/). 
+| bootstrap-token-cluster-autoscaler-packet  | token-id   | You cluster token-id. If you don’t have a token setup, you can refer to the official K8s [guide](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-token/).
 | bootstrap-token-cluster-autoscaler-packet.  | token-secret  | You cluster token secret.  |
 
 
@@ -96,12 +96,6 @@ You can also view live logs of the autoscaler container with the following comma
 
 To see the autoscaler in action, you can scale your deployment up and down and the autoscaler will create or remove nodes when needed.
 
-**Note**: It’s recommended to pair the autoscaler with the [Packet CCM](/guides/kubernetes-ccm-for-packet.md) (Cloud Controller Manager) for Kubernetes as that takes care of the logical node objects being removed from the cluster. We have a guide on how to deploy the CCM to your cluster here.
+**Note**: It’s recommended to pair the autoscaler with the [Packet CCM](https://www.packet.com/resources/guides/kubernetes-ccm-for-packet) (Cloud Controller Manager) for Kubernetes as that takes care of the logical node objects being removed from the cluster. We have a guide on how to deploy the CCM to your cluster here.
 
 Congratulations! You have now setup the Kubernetes Cluster Autoscaler on your bare metal cluster on Packet.
-
-
-
-
-
-

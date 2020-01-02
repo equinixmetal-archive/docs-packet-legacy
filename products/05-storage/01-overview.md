@@ -40,5 +40,5 @@ If block storage doesn't meet your needs, we offer two other options:
 
 | Source  | Content |
 | ------------- | ------------- |
-| [Elastic Block Storage Guide](http://staging.packet.net/resources/guides/elastic-block-storage/) | How to setup, create, attach storage volume |
-| [Extending Block Storage Volume Guide](http://staging.packet.net/resources/guides/extending-blockstorage) | How to extend existing storage volume|
+| [Elastic Block Storage Guide](https://www.packet.com/resources/guides/elastic-block-storage/) | How to setup, create, attach storage volume |
+| [Extending Block Storage Volume Guide](https://www.packet.com/resources/guides/extending-blockstorage/) | How to extend existing storage volume|

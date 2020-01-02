@@ -1,4 +1,4 @@
-<!-- 
+<!--
 <meta>
 {
     "title":"Elastic Block Storage",
@@ -8,7 +8,7 @@
     "email":"mo@usr.dev",
     "tag":["Storage", "Block Storage", "Elastic Block Storage"]
 }
-</meta> 
+</meta>
 -->
 
 ### Elastic Block Storage
@@ -34,18 +34,18 @@ When you need persistent storage, with built-in replication and snapshots, our b
 After your volume is created, you need to route it to the server you would like to mount it on.  To do so, go to the server detail page that you'd like to connect the block device to and click on the Storage submenu on the left.  Select your volume from the drop-down box and click 'Attach'.  This routes the volume to your block device and allows you to mount it from your local server via iSCSI.
 
 
-Once attached to your server, you will see the volume name, size & where it is located: 
+Once attached to your server, you will see the volume name, size & where it is located:
 
 ![elastic-block-storage](/images/elastic-block-storage/storage-attach-ui.png)
 
 
 ### Attach / Detach Scripts
 
-As Packet does not have an agent running on any client-server or remote access to client machines, you need to run the final attach of the iSCSI volume to your server on your own.  Packet provides a block storage management script to make this process easy.  You can access the attach script via Github here. 
+As Packet does not have an agent running on any client-server or remote access to client machines, you need to run the final attach of the iSCSI volume to your server on your own.  Packet provides a block storage management script to make this process easy.  You can access the attach script via Github here.
 
-In order to complete the attachment process, you will need to run the following on the device's CLI: 
+In order to complete the attachment process, you will need to run the following on the device's CLI:
 
-⚠️ **ARM users:** Please note, the scripts are built with x86 in mind, and do not currently include JQ for aarch64.  As such, you will need to first manually install jq as follows: 
+⚠️ **ARM users:** Please note, the scripts are built with x86 in mind, and do not currently include JQ for aarch64.  As such, you will need to first manually install jq as follows:
 
  `apt-get install jq`
 
@@ -72,7 +72,7 @@ Block device /dev/mapper/volume-32829074 is available for use
 ```
 
 
-The option `-m queue` is very important, if block storage becomes inaccessible, this directive will keep the IO in-memory buffer until it becomes accessible. 
+The option `-m queue` is very important, if block storage becomes inaccessible, this directive will keep the IO in-memory buffer until it becomes accessible.
 
 
 ### Creating the filesystem with gdisk
@@ -84,7 +84,7 @@ root@block:~# gdisk /dev/mapper/{volume_name_here}
 ```
 
 
-You can use the default settings or adjust according to your particular use-case.   After partitioning the disk you can verify the volume partition was successfully created as follows: 
+You can use the default settings or adjust according to your particular use-case.   After partitioning the disk you can verify the volume partition was successfully created as follows:
 
 ```
 root@block:~# ls -al /dev/mapper/
@@ -96,7 +96,7 @@ lrwxrwxrwx 1 root root       7 Nov  8 17:59 /dev/mapper/volume-32829074 -> ../dm
 lrwxrwxrwx 1 root root       7 Nov  8 17:59 /dev/mapper/volume-32829074-part1 -> ../dm-1
 ```
 
-If the new partition is not showing, please run: 
+If the new partition is not showing, please run:
 
 `kpartx -u /dev/mapper/volume-xxxxxx and verify again with ls -al /dev/mapper/* `
 
@@ -167,14 +167,14 @@ In order for the device to mount on boot, we need to add an entry to fstab.  Ins
 /dev/mapper/volume-32829074-part1: UUID="20e0931a-255b-4bf7-8e22-5da91198279f" TYPE="ext4" PARTLABEL="Linux filesystem" PARTUUID="0f9151b7-d2a3-45e4-97ed-ba2c7462ed4b"
 ```
 
-As you can see from the output above, the UUID in this case is `20e0931a-255b-4bf7-8e22-5da91198279f`.  You would then proceed to add an entry to the fstab in /etc/fstab, as follows: 
+As you can see from the output above, the UUID in this case is `20e0931a-255b-4bf7-8e22-5da91198279f`.  You would then proceed to add an entry to the fstab in /etc/fstab, as follows:
 
 ```
-echo 'UUID=20e0931a-255b-4bf7-8e22-5da91198279f /mnt ext4 _netdev 0 0' | tee -a /etc/fstab 
+echo 'UUID=20e0931a-255b-4bf7-8e22-5da91198279f /mnt ext4 _netdev 0 0' | tee -a /etc/fstab
 
 ```
 
-⚠️  **Debian Users:** A known issue when utilizing the UUID & rebooting the device will cause the multipath connection to fail. Instead of UUID please use the volume name in fstab: 
+⚠️  **Debian Users:** A known issue when utilizing the UUID & rebooting the device will cause the multipath connection to fail. Instead of UUID please use the volume name in fstab:
 
 `/dev/mapper/volume-13a7e577-part1 /storage ext4 _netdev 0 0 `
 
@@ -183,12 +183,12 @@ echo 'UUID=20e0931a-255b-4bf7-8e22-5da91198279f /mnt ext4 _netdev 0 0' | tee -a 
 
 If you want to detach and delete a storage volume, or simply move it to a new server you should:
 
-Detach it via cli: 
+Detach it via cli:
 
 ```
-root@Ubuntu-block-storage:~# umount /dev/mapper/volume-xxxxx-part1 
+root@Ubuntu-block-storage:~# umount /dev/mapper/volume-xxxxx-part1
 ```
-Once the unmount is confirmed, run the block storage detach script packet-block-storage-detach 
+Once the unmount is confirmed, run the block storage detach script packet-block-storage-detach
 Then, detach the device from the server in the portal: Device View > Storage > Manage > Detach
 Optionally, delete the block device from portal: Project View > Storage > Options > Delete
 
@@ -243,13 +243,12 @@ The best way to bring a volume back in this scenario is to detach it with the fo
 `packet-block-storage-detach {volume-id}`
 
 
-After a few seconds, reattach the volume with: 
+After a few seconds, reattach the volume with:
 
 `packet-block-storage-attach -v -m queue {volume-id}`
 
-The Verbose option will show any possible issues during the attach process. If the attach command is not successful, or if it shows any problems, please contact us. 
+The Verbose option will show any possible issues during the attach process. If the attach command is not successful, or if it shows any problems, please contact us.
 
-### [Extending Storage Volume](extending_blockstorage.md)
+### Extending Storage Volume
 
-Follow [this link](extending_blockstorage.md) to learn how to extend/grow your block stroage volume.
-
+You can also [extend/grow](https://www.packet.com/resources/guides/extending-blockstorage) your block storage volume after it's been deployed.

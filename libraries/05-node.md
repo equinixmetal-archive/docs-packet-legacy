@@ -10,7 +10,7 @@
 }
 </meta> -->
 
-![Image of NodeJS](https://www.packet.com/media/images/ruM4-packetnode.png)
+![Packet Node.js API Client Banner](/images/libraries/node/node-banner.png)
 
 Welcome to [Packet Node.js API Client](https://github.com/packethost/packet-nodejs).
 

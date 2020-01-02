@@ -10,7 +10,7 @@
 }
 </meta> -->
 
-![Image of Python](https://www.packet.com/media/images/9zB4-packet.python.png)
+![Packet Python API Client Banner](/images/libraries/python/python-banner.png)
 
 Welcome to [Packet Python API Client](https://github.com/packethost/packet-python).
 

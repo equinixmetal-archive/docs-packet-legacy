@@ -91,7 +91,7 @@ The `terraform` command by default looks for _.tf_ files inside the directory it
 
 # Step 3: Generate an SSH Key Pair
 
-The key will allow your [DC/OS Nodes](https://docs.mesosphere.com/1.8/overview/concepts/) to talk to each other via SSH. The DC/OS Bootstrap Node will ask for your private key towards the end of this guide and your public key will be added to every other server we deploy via [user data](https://support.packet.com/kb/articles/user-data) supplied in our Terraform file.
+The key will allow your [DC/OS Nodes](https://docs.mesosphere.com/1.8/overview/concepts/) to talk to each other via SSH. The DC/OS Bootstrap Node will ask for your private key towards the end of this guide and your public key will be added to every other server we deploy via [user data](https://www.packet.com/developers/docs/servers/key-features/user-data) supplied in our Terraform file.
 
 Create a key named _dcos-key_.
 
@@ -246,7 +246,7 @@ And, because we appreciate you! Here is another file... we won't break it down t
     plan             = "${var.packet_master_type}"
 
     count            = "${var.dcos_master_count}"
-    user_data        = "#cloud-config\n\nssh_authorized_keys:\n  - \"${file("${var.dcos_ssh_public_key_path}")}\"\n"
+    user_data        = "#cloud-config/n/nssh_authorized_keys:/n  - /"${file("${var.dcos_ssh_public_key_path}")}/"/n"
     facility         = "${var.packet_facility}"
     project_id       = "${var.packet_project_id}"
     billing_cycle    = "hourly"
@@ -258,7 +258,7 @@ And, because we appreciate you! Here is another file... we won't break it down t
     plan             = "${var.packet_agent_type}"
 
     count            = "${var.dcos_agent_count}"
-    user_data        = "#cloud-config\n\nssh_authorized_keys:\n  - \"${file("${var.dcos_ssh_public_key_path}")}\"\n"
+    user_data        = "#cloud-config/n/nssh_authorized_keys:/n  - /"${file("${var.dcos_ssh_public_key_path}")}/"/n"
     facility         = "${var.packet_facility}"
     project_id       = "${var.packet_project_id}"
     billing_cycle    = "hourly"

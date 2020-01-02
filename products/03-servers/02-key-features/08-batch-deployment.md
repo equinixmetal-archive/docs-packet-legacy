@@ -83,4 +83,4 @@ If for some reason we are unable to create all the devices, the batch request wi
 
 ### Using Batch Deployment with Spot Market
 
-We actually created batch deployments while developing our [Spot Market](https://support.packet.com/kb/articles/spot-market) feature, as we need to validate the prices / availability in batches before each spot instance is deployed.
+We actually created batch deployments while developing our [Spot Market](https://www.packet.com/developers/docs/getting-started/deployment-options/spot-market) feature, as we need to validate the prices / availability in batches before each spot instance is deployed.

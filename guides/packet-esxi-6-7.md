@@ -11,7 +11,7 @@
 </meta>
 -->
 
-# VMware ESXi 6.7 on Packet Bare Metal Servers
+### VMware ESXi 6.7 on Packet Bare Metal Servers
 
 To get a VMware ESXi 6.7 server up and running on Packet, you need to deploy an ESXi 6.5 server and run the ESXi 6.7 update through an SSH session on the server.
 
