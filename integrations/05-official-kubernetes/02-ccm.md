@@ -14,3 +14,4 @@ Packet has released a beta version of the Kubernetes cloud controller manager im
 
 [Docs](https://github.com/packethost/packet-ccm/tree/master/deploy/releases)
 [GitHub](https://github.com/packethost/packet-ccm)
+[Helm Chart](https://github.com/packet-labs/helm-charts)
