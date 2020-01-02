@@ -1,7 +1,7 @@
 <!-- <meta>
 {
-    "title":"Kubernetes Autoscaler",
-    "slug":"kubernetes autoscaler",
+    "title":"Cluster Autoscaler",
+    "slug":"cluster autoscaler",
     "description":"Using K8s Autoscaler on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",
