@@ -26,7 +26,7 @@ You should also be aware of our standard disk configurations for each server typ
 *   __c2.medium.x86__: 960 GB of SSD (2 x 480 GB) (1 for Boot)
 *   __c3.medium.x86__: 960 GB of SSD (2 x 480 GB) (1 for Boot)
 *   __m1.xlarge.x86__:   6 × 480GB SSD (1 for Boot)
-*   __m2.xlarge.x86__: 2 × 120 GB SSD (1 for Boot) & 3.8 TB of NVMe Flash
+*   __m2.xlarge.x86__: 2 × 120 GB SSD (1 for Boot) & 3.2 TB of NVMe Flash
 *   __x1.small.x86__:   1 × 240 GB SSD (Boot)
 *   __x2.xlarge.x86__: 1 × 120 GB SSD (Boot) , 2 × 240 GB SSD & 3.8 TB of NVMe Flash
 *   __n2.xlarge.x86__: 2 × 240 GB SSD in Hardware RAID 1 (Boot) & 3.8 TB of NVMe Flash
