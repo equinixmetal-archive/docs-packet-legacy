@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Kubermatic",
-    "slug":"Kubermatic",
+    "slug":"kubermatic",
     "description":"Using Kubeermatic on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",
