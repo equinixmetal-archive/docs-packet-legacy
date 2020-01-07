@@ -5,7 +5,7 @@
     "description":"Other Container Management Tools",
     "author":"Mo Lawler",
     "github":"usrdev",
-    "tag":["Devops", "Integrations", "Containers", "Container Management"]
+    "tag":["Devops", "Integrations", "Containers", "Container Management","Calico","Drone","Flatcar","StorageOS"]
 }
 </meta> -->
 
