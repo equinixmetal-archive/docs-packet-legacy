@@ -13,5 +13,3 @@
 For many users, running containers on bare metal is the ideal architecture. 
 
 In addition to our core integrations with the Kubernetes ecosystem, we work with a variety of providers to ensure a 1st class experience for their K8s distribution or other container orchestration tool. This includes automated testing via CI, as well as technical validation and regular product reviews.
-
--getting started-
