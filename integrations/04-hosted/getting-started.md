@@ -10,4 +10,4 @@
 }
 </meta> -->
 
-content coming soon...
+For many organizations, a hosted solution is the perfect way to get the benefits of  developer-led infrastructure, without managing all the pieces. Packet has worked closely with leading platforms to enable our shared users to be successful with powerful bare metal, without all of the work.
