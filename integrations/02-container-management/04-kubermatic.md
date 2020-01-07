@@ -9,4 +9,8 @@
 }
 </meta> -->
 
-...
+Kubermatic is an Enterprise software solution that automates multicloud, on-prem, and edge operations with a single management UI enabling you to deliver the cloud native transformation immediately.
+
+Built and supported by the Kubernetes experts at Loodse, Kubermatic automates Day 2 operations and provides a seamless experience across environments and clusters.
+
+Try Kubermaic on Packet with this [quick start guide](https://github.com/kubermatic/kubeone/tree/master/examples/terraform/packet).
