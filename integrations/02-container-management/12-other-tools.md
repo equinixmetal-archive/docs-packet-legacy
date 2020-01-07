@@ -5,7 +5,6 @@
     "description":"Other Container Management Tools",
     "author":"Mo Lawler",
     "github":"usrdev",
-    "date": "2019/12/19",
     "tag":["Devops", "Integrations", "Containers", "Container Management"]
 }
 </meta> -->
@@ -25,9 +24,9 @@ A Continuous Delivery system that uses YAML to execute Pipelines inside Docker c
 [Website](http://try.drone.io/) & 
 [GitHub](https://github.com/drone/drone)
 
-### CoreOS Container Linux
+### Flatcar Linux
 
-The fork of CoreOS Container Linux that's a self updating operating system designed for containers, making it ideal for running Kubernetes and other container platforms.
+Flatcar Container Linux is an immutable Linux distribution for containers. It is a friendly fork of CoreOS Container Linux and as such, compatible with it.
 
 [Website](https://www.flatcar-linux.org/) & 
 [GitHub](https://github.com/flatcar-linux)
