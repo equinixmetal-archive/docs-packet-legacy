@@ -14,5 +14,5 @@ WeaveWorks is one of the original innovators in the Kubernetes space and their r
 
 Their solutions include Weave Cloud (a comprehensive suite of managed tools for production workloads), the Weave Kubernetes Platform, a diverse suite of open source tools, and both training and consulting services.
 
-Learn more at weave.works or check out their popular QuickStart program, including on Packet.
+Learn more at [weave.works](https://www.weave.works/) or check out their popular [QuickStart program](https://www.weave.works/assets/images/bltc5eb7aea1a25130d/Weaveworks_Quick_Start_05312019.pdf), including on Packet.
 
