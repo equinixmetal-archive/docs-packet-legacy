@@ -12,4 +12,4 @@
 
 The Cluster API is a Kubernetes project to bring declarative, Kubernetes-style APIs to cluster creation, configuration, and management. It provides optional, additive functionality on top of core Kubernetes.
 
-You can find Packet’s Cluster API provider here.
+You can find Packet’s Cluster API provider [here](https://github.com/packethost/cluster-api-provider-packet).
