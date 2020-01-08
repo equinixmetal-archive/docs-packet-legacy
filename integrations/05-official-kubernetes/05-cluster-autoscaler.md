@@ -1,6 +1,6 @@
 <!-- <meta>
 {
-    "title":"Autoscaler",
+    "title":"Cluster Autoscaler",
     "slug":"autoscaler",
     "description":"Using K8s Autoscaler on Packet",
     "author":"Mo Lawler",
