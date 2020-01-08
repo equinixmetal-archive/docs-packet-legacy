@@ -54,7 +54,7 @@ proc   run    srv     tmp      var
 
 In order to get back to the Original OS, we can simply reboot the server.
 
-### Two Common Use Cases / Situations
+### Common Use Cases / Situations
 
 **#1 - Reset root password**  
 In cases when you can normally SSH into your server and can’t use SOS because you have forgotten or haven’t saved the root password, you can reset it through Rescue.
@@ -93,7 +93,16 @@ So if I have a demo folder located at /root and I need to recover those files, a
 
 `scp -r root@Server_IP:/mnt/root/demo /User/Downloads`
 
-How do you run a FSCK on the drive(s)?
+**#3 - Resize the OS root partition or create additional partitions**
+
+By default, the boot drive will have a root partition that utilizes all the drive space. Some servers have additional unformatted drives but if you need to create multiple partitions in the same boot drive, you will need to go into rescue mode to shrink the root partition and create new ones.
+
+The process for doing this can differ depending on the filesystem that you use but if using an OS with ext4 such as Ubuntu, you can use resize2fs and gdisk to resize your filesystem/partition and create additional ones.
+
+It's worth noting that the default cloud-init configuration file in our images has the `growpart` and `resizefs` modules enabled which will resize your root partition back to it's max drive size if you only shrink the partition but not create additional ones. If you would like to avoid this behavior, you can edit the cloud-init configuration file found at `/etc/cloud/cloud.cfg` to remove the `-growpart` and `-resizefs` modules. Once you save the file, cloud-init should not attempt to resize the partition every time the OS boots.
+
+
+### How do you run a FSCK on the drive(s)?
 The rescue image is Alpine Linux. The default live image that is used is missing a package necessary to perform a 'FSCK'  to proceed please install the following package:
 
 `apk add e2fsprogs`
@@ -101,3 +110,5 @@ The rescue image is Alpine Linux. The default live image that is used is missing
 After successful installation of aforementioned package, you can simply run the 'FSCK' by running, for example (drive name may very):
 
 `fsck.ext4 -f -y /dev/md127`
+
+In addition to the e2fsprogs package, the Alpine linux image is also missing other packages that might be required for special operations such as formatting a partition with a filesystem other than ext4 such as zfs. You can find all the available packages to install in Alpine [here](https://pkgs.alpinelinux.org/packages).
