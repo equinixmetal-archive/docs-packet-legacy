@@ -40,8 +40,7 @@ Kubernetes is free, but sometimes deploying and managing it takes work.  A numbe
 * [Kubicorn](http://kubicorn.io/: is an unofficial project that solves the Kubernetes infrastructure problem and gives users a rich golang library to work with infrastructure.
 * [Kubespray](https://kubespray.io/): runs perfectly on Packet, using Ansible as its substrate for provisioning and orchestration. Kops performs the provisioning and orchestration itself, and as such is less flexible in deployment platforms.
 * [Pharmer](https://pharmer.io/): a technical preview from Appscode of a Kubernetes cluster manager for kubeadm. Pharmer lets you set up, tear down, and scale clusters up and down on Packet.
-* [Pharos](https://pharos.sh/docs/): Pharos is a free Kubernetes distribution offered by Kontena, which offers support for setup and management in addition to orchestration tooling.  Kontena tests against Packet x86 and Armv8 servers.
-
+* [Kubernetes on DC/OS](https://github.com/mesosphere/dcos-kubernetes-quickstart): A package to deploy Kubernetes cluster in your [DC/OS](https://github.com/mesosphere/dcos-kubernetes-quickstart) environment.
 
 ## Commercial Deployment Solutions
 
