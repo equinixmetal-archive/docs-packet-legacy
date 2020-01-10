@@ -17,7 +17,7 @@ Usually when our system reports that a server is "Active" it means that a provis
 
 When the provisioning system detects any of these two custom installation types, it will set the provision as "Active" very early in the process - basically once we are done with our part and begin installing the provided image.  
 
-However, this "Active" state can be a bit misleading, as there is usually work still ongoing (such as installing your custom image!). This is where you can leverage a custom "user state" option to gain better control over the process.
+However, this "Active" state can be a bit misleading, as there is usually work still ongoing (such as installing your custom image!). This is where you can leverage a custom "user state" option to gain better control over the process. Custom user state events are also useful if you're running long user-data scripts/configurations and prefer to have better visibility into the process.
 
 ### Custom User State for Managing User Data
 Another way to use this feature is when you leverage a lot of user-data during a normal installation. This can get bulky, and long running user-data leaves you a bit in the dark as to the state of your provision.
