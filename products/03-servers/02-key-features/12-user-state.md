@@ -58,7 +58,7 @@ The POST request can accept the following data options:
 
 ### Useful script
 
-The following is a BASH script that you can use to easily send user-state events.
+The following is a BASH script that you can use to easily send user-state events either in your custom-image installation process or user-data stages.
 
 ```
 #!/bin/bash
