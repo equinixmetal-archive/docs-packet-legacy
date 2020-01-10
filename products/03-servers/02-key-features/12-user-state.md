@@ -54,3 +54,27 @@ The POST request can accept the following data options:
 * state (running, succeeded, or failed)
 * code (anything between 1000 and 1099, inclusive)
 * message (can be anything you want!)
+
+
+### Useful script
+
+The following is a BASH script that you can use to easily send user-state events.
+
+```
+#!/bin/bash
+url="$(curl https://metadata.packet.net/metadata | jq -r .user_state_url)"
+
+send_user_state_event() {
+          data=$(
+          echo "{}" \
+              | jq '.state = $state | .code = ($code | tonumber) | .message = $message' \
+               --arg state "$1" \
+               --arg code "$2" \
+               --arg message "$3"
+          )
+          echo curl -v -X POST -d "$data" "$url"
+}
+
+send_user_state_event running 1000 "hey im still running"
+send_user_state_event succeeded 1001 "hey im done now :)"
+```
