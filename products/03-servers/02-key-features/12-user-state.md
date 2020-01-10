@@ -3,7 +3,7 @@
 {
     "title":"User State",
     "description":"Leverage 'user state' options to inform the Packet API about custom provisioning events.",
-    "tag":["user", "state"]
+    "tag":["user", "state", "timeline", "events"]
 }
 </meta>
 -->
@@ -27,22 +27,21 @@ With our User State feature, you can see when the user-data install actually beg
 ### How to Create a Custom User State
 We support passing a specific user state to our API, but this has to happen from within the device itself.    
 
-* Get the Phone Home IP: First, from a device, get the phone-home IP address by querying our metadata service for the phone_home_url.  (hint: you might want to install and use jq in order to help automate this).  
+* Get the User State Url: First, from a device, get the User State Url by querying our metadata service for the user_state_url. This will slightly differ based on facility location, for this example the server is located in EWR1.  (hint: you might want to install and use jq in order to help automate this).  
 ```
-curl https://metadata.packet.net/metadata | jq -r .phone_home_url
-http://147.75.195.231/phone-home
+curl https://metadata.packet.net/metadata | jq -r .user_state_url
+http://tinkerbell.ewr1.packet.net/events
 ```
 
-* Post a Custom User State: If you want to send a custom user state, you should POST a request to that IP on the /events URL. This will add an event to the device's timeline and also display a message in the portal.  
+* Post a Custom User State: If you want to send a custom user state, you should send a POST request to the user state endpoint you retrieved earlier. . This will add an event to the device's timeline and also display a message in the portal timeline section.  
 ```
-curl -X POST -d '{"state":"running","code":1007,"message":"Whoops"}'
-http://147.75.195.231/events
+curl -X POST -d '{"state":"running","code":1007,"message":"Im still provisioning!!!"}' http://tinkerbell.ewr1.packet.net/events
 ```
 This allows you to see the custom user state event on the device timeline and device detail page:
 
 * Indicate Success: You'll want to finish things off by communicating a successful install, changing the state to succeeded and maybe adding a cool message there.  
 ```
-curl -X POST -d '{"state":"succeeded","code":1099,"message":"I am ready now!!!"}' http://147.75.195.231/events
+curl -X POST -d '{"state":"succeeded","code":1099,"message" : "Im ready now!!!"}' http://tinkerbell.ewr1.packet.net/events
 ```
 
 ### Available Options
