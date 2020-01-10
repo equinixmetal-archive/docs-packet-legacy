@@ -37,7 +37,7 @@ Returns:
 http://tinkerbell.ewr1.packet.net/events
 ```
 
-* Post a Custom User State: If you want to send a custom user state, you should send a POST request to the user state endpoint you retrieved earlier. This will add an event to the device's timeline and also display a message in the portal timeline section.  
+* Post a Custom User State: If you want to send a custom user state event, you should send a POST request to the user state endpoint you retrieved earlier. This will add an event to the device's timeline and also display a message in the portal timeline section.  
 ```
 curl -X POST -d '{"state":"running","code":1007,"message":"Im still provisioning!!!"}' http://tinkerbell.ewr1.packet.net/events
 ```
