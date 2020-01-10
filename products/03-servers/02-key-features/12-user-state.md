@@ -28,8 +28,12 @@ With our User State feature, you can see when the user-data install actually beg
 We support passing a specific user state to our API, but this has to happen from within the device itself.    
 
 * Get the User State Url: First, from a device, get the User State Url by querying our metadata service for the user_state_url. This will slightly differ based on facility location, for this example the server is located in EWR1.  (hint: you might want to install and use jq in order to help automate this).  
+
 ```
 curl https://metadata.packet.net/metadata | jq -r .user_state_url
+```
+Returns:
+```
 http://tinkerbell.ewr1.packet.net/events
 ```
 
