@@ -39,7 +39,7 @@ The following are different scenarios that we will be covering in this guide:
 * Hybrid and pure L2: A cluster of private hosts in layer 2 mode and using a single node in hybrid mode as an internet gateway.  
 
 
-**Please Note:** For the purpose of this guide, we are using eth0/eth1 to represent the first and second interfaces. The actual interface name will depend on what operating system and server configuration you are using.**
+**Please Note:** For the purpose of this guide, we are using eth0/eth1 to represent the first and second interfaces. The actual interface name will depend on what operating system and server configuration you are using.
 
 ## Configuration #1: Leaving eth0 in bond0 and adding a single VLAN to eth1.
 
