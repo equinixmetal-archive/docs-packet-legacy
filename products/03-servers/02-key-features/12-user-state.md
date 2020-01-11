@@ -19,7 +19,7 @@ When the provisioning system detects any of these two custom installation types,
 
 However, this "Active" state can be a bit misleading, as there is usually work still ongoing (such as installing your custom image!). This is where you can leverage custom "user state" events to gain better control over the process.
 
-### Custom User State for Managing User Data
+### Custom User State Events for Managing User Data
 Another way to use this feature is when you leverage a lot of user-data during a normal installation. This can get bulky, and long running user-data leaves you a bit in the dark as to the state of your provision.
 
 With our User State feature, you can see when the user-data install actually begins, and when it finishes.  
@@ -37,7 +37,7 @@ Returns the User State events url:
 http://tinkerbell.ewr1.packet.net/events
 ```
 
-* Post a Custom User State: If you want to send a custom user state event, you should send a POST request to the user state endpoint you retrieved earlier. This will add an event to the device's timeline and also display a message in the portal timeline section.  
+* Post a Custom User State event: If you want to send a custom user state event, you should send a POST request to the user state endpoint you retrieved earlier. This will add an event to the device's timeline and also display a message in the portal timeline section.  
 ```
 curl -X POST -d '{"state":"running","code":1007,"message":"Im still provisioning!!!"}' http://tinkerbell.ewr1.packet.net/events
 ```
