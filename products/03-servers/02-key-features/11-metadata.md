@@ -94,7 +94,7 @@ root@metadata:~# curl https://metadata.packet.net/metadata | jq
 }
 ```
 
-Additionally, if you want to grab specific information from the metadata, you can use `jq` to filter on specific fields, or choose any of the resources provided by the metadata service. To get a list of all the available metadata resources, you can quuery the following endpoint:
+Additionally, if you want to grab specific information from the metadata, you can use `jq` to filter on specific fields, or choose any of the resources provided by the metadata service. To get a list of all the available metadata resources, you can query the following endpoint:
 
 `https://metadata.packet.net/2009-04-04/meta-data`
 
