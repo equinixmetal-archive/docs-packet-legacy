@@ -9,7 +9,7 @@
 -->
 Metadata is a service offered on every Packet server that allows it to access and share various data about itself. This kind of data includes hostname, instance ID, ssh keys, tags, assigned IPs, etc.
 
-This information is especially useful for automation, but of course can be accessed manually.
+This information is especially useful for automation, but of course can be accessed manually only within the server instance.
 
 ### Retrieving Metadata from Your Server Instance
 You can view the metadata of a server instance by querying the following endpoint with a tool such as `cURL`:
@@ -20,6 +20,7 @@ The output will be a long JSON formatted text, so you might want to use so `jq` 
 
 ```
 root@metadata:~# curl https://metadata.packet.net/metadata | jq
+
 {
   "id": "2885032e-61a8-4786-bd26-7b2e2e6ba1ea",
   "hostname": "metadata",
@@ -91,7 +92,6 @@ root@metadata:~# curl https://metadata.packet.net/metadata | jq
  "phone_home_url": "http://tinkerbell.ewr1.packet.net/phone-home",
  "user_state_url": "http://tinkerbell.ewr1.packet.net/events"
 }
-root@metadata:~#
 ```
 
 Additionally, if you want to grab specific information from the metadata, you can use `jq` to filter on specific fields, or choose any of the resources provided by the metadata service. To get a list of all the available metadata resources, you can quuery the following endpoint:
@@ -116,7 +116,7 @@ public-ipv6
 local-ipv4
 ```
 
-To get the specific metadata resources, you can query each of the options above as follows. This example metadata query returns the instance UUID:
+To get the specific metadata resources, you can query each of the options above as follows. This example metadata query returns the instance ID:
 
 ```
 root@metadata:~# curl https://metadata.packet.net/2009-04-04/meta-data/instance-id
