@@ -17,7 +17,7 @@ Usually when our system reports that a server is "Active" it means that a provis
 
 When the provisioning system detects any of these two custom installation types, it will set the provision as "Active" very early in the process - basically once we are done with our part and begin installing the provided image.  
 
-However, this "Active" state can be a bit misleading, as there is usually work still ongoing (such as installing your custom image!). This is where you can leverage a custom "user state" option to gain better control over the process. Custom user state events are also useful if you're running long user-data scripts/configurations and prefer to have better visibility into the process.
+However, this "Active" state can be a bit misleading, as there is usually work still ongoing (such as installing your custom image!). This is where you can leverage custom "user state" events to gain better control over the process.
 
 ### Custom User State for Managing User Data
 Another way to use this feature is when you leverage a lot of user-data during a normal installation. This can get bulky, and long running user-data leaves you a bit in the dark as to the state of your provision.
@@ -25,14 +25,14 @@ Another way to use this feature is when you leverage a lot of user-data during a
 With our User State feature, you can see when the user-data install actually begins, and when it finishes.  
 
 ### How to Create a Custom User State
-We support passing a specific user state to our API, but this has to happen from within the device itself.    
+We support passing specific user state events to our API, but this has to happen from within the server instance itself.    
 
 * Get the User State Url: First, from a device, get the User State Url by querying our metadata service for the user_state_url. This will slightly differ based on facility location, for this example the server is located in EWR1.  (hint: you might want to install and use jq in order to help automate this).  
 
 ```
 curl https://metadata.packet.net/metadata | jq -r .user_state_url
 ```
-Returns:
+Returns the User State events url:
 ```
 http://tinkerbell.ewr1.packet.net/events
 ```
@@ -72,7 +72,7 @@ send_user_state_event() {
                --arg code "$2" \
                --arg message "$3"
           )
-          echo curl -v -X POST -d "$data" "$url"
+          curl -v -X POST -d "$data" "$url"
 }
 
 send_user_state_event running 1000 "hey im still running"
