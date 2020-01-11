@@ -11,7 +11,7 @@ Metadata is a service offered on every Packet server that allows it to access an
 
 This information is especially useful for automation, but of course can be accessed manually.
 
-### Retrieving Metadata from Your Server
+### Retrieving Metadata from Your Server Instance
 You can view the metadata of a server instance by querying the following endpoint with a tool such as `cURL`:
 
 `https://metadata.packet.net/metadata`
