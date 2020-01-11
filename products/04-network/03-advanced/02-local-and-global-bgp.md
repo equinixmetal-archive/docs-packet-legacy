@@ -19,7 +19,7 @@ In a Local BGP deployment, a customer uses an internal ASN
 When utilizing virtual routing software (e.g. VyOS, OpnSense, etc) this would allow you to see all the routes learned instead of creating them statically. This can be set up by utilizing [Terraform](https://www.terraform.io/docs/providers/packet/r/bgp_session.html), or directly through the portal.
 
 ## Communities Supported
-If you are interested in utilizing BGP communities, there is an in depth guide that lists all of the supported communities [here](https://www.packet.com/resources/guides/BGP-global-communities.md).
+If you are interested in utilizing BGP communities, there is an in depth guide that lists all of the supported communities [here](https://www.packet.com/resources/guides/BGP-global-communities).
 
 
 ## Getting Started
@@ -33,8 +33,12 @@ Once you submit the request, Packet will review the details and get back to you 
 
 ![enable BGP at project level 2](/images/bgp/Enable-BGP-Project-2.png)
 
-Additionally, you will see some extra options to enable or disable IPv4 and IPv6 BGP on the management pages for server in your BGP enabled project.
+Additionally, you will see some extra options to enable or disable IPv4 and IPv6 BGP on the management pages for your server instances in your BGP enabled project.
 
 ![enable BGP at server level](/images/bgp/Enable-BGP-Server.png)️
 
 Note: Do not assign the subnet to any server, as that will create a static route thus causing an issue with the BGP setup.
+
+## Server Host Configuration
+
+There are many ways that users can announce their IPs via BGP as it can differ by the use case and OS configuration. If you're looking for a guide on how to do so with the popular BGP speaker BIRD, we've got one in our technical guides section [here](https://www.packet.com/resources/guides/route-bgp-with-bird/). 

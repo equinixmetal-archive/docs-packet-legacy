@@ -7,17 +7,20 @@
 }
 </meta>
 -->
-Metadata is a service offered on every Packet server that allows it to access and share various data about itself. This kind of data includes hostname, instance ID, ssh keys, tags, assigned IPs, etc.
+Metadata is a service offered on every Packet server instance that allows it to access and share various data about itself. This kind of data includes hostname, instance ID, ssh keys, tags, assigned IPs, etc.
 
-This information is especially useful for automation, but of course can be accessed manually.
+This information is especially useful for automation, but of course can be accessed manually only within the server instance.
 
-Retrieving Metadata from Your Server
-You can view the metadata by doing a cURL to https://metadata.packet.net/metadata
+### Retrieving Metadata from Your Server Instance
+You can view the metadata of a server instance by querying the following endpoint with a tool such as `cURL`:
 
-The output will be a long json formatted text, so you might want to use so jq to make it easier to read and digest.
+`https://metadata.packet.net/metadata`
+
+The output will be a long JSON formatted text, so you might want to use so `jq` to make it easier to read and digest.
 
 ```
-root@metadata:~# curl -s https://metadata.packet.net/metadata | jq
+root@metadata:~# curl https://metadata.packet.net/metadata | jq
+
 {
   "id": "2885032e-61a8-4786-bd26-7b2e2e6ba1ea",
   "hostname": "metadata",
@@ -31,6 +34,7 @@ root@metadata:~# curl -s https://metadata.packet.net/metadata | jq
  }
 },
   "plan": "baremetal_1",
+  "class": "c1.small.x86",
   "facility": "ewr1",
   "tags": [],
   "ssh_keys": [
@@ -85,15 +89,20 @@ root@metadata:~# curl -s https://metadata.packet.net/metadata | jq
  "spot": {},
  "volumes": [],
  "api_url": "https://metadata.packet.net",
- "phone_home_url": "http://147.75.195.231/phone-home"
+ "phone_home_url": "http://tinkerbell.ewr1.packet.net/phone-home",
+ "user_state_url": "http://tinkerbell.ewr1.packet.net/events"
 }
-root@metadata:~#
 ```
 
-Additionally, if you want to grab specific information from the metadata, you can use jq to filter on specific fields, or choose to any of the following options:
+Additionally, if you want to grab specific information from the metadata, you can use `jq` to filter on specific fields, or choose any of the resources provided by the metadata service. To get a list of all the available metadata resources, you can query the following endpoint:
+
+`https://metadata.packet.net/2009-04-04/meta-data`
+
+Querying the endpoint will return the following available resources:
 
 ```
-root@metadata:~# curl -s https://metadata.packet.net/2009-04-04/meta-data
+root@metadata:~# curl https://metadata.packet.net/2009-04-04/meta-data
+
 instance-id
 hostname
 iqn
@@ -105,15 +114,21 @@ public-keys
 public-ipv4
 public-ipv6
 local-ipv4
+```
+
+To get the specific metadata resources, you can query each of the options above as follows. This example metadata query returns the instance ID:
+
+```
 root@metadata:~# curl https://metadata.packet.net/2009-04-04/meta-data/instance-id
+
 2885032e-61a8-4786-bd26-7b2e2e6ba1ea
 ```
 
 **Note!** 2009-04-04 is a specific metadata version which we are currently using.
 
 ### Metadata and Spot Instances
-As you might have seen on our Spot Market KB article, you will be able to get some information regarding the device’s termination time.
+As you might have seen on our Spot Market article, you will be able to get some information regarding the device’s termination time.
 
 For a spot instance, there will be an additional field in the metadata: **"spot": {}**
 
-In case the server is up for termination, meaning your spot price falls below the current bids, then you will see **termination_date** appearing into that spot field. Keep in mind that the current termination time is **120 seconds**.
+In case the server instance is up for termination, meaning your spot price falls below the current bids, then you will see **termination_date** appearing into that spot field. Keep in mind that the current termination time is **120 seconds**.
