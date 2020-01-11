@@ -131,4 +131,4 @@ As you might have seen on our Spot Market article, you will be able to get some 
 
 For a spot instance, there will be an additional field in the metadata: **"spot": {}**
 
-In case the server is up for termination, meaning your spot price falls below the current bids, then you will see **termination_date** appearing into that spot field. Keep in mind that the current termination time is **120 seconds**.
+In case the server instance is up for termination, meaning your spot price falls below the current bids, then you will see **termination_date** appearing into that spot field. Keep in mind that the current termination time is **120 seconds**.
