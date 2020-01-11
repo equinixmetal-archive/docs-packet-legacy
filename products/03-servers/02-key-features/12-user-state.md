@@ -7,7 +7,7 @@
 }
 </meta>
 -->
-With user state, you can programmatically inform the Packet API when userland operations have started, completed, or failed.  You can also view & query that information later.  
+With User State, you can programmatically inform the Packet API when userland operations have started, completed, or failed.  You can also view & query that information during deployment or later for better visibility into the process.  
 
 * __Question:__ What's userland?
 * __Answer:__ Anything running in the host OS after install.
