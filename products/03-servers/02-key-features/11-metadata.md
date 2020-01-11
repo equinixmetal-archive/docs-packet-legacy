@@ -7,7 +7,7 @@
 }
 </meta>
 -->
-Metadata is a service offered on every Packet server that allows it to access and share various data about itself. This kind of data includes hostname, instance ID, ssh keys, tags, assigned IPs, etc.
+Metadata is a service offered on every Packet server instance that allows it to access and share various data about itself. This kind of data includes hostname, instance ID, ssh keys, tags, assigned IPs, etc.
 
 This information is especially useful for automation, but of course can be accessed manually only within the server instance.
 
