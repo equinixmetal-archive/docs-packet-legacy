@@ -24,7 +24,7 @@ Another way to use this feature is when you leverage a lot of user-data during a
 
 With our User State feature, you can see when the user-data install actually begins, and when it finishes.  
 
-### How to Create a Custom User State
+### How to Create a Custom User State Event
 We support passing specific user state events to our API, but this has to happen from within the server instance itself.    
 
 * Get the User State Url: First, from a device, get the User State Url by querying our metadata service for the user_state_url. This will slightly differ based on facility location, for this example the server is located in EWR1.  (hint: you might want to install and use jq in order to help automate this).  
