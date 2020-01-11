@@ -45,15 +45,15 @@ This allows you to see the custom user state event on the device timeline and de
 
 * Indicate Success: You'll want to finish things off by communicating a successful install, changing the state to succeeded and maybe adding a cool message there.  
 ```
-curl -X POST -d '{"state":"succeeded","code":1099,"message" : "Im ready now!!!"}' http://tinkerbell.ewr1.packet.net/events
+curl -X POST -d '{"state":"succeeded","code":1099,"message":"Im ready now!!!"}' http://tinkerbell.ewr1.packet.net/events
 ```
 
 ### Available Options
 The POST request can accept the following data options:
 
-* state (running, succeeded, or failed)
-* code (anything between 1000 and 1099, inclusive)
-* message (can be anything you want!)
+* state (`running`, `succeeded`, or `failed`)
+* code (anything between `1000` and `1099`, inclusive)
+* message (can be any `string` you want!)
 
 
 ### Useful script
