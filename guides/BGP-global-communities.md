@@ -15,15 +15,18 @@
 
 ## Default Behavior
 
-The default behavior for customer prefixes is that they are automatically tagged with 54825:200 which is advertised to all providers and peers within the facility the prefix is received in.
+The default behavior for customer prefixes is that they are advertised to all providers and peers within the facility the prefix is received in.
 
 ## Behavior when customers attach Traffic Engineering (TE) Communities
 
-When any of the communities below at attached to a prefix, we will strip 54825:200 from the prefix. This means that the customer has full control over which providers and peers their prefixes are advertised too.
+The purpose of the traffic engineering communities is so customers can tell the Packet network which providers and peers to advertise their prefixes too.
+Using any of the communities listed below gives the customer full control over the oubound advertisment of their prefixes. Customers are able to advertise to any combination of providers and peers that exist within a location. Each provider has it's own set of communities which when attached, result in our routes taking an action.  If a providers community is not included on a prefix, we will not advertise it to that provider.  
+
+
 
 ## Combining Communities
 
-Customers are able to combine communities for granular control of their announcements. For example, you can use a combination of communities to advertise to Telia and Zayo, but not LimeWire. Or you could advertise to Telia, prepend three times to Zayo, and advertise to an Internet Exchange (IX).
+Customers are able to combine communities for granular control of their announcements. For example, you can use a combination of communities to advertise to Telia and Zayo, but not Limelight. Or you could advertise to Telia, prepend three times to Zayo, and advertise to an Internet Exchange (IX).
 
   
 
@@ -110,21 +113,7 @@ Available in SJC2
 | 54825:542 | Prepend two times|
 | 54825:543 | Prepend three times|
 
-  
-
-**NetAccess Communities - ASN 8001**
-
-Available in EWR1
-
-| Community | Function |
-|--|--|
-| 54825:550 | Advertise to NetAccess|
-| 54825:551 | Prepend one time|
-| 54825:552 | Prepend two times|
-| 54825:553 | Prepend three times|
-
-  
-  
+   
 
 **Atom86 Communities - ASN 8455**
 
@@ -388,6 +377,8 @@ Available in SYD2
   
 
 ## Additional communities for Internet Exchanges only
+
+These communities can be attached to prefixes advertised to any Internet Exchange.  This allows customers to advertise to the whole IX, except for some specific peers.  We are able to add more of these communities by request.
 
 | Community | Function |
 |--|--|
