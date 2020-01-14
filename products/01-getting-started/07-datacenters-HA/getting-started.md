@@ -20,7 +20,7 @@ While Packet is a leading force in the cloud market, we are not a real estate de
 ### Where is each data center located? Do you have a speedtest?
 You can access various speedtest and ping url's from this central page on our website.
 
-Core Cloud:
+Public Cloud:
 * [AMS1](https://www.packet.com/cloud/locations/amsterdam/) is located in Amsterdam, the Netherlands.
 * [DFW2](https://www.packet.com/cloud/locations/dallas/) is located in Dallas, Texas.
 * [EWR1](https://www.packet.com/cloud/locations/new-york-metro/) is located in Parsippany, New Jersey.
@@ -29,7 +29,7 @@ Core Cloud:
 * [SIN3](https://www.packet.com/cloud/locations/singapore/) is located in Singapore.
 * [SJC1](https://www.packet.com/cloud/locations/silicon-valley/) is located in Sunnyvale, California.
 
-Custom Cloud:
+Edge Cloud:
 * [ATL2](https://www.packet.com/cloud/locations/atlanta/) is located in Atlanta, Georgia.
 * [DTW1](https://www.packet.com/cloud/locations/detroit/) is located in Detroit, Michigan
 * [FRA2](https://www.packet.com/cloud/locations/frankfurt/) is located in Frankfurt, Germany.
