@@ -25,7 +25,7 @@
 
 <!--- Headline Description --->
 This is the public documentation for Packet's public services.
-View our documentation page at [Packet Docs](https://www.packet.com/developers/).
+View our documentation page at[Packet Docs](https://www.packet.com/developers/).
 
 <!--- What We Have Here --->
 ## What We Have Here
@@ -39,7 +39,7 @@ View our documentation page at [Packet Docs](https://www.packet.com/developers/)
 <!--- How To Contribute --->
 ## How To Contribute
 
-Please review our [standards](https://github.com/packethost/docs/blob/master/standards.md), and then feel free to submit pull request. 
+Please review our [contriuting standards](https://github.com/packethost/docs/blob/master/standards.md). Then feel free to submit pull request. 
 
 <!--- Issues --->
 ## Issues
