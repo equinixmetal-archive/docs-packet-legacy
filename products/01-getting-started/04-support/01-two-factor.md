@@ -1,8 +1,8 @@
 <!--<meta>
 {
-    "title":"2FA",
+    "title":"Two Factor",
     "description":"Learn more about 2FA at Packet",
-    "tag":["2FA", "Security"]
+    "tag":["2FA", "Security", "Two-Factor"]
 }
 </meta>-->
 
