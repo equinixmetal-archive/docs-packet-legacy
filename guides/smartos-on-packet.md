@@ -44,31 +44,31 @@ You’ll find your SSH information to access the console on the Out-Of-Band Cons
 
 The first thing you’ll want to do, however, before setting up the host is, in the Packet console, clicking “Server Actions” and setting this host to “Always Boot from PXE” in order to ensure that, on each boot, SmartOS is bootable, as this OS is not typically installed to disk, and will be delivered over the network on subsequent boots (with your persistent installation specific things like passwords, users, VM data, all stored in the node storage pool):
 
-![set-boot-ipxe](/guides/smartos-on-packet/03.png)
+![set-boot-ipxe](/images/smartos-on-packet/03.png)
 
 Once you connect to your Console, you’ll see a setup screen like this, which will prompt you to select the NIC to use for the admin interface. Ideally, this will not be Internet-facing, however, you are welcome to plug in your Public network details here as well for use with SSH:
 
-![admin-network](/guides/smartos-on-packet/04.png)
+![admin-network](/images/smartos-on-packet/04.png)
 
 From there, you’ll be prompted for the IP, netmask, gateway, and DNS resolvers for this interface.
 
 The next step is to configure storage, which SmartOS will make a recommendation for a storage pool:
 
-![storage-pool](/guides/smartos-on-packet/05.png)
+![storage-pool](/images/smartos-on-packet/05.png)
 
 If the default works for you, then type “yes”, and continue, however, there are other options for SmartOS storage configurations, or manually defining options if you’ve decided to, for example, attach network storage, or add block devices. 
 
 Your final step is to configure a root password for the device:
 
-![root-password](/guides/smartos-on-packet/06.png)
+![root-password](/images/smartos-on-packet/06.png)
 
 You’ll use the root user and password you set here, once the host has rebooted, to access the admin interface to begin using SmartOS, once the installation has completed:
 
-![installation](/guides/smartos-on-packet/07.png)
+![installation](/images/smartos-on-packet/07.png)
 
 Once complete, you’ll be prompted to hit “Enter” to reboot the host, and complete installation. You can monitor the console to ensure the host comes back online, and if successful, it will boot to the Joyent SmartOS login screen:
 
-![complete](/guides/smartos-on-packet/08.png)
+![complete](/images/smartos-on-packet/08.png)
 
 You are ready to proceed and login over your configured administrative interface over SSH and begin deploying your zones.
 
