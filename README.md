@@ -25,7 +25,7 @@
 
 <!--- Headline Description --->
 This is the public documentation for Packet's public services.
-View our documentation page at [Packet Docs](https://www.packet.com/developers/).
+View our documentation page at[Packet Docs](https://www.packet.com/developers/).
 
 <!--- What We Have Here --->
 ## What We Have Here
