@@ -1,12 +1,12 @@
 <!--<meta>
 {
-    "title":"Two Factor",
+    "title":"Two Factor (2FA)",
     "description":"Learn more about 2FA at Packet",
     "tag":["2FA", "Security", "Two-Factor"]
 }
 </meta>-->
 
-Two-factor authentication allows you to configure an additional means of authentication on your account, helping to reduce the risk of account takeover or other malicious activity.
+Two-factor authentication (2FA) allows you to configure an additional means of authentication on your account, helping to reduce the risk of account takeover or other malicious activity.
 
 To setup 2FA on your account, simply visit 'User Icon' -> 'Security' and follow the instructions. Packet currently supports 2FA authentication via an authenticator app or SMS text message. Data rates may apply.
 
