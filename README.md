@@ -39,7 +39,7 @@ View our documentation page at [Packet Docs](https://www.packet.com/developers/)
 <!--- How To Contribute --->
 ## How To Contribute
 
-Please, feel free to make a new Pull Request.
+Please review our [standards](https://github.com/packethost/docs/blob/master/standards.md), and then feel free to submit pull request. 
 
 <!--- Issues --->
 ## Issues
