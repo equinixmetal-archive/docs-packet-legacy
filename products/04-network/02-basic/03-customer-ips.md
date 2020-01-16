@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"BYO IP: Bring Your Own IP",
+    "title":"BYOIP: Bring Your Own IP",
     "description":"utilizing your own ASN on Packet",
     "tag":["Network", "IPs", "Anycast"]
 }
