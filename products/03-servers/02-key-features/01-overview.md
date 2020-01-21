@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Bare Metal Servers Features - Packet Developer Docs",
+    "title":"Overview",
     "description":"Learn more about key features of Packet servers.",
     "tag":["Key Features"]
 }

@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Bare Metal Cloud Data Centers -- Packet Developer Docs",
+    "title":"Data Centers",
     "description":"Locations, certifications, & speed tests for our global data centers.",
     "tag":["datacenters", "locations", "facilities"]
 }

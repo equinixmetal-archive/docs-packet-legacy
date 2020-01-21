@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Bare Metal Cloud Servers Overview - Packet Developer Docs",
+    "title":"Batch Deployment",
     "description":"Deploying devices in Batch",
     "tag":["Deploy", "Batch Deployment"]
 }

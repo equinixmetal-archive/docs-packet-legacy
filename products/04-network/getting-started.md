@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Bare Metal Network Overview -Packet Developer Docs",
+    "title":"Overview",
     "description":"Overview of our Network Offeringst",
     "tag":["Network", "Private Network"]
 }
