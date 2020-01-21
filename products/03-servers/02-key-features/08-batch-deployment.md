@@ -47,7 +47,9 @@ DFW1: 50 available
 Another example, with larger batch request:
 
 ```
-"facility_diversity_level": 2 with "quantity": 25"
+"facility": ['sjc1', 'ewr1', 'any']"
+"facility_diversity_level": 2
+"quantity": 25
 
 SJC1: 7 available
 EWR1: 24 available
