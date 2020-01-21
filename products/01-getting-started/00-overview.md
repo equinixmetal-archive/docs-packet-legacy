@@ -1,6 +1,7 @@
 <!--<meta>
 {
-    "title":"Overview",
+    "title":"Packet Bare Metal Cloud Docs - DevOps Resources",
+    "slug":"Overview",
     "description":"Learn more about Packet and get started!",
     "tag":["Product documentation", "Getting started", "Contact us"]
 }
@@ -14,7 +15,7 @@ With 20+ global public cloud locations, a seamless API experience, and the abili
 ### Deploying on Packet
 If you've used EC2 (AWS) or various compute services from Google Cloud, Microsoft Azure, or DigitalOcean then Packet will feel quite familiar. We support core concepts such as user data, and everything that can be done in our portal can be accomplished via our API.  The difference is that we only provide single-tenant bare metal compute, instead of virtual machines. 
 
-Since we are 100% focused on the infrastructure layer, we do not provide higher level services like managed databases or serverless offerings. Instead we invest in a vibrant [partner ecosystem](http://staging.packet.net/community/partners/).
+Since we are 100% focused on the infrastructure layer, we do not provide higher level services like managed databases or serverless offerings. Instead we invest in a vibrant [partner ecosystem](https://www.packet.com/resources/partners/).
 
 ### Working with Packet
 Although our platform is fully automated at all levels and users are responsible for managing their own infrastructure, we do form close relationships with many of our customers. If you have questions or feedback, we would love for you to get in touch. We offer 24/7/365 support, so please reach out to our team via [email](mailto:support@packet.com) or [Slack](https://slack.packet.com/) as needed.

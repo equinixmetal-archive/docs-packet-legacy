@@ -25,21 +25,22 @@
 
 <!--- Headline Description --->
 This is the public documentation for Packet's public services.
-View our documentation page at [Packet Docs](https://www.packet.com/developers/).
+View our documentation page at[Packet Docs](https://www.packet.com/developers/).
 
 <!--- What We Have Here --->
 ## What We Have Here
 
 - [Guides](https://github.com/packethost/docs/tree/master/guides)
 - [Libraries](https://github.com/packethost/docs/tree/master/libraries)
-- [Network](https://github.com/packethost/docs/tree/master/network)
+- [Integrations](https://github.com/packethost/docs/tree/master/integrations)
+- [Network](https://github.com/packethost/docs/tree/master/products/04-network)
 - [Platform](https://github.com/packethost/docs/tree/master/platform)
 - [Products](https://github.com/packethost/docs/tree/master/products)
 
 <!--- How To Contribute --->
 ## How To Contribute
 
-Please, feel free to make a new Pull Request.
+Please review our [contriuting standards](https://github.com/packethost/docs/blob/master/standards.md). Then feel free to submit pull request.
 
 <!--- Issues --->
 ## Issues
