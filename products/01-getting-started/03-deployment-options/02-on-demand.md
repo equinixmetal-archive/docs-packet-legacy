@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"On Demand Server Deployment - Packet Developer Docs",
+    "title":"On Demand",
     "description":"Learn more about on demand deployment.",
     "tag":["On Demand", "On-Demand"]
 }

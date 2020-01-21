@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Operating Systems Overview - Packet Developer Docs",
+    "title":"Overview",
     "description":"Learn more about operating systems at Packet",
     "tag":["Operating Systems"]
 }

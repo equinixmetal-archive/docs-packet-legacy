@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Reserved Cloud Servers - Packet Developer Docs",
+    "title":"Reserved Hardware",
     "description":"Deploy from a pool of reserved hardware available only to you!.",
     "tag":["reserve", "Deploy"]
 }
