@@ -19,3 +19,7 @@ Once the server you deployed is Active, you can RDP in as Admin and using the pa
 **MacOS/OSX:** there many applications for RDP sessions for simplicity sake we suggest Microsoft Remote Desktop client. You can find this through the App Store, or by clicking [here](https://itunes.apple.com/us/app/microsoft-remote-desktop/id715768417?mt=12). 
 
 **Linux/Other OS's:** has many applications for RDP sessions, one that would work in this case would be [Remmina](https://www.remmina.org/wp/). You can learn more about it via their [FAQ](http://www.remmina.org/wp/faq/) & see screenshots of it in action [here](http://www.remmina.org/wp/screenshots/). 
+
+#### Using User Data with Windows
+
+PowerShell is a supported executable target for [cloud-init](https://cloudbase-init.readthedocs.io/en/latest/userdata.html#powershell), allowing you to configure a host at provisioning time. More about [User Data on Packet can be found here](https://www.packet.com/developers/docs/servers/key-features/user-data/).
