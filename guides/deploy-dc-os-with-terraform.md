@@ -422,4 +422,4 @@ Why not lead with the repo!?
 
 Better to know what's happening so you can fix it when it breaks! ; )
 
-Let us know what you think via the comments or email us at help@packet.net.
+Let us know what you think via the comments or email us at support@packet.com.
