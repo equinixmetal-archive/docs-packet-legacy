@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Overview",
+    "title":"Packet Bare Metal API Documents",
     "description":"An introduction to the Packet API.",
     "tag":["API", "Integrations", "Libraries"]
 }

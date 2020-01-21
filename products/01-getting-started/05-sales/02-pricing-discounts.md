@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Pricing & Discounts",
+    "title":"Bare Metal Server Pricing & Discounts - Packet Developer Docs",
     "description":"Learn more about Pricing & Discounts at Packet",
     "tag":["Pricing", "Discounts"]
 }

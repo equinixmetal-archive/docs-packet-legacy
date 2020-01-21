@@ -1,7 +1,7 @@
 <!--
 <meta>
 {
-    "title":"Metadata",
+    "title":"Metadata Servers - Packet Developer Docs",
     "description":"Understanding and leveraging Packet’s metadata service.",
     "tag":["Metadata"]
 }

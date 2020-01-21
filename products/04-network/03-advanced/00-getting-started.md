@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Overview",
+    "title":"Bare Metal Cloud Network - Packet Developer Docs",
     "description":"Using advanced network features",
     "tag":["Layer2", "Native VLAN", "BGP"]
 }
