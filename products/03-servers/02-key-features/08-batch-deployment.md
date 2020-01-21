@@ -67,6 +67,8 @@ In terms of hostnames, you can handle this in two different ways:
 *   __Hostnames__: You can pass the API an array of hostnames. The following is an example for a batch of 3 servers:
 `"hostnames": ["test.server1.com","test.server2.com","test.server3.com"]`.
 
+**Note:** Please note that these are different JSON strings, `hostname` and `hostnames` respectively.
+
 
 ### Checking the Status of Batch Deployments
 
