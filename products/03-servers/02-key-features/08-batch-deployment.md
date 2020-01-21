@@ -64,8 +64,8 @@ If this parameter is not specified, we don't enforce any limit and device provis
 In terms of hostnames, you can handle this in two different ways:
 
 *   __Hostname__:  You can create a parseable hostname, `"hostname":"s{{index}}.blah.com"`  where`{{index}}`  will be replaced during creation in a logical order (e.g. 1, 2, 3).
-*   __Hostnames__: You can pass the API an array of hostnames as follows:
-  For a batch of 3 servers: `"hostnames": ["test.server1.com","test.server2.com","test.server3.com"]`.
+*   __Hostnames__: You can pass the API an array of hostnames. The following is an example for a batch of 3 servers:
+`"hostnames": ["test.server1.com","test.server2.com","test.server3.com"]`.
 
 
 ### Checking the Status of Batch Deployments
