@@ -11,7 +11,7 @@ Batch deployment is a feature that enables you to deploy multiple servers at onc
 With batch deployments you can choose the server types & any facility that suits your particular deployment needs.  It is also possible to create several batches at once. The following example shows how to deploy a batch of three c1.small.x86 servers.
 
 ```
-curl -v -X POST -H 'X-Auth-Token: API-TOKEN' -H 'Content-Type: application/json' -d '{
+curl -X POST -H 'X-Auth-Token: API-TOKEN' -H 'Content-Type: application/json' -d '{
  "batches": [
         {
             "hostname": "test.server{{index}}.com",
