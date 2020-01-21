@@ -1,6 +1,7 @@
 <!--<meta>
 {
-    "title":"Overview",
+    "title":"Packet Bare Metal Cloud Docs - DevOps Resources",
+    "slug":"Overview",
     "description":"Learn more about Packet and get started!",
     "tag":["Product documentation", "Getting started", "Contact us"]
 }
