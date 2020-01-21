@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Layer 2",
+    "title":"Layer 2 Network Topology - Packet Developer Docs",
     "description":"A quick look at the layer 2 feature.",
     "tag":["layer 2", "networking", "advanced"]
 }

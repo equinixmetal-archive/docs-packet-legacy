@@ -1,6 +1,6 @@
 <!--<meta>
 {
-    "title":"Spot Market",
+    "title":"Packet Spot Market - Packet Developer Docs",
     "description":"Deploying Devices in Spot Market",
     "tag":["Spot Market", "Deploy"]
 }
