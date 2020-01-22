@@ -41,7 +41,7 @@ Once attached to your server, you will see the volume name, size & where it is l
 
 ### Attach / Detach Scripts
 
-As Packet does not have an agent running on any client-server or remote access to client machines, you need to run the final attach of the iSCSI volume to your server on your own.  Packet provides a block storage management script to make this process easy.  You can access the attach script via Github here.
+As Packet does not have an agent running on any client-server or remote access to client machines, you need to run the final attach of the iSCSI volume to your server on your own.  Packet provides a block storage management script to make this process easy.  You can access the attach (detach as well) script via Github [here](https://github.com/packethost/packet-block-storage).
 
 In order to complete the attachment process, you will need to run the following on the device's CLI:
 
