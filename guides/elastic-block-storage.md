@@ -75,7 +75,7 @@ Block device /dev/mapper/volume-32829074 is available for use
 The option `-m queue` is very important, if block storage becomes inaccessible, this directive will keep the IO in-memory buffer until it becomes accessible.
 
 
-### Creating the filesystem with gdisk
+### Creating the partition with gdisk
 
 After mounting the block device, you need to partition the block device.  You can do so using gdisk, as follows (replace the volume_name_here with the volume label outputted by the attach script above):
 
