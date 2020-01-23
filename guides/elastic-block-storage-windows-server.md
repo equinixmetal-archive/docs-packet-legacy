@@ -40,7 +40,7 @@ To get the server IQN and volume IPs, we will be utilizing Packet’s [Metadata 
 
 By default there is a security feature in place which will prevent you from accessing this URL.
 
-In Internet Explorer, click the gear (top right) > Internet Options > Security tab > Trusted Sites icon with a green checkmark. Click on the sites button and add the Metadata URL.
+In Internet Explorer, click the gear (top right) > Internet Options > Security tab > Trusted Sites icon with a green checkmark. Click on the "Sites" button and add the Metadata URL.
 
 ![metadata-trusted-site](/images/elastic-block-storage-windows-server/metadata-trusted-site.png)
 
