@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Elastic IPs",
     "description":"Setting Up & Using Elastic IPs",
-    "tag":["Network", "Elastic IPs"]
+    "tag":["Network", "Elastic IPs"],
+    "seo-title": "Elastic IPs - Packet Developer Docs",
+    "seo-description": "Setting Up & Using Elastic IPs",
+    "og-title": "Elastic IPs",
+    "og-description": "Setting Up & Using Elastic IPs"
 }
-</meta>-->
+</meta> -->
 
 
 If you request four elastic IPs from us, we will assign you a /30 which contains four IP addresses, e.g. 147.75.1.2/30.

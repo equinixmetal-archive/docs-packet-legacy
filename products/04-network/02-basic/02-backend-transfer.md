@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Backend Transfer",
     "description":"Setting Up & Using Backend Transfer on Packet",
-    "tag":["Backend Transfer", "Private Network"]
+    "tag":["Backend Transfer", "Private Network"],
+    "seo-title": "Backend Transfer - Packet Developer Docs",
+    "seo-description": "Setting Up & Using Backend Transfer on Packet",
+    "og-title": "Backend Transfer",
+    "og-description": "Setting Up & Using Backend Transfer on Packet"
 }
-</meta>-->
+</meta> -->
 
 Backend Transfer extends the normal private / backend networking capability across our global facilities.
 

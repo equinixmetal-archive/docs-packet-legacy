@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Batch Deployment",
     "description":"Deploying devices in Batch",
-    "tag":["Deploy", "Batch Deployment"]
+    "tag":["Deploy", "Batch Deployment"],
+    "seo-title": "Batch Deployment - Packet Developer Docs",
+    "seo-description": "Deploying devices in Batch",
+    "og-title": "Batch Deployment",
+    "og-description": "Deploying devices in Batch"
 }
-</meta>-->
+</meta> -->
 
 Batch deployment is a feature that enables you to deploy multiple servers at once with a single API call.   This is useful if you don't already use a tool like Terraform, which includes its own method for handling large deployments.
 

@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Standard IPs",
     "description":"Standard IP addresses at Packet",
-    "tag":["Network", "IPs"]
+    "tag":["Network", "IPs"],
+    "seo-title": "Standard IPs - Packet Developer Docs",
+    "seo-description": "Standard IP addresses at Packet",
+    "og-title": "Standard IPs",
+    "og-description": "Standard IP addresses at Packet"
 }
-</meta>-->
+</meta> -->
 
 When a Packet server is installed, we configure management IP addresses by default. These IPs are for accessing a server administratively, for example, via SSH. It is important to consider that these IPs live and die with a server -- when a server instance is deleted, its management IPs also cease to exist, and may not necessarily be assigned to any new servers created.
 

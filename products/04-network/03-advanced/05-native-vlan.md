@@ -1,11 +1,17 @@
-
-<!--<meta>
+<!-- <meta>
 {
+    
     "title":"Native VLAN",
     "description":"Setting up Native VLAN",
-    "tag":["VLAN", "Layer2"]
+    "tag":["VLAN", "Layer2"],
+    "seo-title": "Native VLAN - Packet Developer Docs",
+    "seo-description": "Setting up Native VLAN",
+    "og-title": "Utilizing Native VLAN",
+    "og-description": "Setting up Native VLAN"
 }
-</meta>-->
+</meta> -->
+
+
 
 Native VLAN feature enables support for untagged packets when multiple VLANs are configured on the server port.
 

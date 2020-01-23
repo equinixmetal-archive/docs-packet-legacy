@@ -1,10 +1,16 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Overview",
-    "description":"Overview of our Network Offeringst",
-    "tag":["Network", "Private Network"]
+    "description":"Overview of our Network Offerings",
+    "tag":["Network", "Private Network"],
+    "seo-title": "Bare Metal Network Overview -Packet Developer Docs ",
+    "seo-description": "Overview of our Network Offerings",
+    "og-title": "Overview",
+    "og-description": "Overview of our Network Offerings"
 }
-</meta>-->
+</meta> -->
+
+
 
 Packet’s network and datacenter topology is designed with performance and redundancy as top priorities. Two unique features include a Layer-3 topology and native dual-stack (IPv4 / IPv6) capability.
 

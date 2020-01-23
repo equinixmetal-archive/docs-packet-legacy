@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"SOS: Serial over SSH",
     "description":"Accesisng Serial Console (SOS)",
-    "tag":["SOS", "Console"]
+    "tag":["SOS", "Console"],
+    "seo-title": "SOS: Serial over SSH - Packet Developer Docs",
+    "seo-description": "Accesisng Serial Console (SOS)",
+    "og-title": "SOS: Serial over SSH",
+    "og-description": "Accesisng Serial Console (SOS)"
 }
-</meta>-->
+</meta> -->
 
 There are times when a server becomes unreachable over SSH due to broken networking, a bad install, misconfiguration, a kernel upgrade, bad firewall rules, etc.
 

@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Overview",
     "description":"Learn more about support channels at Packet",
-    "tag":["Sales", "Support", "Accounts"]
+    "tag":["Support", "Slack", "Chat"],
+    "seo-title": "Support Options - Packet Developer Docs",
+    "seo-description": "Support Options - Packet Developer Docs",
+    "og-title": "Capacity",
+    "og-description": "Support Options - Packet Developer Docs"
 }
-</meta>-->
+</meta> -->
 
 All Packet support channels are available from the [customer portal](https://app.packet.net/support). From there you can open a ticket, send us an email, open our community slack, @ us on twitter, or open a chat with our support engineers. You can also log into the [support portal](https://support.packet.com), where you can track the status of your open tickets.
 

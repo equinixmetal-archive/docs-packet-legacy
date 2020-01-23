@@ -1,12 +1,14 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"User Data",
     "description":"Run commands during the server provisioning process.",
-    "tag":["user", "data"]
+    "tag":["user", "data"],
+    "seo-title": "User Data - Packet Developer Docs",
+    "seo-description": "Run commands during the server provisioning process.",
+    "og-title": "User Data",
+    "og-description": "Run commands during the server provisioning process."
 }
-</meta>
--->
+</meta> -->
 When provisioning a server at Packet you have the option to include User Data, which can be used to perform various automation tasks after the server is ready, such as executing common scripts / packages, or triggering other more advanced configuration processes.
 
 User data - like other forms of instance “meta data” - is tied into Packet’s extensive use of cloud-init.  Designed in the early days of AWS, Cloud-init is a simple but powerful technique for carrying out actions on a cloud instance at boot time.  It takes care of defining each machine’s hostname, adds SSH keys, and performs the “phone home” process when the server finishes provisioning.
