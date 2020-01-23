@@ -1,3 +1,16 @@
+<!-- <meta>
+{
+    "title":"SmartOS on Packet",
+    "description":"Deplying SmartOS on Packet",
+    "tag":["OS", "SmartOS"],
+    "seo-title": "SmartOS on Packet - Packet Technical Guides",
+    "seo-description": "Deplying SmartOS on Packet",
+    "og-title": "Deplying SmartOS on Packet",
+    "og-description":"Deplying SmartOS on Packet"
+}
+</meta> -->
+
+
 # SmartOS on Packet
 
 Packet’s Custom iPXE boot option allows users to boot a system image like that of SmartOS persistently across boots, on top of a local storage ZFS pool for the VM and zone data on the node itself, to provide a fast and easily administered hypervisor operating system experience.

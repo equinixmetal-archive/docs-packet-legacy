@@ -1,12 +1,14 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Helm Charts for Kubernetes Package Management",
     "description":"Helm Charts for Kubernetes Package Management",
-    "tag":["Kubernetes", "Package Management", "Helm"]
+    "tag":["Kubernetes", "Package Management", "Helm"],
+    "seo-title": "Helm Charts for Kubernetes Package Management - Packet Technical Guides",
+    "seo-description": "Helm Charts for Kubernetes Package Management",
+    "og-title": "Helm Charts for Kubernetes Package Management",
+    "og-description": "Helm Charts for Kubernetes Package Management"
 }
-</meta>
--->
+</meta> -->
 
 # Helm Charts for Kubernetes Package Management
 

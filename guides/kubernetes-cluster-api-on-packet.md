@@ -1,12 +1,14 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Kubernetes Cluster API",
     "description":"Kubernetes Cluster API on Packet",
     "tag":["Kubernetes", "Cluster",
+    "seo-title": "Kubernetes Cluster API for Packet - Packet Technical Guides",
+    "seo-description": "Kubernetes Cluster API on Packet",
+    "og-title": "Kubernetes Cluster API",
+    "og-description": Kubernetes Cluster API on Packet"
 }
-</meta>
--->
+</meta> -->
 
 # Kubernetes Cluster API on Packet
 

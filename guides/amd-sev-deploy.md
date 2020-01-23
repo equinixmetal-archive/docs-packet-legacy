@@ -1,15 +1,14 @@
-<!--
-<meta>
+<!-- <meta>
 {
-    "title":"AMD Sev with Anjuna",
+     "title":"AMD Sev with Anjuna",
     "description":"Deploying AMD SEV with Anjuna",
-    "author":"Mo Lawler",
-    "github":"usrdev",
-    "email":"mo@packet.com",
-    "tag":["AMD", "SEV"]
+    "tag":["AMD", "SEV"],
+    "seo-title": "Deploy AMD SEV on Bare Metal- Packet Technical Guides",
+    "seo-description": "Deploying AMD SEV with Anjuna",
+    "og-title": "AMD Sev with Anjuna",
+    "og-description": "Deploying AMD SEV with Anjuna"
 }
-</meta>
--->
+</meta> -->
 
 AMD SEV is a powerful technology that provides an unprecedented level of security for confidential workloads. [Anjuna](https://www.anjuna.io) abstracts the low-level details and further leverages SEV to provide a hardware-grade security perimeter around the application itself, eliminating concerns about the security of the host itself, and potential attackers that obtain full control of the host OS or hypervisor.
 
