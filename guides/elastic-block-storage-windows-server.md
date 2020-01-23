@@ -102,7 +102,7 @@ Click finish to setup the volume, once the volume is in a healthy status, it is 
 
 ![file-explorer-volume](/images/elastic-block-storage-windows-server/file-explorer-volume.png)
 
-## Moving / Detaching the Volume to another Server
+## Detaching / Deleting or Moving the Volume to another Server
 
 If you want to delete or move the volume to another server, you will need to disconnect the volume in Windows and then detach the volume from the instance in the Packet portal.
 
