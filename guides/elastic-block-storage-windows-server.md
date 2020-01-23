@@ -101,3 +101,13 @@ A wizard will pop up to create a partition and format it with a filesystem. You 
 Click finish to setup the volume, once the volume is in a healthy status, it is ready to be used. You can open file explorer, go to This PC on the left sidebar, and your block storage volume will show up there so you can start creating or transferring files.
 
 ![file-explorer-volume](/images/elastic-block-storage-windows-server/file-explorer-volume.png)
+
+## Moving / Detaching the Volume to another Server
+
+If you want to delete or move the volume to another server, you will need to disconnect the volume in Windows and then detach the volume from the instance in the Packet portal.
+
+To disconnect the volume from Windows, go back to the Disk Management application, right click the volume and click "Offline". Then, open the Server Manager app, click on Tools, open iSCSI Initiator. Under the discovered targets section, select the target volume, then click the "Diconnect" button. It will prompt you to disconnect from all sessions (2 sessions) and click "Yes".
+
+Now you will neeed to detach the volume from the server in the Packet portal by going to the instance overview page, the storage section on the left hand side, and click the "Detach" button on the volume.
+
+If you would like to delete the volume, you can delete it from the Storage tab at the top of the project overview page. If you would like to attach the volume to another server instance, you will need to follow the same configuration process that we did earlier.
