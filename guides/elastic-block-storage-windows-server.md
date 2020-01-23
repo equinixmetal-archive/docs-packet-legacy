@@ -60,9 +60,11 @@ Once you have that information ready, go back to the iSCSI Initiator properties 
 
 Next, go to the “Discovery” tab, under the Target Portals sections, click the “Discover Portal” button. Here you will need to enter the IP addresses of the volume that we retrieved earlier. You will need to do this step twice for each IP address. The port can be left as default.
 
-![discovered-volume](/images/elastic-block-storage-windows-server/discovered-volume.png)
+![volume-IP](/images/elastic-block-storage-windows-server/volume-IP.png)
 
-At this point, the volume should be discovered and showing in the Targets tab, under the Discovered targets section, with the volume IQN which should match the IQN of the volume from the metadata file.
+At this point, the volume should be discovered and showing in the Targets tab, under the Discovered targets section, with the volume IQN which should match the IQN of the volume from the metadata file. (`iqn.2013-05.com.daterainc:tc:01:sn:e2a157c195040ba7`)
+
+![discovered-volume](/images/elastic-block-storage-windows-server/discovered-volume.png)
 
 Now we can connect the volume with multipath. Select the discovered volume target and click the “Connect” button. On the new window, tick the box for “Enable multi-path” and click the “Advanced” button. On the Advanced Settings window, click the “Local Adapter” dropdown and set it to the “Microsoft iSCSI Initiator”. For the “Initiator IP”, it will be the private IPv4 address (10.x.x.x) of your server instance and you can get it from the Packet portal on the instance overview page. The “Target portal IP” will be the IPs of the volume that we setup earlier, but here you can select the first one. Click OK, then OK again and the volume will be connected now, but we need to add the second path for the second IP address of the volume.
 
