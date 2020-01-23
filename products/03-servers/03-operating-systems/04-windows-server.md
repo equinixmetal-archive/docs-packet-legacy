@@ -11,7 +11,7 @@ Packet currently offers Windows Server 2012 R2 and Windows Server 2016. A compar
 #### Windows License Pricing
 Packet charges a flat $0.01 / hr per core for both the 2012 R2 and 2016 Standard versions of Windows Server.  Fees will be added to your invoice on the 1st of each month.  Since various server configurations have a different number of cores based upon their processor(s) - as such the additional licensing costs will vary. 
 
-#### Accessing RDP (Remot Desktop Protocol)
+#### Accessing RDP (Remote Desktop Protocol)
 Once the server you deployed is Active, you can RDP in as Admin and using the password you will find on the server's details page. Our Windows image utilizes the default RDP port 3389. To create an RDP session, dependent upon your local OS here are a few options: 
 
 **Windows Machine:** Windows → All Programs →  Remote Desktop Connection
