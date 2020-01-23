@@ -12,26 +12,72 @@ Enabling iSCSI features on Windows Server
 
 The first thing we will need to do is enable Multipath (MPIO) support on Windows. To do this, open the Server Manager app (it opens automatically when you connect to your instance with RDP), and on top right corner click “Manage”, then select “Add Roles and Features”.
 
+![add-feature](/images/elastic-block-storage-windows-server/add-feature.png)
+
 A wizard will show up that will walk you through, you will need to click “Next” (default selections are fine) a few times until you reach the Features section. Make sure to select Multipath I/O, click “Next”, then click “Install”. Once the installation is done, the wizard will say that a restart is required to complete the process. Click the “Close” button and restart the server instance. (Note that you also have the option to tick the box for automatically restarting the server if required once you select the Multipath I/O feature to install)
 
-Once you log back in, on the upper right corner of the Server Manager app, click “Tools”, then select the “MPIO” option. An MPIO Properties window will open, go to the “Discover Multi-Paths” tab, then on the SPC-3 compliant section you will need to tick the box for “Add support for iSCSI devices” and click the “Add” button. A window will pop up prompting you to restart the server, click “Yes”.
+![enable-multipath](/images/elastic-block-storage-windows-server/enable-multipath.png)
+
+Once you log back in, on the upper right corner of the Server Manager app, click “Tools”, then select the “MPIO” option.
+
+![open-MPIO](/images/elastic-block-storage-windows-server/open-MPIO.png)
+
+An MPIO Properties window will open, go to the “Discover Multi-Paths” tab, then on the SPC-3 compliant section you will need to tick the box for “Add support for iSCSI devices” and click the “Add” button. A window will pop up prompting you to restart the server, click “Yes”.
+
+![spc-3-support](/images/elastic-block-storage-windows-server/spc-3-support.png)
 
 Once you get back in the server, on the upper right corner of the Server Manager app, click “Tools”, then select the “iSCSI Initiator” option. A window will pop up prompting you to start the iSCSI service, click “Yes”. Then the iSCSI Initiator Properties windows will pop up but at this point we will need to get the server’s IQN and the block storage volume IPs needed to start the iSCSI sessions.
+
+![iSCSI-initiator](/images/elastic-block-storage-windows-server/iSCSI-initiator.png)
 
 To get the server IQN and volume IPs, we will be utilizing Packet’s Metadata service which provides important information about your server such as hostname, IPs, block storage volumes attached and others. We will use Internet Explorer to retrieve the Metadata of the server but you can use any other browser. First you will need to add https://metadata.packet.net/metadata as a trusted site. By default there is a security feature in place which will prevent you from accessing this site.
 
 Click the gear (top right) > Internet Options > Security tab > Trusted Sites icon with a green checkmark. Click on the sites button and add the Metadata URL.
 
+![metadata-trusted-site](/images/elastic-block-storage-windows-server/metadata-trusted-site.png)
+
 Now navigate to https://metadata.packet.net/metadata in the browser and it will prompt you to access the site securely, then download (bottom of screen) a `metadata.json` file in your downloads folder. Navigate to the downloads folder and find the metadata file, right click on the file, select “open with”, then click on “try an app on this PC”, select Notepad and click OK. The notepad window will open that shows your metadata information, it’s a bit difficult to read but we will only need the IQN of the server and volume IPs. The IQN is on the first line of the metadata file, next to the hostname, in the format of "iqn":"iqn.2020-01.net.packet:device.2d0315e2”. The IPs of the volumes is on the last line in the format of "volumes":[{"ips":["10.144.35.96","10.144.50.199”]. Please note that the block storage volume will also have it’s own IQN but we don’t need it to setup the volume.
 
 Once you have that information ready, go back to the iSCSI Initiator properties window, then go to the last tab “Configuration”. There you will need to change the initiator name, click the “change” button and paste your server instance IQN (iqn.2020-01.net.packet:device.2d0315e2), then click OK.
 
+![server-IQN](/images/elastic-block-storage-windows-server/server-IQN.png)
+
 Next, go to the “Discovery” tab, under the Target Portals sections, click the “Discover Portal” button. Here you will need to enter the IP addresses of the volume that we retrieved earlier. You will need to do this step twice for each IP address. The port can be left as default.
+
+![discovered-volume](/images/elastic-block-storage-windows-server/discovered-volume.png)
 
 At this point, the volume should be discovered and showing in the Targets tab, under the Discovered targets section, with the volume IQN which should match the IQN of the volume from the metadata file.
 
-Now we can connect the volume with multipath. Select the discovered volume target and click the “Connect” button. On the new window, tick the box for “Enable multi-path” and click the “Advanced” button. On the Advanced Settings window, click the “Local Adapter” dropdown and set it to the “Microsoft iSCSI Initiator”. For the “Initiator IP”, it will be the private IPv4 address (10.x.x.x) of your server instance and you can get it from the Packet portal on the instance overview page. The “Target portal IP” will be the IPs of the volume that we setup earlier, but here you can select the first one. Click OK, then OK again and the volume will be connected now, but we need to add the second path for the second IP address of the volume. To do this, click the volume and click the Properties button, on the new window click the Add session button, tick Enable multi-path, then click advanced, and follow the same process as earlier (Microsoft iSCSI Initiator, same server IP (10.x.x.x) that was used earlier, but for the Target portal IP, choose the second IP instead of the first one that we used earlier).
+Now we can connect the volume with multipath. Select the discovered volume target and click the “Connect” button. On the new window, tick the box for “Enable multi-path” and click the “Advanced” button. On the Advanced Settings window, click the “Local Adapter” dropdown and set it to the “Microsoft iSCSI Initiator”. For the “Initiator IP”, it will be the private IPv4 address (10.x.x.x) of your server instance and you can get it from the Packet portal on the instance overview page. The “Target portal IP” will be the IPs of the volume that we setup earlier, but here you can select the first one. Click OK, then OK again and the volume will be connected now, but we need to add the second path for the second IP address of the volume.
 
-(Note: This is not required but if would like to customize Multipath settings further such as the load balance policy and type of state, you can do that in the volume properties window, click the Devices button, then click the MPIO button on the new window, and there you will be able to configure Multipath as you wish. The default settings are fine.) 
+![first-path-session](/images/elastic-block-storage-windows-server/first-path-session.png)
 
-At this point, the volume is attached to Windows but it will need to be partitioned, formatted with a filesystem, and mounted so that it can be used. To do this, launch Control Panel, on the top right corner search for “partition”, and the result should be “Create and format hard disk partitions” under “Administrative Tools”, click it. A “Disk Management” window will open where you can manage your volumes. On the bottom, you should see your local drives as well as your block storage volume in an offline state. Right click on the offline volume and click “Online”, right click the volume again and click “Initialize Disk”, you have an option to choose your partition style, I recommend GPT as it is a newer standard that supports volumes larger than 2 TB while MBR is limited to 2 TB for the maximum volume size. Click OK, and the volume should now be initialized and online. Next, you need to right click the black bar area and select “New Simple Volume”. A wizard will pop up to create a partition and format it with a filesystem. You can select next and use all the default settings but feel free to change settings such as a specific partition size, filesystem of your choice, drive letter, and volume label. Click finish to setup the volume, once the volume is in a healthy status, it is ready to be used. You can open file explorer, go to This PC on the left sidebar, and your block storage volume will show up there and you can start creating or transferring files.
+To do this, click the volume and click the Properties button, on the new window click the Add session button, tick Enable multi-path, then click advanced, and follow the same process as earlier (Microsoft iSCSI Initiator, same server IP (10.x.x.x) that was used earlier, but for the Target portal IP, choose the second IP instead of the first one that we used earlier).
+
+![second-path-session](/images/elastic-block-storage-windows-server/second-path-session.png)
+
+(Note: This is not required but if would like to customize Multipath settings further such as the load balance policy and type of state, you can do that in the volume properties window, click the Devices button, then click the MPIO button on the new window, and there you will be able to configure Multipath as you wish. The default settings of Round Robin with Subset and both sessions set as Active are fine.) 
+
+At this point, the volume is attached to Windows but it will need to be partitioned, formatted with a filesystem, and mounted so that it can be used. To do this, launch Control Panel, on the top right corner search for “partition”, and the result should be “Create and format hard disk partitions” under “Administrative Tools”, click it. A “Disk Management” window will open where you can manage your volumes. On the bottom, you should see your local drives as well as your block storage volume in an offline state. Right click on the offline volume and click “Online”.
+
+![set-volume-to-online](/images/elastic-block-storage-windows-server/set-volume-to-online.png)
+
+Right click the volume again and click “Initialize Disk”.
+
+![initialize-volume](/images/elastic-block-storage-windows-server/initialize-volume.png)
+
+You have an option to choose your partition style, I recommend GPT as it is a newer standard that supports volumes larger than 2 TB while MBR is limited to 2 TB for the maximum volume size. Click OK, and the volume should now be initialized and online.
+
+![partition-style](/images/elastic-block-storage-windows-server/partition-style.png)
+
+Next, you need to right click the black bar area and select “New Simple Volume”.
+
+![new-simple-volume](/images/elastic-block-storage-windows-server/new-simple-volume.png)
+
+A wizard will pop up to create a partition and format it with a filesystem. You can select next and use all the default settings but feel free to change settings such as a specific partition size, filesystem of your choice, drive letter, and volume label. 
+
+![filesystem](/images/elastic-block-storage-windows-server/filesystem.png)
+
+Click finish to setup the volume, once the volume is in a healthy status, it is ready to be used. You can open file explorer, go to This PC on the left sidebar, and your block storage volume will show up there so you can start creating or transferring files.
+
+![file-explorer-volume](/images/elastic-block-storage-windows-server/file-explorer-volume.png)
