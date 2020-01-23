@@ -1,15 +1,17 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Crosscloud VPN with Wireguard",
     "description":"Setup a Crosscloud VPN with Wireguard",
-    "author":"Zalkar Ziiaidin",
-    "github":"zalkar-z",
-    "email":"zak@packet.com",
-    "tag":["Crosscloud VPN", "Wireguard"]
+    "tag":["Crosscloud VPN", "Wireguard"],
+    "seo-title": "Introduction to CPU Tuning - Packet Technical Guides",
+    "seo-description": "Crosscloud VPN with Wireguard - Packet Technical Guides",
+    "og-title": "Crosscloud VPN with Wireguard",
+    "og-description": "Setup a Crosscloud VPN with Wireguard"
 }
-</meta>
--->
+</meta> -->
+
+
+
 
 <!--- HTML markdown to center the headline --->
 <p align="center">

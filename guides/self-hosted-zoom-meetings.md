@@ -1,17 +1,14 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Self-Hosted Zoom Meetings",
     "description":"Self-Hosted Zoom Meetings",
-    "author":"Zalkar Ziiaidin",
-    "github":"zalkar-z",
-    "email":"zak@packet.com",
-    "tag":["Self-Hosted", "Zoom"]
+    "tag":["Self-Hosted", "Zoom"],
+    "seo-title": "Self-Hosted Zoom Meetings - Packet Technical Guides",
+    "seo-description": "Self-Hosted Zoom Meetings",
+    "og-title": "Self-Hosted Zoom Meetings",
+    "og-description":"Self-Hosted Zoom Meetings"
 }
-</meta>
--->
-
-## Introduction
+</meta> -->
 
 We're big fans of Zoom.us - it's one of the best online meeting services in terms of quality, features and price.  What we also love is the "self hosted" or "on premise" feature, which allows you to host Zoom on your servers.  
 

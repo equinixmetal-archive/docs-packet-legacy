@@ -1,15 +1,15 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Elastic Block Storage",
     "description":"Deploying Block Storage on Packet",
-    "author":"Mo",
-    "github":"usrdev",
-    "email":"mo@usr.dev",
-    "tag":["Storage", "Block Storage", "Elastic Block Storage"]
+    "tag":["Storage", "Block Storage", "Elastic Block Storage"],
+    "seo-title": "Using Elastic Block Storage - Packet Bare Metal",
+    "seo-description": "Deploying Block Storage on Packet",
+    "og-title": "Elastic Block Storage",
+    "og-description": "Deploying Block Storage on Packet"
 }
-</meta>
--->
+</meta> -->
+
 
 ### Elastic Block Storage
 

@@ -1,19 +1,14 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Route BGP with BIRD",
     "description":"Route BGP with BIRD on Packet",
-    "author":"Zalkar Ziiaidin",
-    "github":"zalkar-z",
-    "email":"zak@packet.com",
-    "tag":["Route BGP", "BIRD"]
+    "tag":["Route BGP", "BIRD"],
+    "seo-title": "Route BGP with BIRD - Packet Technical Guides",
+    "seo-description": "Route BGP with BIRD on Packet",
+    "og-title": "Route BGP with BIRD",
+    "og-description":"Route BGP with BIRD on Packet"
 }
-</meta>
--->
-
-Route BGP with BIRD
-
-# Introduction
+</meta> -->
 
 BGP isn't new, but having it be this accessible is! Leveraging dynamic hosting for a cluster of servers at a particular data center offers your workloads a safe, effective, and quick failover channel. In this guide, we'll walk you through configuring Local BGP using [BIRD](http://bird.network.cz/) so that you can broadcast a specific local IP address to a host of your choice.
 

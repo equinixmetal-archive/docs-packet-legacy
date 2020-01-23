@@ -1,15 +1,14 @@
-<!--
-<meta>
+<!-- <meta>
 {
-    "title":"Kubeless on Packet",
+   "title":"Kubeless on Packet",
     "description":"Setup Kubeless on a bare metal K8s cluster",
-    "author":"Edo Aria",
-    "github":"ariaedo",
-    "email":"ronggur.mh@gmail.com",
-    "tag":["kubeless", "another tag"]
+    "tag":["kubeless", "k8s"],
+    "seo-title": "Introduction to CPU Tuning - Packet Technical Guides",
+    "seo-description": "Setup Kubeless on a bare metal K8s cluster",
+    "og-title": "Kubeless on Packet",
+    "og-description": "Setup Kubeless on a bare metal K8s cluster"
 }
-</meta>
--->
+</meta> -->
 
 _This post was originally posted by Bitnami's Sameer Naik on [Medium.com](https://medium.com/bitnami-perspectives/kubeless-on-packet-cloud-9e5605b8bb97)._
 

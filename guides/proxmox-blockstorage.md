@@ -1,16 +1,14 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Proxmox & Block Storage",
     "description":"Utilizing Block Storage with Proxmox",
-    "author":"Mo Lawler",
-    "github":"usrdev",
-    "email":"mo@packet.com",
-    "tag":["Proxmox", "EBS", "BlockStorage"]
+    "tag":["Proxmox", "EBS", "BlockStorage"],
+    "seo-title": "Proxmox & Block Storage - Packet Technical Guides",
+    "seo-description": "Utilizing Block Storage with Proxmox",
+    "og-title": "Proxmox & Block Storage",
+    "og-description":"Utilizing Block Storage with Proxmox"
 }
-</meta>
--->
-### Proxmox Block Storage
+</meta> -->
 
 Now that you have successfully converted Debian 10 to Proxmox, this guide will assist you in adding additional storage space. Having this storage will assist in HA & live migrations, should you have a cluster setup.
 

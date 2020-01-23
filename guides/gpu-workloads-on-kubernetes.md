@@ -1,12 +1,15 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Preparing Kubernetes for GPU Workloads",
     "description":"Preparing Kubernetes for GPU Workloads",
-    "tag":["Kubernetes", "Docker", "GPU"]
+    "tag":["Kubernetes", "Docker", "GPU"],
+    "seo-title": "Preparing Kubernetes for GPU Workloads - Packet Technical Guides",
+    "seo-description": "Preparing Kubernetes for GPU Workloads",
+    "og-title": "Preparing Kubernetes for GPU Workloads",
+    "og-description": "Preparing Kubernetes for GPU Workloads"
 }
-</meta>
--->
+</meta> -->
+
 
 # Preparing Kubernetes for GPU Workloads
 
