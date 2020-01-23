@@ -1,10 +1,16 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Overview",
     "description":"Learn more about operating systems at Packet",
-    "tag":["Operating Systems"]
+    "tag":["Operating Systems"],
+    "seo-title": "Operating Systems Overview - Packet Developer Docs ",
+    "seo-description": "Learn more about operating systems at Packet",
+    "og-title": "OS Overview",
+    "og-description": "Learn more about operating systems at Packet"
 }
-</meta>-->
+</meta> -->
+
+
 
 Packet provides a range of officially supported operated systems including Linux, BSD, Windows, and VMware distributions.
 

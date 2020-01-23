@@ -1,10 +1,15 @@
-<!--<meta>
+<!-- <meta>
 {
+    
     "title":"Zero Egress Partners",
     "description":"Learn more about Zero Egress Partners",
-    "tag":["Zero Egress Partners"]
+    "tag":["Zero Egress Partners"],
+    "seo-title": "Zero Egress Partners - Packet Developer Docs",
+    "seo-description": "Learn more about Zero Egress Partners",
+    "og-title": "Zero Egress Partners",
+    "og-description": "Learn more about Zero Egress Partners"
 }
-</meta>-->
+</meta> -->
 
 Packet partners with a number of providers to help users reduce traffic that flows over the public internet, which is both less ideal and expensive.  Current partners include:
 

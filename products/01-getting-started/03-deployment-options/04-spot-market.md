@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
-    "title":"Spot Market",
-    "description":"Deploying Devices in Spot Market",
-    "tag":["Spot Market", "Deploy"]
+  "title":"Spot Market",
+  "description":"Packet Spot Market - Packet Developer Docs",
+  "tag":["Spot Market", "Deploy"],
+  "seo-title": "Reserved Cloud Servers - Packet Developer Docs",
+  "seo-description": "Packet Spot Market - Packet Developer Docs",
+  "og-title": "Overview",
+  "og-description": "Packet Spot Market - Packet Developer Docs"
 }
-</meta>-->
+</meta> -->
 
 Packet's Spot Market allows users to bid on spare server capacity at reduced rates.  
 

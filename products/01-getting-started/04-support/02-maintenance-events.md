@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Maintenance Events",
-    "description":"Learn more about Maintenance Events at Packet",
-    "tag":["Sales", "Maintenance Events"]
+    "description":"Maintenance Events - Packet Developer Docs",
+    "tag":["Sales", "Maintenance Events"],
+    "seo-title": "Maintenance Events - Packet Developer Docs",
+    "seo-description": "Maintenance Events - Packet Developer Docs",
+    "og-title": "Maintenance Events - Packet Developer Docs",
+    "og-description": "Maintenance Events - Packet Developer Docs"
 }
-</meta>-->
+</meta> -->
 
 # Scheduled maintenance
 We do our best to ensure maximum uptime at Packet, but sometimes we still need

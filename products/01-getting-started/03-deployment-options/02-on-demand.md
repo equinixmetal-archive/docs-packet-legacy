@@ -1,10 +1,15 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"On Demand",
     "description":"Learn more about on demand deployment.",
-    "tag":["On Demand", "On-Demand"]
+    "tag":["On Demand", "On-Demand", "Deployment"],
+    "seo-title": "On Demand Server Deployment - Packet Developer Docs",
+    "seo-description": "Learn more about on demand deployment.",
+    "og-title": "Overview",
+    "og-description": "Learn more about on demand deployment."
 }
-</meta>-->
+</meta> -->
+
 ### Deployment
 Servers can be deployed On-Demand via the customer portal, API, API integration, or Terraform script. All server types found on [our webpage](https://www.packet.com/cloud/servers/) are eligible for On-Demand deployment--availability permitting. Available inventory is not guaranteed for On-Demand instance provisioning requests, see our documentation on [capacity](https://www.packet.com/developers/docs/getting-started/deployment-options/capacity/) for more information about availability.
 

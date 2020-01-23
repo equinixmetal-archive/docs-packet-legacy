@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Windows Server",
     "description":"Learn more about utilizing Windows Server at Packet",
-    "tag":["Operating Systems"]
+    "tag":["Operating Systems", "Windows"],
+    "seo-title": "Windows Server - Packet Developer Docs",
+    "seo-description": "Learn more about utilizing Windows Server at Packet",
+    "og-title": "Windows Server",
+    "og-description": "Learn more about utilizing Windows Server at Packet"
 }
-</meta>-->
+</meta> -->
 
 Packet currently offers Windows Server 2012 R2 and Windows Server 2016. A comparison grid of our supported Operating Systems, including licensed OS's, can be found [here](https://www.packet.com/developers/os-compability/).
 

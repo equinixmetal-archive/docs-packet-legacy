@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Pricing & Discounts",
-    "description":"Learn more about Pricing & Discounts at Packet",
-    "tag":["Pricing", "Discounts"]
+    "description":"Bare Metal Server Pricing & Discounts - Packet Developer Docs",
+    "tag":["Sales", "Prices", "Discounts", "Billing"],
+    "seo-title": "Support Options - Packet Developer Docs",
+    "seo-description": "Bare Metal Server Pricing & Discounts - Packet Developer Docs",
+    "og-title": "Pricing & Discounts",
+    "og-description": "Bare Metal Server Pricing & Discounts - Packet Developer Docs"
 }
-</meta>-->
+</meta> -->
 
 We know that pricing is a big deal when it comes to cloud services, and we try to keep it as simple as possible. That being said, we find that a real-time conversation can really help you understand the various options we offer to help you and your company get the most value from your infrastructure.
 

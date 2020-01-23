@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Doorman VPN",
-    "description":"Utilizing Doorman to access your Device",
-    "tag":["VPN", "Private Network", "Doorman"]
+    "description":"Utilizing Doorman VPN to access your Device",
+    "tag":["VPN", "Private Network", "Doorman"],
+    "seo-title": "Doorman VPN - Packet Developer Docs",
+    "seo-description": "Utilizing Doorman VPN to access your Device",
+    "og-title": "Doorman VPN",
+    "og-description": "Utilizing Doorman VPN to access your Device"
 }
-</meta>-->
+</meta> -->
 
 Doorman is a VPN (virtual private network) service that helps to secure traffic between you and your servers for management purposes. This is not a VPN solution between servers for web traffic. 
 

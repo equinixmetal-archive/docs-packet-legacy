@@ -1,12 +1,16 @@
-<!--
-<meta>
+<!-- <meta>
 {
-    "title":"User State",
+   "title":"User State",
     "description":"Leverage 'user state' options to inform the Packet API about custom provisioning events.",
-    "tag":["user", "state", "timeline", "events"]
+    "tag":["user", "state", "timeline", "events"],
+    "seo-title": "User State - Packet Developer Docs ",
+    "seo-description": "Leverage 'user state' options to inform the Packet API about custom provisioning events.",
+    "og-title": "User State",
+    "og-description": "Leverage 'user state' options to inform the Packet API about custom provisioning events."
 }
-</meta>
--->
+</meta> -->
+
+
 With User State, you can programmatically inform the Packet API when userland operations have started, completed, or failed.  You can also view & query that information during deployment or later for better visibility into the process.  
 
 * __Question:__ What's userland?

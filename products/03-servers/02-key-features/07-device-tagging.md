@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Device Tagging",
     "description":"Create Device Tags",
-    "tag":["API", "Tagging", "Device Tagging"]
+    "tag":["API", "Tagging", "Device Tagging"],
+    "seo-title": "Device Tagging - Packet Developer Docs",
+    "seo-description": "Create Device Tags",
+    "og-title": Device Tagging",
+    "og-description": "Create Device Tags"
 }
-</meta>-->
+</meta> -->
 
 
 Tagging is a feature allowing you to apply custom labels to a single device or multiple devices. Device tagging is purely for filtering purposes at this time. 

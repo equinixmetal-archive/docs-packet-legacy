@@ -1,11 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Rack Level Diversity",
     "description":"Learn more about Rack Level Diversity.",
     "tag":["Rack Level Diversity"]
+    "seo-title": "Bare Metal Cloud Data Centers -- Packet Developer Docs",
+    "seo-description": "Learn more about our legal terms",
+    "og-title": "Rack Level Diversity",
+    "og-description": "Learn more about our legal terms"
 }
-</meta>-->
-
+</meta> -->
 Packet offers single-tenant, dedicated servers in its cloud. This requires a more nuanced approach to diversity planning that involves switch pairs as points of failure (for redundancy we deploy a pair of switches per rack).
 
 Depending on a variety of factors — including the size of each of our global facilities — servers may be available in multiple racks.
