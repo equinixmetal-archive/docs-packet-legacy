@@ -1,4 +1,4 @@
-# Attach Block Storage Volumes on Windows Server
+# Elastic Block Storage Volumes on Windows Server
 
 ## Prerequisites
 
