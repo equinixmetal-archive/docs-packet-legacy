@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
-    "title":"How We Compare",
-    "description":"Learn the benefits of our platform",
-    "tag":["Compare Packet"]
+    "title":"Pricing & Discounts",
+    "description":"How We Compare - Packet Developer Docs",
+    "tag":["Sales", "Prices", "Discounts", "Compare"],
+    "seo-title": "Support Options - Packet Developer Docs",
+    "seo-description": "How We Compare - Packet Developer Docs",
+    "og-title": "Pricing & Discounts",
+    "og-description": "How We Compare - Packet Developer Docs"
 }
-</meta>-->
+</meta> -->
 
 Packet is super focused on automating hardware.  Since we have a global bare metal cloud, customers often want to know how we compare to other cloud providers.  
 

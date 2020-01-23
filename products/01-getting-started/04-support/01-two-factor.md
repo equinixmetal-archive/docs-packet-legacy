@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
-    "title":"Two Factor (2FA)",
-    "description":"Learn more about 2FA at Packet",
-    "tag":["2FA", "Security", "Two-Factor"]
+    "title":"2FA",
+    "description":"Learn more about setting up 2FA",
+    "tag":["2FA", "two-factor", "security"],
+    "seo-title": "Learn more about setting up 2FA",
+    "seo-description": "2FA - Setting up two-factor",
+    "og-title": "2FA",
+    "og-description": "Setting up 2FA on Packet"
 }
-</meta>-->
+</meta> -->
 
 Two-factor authentication (2FA) allows you to configure an additional means of authentication on your account, helping to reduce the risk of account takeover or other malicious activity.
 

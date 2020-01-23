@@ -1,10 +1,15 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Local and Global BGP",
     "description":"Using BGP Global/Local on Packet",
-    "tag":["BGP", "BGP Local", "BGP Global"]
+    "tag":["BGP", "BGP Local", "BGP Global"],
+    "seo-title": "Local and Global BGP - Packet Developer Docs",
+    "seo-description": "Using BGP Global/Local on Packet",
+    "og-title": "Local and Global BGP",
+    "og-description": "Using BGP Global/Local on Packet"
 }
-</meta>-->
+</meta> -->
+
 
 # Local and Global BGP
 Packet supports BGP ([Border Gateway Protocol](https://en.wikipedia.org/wiki/Border_Gateway_Protocol)) for advertising routes to Packet servers in a local environment (called Local BGP), as well as to the greater Internet (called Global BGP).

@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Custom iPXE",
     "description":"Setting Up & Using Custom PXE on Packet",
-    "tag":["iPxe", "Custom OS", "Custom PXE"]
+    "tag":["iPxe", "Custom OS", "Custom PXE"],
+    "seo-title": "Custom iPXE - Packet Developer Docs",
+    "seo-description": "Learn more about operating systems at Packet",
+    "og-title": "Custom iPXE",
+    "og-description": "Setting Up & Using Custom PXE on Packet"
 }
-</meta>-->
+</meta> -->
 
 Packet supports passing custom iPXE scripts during provisioning, which allows you to install a custom operating system manually, or via automated kickstart.
 

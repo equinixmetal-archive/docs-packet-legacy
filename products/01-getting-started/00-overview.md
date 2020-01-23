@@ -1,11 +1,16 @@
-<!--<meta>
+<!-- <meta>
 {
-    "title":"Packet Bare Metal Cloud Docs - DevOps Resources",
-    "slug":"Overview",
-    "description":"Learn more about Packet and get started!",
-    "tag":["Product documentation", "Getting started", "Contact us"]
+"title":"Overview",
+"slug":"overview,
+"description":"Learn more about Packet and get started!",
+"tag":["Product documentation", "Getting started", "Contact us"],
+"seo-title": "Packet Bare Metal Cloud Docs - DevOps Resources",
+"seo-description": "A Docker Machine driver from Packet is Powerful",
+"og-title": "Overview",
+"og-description": "Learn more about Packet and get started!"
 }
-</meta>-->
+</meta> -->
+
 
 
 Packet was founded in July 2014 with a passion to build a better internet. Our mission is to empower SaaS companies and Fortune 100's alike to make infrastructure a competitive advantage with automated bare metal that can be deployed anywhere. 

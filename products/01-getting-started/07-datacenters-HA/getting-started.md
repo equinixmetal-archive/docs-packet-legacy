@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
-    "title":"Data Centers",
+   "title":"Data Centers",
     "description":"Locations, certifications, & speed tests for our global data centers.",
-    "tag":["datacenters", "locations", "facilities"]
+    "tag":["datacenters", "locations", "facilities"],
+    "seo-title": "Bare Metal Cloud Data Centers -- Packet Developer Docs",
+    "seo-description": "Locations, certifications, & speed tests for our global datacenters.",
+    "og-title": "Data Centers",
+    "og-description": "Locations, certifications, & speed tests for our global data centers."
 }
-</meta>-->
+</meta> -->
 
 Packet has two types of public cloud facilities: Core and Custom. All [locations](https://www.packet.com/locations/) feature our full automation experience and a consistent, carrier-grade network topology. In other words: everything that you can do from an automation and networking perspective is the same across all locations. The only difference between sites is inventory.
 

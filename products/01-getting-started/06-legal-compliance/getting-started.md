@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Legal Compliance",
     "description":"Learn more about our legal terms",
-    "tag":["ToS","Terms","GDPR"]
+    "tag":["ToS","Terms","GDPR"],
+    "seo-title": "Legal Compliance - Packet Developer Docs",
+    "seo-description": "Learn more about our legal terms",
+    "og-title": "Legal Compliance",
+    "og-description": "Learn more about our legal terms"
 }
-</meta>-->
+</meta> -->
 
 The legal & security page on our main website has our legal policies and security information, including:
 
