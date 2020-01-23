@@ -1,4 +1,4 @@
-# Elastic Block Storage Volumes on Windows Server
+# Elastic Block Storage on Windows Server
 
 ## Prerequisites
 
