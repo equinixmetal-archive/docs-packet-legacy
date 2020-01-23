@@ -1,3 +1,16 @@
+<!--
+<meta>
+{
+    "title":"Elastic Block Storage on Windows Server",
+    "description":"Deploying Block Storage on Packet Windows Servers",
+    "author":"Enkel Prifti",
+    "github":"enkelprifti98",
+    "email":"enkel@packet.com",
+    "tag":["Storage", "Block Storage", "Elastic Block Storage", "Windows", "Windows Server", "Windows Server 2012", "Windows Server 2016"]
+}
+</meta>
+-->
+
 # Elastic Block Storage on Windows Server
 
 ## Prerequisites
