@@ -52,7 +52,7 @@ The IPs of the volumes are on the last line and look like the following example:
 
 `"volumes":[{"ips":["10.144.35.96","10.144.50.199”]`
 
-**Note:** Please note that the block storage volume will also have it’s own IQN but we don’t need it to setup the volume.
+**Note:** Please note that the block storage volume will also have it’s own IQN but we don’t need it to setup the volume. It will have the "Datera" name instead of "Packet" (iqn.2013-05.com.daterainc:tc:01:sn:e2a157c195040ba7).
 
 Once you have that information ready, go back to the iSCSI Initiator properties window, then go to the last tab “Configuration”. There you will need to change the initiator name, click the “change” button and paste your server instance IQN (`iqn.2020-01.net.packet:device.2d0315e2`), then click OK.
 
