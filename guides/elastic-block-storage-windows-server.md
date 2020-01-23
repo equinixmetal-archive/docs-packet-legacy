@@ -1,14 +1,14 @@
 # Attach Block Storage Volumes on Windows Server
 
-### Prerequisites
+## Prerequisites
 
 In order to add extra storage to your Windows Server instance, you will need to create a block storage volume in your project. You can do so by going to the Storage tab on the top of the project overview page. Please note that a block storage volume is meant to be used by a single server instance at a time, you cannot share the volume with multiple server instances at once. Next, you will need to attach the volume to the server in the Packet portal. To do this, go to the specific server instance you would like to attach the volume to. Then on the left sidebar, click on the Storage tab and and click the Attach volume button on the right side. From there, you can select the volume you have created and attach it to the server instance. At this point, we’re done with the Packet portal and can start the configuration process on the server instance.
 
-### Accessing the server instance
+## Accessing the server instance
 
 You will need to use RDP to remotely access the windows server instance by adding a connection with your server’s management IPv4 address. The default login will be the admin user and the temporary password provided by Packet. Please note that we don’t show the password on the portal after 24 hours since the instance was created so make sure to change the admin password once you have access to the server instance.
 
-### Enabling iSCSI support on Windows Server
+## Enabling iSCSI support on Windows Server
 
 The first thing we will need to do is enable Multipath (MPIO) support on Windows. To do this, open the Server Manager app (it opens automatically when you connect to your instance with RDP), and on top right corner click “Manage”, then select “Add Roles and Features”.
 
@@ -26,7 +26,7 @@ An MPIO Properties window will open, go to the “Discover Multi-Paths” tab, t
 
 ![spc-3-support](/images/elastic-block-storage-windows-server/spc-3-support.png)
 
-### Configuring iSCSI and Multipath
+## Configuring iSCSI and Multipath
 
 Once you get back in the server, on the upper right corner of the Server Manager app, click “Tools”, then select the “iSCSI Initiator” option.
 
@@ -61,6 +61,8 @@ To do this, click the volume and click the Properties button, on the new window 
 ![second-path-session](/images/elastic-block-storage-windows-server/second-path-session.png)
 
 (Note: This is not required but if would like to customize Multipath settings further such as the load balance policy and type of state, you can do that in the volume properties window, click the Devices button, then click the MPIO button on the new window, and there you will be able to configure Multipath as you wish. The default settings of Round Robin with Subset and both sessions set as Active are fine.) 
+
+## Partitioning and Mounting the Volume
 
 At this point, the volume is attached to Windows but it will need to be partitioned, formatted with a filesystem, and mounted so that it can be used. To do this, launch Control Panel, on the top right corner search for “partition”, and the result should be “Create and format hard disk partitions” under “Administrative Tools”, click it. A “Disk Management” window will open where you can manage your volumes. On the bottom, you should see your local drives as well as your block storage volume in an offline state. Right click on the offline volume and click “Online”.
 
