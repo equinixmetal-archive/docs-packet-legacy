@@ -34,15 +34,27 @@ Once you get back in the server, on the upper right corner of the Server Manager
 
 A window will pop up prompting you to start the iSCSI service, click “Yes”. Then the iSCSI Initiator Properties windows will pop up but at this point we will need to get the server’s IQN and the block storage volume IPs needed to start the iSCSI sessions.
 
-To get the server IQN and volume IPs, we will be utilizing Packet’s Metadata service which provides important information about your server such as hostname, IPs, block storage volumes attached and others. We will use Internet Explorer to retrieve the Metadata of the server but you can use any other browser. First you will need to add https://metadata.packet.net/metadata as a trusted site. By default there is a security feature in place which will prevent you from accessing this site.
+To get the server IQN and volume IPs, we will be utilizing Packet’s [Metadata service](https://www.packet.com/developers/docs/servers/key-features/metadata/) which provides important information about your server such as hostname, IPs, block storage volumes attached and others. We will use Internet Explorer to retrieve the Metadata of the server but you can use any other browser. First you will need to add the Metadata URL as a trusted site.
 
-Click the gear (top right) > Internet Options > Security tab > Trusted Sites icon with a green checkmark. Click on the sites button and add the Metadata URL.
+`https://metadata.packet.net/metadata`
+
+By default there is a security feature in place which will prevent you from accessing this URL.
+
+In Internet Explorer, click the gear (top right) > Internet Options > Security tab > Trusted Sites icon with a green checkmark. Click on the sites button and add the Metadata URL.
 
 ![metadata-trusted-site](/images/elastic-block-storage-windows-server/metadata-trusted-site.png)
 
-Now navigate to https://metadata.packet.net/metadata in the browser and it will prompt you to access the site securely, then download (bottom of screen) a `metadata.json` file in your downloads folder. Navigate to the downloads folder and find the metadata file, right click on the file, select “open with”, then click on “try an app on this PC”, select Notepad and click OK. The notepad window will open that shows your metadata information, it’s a bit difficult to read but we will only need the IQN of the server and volume IPs. The IQN is on the first line of the metadata file, next to the hostname, in the format of "iqn":"iqn.2020-01.net.packet:device.2d0315e2”. The IPs of the volumes is on the last line in the format of "volumes":[{"ips":["10.144.35.96","10.144.50.199”]. Please note that the block storage volume will also have it’s own IQN but we don’t need it to setup the volume.
+Now navigate to `https://metadata.packet.net/metadata` in the browser and it will prompt you to access the site securely, then download (bottom of screen) a `metadata.json` file in your downloads folder. Navigate to the downloads folder and find the metadata file, right click on the file, select “open with”, then click on “try an app on this PC”, select Notepad and click OK. The notepad window will open that shows your metadata information, it’s a bit difficult to read but we will only need the IQN of the server and volume IPs. The IQN is on the first line of the metadata file, next to the hostname and looks as follows:
 
-Once you have that information ready, go back to the iSCSI Initiator properties window, then go to the last tab “Configuration”. There you will need to change the initiator name, click the “change” button and paste your server instance IQN (iqn.2020-01.net.packet:device.2d0315e2), then click OK.
+`"iqn":"iqn.2020-01.net.packet:device.2d0315e2”`
+
+The IPs of the volumes are on the last line and look like the following example:
+
+`"volumes":[{"ips":["10.144.35.96","10.144.50.199”]`
+
+**Note:** Please note that the block storage volume will also have it’s own IQN but we don’t need it to setup the volume.
+
+Once you have that information ready, go back to the iSCSI Initiator properties window, then go to the last tab “Configuration”. There you will need to change the initiator name, click the “change” button and paste your server instance IQN (`iqn.2020-01.net.packet:device.2d0315e2`), then click OK.
 
 ![server-IQN](/images/elastic-block-storage-windows-server/server-IQN.png)
 
