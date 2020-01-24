@@ -1,15 +1,15 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Kubernetes CSI for Packet",
     "description":"Kubernetes CSI (Container Storage Interface) for Packet",
-    "author":"Joseph Marhee",
-    "github":"jmarhee",
-    "email":"jmarhee@packet.com",
     "tag":["Kubernetes", "CSI", "Container Storage Interface"]
+    "seo-title": "Kubernetes CSI for Bare Metal - Packet Technical Guides",
+    "seo-description": "Kubernetes CSI (Container Storage Interface) for Packet",
+    "og-title": "Kubernetes Cluster Autoscaler",
+    "og-description":" Kubernetes CSI (Container Storage Interface) for Packet"
 }
-</meta>
--->
+</meta> -->
+
 
 # Kubernetes CSI (Container Storage Interface) for Packet
 

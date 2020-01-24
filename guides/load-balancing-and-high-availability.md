@@ -1,15 +1,16 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Load Balancing and High Availability with HAProxy and Keepalived",
     "description":"How to setup a cluster with LB & HA",
-    "author":"Enkel Prifti",
-    "github":"enkelprifti98",
-    "email":"enkel@packet.com",
-    "tag":["HA", "LB", "HAPRoxy"]
+    "tag":["HA", "LB", "HAPRoxy"],
+    "seo-title": "Load Balancing and High Availability with HAProxy and Keepalived - Packet Technical Guides",
+    "seo-description": "How to setup a cluster with LB & HA",
+    "og-title": "Load Balancing and High Availability with HAProxy and Keepalived",
+    "og-description": "How to setup a cluster with LB & HA"
 }
-</meta>
--->
+</meta> -->
+
+
 
 ## Introduction
 

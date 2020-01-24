@@ -1,17 +1,14 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Deploy DC/OS with Terraform",
     "description":"Deploy DC/OS with Terraform",
-    "author":"Zalkar Ziiaidin",
-    "github":"zalkar-z",
-    "email":"zak@packet.com",
-    "tag":["DC/OS", "Terraform", "Datacenter Operating System"]
+    "tag":["DC/OS", "Terraform", "Datacenter Operating System"],
+    "seo-title": "Deploy DC/OS with Terraform - Packet Technical Guides",
+    "seo-description": "Deploy DC/OS with Terraform"",
+    "og-title": "Deploy DC/OS with Terraform",
+    "og-description": "Deploy DC/OS with Terraform""
 }
-</meta>
--->
-
-Deploy DC/OS with Terraform
+</meta> -->
 
 # Introduction
 
@@ -422,4 +419,4 @@ Why not lead with the repo!?
 
 Better to know what's happening so you can fix it when it breaks! ; )
 
-Let us know what you think via the comments or email us at help@packet.net.
+Let us know what you think via the comments or email us at support@packet.com.

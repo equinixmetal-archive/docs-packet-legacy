@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Overview",
     "description":"Learn more on deploment options on Packet",
-    "tag":["Deployment", "Capacity"]
+    "tag":["Deployment", "Capacity"],
+    "seo-title": "Packet Bare Metal Cloud Docs - Deployment Options",
+    "seo-description": "Learn more on deploment options on Packet",
+    "og-title": "Overview",
+    "og-description": "Learn more on deploment options on Packet"
 }
-</meta>-->
+</meta> -->
 
 
 There are a few ways to deploy devices on Packet.

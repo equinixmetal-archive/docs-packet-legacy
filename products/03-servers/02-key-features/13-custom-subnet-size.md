@@ -1,12 +1,17 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Custom Subnet Size",
     "description":"Provision servers with a custom number of IP addresses.",
-    "tag":["custom", "subnet", "IP"]
+    "tag":["custom", "subnet", "IP"],
+    "seo-title": "Custom Subnet Size - Packet Developer Docs",
+    "seo-description": "Provision servers with a custom number of IP addresses.",
+    "og-title": "Custom Subnet Size",
+    "og-description": "Provision servers with a custom number of IP addresses."
 }
-</meta>
--->
+</meta> -->
+
+
+
 When you provision a new server, Packet assigns the following public IPv4 address blocks depending on the official Operating System you select:
 
 * __Linux Distros:__ /31

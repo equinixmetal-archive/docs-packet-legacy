@@ -1,10 +1,16 @@
-<!--<meta>
+<!-- <meta>
 {
+    
     "title":"Layer 2",
     "description":"A quick look at the layer 2 feature.",
-    "tag":["layer 2", "networking", "advanced"]
+    "tag":["layer 2", "networking", "advanced"],
+    "seo-title": "Layer 2 Network Topology - Packet Developer Docs",
+    "seo-description": "A quick look at the layer 2 feature.",
+    "og-title": "Local and Global BGP",
+    "og-description": "A quick look at the layer 2 feature."
 }
-</meta>-->
+</meta> -->
+
 
 Our network is designed around a pure Layer 3 network topology, where we bring a routed interface to each server.  However, many environments expect a Layer 2 network. To support these use cases we’ve developed a feature that allows users to create and connect Layer 2 networks to their Packet infrastructure.
 

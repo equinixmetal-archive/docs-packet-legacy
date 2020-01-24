@@ -1,11 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Rescue Mode",
-    "description":"How to access your server when it becomes unreachable and you cannot use our SOS (Serial Over SSH) service.",
-    "tag":["rescue", "password", "reset"]
+    "description":"Learn how to access rescue mode",
+    "tag":["rescue", "password", "reset"],
+    "seo-title": "Rescue Mode - Packet Developer Docs",
+    "seo-description": "Learn how to access rescue mode",
+    "og-title": "SOS: Serial over SSH",
+    "og-description": "Learn how to access rescue mode"
 }
-</meta>-->
-
+</meta> -->
 There are times when a server becomes unreachable over SSH due to broken networking, a bad install, misconfiguration, a kernel upgrade, bad firewall rules, etc.
 
 If you have your server's root password and your SSH key, you should use our [S.O.S (Serial over SSH) service](https://www.packet.com/developers/docs/servers/key-features/sos-serial-over-ssh).

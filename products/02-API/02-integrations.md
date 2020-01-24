@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Integrations & Libraries ",
     "description":"A quick look at our various API integrations.",
-    "tag":["API", "Integrations", "Libraries"]
+    "tag":["API", "Integrations", "Libraries"],
+    "seo-title": "Cloud Integration Tools - Packet Developer Docss",
+    "seo-description": "A quick look at our various API integrations.",
+    "og-title": "Integrations & Libraries",
+    "og-description": "A quick look at our various API integrations."
 }
-</meta>-->
+</meta> -->
 
 While you can curl our API directly, most users leverage an API library in a language of their choice. 
 

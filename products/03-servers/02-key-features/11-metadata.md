@@ -1,12 +1,17 @@
-<!--
-<meta>
+<!-- <meta>
 {
-    "title":"Metadata",
+   "title":"Metadata",
     "description":"Understanding and leveraging Packet’s metadata service.",
-    "tag":["Metadata"]
+    "tag":["Metadata"],
+    "seo-title": "Metadata Servers - Packet Developer Docs ",
+    "seo-description": "Understanding and leveraging Packet’s metadata service.",
+    "og-title": "User Data",
+    "og-description": "Understanding and leveraging Packet’s metadata service."
 }
-</meta>
--->
+</meta> -->
+
+
+
 Metadata is a service offered on every Packet server instance that allows it to access and share various data about itself. This kind of data includes hostname, instance ID, ssh keys, tags, assigned IPs, etc.
 
 This information is especially useful for automation, but of course can be accessed manually only within the server instance.

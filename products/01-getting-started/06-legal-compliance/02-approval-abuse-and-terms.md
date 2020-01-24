@@ -1,10 +1,16 @@
-<!--<meta>
+<!-- <meta>
 {
-    "title":"Approval, Abuse and Terms",
+    "title":"Approval, Abuse & Terms",
     "description":"Learn more about Approval, Abuse and Terms at Packet",
-    "tag":["Approval, Abuse and Terms", "Accounts"]
+    "tag":["Approval, Abuse and Terms", "Accounts"],
+    "seo-title": "Approval, Abuse and Terms - Packet Developer Docs",
+    "seo-description": "Learn more about Approval, Abuse and Terms at Packet",
+    "og-title": "Approval, Abuse & Terms",
+    "og-description": "Learn more about Packet and get started!"
 }
-</meta>-->
+</meta> -->
+
+Approval, Abuse and Terms - Packet Developer Docs
 
 When signing up for a Packet account you may receive a notification informing you that your account has been flagged for manual review. Please note: this is in no way a judgment of your character, and the decision to flag an account is made by an algorithm, not a Packet employee.
 

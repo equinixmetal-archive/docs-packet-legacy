@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Overview",
     "description":"Learn more about compute classes and custom configurations.",
-    "tag":["Device Types", "Devices", "Compute Classes", "Custom Configurations"]
+    "tag":["Device Types", "Devices", "Compute Classes", "Custom Configurations"],
+    "seo-title": "Bare Metal Cloud Servers Overview - Packet Developer Docs",
+    "seo-description": "Learn more about compute classes and custom configurations.",
+    "og-title": "Overview",
+    "og-description": "Learn more about compute classes and custom configurations."
 }
-</meta>-->
+</meta> -->
 
 
 Classes are groupings derived from common use cases.  If you're an AWS user, this will seem pretty familiar.  Packet organizes servers into the following classes:

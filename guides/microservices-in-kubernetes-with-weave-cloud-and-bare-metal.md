@@ -1,15 +1,15 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Explore Weave and Kubernetes",
     "description":"Use Weave Cloud to explore and troubleshoot a microservices app running in Kubernetes on Packet’s bare metal cloud.",
-    "author":"Ronggur Habibun",
-    "github":"ronggur",
-    "email":"ronggur.mh@gmail.com",
     "tag":["Weave Cloud"]
+    "seo-title": "Explore Weave and Kubernetes on Bare Metal  - Packet Technical Guides",
+    "seo-description": "Use Weave Cloud to explore and troubleshoot a microservices app running in Kubernetes on Packet’s bare metal cloud.",
+    "og-title": "Explore Weave and Kubernetes",
+    "og-description":"Use Weave Cloud to explore and troubleshoot a microservices app running in Kubernetes on Packet’s bare metal cloud."
 }
-</meta>
--->
+</meta> -->
+
 
 `Note: This post was prepared by our friends at [Weaveworks](https://weave.works).`
 

@@ -1,15 +1,14 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Ditch Cobbler for RackN",
     "description":"Ditch Cobbler for RackN on Packet",
-    "author":"Zalkar Ziiaidin",
-    "github":"zalkar-z",
-    "email":"zak@packet.com",
-    "tag":["Ditch Cobbler", "RackN"]
+     "tag":["Ditch Cobbler", "RackN"],
+    "seo-title": "Ditch Cobbler for RackN - Packet Technical Guides",
+    "seo-description": "Ditch Cobbler for RackN on Packet",
+    "og-title": ""Ditch Cobbler for RackN",
+    "og-description": "Ditch Cobbler for RackN on Packet"
 }
-</meta>
--->
+</meta> -->
 
 Ditch Cobbler for RackN
 
