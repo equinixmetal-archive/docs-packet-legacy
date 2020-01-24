@@ -41,4 +41,5 @@ If block storage doesn't meet your needs, we offer two other options:
 | Source  | Content |
 | ------------- | ------------- |
 | [Elastic Block Storage Guide](https://www.packet.com/resources/guides/elastic-block-storage/) | How to setup, create, attach storage volume |
+| [Elastic Block Storage on Windows](https://www.packet.com/resources/guides/elastic-block-storage-windows-server/) | How to setup Elastic Block Storage on a Windows Instance | 
 | [Extending Block Storage Volume Guide](https://www.packet.com/resources/guides/extending-blockstorage/) | How to extend existing storage volume|
