@@ -17,4 +17,3 @@ To support this, Packet works with an expanding group of partners (including Pur
 
 Customers can bring their own appliance (e.g. purchase directly from a storage partner) or consolidate these into a single Packet invoice.  
 
-For details, please reach out to sales@packet.com to schedule a conversation.

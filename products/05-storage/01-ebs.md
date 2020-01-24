@@ -39,13 +39,4 @@ If block storage doesn't meet your needs, we offer two other options:
 
 * Various local disk options (SSD's and NVMe Flash) on each server config.
 
-* The s1.large storage-focused server includes 24 TB of SATA w/ SSD's for cache.<br><br>
-
-### Additional Resources
-
-<br>
-
-| Source  | Content |
-| ------------- | ------------- |
-| [Elastic Block Storage Guide](https://www.packet.com/resources/guides/elastic-block-storage/) | How to setup, create, attach storage volume |
-| [Extending Block Storage Volume Guide](https://www.packet.com/resources/guides/extending-blockstorage/) | How to extend existing storage volume|
+* The s1.large storage-focused server includes 24 TB of SATA w/ SSD's for cache.
