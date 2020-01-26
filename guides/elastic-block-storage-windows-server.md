@@ -29,7 +29,7 @@ Please note that the helper script does not connect your volumes in a persistent
 
 The helper script also does not partition, format, and mount your volumes so you will have to do that process manually. This process is covered at the end of this guide under the "Partitioning and Mounting the Volume" section.
 
-## Enabling iSCSI support on Windows Server
+## Enabling iSCSI and Multipath (MPIO) support on Windows Server
 
 The first thing we will need to do is enable Multipath (MPIO) support on Windows. To do this, open the Server Manager app (it opens automatically when you connect to your instance with RDP), and on top right corner click “Manage”, then select “Add Roles and Features”.
 
