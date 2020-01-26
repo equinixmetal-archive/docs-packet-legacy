@@ -21,6 +21,14 @@ In order to add extra storage to your Windows Server instance, you will need to 
 
 You will need to use RDP to remotely access the windows server instance by adding a connection with your server’s management IPv4 address. The default login will be the admin user and the temporary password provided by Packet. Please note that we don’t show the password on the portal after 24 hours since the instance was created so make sure to change the admin password once you have access to the server instance.
 
+## Automated Method with Interactive Helper Script
+
+For those who prefer a more automated method (faster and easier) of connecting your block storage volumes to your windows server instance, we have created an interactive helper script for connecting / disconnecting your volumes [here](https://github.com/enkelprifti98/packet-block-storage-windows).
+
+Please note that the helper script does not connect your volumes in a persistent way, meaning that your connected volumes will disconnect if you reboot your server instance so you will have to run the attach script again to reconnect your volumes after a reboot.
+
+The helper script also does not partition, format, and mount your volumes so you will have to do that process manually. This process is covered at the end of this guide under the "Partitioning and Mounting the Volume" section.
+
 ## Enabling iSCSI support on Windows Server
 
 The first thing we will need to do is enable Multipath (MPIO) support on Windows. To do this, open the Server Manager app (it opens automatically when you connect to your instance with RDP), and on top right corner click “Manage”, then select “Add Roles and Features”.
