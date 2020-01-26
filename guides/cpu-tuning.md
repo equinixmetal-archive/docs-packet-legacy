@@ -1,12 +1,16 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"CPU Tuning",
-    "description":"Tips for fine tuning the CPU to improve performance.",
-    "tag":["CPU", "Tuning", "Processor", "Performance"]
+    "description":"Tips for fine tuning the CPU to improve performance",
+    "tag":["CPU", "Tuning", "Processor", "Performance"],
+    "seo-title": "Introduction to CPU Tuning - Packet Technical Guides",
+    "seo-description": "Tips for fine tuning the CPU to improve performance",
+    "og-title": "CPU Tuning",
+    "og-description": "Tips for fine tuning the CPU to improve performance"
 }
-</meta>
--->
+</meta> -->
+
+
 Packet is committed to help our users get the most out of their infrastructure.  Unlike with virtualized clouds (AWS, GCE, etc) with a dedicated server at Packet you can really dive into the guts of server tuning. Each workload is different, so our recommendation is to take incremental steps and measure your progress.
 
 Without further ado, here are some tips and tricks to help you work with common CPU settings for potential improvements on some of our x86 server types:

@@ -1,15 +1,15 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Kubernetes CCM for Packet",
     "description":"Kubernetes CCM (Cloud Controller Manager) for Packet",
-    "author":"Enkel Prifti",
-    "github":"enkelprifti98",
-    "email":"enkel@packet.com",
-    "tag":["Kubernetes", "CCM", "Cloud Controller Manager"]
+    "tag":["Kubernetes", "CCM", "Cloud Controller Manager"],
+    "seo-title": "Kubernetes CCM for Packet - Packet Technical Guides",
+    "seo-description": "Kubernetes CCM (Cloud Controller Manager) for Packet",
+    "og-title": "Kubeless on Packet",
+    "og-description": "Kubernetes CCM (Cloud Controller Manager) for Packet"
 }
-</meta>
--->
+</meta> -->
+
 
 # Kubernetes CCM (Cloud Controller Manager) for Packet
 

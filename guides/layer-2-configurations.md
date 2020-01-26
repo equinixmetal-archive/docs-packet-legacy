@@ -1,15 +1,15 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Layer 2 Configurations",
     "description":"How to configure some possible layer 2 environments.",
-    "author":"Enkel Prifti",
-    "github":"enkelprifti98",
-    "email":"zak@packet.com",
     "tag":["layer 2", "networking", "advanced"]
+    "seo-title": "Layer 2 Configurations - Packet Technical Guides",
+    "seo-description": "How to configure some possible layer 2 environments.",
+    "og-title": "Layer 2 Configurations",
+    "og-description":" How to configure some possible layer 2 environments."
 }
-</meta>
--->
+</meta> -->
+
 
 # Creating private networking environments on Packet
 

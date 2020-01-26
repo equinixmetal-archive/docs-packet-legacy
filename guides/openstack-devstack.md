@@ -1,15 +1,14 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"OpenStack DevStack",
     "description":"Testing OpenStack using DevStack",
-    "author":"Ronggur Habibun",
-    "github":"ronggur",
-    "email":"ronggur.mh@gmail.com",
-    "tag":["DevStack", "OpenStack"]
+    "tag":["DevStack", "OpenStack"],
+    "seo-title": "NVMe Flash Drives - Packet Technical Guides",
+    "seo-description": "OpenStack DevStack - Packet Technical Guides",
+    "og-title": "OpenStack DevStack",
+    "og-description":"Testing OpenStack using DevStack"
 }
-</meta>
--->
+</meta> -->
 
 With some technical skills, [DevStack](https://docs.openstack.org/devstack/latest/) is a great option to install and test OpenStack on your laptop or on a Packet Server. DevStack is ideal for users who want to see what the Dashboard looks like from an admin or user perspective, and OpenStack contributors wanting to test against a complete local environment.
 

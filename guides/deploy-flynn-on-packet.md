@@ -1,15 +1,15 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Deploy Flynn on Packet",
     "description":"Deploy Flynn on Packet",
-    "author":"Zalkar Ziiaidin",
-    "github":"zalkar-z",
-    "email":"zak@packet.com",
-    "tag":["Flynn"]
+    "tag":["Flynn"],
+    "seo-title": "Deploy Flynn on Bare Metal - Packet Technical Guides",
+    "seo-description": "Deploy Flynn on Packet",
+    "og-title": "Deploy Flynn on Packet",
+    "og-description": "Deploy Flynn on Packet"
 }
-</meta>
--->
+</meta> -->
+
 
 Deploy Flynn on Packet
 

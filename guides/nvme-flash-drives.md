@@ -1,12 +1,15 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"NVME Flash Drives",
     "description":"How to Setup NVME flash drives.",
     "tag":["NVME", "flash", "drive"]
+    "seo-title": "NVMe Flash Drives - Packet Technical Guides",
+    "seo-description": "How to Setup NVME flash drives.",
+    "og-title": "NVME Flash Drives",
+    "og-description":"How to Setup NVME flash drives."
 }
-</meta>
--->
+</meta> -->
+
 Packet's c1.xlarge.x86 server configuration includes 2 x 800GB NVMe drives, which are PCI-e attached flash cards.
 
 With this new drive type, some of your common Linux disk utilities may have trouble recognizing the cards. Specifically, fdisk has limitations around GPT and doesn't show the latest NVMe drives. As such, Packet recommends using GNU parted to partition the NVMe drives.

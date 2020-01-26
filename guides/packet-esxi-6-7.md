@@ -1,15 +1,14 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"VMware ESXi 6.7 on Packet",
     "description":"Deploy VMware ESXi 6.7 on Packet Bare Metal Servers",
-    "author":"Enkel Prifti",
-    "github":"enkelprifti98",
-    "email":"enkel@packet.com",
-    "tag":["VMware", "ESXi", "Virtualization"]
+    "tag":["DevStack", "OpenStack"],
+    "seo-title": "VMware ESXi 6.7 on Bare Metal - Packet Technical Guides",
+    "seo-description": "Deploy VMware ESXi 6.7 on Packet Bare Metal Servers",
+    "og-title": "VMware ESXi 6.7 on Packet",
+    "og-description":"Deploy VMware ESXi 6.7 on Packet Bare Metal Servers"
 }
-</meta>
--->
+</meta> -->
 
 ### VMware ESXi 6.7 on Packet Bare Metal Servers
 

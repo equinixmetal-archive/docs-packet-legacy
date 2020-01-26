@@ -1,21 +1,17 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Stress Testing Big Data Setups",
     "description":"Stress Testing Big Data Setups",
-    "author":"Zalkar Ziiaidin",
-    "github":"zalkar-z",
-    "email":"zak@packet.com",
-    "tag":["Stress Testing", "Big Data"]
+    "tag":["Stress Testing", "Big Data"],
+    "seo-title": Stress Testing Big Data Setups - Packet Technical Guides",
+    "seo-description": "Stress Testing Big Data Setups",
+    "og-title": "Stress Testing Big Data Setups",
+    "og-description":"Stress Testing Big Data Setups"
 }
-</meta>
--->
-
-Stress Testing Big Data Setups
+</meta> -->
 
 _Note: This post was prepared by our friends at [MityLytics](https://mitylytics.com/)._
 
-# Introduction
 
 MityLytics software helps customers plan, build and operate high-performance data pipelines. It keeps data pipelines running at peak performance so customers can deploy their data-driven revenue generating applications faster and maintain uptime at higher levels than before.
 

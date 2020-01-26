@@ -1,17 +1,14 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Proxmox",
     "description":"Deploying Proxmox on Packet",
-    "author":"Mo",
-    "github":"usrdev",
-    "email":"mo@usr.dev",
-    "tag":["VMs", "Proxmox", "Virtualization"]
+    "tag":["VMs", "Proxmox", "Virtualization"],
+    "seo-title": "Install Proxmox on Bare Metal - Packet Technical Guides",
+    "seo-description": "Deploying Proxmox on Packet",
+    "og-title": "Proxmox",
+    "og-description":"Deploying Proxmox on Packet"
 }
-</meta>
--->
-
-## Proxmox Setup Guide
+</meta> -->
 
 [Proxmox](https://www.proxmox.com/en/) is a free ([community paid tier for support](https://www.proxmox.com/en/proxmox-mail-gateway/pricing)) hypervisor. While Proxmox is not an officially supported Packet OS, this guide will help you get it up and running.
 

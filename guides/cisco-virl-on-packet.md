@@ -1,17 +1,14 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Cisco VIRL on Packet",
     "description":"Using Cisco VIRL on Packet",
-    "author":"Zalkar Ziiaidin",
-    "github":"zalkar-z",
-    "email":"zak@packet.com",
-    "tag":["Cisco", "VIRL"]
+    "tag":["Cisco", "VIRL"],
+    "seo-title": "Cisco VIRL on Bare Metal - Packet Technical Guides",
+    "seo-description": "Using Cisco VIRL on Packet",
+    "og-title": "BGP Global Communities",
+    "og-description": "Using Cisco VIRL on Packet"
 }
-</meta>
--->
-
-Cisco VIRL on Packet
+</meta> -->
 
 # What Is Cisco VIRL?
 

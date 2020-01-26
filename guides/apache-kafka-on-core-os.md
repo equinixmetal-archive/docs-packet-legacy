@@ -1,15 +1,14 @@
-<!--
-<meta>
+<!-- <meta>
 {
     "title":"Apache Kafka on CoreOS",
     "description":"Setup Kafka cluster on a single Packet bare-metal machine",
-    "author":"Zalkar Ziiaidin",
-    "github":"zalkar-z",
-    "email":"zak@packet.com",
-    "tag":["apache", "kafka", "coreOS"]
+    "tag":["AMD", "SEV"],
+    "seo-title": "Apache Kafka on CoreOS - Packet Technical Guides",
+    "seo-description": "Setup Kafka cluster on a single Packet bare-metal machine",
+    "og-title": "Apache Kafka on CoreOS",
+    "og-description": "Setup Kafka cluster on a single Packet bare-metal machine"
 }
-</meta>
--->
+</meta> -->
 
 Apache Kafka on CoreOS
 
