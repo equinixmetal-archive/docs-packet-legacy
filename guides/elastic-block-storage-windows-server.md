@@ -13,7 +13,7 @@
 
 # Elastic Block Storage on Windows Server
 
-## Prerequisites
+## Creating a Block Storage Volume
 
 In order to add extra storage to your Windows Server instance, you will need to create a block storage volume in your project. You can do so by going to the Storage tab on the top of the project overview page.
 
