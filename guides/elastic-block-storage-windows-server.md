@@ -25,7 +25,7 @@ You will need to use RDP to remotely access the windows server instance by addin
 
 For those who prefer a more automated method (faster and easier) of connecting your block storage volumes to your windows server instance, we have created an interactive helper script for connecting / disconnecting your volumes [here](https://github.com/enkelprifti98/packet-block-storage-windows).
 
-Please note that the helper script does not connect your volumes in a persistent way, meaning that your connected volumes will disconnect if you reboot your server instance so you will have to run the attach script again to reconnect your volumes after a reboot.
+Please note that the helper script does not connect your volumes in a persistent way, meaning that your connected volumes will disconnect if you reboot your server instance so you will have to run the attach script again to reconnect your volumes after a reboot. If you want your block storage volumes to be persistent across reboots, you can follow the rest of this manual GUI guide.
 
 The helper script also does not partition, format, and mount your volumes so you will have to do that process manually. This process is covered at the end of this guide under the "Partitioning and Mounting the Volume" section.
 
