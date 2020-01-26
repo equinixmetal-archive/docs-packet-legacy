@@ -159,6 +159,8 @@ If you want to delete or move the volume to another server, you will need to dis
 
 To disconnect the volume from Windows, go back to the Disk Management application, right click the volume and click "Offline". Then, open the Server Manager app, click on Tools, open iSCSI Initiator. Under the discovered targets section, select the target volume, then click the "Diconnect" button. It will prompt you to disconnect from all sessions (2 sessions) and click "Yes".
 
+You can also cleanup the target portals under the discovery tab as well as the persistent targets under the Favorite Targets tab but this is not necessary for a complete volume detachment though I recommend doing it if you plan to continue using the server instance.
+
 Now you will neeed to detach the volume from the server in the Packet portal by going to the instance overview page, the storage section on the left hand side, and click the "Detach" button on the volume.
 
 If you would like to delete the volume, you can delete it from the Storage tab at the top of the project overview page. If you would like to attach the volume to another server instance, you will need to follow the same configuration process that we did earlier.
