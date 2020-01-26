@@ -51,6 +51,8 @@ Please note that a block storage volume is meant to be used by a single server i
 
 You will need to use RDP to remotely access the windows server instance by adding a connection with your server’s management IPv4 address. The default login will be the admin user and the temporary password provided by Packet. Please note that we don’t show the password on the portal after 24 hours since the instance was created so make sure to change the admin password once you have access to the server instance.
 
+**Note:** This guide and the helper script have been tested on Windows Server 2012 R2 and Windows Server 2016 but it should work on any other Windows version.
+
 ## Automated Method with Interactive Helper Script
 
 The rest of this guide will show the manual iSCSI configuration / connection process through the GUI. For those who prefer a more automated method (faster and easier) of connecting your block storage volumes to your windows server instance, we have created an interactive helper script for connecting / disconnecting your volumes [here](https://github.com/enkelprifti98/packet-block-storage-windows).
