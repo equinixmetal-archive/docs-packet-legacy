@@ -17,11 +17,11 @@
 
 In order to add extra storage to your Windows Server instance, you will need to create a block storage volume in your project. You can do so by going to the Storage tab on the top of the project overview page.
 
-![elastic-block-storage](/images/elastic-block-storage/storage1.png)
+![elastic-block-storage](/images/elastic-block-storage-windows-server/storage1.png)
 
 Click on "New Storage Volume", give the volume a description, choose the size of the volume in GB (100 GB is the minimum size), select the performance tier and location. You also have the option to configure snapshots. Once you've entered all of the information, click Deploy to create your block storage volumes.
 
-![create-block-storage](/images/elastic-block-storage/storage2.png)
+![create-block-storage](/images/elastic-block-storage-windows-server/storage2.png)
 
 ### Snapshots
 
@@ -43,7 +43,7 @@ After your volume is created, you need to route it to the server you would like 
 
 Once attached to your server, you will see the volume name, size & where it is located:
 
-![storage-attach-ui](/images/elastic-block-storage/storage-attach-ui.png)
+![storage-attach-ui](/images/elastic-block-storage-windows-server/storage-attach-ui.png)
 
 Please note that a block storage volume is meant to be used by a single server instance at a time, you cannot share the volume with multiple server instances at once. You can however attach multiple block storage volumes to the same server instance. At this point, we’re done with the Packet portal and can start the configuration process on the server instance.
 
