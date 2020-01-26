@@ -15,7 +15,37 @@
 
 ## Prerequisites
 
-In order to add extra storage to your Windows Server instance, you will need to create a block storage volume in your project. You can do so by going to the Storage tab on the top of the project overview page. Please note that a block storage volume is meant to be used by a single server instance at a time, you cannot share the volume with multiple server instances at once. Next, you will need to attach the volume to the server in the Packet portal. To do this, go to the specific server instance you would like to attach the volume to. Then on the left sidebar, click on the Storage tab and and click the Attach volume button on the right side. From there, you can select the volume you have created and attach it to the server instance. At this point, we’re done with the Packet portal and can start the configuration process on the server instance.
+In order to add extra storage to your Windows Server instance, you will need to create a block storage volume in your project. You can do so by going to the Storage tab on the top of the project overview page.
+
+![elastic-block-storage](/images/elastic-block-storage/storage1.png)
+
+Click on "New Storage Volume", give the volume a description, choose the size of the volume in GB (100 GB is the minimum size), select the performance tier and location. You also have the option to configure snapshots. Once you've entered all of the information, click Deploy to create your block storage volumes.
+
+![create-block-storage](/images/elastic-block-storage/storage2.png)
+
+### Snapshots
+
+A snapshot is a differential copy of your volume made at a specific moment in time. If you have a 500GB volume, but only 250 GB of data on it, your snapshot is only 250 GB. With a snapshots, you are only billed for the changes to the original block device from the time the snapshot is made — as such, a policy of 5 snapshots may end up being only a small amount of storage if your rate of change on the device is low. Billing for all snapshots is at our lower $0.07/GB per month tier.
+
+### Performance Tiers
+
+When you need persistent storage, with built-in replication and snapshots, our block storage product is a very useful tool.  We offer two performance tiers:
+
+* **Standard Tier:**  ($0.000104/GB per hour) - With 500 IOPS per volume this is good for backups, dev/test, and medium use datasets.
+
+* **Performance Tier:** ($0.000223/GB per hour) - With 15,000 IOPS per volume this is targeted at higher I/O heavy workloads.
+
+
+### Attach / Detach the Volume to the Server
+
+After your volume is created, you need to route it to the server you would like to mount it on.  To do so, go to the server detail page that you'd like to connect the block device to and click on the Storage submenu on the left.  Select your volume from the drop-down box and click 'Attach'.  This routes the volume to your block device and allows you to mount it from your local server via iSCSI.
+
+
+Once attached to your server, you will see the volume name, size & where it is located:
+
+![storage-attach-ui](/images/elastic-block-storage/storage-attach-ui.png)
+
+Please note that a block storage volume is meant to be used by a single server instance at a time, you cannot share the volume with multiple server instances at once. You can however attach multiple block storage volumes to the same server instance. At this point, we’re done with the Packet portal and can start the configuration process on the server instance.
 
 ## Accessing the server instance
 
