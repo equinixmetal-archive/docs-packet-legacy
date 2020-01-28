@@ -2,7 +2,7 @@
 {
     "title":"VMware ESXi 6.7 on Packet",
     "description":"Deploy VMware ESXi 6.7 on Packet Bare Metal Servers",
-    "tag":["DevStack", "OpenStack"],
+    "tag":["VMWare", "ESXi", "VM", "virtualization"],
     "seo-title": "VMware ESXi 6.7 on Bare Metal - Packet Technical Guides",
     "seo-description": "Deploy VMware ESXi 6.7 on Packet Bare Metal Servers",
     "og-title": "VMware ESXi 6.7 on Packet",
