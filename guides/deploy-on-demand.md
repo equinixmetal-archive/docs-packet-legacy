@@ -37,7 +37,7 @@ If you don’t have an [SSH Key](https://www.packet.com/developers/docs/servers/
 #### Optional Settings
 At this point, you are ready to deploy a server, but if you'd like to make adjustments to quantity, [user data](https://www.packet.com/developers/docs/servers/key-features/user-data/), [IPs](https://www.packet.com/developers/docs/servers/key-features/custom-subnet-size/) or [SSH access](https://www.packet.com/developers/docs/servers/key-features/ssh-keys/), you can do that at this point. 
 
-If you have chosen Custom iPXE, you can specify a bootup URL.
+If you have chosen [Custom iPXE](https://www.packet.com/developers/docs/servers/operating-systems/custom-ipxe/), you can specify a bootup URL.
 ![pxe](/images/ondemand-deploy-guide/customipxe.png)
 
 If you want to deploy more than 1 server, you can adjust it under Select Number and Name Your Server(s). You can change the prefilled hostnames if you’d like. 
