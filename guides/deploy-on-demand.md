@@ -12,8 +12,6 @@
 
 The following guide will assist in navigiating through deploying a device on demand.
 
-
-### The Basics
 Navigate to the Servers page in the customer portal, then click `+ New Server.` Next, choose `On Demand.`
 
 First, select a datacenter. Our core datacenters are our biggest and have the largest inventory available. If you’d like to see all locations only in North America, or Asia Pacific, use the tabs at the top to narrow your options. If you want to browse everything, you can choose `All.`
@@ -31,12 +29,12 @@ Choose an Operating System. Our most popular operating systems are featured by d
 
 Once you’ve selected a datacenter, server, and operating system, you are ready to deploy! You may want to adjust the amount of servers or customize optional settings.
 
-### Important Note for New Users
-If you don’t have an SSH Key, you will be prompted to add one: you can’t deploy without it!
+** ⚠️ Important Note for New Users**
+If you don’t have an [SSH Key](https://www.packet.com/developers/docs/servers/key-features/ssh-keys/), you will be prompted to add one: you can’t deploy without it!
 
 ![pxe](/images/ondemand-deploy-guide/create-ssh-key.png)
 
-###Optional Settings
+#### Optional Settings
 At this point, you are ready to deploy a server, but if you'd like to make adjustments to quantity, user data, IPs or SSH access, you can do that at this point. 
 
 If you have chosen Custom iPXE, you can specify a bootup URL.
@@ -56,7 +54,7 @@ Configure IPs. By default, a Packet server deploys with 1 public IPv4, 1 private
 
 ![ips](/images/ondemand-deploy-guide/configure-ips.png)
 
-Customize SSH Access. By default, Packet deploys with all available SSH keys, but if you’d like to adjust access, you can do that here. You must deploy with at least 1 SSH key.
+Customize SSH Access. By default, Packet deploys with all available SSH keys, but if you’d like to adjust access, you can do that here. You must deploy with at least 1 SSH key. To learn how to create/add SSH Keys please see [this doc](https://www.packet.com/developers/docs/servers/key-features/ssh-keys/). 
 
 ![sleect-ssh-keys](/images/ondemand-deploy-guide/select-ssh-keys.png)
 
