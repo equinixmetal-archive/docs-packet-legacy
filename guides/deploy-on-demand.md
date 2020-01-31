@@ -13,6 +13,7 @@
 The following guide will assist in navigiating through deploying a device on demand.
 
 
+###The Basics
 Navigate to the Servers page in the customer portal, then click `+ New Server.` Next, choose `On Demand.`
 
 First, select a datacenter. Our core datacenters are our biggest and have the largest inventory available. If you’d like to see all locations only in North America, or Asia Pacific, use the tabs at the top to narrow your options. If you want to browse everything, you can choose `All.`
@@ -30,19 +31,23 @@ Choose an Operating System. Our most popular operating systems are featured by d
 
 Once you’ve selected a datacenter, server, and operating system, you are ready to deploy! You may want to adjust the amount of servers or customize optional settings.
 
+###Important Note for New Users
 If you don’t have an SSH Key, you will be prompted to add one: you can’t deploy without it!
 
 ![pxe](/images/ondemand-deploy-guide/create-ssh-key.png)
 
+###Optional Settings
+At this point, you are ready to deploy a server, but if you'd like to make adjustments to quantity, user data, IPs or SSH access, you can do that at this point. 
 
 If you have chosen Custom iPXE, you can specify a bootup URL.
 ![pxe](/images/ondemand-deploy-guide/customipxe.png)
-
 
 If you want to deploy more than 1 server, you can adjust it under Select Number and Name Your Server(s). You can change the prefilled hostnames if you’d like. 
 ![amount-of-servers](/images/ondemand-deploy-guide/amount-of-servers.png)
 **Please Note** You cannot use underscores in your hostname.
 
+
+Packet offers the ability to make adjustments to default settings at the time of deployment.
 
 Add User Data. If there’s a script you’d like to run after the server is deployed, you can add that here.
 ![user-data](/images/ondemand-deploy-guide/optional-settings.png)
@@ -55,5 +60,5 @@ Customize SSH Access. By default, Packet deploys with all available SSH keys, bu
 
 ![sleect-ssh-keys](/images/ondemand-deploy-guide/select-ssh-keys.png)
 
-
-Once you’ve made it to the Summary section, you’re ready to go! Deploy your server and get ready to experience the bare metal. 
+###Now, you're ready to go!
+Once you’ve made it to the Summary section, you’re ready to go! Deploy your server and get ready to experience bare metal. 
