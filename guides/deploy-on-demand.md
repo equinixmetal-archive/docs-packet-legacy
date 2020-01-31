@@ -29,7 +29,7 @@ Choose an Operating System. Our most popular operating systems are featured by d
 
 Once you’ve selected a datacenter, server, and operating system, you are ready to deploy! You may want to adjust the amount of servers or customize optional settings.
 
-**⚠️Important Note for New Users**
+**⚠️Please Note:**
 If you don’t have an [SSH Key](https://www.packet.com/developers/docs/servers/key-features/ssh-keys/), you will be prompted to add one: you can’t deploy without it!
 
 ![pxe](/images/ondemand-deploy-guide/create-ssh-key.png)
