@@ -1,7 +1,7 @@
 <!-- <meta>
 {
   "title":"Reserved Hardware",
-  "description":"Deploy from a pool of reserved hardware available only to you!"
+  "description":"Deploy from a pool of reserved hardware available only to you!",
   "tag":["reserve", "Deploy"],
   "seo-title": "Reserved Cloud Servers - Packet Developer Docs",
   "seo-description": "Deploy from a pool of reserved hardware available only to you!",
