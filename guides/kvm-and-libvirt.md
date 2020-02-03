@@ -106,10 +106,17 @@ service libvirt-bin restart
 
 Now if you look at your interfaces you'll see a new interface named vmbr0 with our 139.178.66.145/297 IP.
 
-Lastly, don't forget to enable IPv4 packet forwarding!
+Lastly, don't forget to enable IPv4 and IPv6 packet forwarding!
 
 ```
 sed -i "/net.ipv4.ip_forward=1/ s/# *//" /etc/sysctl.conf
+sed -i "/net.ipv6.conf.all.forwarding=1/ s/# *//" /etc/sysctl.conf
+```
+
+Reload sysctl for the packet forwarding change to be applied.
+
+```
+sysctl -p
 ```
 
 ### Step 3: Install a Virtual Guest Machine
