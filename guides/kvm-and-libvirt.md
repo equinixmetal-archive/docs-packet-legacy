@@ -56,12 +56,18 @@ We'll be using the _[net-define](https://libvirt.org/sources/virshcmdref/html/se
 
 The configuration needs to be in XML; for this example, we're creating a .xml file called _network.xml_ in our root directory. The order in which we add our IPs matters! So have a look at the screenshot above to see which IP goes where in the configuration.
 
-For subnets of size `/30` or greater, there are 3 IPs that cannot be used for your VMs, the network address (first IP), the gateway (this is the host bridge), and the broadcast address (last IP). So if we were using the subnet `139.178.66.144/29` which has 8 total IPs, the configuration for the `network.xml` file would be as follows.
+For subnets of size `/30` or greater, there are 3 IPs that cannot be used for your VMs, the network address (first IP), the gateway (this is the host bridge), and the broadcast address (last IP). So if we were using the subnet `139.178.66.144/29` which has 8 total IPs, the IP allocation would be as follows.
 
 139.178.66.144     - Network address
+
 139.178.66.145     - Gateway for the VMs / Host bridge address
+
 139.178.66.146-150 - Range of usable IPs for VMs
+
 139.178.66.151     - Broadcast address
+
+
+Run the following command to create the `network.xml` file. You will need to adjust the IPs for this to fit your subnet.
 
 ```
 echo '<network>
@@ -77,7 +83,7 @@ echo '<network>
 ```
 
 
-These 2 commands will define, create, and start our new network
+The following commands will define, create, and start our new network.
 
 ```
 virsh net-define /root/network.xml
@@ -85,7 +91,7 @@ virsh net-autostart vmbr0
 virsh net-start vmbr0
 ```
 
-These 2 commands will delete the default private network, this is not required but you can if you prefer to delete it.
+These next commands will delete the default private network, this is not required but you can if you prefer to delete it.
 
 ```
 virsh net-destroy default
