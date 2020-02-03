@@ -287,21 +287,6 @@ Available in SJC
 
   
 
-**DECIX-SJC**
-
-Available in SJC
-
-  
-| Community | Function |
-|--|--|
-| 54825:860 | Advertise to DECIX-SJC|
-| 54825:861 | Prepend one time|
-| 54825:862 | Prepend two times|
-| 54825:863 | Prepend three times|
-
-  
-  
-
 **EQIX-NRT**
 
 Available in NRT1
@@ -365,8 +350,6 @@ Available in DFW
 Available in SYD2
 
   
-
-
 | Community | Function |
 |--|--|
 | 54825:910 | Advertise to EQIX-SYD|
@@ -374,7 +357,31 @@ Available in SYD2
 | 54825:912 | Prepend two times|
 | 54825:913 | Prepend three times|
 
+
+**EQIX-SIN**
+
+Available in SIN3
+
   
+| Community | Function |
+|--|--|
+| 54825:920 | Advertise to EQIX-SIN|
+| 54825:921 | Prepend one time|
+| 54825:922 | Prepend two times|
+| 54825:923 | Prepend three times|
+
+
+**ANY2 LA**
+
+Available in LAX2
+
+  
+| Community | Function |
+|--|--|
+| 54825:930 | Advertise to ANY2 LA|
+| 54825:931 | Prepend one time|
+| 54825:932 | Prepend two times|
+| 54825:933 | Prepend three times|
   
 
 ## Additional communities for Internet Exchanges only
