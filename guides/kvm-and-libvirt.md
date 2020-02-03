@@ -50,7 +50,7 @@ With either configuration, you'll need to create a bridge network. By default, l
 
 Go ahead and assign all the IPs to the server that you're on.
 
-![ips](/images/kvm-and-libvirt/ips.png)
+![ips](/images/kvm-and-libvirt/attach-elastic-IP-subnet.png)
 
 We'll be using the _[net-define](https://libvirt.org/sources/virshcmdref/html/sect-net-define.html)_ command to configure the virtual machine.
 
