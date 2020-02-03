@@ -113,7 +113,7 @@ sed -i "/net.ipv4.ip_forward=1/ s/# *//" /etc/sysctl.conf
 sed -i "/net.ipv6.conf.all.forwarding=1/ s/# *//" /etc/sysctl.conf
 ```
 
-Reload sysctl for the packet forwarding change to be applied.
+Reload sysctl for the packet forwarding changes to be applied.
 
 ```
 sysctl -p
