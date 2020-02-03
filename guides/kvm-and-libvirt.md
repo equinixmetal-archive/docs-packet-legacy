@@ -55,39 +55,61 @@ Go ahead and assign all the IPs to the server that you're on.
 We'll be using the _[net-define](https://libvirt.org/sources/virshcmdref/html/sect-net-define.html)_ command to configure the virtual machine.
 
 The configuration needs to be in XML; for this example, we're creating a .xml file called _network.xml_ in our root directory. The order in which we add our IPs matters! So have a look at the screenshot above to see which IP goes where in the configuration.
+
+For subnets of size `/30` or greater, there are 3 IPs that cannot be used for your VMs, the network address (first IP), the gateway (this is the host bridge), and the broadcast address (last IP). So if we were using the subnet `139.178.66.144/29` which has 8 total IPs, the configuration for the `network.xml` file would be as follows.
+
+139.178.66.144     - Network address
+139.178.66.145     - Gateway for the VMs / Host bridge address
+139.178.66.146-150 - Range of usable IPs for VMs
+139.178.66.151     - Broadcast address
+
 ```
 echo '<network>
 	<name>vmbr0</name>
 	<forward mode="route"/>
 	<bridge name="vmbr0" stp="on" delay="0"/>
-	<ip address="147.75.64.76" netmask="255.255.255.252">
+	<ip address="139.178.66.145" netmask="255.255.255.248">
 		<dhcp>
-			<range start="147.75.64.77" end="147.75.64.78"/>
+			<range start="139.178.66.146" end="139.178.66.150"/>
 		</dhcp>
 	</ip>
 </network>' >> network.xml
+```
 
-# These 2 commands will define and create our new network
+
+These 2 commands will define, create, and start our new network
+
+```
 virsh net-define /root/network.xml
 virsh net-autostart vmbr0
+virsh net-start vmbr0
+```
 
-# These 2 commands will delete the default private network
+These 2 commands will delete the default private network, this is not required but you can if you prefer to delete it.
+
+```
 virsh net-destroy default
 virsh net-undefine default
 ```
-Lastly, restart the _libvirt-bin_ daemon.
-```
-libvirt-bin restart    
-```
-Now if you look at your interfaces you'll see a new interface named vmbr0 with our 147.75.64.77 IP.
 
-Don't forget to enable IPv4 packet forwarding!
+Lastly, restart the _libvirt-bin_ daemon.
+
+```
+service libvirt-bin restart    
+```
+
+Now if you look at your interfaces you'll see a new interface named vmbr0 with our 139.178.66.145/297 IP.
+
+Lastly, don't forget to enable IPv4 packet forwarding!
+
 ```
 sed -i "/net.ipv4.ip_forward=1/ s/# *//" /etc/sysctl.conf
 ```
+
 ### Step 3: Install a Virtual Guest Machine
 
-To install a virtual machine we'll run _[virt-install](https://www.mankier.com/1/virt-install)_.
+To install a virtual machine we'll run _[virt-install](https://www.mankier.com/1/virt-install)_. Feel free to configure some of those parameters such as the RAM amount, vCPUs, OS, etc.. The following will install an Ubuntu 16.04 Xenial VM.
+
 ```
 virt-install --name ubuntu16 \
 --ram 4096 \
@@ -101,7 +123,11 @@ virt-install --name ubuntu16 \
 --location 'http://us.archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/' \
 --extra-args 'console=ttyS0,115200n8 serial'
 ```
-The Ubuntu installer will hijack your console at some point soon after running the command and guide you through the rest of the install. The important part comes up during the end of the install where you'll be prompted with this
+
+The Ubuntu installer will hijack your console at some point soon after running the command and guide you through the rest of the install. You will be prompted to create a user which you will need to remember the credentials for in order to access the VM later.
+
+The important part comes up during the end of the install where you'll be prompted with the option of installing additional software. We will need to install the OpenSSH Server package in order to access the VM once the installation is completed.
+
 ```
                                 [!] Software selection
 
@@ -121,6 +147,7 @@ The Ubuntu installer will hijack your console at some point soon after running t
                        [ ] Lubuntu minimal installation
                        [ ] Lubuntu Desktop
 ```
+
 **Very important** that you scroll all the way down using your arrow keys and select "OpenSSH Server" using the space bar before continuing. That's how we'll access the VM once it's up.
 
 ### Step 5: Access Your VM
@@ -129,18 +156,24 @@ To access your VM you can SSH into it from the host machine.
 
 But where is the IP address!?!? 
 
-Easy, first get the virtual machine's MAC address:
+Easy, first get the virtual machine's MAC address: (ubuntu16 is the name of the VM)
+
 ```
 virsh domiflist ubuntu16
 ```
+
 Next, find the IP address:
+
 ```
 arp -an | grep "the MAC address"    
 ```
-And of course:
+
+Then, SSH into the VM with the user name of the account that we created during the OS installation process:
+
 ```   
-ssh root@the-ip-address;
-```    
+ssh username@the-ip-address;
+```
+
 ### Conclusion
 
 There you have it, KVM and Libvirt demystified! If you have any suggestions about this guide please leave a comment below.
