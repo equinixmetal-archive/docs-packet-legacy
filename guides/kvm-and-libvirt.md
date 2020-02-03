@@ -67,7 +67,7 @@ For subnets of size `/30` or greater, there are 3 IPs that cannot be used for yo
 139.178.66.151     - Broadcast address
 
 
-Run the following command to create the `network.xml` file. You will need to adjust the IPs for this to fit your subnet.
+Run the following command to create the `network.xml` file. You will need to adjust the IPs and subnet mask for this to fit your subnet.
 
 ```
 echo '<network>
