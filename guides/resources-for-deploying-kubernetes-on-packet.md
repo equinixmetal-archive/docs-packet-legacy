@@ -60,7 +60,7 @@ A number of projects developed by us, and our community, specifically tailored f
 * [Kubernetes BGP](https://github.com/packet-labs/kubernetes-bgp): Kubernetes on Packet using Calico and MetalLB.
 * [Multi-architecture Kubernetes](https://github.com/packet-labs/packet-multiarch-k8s-terraform): Deploy Kubernetes on Packet for ARM, x86, and GPU nodes.
 * [Packet K3s](https://github.com/packet-labs/packet-k3s): Run K3s on Packet.
-* [Rook on Bare Metal](https://github.com/packet-labs/Rook-on-Bare-Metal-Workshop): Workshop for running [Rook.io](rook.io) cloud-native storage on Bare Metal clusters.
+* [Rook on Bare Metal](https://github.com/packet-labs/Rook-on-Bare-Metal-Workshop): Workshop for running [Rook.io](https://rook.io) cloud-native storage on Bare Metal clusters.
 * [Packet Helm Charts](https://github.com/packet-labs/helm-charts): Helm Charts for Packet platform clusters.
 
 

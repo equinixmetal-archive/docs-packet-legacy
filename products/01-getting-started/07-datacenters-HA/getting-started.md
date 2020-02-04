@@ -16,7 +16,7 @@ In our Core Cloud locations we stock abundant capacity of our most popular confi
 
 In our Custom Cloud sites we deploy standard configurations as well as customized servers, hardware appliances and bespoke networking or connectivity requirements. All infrastructure is reserved on contract and we do not offer multi-tenant block storage in these sites (private deployments of block storage or other storage appliances is available).  
 
-We would be happy to answer any questions about our sites via [mailto:sales@packet.com](sales@packet.com).
+We would be happy to answer any questions about our sites via <sales@packet.com>.
 
 ### Does Packet own its facilities?
 While Packet is a leading force in the cloud market, we are not a real estate development firm. As such, we lease space and power from colocation providers.  
@@ -35,7 +35,7 @@ Public Cloud:
 
 Edge Cloud:
 * [ATL2](https://www.packet.com/cloud/locations/atlanta/) is located in Atlanta, Georgia.
-* [DTW1](https://www.packet.com/cloud/locations/detroit/) is located in Detroit, Michigan
+* [DTW1](https://www.packet.com/cloud/locations/detriot/) is located in Detroit, Michigan
 * [FRA2](https://www.packet.com/cloud/locations/frankfurt/) is located in Frankfurt, Germany.
 * [HKG2](https://www.packet.com/cloud/locations/hong-kong/) is located in Hong Kong.
 * [IAH1](https://www.packet.com/cloud/locations/houston/) is located in Houston, Texas.
