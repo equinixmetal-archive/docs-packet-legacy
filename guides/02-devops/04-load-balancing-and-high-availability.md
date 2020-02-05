@@ -1,6 +1,6 @@
 <!-- <meta>
 {
-    "title":"Load Balancing and High Availability with HAProxy and Keepalived",
+    "title":"Load Balancing and High Availability",
     "description":"How to setup a cluster with LB & HA",
     "tag":["HA", "LB", "HAPRoxy"],
     "seo-title": "Load Balancing and High Availability with HAProxy and Keepalived - Packet Technical Guides",
