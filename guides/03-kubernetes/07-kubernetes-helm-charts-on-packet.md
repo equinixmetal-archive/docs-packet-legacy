@@ -1,6 +1,6 @@
 <!-- <meta>
 {
-    "title":"Helm Charts for Kubernetes Package Management",
+    "title":"Helm Charts for Kubernetes",
     "description":"Helm Charts for Kubernetes Package Management",
     "tag":["Kubernetes", "Package Management", "Helm"],
     "seo-title": "Helm Charts for Kubernetes Package Management - Packet Technical Guides",

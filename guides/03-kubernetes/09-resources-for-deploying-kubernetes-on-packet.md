@@ -1,6 +1,6 @@
 <!-- <meta>
 {
-    "title":"Resources for deploying Kubernetes on Packet",
+    "title":"Resources for deploying K8s on Packet",
     "description":"Deploying Kubernetes on Packet",
     "tag":["Kubernetes"],
     "seo-title": "Kubernetes on Bare Metal Resources - Packet Technical Guides",
