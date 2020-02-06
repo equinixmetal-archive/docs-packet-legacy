@@ -1,8 +1,8 @@
 <!-- <meta>
 {
-    "title":"Deploy Flynn on Packet",
-    "description":"Deploy Flynn on Packet",
-    "tag":["Flynn"],
+    "title": "Deploy Flynn on Packet",
+    "description": "Deploy Flynn on Packet",
+    "tag": ["Flynn"],
     "seo-title": "Deploy Flynn on Bare Metal - Packet Technical Guides",
     "seo-description": "Deploy Flynn on Packet",
     "og-title": "Deploy Flynn on Packet",

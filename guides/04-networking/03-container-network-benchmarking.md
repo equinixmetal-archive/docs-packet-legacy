@@ -2,7 +2,7 @@
 {
     "title":"Container Network Benchmarking on Kubernetes",
     "description":"Container Network Benchmarking on Kubernetes",
-    "tag":["Kubernetes", "Networking", "Performance," "Docker"],
+    "tag":["Kubernetes", "Networking", "Performance, "Docker"],
     "seo-title": "Container Network Benchmarking on Kubernetes - Packet Technical Guides",
     "seo-description": "Container Network Benchmarking on Kubernetes",
     "og-title": "BGP Global Communities",
