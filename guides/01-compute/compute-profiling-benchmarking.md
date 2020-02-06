@@ -1,8 +1,8 @@
 <!-- <meta>
 {
-    "title":"Compute Profiling and Benchmarking",
-    "description":"Benchmarking Tools for Linux",
-    "tag":["CPU", "Compute", "Profiling", "Beanchmarking"],
+    "title": "Compute Profiling and Benchmarking",
+    "description": "Benchmarking Tools for Linux",
+    "tag": ["CPU", "Compute", "Profiling", "Beanchmarking"],
     "seo-title": "Compute Profiling & Benchmarking - Packet Technical Guides",
     "seo-description": "Benchmarking Tools for Linux",
     "og-title": "Modern Compute Profiling and Benchmarking",

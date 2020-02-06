@@ -1,8 +1,8 @@
 <!-- <meta>
 {
-    "title":"CPU Tuning",
-    "description":"Tips for fine tuning the CPU to improve performance",
-    "tag":["CPU", "Tuning", "Processor", "Performance"],
+    "title": "CPU Tuning",
+    "description": "Tips for fine tuning the CPU to improve performance",
+    "tag": ["CPU", "Tuning", "Processor", "Performance"],
     "seo-title": "Introduction to CPU Tuning - Packet Technical Guides",
     "seo-description": "Tips for fine tuning the CPU to improve performance",
     "og-title": "CPU Tuning",

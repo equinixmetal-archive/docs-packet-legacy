@@ -1,8 +1,8 @@
 <!-- <meta>
 {
-    "title":"Self-Hosted Zoom Meetings",
-    "description":"Self-Hosted Zoom Meetings",
-    "tag":["Self-Hosted", "Zoom"],
+    "title": "Self-Hosted Zoom Meetings",
+    "description": "Self-Hosted Zoom Meetings",
+    "tag": ["Self-Hosted", "Zoom"],
     "seo-title": "Self-Hosted Zoom Meetings - Packet Technical Guides",
     "seo-description": "Self-Hosted Zoom Meetings",
     "og-title": "Self-Hosted Zoom Meetings",

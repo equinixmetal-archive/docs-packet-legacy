@@ -1,12 +1,12 @@
 <!-- <meta>
 {
-    "title":"Deploy DC/OS with Terraform",
-    "description":"Deploy DC/OS with Terraform",
-    "tag":["DC/OS", "Terraform", "Datacenter Operating System"],
+    "title": "Deploy DC/OS with Terraform",
+    "description": "Deploy DC/OS with Terraform",
+    "tag": ["DC/OS", "Terraform", "Datacenter Operating System"],
     "seo-title": "Deploy DC/OS with Terraform - Packet Technical Guides",
-    "seo-description": "Deploy DC/OS with Terraform"",
+    "seo-description": "Deploy DC/OS with Terraform",
     "og-title": "Deploy DC/OS with Terraform",
-    "og-description": "Deploy DC/OS with Terraform""
+    "og-description": "Deploy DC/OS with Terraform"
 }
 </meta> -->
 

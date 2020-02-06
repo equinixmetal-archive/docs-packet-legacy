@@ -1,8 +1,8 @@
 <!-- <meta>
 {
-    "title":"Apache Kafka on CoreOS",
-    "description":"Setup Kafka cluster on a single Packet bare-metal machine",
-    "tag":["AMD", "Apache", "CoreOS", "Kafa"],
+    "title": "Apache Kafka on CoreOS",
+    "description": "Setup Kafka cluster on a single Packet bare-metal machine",
+    "tag": ["AMD", "Apache", "CoreOS", "Kafa"],
     "seo-title": "Apache Kafka on CoreOS - Packet Technical Guides",
     "seo-description": "Setup Kafka cluster on a single Packet bare-metal machine",
     "og-title": "Apache Kafka on CoreOS",

@@ -1,8 +1,8 @@
 <!-- <meta>
 {
-     "title":"AMD Sev with Anjuna",
-    "description":"Deploying AMD SEV with Anjuna",
-    "tag":["AMD", "SEV"],
+    "title": "AMD Sev with Anjuna",
+    "description": "Deploying AMD SEV with Anjuna",
+    "tag": ["AMD", "SEV"],
     "seo-title": "Deploy AMD SEV on Bare Metal- Packet Technical Guides",
     "seo-description": "Deploying AMD SEV with Anjuna",
     "og-title": "AMD Sev with Anjuna",

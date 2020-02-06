@@ -1,12 +1,12 @@
 <!-- <meta>
 {
-    "title":"Kubernetes Cluster Autoscaler",
-    "description":"Kubernetes Cluster Autoscaler on Packet",
-    "tag":["Kubernetes", "Cluster", "Autoscaler"]
+    "title": "Kubernetes Cluster Autoscaler",
+    "description": "Kubernetes Cluster Autoscaler on Packet",
+    "tag": ["Kubernetes", "Cluster", "Autoscaler"],
     "seo-title": "Kubernetes Cluster Autoscaler - Packet Technical Guides",
     "seo-description": "Kubernetes Cluster Autoscaler on Packet",
     "og-title": "Kubernetes Cluster Autoscaler",
-    "og-description":" Kubernetes Cluster Autoscaler on Packet"
+    "og-description": "Kubernetes Cluster Autoscaler on Packet"
 }
 </meta> -->
 
