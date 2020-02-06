@@ -1,8 +1,8 @@
 <!-- <meta>
 {
-    "title":"Layer 2 Configurations",
-    "description":"How to configure some possible layer 2 environments.",
-    "tag":["layer 2", "networking", "advanced"]
+    "title": "Layer 2 Configurations",
+    "description": "How to configure some possible layer 2 environments.",
+    "tag": ["layer 2", "networking", "advanced"],
     "seo-title": "Layer 2 Configurations - Packet Technical Guides",
     "seo-description": "How to configure some possible layer 2 environments.",
     "og-title": "Layer 2 Configurations",
