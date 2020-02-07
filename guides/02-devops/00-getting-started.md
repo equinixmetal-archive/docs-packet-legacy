@@ -1,6 +1,6 @@
 <!-- <meta>
 {
-  "title": "DevOPs",
+  "title": "DevOps",
   "slug": "devops",
   "description": "DevOps - Technical Guides",
   "tag": ["Technical Guides", "Guides", "How To", "Self Hosted", "DevOps"],
