@@ -1,6 +1,6 @@
 <!-- <meta>
 {
-  "title": "Tecnical Guides",
+  "title": "Technical Guides",
   "slug": "overview",
   "description": "Technical Guides",
   "tag": ["Technical Guides", "Guides", "How To"],
