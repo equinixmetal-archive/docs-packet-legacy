@@ -1,6 +1,6 @@
 <!-- <meta>
 {
-    "title":"IP allocation",
+    "title":"Custom Subnet",
     "description":"Provision servers with a custom number of IP addresses.",
     "tag":["custom", "subnet", "IP"],
     "seo-title": "Custom Subnet Size - Packet Developer Docs",
@@ -52,6 +52,4 @@ After provisioning the server with the API call, you will find the /29 subnet on
 ![Manage IPs](/images/custom-subnet/Manage-IPs.png)
 
 ### Billing
-Please note that anything over a single IPv4 per server is billable at a rate of $0.005/hr (equal to about $3.60 per month per IP).   
-
-So if you request a /28, which gives you 16 IPs, you will be paying for 14 additional IPs on top of the included .
+Please note that anything over a single IPv4 per server is billable at a rate of $0.005/hr (equal to about $3.60 per month per IP). 
