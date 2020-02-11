@@ -29,8 +29,7 @@ Choose an Operating System. Our most popular operating systems are featured by d
 
 Once you’ve selected a datacenter, server, and operating system, you are ready to deploy! You may want to adjust the amount of servers or customize optional settings.
 
-**⚠️Note:**
-If you don’t have an [SSH Key](https://www.packet.com/developers/docs/servers/key-features/ssh-keys/), you will be prompted to add one: you can’t deploy without it!
+> **_NOTE:_** If you don’t have an [SSH Key](https://www.packet.com/developers/docs/servers/key-features/ssh-keys/), you will be prompted to add one: you can’t deploy without it!
 
 ![pxe](/images/ondemand-deploy-guide/create-ssh-key.png)
 
@@ -42,8 +41,8 @@ If you have chosen [Custom iPXE](https://www.packet.com/developers/docs/servers/
 
 If you want to deploy more than 1 server, you can adjust it under Select Number and Name Your Server(s). You can change the prefilled hostnames if you’d like. 
 ![amount-of-servers](/images/ondemand-deploy-guide/amount-of-servers.png)
-**⚠️Note:** You cannot use underscores in your hostname.
 
+> **_NOTE:_** You cannot use underscores in your hostname.
 
 Packet offers the ability to make adjustments to default settings at the time of deployment.
 
