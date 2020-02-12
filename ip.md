@@ -40,12 +40,16 @@ From the slide out, you can select the size, type, and facility of the reserved 
 ![projects-ips-networks](project-ips-networks.png)
 
 
-#### Provisioning a server with reserved subnets via portal
-
+#### Provisioning a server with a single reserved subnet via portal
 
 ![deploy-reserved-subnet](deploy-reserved-subnet.png)
 
+#### Provisioning a server with multiple reserved subnets via portal
+
+![deploy-reserved-subnets-multi](deploy-choose-reserved-subnet.png)
+
 #### Provisioning server with reserved subnets via API
+
 
 An example payload to create a single instance with a subnet size of /29 & using IPs from a reserved subnet. 
 
