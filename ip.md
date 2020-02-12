@@ -10,7 +10,7 @@
 }
 </meta> -->
 
-### Default IPv4 Subnet
+#### Default IPv4 Subnet
 
 Provisioning a new server, Packet assigns the following public IPv4 address subnets depending on the official Operating System you select:
 
@@ -19,7 +19,7 @@ Provisioning a new server, Packet assigns the following public IPv4 address subn
 * __VMware ESXI:__ /29
 
 
-### Reserving Larger Subnet(s) via Portal
+#### Reserving Larger Subnet(s) via Portal
 
 Packet allows you to reseve the following sizes:
 
@@ -32,7 +32,7 @@ Packet allows you to reseve the following sizes:
 
 > **Please Note:**  anything over a single IPv4 per server is billable at a rate of $0.005/hr for Elastic IPs & $0.15/hr for Global Anycast IPs. 
 
-### Creating a Reserved Subnet via Customer Portal
+#### Creating a Reserved Subnet via Customer Portal
 
 Select the Project in which the reserved subnet is required. From within that specific project, click on IPs & Networks & click on Request IP Addresses
 
