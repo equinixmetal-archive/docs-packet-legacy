@@ -32,6 +32,8 @@ Packet allows you to reseve the following sizes:
 
 > **Please Note:**  anything over a single IPv4 per server is billable at a rate of $0.005/hr for Elastic IPs & $0.15/hr for Global Anycast IPs. 
 
+### Creating a Reserved Subnet via Customer Portal
+
 Select the Project in which the reserved subnet is required. From within that specific project, click on IPs & Networks & click on Request IP Addresses
 
 From the slide out, you can select the size, type, and facility of the reserved subnet. Be sure to include detailed information for the use case for the requested subnet. 
@@ -40,11 +42,11 @@ From the slide out, you can select the size, type, and facility of the reserved 
 ![projects-ips-networks](project-ips-networks.png)
 
 
-#### Provisioning a server with a single reserved subnet via portal
+#### Provisioning a server with a single reserved subnet via Customer Portal
 
 ![deploy-reserved-subnet](deploy-reserved-subnet.png)
 
-#### Provisioning a server with multiple reserved subnets via portal
+#### Provisioning a server with multiple reserved subnets via Customer Portal
 
 ![deploy-reserved-subnets-multi](deploy-choose-reserved-subnet.png)
 
