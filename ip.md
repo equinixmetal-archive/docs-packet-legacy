@@ -18,6 +18,9 @@ Provisioning a new server, Packet assigns the following public IPv4 address bloc
 * __Windows Server 2012 r2:__ /30
 * __VMware ESXI:__ /29
 
+
+### Reserving Larger Subnet(s) via Portal
+
 Packet allows you to reseve the following sizes:
 
 | Elastic IPs        |Usable |   | Global Anycast | Usable |
@@ -28,11 +31,6 @@ Packet allows you to reseve the following sizes:
 | /28    |16 IPv4|
 
 > **Please Note:**  anything over a single IPv4 per server is billable at a rate of $0.005/hr for Elastic IPs & $0.15/hr for Global Anycast IPs. 
-
-
-
-
-### Reserving Larger Subnet(s) via Portal
 
 Select the Project in which the reserved subnet is required. From within that specific project, click on IPs & Networks & click on Request IP Addresses
 
