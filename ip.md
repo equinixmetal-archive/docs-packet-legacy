@@ -48,7 +48,7 @@ From the slide out, you can select the size, type, and facility of the reserved 
 
 ![deploy-reserved-subnets-multi](deploy-choose-reserved-subnet.png)
 
-#### Provisioning server with reserved subnets via API
+#### Provisioning server with reserved subnet(s) via API
 
 
 An example payload to create a single instance with a subnet size of /29 & using IPs from a reserved subnet. 
