@@ -47,6 +47,8 @@ From the slide out, you can select the size, type, and facility of the reserved 
 
 #### Provisioning server with reserved subnets via API
 
+An example payload to create a single instance with a subnet size of /29 & using IPs from a reserved subnet. 
+
 ```
 curl  -v \
       -X POST "https://api.packet.net/projects/$PROJECT_ID/devices/batch" \
@@ -69,4 +71,9 @@ curl  -v \
           }
         ]
       }
+EOF
+
 ```
+
+This above paypload will again create a single new instance in EWR1, with its public IPV4 IPs assigned out the reserved subnet as called with `$EWR1_RESERVATION_ID`.
+
