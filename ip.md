@@ -10,9 +10,9 @@
 }
 </meta> -->
 
-### Default IPv4 
+### Default IPv4 Subnet
 
-Provisioning a new server, Packet assigns the following public IPv4 address blocks depending on the official Operating System you select:
+Provisioning a new server, Packet assigns the following public IPv4 address subnets depending on the official Operating System you select:
 
 * __Linux Distros:__ /31
 * __Windows Server 2012 r2:__ /30
@@ -34,14 +34,39 @@ Packet allows you to reseve the following sizes:
 
 Select the Project in which the reserved subnet is required. From within that specific project, click on IPs & Networks & click on Request IP Addresses
 
-From the slide out, you can select the size, type, and facility of the reserved subnet. Please be sure to include detailed information for the use case for the requested subnet. 
+From the slide out, you can select the size, type, and facility of the reserved subnet. Be sure to include detailed information for the use case for the requested subnet. 
 
 
 ![projects-ips-networks](project-ips-networks.png)
 
 
-#### Deploying a server with reserved subnets via Portal
-
+#### Provisioning a server with reserved subnets via portal
 
 
 ![deploy-reserved-subnet](deploy-reserved-subnet.png)
+
+#### Provisioning server with reserved subnets via API
+
+```
+curl  -v \
+      -X POST "https://api.packet.net/projects/$PROJECT_ID/devices/batch" \
+      -H 'Content-Type: application/json' \
+      -H "X-Auth-Token: $PACKET_API_TOKEN" \
+      -d @- <<-'EOF'
+      {
+        "batches": [
+          {
+            "hostname": "enhanced-ip-alloc-batch-test-01",
+            "operating_system": "ubuntu_16_04",
+            "plan": "baremetal_0",
+            "facility": "ewr1",
+            "quantity": 1,
+            "ip_addresses": [
+              { "address_family": 4, "public": false },
+              { "address_family": 4, "public": true, "cidr": 29, "ip_reservations": ["$EWR1_RESERVATION_ID"] },
+              { "address_family": 6, "public": true }
+            ]
+          }
+        ]
+      }
+```
