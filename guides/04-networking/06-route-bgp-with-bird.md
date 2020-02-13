@@ -118,7 +118,22 @@ router=$(echo $json | jq -r ".network.addresses[] | select(.public == false) | .
 gateway=$(echo $json | jq -r ".network.addresses[] | select(.public == false) | .gateway")
 ```
 
-_Note that we're specifically looking for the servers private addresses._
+_Note that we're specifically looking for the server's private addresses._
+
+# Step 6a - Muti-Session Peering
+
+A small portion of our server fleet is deployed on network hardware leveraging a slightly different approach at BGP configuration, which requires the creation of two distinct BGP peers using the following config lines:
+
+```multihop;
+neighbor 169.254.255.1 as 65530;
+neighbor 169.254.255.2 as 65530;
+```
+These are fixed IP addresses, and do not vary from one server to the next.  This configuration type is currently utilized on the following switch IDs (as identified in an instance's 'Network' view in the customer portal):
+
+```Switch ID 94a841f3 - Dallas, TX (DFW2)
+```
+
+_We we updating the BIRD config in the portal, as well as making this config type visibile in our metadata service._
 
 # Step 7 - Restart BIRD
 
