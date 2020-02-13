@@ -133,7 +133,7 @@ These are fixed IP addresses, and do not vary from one server to the next.  This
 ```Switch ID 94a841f3 - Dallas, TX (DFW2)
 ```
 
-_We we updating the BIRD config in the portal, as well as making this config type visibile in our metadata service._
+_We are updating the BIRD config in the portal, as well as making this config type visibile in our metadata service._
 
 # Step 7 - Restart BIRD
 
