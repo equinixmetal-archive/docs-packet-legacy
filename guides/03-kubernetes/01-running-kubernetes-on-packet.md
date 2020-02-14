@@ -1,12 +1,12 @@
 <!-- <meta>
 {
-    "title":"Resources for deploying K8s on Packet",
-    "description":"Deploying Kubernetes on Packet",
+    "title":"Running Kubernetes on Packet",
+    "description":"Running Kubernetes on Packet",
     "tag":["Kubernetes"],
-    "seo-title": "Kubernetes on Bare Metal Resources - Packet Technical Guides",
-    "seo-description": "Deploying Kubernetes on Packet",
-    "og-title": "Resources for deploying Kubernetes on Packet",
-    "og-description":"Deploying Kubernetes on Packet"
+    "seo-title": "Running Kubernetes on Packet - Packet Technical Guides",
+    "seo-description": "Running Kubernetes on Packet",
+    "og-title": "Resources for running Kubernetes on Packet",
+    "og-description":"Running Kubernetes on Packet"
 }
 </meta> -->
 
