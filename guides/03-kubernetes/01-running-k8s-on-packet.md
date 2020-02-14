@@ -17,7 +17,7 @@ Kubernetes helps you make sure those containerized applications run where and wh
 
 ## Kubernetes at Packet
 
-A number of projects developed by us, and our community, specifically tailored for the Packet platform are available, using common tooling like [Terraform](terraform.io) and [Ansible](https://www.ansible.com/), on our [Github](https://github.com/packethost) organization:
+A number of projects developed by us, and our community, specifically tailored for the Packet platform are available, using common tooling like [Terraform](https://terraform.io) and [Ansible](https://www.ansible.com/), on our [Github](https://github.com/packethost) organization:
 
 * [Kubernetes BGP](https://github.com/packet-labs/kubernetes-bgp): Kubernetes on Packet using Calico and MetalLB.
 * [Multi-architecture Kubernetes](https://github.com/packet-labs/packet-multiarch-k8s-terraform): Deploy Kubernetes on Packet for ARM, x86, and GPU nodes.
