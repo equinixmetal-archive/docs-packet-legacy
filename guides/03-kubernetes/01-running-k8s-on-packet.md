@@ -14,6 +14,18 @@ With modern web services, users expect applications to be available 24/7, and de
 
 Kubernetes helps you make sure those containerized applications run where and when you want, and helps them find the resources and tools they need to work. Kubernetes is a production-ready, open source platform designed with Google's accumulated experience in container orchestration, combined with best-of-breed ideas from the community.
 
+
+## Kubernetes at Packet
+
+A number of projects developed by us, and our community, specifically tailored for the Packet platform are available, using common tooling like [Terraform](terraform.io) and [Ansible](https://www.ansible.com/), on our [Github](https://github.com/packethost) organization:
+
+* [Kubernetes BGP](https://github.com/packet-labs/kubernetes-bgp): Kubernetes on Packet using Calico and MetalLB.
+* [Multi-architecture Kubernetes](https://github.com/packet-labs/packet-multiarch-k8s-terraform): Deploy Kubernetes on Packet for ARM, x86, and GPU nodes.
+* [Packet K3s](https://github.com/packet-labs/packet-k3s): Run K3s on Packet.
+* [Rook on Bare Metal](https://github.com/packet-labs/Rook-on-Bare-Metal-Workshop): Workshop for running [Rook.io](https://rook.io) cloud-native storage on Bare Metal clusters.
+* [Packet Helm Charts](https://github.com/packet-labs/helm-charts): Helm Charts for Packet platform clusters.
+
+
 ## Guides
 
 * [How to deploy on bare-metal in ~10 minutes](https://blog.alexellis.io/kubernetes-in-10-minutes/)
@@ -51,18 +63,6 @@ Kubernetes is free, but sometimes deploying and managing it takes work.  A numbe
 * [Platform9](https://platform9.com): Packet works closely with Platform9, a managed cloud provider, to enable users with Kubernetes, Openstack, and Serverless solutions.
 * [Cloud66](https://www.cloud66.com/): London-based Cloud66 offers a managed Kubernetes container service called Maestro, which is tested against Packet.
 * [RedHat OpenShift](https://www.openshift.com/): OpenShift is an open source container application platform by Red Hat based on the Kubernetes container orchestrator for enterprise app development and deployment.
-
-
-## Kubernetes at Packet
-
-A number of projects developed by us, and our community, specifically tailored for the Packet platform are available, using common tooling like [Terraform](terraform.io) and [Ansible](https://www.ansible.com/), on our [Github](https://github.com/packethost) organization:
-
-* [Kubernetes BGP](https://github.com/packet-labs/kubernetes-bgp): Kubernetes on Packet using Calico and MetalLB.
-* [Multi-architecture Kubernetes](https://github.com/packet-labs/packet-multiarch-k8s-terraform): Deploy Kubernetes on Packet for ARM, x86, and GPU nodes.
-* [Packet K3s](https://github.com/packet-labs/packet-k3s): Run K3s on Packet.
-* [Rook on Bare Metal](https://github.com/packet-labs/Rook-on-Bare-Metal-Workshop): Workshop for running [Rook.io](https://rook.io) cloud-native storage on Bare Metal clusters.
-* [Packet Helm Charts](https://github.com/packet-labs/helm-charts): Helm Charts for Packet platform clusters.
-
 
 ## Community
 
