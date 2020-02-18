@@ -34,7 +34,6 @@ View our documentation page at[Packet Docs](https://www.packet.com/developers/).
 - [Libraries](https://github.com/packethost/docs/tree/master/libraries)
 - [Integrations](https://github.com/packethost/docs/tree/master/integrations)
 - [Network](https://github.com/packethost/docs/tree/master/products/04-network)
-- [Platform](https://github.com/packethost/docs/tree/master/platform)
 - [Products](https://github.com/packethost/docs/tree/master/products)
 
 <!--- How To Contribute --->
