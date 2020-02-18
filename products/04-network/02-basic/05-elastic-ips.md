@@ -63,6 +63,27 @@ iface lo:0 inet static
     netmask 255.255.255.255
 ````
 
+
+#### Ubuntu/Debian (netplan)
+
+To configure temporarily (won't come back up on reboot):
+
+`sudo ip addr add 147.75.255.255 dev lo`
+
+To make permanent, add to /etc/netplan/00-elastic.yaml:
+
+````
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    lo:
+      addresses:
+        - 127.0.0.1/8
+        - 147.75.255.255/32
+````
+then either `sudo netplan try` or `sudo netplan apply`
+
 #### CentOS
 
 To configure temporarily (won't come back up on reboot):
