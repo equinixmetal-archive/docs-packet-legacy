@@ -27,6 +27,7 @@ Requirements may differ for various types of evaluation enviorments which you ma
     * 4 GB memory
     * 20 GB free disk space
     * OS: Cent7, Ubuntu 16.or or 18.04
+    
 
 * LXD: 
     * x86-64 Intel or AMD
