@@ -3,7 +3,7 @@
     "title":"OpenNebula miniONE",
     "description":"deploy OpenNebula single-node environments",
     "tag":["OpenNebula"],
-    "seo-title": OpenNebula miniONE - Packet Technical Guides",
+    "seo-title": "OpenNebula miniONE - Packet Technical Guides",
     "seo-description": "deploy OpenNebula single-node environments",
     "og-title": "OpenNebula miniONE",
     "og-description":"Quickly deploy OpenNebula single-node environments"
