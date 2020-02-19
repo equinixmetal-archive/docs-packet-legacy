@@ -2,7 +2,7 @@
 {
     "title":"OpenNebula miniONE",
     "description":"Quickly deploy OpenNebula single-node environments",
-    "tag":["Kubernetes"],
+    "tag":["OpenNebula"],
     "seo-title": OpenNebula miniONE - Packet Technical Guides",
     "seo-description": "Quickly deploy OpenNebula single-node environments",
     "og-title": "OpenNebula miniONE",
