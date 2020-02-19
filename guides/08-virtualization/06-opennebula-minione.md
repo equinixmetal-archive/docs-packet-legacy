@@ -1,10 +1,10 @@
 <!-- <meta>
 {
     "title":"OpenNebula miniONE",
-    "description":"Quickly deploy OpenNebula single-node environments",
+    "description":"deploy OpenNebula single-node environments",
     "tag":["OpenNebula"],
     "seo-title": OpenNebula miniONE - Packet Technical Guides",
-    "seo-description": "Quickly deploy OpenNebula single-node environments",
+    "seo-description": "deploy OpenNebula single-node environments",
     "og-title": "OpenNebula miniONE",
     "og-description":"Quickly deploy OpenNebula single-node environments"
 }
