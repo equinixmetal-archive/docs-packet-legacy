@@ -120,7 +120,7 @@ gateway=$(echo $json | jq -r ".network.addresses[] | select(.public == false) | 
 
 _Note that we're specifically looking for the server's private addresses._
 
-# Step 6a - Muti-Session Peering
+# Step 6a - Multi-Session Peering
 
 A small portion of our server fleet is deployed on network hardware leveraging a slightly different approach at BGP configuration, which requires the creation of two distinct BGP peers using the following config lines:
 
