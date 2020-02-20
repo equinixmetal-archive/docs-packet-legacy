@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"IP Allocation",
-    "description":"Provision servers with a reserved subnet",
+    "description": "Provision servers with a reserved subnet",
     "tag":["subnet", "IP", "Elastic IPs", ],
     "seo-title": "IP Allocation - Packet Developer Docs",
     "seo-description": "Provision servers with a reserved subnet",
@@ -9,6 +9,7 @@
     "og-description": "Provision servers with a reserved subnet"
 }
 </meta> -->
+
 
 #### Default IPv4 Subnet
 
