@@ -7,6 +7,7 @@
     "seo-description": "Using Cisco VIRL on Packet",
     "og-title": "BGP Global Communities",
     "og-description": "Using Cisco VIRL on Packet"
+    "featured": true
 }
 </meta> -->
 

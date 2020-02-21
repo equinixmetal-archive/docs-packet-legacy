@@ -7,6 +7,7 @@
     "seo-description": "Self-Hosted Zoom Meetings",
     "og-title": "Self-Hosted Zoom Meetings",
     "og-description":"Self-Hosted Zoom Meetings"
+    "featured": true
 }
 </meta> -->
 
