@@ -1,7 +1,12 @@
 <!-- <meta>
 {
     "title":"IP Allocation",
-    "description": "Provision servers with a reserved subnet"
+    "description":"Provision servers with a reserved subnet",
+    "tag":["Elastic IPs", "Subnets", "Reserved Subnets", "IPs"],
+    "seo-title": "IP Allocation - Packet Developer Docs",
+    "seo-description": "Provision servers with a reserved subnet",
+    "og-title": "IP Allocation",
+    "og-description": "Provision servers with a reserved subnet"
 }
 </meta> -->
 
