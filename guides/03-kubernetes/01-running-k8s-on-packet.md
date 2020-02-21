@@ -6,7 +6,7 @@
     "seo-title": "Running Kubernetes on Packet - Packet Technical Guides",
     "seo-description": "Running Kubernetes on Packet",
     "og-title": "Resources for running Kubernetes on Packet",
-    "og-description":"Running Kubernetes on Packet"
+    "og-description":"Running Kubernetes on Packet",
     "featured": true
 }
 </meta> -->
