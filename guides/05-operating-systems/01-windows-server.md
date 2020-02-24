@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Windows Server",
-    "description":"Learn more about utilizing Windows Server at Packet",
+    "description":"Tips & Tricks with Windows Server",
     "tag":["Operating Systems", "Windows"],
     "seo-title": "Windows Server - Packet Developer Docs",
     "seo-description": "Learn more about utilizing Windows Server at Packet",
