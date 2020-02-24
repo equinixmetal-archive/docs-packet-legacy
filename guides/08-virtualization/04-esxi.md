@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"ESXi",
-    "description":"Learn about deploying ESXi on Packet",
+    "description":"Deploying ESXi on Packet",
     "tag":["VMs", "ESXi", "VMWare"],
     "seo-title": "Learn about deploying VMWare ESXi on Packet - Packet Technical Guides",
     "seo-description": "Learn about deploying ESXi on Packet",
@@ -132,3 +132,42 @@ By default, the remaining space not consumed by the ESXi software on the boot dr
 #### Loading images for Virtual Machine
 
 Images can be loaded into the datastore(s) of ESXi using the WebUI, however, you will be limited to the upload speed of your connection and the speed of the WebUI of ESXi. The ESXi WebUI is also very latency sensitive, so uploading across continents and/or oceans can be very slow and unreliable. For better performance, you may wish to download images using the wget tool over SSH or the SOS Console instead. The version of wget included with ESXi does not support HTTPS, and most sites now silently redirect to HTTPS by default. For this reason, we offer a small selection of ISOs for download over HTTP at iso.packet.cloud for your convenience. The default datastore is located in /vmfs/volumes/datastore1 when connecting to the ESXi console over SSH or the SOS console. Downloading images does not work if the instance is running in full L2 mode. While the ISOs you may want are not available, you can launch a simple Linux VM from that selection, and use a browser from the Linux VM to download your desired ISO and upload it to the ESXi WebUI with better performance than attempting remotely.
+
+
+#### Upgrade ESXi 6.5 to 6.7 
+
+To get a VMware ESXi 6.7 server up and running on Packet, you need to deploy an ESXi 6.5 server and run the ESXi 6.7 update through an SSH session on the server.
+
+First make sure that SSH and Shell are enabled on the server, they should be enabled by default on Packet but if not, run the following:
+
+```
+vim-cmd hostsvc/enable_ssh
+vim-cmd hostsvc/start_ssh
+```
+
+Swap must be enabled on the datastore. Otherwise, the update may fail with a "no space left" error.
+```
+esxcli sched swap system set --datastore-enabled true
+esxcli sched swap system set --datastore-name datastore1
+```
+
+Prepare the server for the update and run the update. You can get the latest VMware ESXi update versions [here](https://esxi-patches.v-front.de/ESXi-6.7.0.html).
+
+```
+vim-cmd /hostsvc/maintenance_mode_enter
+
+esxcli network firewall ruleset set -e true -r httpClient
+
+# The update version can be retrieved from the website above
+esxcli software profile update -d https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml -p ESXi-6.7.0-20191204001-standard
+
+esxcli network firewall ruleset set -e false -r httpClient
+
+vim-cmd /hostsvc/maintenance_mode_exit
+
+reboot
+```
+
+Once the update has completed, the server should now be running VMware ESXi 6.7!
+
+If you are looking for an automated way of doing this, we have a Terraform script that lets you deploy multiple servers with VMware ESXi 6.7 [here](https://github.com/enkelprifti98/packet-esxi-6-7).
