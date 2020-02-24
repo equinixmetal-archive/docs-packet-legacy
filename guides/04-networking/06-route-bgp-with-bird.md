@@ -6,8 +6,7 @@
     "seo-title": "Route BGP with BIRD - Packet Technical Guides",
     "seo-description": "Route BGP with BIRD on Packet",
     "og-title": "Route BGP with BIRD",
-    "og-description":"Route BGP with BIRD on Packet",
-    
+    "og-description":"Route BGP with BIRD on Packet"  
 }
 </meta> -->
 
