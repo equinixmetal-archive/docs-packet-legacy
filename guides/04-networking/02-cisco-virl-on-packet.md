@@ -1,13 +1,13 @@
 <!-- <meta>
 {
     "title":"Cisco VIRL on Packet",
-    "description":"Using Cisco VIRL on Packet",
+    "description":"Deploy Cisco VIRL network virtualization platform on Packet",
     "tag":["Cisco", "VIRL"],
     "seo-title": "Cisco VIRL on Bare Metal - Packet Technical Guides",
     "seo-description": "Using Cisco VIRL on Packet",
     "og-title": "BGP Global Communities",
     "og-description": "Using Cisco VIRL on Packet",
-    "featured": true
+    
 }
 </meta> -->
 
