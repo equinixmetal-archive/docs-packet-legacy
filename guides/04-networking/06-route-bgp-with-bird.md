@@ -7,7 +7,7 @@
     "seo-description": "Route BGP with BIRD on Packet",
     "og-title": "Route BGP with BIRD",
     "og-description":"Route BGP with BIRD on Packet",
-    "featured": true
+    
 }
 </meta> -->
 
