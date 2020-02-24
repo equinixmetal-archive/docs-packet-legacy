@@ -6,8 +6,7 @@
     "seo-title": "Cisco VIRL on Bare Metal - Packet Technical Guides",
     "seo-description": "Using Cisco VIRL on Packet",
     "og-title": "BGP Global Communities",
-    "og-description": "Using Cisco VIRL on Packet",
-    
+    "og-description": "Using Cisco VIRL on Packet"    
 }
 </meta> -->
 
