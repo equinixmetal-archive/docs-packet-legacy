@@ -407,4 +407,4 @@ These communities can be attached to prefixes advertised to any Internet Exchang
 -   Function: Anycast routing
 -   By tagging your routes with this community, Packet will advertise your routes to only transit and peering we maintain consistently on a global basis. Regional ISPs we connect with (e.g. Verizon in the New York metro area) will not learn your routes, as advertising to them may result in "scenic" routing for customers with global Anycast configurations.
 -   Please note that this community is not advised for normal use, as it will limit the number of available paths/providers you have access to. It should only be deployed by customers seeking BGP anycast topology, with multiple server instances deployed in each Packet datacenter.
--   _**NOTE: This community is in beta testing at this time and will be depreciated in the future.**_
+
