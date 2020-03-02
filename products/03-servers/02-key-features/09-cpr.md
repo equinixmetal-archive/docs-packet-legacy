@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Custom Partitioning and RAID",
     "description":"Setting up CPR (Custom Partitioning & RAID).",
-    "tag":["CPR", "Custom RAID", "RAID", "Partition", "Disk Configuration", "SATA", "HDD", "SSD", "NVMe"]
+    "tag":["CPR", "Custom RAID", "RAID", "Partition", "Disk Configuration", "SATA", "HDD", "SSD", "NVMe"],
+    "seo-title": "Custom Partitioning and RAID - Packet Developer Docs",
+    "seo-description": "Setting up CPR (Custom Partitioning & RAID).",
+    "og-title": "Custom Partitioning and RAID",
+    "og-description": "Setting up CPR (Custom Partitioning & RAID)."
 }
-</meta>-->
+</meta> -->
 
 # Custom Partitioning & Raid (CPR)
 

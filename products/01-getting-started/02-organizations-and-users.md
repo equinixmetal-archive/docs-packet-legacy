@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Organizations, Users and Projects",
     "description":"An overview of Packet's data model.",
-    "tag":["organizations", "accounts", "platform"]
+    "tag":["organizations", "accounts", "platform"],
+    "seo-title": "An overview of Packet's data model including organizations, team users, and projects.",
+    "seo-description": "An overview of Packet's data model.",
+    "og-title": "An overview of Packet's data model including organizations, team users, and projects.",
+    "og-description": "Learn more about Packet and get started!"
 }
-</meta>-->
+</meta> -->
 
 Similar to popular developer platforms like GitHub, Packet leverages a flexible data model based around users. In addition to users, we also have projects and organizations.
 

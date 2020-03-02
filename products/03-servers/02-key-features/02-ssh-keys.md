@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
-    "title":"SSH Keys",
+     "title":"SSH Keys",
     "description":"Use SSH to securely access your Packet servers.",
-    "tag":["ssh", "key", "access"]
+    "tag":["ssh", "key", "access"],
+    "seo-title": "SSH Keys - Packet Developer Docs",
+    "seo-description": "Use SSH to securely access your Packet servers.",
+    "og-title": "Overview",
+    "og-description": "Use SSH to securely access your Packet servers."
 }
-</meta>-->
+</meta> -->
 
 SSH keys are one of the most secure ways to access a web server, since it requires authentication beyond a simple password. While each new Packet server has a root password assigned, it is removed from the customer portal after 24 hours - after which point you’ll need to leverage SSH or need to have added a new root password to the machine.
 

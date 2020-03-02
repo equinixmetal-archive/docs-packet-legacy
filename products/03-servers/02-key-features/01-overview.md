@@ -1,10 +1,15 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Overview",
-    "description":"Learn more about key features of Packet servers.",
-    "tag":["Key Features"]
+    "description":"Bare Metal Servers Features - Packet Developer Docs",
+    "tag":["Key Features"],
+    "seo-title": "Bare Metal Servers Features - Packet Developer Docs",
+    "seo-description": "Bare Metal Servers Features - Packet Developer Docs",
+    "og-title": "Overview",
+    "og-description": "Bare Metal Servers Features - Packet Developer Docs"
 }
-</meta>-->
+</meta> -->
+
 
 Deploying servers at Packet is very similar to working with compute instances at AWS, GCP, Digital Ocean and others. 
 

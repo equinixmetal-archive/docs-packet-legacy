@@ -1,3 +1,11 @@
+<!--<meta>
+{
+    "title":"Packet Bare Metal Cloud Docs - DevOps Resources",
+    "description":"Learn more about Packet and get started!",
+    "tag":["Product documentation", "Getting started", "Contact us"]
+}
+</meta>-->
+
 ![enable backend transfer](/images/packet-product-docs.png)
 
 ### Welcome to our Product Docs!

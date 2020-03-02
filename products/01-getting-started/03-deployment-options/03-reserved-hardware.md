@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
-    "title":"Reserved Hardware",
-    "description":"Deploy from a pool of reserved hardware available only to you!.",
-    "tag":["reserve", "Deploy"]
+  "title":"Reserved Hardware",
+  "description":"Deploy from a pool of reserved hardware available only to you!",
+  "tag":["reserve", "Deploy"],
+  "seo-title": "Reserved Cloud Servers - Packet Developer Docs",
+  "seo-description": "Deploy from a pool of reserved hardware available only to you!",
+  "og-title": "Overview",
+  "og-description": "Deploy from a pool of reserved hardware available only to you!"
 }
-</meta>-->
+</meta> -->
 
 Reserved hardware gives you the ability to reserve specific servers for a committed period of time. Unlike hourly on-demand, once you reserve hardware, you will have access to that specific hardware for the duration of the reservation. For additional information, it is suggested to reach out to your specific account manager. If you do not yet have one, please email support@packet.com.
 

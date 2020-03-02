@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Facility Certifications",
     "description":"Learn more about Facility Certifications at Packet",
-    "tag":["Facility Certifications", "Legal Compliance"]
+    "tag":["Facility Certifications", "Legal Compliance"],
+    "seo-title": "Facility Certifications - Packet Developer Docs",
+    "seo-description": "Learn more about Facility Certifications at Packet",
+    "og-title": "Facility Certifications",
+    "og-description": "Learn more about Facility Certifications at Packet"
 }
-</meta>-->
+</meta> -->
 
 #### Facility Certifications
 
@@ -43,5 +47,5 @@ We rent large amounts of colocation space from Tier 1 providers like Equinix and
 
 * **SYD1:** is SSAE16/ISAE3402 SOC-1 Type II certified. Plus ISO 27001 and PCI-DSS compliant. 
 
-Have a special concern or business need? We can often accommodate this with a private deployment or other approach. Be [sure to get in touch](https://packet.com/contact)!
+Have a special concern or business need? We can often accommodate this with a private deployment or other approach. Be [sure to get in touch](https://www.packet.com/about/contact/)!
 

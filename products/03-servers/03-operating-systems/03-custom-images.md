@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Custom Images",
     "description":"Learn more about Building Your Own O.S. (Custom Images)",
-    "tag":["Custom Images"]
+    "tag":["Custom Images"],
+    "seo-title": "Custom iPXE - Packet Developer Docs",
+    "seo-description": "Learn more about Building Your Own O.S. (Custom Images)",
+    "og-title": "Custom Images",
+    "og-description": "Learn more about Building Your Own O.S. (Custom Images)"
 }
-</meta>-->
+</meta> -->
 
 Official Images
 Packet leverages GitHub to transparently manage our officially supported Operating System images. You can view the repos for each official image at https://github.com/packethost/packet-images.

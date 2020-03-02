@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
     "title":"Overview",
     "description":"An introduction to the Packet API.",
-    "tag":["API", "Integrations", "Libraries"]
+    "tag":["API", "Integrations", "Libraries"],
+    "seo-title": "Packet Bare Metal API Documents",
+    "seo-description": "An introduction to the Packet API.",
+    "og-title": "Overview",
+    "og-description": "An introduction to the Packet API."
 }
-</meta>-->
+</meta> -->
 
 Packet was built for a developer-centric world, which means that our API is the heart and soul of the platform. In fact, the Packet portal is just a consumer of our API - so anything you can do in the portal you can also do via the API! (protip: “undocumented” api calls can be found and used by using your browser’s inspection console)
 
@@ -46,7 +50,7 @@ Everything that you with Packet, you can do via our API, which is modern, RESTfu
 
 No matter how you're interacting with our API, there are a few things to point out that will help you get started on the right foot:
 
-* Servers are called "Plans" in the API, and are specified with slugs that start with “baremetal”, e.g. “c1.small.x86” represents our c1.small server. You can get the full list of available plans by calling the [/plans endpoint](https://www.packet.com/developers/api/#plans).  
-* Our [block storage instances](https://www.packet.com/developers/api/#volumes) are referred to as "volumes" in the API.  
-* [IP's](https://www.packet.com/developers/api/#ipaddresses) are managed in a few places in the API. You can view the list of them in the projects namespace and you can assign/unassigned them to devices in the devices namespace.
-* You can also query the [capacity endpoint](https://www.packet.com/developers/api/#capacity) to get a status on   availability of server types in various facilities.
+* Servers are called "Plans" in the API, and are specified with slugs that start with “baremetal”, e.g. “c1.small.x86” represents our c1.small server. You can get the full list of available plans by calling the [/plans endpoint](https://www.packet.com/developers/api/plans).  
+* Our [block storage instances](https://www.packet.com/developers/api/volumes) are referred to as "volumes" in the API.  
+* [IP's](https://www.packet.com/developers/api/ipaddresses) are managed in a few places in the API. You can view the list of them in the projects namespace and you can assign/unassigned them to devices in the devices namespace.
+* You can also query the [capacity endpoint](https://www.packet.com/developers/api/capacity) to get a status on the availability of server types in various facilities.

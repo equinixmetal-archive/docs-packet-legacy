@@ -1,10 +1,14 @@
-<!--<meta>
+<!-- <meta>
 {
-    "title":"Data Centers",
+   "title":"Data Centers",
     "description":"Locations, certifications, & speed tests for our global data centers.",
-    "tag":["datacenters", "locations", "facilities"]
+    "tag":["datacenters", "locations", "facilities"],
+    "seo-title": "Bare Metal Cloud Data Centers -- Packet Developer Docs",
+    "seo-description": "Locations, certifications, & speed tests for our global datacenters.",
+    "og-title": "Data Centers",
+    "og-description": "Locations, certifications, & speed tests for our global data centers."
 }
-</meta>-->
+</meta> -->
 
 Packet has two types of public cloud facilities: Core and Custom. All [locations](https://www.packet.com/locations/) feature our full automation experience and a consistent, carrier-grade network topology. In other words: everything that you can do from an automation and networking perspective is the same across all locations. The only difference between sites is inventory.
 
@@ -12,7 +16,7 @@ In our Core Cloud locations we stock abundant capacity of our most popular confi
 
 In our Custom Cloud sites we deploy standard configurations as well as customized servers, hardware appliances and bespoke networking or connectivity requirements. All infrastructure is reserved on contract and we do not offer multi-tenant block storage in these sites (private deployments of block storage or other storage appliances is available).  
 
-We would be happy to answer any questions about our sites via [mailto:sales@packet.com](sales@packet.com).
+We would be happy to answer any questions about our sites via <sales@packet.com>.
 
 ### Does Packet own its facilities?
 While Packet is a leading force in the cloud market, we are not a real estate development firm. As such, we lease space and power from colocation providers.  
@@ -20,7 +24,7 @@ While Packet is a leading force in the cloud market, we are not a real estate de
 ### Where is each data center located? Do you have a speedtest?
 You can access various speedtest and ping url's from this central page on our website.
 
-Core Cloud:
+Public Cloud:
 * [AMS1](https://www.packet.com/cloud/locations/amsterdam/) is located in Amsterdam, the Netherlands.
 * [DFW2](https://www.packet.com/cloud/locations/dallas/) is located in Dallas, Texas.
 * [EWR1](https://www.packet.com/cloud/locations/new-york-metro/) is located in Parsippany, New Jersey.
@@ -29,9 +33,9 @@ Core Cloud:
 * [SIN3](https://www.packet.com/cloud/locations/singapore/) is located in Singapore.
 * [SJC1](https://www.packet.com/cloud/locations/silicon-valley/) is located in Sunnyvale, California.
 
-Custom Cloud:
+Edge Cloud:
 * [ATL2](https://www.packet.com/cloud/locations/atlanta/) is located in Atlanta, Georgia.
-* [DTW1](https://www.packet.com/cloud/locations/detroit/) is located in Detroit, Michigan
+* [DTW1](https://www.packet.com/cloud/locations/detriot/) is located in Detroit, Michigan
 * [FRA2](https://www.packet.com/cloud/locations/frankfurt/) is located in Frankfurt, Germany.
 * [HKG2](https://www.packet.com/cloud/locations/hong-kong/) is located in Hong Kong.
 * [IAH1](https://www.packet.com/cloud/locations/houston/) is located in Houston, Texas.
