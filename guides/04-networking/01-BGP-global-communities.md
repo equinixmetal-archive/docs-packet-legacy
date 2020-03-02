@@ -16,26 +16,35 @@
 
 ## Default Behavior
 
-The default behavior for customer prefixes is that they are advertised to all providers and peers within the facility the prefix is received in.
+The default behavior (no community) for customer prefixes is that they are advertised to all providers and peers within the facility the prefix is received in.
 
-## Behavior when customers attach Traffic Engineering (TE) Communities
+## Global Anycast BGP
+If you're using an IP range across multiple regions you can use Packet's Anycast community:
 
-The purpose of the traffic engineering communities is so customers can tell the Packet network which providers and peers to advertise their prefixes too.
-Using any of the communities listed below gives the customer full control over the oubound advertisment of their prefixes. Customers are able to advertise to any combination of providers and peers that exist within a location. Each provider has it's own set of communities which when attached, result in our routes taking an action.  If a providers community is not included on a prefix, we will not advertise it to that provider.  
+**54825:222**
+
+-   Function: Anycast routing
+-   By tagging your routes with this community, Packet will advertise your routes to only transit and peering we maintain consistently on a global basis. Regional ISPs we connect with (e.g. Verizon in the New York metro area) will not learn your routes, as advertising to them may result in "scenic" routing for you with global Anycast configurations.
+-   Please note that this community should only be used for global Anycast deployments and is not advised for use in a single datacenter, as it will limit the number of available paths/providers you have access to. It should only be deployed by you seeking BGP Anycast topology, with multiple server instances deployed in each Packet datacenter.
 
 
+## Advanced BGP 
 
-## Combining Communities
+You can fine tune reachability to the IPs you announce by attaching Traffic Engineering (TE) Communities.
 
-Customers are able to combine communities for granular control of their announcements. For example, you can use a combination of communities to advertise to Telia and Zayo, but not Limelight. Or you could advertise to Telia, prepend three times to Zayo, and advertise to an Internet Exchange (IX).
+The purpose of TE Communities is to tell the Packet network which providers and peers to advertise your prefixes to, allowing for more granular control than default (sans-community) BGP or the Global Anycast BGP community referened above (54825:222).
+
+Using any of the communities listed below gives you full control over the oubound advertisment of your prefixes. You are able to advertise to any combination of providers and peers that exist within a location. Each provider has its own set of communities. If a provider's community is not included on a prefix, we will not advertise it to that provider.  
+
+
+### Combining Communities 
+
+You are able to combine communities for granular control of your announcements. For example, you can use a combination of communities to advertise to Telia and Zayo, but not Limelight. Or you could advertise to Telia, prepend three times to Zayo, and advertise to an Internet Exchange (IX).
 
   
-
-## Usage Guidelines
+### Usage Guidelines
 
 To use the communities correctly please follow the guide below:
-
-  
 
 -   Other communities such as 54825:222 and 54825:223 should be removed
     
@@ -45,12 +54,9 @@ To use the communities correctly please follow the guide below:
     
 -   To prepend you must include the “Advertise to XXX” community as well as the prepend community. E.g to prepend two times to Limelight, you must use 54825:530 & 54825:532. This tells our routers to advertise to Limelight, and prepend twice.
     
-
   
 
-  
-
-## Transit Providers
+### Transit Providers
 
   
 
@@ -161,7 +167,7 @@ Available in NRT1
 
   
 
-## Private Network Interconnects
+### Private Network Interconnects
 
 **Sprint Communities - ASN 1239**
 
@@ -204,7 +210,7 @@ Available in SJC, IAD, EWR
   
   
 
-## Internet Exchanges
+### Internet Exchanges
 
 **AMS-IX**
 
@@ -384,9 +390,9 @@ Available in LAX2
 | 54825:933 | Prepend three times|
   
 
-## Additional communities for Internet Exchanges only
+### Additional communities for Internet Exchanges only
 
-These communities can be attached to prefixes advertised to any Internet Exchange.  This allows customers to advertise to the whole IX, except for some specific peers.  We are able to add more of these communities by request.
+These communities can be attached to prefixes advertised to any Internet Exchange.  This allows you to advertise to the whole IX, except for some specific peers.  We are able to add more of these communities by request.
 
 | Community | Function |
 |--|--|
@@ -394,17 +400,10 @@ These communities can be attached to prefixes advertised to any Internet Exchang
 | 54825:15169 | Do not advertise to Google|
 
 
-## Other communities
+### Other communities
 
 **54825:666**
 
 -   Function: BGP blackhole.
 -   Packet will blackhole traffic to your prefix, as well as signal supporting transit providers and peering partners to do the same.
 -   We support de-aggregation down to the /32 (IPv4) and /128 (IPv6) level with this community only.
-
-**54825:222**
-
--   Function: Anycast routing
--   By tagging your routes with this community, Packet will advertise your routes to only transit and peering we maintain consistently on a global basis. Regional ISPs we connect with (e.g. Verizon in the New York metro area) will not learn your routes, as advertising to them may result in "scenic" routing for customers with global Anycast configurations.
--   Please note that this community is not advised for normal use, as it will limit the number of available paths/providers you have access to. It should only be deployed by customers seeking BGP anycast topology, with multiple server instances deployed in each Packet datacenter.
-
