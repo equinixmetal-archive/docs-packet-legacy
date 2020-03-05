@@ -319,7 +319,7 @@ If everything is good... go ahead and build your DC/OS cluster!
 
 Now we wait! Not long, probably around 7 minutes. You could check the status of the servers you just deployed from the Packet portal.
 
-![provisioning](/images/deploy-dc-os-with-terraform/provisioning.jpg)
+![provisioning](/images/deploy-dc-os-with-terraform/dcos-terraform-step-6-portal-new.png)
 
 **_Note, once Terraform finishes its thing be sure to copy and save (or just don't clear out your terminal window) all the IP related output, you'll need it!_**
 

@@ -20,11 +20,10 @@ For this guide, we're deploying a [Tiny But Mighty](https://www.packet.net/clou
 
 # Step 1 - Choose an IP to Broadcast
 
-Navigate over to **IPs & Networks** in your BGP enabled project and click on _Manage Block_ for the IPv4 block in the data center location that corresponds with your server deployment. Choose an available IP that will act as your broadcast IP. In this guide, we'll be using 10.99.12.138.
+Navigate over to **IPs & Networks** in your BGP enabled project and click on _Manage Block_ for the IPv4 block in the data center location that corresponds with your server deployment. Choose an available IP that will act as your broadcast IP. In this guide, we'll be using 10.99.200.138.
 
-![manage-ips](/images/route-bgp-with-bird/manage-ips.png)
-
-![manage-ips-2](/images/route-bgp-with-bird/manage-ips-2.png)
+![manage-ips](/images/route-bgp-with-bird/manage-ips-new.png)
+![manage-ips-2](/images/route-bgp-with-bird/manage-ips-2-new.png)
 
 # Step 2 - Update Network Interface
 
@@ -34,7 +33,7 @@ Update the network interfaces with a virtual loopback interface.
 
   echo 'auto lo:0
   iface lo:0 inet static
-  address 10.99.12.138
+  address 10.99.200.138
   netmask 255.255.255.255' >> /etc/network/interfaces
 ```
 
@@ -78,9 +77,9 @@ vim /etc/bird/bird.conf
 ```default
 
 filter packetdns {
-  # IPs to announce ( 10.99.12.138 in this case)
+  # IPs to announce ( 10.99.200.138 in this case)
   # Doesn't have to be /32. Can be lower
-  if net = 10.99.12.138/32 then accept;
+  if net = 10.99.200.138/32 then accept;
 }
 
 # your (Private) bond0 IP
@@ -145,9 +144,10 @@ service bird restart
 
 # Step 8 - Enable BGP
 
-Enable BGP for the server in the portal via the server detail page.
+Enable BGP for the server in the portal via the server detail page, click ' **MANAGE**', then click ' **Enable**'
 
-![enable-bgp](/images/route-bgp-with-bird/enable-bgp.png)
+![enable-bgp-1](/images/route-bgp-with-bird/enable-bgp-1.png)
+![enable-bgp-2](/images/route-bgp-with-bird/enable-bgp-2.png)
 
 # Finishing Up
 
@@ -184,8 +184,8 @@ As you can see, the BGP state is Established and we are exporting 1 route.
 
 If you check the server detail page, you will also see the learned route.
 
-![server-details](/images/route-bgp-with-bird/server-details.png)
+![server-details](/images/route-bgp-with-bird/server-details-new.png)
 
-To test, you can ping the IP address in a command line - `ping 10.99.12.138`. _Remember, Local BGP is announcing a private IP address, so you'll have to be connected to the private network for the data center you're running Local BGP in. You can do that by SSHing into another server in that data center or by connected to [Doorman](https://www.packet.com/developers/docs/network/basic/doorman), Packet's private VPN._
+To test, you can ping the IP address in a command line - `ping 10.99.200.138`. _Remember, Local BGP is announcing a private IP address, so you'll have to be connected to the private network for the data center you're running Local BGP in. You can do that by SSHing into another server in that data center or by connected to [Doorman](https://www.packet.com/developers/docs/network/basic/doorman), Packet's private VPN._
 
 **Congratulations! You've just configured a BGP routing protocol.**
