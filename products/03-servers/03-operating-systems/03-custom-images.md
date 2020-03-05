@@ -107,7 +107,8 @@ Deploying Your Custom Image
 Now that you've created your custom image, you can deploy it by specifying the repo and image tag via UserData at the time of deployment:
 ```
 #cloud-config
-#image_repo=https://somegitserver/user/image-repo.git #image_tag=b1ce89c2584b9fe1513ec72a481fd1c662db6808
+#image_repo=https://somegitserver/user/image-repo.git
+#image_tag=b1ce89c2584b9fe1513ec72a481fd1c662db6808
 ```
 ️The image_repo will be the clone address of the giithub/lab repo where you pushed the image, and the image_tag is the hash of the last commit on that repo.
 
