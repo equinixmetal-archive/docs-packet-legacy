@@ -37,7 +37,8 @@ Which will, for example, set a relative path for your webserver to refer to the 
 
 In your Packet console, you can create a new instance, and select Custom iPXE as your Operating System:
 
-![custom-ipxe](/images/smartos-on-packet/01.png)
+![custom-ipxe-1](/images/smartos-on-packet/01-new.png)
+![custom-ipxe-2](/images/smartos-on-packet/01-2-new.png)
 
 Then, in the text field below that selection, you will paste the full path to your iPXE script:
 
@@ -49,7 +50,7 @@ http://${YOUR_HOST}/smartos.ipxe
 
 Because this is the first boot, you will need to configure things like a root password, a network configuration for your management interface, and the storage pool for your instance.
 
-After hitting “Deploy Servers” in your Packet console, you’ll find, one it’s online, you will need to use the SOS console to complete the setup. 
+After hitting “Deploy Servers” in your Packet console, you’ll find, one it’s online, you will need to use the SOS console to complete the setup.
 
 ![smartos-node-address](/images/smartos-on-packet/02.png)
 
@@ -69,7 +70,7 @@ The next step is to configure storage, which SmartOS will make a recommendation 
 
 ![storage-pool](/images/smartos-on-packet/05.png)
 
-If the default works for you, then type “yes”, and continue, however, there are other options for SmartOS storage configurations, or manually defining options if you’ve decided to, for example, attach network storage, or add block devices. 
+If the default works for you, then type “yes”, and continue, however, there are other options for SmartOS storage configurations, or manually defining options if you’ve decided to, for example, attach network storage, or add block devices.
 
 Your final step is to configure a root password for the device:
 
@@ -84,4 +85,3 @@ Once complete, you’ll be prompted to hit “Enter” to reboot the host, and c
 ![complete](/images/smartos-on-packet/08.png)
 
 You are ready to proceed and login over your configured administrative interface over SSH and begin deploying your zones.
-

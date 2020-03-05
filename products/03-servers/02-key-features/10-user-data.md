@@ -33,7 +33,7 @@ Cloud Config Data
 
 When provisioning a new server from the Packet Portal, you will find the option to add userdata under Manage:
 
-![User Data Field](/images/user-data/User-Data.png)
+![User Data Field](/images/user-data/userdata-portal-new.png)
 
 On the other hand, if you want to provision a server via our API, you can add userdata by simply using the "userdata": "string" in the body of the call.
 

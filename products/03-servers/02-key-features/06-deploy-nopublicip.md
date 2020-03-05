@@ -21,6 +21,6 @@ Should you attempt to use a non-supported operating system without a public IPv4
 
  In order to deploy without public IPv4 or public IPv6, uncheck those boxes and select the desired Private IPv4 subnet range.
 
-![deployment options](/images/deploy-without-public-ip/Deploy-Sans-Pub-IP.png)
+![deployment options](/images/deploy-without-public-ip/deploy-without-public-ip-portal-new.png)
 
  The Deploy without Public IPv4 feature is also supported [through the API](https://gist.github.com/usrdev/d378864d07ef10332f33f67a5ed05145).

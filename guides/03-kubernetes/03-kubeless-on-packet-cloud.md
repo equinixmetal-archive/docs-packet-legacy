@@ -69,7 +69,7 @@ From the Packet cloud console create two more servers named `kube-worker-1` and 
 ```
 Next, invoke the `kubeadm join` command on each worker node to join the Kubernetes cluster. The same command that was obtained earlier from the output of `kubeadm init` command on the master node.
 
-![interface](/images/kubeless-on-packet-cloud/interface.png)
+![interface](/images/kubeless-on-packet-cloud/setup-worker-nodes-portal-new.png)
 
 From this point, unless specified otherwise, all listed commands should be executed on the master node as the `packet` user.  
 Check the status of the nodes in the cluster by executing the following command :

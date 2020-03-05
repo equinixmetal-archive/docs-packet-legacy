@@ -17,13 +17,14 @@ AMD SEV is a powerful technology that provides an unprecedented level of securit
 
 From the deploy screen, ensure you are selecting c2.med as this is the only device where AMD is found.
 
-![deploy-amd](/images/amd-sev/deploy-amd.png)
+![deploy-amd-1](/images/amd-sev/amd-sev-anjuna-portal-new-1.png)
+![deploy-amd-2](/images/amd-sev/amd-sev-anjuna-portal-new-2.png)
 
 * Hostname: (any name, this is an internal name used only to identify your Packet instance).
 
 * Location: any location (preferably one that is geographically close to you) that offers the c2.medium host type (see below).
 
-* Type: You **MUST** select [c2.medium](https://www.packet.com/cloud/servers/c2-medium-epyc/) as it uses an AMD EPYC processor that supports SEV. 
+* Type: You **MUST** select [c2.medium](https://www.packet.com/cloud/servers/c2-medium-epyc/) as it uses an AMD EPYC processor that supports SEV.
 
 * OS: Ubuntu 18.04 LTS.
 
@@ -56,18 +57,16 @@ runcmd:
 
 * Select the Deploy Servers option.
 
-Follow the build process by coonnecting to the [SOS Console](https://www.packet.com/developers/docs/servers/key-features/sos-serial-over-ssh/). Building SEV can take ~20 minutes. When the build completes and  to activate the SEV kernel a reboot must be issued. 
+Follow the build process by coonnecting to the [SOS Console](https://www.packet.com/developers/docs/servers/key-features/sos-serial-over-ssh/). Building SEV can take ~20 minutes. When the build completes and  to activate the SEV kernel a reboot must be issued.
 
-Verify `/dev/sev` exists: 
+Verify `/dev/sev` exists:
 
 ```
 $ ls -l /dev/sev
 crw------- 1 root root 10, 55 Oct 21 15:06 /dev/sev
 ```
-Verify SEV is active in KVM: 
+Verify SEV is active in KVM:
 ```
 $ dmesg | grep SEV
 SVM: SEV supported
 ```
-
-

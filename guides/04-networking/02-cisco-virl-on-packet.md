@@ -69,7 +69,7 @@ Deploying VIRL on Packet is easy using Packet's IPXE / custom-image service.  
 
 4. Select ' **Deploy Server**' from the portal menu.
 
-![deploy-server](/images/cisco-virl-on-packet/deploy-server.png)
+![deploy-server](/images/cisco-virl-on-packet/deploy-server-new.png)
 
 5. a) Enter your **hostname**.
 
@@ -81,11 +81,11 @@ Deploying VIRL on Packet is easy using Packet's IPXE / custom-image service.  
 
    e) Enter ' **http://packet.virl.info**' into the iPXE URL box.
 
-![ipxe-url](/images/cisco-virl-on-packet/ipxe-url.png)
+![ipxe-url](/images/cisco-virl-on-packet/custom-ipxe-url.png)
 
-6. Select ' **SSH & USER DATA**' and scroll down to ' **Add optional user data**' box.
+6. Scroll down to ' **Optional Settings**' and tick ' **Add User Data**' switch to input your 'cloud-config' YAML script.
 
-![optional-user-data](/images/cisco-virl-on-packet/optional-user-data.png)
+![optional-user-data](/images/cisco-virl-on-packet/optional-user-data-new.png)
 
 7. Define your license and password settings by entering (or pasting) your 'cloud-init' YAML into the ' **Add optional user data**' box.
 
@@ -130,23 +130,24 @@ Ensuring that the format carries over when pasted into a text editor it is sugge
 
 When you've entered your user-data it should appear like the following, except with your confidential passwords and license information:
 
-![confirmation](/images/cisco-virl-on-packet/confirmation.png)
+![confirmation](/images/cisco-virl-on-packet/confirmation-new.png)
 
-8. Click **Save** and then select ' **Deploy Servers**' to begin the deployment process.
+8. Select ' **Deploy Now**' to begin the deployment process.
 
-![save](/images/cisco-virl-on-packet/save.png)
+![deploy-now](/images/cisco-virl-on-packet/deploy-now.png)
 
 9. Wait for your the server to be completely deployed, then select the host name to get into server's details page.
 
-![server-complete](/images/cisco-virl-on-packet/server-complete.png)
+![server-wait](/images/cisco-virl-on-packet/server-wait.png)
+![server-complete](/images/cisco-virl-on-packet/server-complete-new.png)
 
 10. After the server is deployed, VIRL will go through the configuration process wich should take another 5-7 minute.
 
 If you switch to the 'Timeline' tab you can observe all of the User Events that are posted during the VIRL deployment, including information about application of your passwords and license.
 
-Once VIRL is completely configured and ready for use you will see a message indicating success in the and the URL at which the VIRL UWM interface can be reached for management.
+Once VIRL is completely configured and ready for use you will see a message indicating successful provision and you can reach the VIRL UWM interface for management through its IP address (http://<your.virl.server.ip>).
 
-![details](/images/cisco-virl-on-packet/details.png)
+![timeline](/images/cisco-virl-on-packet/timeline.png)
 
 11. Navigate to the UWM address and login as either 'guest' or 'uwmadmin'. If you set custom passwords use these. If not, the defaults are 'guest', and 'password', respectively.
 

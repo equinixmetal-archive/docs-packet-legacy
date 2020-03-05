@@ -15,11 +15,14 @@
 #### Provision a Server With Debian 10
 For this demostration, we'll use our c1.small configuration running Debian 10.
 
-From the server deployment screen, click configuraiton to create a custom subnet-size of /28.
+![deploy-1](/images/proxmox/proxmox-deploy-1.png)
+![deploy-2](/images/proxmox/proxmox-deploy-2.png)
 
-![custom-subnet](/images/proxmox/proxmox-custom-subnet.png)
+From the **Optional Settings**, click switch to enable ' **Configure IPs**' to create a custom subnet-size of /28.
 
-Once device is deployed, please make sure that your machines hostname is resovable via `/etc/hosts`, i.e you need an entry in `/etc/hosts` which includes your v4 address to the FQDN of your device. 
+![custom-subnet](/images/proxmox/proxmox-custom-subnet-new.png)
+
+Once device is deployed, please make sure that your machines hostname is resovable via `/etc/hosts`, i.e you need an entry in `/etc/hosts` which includes your v4 address to the FQDN of your device.
 
 **Note:** Make sure there is no reference to IPv6 address for your hostname specificed in `/etc/hosts`
 

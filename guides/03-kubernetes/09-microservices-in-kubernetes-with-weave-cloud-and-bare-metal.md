@@ -54,7 +54,7 @@ Create a new account here at [Packet.com](https://www.packet.com/) (or login to
 
 **Next, you'll want to create three Ubuntu servers.** From the Packet setup console, create three Ubuntu 16.04 servers with at least 8GB of memory on each.  For this tutorial, I used three “Type 0” servers, which at only $.05/hr should still be more than sufficient to run our sample app in Kubernetes.
 
-![shop](/images/microservices-in-kubernetes-with-weave-cloud-and-bare-metal/shop.png)
+![shop](/images/microservices-in-kubernetes-with-weave-cloud-and-bare-metal/shop-new.png)
 
 Defining a Project in Packet
 
@@ -150,7 +150,7 @@ On Packet.net there are few extra steps you must take to avoid collisions with t
 
 From within the Packet console, you can conveniently view, request and manage IP address blocks for all of your deployed servers.
 
-![manage-ips](/images/microservices-in-kubernetes-with-weave-cloud-and-bare-metal/manage-ips.png)
+![manage-ips](/images/microservices-in-kubernetes-with-weave-cloud-and-bare-metal/manage-ips-new.png)
 
 Manage IP Blocks from within Packet
 
