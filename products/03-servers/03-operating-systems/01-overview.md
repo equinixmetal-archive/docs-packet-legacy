@@ -16,7 +16,7 @@ Packet provides a range of officially supported operated systems including Linux
 
 Images for supported operating systems are built specifically for each Packet server type and stored on our public [Github repository](https://github.com/packethost/packet-images). All supported operating systems are available for automatic installation when provisioning Packet servers via the customer portal, Packet API, or integration (e.g. Terraform).
 
-Visit our [main webpage](https://www.packet.com/developers/os-compability/) for a list of all supported operating systems and compatible server types.
+Visit our [main webpage](https://www.packet.com/developers/os-compatibility/) for a list of all supported operating systems and compatible server types.
 
 ### Custom iPXE
 Don't see the OS you need in our supported list? No problem!
