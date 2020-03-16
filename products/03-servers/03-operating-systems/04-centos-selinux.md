@@ -24,7 +24,7 @@ yum install selinux-policy selinux-policy-targeted
 ````
 Once policy is installed, you will want to simply create a file in the `/` called `.autorelabel`. To activate SELinux you must reboot the device. 
 
-`````
+````
 shutdown -r now
 ````
 Upon reaccessing the device, verify that SElinux is infact enable by running `sestatus` and you will see an output similar to the following: 
