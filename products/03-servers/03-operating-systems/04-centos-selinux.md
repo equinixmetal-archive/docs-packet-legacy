@@ -10,7 +10,7 @@
 }
 </meta> -->
 
-SELinux is incredibly valuable as part of an overall Linux system security strategy. To sucessfully provision CentOS on our platform, we have disabled SELinu as shown with the `sestatus` command.
+SELinux is incredibly valuable as part of an overall Linux system security strategy. To sucessfully provision CentOS on our platform, we have disabled SELinux as shown with the `sestatus` command.
 
 ````
 [root@ewr1-t1 ~]# sestatus
