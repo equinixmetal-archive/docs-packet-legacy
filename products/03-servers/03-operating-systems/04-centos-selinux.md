@@ -17,17 +17,17 @@ SELinux is incredibly valuable as part of an overall Linux system security strat
 SELinux status:                 disabled
 ````
 
-Should your your particular CentOS deployment require SELinux, you can easily enable it, as shown here. 
+Should your particular CentOS deployment require SELinux, you can easily enable it, as shown here:
 
 ````
 yum install selinux-policy selinux-policy-targeted
 ````
-Once policy is installed, you will want to simply create a file in the `/` called `.autorelabel`. To activate SELinux you must reboot the device. 
+Once policy is installed, you will want to simply create a file in the `/` called `.autorelabel`. To activate SELinux you must reboot the device.
 
 ````
 shutdown -r now
 ````
-Upon reaccessing the device, verify that SElinux is infact enable by running `sestatus` and you will see an output similar to the following: 
+Upon reaccessing the device, verify that SElinux is infact enable by running `sestatus` and you will see an output similar to the following:
 
 ````
 [root@ewr1-t1 /]# sestatus
@@ -42,6 +42,6 @@ Policy deny_unknown status:     allowed
 Max kernel policy version:      31
 [root@ewr1-t1 /]#
 ````
-> **_NOTE:_**  Should you need to reinstall the OS via our server reinstall feature, you MUST disable SELinux otherwise, the device will fail to reinstall. 
+> **_NOTE:_**  Should you need to reinstall the OS via our server reinstall feature, you MUST disable SELinux otherwise, the device will fail to reinstall.
 
-To disable simply edit file ` /etc/selinux/config` change `enforcing` to `disabled` and reboot the device. Upon reaccessing the device, you can then proceed with the server reinstall feature. 
+To disable simply edit file ` /etc/selinux/config` change `enforcing` to `disabled` and reboot the device. Upon reaccessing the device, you can then proceed with the server reinstall feature.
