@@ -1,8 +1,8 @@
 <!-- <meta>
 {
-    "title":"CentOS: Selinux",
+    "title":"CentOS: SELinux",
     "description":"Learn more about why we disable SELinux on CentOS",
-    "tag":["Operating Systems", "CentOS", "SELinux],
+    "tag":["Operating Systems", "CentOS", "SELinux"],
     "seo-title": "CentOS: SELinux - Packet Developer Docs",
     "seo-description": "Learn more about why we disable SELinux on CentOS",
     "og-title": "CentOS: SELinux - Packet Developer Docs",
