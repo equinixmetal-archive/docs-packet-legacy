@@ -26,7 +26,7 @@ Bandwidth is also a consideration. Regular $0.05/GB outbound rates apply. In add
 
 #### Which facilities support Global Anycast IPs?
 
-Global Anycast IPv4 addresses can be announced from Packet's core datacenters: AMS1, EWR1, NRT1, and SJC1. Custom sites will be coming soon.
+Global Anycast IPv4 addresses can be announced from Packet's core datacenters those are: SIN3, IAD2, AMS1, NRT1, DFW2, EWR1 and SJC1.
 
 How many Global Anycast IPs can you request?
 
