@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"miniONE Edge Cloud install with Packet",
-    "description":"miniONE is a tool to really help get users “up and running” with an OpenNebula environment. We hope you see how easy it is to start your own edge deployment or eventually extend your current setup to the edge.",
+    "description":"miniONE is a tool to really help get users “up and running” with an OpenNebula environment",
     "tag":["virtual machines", "open nebula", "miniONE"],
     "seo-title": "miniONE Edge Cloud install with Packet - Packet Technical Guides",
     "seo-description": "miniONE is a simple evaluation tool that allows you to deploy all-in-one installation for KVM or LXD deployments in a few simple steps.",

@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"BGP Global Communities",
-    "description":"What are our Supported BGP Communties & How to use them.",
+    "description":"Packet's supported BGP Communities and their use",
     "tag":["BGP", "Communities", "Peering"],
     "seo-title": "BGP Global Communities - Packet Technical Guides",
     "seo-description": "Using BGP communities on Packe",

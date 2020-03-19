@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"SmartOS on Packet",
-    "description":"How to deploy SmartOS on Packet",
+    "description":"Standing up SmartOS on Packet utilizing custom iPXE",
     "tag":["OS", "SmartOS"],
     "seo-title": "SmartOS on Packet - Packet Technical Guides",
     "seo-description": "Deplying SmartOS on Packet",

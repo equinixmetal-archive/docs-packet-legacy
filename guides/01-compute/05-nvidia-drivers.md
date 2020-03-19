@@ -1,7 +1,7 @@
 <!-- <meta>
 {
-    "title": "x2.xlarge Nvidia Drivers",
-    "description": "This article describes the steps on installing the official Nvidia drivers and CUDA toolkit for Ubuntu 16.04 and 18.04 for x2 systems in Packet.",
+    "title": "Nvidia Drivers: x2.xlarge",
+    "description": "The proper steps on installing the official Nvidia drivers and CUDA toolkit for Ubuntu 16/18.04 on the x2 in Packet",
     "tag": ["nvidia", "x2.xlarge", "CUDA"],
     "seo-title": "x2.xlarge Nvidia Drivers Install - Packet Technical Guides",
     "seo-description": "x2.xlarge Nvidia Drivers",

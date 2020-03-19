@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Crosscloud VPN with Wireguard",
-    "description":"Setup a Crosscloud VPN with Wireguard",
+    "description":"Utlizing Wireguard to setup a Crosscloud VPN",
     "tag":["Crosscloud VPN", "Wireguard"],
     "seo-title": "Introduction to CPU Tuning - Packet Technical Guides",
     "seo-description": "Crosscloud VPN with Wireguard - Packet Technical Guides",

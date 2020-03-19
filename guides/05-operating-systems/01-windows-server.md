@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Windows Server",
-    "description":"Tips & Tricks with Windows Server",
+    "description":"Accessing RDP and other Tips & Tricks while using Windows Server on Packet",
     "tag":["Operating Systems", "Windows"],
     "seo-title": "Windows Server - Packet Developer Docs",
     "seo-description": "Learn more about utilizing Windows Server at Packet",

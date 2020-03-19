@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "Apache Kafka on CoreOS",
-    "description": "Quick and easy way of setting up a Kafka cluster on a single Packet bare-metal machine. The entire setup will have the default Zookeeper instance that ships with Kafka, and three message brokers.",
+    "description": "Setting up a Kafka cluster on a single machine on the Packet Platform",
     "tag": ["AMD", "Apache", "CoreOS", "Kafa"],
     "seo-title": "Apache Kafka on CoreOS - Packet Technical Guides",
     "seo-description": "Setup Kafka cluster on a single Packet bare-metal machine",
