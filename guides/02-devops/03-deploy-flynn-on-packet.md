@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "Deploy Flynn on Packet",
-    "description": "Lelarn the basics of why you'd want a platform, how to install Flynn on Packet, and the basics of deploying your apps and managing databases.",
+    "description": "How to install Flynn on Packet, and the basics of deploying your apps",
     "tag": ["Flynn"],
     "seo-title": "Deploy Flynn on Bare Metal - Packet Technical Guides",
     "seo-description": "Deploy Flynn on Packet",

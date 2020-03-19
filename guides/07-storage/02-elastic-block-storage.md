@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Elastic Block Storage",
-    "description":"Understanding & Deploying Block Storage on Packet",
+    "description":"Deploying and Attaching Block Storage on Linux Devices",
     "tag":["Storage", "Block Storage", "Elastic Block Storage"],
     "seo-title": "Using Elastic Block Storage - Packet Bare Metal",
     "seo-description": "Deploying Block Storage on Packet",

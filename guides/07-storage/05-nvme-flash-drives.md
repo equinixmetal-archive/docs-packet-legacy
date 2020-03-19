@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"NVME Flash Drives",
-    "description":"With this new drive type, some of your common Linux disk utilities may have trouble recognizing the cards, we show you some common commands to work with your NVMe drive.",
+    "description":"Common commands to work with and format NVMe drives",
     "tag":["NVME", "flash", "drive"],
     "seo-title": "NVMe Flash Drives - Packet Technical Guides",
     "seo-description": "How to Setup NVME flash drives.",

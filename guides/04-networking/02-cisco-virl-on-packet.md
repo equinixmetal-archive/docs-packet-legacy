@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Cisco VIRL on Packet",
-    "description":"Cisco VIRL – or Virtual Internet Routing Labs – is a network simulation framework that enables the rapid design, configuration, and testing of comprehensive network and service-delivery solutions.",
+    "description":"How to deploy and access Cisco's VIRL Network Virtuzlation software",
     "tag":["Cisco", "VIRL"],
     "seo-title": "Cisco VIRL on Bare Metal - Packet Technical Guides",
     "seo-description": "Using Cisco VIRL on Packet",

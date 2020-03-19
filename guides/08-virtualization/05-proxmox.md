@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Proxmox",
-    "description":"Covert a Debian10 server to Proxmox virtulization platform",
+    "description":"Steppings on converting a Debian10 server to the Proxmox virtulization platform",
     "tag":["VMs", "Proxmox", "Virtualization"],
     "seo-title": "Install Proxmox on Bare Metal - Packet Technical Guides",
     "seo-description": "Deploying Proxmox on Packet",

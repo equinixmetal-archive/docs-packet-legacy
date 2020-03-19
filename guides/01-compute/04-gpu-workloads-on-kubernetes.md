@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "Kubernetes for GPU Workloads",
-    "description": "GPU-accelerated machines make an excellent substrate for containerized workloads leveraging GPUs within Kubernetes using the native tooling available in your cluster.",
+    "description": "Learn how to leverage GPUs within Kubernetes using the native tooling available in your cluster.",
     "tag": ["Kubernetes", "Docker", "GPU"],
     "seo-title": "Preparing Kubernetes for GPU Workloads - Packet Technical Guides",
     "seo-description": "Preparing Kubernetes for GPU Workloads",

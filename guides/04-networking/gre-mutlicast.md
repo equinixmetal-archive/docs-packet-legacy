@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"GRE with Multicast",
-    "description":"Learn how to configure GRE with Multicast.",
+    "description":"Configuring GRE with Multicast between two Packet devices",
     "tag":["Route GRE", "Multicast"],
     "seo-title": "GRE with Multicast - Packet Technical Guides",
     "seo-description": "Configure GRE with Multicast.",

@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"LACP Bonding",
-    "description":"Learn how to setup aggregated grups that share the same bond link and speed",
+    "description":"Standing up aggregated groups that share the same bonded link & speed",
     "tag":["Route LACP", "Bonding"],
     "seo-title": "LACP Bondingt - Packet Technical Guides",
     "seo-description": "Learn how to setup aggregated grups that share the same bond link and speed.",

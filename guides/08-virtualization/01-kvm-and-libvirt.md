@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"KVM and Libvirt on Ubuntu 16.04",
-    "description":"Deploying KVM and Libvirt on Ubuntu 16.04",
+    "description":"Installing and configurating KVM with Libvirt on Ubuntu 16.04",
     "tag":["virtual machines"],
     "seo-title": "KVM and Libvirt on Ubuntu 16.04 - Packet Technical Guides",
     "seo-description": "KVM and Libvirt on Ubuntu 16.04 description",

@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "Software RAID 10",
-    "description": "This quide will demonstrate a Software RAID configuration for a Packet m1.xlarge server, “The Virtualizer”, running Ubuntu 16.04.",
+    "description": "Creating a software RAID configuration for a Packet m1.xlarge server",
     "tag": ["storage", "RAID"],
     "seo-title": "Software RAID 10 - Packet Technical Guides",
     "seo-description": "This quide will demonstrate a Software RAID configuration for a Packet m1.xlarge server, “The Virtualizer”, running Ubuntu 16.04.",

@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "Self-Hosted Zoom Meetings",
-    "description":"Learn how to deploy a self-hosted Zoom platform.",
+    "description":"How doe deploy Zoom Video Conferencing software on Packet",
     "tag": ["Self-Hosted", "Zoom"],
     "seo-title": "Self-Hosted Zoom Meetings - Packet Technical Guides",
     "seo-description": "Self-Hosted Zoom Meetings",

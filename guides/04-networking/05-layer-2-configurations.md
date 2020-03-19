@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "Layer 2 Configurations",
-    "description": "Essentially there are two ways of achieving private connectivity between different hosts on Packet, in this guide we will guide you through each.",
+    "description": "Setting up Private Networking with Layer2 configuration",
     "tag": ["layer 2", "networking", "advanced"],
     "seo-title": "Layer 2 Configurations - Packet Technical Guides",
     "seo-description": "How to configure some possible layer 2 environments.",
