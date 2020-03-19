@@ -1,12 +1,12 @@
 <!-- <meta>
 {
-    "title":"Pricing & Discounts",
-    "description":"How We Compare - Packet Developer Docs",
+    "title":"Getting Started",
+    "description":"Getting Started - Packet Developer Docs",
     "tag":["Sales", "Prices", "Discounts", "Compare"],
-    "seo-title": "Support Options - Packet Developer Docs",
-    "seo-description": "How We Compare - Packet Developer Docs",
-    "og-title": "Pricing & Discounts",
-    "og-description": "How We Compare - Packet Developer Docs"
+    "seo-title": "Sales: Getting Started - Packet Developer Docs",
+    "seo-description": "Getting Started - Packet Developer Doc",
+    "og-title": "Sales: Getting Started",
+    "og-description": "Getting Started - Packet Developer Doc"
 }
 </meta> -->
 
