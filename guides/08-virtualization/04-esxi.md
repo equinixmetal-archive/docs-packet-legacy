@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"ESXi",
-    "description":"Deploying ESXi on Packet",
+    "description":"How to deploy and manage ESXi 6.5 on the Packet Platform",
     "tag":["VMs", "ESXi", "VMWare"],
     "seo-title": "Learn about deploying VMWare ESXi on Packet - Packet Technical Guides",
     "seo-description": "Learn about deploying ESXi on Packet",

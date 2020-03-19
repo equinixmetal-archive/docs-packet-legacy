@@ -1,7 +1,7 @@
 <!-- <meta>
 {
    "title":"Kubeless on Packet",
-    "description":"Setup Kubeless on a bare metal K8s cluster",
+    "description":"Kubeless is a Kubernetes-native serverless framework that lets you deploy small bits of code (functions) without having to worry about the underlying infrastructure.",
     "tag":["kubeless", "k8s"],
     "seo-title": "Introduction to CPU Tuning - Packet Technical Guides",
     "seo-description": "Setup Kubeless on a bare metal K8s cluster",

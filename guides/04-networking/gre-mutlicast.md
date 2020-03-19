@@ -1,6 +1,15 @@
-# Multicast with GRE
+<!-- <meta>
+{
+    "title":"GRE with Multicast",
+    "description":"Learn how to configure GRE with Multicast.",
+    "tag":["Route GRE", "Multicast"],
+    "seo-title": "GRE with Multicast - Packet Technical Guides",
+    "seo-description": "Configure GRE with Multicast.",
+    "og-title": "GRE with Multicast",
+    "og-description":"Learn how to configure GRE with Multicast."  
+}
+</meta> -->
 
-### What is Multicast?
 Multicast (often referred to as multicasting) is where data transmission is addressed to a group of destination computers simultaneously.  Multicast can be a one-to-many or a many-to-many distribution.  Multicast requires the source to send a packet only once, even if it needs to be delivered to a large number of receivers.  
 
 ### Why is Multicasting disabled on Packet's network?

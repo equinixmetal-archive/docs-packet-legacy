@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "Kubernetes Cluster API",
-    "description": "Kubernetes Cluster API on Packet",
+    "description": "Cluser API is an effort to make cluster bootstrapping declarative, while also using a single interface for a variety of Kubernetes providers.",
     "tag": ["Kubernetes", "Cluster"],
     "seo-title": "Kubernetes Cluster API for Packet - Packet Technical Guides",
     "seo-description": "Kubernetes Cluster API on Packet",
@@ -9,8 +9,6 @@
     "og-description": "Kubernetes Cluster API on Packet"
 }
 </meta> -->
-
-# Kubernetes Cluster API on Packet
 
 Packet is an [officially supported provider for the Kubernetes Cluster API](https://github.com/packethost/cluster-api-provider-packet). The Cluser API is an effort to make cluster bootstrapping declarative, while also using a single interface for a variety of Kubernetes providers (i.e. cloud providers like Packet, AWS, GCP, or provisioners like kubeadm).
 

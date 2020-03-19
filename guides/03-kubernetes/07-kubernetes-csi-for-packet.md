@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "Kubernetes CSI for Packet",
-    "description": "Kubernetes CSI (Container Storage Interface) for Packet",
+    "description": "Kubernetes CSI is intended to allow clusters to provision, & attach PersistentVolumes as Kubernetes StorageClasses from a variety of storage providers via this standard. In this case, our Elastic Block Storage",
     "tag": ["Kubernetes", "CSI", "Container Storage Interface"],
     "seo-title": "Kubernetes CSI for Bare Metal - Packet Technical Guides",
     "seo-description": "Kubernetes CSI (Container Storage Interface) for Packet",
@@ -9,12 +9,6 @@
     "og-description": "Kubernetes CSI (Container Storage Interface) for Packet"
 }
 </meta> -->
-
-
-# Kubernetes CSI (Container Storage Interface) for Packet
-
-## Introduction:
-
 
 The [Kubernetes CSI](https://kubernetes.io/blog/2019/01/15/container-storage-interface-ga/) is intended to allow clusters to provision, and attach `PersistentVolumes` as Kubernetes `StorageClasses` from a variety of storage providers via this standard. In this case, Packet's [Elastic Block Storage](https://support.packet.com/kb/articles/elastic-block-storage). 
 

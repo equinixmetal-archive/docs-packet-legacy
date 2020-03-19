@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Kubernetes CCM for Packet",
-    "description":"Kubernetes CCM (Cloud Controller Manager) for Packet",
+    "description":"Kubernetes CCM plugin is designed to implement cloud-vendor specific features such as properly labeling nodes and providing LoadBalancer services.",
     "tag":["Kubernetes", "CCM", "Cloud Controller Manager"],
     "seo-title": "Kubernetes CCM for Packet - Packet Technical Guides",
     "seo-description": "Kubernetes CCM (Cloud Controller Manager) for Packet",

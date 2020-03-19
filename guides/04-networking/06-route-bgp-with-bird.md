@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Route BGP with BIRD",
-    "description":"Route BGP with BIRD on Packet",
+    "description":"Learn how to configure Local BGP using BIRD so that you can broadcast a specific local IP address to a host of your choice.",
     "tag":["Route BGP", "BIRD"],
     "seo-title": "Route BGP with BIRD - Packet Technical Guides",
     "seo-description": "Route BGP with BIRD on Packet",

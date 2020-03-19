@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "CPU Tuning",
-    "description": "Tips for fine tuning the CPU to improve performance",
+    "description": "Unlike with virtualized clouds (AWS, GCE, etc) with a dedicated server at Packet you can really dive into the guts of server tuning. Each workload is different, so our recommendation is to take incremental steps and measure your progress.",
     "tag": ["CPU", "Tuning", "Processor", "Performance"],
     "seo-title": "Introduction to CPU Tuning - Packet Technical Guides",
     "seo-description": "Tips for fine tuning the CPU to improve performance",

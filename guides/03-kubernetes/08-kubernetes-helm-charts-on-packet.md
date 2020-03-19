@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Helm Charts for Kubernetes",
-    "description":"Helm Charts for Kubernetes Package Management",
+    "description":"Helm is a package manager for Kubernetes clusters, much like apt or yum on a traditional operating system, which can pull, download, deploy, and manage packaged workloads from a central repository, or from a local project.",
     "tag":["Kubernetes", "Package Management", "Helm"],
     "seo-title": "Helm Charts for Kubernetes Package Management - Packet Technical Guides",
     "seo-description": "Helm Charts for Kubernetes Package Management",

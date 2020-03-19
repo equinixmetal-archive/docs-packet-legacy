@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "Layer 2 Configurations",
-    "description": "How to configure some possible layer 2 environments.",
+    "description": "Essentially there are two ways of achieving private connectivity between different hosts on Packet, in this guide we will guide you through each.",
     "tag": ["layer 2", "networking", "advanced"],
     "seo-title": "Layer 2 Configurations - Packet Technical Guides",
     "seo-description": "How to configure some possible layer 2 environments.",
@@ -9,11 +9,6 @@
     "og-description":" How to configure some possible layer 2 environments."
 }
 </meta> -->
-
-
-# Creating private networking environments on Packet
-
-## Introduction
 
 Private networking environments are different on Packet compared to other cloud providers. There are essentially two ways of achieving private connectivity between different hosts on Packet.
 

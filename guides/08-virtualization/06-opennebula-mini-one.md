@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"OpenNebula miniONE",
-    "description":"deploy OpenNebula single-node environments",
+    "description":"Deploying the all-in-one OpenNebula environment. All the necessary services to use, manage and run the cloud will be co-located on the single dedicated bare-metal host.",
     "tag":["OpenNebula"],
     "seo-title": "OpenNebula miniONE - Packet Technical Guides",
     "seo-description": "deploy OpenNebula single-node environments",

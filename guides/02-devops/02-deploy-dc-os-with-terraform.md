@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "Deploy DC/OS with Terraform",
-    "description": "Deploy DC/OS with Terraform",
+    "description": "Deploying & Managing Resrouces with a DC/OS deployment",
     "tag": ["DC/OS", "Terraform", "Datacenter Operating System"],
     "seo-title": "Deploy DC/OS with Terraform - Packet Technical Guides",
     "seo-description": "Deploy DC/OS with Terraform",
