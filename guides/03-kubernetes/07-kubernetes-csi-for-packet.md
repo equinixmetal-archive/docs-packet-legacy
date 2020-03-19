@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "Kubernetes CSI for Packet",
-    "description": "Kubernetes CSI is intended to allow clusters to provision, & attach PersistentVolumes as Kubernetes StorageClasses from a variety of storage providers via this standard. In this case, our Elastic Block Storage",
+    "description": "Kubernetes CSI is intended to allow clusters to provision, & attach PersistentVolumes as Kubernetes StorageClasses",
     "tag": ["Kubernetes", "CSI", "Container Storage Interface"],
     "seo-title": "Kubernetes CSI for Bare Metal - Packet Technical Guides",
     "seo-description": "Kubernetes CSI (Container Storage Interface) for Packet",
