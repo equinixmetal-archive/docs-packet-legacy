@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "Compute Profiling and Benchmarking",
-    "description": "Profiling and benchmarking peformance is important to ensure your storage is fast, network is reliable, and computing resources are giving you what you’d expect",
+    "description":"Profiling & benchmarking peformance to ensure your storage is fast, network is reliable, and compute resources are giving you what you’d expect",
     "tag": ["CPU", "Compute", "Profiling", "Beanchmarking"],
     "seo-title": "Compute Profiling & Benchmarking - Packet Technical Guides",
     "seo-description": "Benchmarking Tools for Linux",
