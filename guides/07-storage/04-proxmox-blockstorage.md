@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Proxmox & Block Storage",
-    "description":"Utilizing Block Storage with Proxmox",
+    "description":"Attaching Elastic Block storage to your Proxmox installation",
     "tag":["Proxmox", "EBS", "BlockStorage"],
     "seo-title": "Proxmox & Block Storage - Packet Technical Guides",
     "seo-description": "Utilizing Block Storage with Proxmox",

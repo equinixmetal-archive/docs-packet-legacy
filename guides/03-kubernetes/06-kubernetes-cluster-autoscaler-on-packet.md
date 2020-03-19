@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "Kubernetes Cluster Autoscaler",
-    "description": "Kubernetes Cluster Autoscaler on Packet",
+    "description": "Kubernetes Cluster Autoscaler is designed to dynamically scale your cluster nodepools based on unschedulable pods or nodes that aren’t needed anymore.",
     "tag": ["Kubernetes", "Cluster", "Autoscaler"],
     "seo-title": "Kubernetes Cluster Autoscaler - Packet Technical Guides",
     "seo-description": "Kubernetes Cluster Autoscaler on Packet",
@@ -9,11 +9,6 @@
     "og-description": "Kubernetes Cluster Autoscaler on Packet"
 }
 </meta> -->
-
-
-# Kubernetes Cluster Autoscaler on Packet
-
-## Introduction
 
 If you are deploying your applications with Kubernetes or are just diving into the platform, you have probably run into the issue of pods or containers not being scheduled due to unavailable resources. Kubernetes has a Vertical pod autoscaler which allows you to configure how many resources such as CPU, RAM, etc you want allocate to your pods as well as a Horizontal pod autoscaler which dynamically adjusts pod replicas based on metrics such as CPU utilization, though the metrics can be customized. There can be times where the pod autoscalers can’t allocate more resources or create more pod replicas due to unavailable node resources.
 

@@ -2,7 +2,7 @@
 <!-- <meta>
 {
     "title":"Block Storage on Windows Server",
-    "description":"Deploying Block Storage on Packet Windows Servers",
+    "description":"Understanding & Deploying Elastic Block Storage on a Packet Windows Servers",
     "tag":["Storage", "Block Storage", "Elastic Block Storage", "Windows", "Windows Server"],
     "seo-title": "Block Storage on Windows Server - Packet Technical Guides",
     "seo-description": "Deploying Block Storage on Packet Windows Servers",

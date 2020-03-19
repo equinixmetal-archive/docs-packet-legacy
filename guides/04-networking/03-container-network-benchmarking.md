@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Container Network Benchmarking on Kubernetes",
-    "description":"Container Network Benchmarking on Kubernetes",
+    "description":"How to benchmark your container network in Kubernetes.",
     "tag":["Kubernetes", "Networking", "Performance, "Docker"],
     "seo-title": "Container Network Benchmarking on Kubernetes - Packet Technical Guides",
     "seo-description": "Container Network Benchmarking on Kubernetes",

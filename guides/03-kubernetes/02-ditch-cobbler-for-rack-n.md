@@ -10,8 +10,6 @@
 }
 </meta> -->
 
-Ditch Cobbler for RackN
-
 Booting bare metal servers used to be hard and finicky, with a limited set of tools- often antiquated. Take our dear old friend Cobbler! Tried and true but outdated, and thus difficult to rely upon for modern, scalable infrastructure. In this guide, we'll show you how to use the [RackN Digital Rebar](https://rackn.com/) framework to orchestrate bare metal in any environment, using Packet's bare metal cloud as a natural extension of on-premise infrastructure so you can make your automation portable right down to the bootstrapping process.
 
 TL;DR? In under 30 seconds with your Packet account, you can test the custom IPXE boot using the [http://packet.rebar.digital/default.ipxe](http://packet.rebar.digital/default.ipxe) endpoint that RackN has enabled for quick starts. See the video here:

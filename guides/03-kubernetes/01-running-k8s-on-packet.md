@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Running Kubernetes on Packet",
-    "description":"Running Kubernetes on Packet",
+    "description":"Kubernetes helps you make sure those containerized applications run where and when you want, and helps them find the resources and tools they need to work.",
     "tag":["Kubernetes"],
     "seo-title": "Running Kubernetes on Packet - Packet Technical Guides",
     "seo-description": "Running Kubernetes on Packet",

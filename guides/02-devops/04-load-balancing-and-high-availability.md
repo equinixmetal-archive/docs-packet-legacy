@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Load Balancing and High Availability",
-    "description":"How to setup a cluster with LB & HA",
+    "description":"For any application or website that you have deployed, it's crucial to have load balancing and high availability implemented to sustain high traffic and failover in case your primary infrastructure goes down.",
     "tag":["HA", "LB", "HAPRoxy"],
     "seo-title": "Load Balancing and High Availability with HAProxy and Keepalived - Packet Technical Guides",
     "seo-description": "How to setup a cluster with LB & HA",
@@ -9,10 +9,6 @@
     "og-description": "How to setup a cluster with LB & HA"
 }
 </meta> -->
-
-
-
-## Introduction
 
 For any application or website that you have deployed, it's crucial to have load balancing and high availability implemented to sustain high traffic and failover in case your primary infrastructure goes down.
 

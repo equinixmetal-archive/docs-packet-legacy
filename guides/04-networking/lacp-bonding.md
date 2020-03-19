@@ -1,4 +1,14 @@
-# LACP Bonding
+<!-- <meta>
+{
+    "title":"LACP Bonding",
+    "description":"Learn how to setup aggregated grups that share the same bond link and speed",
+    "tag":["Route LACP", "Bonding"],
+    "seo-title": "LACP Bondingt - Packet Technical Guides",
+    "seo-description": "Learn how to setup aggregated grups that share the same bond link and speed.",
+    "og-title": LACP Bonding",
+    "og-description":"Learn how to setup aggregated grups that share the same bond link and speed"  
+}
+</meta> -->
 
 Each of the “dual NIC” Linux servers provisioned through Packet have their network interfaces bonded together using the Link Aggregation Control Protocol (LACP).  The current t1.small machines have a Balance-tlb bonding, mainly due to limitations on the Atom CPUs. On this bonding mode, only one slave is in use, so if it fails, the second takes over.
 

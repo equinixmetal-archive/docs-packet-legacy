@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "Deploy Flynn on Packet",
-    "description": "Deploy Flynn on Packet",
+    "description": "Lelarn the basics of why you'd want a platform, how to install Flynn on Packet, and the basics of deploying your apps and managing databases.",
     "tag": ["Flynn"],
     "seo-title": "Deploy Flynn on Bare Metal - Packet Technical Guides",
     "seo-description": "Deploy Flynn on Packet",
@@ -9,11 +9,6 @@
     "og-description": "Deploy Flynn on Packet"
 }
 </meta> -->
-
-
-Deploy Flynn on Packet
-
-In this guide we'll walk you through the basics of why you'd want a platform, how to install [Flynn](https://flynn.io/) on Packet, and the basics of deploying your apps and managing databases.
 
 ## Why Use a Platform?
 

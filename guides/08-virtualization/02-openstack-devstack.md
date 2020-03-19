@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"OpenStack DevStack",
-    "description":"Testing OpenStack using DevStack",
+    "description":"With some technical skills, DevStack is a great option to test OpenStack on a bare metal device",
     "tag":["DevStack", "OpenStack"],
     "seo-title": "NVMe Flash Drives - Packet Technical Guides",
     "seo-description": "OpenStack DevStack - Packet Technical Guides",

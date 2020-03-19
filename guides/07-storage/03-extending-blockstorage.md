@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Extending Blockstorage",
-    "description":"Extending Storage Volume on Packet",
+    "description":"Resizing and Expanding existing Elastic Block Storage Volume(s)",
     "tag":["Extending", "Storage", "Blockstorage"],
     "seo-title": "Advanced Elastic Block Storage Techniques - Packet Technical Guides",
     "seo-description": "Advanced Elastic Block Storage Techniques",

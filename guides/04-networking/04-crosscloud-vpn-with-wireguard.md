@@ -10,18 +10,6 @@
 }
 </meta> -->
 
-
-
-
-<!--- HTML markdown to center the headline --->
-<p align="center">
-	<img alt="wireguard-logo" src="../images/crosscloud-vpn-with-wireguard/wireguard-logo.svg" width="350px" />
-	<h1 align="center">Setup a Crosscloud VPN with Wireguard</h1>
-</p>
-
-## Introduction
-
-
 In the world of VPNs, [WireGuard](https://www.wireguard.com/) is the new kid on the block. Comparing to other existing VPN protocols, Wireguard offers many advantages, such as reliability, updated encryption, simpler configuration, quicker handshake and faster speeds. This article provides two basic wireguard use cases and the steps to setup the WireGuard VPN in Packet’s facilities.
 
 
