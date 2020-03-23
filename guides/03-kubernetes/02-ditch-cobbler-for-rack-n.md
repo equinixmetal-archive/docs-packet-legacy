@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "Ditch Cobbler for RackN",
-    "description": "Ditch Cobbler for RackN on Packet",
+    "description": "Framework to orchestrate bare metal in any enivorment, using RackN and Packet's bare metal",
      "tag": ["Ditch Cobbler", "RackN"],
     "seo-title": "Ditch Cobbler for RackN - Packet Technical Guides",
     "seo-description": "Ditch Cobbler for RackN on Packet",
