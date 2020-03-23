@@ -2,7 +2,7 @@
 {
     "title":"Rack Level Diversity",
     "description":"Learn more about Rack Level Diversity.",
-    "tag":["Rack Level Diversity"]
+    "tag":["Rack Level Diversity"],
     "seo-title": "Bare Metal Cloud Data Centers -- Packet Developer Docs",
     "seo-description": "Learn more about our legal terms",
     "og-title": "Rack Level Diversity",
