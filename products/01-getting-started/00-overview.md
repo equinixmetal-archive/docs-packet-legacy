@@ -7,7 +7,7 @@
 "seo-title":"Packet Bare Metal Cloud Docs - DevOps Resources",
 "seo-description": "A Docker Machine driver from Packet is Powerful",
 "og-title":"Overview",
-"og-description": "Learn more about Packet and get started!"
+"og-description":"Learn more about Packet and get started!"
 }
 </meta> -->
 
