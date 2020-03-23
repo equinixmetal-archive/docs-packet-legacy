@@ -21,6 +21,11 @@ For redundancy, each server has dedicated dual network connections going into tw
 
 | Type  | Network |
 | ------------- | ------------- |
+| t3.small|  20 Gbps Bonded Network (2 x 10Gbps Ports w/ LACP)
+| c3.small|  20 Gbps Bonded Network (2 x 10Gbps Ports w/ LACP)
+| c3.medium| 20 Gbps Bonded Network (2 x 10Gbps Ports w/ LACP)
+| m3.large| 20 Gbps Bonded Network  (2 x 10Gbps Ports w/ LACP)
+| s3.large| 20 Gbps Bonded Network  (2 x 10Gbps Ports w/ LACP)
 | t1.small|  2.5 Gbps Network (2 × Intel NICs 2.5Gbps w/ TLB) full hardware redundancy but no active/active bond.
 | c1.small|  2 Gbps Bonded Network (2 × Intel NICs 1Gbps w/ LACP) full hardware redundancy and active/active bond.
 | x1.small| 10 Gbps Network (2 x Intel X710 NICs 10 Gbps w/ TLB) full hardware redundancy but no active/active bond.
