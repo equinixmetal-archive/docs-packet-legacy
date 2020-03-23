@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "Stress Testing Big Data Setups",
-    "description": "Stress Testing Big Data Setups",
+    "description": "Tips & Tricks for Sttress Testing Big Data Setups",
     "tag": ["Stress Testing", "Big Data"],
     "seo-title": "Stress Testing Big Data Setups - Packet Technical Guides",
     "seo-description": "Stress Testing Big Data Setups",
