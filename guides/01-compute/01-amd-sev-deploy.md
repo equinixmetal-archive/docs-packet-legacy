@@ -54,9 +54,6 @@ runcmd:
   - [cd, AMDSEV/distros/ubuntu-18.04]
   - [./build.sh]
   ```
-
-* Select the Deploy Servers option.
-
 Follow the build process by coonnecting to the [SOS Console](https://www.packet.com/developers/docs/servers/key-features/sos-serial-over-ssh/). Building SEV can take ~20 minutes. When the build completes and to activate the SEV kernel a you must upgrade to 4.16.x kernel.
 
 ````
