@@ -81,7 +81,7 @@ $ ls -l /dev/sev
 crw------- 1 root root 10, 55 Oct 21 15:06 /dev/sev
 ````
 
-Also erify SEV is active in KVM:
+Also verify SEV is active in KVM:
 ````
 $ dmesg | grep SEV
 [    5.563511] ccp 0000:02:00.2: SEV API:0.17 build:1
