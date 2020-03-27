@@ -74,14 +74,14 @@ Once the kernel is installed, a system reboot will be required to active the sup
 shutdown -r now
 ````
 
-Lastly, when access is restored, verify `/dev/sev` exists:
+When access is restored, verify `/dev/sev` exists:
 
 ````
 $ ls -l /dev/sev
 crw------- 1 root root 10, 55 Oct 21 15:06 /dev/sev
 ````
 
-Verify SEV is active in KVM:
+Also erify SEV is active in KVM:
 ````
 $ dmesg | grep SEV
 [    5.563511] ccp 0000:02:00.2: SEV API:0.17 build:1
