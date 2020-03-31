@@ -54,19 +54,36 @@ runcmd:
   - [cd, AMDSEV/distros/ubuntu-18.04]
   - [./build.sh]
   ```
+Follow the build process by coonnecting to the [SOS Console](https://www.packet.com/developers/docs/servers/key-features/sos-serial-over-ssh/). Building SEV can take ~20 minutes. When the build completes and to activate the SEV kernel a you must upgrade to 4.16.x kernel.
 
-* Select the Deploy Servers option.
+````
+cd /tmp/
 
-Follow the build process by coonnecting to the [SOS Console](https://www.packet.com/developers/docs/servers/key-features/sos-serial-over-ssh/). Building SEV can take ~20 minutes. When the build completes and  to activate the SEV kernel a reboot must be issued.
+wget -c http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16/linux-headers-4.16.0-041600_4.16.0-041600.201804012230_all.deb
 
-Verify `/dev/sev` exists:
+wget -c http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16/linux-headers-4.16.0-041600-generic_4.16.0-041600.201804012230_amd64.deb
 
-```
+wget -c http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16/linux-image-4.16.0-041600-generic_4.16.0-041600.201804012230_amd64.deb
+
+sudo dpkg -i *.deb
+````
+
+Once the kernel is installed, a system reboot will be required to active the support 4.16.x kernel. 
+
+````
+shutdown -r now
+````
+
+When access is restored, verify `/dev/sev` exists:
+
+````
 $ ls -l /dev/sev
 crw------- 1 root root 10, 55 Oct 21 15:06 /dev/sev
-```
-Verify SEV is active in KVM:
-```
+````
+
+Also verify SEV is active in KVM:
+````
 $ dmesg | grep SEV
-SVM: SEV supported
-```
+[    5.563511] ccp 0000:02:00.2: SEV API:0.17 build:1
+[    6.021164] SVM: SEV supported
+````

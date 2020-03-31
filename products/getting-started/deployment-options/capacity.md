@@ -11,7 +11,7 @@
 </meta> -->
 
 
-As a Public Cloud, our goal is to provide a seamless "on demand" experience to all of our users.  However, since we do not virtualization our infrastructure and provide 100% dedicated machines to each user, capacity management is a more nuanced challenge for us.  While we aim to avoid any "out of capacity" errors, logistics and variations in demand can sometimes result in an inventory problem. Here are some strategies that we recommend each user to get familiar with:
+As a Public Cloud, our goal is to provide a seamless "on demand" experience to all of our users.  However, since we do not virtualize our infrastructure and provide 100% dedicated machines to each user, capacity management is a more nuanced challenge for us.  While we aim to avoid any "out of capacity" errors, logistics and variations in demand can sometimes result in an inventory problem. Here are some strategies that we recommend each user to get familiar with:
 
 *  Talk to Us - If you know you have an upcoming need for capacity, please be in touch with us via support@packet.com. We can help to advise you about the capacity situation, and work with you to help ensure a successful experience.
 
