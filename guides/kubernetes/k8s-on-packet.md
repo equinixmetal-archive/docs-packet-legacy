@@ -52,7 +52,6 @@ Kubernetes is free, but sometimes deploying and managing it takes work.  A numbe
 * [Rancher Kubernetes Engine (RKE)](https://rancher.com/docs/rke/latest/en/): RKE solves the problem of installation complexity, a common issue in the Kubernetes community. With RKE, the installation and operation of Kubernetes is both simplified and easily automated, and it’s entirely independent of the operating system and platform you’re running.
 * [Crossplane](https://crossplane.io/): Manage cluster deployments across cloud providers.
 * [K3s](https://k3s.io/): Lightweight certified Kubernetes distribution for IoT & Edge computing.
-* [Kubicorn](http://kubicorn.io/: is an unofficial project that solves the Kubernetes infrastructure problem and gives users a rich golang library to work with infrastructure.
 * [Kubespray](https://kubespray.io/): runs perfectly on Packet, using Ansible as its substrate for provisioning and orchestration. Kops performs the provisioning and orchestration itself, and as such is less flexible in deployment platforms.
 * [Pharmer](https://pharmer.io/): a technical preview from Appscode of a Kubernetes cluster manager for kubeadm. Pharmer lets you set up, tear down, and scale clusters up and down on Packet.
 * [Kubernetes on DC/OS](https://github.com/mesosphere/dcos-kubernetes-quickstart): A package to deploy Kubernetes cluster in your [DC/OS](https://github.com/mesosphere/dcos-kubernetes-quickstart) environment.
@@ -60,7 +59,6 @@ Kubernetes is free, but sometimes deploying and managing it takes work.  A numbe
 ## Commercial Deployment Solutions
 
 * [Loodse](https://www.loodse.com/): Enterprise software that automates multicloud, on-prem, and edge operations with a single management UI for Kubernetes.
-* [NetApp Kubernetes Service](https://stackpoint.io): Packet is the only bare metal provider supported by Stackpoint, which offers a universal control plane for managed Kubernetes.
 * [Platform9](https://platform9.com): Packet works closely with Platform9, a managed cloud provider, to enable users with Kubernetes, Openstack, and Serverless solutions.
 * [Cloud66](https://www.cloud66.com/): London-based Cloud66 offers a managed Kubernetes container service called Maestro, which is tested against Packet.
 * [RedHat OpenShift](https://www.openshift.com/): OpenShift is an open source container application platform by Red Hat based on the Kubernetes container orchestrator for enterprise app development and deployment.
