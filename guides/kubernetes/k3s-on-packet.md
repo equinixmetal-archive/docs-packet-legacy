@@ -1,12 +1,12 @@
 <!-- <meta>
 {
-    "title":"Running k3s on Packet",
-    "description":"k3s is the lightweight, easy to deploy and easy to manage certified Kubernetes distribution, and it runs perfectly on Packet.",
-    "tag":["Kubernetes", "k3s"],
-    "seo-title": "Running k3s on Packet - Packet Technical Guides",
-    "seo-description": "Running k3s on Packet",
-    "og-title": "Resources for running k3s on Packet",
-    "og-description":"Running k3s on Packet",
+    "title":"K3s on Packet",
+    "description":"K3s is the lightweight, easy to deploy and easy to manage certified Kubernetes distribution, and it runs perfectly on Packet.",
+    "tag":["Kubernetes", "K3s"],
+    "seo-title": "K3s on Packet - Packet Technical Guides",
+    "seo-description": "Running K3s on Packet",
+    "og-title": "Resources for running K3s on Packet",
+    "og-description":"Running K3s on Packet",
     "featured": true
 }
 </meta> -->
