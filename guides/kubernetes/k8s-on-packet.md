@@ -6,7 +6,7 @@
     "seo-title": "Kubernetes on Packet - Packet Technical Guides",
     "seo-description": "Kubernetes on Packet",
     "og-title": "Kubernetes on Packet",
-    "og-description":Kubernetes on Packet",
+    "og-description": "Kubernetes on Packet",
     "featured": true
 }
 </meta> -->
