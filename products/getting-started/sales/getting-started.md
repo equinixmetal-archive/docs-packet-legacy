@@ -1,6 +1,6 @@
 <!-- <meta>
 {
-    "title":"Getting Started",
+    "title":"Sales",
     "description":"Getting Started - Packet Developer Docs",
     "tag":["Sales", "Prices", "Discounts", "Compare"],
     "seo-title": "Sales: Getting Started - Packet Developer Docs",

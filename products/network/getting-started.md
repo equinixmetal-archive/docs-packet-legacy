@@ -1,6 +1,6 @@
 <!-- <meta>
 {
-    "title":"Overview",
+    "title":"Network",
     "description":"Overview of our Network Offerings",
     "tag":["Network", "Private Network"],
     "seo-title": "Bare Metal Network Overview -Packet Developer Docs ",

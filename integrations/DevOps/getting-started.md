@@ -1,6 +1,6 @@
 <!-- <meta>
 {
-    "title":"Overview",
+    "title":"DevOps",
     "slug":"devops overview",
     "description":"An overview of our DevOps Interrations",
     "author":"Mo Lawler",
