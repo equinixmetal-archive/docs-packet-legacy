@@ -1,6 +1,6 @@
 <!-- <meta>
 {
-    "title":"Overview",
+    "title":"Servers",
     "description":"Learn more about compute classes and custom configurations.",
     "tag":["Device Types", "Devices", "Compute Classes", "Custom Configurations"],
     "seo-title": "Bare Metal Cloud Servers Overview - Packet Developer Docs",

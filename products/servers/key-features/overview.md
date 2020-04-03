@@ -1,6 +1,6 @@
 <!-- <meta>
 {
-    "title":"Overview",
+    "title":"Key Features",
     "description":"Bare Metal Servers Features - Packet Developer Docs",
     "tag":["Key Features"],
     "seo-title": "Bare Metal Servers Features - Packet Developer Docs",
