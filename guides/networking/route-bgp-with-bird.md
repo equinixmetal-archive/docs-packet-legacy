@@ -13,6 +13,13 @@
 BGP isn't new, but having it be this accessible is! Leveraging dynamic hosting for a cluster of servers at a particular data center offers your workloads a safe, effective, and quick failover channel. In this guide, we'll walk you through configuring Local BGP using [BIRD](http://bird.network.cz/) so that you can broadcast a specific local IP address to a host of your choice.
 
 
+### Before you Begin
+
+You can manually configure bird following the instructions within this guide.
+
+Alternatively, you can use Packet's metadata service to automatically configure bird. Learn more [here](https://www.packet.com/resources/guides/bird/).
+
+
 ### Getting Started
 
 Enable BGP for the server in the portal via the server detail page, click ' **MANAGE**', then click ' **Enable**'
@@ -43,11 +50,6 @@ Update the network interfaces with a virtual loopback interface.
 ```bash
 ifup lo:0
 ```
-
-### Alternate Setup
-
-You are able to automate the bird setup/configuration with the help of docker. Learn more [here](https://www.packet.com/resources/guides/bird/). 
-
 
 ### Finishing Up
 
