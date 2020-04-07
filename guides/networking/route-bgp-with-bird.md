@@ -15,9 +15,7 @@ BGP isn't new, but having it be this accessible is! Leveraging dynamic hosting 
 
 ### Before you Begin
 
-You can manually configure bird following the instructions within this guide.
-
-Alternatively, you can use Packet's metadata service to automatically configure bird. Learn more [here](https://www.packet.com/resources/guides/bird/).
+You can manually configure bird following the instructions within this guide. Alternatively, you can use Packet's metadata service to automatically configure bird. Learn more [here](https://www.packet.com/resources/guides/bird/).
 
 
 ### Getting Started
