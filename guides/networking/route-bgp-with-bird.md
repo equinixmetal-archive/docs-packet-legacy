@@ -49,7 +49,7 @@ ifup lo:0
 You are able to automate the bird setup/configuration with the help of docker. Learn more [here](https://www.packet.com/resources/guides/bird/). 
 
 
-#### Finishing Up
+### Finishing Up
 
 If you log into your server via SSH you can check the status of your BIRD daemon by accessing the bird console with the `birdc` command. In the BIRD console execute `show protocols all bgp1`
 
