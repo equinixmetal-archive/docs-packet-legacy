@@ -50,7 +50,7 @@ apt -y update && apt -y install docker docker-compose git
 systemctl enable docker && systemctl start docker
 ```
 
-Clone the repo Packet's network-helpers:
+Clone Packet's network-helpers repo:
 
 ```bash
 cd /opt
