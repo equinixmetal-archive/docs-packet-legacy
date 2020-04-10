@@ -1,12 +1,12 @@
 <!-- <meta>
 {
-    "title":"Object Storage with Minio",
+    "title": "Object Storage with Minio",
     "description":"Deploy, Setup, & Configure Minio Object Storage Server",
     "tag":["S3", "Object Storage", "Minio"],
     "seo-title": "Object Storage with Minio - Packet Technical Guides",
     "seo-description": "Deploy, Setup, & Configure Minio Object Storage Server",
     "og-title": "Object Storage with Minios",
-    "og-description": Deploy, Setup, & Configure Minio Object Storage Servert"
+    "og-description": Deploy, Setup, & Configure Minio Object Storage Server"
 }
 </meta> -->
 
