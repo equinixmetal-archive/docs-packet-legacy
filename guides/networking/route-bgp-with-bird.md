@@ -10,22 +10,22 @@
 }
 </meta> -->
 
-BGP isn't new, but having it be this accessible is! Leveraging dynamic hosting for a cluster of servers at a particular data center offers your workloads a safe, effective, and quick failover channel. In this guide, we'll walk you through configuring Local BGP using [BIRD](http://bird.network.cz/) so that you can broadcast a specific local IP address to a host of your choice.
+Bird is an open source routing daemon for Unix-like systems. It can be used to establish bgp sessions between client instances and the packet network.
+
+An elastic IP address can simply be announced via Bird from the instance that is currently using it, thereby making it easy to freely move the IP from one instance to another within the same project.
 
 # Getting Started
 
 If you haven't already requested that BGP be added to your account you'll need to get that sorted before continuing with this guide - see more info about getting started [here](https://www.packet.com/developers/docs/network/advanced/local-and-global-bgp).
 
-For this guide, we're deploying a [Tiny But Mighty](https://www.packet.net/cloud/servers/t1-small/) server with Ubuntu 16, and [BIRD](https://bird.network.cz/) to broadcast a local IP with BGP.
-
-# Step 1 - Choose an IP to Broadcast
+# Choose an IP to Broadcast
 
 Navigate over to **IPs & Networks** in your BGP enabled project and click on _Manage Block_ for the IPv4 block in the data center location that corresponds with your server deployment. Choose an available IP that will act as your broadcast IP. In this guide, we'll be using 10.99.200.138.
 
 ![manage-ips](/images/route-bgp-with-bird/manage-ips-new.png)
 ![manage-ips-2](/images/route-bgp-with-bird/manage-ips-2-new.png)
 
-# Step 2 - Update Network Interface
+# Update Network Interface
 
 Update the network interfaces with a virtual loopback interface.
 
@@ -37,53 +37,58 @@ Update the network interfaces with a virtual loopback interface.
   netmask 255.255.255.255' >> /etc/network/interfaces
 ```
 
-# Step 3 - Bring Up the Interface
+# Bring Up the Interface
 
 ```bash
 ifup lo:0
 ```
 
-# Step 4 - Installing BIRD
+# Run Bird via Docker
 
-[BIRD](http://bird.network.cz/) is an open source implementation for routing Internet Protocol packets on Unix-like operating systems. 
-
-```bash
-apt-get install bird
-```
-
-# Step 5 - Configure IP Forwarding, _optional_
-
-If you'll be using this server as a gateway/proxy and performing NAT to other internal devices, you need to allow IPv4 forwarding:
-
-**For IPv4:**
+Using your OS's package management utility, install docker, docker-compose and git if not already installed. On Ubuntu 18.04 this looks like:
 
 ```bash
-sysctl net.ipv4.ip_forward=1
+apt -y update && apt -y install docker docker-compose git
+systemctl enable docker && systemctl start docker
 ```
 
-# Step 6 - Edit the BIRD Configuration File
-
-First, backup the original file.
+Clone the repo Packet's network-helpers:
 
 ```bash
-mv /etc/bird/bird.conf /etc/bird/bird.conf.original
+cd /opt
+git clone https://github.com/packethost/network-helpers.git
 ```
-Now edit your bird.conf file to looks like the below.
+
+Build the image:
 
 ```bash
-vim /etc/bird/bird.conf
+cd network-helpers
+docker build -f routers/bird/Dockerfile -t local/bird:latest .
 ```
 
-```default
+Up the container:
 
-filter packetdns {
-  # IPs to announce ( 10.99.200.138 in this case)
-  # Doesn't have to be /32. Can be lower
-  if net = 10.99.200.138/32 then accept;
+```bash
+cd routers/bird
+docker-compose up -d
+```
+
+To verify that the bird service was started cleanly and correctly, we can view the container logs:
+
+```
+docker logs $(docker ps | awk '$2 == "local/bird:latest" {print $1}')
++ /opt/bgp/configure.py -r bird
++ tee /etc/bird/bird.conf
+filter packet_bgp {
+  # the IP range(s) to announce via BGP from this machine
+  # these IP addresses need to be bound to the lo interface
+  # to be reachable; the default behavior is to accept all
+  # prefixes bound to interface lo
+  # if net = A.B.C.D/32 then accept;
+  accept;
 }
 
-# your (Private) bond0 IP
-router id 10.99.69.9;
+router id 10.99.182.129;
 
 protocol direct {
   interface "lo"; # Restrict network interfaces BIRD works with
@@ -101,90 +106,55 @@ protocol device {
   scan time 10; # Scan interfaces every 10 seconds
 }
 
-# Your default gateway IP below here, in this case that's 10.99.69.8
-protocol bgp {
-  export filter packetdns;
+protocol bgp neighbor_v4_1 {
+  export filter packet_bgp;
   local as 65000;
-  neighbor 10.99.69.8 as 65530;
+  neighbor 10.99.182.128 as 65530;
+  password "somepassword";
 }
++ '[' 0 == 0 ']'
++ echo
++ cat
++ supervisord -c /opt/bgp/routers/bird/supervisord.conf
+2020-04-09 13:44:27,263 WARN For [program:bird], AUTO logging used for stderr_logfile without rollover, set maxbytes > 0 to avoid filling up filesystem unintentionally
+2020-04-09 13:44:27,263 INFO Set uid to user 0 succeeded
+2020-04-09 13:44:27,265 INFO supervisord started with pid 12
+2020-04-09 13:44:28,270 INFO spawned: 'bird' with pid 16
+2020-04-09 13:44:29,274 INFO success: bird entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 ```
 
-Note: You'll probably want to automate a setup like this using [user data](https://support.packet.com/kb/articles/user-data). That way you can provision your servers and configure their network without ever having to SSH into the server! To do that, you would curl the metadata service and parse the response using something like [jq](https://stedolan.github.io/jq/download/). For example:
+And verify:
 
 ```bash
-json=$(curl https://metadata.packet.net/metadata)
-router=$(echo $json | jq -r ".network.addresses[] | select(.public == false) | .address")
-gateway=$(echo $json | jq -r ".network.addresses[] | select(.public == false) | .gateway")
+docker exec -it $(docker ps | awk '$2 == "local/bird:latest" {print $1}') birdc
+```
+```
+bird> show protocols all neighbor_v4_1
+name     proto    table    state  since       info
+neighbor_v4_1 BGP      master   up     16:10:27    Established   
+  Preference:     100
+  Input filter:   ACCEPT
+  Output filter:  packet_bgp
+  Routes:         0 imported, 1 exported, 0 preferred
+  Route change stats:     received   rejected   filtered    ignored   accepted
+    Import updates:              0          0          0          0          0
+    Import withdraws:            0          0        ---          0          0
+    Export updates:              1          0          0        ---          1
+    Export withdraws:            0        ---        ---        ---          0
+  BGP state:          Established
+    Neighbor address: 10.99.182.128
+    Neighbor AS:      65530
+    Neighbor ID:      147.75.36.73
+    Neighbor caps:    refresh restart-aware llgr-aware AS4
+    Session:          external AS4
+    Source address:   10.99.182.129
+    Hold timer:       59/90
+    Keepalive timer:  20/30
 ```
 
-_Note that we're specifically looking for the server's private addresses._
+**Note:** If you have bpg enabled over both ipv4 and ipv6 on your server, there will be separate running instances of the bird daemon for each protocol. Thus to verify an ipv6 peering session, in the above command you would use `birdc6` instead of `birdc`.
 
-# Step 6a - Multi-Session Peering
-
-A small portion of our server fleet is deployed on network hardware leveraging a slightly different approach at BGP configuration, which requires the creation of two distinct BGP peers using the following config lines:
-
-```bash
-multihop;
-neighbor 169.254.255.1 as 65530;
-neighbor 169.254.255.2 as 65530;
-```
-These are fixed IP addresses, and do not vary from one server to the next.  This configuration type is currently utilized on the following switch IDs (as identified in an instance's 'Network' view in the customer portal):
-
-```bash
-Switch ID 94a841f3 - Dallas, TX (DFW2)
-```
-
-_We are updating the BIRD config in the portal, as well as making this config type visibile in our metadata service._
-
-# Step 7 - Restart BIRD
-
-```bash
-service bird restart
-```
-
-# Step 8 - Enable BGP
-
-Enable BGP for the server in the portal via the server detail page, click ' **MANAGE**', then click ' **Enable**'
-
-![enable-bgp-1](/images/route-bgp-with-bird/enable-bgp-1.png)
-![enable-bgp-2](/images/route-bgp-with-bird/enable-bgp-2.png)
-
-# Finishing Up
-
-If you log into your server via SSH you can check the status of your BIRD daemon by accessing the bird console with the `birdc` command. In the BIRD console execute `show protocols all bgp1`
-
-If the peering was successful you'll see this:
-
-```default
-
-bird> show protocols all bgp1
-name proto table state since info
-bgp1 BGP master up 18:06:06 Established
- Preference: 100
- Input filter: ACCEPT
- Output filter: packetdns
- Routes: 0 imported, 1 exported, 0 preferred
- Route change stats: received rejected filtered ignored accepted
-Import updates: 0 0 0 0 0
-Import withdraws: 0 0 --- 0 0
-Export updates: 1 0 0 --- 1
-Export withdraws: 0 --- --- --- 0
- BGP state: Established
-Neighbor address: 10.99.69.8
-Neighbor AS: 65530
-Neighbor ID: 192.80.8.235
-Neighbor caps: refresh restart-aware AS4
-Session: external AS4
-Source address: 10.99.69.9
-Hold timer: 85/90
-Keepalive timer: 26/30
-```
-
-As you can see, the BGP state is Established and we are exporting 1 route.
-
-If you check the server detail page, you will also see the learned route.
-
-![server-details](/images/route-bgp-with-bird/server-details-new.png)
+In this case we only have a single elastic IP bound to interface lo, and we see the prefix is being exported and accepted so we are done.
 
 To test, you can ping the IP address in a command line - `ping 10.99.200.138`. _Remember, Local BGP is announcing a private IP address, so you'll have to be connected to the private network for the data center you're running Local BGP in. You can do that by SSHing into another server in that data center or by connected to [Doorman](https://www.packet.com/developers/docs/network/basic/doorman), Packet's private VPN._
 
