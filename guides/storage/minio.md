@@ -15,7 +15,7 @@ MinIO is a high performance distributed object storage server, designed for larg
 
 #### Installing & Configuring Minio 
 
-You can install the Minio server by compiling the srouce code or via a binary file. For this guide, we will make use of the binary. 
+You can install the Minio server by compiling the srouce code or via a binary file. For this guide, we will make use of the binary and utilizing Ubuntu 18.04 for the OS.
 
 If you haven't updated the package database recently, update it now: 
 
@@ -47,7 +47,7 @@ useradd -r minio-user -s /sbin/nologin
 
 Dependent upon your particular setup, the creation of the storage directory may vary.
 
-The directory in which you wish to Minio storage to reisde will need to have the permissions adjsted to permit the user `minio-user` access. 
+The directory in which you wish to Minios storage to reisde will need to have the permissions adjsted to permit the user `minio-user` access. 
 
 ```
 chown minio-user:minio-user /path/to/storage
@@ -55,7 +55,7 @@ chown minio-user:minio-user /path/to/storage
 
 Next up, we will need to create Minios configuration file. Typically, the most common location for this configureation is found in `/etc/`
 
-The location in which you choose will need to have the permission adjusted to permit the user `minio-user` access. 
+The location in which you choose will need to have the same permissions as the storage path. 
 
 An example of the Minio configuration: 
 
@@ -71,7 +71,7 @@ MINIO_OPTS="-C /etc/minio --address your-server-ip:9000"
 
 #### Minio Startup Script
 
-The Minio Server will need a startup script created. The following steps will get that established. 
+The Minio Server will need a startup script created. 
 
 First up, down load the descrpitor file: 
 
@@ -79,7 +79,7 @@ First up, down load the descrpitor file:
 curl -O https://raw.githubusercontent.com/minio/minio-service/master/linux-systemd/minio.service
 ````
 
-Double check the contents of the file, to ensure it's content.  Once you are satisified with the content, the file will need to be moved to `/etc/systemd/system`. 
+Double check the contents of the file. Once you are satisified with the content, the file will then need to be moved to `/etc/systemd/system`. 
 
 To ensure systemd knows of the new startup it is necessary to reload the systemd units: 
 
