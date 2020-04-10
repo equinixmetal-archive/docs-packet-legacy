@@ -6,9 +6,24 @@
     "seo-title": "Object Storage with Minio - Packet Technical Guides",
     "seo-description": "Deploy, Setup, & Configure Minio Object Storage Server",
     "og-title": "Object Storage with Minios",
-    "og-description": Deploy, Setup, & Configure Minio Object Storage Server"
+    "og-description": "Deploy, Setup, & Configure Minio Object Storage Server"
 }
 </meta> -->
+
+
+<!-- <meta>
+{
+    "title":"VMware on Packet",
+    "description":"Deploying a multi-node vSphere cluster with vSan enabled in 30 minutes!",
+    "tag":["VMware", "ESXi", "vSphere", "vSan"],
+    "seo-title": "VMware on Packet - Packet Technical Guides",
+    "seo-description": "Deploying a multi-node vSphere cluster with vSan enabled in 30 minutes!",
+    "og-title": "VMware on Packet",
+    "og-description":"Deploying a multi-node vSphere cluster with vSan enabled in 30 minutes!"  
+}
+</meta> -->
+
+
 
 MinIO is a high performance distributed object storage server, designed for large-scale private cloud infrastructure. MinIO is designed in a cloud-native manner to scale sustainably in multi-tenant environments. 
 
