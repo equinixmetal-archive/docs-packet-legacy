@@ -53,9 +53,7 @@ The directory in which you wish to Minios storage to reisde will need to have th
 chown minio-user:minio-user /path/to/storage
 ```
 
-Next up, we will need to create Minios configuration file. Typically, the most common location for this configureation is found in `/etc/`
-
-The location in which you choose will need to have the same permissions as the storage path. 
+Next up, we will need to create Minios configuration file. Typically, the most common location for this configureation is found in `/etc/`. Make sure this location has the same permissions as the storage directory. 
 
 An example of the Minio configuration: 
 
