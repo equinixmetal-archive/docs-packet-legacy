@@ -12,18 +12,18 @@
 
 Similar to Bird, FRR is a routing daemon for Linux. It can be used to announce an elastic IP address via BGP from the instance that is currently using it.
 
-# Getting Started
+### Getting Started
 
 If you haven't already requested that BGP be added to your account you'll need to get that sorted before continuing with this guide - see more info about getting started [here](https://www.packet.com/developers/docs/network/advanced/local-and-global-bgp).
 
-# Choose an IP to Broadcast
+### Choose an IP to Broadcast
 
 Navigate over to **IPs & Networks** in your BGP enabled project and click on _Manage Block_ for the IPv4 block in the data center location that corresponds with your server deployment. Choose an available IP that will act as your broadcast IP. In this guide, we'll be using 10.99.200.138.
 
 ![manage-ips](/images/route-bgp-with-bird/manage-ips-new.png)
 ![manage-ips-2](/images/route-bgp-with-bird/manage-ips-2-new.png)
 
-# Update Network Interface
+### Update Network Interface
 
 Update the network interfaces with a virtual loopback interface.
 
@@ -35,13 +35,13 @@ Update the network interfaces with a virtual loopback interface.
   netmask 255.255.255.255' >> /etc/network/interfaces
 ```
 
-# Bring Up the Interface
+### Bring Up the Interface
 
 ```bash
 ifup lo:0
 ```
 
-# Run FRR via Docker
+### Run FRR via Docker
 
 Using your OS's package management utility, install docker, docker-compose and git if not already installed. On Ubuntu 18.04 this looks like:
 
@@ -126,13 +126,13 @@ Lastly, we need to verify that our bgp sessions are established, and the desired
 
 ```bash
 docker exec -it $(docker ps | awk '$2 == "local/frr:latest" {print $1}') vtysh
-frr#
+frr###
 ```
 
 Then to check out sessions:
 
 ```
-frr# show bgp summary 
+frr### show bgp summary 
 
 IPv4 Unicast Summary:
 BGP router identifier 172.17.0.1, local AS number 65000 vrf-id 0
@@ -163,7 +163,7 @@ Total number of neighbors 1
 And finally to verify that our prefix bound to interface lo is being exported:
 
 ```
-frr# show ip bgp neighbors 10.99.182.128 advertised-routes 
+frr### show ip bgp neighbors 10.99.182.128 advertised-routes 
 BGP table version is 3, local router ID is 172.17.0.1, vrf id 0
 Default local pref 100, local AS 65000
 Status codes:  s suppressed, d damped, h history, * valid, > best, = multipath,

@@ -14,18 +14,18 @@ Bird is an open source routing daemon for Unix-like systems. It can be used to e
 
 An elastic IP address can simply be announced via Bird from the instance that is currently using it, thereby making it easy to freely move the IP from one instance to another within the same project.
 
-# Getting Started
+### Getting Started
 
 If you haven't already requested that BGP be added to your account you'll need to get that sorted before continuing with this guide - see more info about getting started [here](https://www.packet.com/developers/docs/network/advanced/local-and-global-bgp).
 
-# Choose an IP to Broadcast
+### Choose an IP to Broadcast
 
 Navigate over to **IPs & Networks** in your BGP enabled project and click on _Manage Block_ for the IPv4 block in the data center location that corresponds with your server deployment. Choose an available IP that will act as your broadcast IP. In this guide, we'll be using 10.99.200.138.
 
 ![manage-ips](/images/route-bgp-with-bird/manage-ips-new.png)
 ![manage-ips-2](/images/route-bgp-with-bird/manage-ips-2-new.png)
 
-# Update Network Interface
+### Update Network Interface
 
 Update the network interfaces with a virtual loopback interface.
 
@@ -37,13 +37,13 @@ Update the network interfaces with a virtual loopback interface.
   netmask 255.255.255.255' >> /etc/network/interfaces
 ```
 
-# Bring Up the Interface
+### Bring Up the Interface
 
 ```bash
 ifup lo:0
 ```
 
-# Run Bird via Docker
+### Run Bird via Docker
 
 Using your OS's package management utility, install docker, docker-compose and git if not already installed. On Ubuntu 18.04 this looks like:
 
@@ -80,30 +80,30 @@ docker logs $(docker ps | awk '$2 == "local/bird:latest" {print $1}')
 + /opt/bgp/configure.py -r bird
 + tee /etc/bird/bird.conf
 filter packet_bgp {
-  # the IP range(s) to announce via BGP from this machine
-  # these IP addresses need to be bound to the lo interface
-  # to be reachable; the default behavior is to accept all
-  # prefixes bound to interface lo
-  # if net = A.B.C.D/32 then accept;
+  ### the IP range(s) to announce via BGP from this machine
+  ### these IP addresses need to be bound to the lo interface
+  ### to be reachable; the default behavior is to accept all
+  ### prefixes bound to interface lo
+  ### if net = A.B.C.D/32 then accept;
   accept;
 }
 
 router id 10.99.182.129;
 
 protocol direct {
-  interface "lo"; # Restrict network interfaces BIRD works with
+  interface "lo"; ### Restrict network interfaces BIRD works with
 }
 
 protocol kernel {
-  persist; # Don't remove routes on bird shutdown
-  scan time 20; # Scan kernel routing table every 20 seconds
-  import all; # Default is import all
-  export all; # Default is export none
+  persist; ### Don't remove routes on bird shutdown
+  scan time 20; ### Scan kernel routing table every 20 seconds
+  import all; ### Default is import all
+  export all; ### Default is export none
 }
 
-# This pseudo-protocol watches all interface up/down events.
+### This pseudo-protocol watches all interface up/down events.
 protocol device {
-  scan time 10; # Scan interfaces every 10 seconds
+  scan time 10; ### Scan interfaces every 10 seconds
 }
 
 protocol bgp neighbor_v4_1 {
