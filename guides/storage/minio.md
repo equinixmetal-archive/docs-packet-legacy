@@ -15,29 +15,29 @@ MinIO is a high performance distributed object storage server, designed for larg
 
 #### Installing & Configuring Minio 
 
-You can install the Minio server by compiling the srouce code or via a binary file. For this guide, we will make use of the binary and utilizing Ubuntu 18.04 for the OS.
+You can install the Minio server by compiling the source code or via a binary file. For this guide, we will make use of the binary and we will be deploying on a server running Ubuntu 18.04.
 
-If you haven't updated the package database recently, update it now: 
+First, if you haven't updated the package database recently, update it now:
 
 ```
 apt get update
 ```
 
-Next, download the Minio server binary: 
+Next, download the Minio server binary:
 
 ```
 curl -O https://dl.minio.io/server/minio/release/linux-amd64/minio
 ```
 
-A file name will then be downloaded to the current working directory. You will need to change permissions of this file to become executable. 
+You will need to change permissions for the file you just downloaded to make it executable:
 
 ```
 chmod +x minio
 ```
 
-Next the binary will need to be relocated to the `/usr/local/bin` directory where the startup script expects to find it. 
+Next, the binary will need to be relocated to the `/usr/local/bin` directory where the startup script expects to find it. We'll be downloading the startup script below.
 
-It is not suggested to run the Minio server as root. Instead, creating a user and it's group called `minio-user`. 
+It is not suggested to run the Minio server as root. Instead, we'll create a user called `minio-user`.
 
 This is done by running: 
 
@@ -47,13 +47,13 @@ useradd -r minio-user -s /sbin/nologin
 
 Dependent upon your particular setup, the creation of the storage directory may vary.
 
-The directory in which you wish to Minios storage to reisde will need to have the permissions adjsted to permit the user `minio-user` access. 
+The directory in which you wish Minio storage to run will need to have its permissions adjusted to allow `minio-user` access.
 
 ```
 chown minio-user:minio-user /path/to/storage
 ```
 
-Next up, we will need to create Minios configuration file. Typically, the most common location for this configureation is found in `/etc/`. Make sure this location has the same permissions as the storage directory. 
+Next up, we will need to create a Minios configuration file. Typically, the most common location for this file is in `/etc/`. Make sure this location has the same permissions as the storage directory for `minio-user`.
 
 An example of the Minio configuration: 
 
@@ -64,46 +64,44 @@ MINIO_OPTS="-C /etc/minio --address your-server-ip:9000"
 
 * MINIO_VOLUMES: is the directory (path) where your files will reside. 
 
-* MINIO_OPTS: is the way in which you tell the Minio server to operate from particular IP address to a specific port. 
+* MINIO_OPTS: is the Minio server's IP address and port. 
 
 
 #### Minio Startup Script
 
-The Minio Server will need a startup script created. 
-
-First up, down load the descrpitor file: 
+First up, download the descrpitor file: 
 
 ```
 curl -O https://raw.githubusercontent.com/minio/minio-service/master/linux-systemd/minio.service
 ````
 
-Double check the contents of the file. Once you are satisified with the content, the file will then need to be moved to `/etc/systemd/system`. 
+Double check the contents of this file. Once you are satisified with the content, the file will then need to be moved to `/etc/systemd/system`.
 
-To ensure systemd knows of the new startup it is necessary to reload the systemd units: 
+To ensure systemd knows of the new startup script, you'll need to reload the systemd units:
 
 ```
 systemctl daemon-reload
 ```
 
-To ensure the Minio Server automatically starts at reboot, add it to systemctl: 
+Also, to ensure that the Minio Server automatically starts at reboot, add it to systemctl:
 
 ```
 systemctl enable minio
 ```
 
-This completes the install, and setup process for Minio. You should now be able to start the service. 
+This completes the install, and setup process for Minio. You should now be able to start the service!
 
 ```
 systemctl start minio
 ```
 
-Double check that is in fact running: 
+Double check that is in fact running:
 
 ```
 systemctl status minio
 ```
 
-You should see an opput similar to: 
+You should see an output similar to: 
 
 ```
  minio.service - MinIO
@@ -118,4 +116,4 @@ You should see an opput similar to:
 
 
 
-More information about Minio is available at the [project’s documentation website](https://docs.minio.io/) & information about how to secure your Minio Server with [Let's Encrypt certificates](https://docs.min.io/docs/generate-let-s-encypt-certificate-using-concert-for-minio.html). 
+More information about Minio is available at the [project’s documentation website](https://docs.minio.io/) & information about how to secure your Minio Server can be found at [Let's Encrypt](https://docs.min.io/docs/generate-let-s-encypt-certificate-using-concert-for-minio.html). 
