@@ -5,7 +5,7 @@
     "tag":["S3", "Object Storage", "Minio"],
     "seo-title":"Object Storage with Minio - Packet Technical Guides",
     "seo-description":"Deploy, Setup, & Configure Minio Object Storage Server",
-    "og-title":"Object Storage with Minios",
+    "og-title":"Object Storage with Minio",
     "og-description":"Deploy, Setup, & Configure Minio Object Storage Server"
 }
 </meta> -->
