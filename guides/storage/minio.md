@@ -1,16 +1,16 @@
 <!-- <meta>
 {
-    "title": "Object Storage with Minio",
+    "title":"Object Storage with Minio",
     "description":"Deploy, Setup, & Configure Minio Object Storage Server",
     "tag":["S3", "Object Storage", "Minio"],
-    "seo-title": "Object Storage with Minio - Packet Technical Guides",
-    "seo-description": "Deploy, Setup, & Configure Minio Object Storage Server",
-    "og-title": "Object Storage with Minios",
-    "og-description": "Deploy, Setup, & Configure Minio Object Storage Server"
+    "seo-title":"Object Storage with Minio - Packet Technical Guides",
+    "seo-description":"Deploy, Setup, & Configure Minio Object Storage Server",
+    "og-title":"Object Storage with Minios",
+    "og-description":"Deploy, Setup, & Configure Minio Object Storage Server"
 }
 </meta> -->
 
-MinIO is a high performance distributed object storage server, designed for large-scale private cloud infrastructure. MinIO is designed in a cloud-native manner to scale sustainably in multi-tenant environments. 
+Minio is a high performance distributed object storage server, designed for large-scale private cloud infrastructure. MinIO is designed in a cloud-native manner to scale sustainably in multi-tenant environments. 
 
 
 #### Installing & Configuring Minio 
