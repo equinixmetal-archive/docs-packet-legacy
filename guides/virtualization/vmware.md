@@ -38,7 +38,7 @@ Terraform uses modules to deploy infrastructure. In order to initialize the modu
 
 #### Setup an S3 compatible object store and download necessary files
 
-You need to use an S3 compatible object store in order to download closed source packages such as vCenter and the vSan SDK. Minio works great for this, which is an open source object store is a workable option.
+You need to use an S3 compatible object store in order to download closed source packages such as vCenter and the vSan SDK. [Minio works great for this](https://www.packet.com/resources/guides/minio/), which is an open source object store is a workable option. 
 
 You will need to layout the S3 structure to look like this:
 
