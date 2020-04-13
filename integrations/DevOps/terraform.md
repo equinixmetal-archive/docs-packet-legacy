@@ -12,6 +12,6 @@
 
 Terraform enables you to safely and predictably create, change, and improve production infrastructure by using configuration files.
 
-[Docs](https://www.terraform.io/docs/providers/packet/)
-[Website](https://terraform.io/)
-[GitHub](https://github.com/hashicorp/terraform)
+* [Docs](https://www.terraform.io/docs/providers/packet/)
+* [Website](https://terraform.io/)
+* [GitHub](https://github.com/hashicorp/terraform)
