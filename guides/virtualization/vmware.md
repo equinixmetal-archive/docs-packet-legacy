@@ -10,7 +10,7 @@
 }
 </meta> -->
 
-This guide will assist in deploying a multi-node vSphere cluster with vSan support enabled on Packet. From begingin to end, you should be up and running in 30 minutes! 
+This guide will assist in deploying a multi-node vSphere cluster with vSan support enabled on Packet. From beginging to end, you should be up and running in 30 minutes! 
 
 #### Prerequesists 
 
@@ -38,7 +38,7 @@ Terraform uses modules to deploy infrastructure. In order to initialize the modu
 
 #### Setup an S3 compatible object store and download necessary files
 
-You need to use an S3 compatible object store in order to download closed source packages such as vCenter and the vSan SDK. [Minio works great for this](https://www.packet.com/resources/guides/minio/), which is an open source object store is a workable option. 
+You need to use an S3 compatible object store in order to download closed source packages such as vCenter and the vSan SDK. [Minio works great for this](https://www.packet.com/resources/guides/minio/).
 
 You will need to layout the S3 structure to look like this:
 
@@ -66,9 +66,9 @@ You will need to find the two individual Python files in the vSAN SDK zip file a
 
 There are many variables which can be set to customize your install within `00-vars.tf`. The default variables to bring up a 3 node vSphere cluster and linux router using Packet's [s1.large.x86](https://www.packet.com/cloud/servers/s1-large/). Change each default variable at your own risk. 
 
-There are some variables you must set with a terraform.tfvars files. You need to set `auth_token` & `organization_id` to connect to Packet and the `project_name` which will be created in Packet. We will need an S3 compatible object store to download "Closed Source" packages such as vCenter. You'll provide `s3_url`, `s3_bucket_name`, `s3_access_key`, `s3_secret_key` as well as the vCenter ISO file name as `vcenter_iso_name`. 
+There are some variables you must set with a terraform.tfvars files. You need to set `auth_token` & `organization_id` to connect to Packet and the `project_name` which will be created in Packet. Make use of your compatable S3 solution, in our case [Minio](https://www.packet.com/resources/guides/minio/), to download "Closed Source" packages such as vCenter. You'll provide `s3_url`, `s3_bucket_name`, `s3_access_key`, `s3_secret_key` as well as the vCenter ISO file name as `vcenter_iso_name`. 
 
-Here is a quick command plus sample values to start file for you (make sure you adjust the variables to match your environment, pay specail attention that the `vcenter_iso_name` matches whats in your bucket): 
+Here is a quick command plus sample values to start file for you (make sure you adjust the variables to match your environment, pay special attention that the `vcenter_iso_name` matches whats in your bucket): 
 ```bash 
 cat <<EOF >terraform.tfvars 
 auth_token = "cefa5c94-e8ee-4577-bff8-1d1edca93ed8" 
@@ -115,7 +115,7 @@ There is an L2TP IPsec VPN setup. There is an L2TP IPsec VPN client for every pl
 
 Make sure to enable all traffic to use the VPN (aka do not enable split tunneling) on your L2TP client.
 
-Some corporate networks block outbound L2TP traffic. If you are experiening issues connecting, you may try a guest network or personal hotspot.
+Some corporate networks block outbound L2TP traffic. If you are experiencing issues connecting, you may try a guest network or personal hotspot.
 
 
 #### Cleaning the environement
