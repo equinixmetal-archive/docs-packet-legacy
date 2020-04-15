@@ -20,7 +20,7 @@ Select the "Custom iPXE" operating system from the portal, or the custom_ipxe sl
 
 ![deploy iPXE 1](/images/custom-ipxe/Deploy-iPXE-1.png)
 
-If you have your iPXE script hosted at a publicly accessible http(s) location, put the URL to your script in the text field, or use the ipxe_script_url API parameter. When we serve up iPXE during the boot process we will chain-load your iPXE script URL.  
+If you have your iPXE script hosted at a publicly accessible http(s) location, put the URL to your script in the text field, or use the ipxe_script_url API parameter. When we serve up iPXE during the boot process we will chain-load your iPXE script URL.
 
 ![deploy iPXE 2](/images/custom-ipxe/Deploy-iPXE-2.png)
 

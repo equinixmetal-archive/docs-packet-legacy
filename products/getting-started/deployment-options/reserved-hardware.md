@@ -14,9 +14,9 @@ Reserved hardware gives you the ability to reserve specific servers for a commit
 
 ### Deploy via Portal
 
-Once you have reserved hardware assigned to your project, you can go to the deploy page and there you will see a section where you can provision your reserved servers as shown here:  
+Once you have reserved hardware assigned to your project, you can go to the deploy page and there you will see a section where you can provision your reserved servers as shown here:
 
-![deploy via portal 1](/images/reserved-hardware/Deploy-Via-Portal-1.png)  
+![deploy via portal 1](/images/reserved-hardware/Deploy-Via-Portal-1.png)
 
 When hardware is reserved to your account, the next prompt will allow allow  to choose which hardware device, and OS
 

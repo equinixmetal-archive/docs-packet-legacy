@@ -64,9 +64,9 @@ Systems Requirements:
     ~# uname -r
     ```
 
-    The development packages and kernel headers are needed for the CUDA driver. It should match the running version of the kernel at the time of the driver installation, also whenever the driver is rebuilt. (Reference: CUDA Installation Guide Linux - 2.4 Verify System has Correct Kernel Headers and Development Packages Installed)  
+    The development packages and kernel headers are needed for the CUDA driver. It should match the running version of the kernel at the time of the driver installation, also whenever the driver is rebuilt. (Reference: CUDA Installation Guide Linux - 2.4 Verify System has Correct Kernel Headers and Development Packages Installed)
 
-    Note: If system update is performed and changes made to the linux kernel version being used, make sure to re-run the commands below to ensure you have the kernel headers installed. Otherwise, the CUDA Driver will fail to work with the new kernel. (Reference: CUDA Installation Guide Linux - 2.4 Verify System has Correct Kernel Headers and Development Packages Installed).  
+    Note: If system update is performed and changes made to the linux kernel version being used, make sure to re-run the commands below to ensure you have the kernel headers installed. Otherwise, the CUDA Driver will fail to work with the new kernel. (Reference: CUDA Installation Guide Linux - 2.4 Verify System has Correct Kernel Headers and Development Packages Installed).
 
     To install the development packages and kernel headers for the currently running kernel:
 
@@ -122,7 +122,7 @@ Systems Requirements:
     deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64
     ```
 
-    Update apt cache,    
+    Update apt cache,
     ```
     ~# apt-get update
     ```
@@ -163,20 +163,20 @@ Systems Requirements:
     ```
     ```
     ~# nvidia-smi
-    +-----------------------------------------------------------------------------+  
-    | NVIDIA-SMI 410.79       Driver Version: 410.79       CUDA Version: 10.0     |  
-    |-------------------------------+----------------------+----------------------+  
-    | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |  
-    | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |  
-    |===============================+======================+======================|  
-    |   0  Tesla P4            Off  | 00000000:D8:00.0 Off |                    0 |  
-    | N/A   37C    P0    23W /  75W |      0MiB /  7611MiB |      0%      Default |  
-    +-------------------------------+----------------------+----------------------+  
-    +-----------------------------------------------------------------------------+  
-    | Processes:                                                       GPU Memory |  
-    |  GPU       PID   Type   Process name                             Usage      |  
-    |=============================================================================|  
-    |  No running processes found                                                 |  
+    +-----------------------------------------------------------------------------+
+    | NVIDIA-SMI 410.79       Driver Version: 410.79       CUDA Version: 10.0     |
+    |-------------------------------+----------------------+----------------------+
+    | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+    | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+    |===============================+======================+======================|
+    |   0  Tesla P4            Off  | 00000000:D8:00.0 Off |                    0 |
+    | N/A   37C    P0    23W /  75W |      0MiB /  7611MiB |      0%      Default |
+    +-------------------------------+----------------------+----------------------+
+    +-----------------------------------------------------------------------------+
+    | Processes:                                                       GPU Memory |
+    |  GPU       PID   Type   Process name                             Usage      |
+    |=============================================================================|
+    |  No running processes found                                                 |
     +-----------------------------------------------------------------------------+
     ```
 

@@ -34,10 +34,10 @@ You should specify the larger custom subnet so that you can give Public IPs to s
 
 We have requested 8 total IPs from Packet during provisioning.  Here is how the 8 IPs will be used on the custom /29 subnet:
 
-147.75.x.0 - Network address  
-147.75.x.1 - Gateway  
-147.75.x.2 - Host IP  
-147.75.x.3 - .6 - Usable IPs for VMs  
+147.75.x.0 - Network address
+147.75.x.1 - Gateway
+147.75.x.2 - Host IP
+147.75.x.3 - .6 - Usable IPs for VMs
 147.75.x.7 - Broadcast
 
 If you need more IPs, you can choose to go with a /28 subnet.

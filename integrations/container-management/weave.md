@@ -10,7 +10,7 @@
 }
 </meta> -->
 
-WeaveWorks is one of the original innovators in the Kubernetes space and their robust suite of tools helps hundreds of companies automate Enterprise Kubernetes “the GitOps.” 
+WeaveWorks is one of the original innovators in the Kubernetes space and their robust suite of tools helps hundreds of companies automate Enterprise Kubernetes “the GitOps.”
 
 Their solutions include Weave Cloud (a comprehensive suite of managed tools for production workloads), the Weave Kubernetes Platform, a diverse suite of open source tools, and both training and consulting services.
 

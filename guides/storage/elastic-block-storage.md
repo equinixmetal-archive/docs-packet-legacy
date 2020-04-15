@@ -197,9 +197,9 @@ Optionally, delete the block device from portal: Project View > Storage > Option
 
 Our Block Storage service looks and smells a lot like Amazon’s EBS.  One important difference is that when you connect a block storage volume on Packet to a server on Packet, you don’t have the benefit of a hypervisor layer.  As such, there is a bit more you should know about how to troubleshoot or deal with any issues that may arise.
 
-While our Block Storage product is the perfect match for a wide variety of use cases, the first and most important step is to understand when *not* to use block storage at Packet.   
+While our Block Storage product is the perfect match for a wide variety of use cases, the first and most important step is to understand when *not* to use block storage at Packet.
 
-As a general rule of thumb, databases are not a good fit for our Block Storage, especially those that are not resilient due to minor hiccups.  While uncommon, even a small loss of connectivity to some databases can cause major issues.  
+As a general rule of thumb, databases are not a good fit for our Block Storage, especially those that are not resilient due to minor hiccups.  While uncommon, even a small loss of connectivity to some databases can cause major issues.
 
 ### Redundancy
 

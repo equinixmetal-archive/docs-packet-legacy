@@ -116,7 +116,7 @@ You should see output similar to:
 SERVERID='2ae00ba1-76e3-4666-b7af-6a14c8b535bb'
 ```
 ### Reattach your volume
-```bash 
+```bash
 curl -X POST https://api.packet.net/storage/$VOLUMEID/attachments \
     -H "X-Auth-Token: $TOKEN" \
     -H 'Accept: application/json' \
@@ -126,4 +126,4 @@ curl -X POST https://api.packet.net/storage/$VOLUMEID/attachments \
 ```
 
 ### We're all done!
-You can now power your server back online or remount your volume. At this point you will need to resize your filesystem, but that is out of scope for this article. 
+You can now power your server back online or remount your volume. At this point you will need to resize your filesystem, but that is out of scope for this article.

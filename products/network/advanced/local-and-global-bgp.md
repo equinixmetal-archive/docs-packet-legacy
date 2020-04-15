@@ -20,7 +20,7 @@ BGP's features require you to run a BGP speaking routing client, such as [BIRD](
 In a Local BGP deployment, a customer uses an internal ASN
 ([Autonomous System Number](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) to control routes within a single Packet datacenter. This means that the routes are never advertised to the global Internet and the customer does not need to pay for or maintain a registered ASN with a Regional Internet Registry (RIR) like ARIN, APNIC or RIPE. The top use case for operating local BGP would be to perform failover or IP mobility between a collection of servers in a local datacenter. Global BGP, on the other hand, requires a customer to have a registered ASN and IP space.
 
-## Default BGP Route  
+## Default BGP Route
 When utilizing virtual routing software (e.g. VyOS, OpnSense, etc) this would allow you to see all the routes learned instead of creating them statically. This can be set up by utilizing [Terraform](https://www.terraform.io/docs/providers/packet/r/bgp_session.html), or directly through the portal.
 
 ## Communities Supported
@@ -46,4 +46,4 @@ Note: Do not assign the subnet to any server, as that will create a static route
 
 ## Server Host Configuration
 
-There are many ways that users can announce their IPs via BGP as it can differ by the use case and OS configuration. If you're looking for a guide on how to do so with the popular BGP speaker BIRD, we've got one in our technical guides section [here](https://www.packet.com/resources/guides/route-bgp-with-bird/). 
+There are many ways that users can announce their IPs via BGP as it can differ by the use case and OS configuration. If you're looking for a guide on how to do so with the popular BGP speaker BIRD, we've got one in our technical guides section [here](https://www.packet.com/resources/guides/route-bgp-with-bird/).

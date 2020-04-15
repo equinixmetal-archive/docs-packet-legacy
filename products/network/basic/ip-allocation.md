@@ -31,13 +31,13 @@ Packet allows you to reseve the following sizes:
 | /29    |8 IPv4|   | /28       | 4 IPv4
 | /28    |16 IPv4|
 
-> **Please Note:**  anything over a single IPv4 per server is billable at a rate of $0.005/hr for Elastic IPs & $0.15/hr for Global Anycast IPs. 
+> **Please Note:**  anything over a single IPv4 per server is billable at a rate of $0.005/hr for Elastic IPs & $0.15/hr for Global Anycast IPs.
 
 #### Creating a Reserved Subnet via Customer Portal
 
 Select the Project in which the reserved subnet is required. From within that specific project, click on IPs & Networks & click on Request IP Addresses
 
-From the slide out, you can select the size, type, and facility of the reserved subnet. Be sure to include detailed information for the use case for the requested subnet. 
+From the slide out, you can select the size, type, and facility of the reserved subnet. Be sure to include detailed information for the use case for the requested subnet.
 
 
 ![projects-ips-networks](/images/ip-allocation/project-ips-networks.png)
@@ -54,7 +54,7 @@ From the slide out, you can select the size, type, and facility of the reserved 
 #### Provisioning server with reserved subnet(s) via API
 
 
-Example API payload to create a single instance with a subnet size of /29 & using IPs from a reserved subnet. 
+Example API payload to create a single instance with a subnet size of /29 & using IPs from a reserved subnet.
 
 ```
 curl  -v \
@@ -75,7 +75,7 @@ curl  -v \
       }
 EOF
 ````
-Example API Payload using 2 IP reservations when deploying from the batch API endpoint across multiple facilities. 
+Example API Payload using 2 IP reservations when deploying from the batch API endpoint across multiple facilities.
 
 Since the `$EWR1_RESERVATION_ID` reservation is a `/28`, and 3 instances with `/29` cidr blocks are requested, only 2 will provision in the EWR1 reservation, while the third will go to NRT1.
 
@@ -103,7 +103,7 @@ Since the `$EWR1_RESERVATION_ID` reservation is a `/28`, and 3 instances with `/
 EOF
 ````
 
-#### Creating an IP Reservation 
+#### Creating an IP Reservation
 
 ````
 curl  -v \

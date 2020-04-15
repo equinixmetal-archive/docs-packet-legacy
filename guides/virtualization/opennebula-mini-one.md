@@ -19,7 +19,7 @@ While all the installation and configuration steps could be done manually by fol
 The [miniONE](https://github.com/OpenNebula/minione) tool is a simple deployment script which prepares the all-in-one OpenNebula environments. Such deployments are mainly intended for evaluation, development and testing, but can also be used as a base for larger short-lived deployments. Usually, it takes just a few minutes to get the environment ready. The tool can prepare evaluation environments for true virtual machines running on KVM hypervisors, or system containers running on LXD hypervisors.
 
 #### Requirements
-Requirements may differ for various types of evaluation enviorments which you may deploy. 
+Requirements may differ for various types of evaluation enviorments which you may deploy.
 
 * KVM:
     * x86-64 Intel or AMD
@@ -27,9 +27,9 @@ Requirements may differ for various types of evaluation enviorments which you ma
     * 4 GB memory
     * 20 GB free disk space
     * OS: Cent7, Ubuntu 16.or or 18.04
-    
 
-* LXD: 
+
+* LXD:
     * x86-64 Intel or AMD
     * 2 CPU cores
     * 4 GB memory
@@ -42,16 +42,16 @@ The deployment process with the [miniONE](https://github.com/OpenNebula/minione)
 
 #### Downloads
 
-Unless specificed, all comand below should be executed under priviledged user root. Download the latest release of the miniONE tool by running one of the following commands: 
+Unless specificed, all comand below should be executed under priviledged user root. Download the latest release of the miniONE tool by running one of the following commands:
 
 ```
 # wget https://github.com/OpenNebula/minione/releases/latest/download/minione
 ```
 ```
-# curl -O -L https://github.com/OpenNebula/minione/releases/latest/download/minione 
+# curl -O -L https://github.com/OpenNebula/minione/releases/latest/download/minione
 ````
 
-#### Easy Deployment 
+#### Easy Deployment
 
 Various command line parameters passed to miniONE can customize the deployment
 process, e.g. required OpenNebula version or initial passwords. You can get a list of available switches by running:
@@ -69,7 +69,7 @@ You have to choose between the KVM (default) or LXD evaluation environment. Run 
 # bash minione
 ````
 
-Or, for LXD hypervisor: 
+Or, for LXD hypervisor:
 
 ```
 # bash minione --lxd
@@ -92,7 +92,7 @@ Use following to login:
  Now, the all-in-one OpenNebula evaluation environment is ready.
 
  #### Validation
- Check that the base installation is working correctly by listing the hpyervisor hosts. 
+ Check that the base installation is working correctly by listing the hpyervisor hosts.
 
  ````
  # onehost list

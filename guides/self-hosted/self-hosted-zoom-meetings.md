@@ -6,7 +6,7 @@
     "seo-title": "Self-Hosted Zoom Meetings - Packet Technical Guides",
     "seo-description": "Self-Hosted Zoom Meetings",
     "og-title": "Self-Hosted Zoom Meetings",
-    "og-description":"Self-Hosted Zoom Meetings"   
+    "og-description":"Self-Hosted Zoom Meetings"
 }
 </meta> -->
 

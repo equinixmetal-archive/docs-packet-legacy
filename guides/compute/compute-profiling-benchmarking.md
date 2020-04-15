@@ -13,9 +13,9 @@
 
 # Modern Compute Profiling and Benchmarking Tools for Linux
 
-In a bare-metal environment, whether your end goal is to run virtual machines, containers, or just a flat workload on the machines and its network, profiling and benchmarking peformance is important to ensure your storage is fast, network is reliable, and computing resources are giving you what you’d expect. 
+In a bare-metal environment, whether your end goal is to run virtual machines, containers, or just a flat workload on the machines and its network, profiling and benchmarking peformance is important to ensure your storage is fast, network is reliable, and computing resources are giving you what you’d expect.
 
-Linux has many tools, some old and some new, taking advantage of the newer features in the kernel to enhance scope of debuggability, others inherited from other ecosystems and finally ported to Linux. 
+Linux has many tools, some old and some new, taking advantage of the newer features in the kernel to enhance scope of debuggability, others inherited from other ecosystems and finally ported to Linux.
 
 ## `perf`
 
@@ -38,8 +38,8 @@ To monitor these events at different privilege levels, using the following synta
 ```
 perf stat -e event:modifier
 ```
- 
-Perf also has built-in capabilities for generating visualization, and can be exported for use with [FlameGraphs](http://www.brendangregg.com/perf.html#Visualizations) for visualizing this profile data. 
+
+Perf also has built-in capabilities for generating visualization, and can be exported for use with [FlameGraphs](http://www.brendangregg.com/perf.html#Visualizations) for visualizing this profile data.
 
 ## `dtrace`
 
@@ -63,10 +63,10 @@ which can be used to base the rest of your `dtrace` script around, or turn into 
 
 Extended BPF (eBPF) adds additional functionality to classical BPF, which can be used for tracing operations like attaching a filter onto a socket, and then filtering traffic through that socket, which in eBPF, can be used to assist in aggregation and metrics collection, but because programming eBPF directly isn't entirely accessible, there are many frontend tools that assist in building such eBPF programs, or can further extend this functionality of other tracing tools.
 
-Some examples of eBPF-based tools to trace different types of activity are: 
+Some examples of eBPF-based tools to trace different types of activity are:
 
 - `tcplife` to show completed TCP sessions, their process ID, and the command associated.
-- `bpftrace`, like the `dtrace` examples above, can be used to trace specific functions or systemcalls and enumerate them, and built into a suite of [one-liners](http://www.brendangregg.com/ebpf.html#bpftrace). The syntax is similar to other examples, `bpftrace -e 'tracepoint:$probe:$syscall { ... }'`, to specify what to trace, and what do with that input. 
+- `bpftrace`, like the `dtrace` examples above, can be used to trace specific functions or systemcalls and enumerate them, and built into a suite of [one-liners](http://www.brendangregg.com/ebpf.html#bpftrace). The syntax is similar to other examples, `bpftrace -e 'tracepoint:$probe:$syscall { ... }'`, to specify what to trace, and what do with that input.
 - `bcc` is the BPF Compiler Collection, which makes writing (e)BPF programs easier to write, using front-ends written in languages like Python and Lua. There are many examples implementing [common uses cases](https://github.com/iovisor/bcc/tree/0267b4840ba2881583e075bf552e2837f1646042/examples) for these packages in scripting language contexts.
 
 and even be used to extend the capability of [tools like the `perf` command](http://www.brendangregg.com/perf.html#eBPF).

@@ -30,7 +30,7 @@ Pre-reqs: `docker-machine` and `make`
 
     ```
     $ cd docker-machine-driver-packet
-    $ make 
+    $ make
     $ sudo make install
     ```
 

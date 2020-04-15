@@ -6,7 +6,7 @@
     "seo-title": "LACP Bondingt - Packet Technical Guides",
     "seo-description": "Learn how to setup aggregated grups that share the same bond link and speed.",
     "og-title": LACP Bonding",
-    "og-description":"Learn how to setup aggregated grups that share the same bond link and speed"  
+    "og-description":"Learn how to setup aggregated grups that share the same bond link and speed"
 }
 </meta> -->
 

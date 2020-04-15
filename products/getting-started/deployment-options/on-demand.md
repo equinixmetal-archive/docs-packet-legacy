@@ -44,12 +44,12 @@ Once you’ve selected a datacenter, server, and operating system, you are ready
 ![pxe](/images/ondemand-deploy-guide/create-ssh-key.png)
 
 #### Optional Settings
-At this point, you are ready to deploy a server, but if you'd like to make adjustments to quantity, [user data](https://www.packet.com/developers/docs/servers/key-features/user-data/), [IPs](https://www.packet.com/developers/docs/servers/key-features/custom-subnet-size/) or [SSH access](https://www.packet.com/developers/docs/servers/key-features/ssh-keys/), you can do that at this point. 
+At this point, you are ready to deploy a server, but if you'd like to make adjustments to quantity, [user data](https://www.packet.com/developers/docs/servers/key-features/user-data/), [IPs](https://www.packet.com/developers/docs/servers/key-features/custom-subnet-size/) or [SSH access](https://www.packet.com/developers/docs/servers/key-features/ssh-keys/), you can do that at this point.
 
 If you have chosen [Custom iPXE](https://www.packet.com/developers/docs/servers/operating-systems/custom-ipxe/), you can specify a bootup URL.
 ![pxe](/images/ondemand-deploy-guide/customipxe.png)
 
-If you want to deploy more than 1 server, you can adjust it under Select Number and Name Your Server(s). You can change the prefilled hostnames if you’d like. 
+If you want to deploy more than 1 server, you can adjust it under Select Number and Name Your Server(s). You can change the prefilled hostnames if you’d like.
 ![amount-of-servers](/images/ondemand-deploy-guide/amount-of-servers.png)
 
 > **_NOTE:_** You cannot use underscores in your hostname.
@@ -63,9 +63,9 @@ Configure IPs. By default, a Packet server deploys with 1 public IPv4, 1 private
 
 ![ips](/images/ondemand-deploy-guide/configure-ips.png)
 
-Customize SSH Access. By default, Packet deploys with all available SSH keys, but if you’d like to adjust access, you can do that here. You must deploy with at least 1 SSH key. To learn how to create/add SSH Keys please see [this doc](https://www.packet.com/developers/docs/servers/key-features/ssh-keys/). 
+Customize SSH Access. By default, Packet deploys with all available SSH keys, but if you’d like to adjust access, you can do that here. You must deploy with at least 1 SSH key. To learn how to create/add SSH Keys please see [this doc](https://www.packet.com/developers/docs/servers/key-features/ssh-keys/).
 
 ![sleect-ssh-keys](/images/ondemand-deploy-guide/select-ssh-keys.png)
 
 Now, you're ready to go!
-Once you’ve made it to the Summary section, you’re ready to go! Deploy your server and get ready to experience bare metal. 
+Once you’ve made it to the Summary section, you’re ready to go! Deploy your server and get ready to experience bare metal.

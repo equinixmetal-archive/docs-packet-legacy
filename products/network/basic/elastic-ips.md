@@ -37,9 +37,9 @@ Packet automatically offers a /31 subnet. However, if you are wanting to utilize
 
 Having multiple subnet blocks, or a larger block from provisioning you can route them to your server by the following block sizes:
 
-    /29  
-    /30  
-    /31  
+    /29
+    /30
+    /31
     /32
 
 ### Host IP Configuration

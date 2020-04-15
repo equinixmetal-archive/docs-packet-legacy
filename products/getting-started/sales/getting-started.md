@@ -10,7 +10,7 @@
 }
 </meta> -->
 
-Packet is super focused on automating hardware.  Since we have a global bare metal cloud, customers often want to know how we compare to other cloud providers.  
+Packet is super focused on automating hardware.  Since we have a global bare metal cloud, customers often want to know how we compare to other cloud providers.
 
 The simple answer is: we offer bare metal and other fundamental services (e.g. network) and don’t go “up the stack” into the application or managed services layers. Unlike most public cloud providers, we also provide a model by which you can deploy custom infrastructure, custom location, or even manage on-premises hardware.
 

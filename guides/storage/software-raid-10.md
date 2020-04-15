@@ -54,7 +54,7 @@ As you can see, there are four disks available, (sdc, sdd, sde, sdf), which we c
 
 Now that we know what drives to use, we can prepare them by using `fdisk` or `parted`, to create a partition table and change the partition type for our drives.
 
-**Note:** You’ll need to repeat this for the four available drives (sdc, sdd, sde, sdf)  
+**Note:** You’ll need to repeat this for the four available drives (sdc, sdd, sde, sdf)
 
 Bring up the disk utility with `fdisk /dev/sdc`. The command will bring up the command line interface. It works by typing the code of the option you’d like to select ( left side ) and confirming the selection by hitting the return/enter key.
 
@@ -192,7 +192,7 @@ sdf         8:80   0 447.1G  0 disk
 The command we’ll be using to create RAID arrays is mdadm:
 
 ```
-~# mdadm --create --verbose dev/name-of-your-drive --level=the-raid-configuration --raid-devices=the-<number-of-drives> dev/drive-1-name dev/drive-2-name  
+~# mdadm --create --verbose dev/name-of-your-drive --level=the-raid-configuration --raid-devices=the-<number-of-drives> dev/drive-1-name dev/drive-2-name
 ```
 
 To configure RAID 10 run this command:
