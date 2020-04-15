@@ -28,11 +28,12 @@ Navigate over to **IPs & Networks** in your BGP enabled project and click on _
 Update the network interfaces with a virtual loopback interface.
 
 ```bash
-
-  echo 'auto lo:0
-  iface lo:0 inet static
-  address 10.99.200.138
-  netmask 255.255.255.255' >> /etc/network/interfaces
+cat >>/etc/network/interfaces <<EOF
+auto lo:0
+iface lo:0 inet static
+address 10.99.200.138
+netmask 255.255.255.255
+EOF
 ```
 
 ### Bring Up the Interface
