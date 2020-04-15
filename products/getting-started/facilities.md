@@ -14,12 +14,12 @@ Packet has two types of public cloud facilities: Core and Custom. All [locations
 
 In our Core Cloud locations we stock abundant capacity of our most popular configurations, and support each site with our multi-tenant block storage service. Servers are available by the hour, and discounts are available for longer commitments. Custom infrastructure can be deploy in Core Cloud sites with a commitment.
 
-In our Custom Cloud sites we deploy standard configurations as well as customized servers, hardware appliances and bespoke networking or connectivity requirements. All infrastructure is reserved on contract and we do not offer multi-tenant block storage in these sites (private deployments of block storage or other storage appliances is available).  
+In our Custom Cloud sites we deploy standard configurations as well as customized servers, hardware appliances and bespoke networking or connectivity requirements. All infrastructure is reserved on contract and we do not offer multi-tenant block storage in these sites (private deployments of block storage or other storage appliances is available).
 
 We would be happy to answer any questions about our sites via <sales@packet.com>.
 
 ### Does Packet own its facilities?
-While Packet is a leading force in the cloud market, we are not a real estate development firm. As such, we lease space and power from colocation providers.  
+While Packet is a leading force in the cloud market, we are not a real estate development firm. As such, we lease space and power from colocation providers.
 
 ### Where is each data center located? Do you have a speedtest?
 You can access various speedtest and ping url's from this central page on our website.

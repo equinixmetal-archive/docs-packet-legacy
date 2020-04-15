@@ -6,7 +6,7 @@
     "seo-title": "KVM and Libvirt on Ubuntu 16.04 - Packet Technical Guides",
     "seo-description": "KVM and Libvirt on Ubuntu 16.04 description",
     "og-title": "KVM and Libvirt on Ubuntu 16.04",
-    "og-description": "KVM and Libvirt on Ubuntu 16.04 description"   
+    "og-description": "KVM and Libvirt on Ubuntu 16.04 description"
 }
 </meta> -->
 
@@ -28,11 +28,11 @@ Once you're SSH'd into your server as **root** you'll need to install several pa
 
 Good idea to do this...
 ```
-apt-get update && apt-get upgrade -y    
+apt-get update && apt-get upgrade -y
 ```
 Then install the packages...
 ```
-apt-get install bridge-utils qemu-kvm virtinst -y    
+apt-get install bridge-utils qemu-kvm virtinst -y
 ```
 Once you're done you can verify the install is successful by running `kvm-ok`.
 
@@ -101,7 +101,7 @@ virsh net-undefine default
 Lastly, restart the _libvirt-bin_ daemon.
 
 ```
-service libvirt-bin restart    
+service libvirt-bin restart
 ```
 
 Now if you look at your interfaces you'll see a new interface named vmbr0 with our 139.178.66.145/297 IP.
@@ -178,12 +178,12 @@ virsh domiflist ubuntu16
 Next, find the IP address:
 
 ```
-arp -an | grep "the MAC address"    
+arp -an | grep "the MAC address"
 ```
 
 Then, SSH into the VM with the user name of the account that we created during the OS installation process:
 
-```   
+```
 ssh username@the-ip-address;
 ```
 

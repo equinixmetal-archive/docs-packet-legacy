@@ -6,11 +6,11 @@
     "seo-title": "GRE with Multicast - Packet Technical Guides",
     "seo-description": "Configure GRE with Multicast.",
     "og-title": "GRE with Multicast",
-    "og-description":"Learn how to configure GRE with Multicast."  
+    "og-description":"Learn how to configure GRE with Multicast."
 }
 </meta> -->
 
-Multicast (often referred to as multicasting) is where data transmission is addressed to a group of destination computers simultaneously.  Multicast can be a one-to-many or a many-to-many distribution.  Multicast requires the source to send a packet only once, even if it needs to be delivered to a large number of receivers.  
+Multicast (often referred to as multicasting) is where data transmission is addressed to a group of destination computers simultaneously.  Multicast can be a one-to-many or a many-to-many distribution.  Multicast requires the source to send a packet only once, even if it needs to be delivered to a large number of receivers.
 
 ### Why is Multicasting disabled on Packet's network?
 Packet does not support multi-cast in its default Layer 3 network topology. This is due to performance and security concerns around multi-tenant switch and router scaling issues.
@@ -131,7 +131,7 @@ esac
 ```
 ️ It should be noted, the interface named gre1 can of course be renamed to something that matches your deployment & configuration.
 
-**External Resources**  
-[GRE Tunneling]() (how to)  
-[GRE Tunnel Linux > Cisco](http://brezular.com/2015/09/29/gre-tunnel-between-cisco-and-linux/)  
-[IPIP and GRE Encapsulation](http://www.linux-admins.net/2010/09/tunneling-ipip-and-gre-encapsulation.html)  
+**External Resources**
+[GRE Tunneling]() (how to)
+[GRE Tunnel Linux > Cisco](http://brezular.com/2015/09/29/gre-tunnel-between-cisco-and-linux/)
+[IPIP and GRE Encapsulation](http://www.linux-admins.net/2010/09/tunneling-ipip-and-gre-encapsulation.html)

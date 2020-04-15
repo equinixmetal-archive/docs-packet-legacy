@@ -1,6 +1,6 @@
 <!-- <meta>
 {
-    
+
      "title":"Elastic Block Storage",
     "description":"Overview of our Storage Offering",
     "tag":["EBS", "Block storage"],
@@ -33,7 +33,7 @@ When you need persistent storage, with built-in replication and snapshots, our b
 
 While our Block Storage product is the perfect match for a wide variety of use cases, the first and most important step is to understand when *not* to use block storage at Packet.
 
-As a general rule of thumb, databases are not a good fit for our Block Storage, especially those that are not resilient due to minor hiccups.  While uncommon, even a small loss of connectivity to some databases can cause major issues.  
+As a general rule of thumb, databases are not a good fit for our Block Storage, especially those that are not resilient due to minor hiccups.  While uncommon, even a small loss of connectivity to some databases can cause major issues.
 
 If block storage doesn't meet your needs, we offer two other options:
 

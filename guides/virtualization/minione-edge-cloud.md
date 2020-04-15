@@ -6,11 +6,11 @@
     "seo-title": "miniONE Edge Cloud install with Packet - Packet Technical Guides",
     "seo-description": "miniONE is a simple evaluation tool that allows you to deploy all-in-one installation for KVM or LXD deployments in a few simple steps.",
     "og-title": "miniONE Edge Cloud install with Packet",
-    "og-description": "miniONE is a tool to really help get users “up and running” with an OpenNebula environment. We hope you see how easy it is to start your own edge deployment or eventually extend your current setup to the edge"   
+    "og-description": "miniONE is a tool to really help get users “up and running” with an OpenNebula environment. We hope you see how easy it is to start your own edge deployment or eventually extend your current setup to the edge"
 }
 </meta> -->
 
-OpenNebula miniONE as a simple evaluation tool that allows you to deploy all-in-one installation for KVM or LXD deployments in a few simple steps. One of the various options enables you to build an OpenNebula edge cloud using bare-metal cloud resources from Packet. With this architecture, you will be able to see just how simple it is to build your private cloud and to deploy and configure Packet resources on-demand. 
+OpenNebula miniONE as a simple evaluation tool that allows you to deploy all-in-one installation for KVM or LXD deployments in a few simple steps. One of the various options enables you to build an OpenNebula edge cloud using bare-metal cloud resources from Packet. With this architecture, you will be able to see just how simple it is to build your private cloud and to deploy and configure Packet resources on-demand.
 
 #### Frontend
 
@@ -27,10 +27,10 @@ As soon as your server is ready, connect to it and download the tool
 
 To start the edge deployment you will need to both the project ID and API Token.
 
-Choose the location for your Edge deployment. For this example, we are using Sunnyvale, CA for which the code name is `sjc1`. 
+Choose the location for your Edge deployment. For this example, we are using Sunnyvale, CA for which the code name is `sjc1`.
 
 
-Finally choose the device type. Suggestion is to keep using the `t1.small` as the default. To opt for an alternate type, provide it using the `--edge-packet-plan` parameter. 
+Finally choose the device type. Suggestion is to keep using the `t1.small` as the default. To opt for an alternate type, provide it using the `--edge-packet-plan` parameter.
 
 #### Time for deployment
 
@@ -40,7 +40,7 @@ Finally choose the device type. Suggestion is to keep using the `t1.small` as th
 
 > **_NOTE:_** You may see error: "Check jq installed FAILED. Install jq package first
 
-miniONE would like to validate all the Packet parameters and to parse the json output `jq` command is needed. In our case we will install it using: 
+miniONE would like to validate all the Packet parameters and to parse the json output `jq` command is needed. In our case we will install it using:
 
 ````
 apt update && apt install jq
@@ -51,17 +51,17 @@ Re-run the deployment. While miniONE is running, you should receive a siilar out
 ```
 ### Checks & detection
 Checking AppArmor  SKIP will try to modify
- 
+
 ### Main deployment steps:
 Install OpenNebula frontend version 5.8
 Install ONEProvision
 Configure IPAM Packet, alias IP mapping driver, VM hooks
 Trigger oneprovision
 Export appliance and update VM template
- 
+
 Do you agree? [yes/no]:
 yes
- 
+
 ### Installation
 Updating APT cache  OK
 Configuring repositories  OK
@@ -69,7 +69,7 @@ Updating APT cache  OK
 Installing OpenNebula packages  OK
 Installing Ruby gems  OK
 Installing opennebula-provision package   OK
- 
+
 ### Configuration
 Applying packet changes to oned.conf  OK
 Configuring packet hooks in oned.conf  OK
@@ -99,7 +99,7 @@ Exporting [Service WordPress - KVM] from Marketplace to local datastore  OK
 Updating VM template  OK
 ````
 
-Finally, post deployment, a successful report 
+Finally, post deployment, a successful report
 
 ````
 ### Report
@@ -109,16 +109,16 @@ Sunstone [the webui] is running on:
 Use following to login:
   user: oneadmin
   password: xDV36pWwGe
- 
+
 ### Packet provisioned
   ID NAME            CLUSTER   TVM      ALLOCATED_CPU      ALLOCATED_MEM STAT
    0 147.75.82.249   PacketClu   0                  -                  - init
 ````
-After a few moments, penNebula monitors the Packet host and you can see it on. Check using `onehost list` you will see a similar output: 
+After a few moments, penNebula monitors the Packet host and you can see it on. Check using `onehost list` you will see a similar output:
 
 ````
 # onehost list
-  ID NAME            CLUSTER   TVM      ALLOCATED_CPU      ALLOCATED_MEM STAT  
+  ID NAME            CLUSTER   TVM      ALLOCATED_CPU      ALLOCATED_MEM STAT
    0 147.75.82.249   PacketClu   0       0 / 400 (0%)     0K / 7.8G (0%) on
 ````
 
@@ -134,19 +134,19 @@ For demo purposes, the default appliance is the WordPress service app. When the 
 
 ![miniONE](/images/minione/wordpress.png)
 
-To obtain the VM public IP you would run: 
+To obtain the VM public IP you would run:
 
 ````
 onevm show 0 | grep ETH0_ALIAS0_IP
 ````
-and see the following output: 
+and see the following output:
 ````
 ETH0_ALIAS0_IP="147.75.82.242",
 ````
 
-miniONE gives you an option to extend the deployment by adding additional hypervisor nodes at the edge. To do so simply add an option `--node` to the deployment command and run it again. For this demo we opted for `ams1` facility-code. 
+miniONE gives you an option to extend the deployment by adding additional hypervisor nodes at the edge. To do so simply add an option `--node` to the deployment command and run it again. For this demo we opted for `ams1` facility-code.
 
-You may choose a different appliance for your particular use case. Go to the [Open Nebula marketplace](https://marketplace.opennebula.systems/appliance) and pick one of the systems. 
+You may choose a different appliance for your particular use case. Go to the [Open Nebula marketplace](https://marketplace.opennebula.systems/appliance) and pick one of the systems.
 
 > **_NOTE:_**  Exact name is a requirement to the parameter `--edge-marketapp-name`. For instance `CentOS 7 - KVM` is a valid option.
 
@@ -154,43 +154,43 @@ You may choose a different appliance for your particular use case. Go to the [Op
 # ./minione --edge packet --node --edge-packet-token [token] --edge-packet-project [project] --edge-packet-facility ams1
 ````
 
-When the deployment completes, you should then see two hosts. 
+When the deployment completes, you should then see two hosts.
 
 ````
 # onehost list
-  ID NAME            CLUSTER   TVM      ALLOCATED_CPU      ALLOCATED_MEM STAT  
-   1 147.75.82.195   PacketClu   0       0 / 400 (0%)     0K / 7.8G (0%) on    
+  ID NAME            CLUSTER   TVM      ALLOCATED_CPU      ALLOCATED_MEM STAT
+   1 147.75.82.195   PacketClu   0       0 / 400 (0%)     0K / 7.8G (0%) on
    0 147.75.82.249   PacketClu   1    100 / 800 (12%)   768M / 7.8G (9%) on
 ````
 
-Under the hood, miniONE uses the [DDC](http://docs.opennebula.org/5.8/advanced_components/ddc/) tool called [oneprovision[(http://docs.opennebula.org/5.8/advanced_components/ddc/usage.html)], which also offers a command-line interface. To list the Packet resources, type: 
+Under the hood, miniONE uses the [DDC](http://docs.opennebula.org/5.8/advanced_components/ddc/) tool called [oneprovision[(http://docs.opennebula.org/5.8/advanced_components/ddc/usage.html)], which also offers a command-line interface. To list the Packet resources, type:
 
 ````
 # oneprovision list
-                                  ID NAME                      CLUSTERS HOSTS VNETS DATASTORES STAT           
-642e1b04-d266-4ed6-abf4-906ca4a08898 PacketProvision-101              1     1     2          2 configured     
-794e1810-a9f4-4047-8601-b4aad4a7d086 PacketProvision-100              1     1     2          2 configured    
+                                  ID NAME                      CLUSTERS HOSTS VNETS DATASTORES STAT
+642e1b04-d266-4ed6-abf4-906ca4a08898 PacketProvision-101              1     1     2          2 configured
+794e1810-a9f4-4047-8601-b4aad4a7d086 PacketProvision-100              1     1     2          2 configured
 ````
-To view the specifics type: 
+To view the specifics type:
 
 ````
 # oneprovision show 642e1b04-d266-4ed6-abf4-906ca4a08898
- 
-PROVISION 642e1b04-d266-4ed6-abf4-906ca4a08898 INFORMATION                      
+
+PROVISION 642e1b04-d266-4ed6-abf4-906ca4a08898 INFORMATION
 ID      : 642e1b04-d266-4ed6-abf4-906ca4a08898
 NAME    : PacketProvision-101
 STATUS  : configured
- 
+
 CLUSTERS
 101
- 
+
 HOSTS
 1
- 
+
 VNETS
 3
 2
- 
+
 DATASTORES
 103
 102

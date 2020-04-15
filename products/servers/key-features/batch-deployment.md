@@ -85,7 +85,7 @@ There are four states you can see:
 
 A batch deployment starts as ‘queued’ once it is requested.  At this stage our worker will begin to work on validations & creations.
 
-Once it passes validation, it will move to ‘in_progress’.  
+Once it passes validation, it will move to ‘in_progress’.
 
 If there are devices to fulfill the batch request(s), it will move to ‘completed’.
 

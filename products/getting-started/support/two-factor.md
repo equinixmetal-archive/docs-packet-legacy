@@ -20,4 +20,4 @@ When logging into Packet, you will be prompted with an additional login step aft
 
 If have no way to receive the authentication code, you can use on of the 10 recovery codes mentioned above.
 
-If you do not have recovery codes & get locked out or replace your phone, please email support@packet.com for support and our team can assist! 
+If you do not have recovery codes & get locked out or replace your phone, please email support@packet.com for support and our team can assist!

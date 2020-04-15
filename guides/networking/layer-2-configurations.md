@@ -18,7 +18,7 @@ The second method which we will be covering in this guide is by utilizing Packet
 
 
 ## Bonding on Packet
-Before we get to the nitty gritty details of the guide, it's important to understand the [networking configuration](https://www.packet.com/developers/docs/network/overview) of Packet servers. By default, each server has two networking interfaces that are setup in an LACP (mode 4) bond that is configured both in the Host OS and on the switch.  
+Before we get to the nitty gritty details of the guide, it's important to understand the [networking configuration](https://www.packet.com/developers/docs/network/overview) of Packet servers. By default, each server has two networking interfaces that are setup in an LACP (mode 4) bond that is configured both in the Host OS and on the switch.
 
 ![bonding](/images/layer-2-configurations/bonding.png)
 
@@ -31,7 +31,7 @@ The following are different scenarios that we will be covering in this guide:
 
 * Hybrid mode: Leaving the first interface in the bond and adding a single VLAN to the second interface.
 * Hybrid mode: Leaving the first interface in the bond and adding (trunking) multiple VLANs to the second interface.
-* Hybrid and pure L2: A cluster of private hosts in layer 2 mode and using a single node in hybrid mode as an internet gateway.  
+* Hybrid and pure L2: A cluster of private hosts in layer 2 mode and using a single node in hybrid mode as an internet gateway.
 
 
 **Please Note:** For the purpose of this guide, we are using eth0/eth1 to represent the first and second interfaces. The actual interface name will depend on what operating system and server configuration you are using.
@@ -42,17 +42,17 @@ In this example, you will need at least 2 servers in the same project and at lea
 
 **Note:** this is the only layer 2 configuration available on the x1.small.x86 server type.
 
-You will still be able to connect to the server via its public IPv4/IPv6 addresses that are visible in the portal/API because we are leaving eth0 and bond0 intact.  
+You will still be able to connect to the server via its public IPv4/IPv6 addresses that are visible in the portal/API because we are leaving eth0 and bond0 intact.
 
 ![hybrid configuration](/images/layer-2-configurations/config-1.png)
 
-1. From the portal, browse to both servers' networking overview pages, click "Convert To Other Network Type" and choose "mixed/hybrid."  
+1. From the portal, browse to both servers' networking overview pages, click "Convert To Other Network Type" and choose "mixed/hybrid."
 
-    ![convert network type](/images/layer-2-configurations/convert-network-type.png)  
+    ![convert network type](/images/layer-2-configurations/convert-network-type.png)
 
-2. From the networking page for both servers click "Add New Vlan", and choose eth1 as the interface and select the Virtual Network ID (VNID, or VLAN ID) you wish to use. The VNIDs must be the same for both servers for intra-host communication to work.  
+2. From the networking page for both servers click "Add New Vlan", and choose eth1 as the interface and select the Virtual Network ID (VNID, or VLAN ID) you wish to use. The VNIDs must be the same for both servers for intra-host communication to work.
 
-    ![add VLAN](/images/layer-2-configurations/add-vlan.png)  
+    ![add VLAN](/images/layer-2-configurations/add-vlan.png)
 
 3.  From your Host OS, follow the steps below, depending on your operating system:
 
@@ -83,7 +83,7 @@ NETWORK=192.168.1.0
 BOOTPROTO=none
 ```
 
-Bring up the interface:  
+Bring up the interface:
 `sudo ifup eth1`
 
 #### Ubuntu / Debian
@@ -109,7 +109,7 @@ iface eth1 inet static
     netmask 255.255.255.0
 ```
 
-Bring up the interface:  
+Bring up the interface:
 `sudo ifup eth1`
 
 You should now be able to communicate between hosts via your virtual Layer 2 network:
@@ -219,7 +219,7 @@ For this configuration you'll need two nodes, one in hybrid and one in layer 2 n
 2. Repeat this step with the same VLAN for the isolated node. Remember, this node is in pure layer 2 networking mode, and bond0 is dismantled.
 Keep in mind that disabling bonding will remove public connectivity from your server and you will have to use [SOS](https://support.packet.com/kb/articles/sos-serial-over-ssh) to connect.
 
-  If you get locked out, you can always change the networking mode back to layer 3--or hybrid mode--and SSH back in via the public IPv4 address.  
+  If you get locked out, you can always change the networking mode back to layer 3--or hybrid mode--and SSH back in via the public IPv4 address.
 
 3. While connected to SOS, edit the network interfaces file and remove all but the eth1 interface, which should be configured with it's own private IP from whichever block you choose to use (e.g. 192.168.2.0/24). You'll also need to specify the gateway address as the hybrid node's eth1 IP address.
 
@@ -283,12 +283,12 @@ Now add a new IP masquerade rule to the NAT table with iptables. We want this to
 Now your isolated node should be able to ping outside the network.
 
 ```
-ping 8.8.8.8  
-PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.  
-64 bytes from 8.8.8.8: icmp\_seq=1 ttl=120 time=1.85 ms  
-64 bytes from 8.8.8.8: icmp\_seq=2 ttl=120 time=1.93 ms  
-64 bytes from 8.8.8.8: icmp\_seq=3 ttl=120 time=1.87 ms  
-64 bytes from 8.8.8.8: icmp\_seq=4 ttl=120 time=1.86 ms  
+ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp\_seq=1 ttl=120 time=1.85 ms
+64 bytes from 8.8.8.8: icmp\_seq=2 ttl=120 time=1.93 ms
+64 bytes from 8.8.8.8: icmp\_seq=3 ttl=120 time=1.87 ms
+64 bytes from 8.8.8.8: icmp\_seq=4 ttl=120 time=1.86 ms
 64 bytes from 8.8.8.8: icmp\_seq=5 ttl=120 time=1.81 ms
 ```
 

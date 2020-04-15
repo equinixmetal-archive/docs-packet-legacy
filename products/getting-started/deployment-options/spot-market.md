@@ -10,7 +10,7 @@
 }
 </meta> -->
 
-Packet's Spot Market allows users to bid on spare server capacity at reduced rates.  
+Packet's Spot Market allows users to bid on spare server capacity at reduced rates.
 
 In exchange, you give Packet the right to revoke any instance with only a two minute warning (you may also choose to convert a revoked instance to list pricing when the two minute warning is given via the API).
 
@@ -26,7 +26,7 @@ These instances are volatile, which means that they can be revoked by Packet at 
 
 ### Spot Instance Creation
 
-_For more information regarding the spot market API endpoint, review the [relevant API docs](https://www.packet.com/developers/api/#market)._    
+_For more information regarding the spot market API endpoint, review the [relevant API docs](https://www.packet.com/developers/api/#market)._
 
 This works much like creating a traditional instance.  The only difference in the API call is that we need two additional parameters:
 

@@ -71,7 +71,7 @@ Next, invoke the `kubeadm join` command on each worker node to join the Kubernet
 
 ![interface](/images/kubeless-on-packet-cloud/setup-worker-nodes-portal-new.png)
 
-From this point, unless specified otherwise, all listed commands should be executed on the master node as the `packet` user.  
+From this point, unless specified otherwise, all listed commands should be executed on the master node as the `packet` user.
 Check the status of the nodes in the cluster by executing the following command :
 ```
     $ kubectl get nodes
@@ -86,7 +86,7 @@ Here you can see that our Kubernetes cluster consists of a master and two worker
 
 To allow inbound connections to reach the cluster services we should install a ingress controller to the cluster. The easiest way to install an ingress controller is using the `helm` client.
 
-[Helm](https://github.com/kubernetes/helm) is a package manager for Kubernetes and is a tool to manage pre-configured packages known as Charts to a Kubernetes cluster.  
+[Helm](https://github.com/kubernetes/helm) is a package manager for Kubernetes and is a tool to manage pre-configured packages known as Charts to a Kubernetes cluster.
 Install the [latest version](https://github.com/kubernetes/helm/releases) of the `helm` client on the master node:
 ```
     $ HELM_RELEASE=v2.7.2

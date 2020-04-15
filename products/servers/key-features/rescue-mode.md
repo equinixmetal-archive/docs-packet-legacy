@@ -59,7 +59,7 @@ In order to get back to the Original OS, we can simply reboot the server.
 
 ### Common Use Cases / Situations
 
-**#1 - Reset root password**  
+**#1 - Reset root password**
 In cases when you can normally SSH into your server and can’t use SOS because you have forgotten or haven’t saved the root password, you can reset it through Rescue.
 
 * Option 1:

@@ -12,7 +12,7 @@
 
 # Container Network Benchmarking on Kubernetes
 
-Network performance is a strong consideration in any highly-distributed, highly-available architecture, and on bare metal, for Kubernetes in particular, this consideration extends from your machines' physical network, to your network overlays used by your workload Pods, and any other networking between physical locations, etc. Benchmarking performance for a container network, and for a Kubernetes cluster, can be done using much the same tooling as one might on a traditional server deployment model, and can actually be enhanced using features built into Kubernetes, as well as its tools to debug and observe behavior on the cluster networks. 
+Network performance is a strong consideration in any highly-distributed, highly-available architecture, and on bare metal, for Kubernetes in particular, this consideration extends from your machines' physical network, to your network overlays used by your workload Pods, and any other networking between physical locations, etc. Benchmarking performance for a container network, and for a Kubernetes cluster, can be done using much the same tooling as one might on a traditional server deployment model, and can actually be enhanced using features built into Kubernetes, as well as its tools to debug and observe behavior on the cluster networks.
 
 ## Overview
 
@@ -30,7 +30,7 @@ iperf -c iperf-server -P 10
 
 for example, the above connects to your server, and conducts a standard test on throughput, using the `-P` argument to define the number of parallel connections (client threads) over which to test.
 
-This principle will still apply on an overlay network, of the types used in Kubernetes network, including your common CNI options, using containers on the network as clients and server endpoints. 
+This principle will still apply on an overlay network, of the types used in Kubernetes network, including your common CNI options, using containers on the network as clients and server endpoints.
 
 ## Preparing the iperf image
 
@@ -41,7 +41,7 @@ FROM alpine:latest
 
 RUN apk --update add iperf
 
-ENTRYPOINT iperf -s 
+ENTRYPOINT iperf -s
 ```
 
 then, proceed to build and tag it:
@@ -84,7 +84,7 @@ spec:
     targetPort: 5001
 ```
 
-Like you saw above, the `user/iperf` image just starts a server using `iperf -s` and we're exposing the port 5001 on the hostname `iperf-overlay-server.default` within our cluster. 
+Like you saw above, the `user/iperf` image just starts a server using `iperf -s` and we're exposing the port 5001 on the hostname `iperf-overlay-server.default` within our cluster.
 
 In this case, the results will be logged as STDOUT for the server `Pod` (and will persist as long as the Pod does), but for persistent storage, we can attach a Volume, for example, and write these to a file on the volume and just override the default command for the Server:
 
@@ -129,7 +129,7 @@ We're using `command` to override starting the server, and defining our client j
 iperf -c iperf-overlay-server -P 10
 ```
 
-so on that `command` line, you can modify the client, for example, to meet the standards you'd like to benchmark for. 
+so on that `command` line, you can modify the client, for example, to meet the standards you'd like to benchmark for.
 
 Once the `Job` has been created:
 
@@ -154,15 +154,15 @@ to see your test results.
 
 ## Host-level network performance
 
-As you might've guessed, `iperf` has been used to test physical networks for a long time, and as you saw, our test here runs those sorts of tests on the container network, an overlay on the physical network your cluster nodes are running on. 
+As you might've guessed, `iperf` has been used to test physical networks for a long time, and as you saw, our test here runs those sorts of tests on the container network, an overlay on the physical network your cluster nodes are running on.
 
-You can use Kubernetes-based services to test the physical network as well, if you'd like, using a similar pattern. 
+You can use Kubernetes-based services to test the physical network as well, if you'd like, using a similar pattern.
 
 This example, as you saw, was intended to benchmark the performance of the SDN Overlay Network, however, this test can be re-run for the `host` network by adding the `hostNetwork: true` option to the server `Pod` and client `Job` specs--this, however, requires [a permissive PodSecurityPolicy](https://kubernetes.io/docs/concepts/policy/pod-security-policy/#host-namespaces).
 
-In this scenario, you might, for example, submit `Job` client requests from a remote cluster to test things like replication over a WAN, or from within cluster, just physical networking between nodes if there are performance issues that are not manifest in the overlay. 
+In this scenario, you might, for example, submit `Job` client requests from a remote cluster to test things like replication over a WAN, or from within cluster, just physical networking between nodes if there are performance issues that are not manifest in the overlay.
 
-One can run different types of tests by overriding the default behavior of the `user/iperf` container (starting a server using `iperf -s`), using the `command` key in the Pod and Job specs and [modifying the `iperf` benchmarking to be done](https://openmaniak.com/iperf.php), respectively. 
+One can run different types of tests by overriding the default behavior of the `user/iperf` container (starting a server using `iperf -s`), using the `command` key in the Pod and Job specs and [modifying the `iperf` benchmarking to be done](https://openmaniak.com/iperf.php), respectively.
 
 ## Additional Reading
 
@@ -182,4 +182,4 @@ To run this example on a schedule, Kubernetes also support `CronJob` resources:
 - [CronJobs](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/)
 
 A set of example `Job` and `Service` resources for running `iperf` on Kubernetes can be found here:
-- [jmarhee/container-network-benchmarking](https://bitbucket.org/jmarhee/container-network-benchmarking/src/master/) 
+- [jmarhee/container-network-benchmarking](https://bitbucket.org/jmarhee/container-network-benchmarking/src/master/)
