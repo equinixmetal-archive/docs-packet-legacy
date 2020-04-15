@@ -10,7 +10,7 @@
 }
 </meta> -->
 
-This guide will assist in deploying a multi-node vSphere cluster with vSan support enabled on Packet. From beginging to end, you should be up and running in 30 minutes!
+This guide will assist in deploying a multi-node vSphere cluster with vSan support enabled on Packet. From beginning to end, you should be up and running in 30 minutes!
 
 #### Prerequesists
 
