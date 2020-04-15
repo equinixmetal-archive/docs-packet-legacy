@@ -6,7 +6,7 @@
     "seo-title": "Route BGP with FRR - Packet Technical Guides",
     "seo-description": "Route BGP with FRR on Packet",
     "og-title": "Route BGP with FRR",
-    "og-description":"Route BGP with FRR on Packet"  
+    "og-description":"Route BGP with FRR on Packet"
 }
 </meta> -->
 
@@ -80,7 +80,7 @@ pip3 install -e .
 And then apply the FRR configuration using our instance's metadata:
 
 ```
-./configure.py -r frr | tee /etc/frr/frr.conf 
+./configure.py -r frr | tee /etc/frr/frr.conf
 frr defaults traditional
 log syslog informational
 ipv6 forwarding
@@ -135,10 +135,10 @@ vtysh
 
 Hello, this is FRRouting (version 7.3).
 Copyright 1996-2005 Kunihiro Ishiguro, et al.
-# 
+#
 ```
 ```
-# show bgp summary 
+# show bgp summary
 
 IPv4 Unicast Summary:
 BGP router identifier 10.99.182.254, local AS number 65000 vrf-id 0

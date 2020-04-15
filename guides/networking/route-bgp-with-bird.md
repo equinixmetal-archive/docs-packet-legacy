@@ -6,7 +6,7 @@
     "seo-title": "Route BGP with BIRD - Packet Technical Guides",
     "seo-description": "Route BGP with BIRD on Packet",
     "og-title": "Route BGP with BIRD",
-    "og-description":"Route BGP with BIRD on Packet"  
+    "og-description":"Route BGP with BIRD on Packet"
 }
 </meta> -->
 
@@ -113,7 +113,7 @@ birdc
 ```
 bird> show protocols all neighbor_v4_1
 name     proto    table    state  since       info
-neighbor_v4_1 BGP      master   up     15:20:31    Established   
+neighbor_v4_1 BGP      master   up     15:20:31    Established
   Preference:     100
   Input filter:   ACCEPT
   Output filter:  packet_bgp

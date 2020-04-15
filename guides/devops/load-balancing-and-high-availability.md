@@ -258,7 +258,7 @@ protocol bgp {
 export filter packetdns;
 local as 65000;
 neighbor 10.10.10.237.128 as 65530;
-#password "md5password"; 
+#password "md5password";
 }
 ```
 
@@ -387,7 +387,7 @@ If no errors were reported, restart the haproxy service:
 
 ### Keepalived high availability configuration
 
-Next, we will setup Keepalived for high availability so if one primary server stops working, the load balancer fails over to the backup or secondary server. 
+Next, we will setup Keepalived for high availability so if one primary server stops working, the load balancer fails over to the backup or secondary server.
 
 **!!! IMPORTANT !!!** Keepalived does not work with loopback interfaces and requires the interface names to be the same. Some servers come with different interfaces names even though they are the same server type because there are different revisions and different NICs.
 So for configuring the VRRP instance for the private IP on the second interface, set the interface to bond0 and add "dev enp1s0f1 label gateway:0" after the virtual ip address.

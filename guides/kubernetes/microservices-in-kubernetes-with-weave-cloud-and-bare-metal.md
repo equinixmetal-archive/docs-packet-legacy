@@ -65,7 +65,7 @@ In these next few steps, you will create a Kubernetes cluster using Kubeadm.  K
 ### 1\. Install the Kubeadm, Kubelet and Docker Binaries
 
 For each host, SSH onto the machine and become root (for example \`sudo su -\`) then run the following:
-```    
+```
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 cat <<EOF > /etc/apt/sources.list.d/kubernetes.list
 deb http://apt.kubernetes.io/ kubernetes-xenial main
@@ -92,11 +92,11 @@ apt-get install apt-transport-https
 Before proceeding, ensure that Docker is running on all of your nodes:
 ```
 systemctl start docker.service
-```    
+```
 Also, check that the kubectl service is installed and ready:
 ```
 kubectl
-```    
+```
 The kubectl command service is the command line utility that allows you to manage all of the services on a Kubernetes cluster.
 
 ### 3\. Initialize One of the Nodes as Master
@@ -128,13 +128,13 @@ Make a note of the last line in this output.  You will need this to join up the
 If you run into an error like this, after running kubeadm init:
 ```
 failed to parse kernel config: unable to load kernel module "configs": output - "modprobe: FATAL: Module configs not found in directory /lib/modules/4.4.0-47-generic\n", err - exit status 1
-```   
+```
 You may need to update one of the Kernel mods because of an issue with the system check. For more information about this issue, you can refer to:
 
 [https://github.com/kubernetes/kubernetes/issues/41025](https://github.com/kubernetes/kubernetes/issues/41025)
 
 Run the following on all three nodes, but don’t install GRUB, as it is not necessary:
-```    
+```
 apt-get install linux-image-$(uname -r)
 ```
 From the GRUB screen that appears select,  ‘Keep the local version’ and then continue without using GRUB.
@@ -145,7 +145,7 @@ After installing the update, re-run the \`kubeadm init\` command on the intended
 
 Next you will install Weave Net to use for the pod network so that all of your pods can communicate with each other.
 
-Installing Weave Net on a Bare Metal Server  
+Installing Weave Net on a Bare Metal Server
 On Packet.net there are few extra steps you must take to avoid collisions with the server’s backend network. To avoid these conflicts, launch Weave with a specific address pool (‘weave launch --ipalloc-range 192.168.0.0/16’) that will be used by the IP address manager.
 
 From within the Packet console, you can conveniently view, request and manage IP address blocks for all of your deployed servers.
@@ -189,7 +189,7 @@ daemonset "weave-net" created
 Once a pod network is installed, confirm that it is working by checking that the kube-dns pod is up and running:
 ```
 kubectl get pods --all-namespaces
-```    
+```
 Where you should see something similar to that below:
 ```
 kube-system dummy-2088944543-r5xb8 								1/1 	Running 	0 	44m
@@ -205,9 +205,9 @@ kube-system weave-net-rgkqj 									2/2 	Running 	0 	1m
 ### 6\. Join all Nodes to the Master to Create Cluster
 
 With your Kubernetes all up and running and all pods in communication, you’re ready to join the nodes to create the cluster:
-```    
+```
 kubeadm join --token <token> <master-ip>
-```   
+```
 Run the get nodes command on the master to see the nodes joined:
 ```
 kubectl get nodes
@@ -232,9 +232,9 @@ Replace the <CLOUD\_SERVICE\_TOKEN> with the token you recorded earlier from you
 If you accidently ran the command without your Weave Cloud token, delete the DaemonSet and rerun the command.
 
 Uninstall the DaemonSets with:
-```    
+```
 kubectl delete -f https://cloud.weave.works/k8s.yaml?t=anything
-```    
+```
 Relaunch all of the probes by re-running the above command.
 
 ### 8\. View Kubernetes in Weave Cloud
@@ -255,7 +255,7 @@ cd microservices-demo
 kubectl apply -n sock-shop -f deploy/kubernetes/manifests
 ```
 Check that all of the containers are appearing correctly:
-```    
+```
 kubectl get pods -n sock-shop
 ```
 You can also watch as the Sock Shop containers spin up from within Weave Cloud by selecting the Containers view.
@@ -275,7 +275,7 @@ Display the Sock Shop in your browser with: http://<master node IP:node port>.
 The node port should be 30001, but you can check that by running:
 ```
 kubectl describe svc front-end -n sock-shop
-```    
+```
 Next add few pairs of socks to the cart and then return to Weave Cloud.
 
 ![main-page](/images/microservices-in-kubernetes-with-weave-cloud-and-bare-metal/main-page.png)
@@ -318,7 +318,7 @@ CPU Usage by Kubernetes Pods
 * To uninstall Kubernetes on the machines, simply delete the machines you created for this tutorial, or run the following reset command:
 ```
 kubeadm reset
-```    
+```
 
 #### Final Thoughts
 

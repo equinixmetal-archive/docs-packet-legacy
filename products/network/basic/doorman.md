@@ -10,7 +10,7 @@
 }
 </meta> -->
 
-Doorman is a VPN (virtual private network) service that helps to secure traffic between you and your servers for management purposes. This is not a VPN solution between servers for web traffic. 
+Doorman is a VPN (virtual private network) service that helps to secure traffic between you and your servers for management purposes. This is not a VPN solution between servers for web traffic.
 
 To leverage Doorman, you’ll need to follow the following steps. You will need to have Two Factor Authentication (2FA) enabled via the Packet app. To enable 2FA, simply log in to the Packet Portal, then go to _"Settings" > "Security"_ where you will find the option to enable 2FA under Set Up Using an App.
 

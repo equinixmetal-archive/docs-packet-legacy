@@ -16,11 +16,11 @@ In order to deploy infrastructure, users must belong to an organization, which i
 * __Personal__ organizations are meant for individuals  (e.g. personal servers, example projects, or test integrations.)
 * __Company__ organizations are tied to a corporate entity and typically involve multiple projects and several collaborators.
 
-Just like at GitHub, you can create or belong to many organizations at once. 
+Just like at GitHub, you can create or belong to many organizations at once.
 
 ### Projects
 
-Within an organization, users can create projects (e.g. "Staging" and "Production") to logically group infrastructure and to enable certain networking features like backend transfer. 
+Within an organization, users can create projects (e.g. "Staging" and "Production") to logically group infrastructure and to enable certain networking features like backend transfer.
 
 For auditing purposes, each project results in a distinct invoice on the 1st of the month. As such, be sure that your automation doesn't create a new project when it isn't needed — instead, just reuse a single project.
 

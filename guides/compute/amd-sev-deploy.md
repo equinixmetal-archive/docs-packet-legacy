@@ -68,7 +68,7 @@ wget -c http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16/linux-image-4.16.0-0
 sudo dpkg -i *.deb
 ````
 
-Once the kernel is installed, a system reboot will be required to active the support 4.16.x kernel. 
+Once the kernel is installed, a system reboot will be required to active the support 4.16.x kernel.
 
 ````
 shutdown -r now

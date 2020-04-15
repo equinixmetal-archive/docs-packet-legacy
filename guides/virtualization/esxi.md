@@ -26,31 +26,31 @@ For networking configurations, only one vnic per Standard vSwitch is supported. 
 
 #### ESXi WebUI Access
 
-By default our ESXi image injects a root password (which can be used for the ESXi Web Interface and the SOS Console login prompt) and this is visible in the portal for the first 24hrs after the server is deployed. After the first 24hrs, the root password will no longer be visible for security reasons, so please make a note of it or change it to one you know. In addition, any SSH keys you have associated with your project will be placed on the server during install. Your SSH key will work for the lifespan of the system, but be aware that injection process is one-time, so adding an SSH key via the portal or API will not add it to the host for the root account. This will need to be done manually by a user with an existing SSH key or via the SOS Console. 
+By default our ESXi image injects a root password (which can be used for the ESXi Web Interface and the SOS Console login prompt) and this is visible in the portal for the first 24hrs after the server is deployed. After the first 24hrs, the root password will no longer be visible for security reasons, so please make a note of it or change it to one you know. In addition, any SSH keys you have associated with your project will be placed on the server during install. Your SSH key will work for the lifespan of the system, but be aware that injection process is one-time, so adding an SSH key via the portal or API will not add it to the host for the root account. This will need to be done manually by a user with an existing SSH key or via the SOS Console.
 
 
 #### ESXi Root Lockout
 
 In ESXi 6.0 and above a security lockout feature was implemented on the root user for safety. After a number of failed login attempts, the server will trigger a lockout. This is a good safety measure for when you have public facing servers, or, even for internally exposed servers on your corporate network. We can’t always assume that it’s external bad actors who are the only ones attempting to breach your devices.
 
-During provisioning, our platform injects SSH Keys to the device and disables password-based logins over SSH. This prevents lockouts caused by bad actors attempting to brute force SSH login attempts under normal situations. You can use those keys to reset the root lockout by running the command: 
+During provisioning, our platform injects SSH Keys to the device and disables password-based logins over SSH. This prevents lockouts caused by bad actors attempting to brute force SSH login attempts under normal situations. You can use those keys to reset the root lockout by running the command:
 ```
 [root@esxi6:~] pam_tally2 --user root --reset
 ````
 
-The output would include number of attempts, the last attempt (date) & IP: 
+The output would include number of attempts, the last attempt (date) & IP:
 ````
 Login           Failures Latest failure     From
 root                132  11/29/17           61.167.12.10
 [root@esxi6:~]
 ````
 
-Once the reset has been completed, it's suggested to utilize ESXi firewall to limit access to default SSH port 22 to only those authorized and/or alternate the default port to something specific for your use case. 
+Once the reset has been completed, it's suggested to utilize ESXi firewall to limit access to default SSH port 22 to only those authorized and/or alternate the default port to something specific for your use case.
 
 
 #### ESXi Licensing
 
-Packet does not offer licensing for ESXi at this time. By default, the OS comes with a 60-day evaluation license.  If you would like to utilize it beyond the 60-days you will need to acquire a license from VMware and activate it on your Packet machine(s) directly. 
+Packet does not offer licensing for ESXi at this time. By default, the OS comes with a 60-day evaluation license.  If you would like to utilize it beyond the 60-days you will need to acquire a license from VMware and activate it on your Packet machine(s) directly.
 
 
 #### ESXi Networking
@@ -134,7 +134,7 @@ By default, the remaining space not consumed by the ESXi software on the boot dr
 Images can be loaded into the datastore(s) of ESXi using the WebUI, however, you will be limited to the upload speed of your connection and the speed of the WebUI of ESXi. The ESXi WebUI is also very latency sensitive, so uploading across continents and/or oceans can be very slow and unreliable. For better performance, you may wish to download images using the wget tool over SSH or the SOS Console instead. The version of wget included with ESXi does not support HTTPS, and most sites now silently redirect to HTTPS by default. For this reason, we offer a small selection of ISOs for download over HTTP at iso.packet.cloud for your convenience. The default datastore is located in /vmfs/volumes/datastore1 when connecting to the ESXi console over SSH or the SOS console. Downloading images does not work if the instance is running in full L2 mode. While the ISOs you may want are not available, you can launch a simple Linux VM from that selection, and use a browser from the Linux VM to download your desired ISO and upload it to the ESXi WebUI with better performance than attempting remotely.
 
 
-#### Upgrade ESXi 6.5 to 6.7 
+#### Upgrade ESXi 6.5 to 6.7
 
 To get a VMware ESXi 6.7 server up and running on Packet, you need to deploy an ESXi 6.5 server and run the ESXi 6.7 update through an SSH session on the server.
 

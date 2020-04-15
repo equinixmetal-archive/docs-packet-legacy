@@ -10,10 +10,10 @@
 }
 </meta> -->
 
-Minio is a high performance distributed object storage server, designed for large-scale private cloud infrastructure. MinIO is designed in a cloud-native manner to scale sustainably in multi-tenant environments. 
+Minio is a high performance distributed object storage server, designed for large-scale private cloud infrastructure. MinIO is designed in a cloud-native manner to scale sustainably in multi-tenant environments.
 
 
-#### Installing & Configuring Minio 
+#### Installing & Configuring Minio
 
 You can install the Minio server by compiling the source code or via a binary file. For this guide, we will make use of the binary and we will be deploying on a server running Ubuntu 18.04.
 
@@ -37,7 +37,7 @@ chmod +x minio
 
 Next, the binary will need to be relocated to the `/usr/local/bin` directory where the startup script expects to find it. We'll be downloading the startup script below. It is also not suggested to run the Minio server as root. Instead, we'll create a user called `minio-user`.
 
-This is done by running: 
+This is done by running:
 
 ```
 useradd -r minio-user -s /sbin/nologin
@@ -53,7 +53,7 @@ chown minio-user:minio-user /path/to/storage
 
 Next up, we will need to create a Minios configuration file. Typically, the most common location for this file is in `/etc/`. Make sure this location has the same permissions as the storage directory for `minio-user`.
 
-An example of the Minio configuration: 
+An example of the Minio configuration:
 
 ```
 MINIO_ACCESS_KEY="minio"
@@ -72,7 +72,7 @@ MINIO_SECRET_KEY="miniostorage"
 
 #### Minio Startup Script
 
-To allow Minio to startup at reboot, a startup script is required. Download the descrpitor file: 
+To allow Minio to startup at reboot, a startup script is required. Download the descrpitor file:
 
 ```
 curl -O https://raw.githubusercontent.com/minio/minio-service/master/linux-systemd/minio.service
@@ -104,7 +104,7 @@ Double check that is in fact running:
 systemctl status minio
 ```
 
-You should see an output similar to: 
+You should see an output similar to:
 
 ```
  minio.service - MinIO
@@ -119,4 +119,4 @@ You should see an output similar to:
 
 
 
-More information about Minio is available at the [project’s documentation website](https://docs.minio.io/) & information about how to secure your Minio Server can be found at [Let's Encrypt](https://docs.min.io/docs/generate-let-s-encypt-certificate-using-concert-for-minio.html). 
+More information about Minio is available at the [project’s documentation website](https://docs.minio.io/) & information about how to secure your Minio Server can be found at [Let's Encrypt](https://docs.min.io/docs/generate-let-s-encypt-certificate-using-concert-for-minio.html).

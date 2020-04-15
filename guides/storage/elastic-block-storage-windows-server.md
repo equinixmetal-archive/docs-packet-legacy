@@ -127,7 +127,7 @@ To do this, click the volume and click the Properties button, on the new window 
 
 ![second-path-session](/images/elastic-block-storage-windows-server/second-path-session.png)
 
-(Note: This is not required but if would like to customize Multipath settings further such as the load balance policy and type of state, you can do that in the volume properties window, click the Devices button, then click the MPIO button on the new window, and there you will be able to configure Multipath as you wish. The default settings of Round Robin with Subset and both sessions set as Active are fine.) 
+(Note: This is not required but if would like to customize Multipath settings further such as the load balance policy and type of state, you can do that in the volume properties window, click the Devices button, then click the MPIO button on the new window, and there you will be able to configure Multipath as you wish. The default settings of Round Robin with Subset and both sessions set as Active are fine.)
 
 ## Partitioning and Mounting the Volume
 
@@ -147,7 +147,7 @@ Next, you need to right click the black bar area and select “New Simple Volume
 
 ![new-simple-volume](/images/elastic-block-storage-windows-server/new-simple-volume.png)
 
-A wizard will pop up to create a partition and format it with a filesystem. You can select next and use all the default settings but feel free to change settings such as a specific partition size, filesystem of your choice, drive letter, and volume label. 
+A wizard will pop up to create a partition and format it with a filesystem. You can select next and use all the default settings but feel free to change settings such as a specific partition size, filesystem of your choice, drive letter, and volume label.
 
 ![filesystem](/images/elastic-block-storage-windows-server/filesystem.png)
 

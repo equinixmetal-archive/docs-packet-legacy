@@ -20,7 +20,7 @@ Packet offers an out of band access method that we call "SOS" - which stands for
 
 #### Using SOS
 
-`ssh {server-uuid}@sos.{facility-code}.packet.net`  
+`ssh {server-uuid}@sos.{facility-code}.packet.net`
 
 *   You can find the **{server-uuid}** on the server details section in our user portal.
 *   For a full list of **{facility-code}** options (e.g. ewr1, sjc1, ams1, etc) see our [Data Centers](https://www.packet.com/developers/docs/getting-started/datacenters-ha/overview) article.

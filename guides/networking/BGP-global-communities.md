@@ -28,43 +28,43 @@ If you're using an IP range across multiple regions you can use Packet's Anycast
 -   Please note that this community should only be used for global Anycast deployments and is not advised for use in a single datacenter, as it will limit the number of available paths/providers you have access to. It should only be deployed by you seeking BGP Anycast topology, with multiple server instances deployed in each Packet datacenter.
 
 
-## Advanced BGP 
+## Advanced BGP
 
 You can fine tune reachability to the IPs you announce by attaching Traffic Engineering (TE) Communities.
 
 The purpose of TE Communities is to tell the Packet network which providers and peers to advertise your prefixes to, allowing for more granular control than default (sans-community) BGP or the Global Anycast BGP community referened above (54825:222).
 
-Using any of the communities listed below gives you full control over the oubound advertisment of your prefixes. You are able to advertise to any combination of providers and peers that exist within a location. Each provider has its own set of communities. If a provider's community is not included on a prefix, we will not advertise it to that provider.  
+Using any of the communities listed below gives you full control over the oubound advertisment of your prefixes. You are able to advertise to any combination of providers and peers that exist within a location. Each provider has its own set of communities. If a provider's community is not included on a prefix, we will not advertise it to that provider.
 
 
-### Combining Communities 
+### Combining Communities
 
 You are able to combine communities for granular control of your announcements. For example, you can use a combination of communities to advertise to Telia and Zayo, but not Limelight. Or you could advertise to Telia, prepend three times to Zayo, and advertise to an Internet Exchange (IX).
 
-  
+
 ### Usage Guidelines
 
 To use the communities correctly please follow the guide below:
 
 -   Other communities such as 54825:222 and 54825:223 should be removed
-    
+
 -   To advertise a prefix to any provider, the “Advertise to XXX” must be used. E.g. to advertise to Telia, 54825:500 must be used. If only a single provider community is used, the prefix will only be advertised to that provider.
-    
+
 -   Combine communities to advertise to multiple providers, e.g. Use 54825:500 & 54825:510 to advertise to both Telia and Zayo
-    
+
 -   To prepend you must include the “Advertise to XXX” community as well as the prepend community. E.g to prepend two times to Limelight, you must use 54825:530 & 54825:532. This tells our routers to advertise to Limelight, and prepend twice.
-    
-  
+
+
 
 ### Transit Providers
 
-  
+
 
 **Telia Communities - ASN 1299**
 
 Available in All Facilities (except SYD2, HKG, NRT)
 
-  
+
 | Community | Function |
 |--|--|
 | 54825:500 | Advertise to Telia|
@@ -72,7 +72,7 @@ Available in All Facilities (except SYD2, HKG, NRT)
 | 54825:502 | Prepend two times|
 | 54825:503 | Prepend three times|
 
-  
+
 **Zayo Communities - ASN 6461**
 
 Available in All Facilities (except SYD2, NRT, SIN, HKG)
@@ -84,7 +84,7 @@ Available in All Facilities (except SYD2, NRT, SIN, HKG)
 | 54825:512 | Prepend two times|
 | 54825:513 | Prepend three times|
 
-  
+
 **Hibernia Communities - ASN 5580**
 
 Available in NRT1
@@ -120,13 +120,13 @@ Available in SJC2
 | 54825:542 | Prepend two times|
 | 54825:543 | Prepend three times|
 
-   
+
 
 **Atom86 Communities - ASN 8455**
 
 Available in AMS1
 
-  
+
 
 
 | Community | Function |
@@ -136,14 +136,14 @@ Available in AMS1
 | 54825:562 | Prepend two times|
 | 54825:563 | Prepend three times|
 
-  
+
 
 
 **GTT Communities - ASN 3257**
 
 Available in SYD2
 
-  
+
 | Community | Function |
 |--|--|
 | 54825:590 | Advertise to GTT|
@@ -151,13 +151,13 @@ Available in SYD2
 | 54825:592 | Prepend two times|
 | 54825:593 | Prepend three times|
 
-  
+
 
 **ServerCentral Communities - ASN 23352**
 
 Available in NRT1
 
-  
+
 | Community | Function |
 |--|--|
 | 54825:610 | Advertise to ServerCentral|
@@ -165,7 +165,7 @@ Available in NRT1
 | 54825:612 | Prepend two times|
 | 54825:613 | Prepend three times|
 
-  
+
 
 ### Private Network Interconnects
 
@@ -173,7 +173,7 @@ Available in NRT1
 
 Available in DFW, EWR, ORD, DTW, IAD, LAX, ATL, IAH
 
-  
+
 | Community | Function |
 |--|--|
 | 54825:570 | Advertise to Sprint|
@@ -199,7 +199,7 @@ Available in SJC
 
 Available in SJC, IAD, EWR
 
-  
+
 | Community | Function |
 |--|--|
 | 54825:600 | Advertise to Google|
@@ -207,8 +207,8 @@ Available in SJC, IAD, EWR
 | 54825:602 | Prepend two times|
 | 54825:603 | Prepend three times|
 
-  
-  
+
+
 
 ### Internet Exchanges
 
@@ -216,7 +216,7 @@ Available in SJC, IAD, EWR
 
 Available in AMS
 
-  
+
 | Community | Function |
 |--|--|
 | 54825:800 | Advertise to AMS-IX|
@@ -229,7 +229,7 @@ Available in AMS
 
 Available in EWR
 
-  
+
 | Community | Function |
 |--|--|
 | 54825:810 | Advertise to NYIIX|
@@ -237,13 +237,13 @@ Available in EWR
 | 54825:812 | Prepend two times|
 | 54825:813 | Prepend three times|
 
-  
+
 
 **EQIX-NY**
 
 Available in EWR
 
-  
+
 | Community | Function |
 |--|--|
 | 54825:820 | Advertise to EQIX-NY|
@@ -251,13 +251,13 @@ Available in EWR
 | 54825:822 | Prepend two times|
 | 54825:823 | Prepend three times|
 
-  
+
 
 **DECIX-NY**
 
 Available in EWR
 
-  
+
 | Community | Function |
 |--|--|
 | 54825:830 | Advertise to DECIX-NY|
@@ -265,13 +265,13 @@ Available in EWR
 | 54825:832 | Prepend two times|
 | 54825:803 | Prepend three times|
 
-  
+
 
 **EQIX-SJC**
 
 Available in SJC
 
-  
+
 | Community | Function |
 |--|--|
 | 54825:840 | Advertise to EQIX-SJC|
@@ -291,13 +291,13 @@ Available in SJC
 | 54825:852 | Prepend two times|
 | 54825:853 | Prepend three times|
 
-  
+
 
 **EQIX-NRT**
 
 Available in NRT1
 
-  
+
 | Community | Function |
 |--|--|
 | 54825:870 | Advertise to EQIX-NRT|
@@ -305,13 +305,13 @@ Available in NRT1
 | 54825:872 | Prepend two times|
 | 54825:873 | Prepend three times|
 
-  
+
 
 **EQIX-IAD**
 
 Available in IAD
 
-  
+
 | Community | Function |
 |--|--|
 | 54825:880 | Advertise to EQIX-IAD|
@@ -319,13 +319,13 @@ Available in IAD
 | 54825:882 | Prepend two times|
 | 54825:883 | Prepend three times|
 
-  
+
 
 **EQIX-DFW**
 
 Available in DFW2
 
-  
+
 | Community | Function |
 |--|--|
 | 54825:890 | Advertise to EQIX-DFW|
@@ -333,14 +333,14 @@ Available in DFW2
 | 54825:892 | Prepend two times|
 | 54825:893 | Prepend three times|
 
-  
-  
+
+
 
 **DECIX-DFW**
 
 Available in DFW
 
-  
+
 | Community | Function |
 |--|--|
 | 54825:900 | Advertise to DECIX-DFW|
@@ -348,14 +348,14 @@ Available in DFW
 | 54825:902 | Prepend two times|
 | 54825:903 | Prepend three times|
 
-  
-  
+
+
 
 **EQIX-SYD**
 
 Available in SYD2
 
-  
+
 | Community | Function |
 |--|--|
 | 54825:910 | Advertise to EQIX-SYD|
@@ -368,7 +368,7 @@ Available in SYD2
 
 Available in SIN3
 
-  
+
 | Community | Function |
 |--|--|
 | 54825:920 | Advertise to EQIX-SIN|
@@ -381,14 +381,14 @@ Available in SIN3
 
 Available in LAX2
 
-  
+
 | Community | Function |
 |--|--|
 | 54825:930 | Advertise to ANY2 LA|
 | 54825:931 | Prepend one time|
 | 54825:932 | Prepend two times|
 | 54825:933 | Prepend three times|
-  
+
 
 ### Additional communities for Internet Exchanges only
 

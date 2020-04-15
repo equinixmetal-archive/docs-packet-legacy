@@ -13,7 +13,7 @@
 
 # Preparing Kubernetes for GPU Workloads
 
-As of version 1.10, [Kubernetes has support for GPU accelerated workloads](https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/). Packet’s line of GPU-accelerated machines make an excellent substrate for containerized workloads leveraging GPUs within Kubernetes using the native tooling available in your cluster. 
+As of version 1.10, [Kubernetes has support for GPU accelerated workloads](https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/). Packet’s line of GPU-accelerated machines make an excellent substrate for containerized workloads leveraging GPUs within Kubernetes using the native tooling available in your cluster.
 
 However, unlike traditional containerized workloads, some additional setup to add driver and plugin support for the GPU devices is required to configure Docker and Kubernetes to schedule resources for them.
 
@@ -24,7 +24,7 @@ The [NVIDIA container runtime](https://developer.nvidia.com/nvidia-container-run
 Configuring your nodes, if you are using a diverse group of hardware types within your cluster, will require a couple of pre-requisites on your GPU-equipped nodes:
 
 1 . [Docker and the nvidia-docker package need to be installed](https://github.com/NVIDIA/nvidia-docker#quickstart).
-2. [The NVIDIA container runtime may need be set](https://github.com/NVIDIA/k8s-device-plugin#preparing-your-gpu-nodes) on your nodes’ Docker daemon configuration, depending which `nvidia-docker` package is being used. 
+2. [The NVIDIA container runtime may need be set](https://github.com/NVIDIA/k8s-device-plugin#preparing-your-gpu-nodes) on your nodes’ Docker daemon configuration, depending which `nvidia-docker` package is being used.
 3 .You can also make [node preparation part of your worker spin-up routine](https://gist.github.com/derekmerck/7b109745f0d0e42c7ea75bb3536907cd).
 4. Enabling GPU support for your cluster by [applying the NVIDIA device DaemonSet to your cluster](https://github.com/NVIDIA/k8s-device-plugin#enabling-gpu-support-in-kubernetes).
 
@@ -57,7 +57,7 @@ spec:
         effect: NoSchedule
 ```
 
-Which means that nodes that do not carry the `nvidia.com/gpu` key taint, will be unschedulable when this key exists in a deployment; in the above example, a `DaemonSet` will traditionally run on all nodes in a cluster, so with this toleration in place, you can target a complete subset of nodes matching that toleration to taints on the nodes, in this case, the presence of the GPU, surfaced through this identifier. 
+Which means that nodes that do not carry the `nvidia.com/gpu` key taint, will be unschedulable when this key exists in a deployment; in the above example, a `DaemonSet` will traditionally run on all nodes in a cluster, so with this toleration in place, you can target a complete subset of nodes matching that toleration to taints on the nodes, in this case, the presence of the GPU, surfaced through this identifier.
 
 Alternatively, more broadly as hardware diversity grows in your environment, you may also use a traditional `nodeSelector` in your spec to identify GPUs of a specific type, by first [labelling the nodes](https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes/), and then in your Pod spec:
 
@@ -75,4 +75,4 @@ If you use GPU-accelerated software now, or if you are new to the space, and wan
 - [PyTorch](https://medium.com/dsnet/training-deep-neural-networks-on-a-gpu-with-pytorch-11079d89805)
 - [TensorFlow](https://www.tensorflow.org/guide/gpu)
 
-and [all manner of high-performance parallel programming tasks](https://developer.nvidia.com/udacity-cs344-intro-parallel-programming) for containerized tasks, or one-off workloads like Kubernetes `Job` resources or as a backend for FaaS operations. 
+and [all manner of high-performance parallel programming tasks](https://developer.nvidia.com/udacity-cs344-intro-parallel-programming) for containerized tasks, or one-off workloads like Kubernetes `Job` resources or as a backend for FaaS operations.

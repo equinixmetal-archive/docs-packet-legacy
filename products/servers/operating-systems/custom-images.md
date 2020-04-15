@@ -18,46 +18,46 @@ In addition to providing a public change log, this process enables users to prog
 Why Use a Custom Image?
 Packet's official images are optimized for speed and therefore only have the minimum number of packages installed.
 
-There are different use cases where the ability to deploy a custom image can reduce deployment time and streamline your workflow, especially in very active environments. While you can always install and remove packages (or adjust your kernel) after deploying an official Packet OS image, using a custom image can "front-load" these customization.  
+There are different use cases where the ability to deploy a custom image can reduce deployment time and streamline your workflow, especially in very active environments. While you can always install and remove packages (or adjust your kernel) after deploying an official Packet OS image, using a custom image can "front-load" these customization.
 
 Building a Custom Image
 In this example, we will build a custom Ubuntu 16.04 image for use on a c1.small server.
 
 Prerequisites: This assumes you have an active GitHub/Lab account. Also, the following packages are required to proceed.
 
-* git-lfs  
+* git-lfs
 ```
 apt get install git-lfs
 ```
-* get-ubuntu-image  
+* get-ubuntu-image
 ```
 wget https://raw.githubusercontent.com/packethost/packet-images/master/tools/get-ubuntu-image
 ```
-* make get-ubuntu-image executable  
+* make get-ubuntu-image executable
 ```
 chmod +x /path/to/file
 ```
-* packet-save2image  
+* packet-save2image
 ```
 wget https://raw.githubusercontent.com/packethost/packet-images/master/tools/packet-save2image
 ```
-* set packet-save2image to executable  
+* set packet-save2image to executable
 ```
 chmod +x /<path>/packet-save2image
 ```
-* initrd.tar.gz  
+* initrd.tar.gz
 ```
 wget https://github.com/packethost/packet-images/raw/ubuntu_16_04-c1.small.x86/initrd.tar.gz
 ```
-* kernel.tar.gz  
+* kernel.tar.gz
 ```
 wget https://github.com/packethost/packet-images/raw/ubuntu_16_04-c1.small.x86/kernel.tar.gz
 ```
-* modules.tar.gz  
+* modules.tar.gz
 ```
 wget https://github.com/packethost/packet-images/raw/ubuntu_16_04-c1.small.x86/modules.tar.gz
 ```
-* DockerFile  
+* DockerFile
 ```
 wget https://raw.githubusercontent.com/packethost/packet-images/ubuntu_16_04-base/x86_64/Dockerfile
 ```

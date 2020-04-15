@@ -29,13 +29,13 @@ By piecing these features together, we arrive at a name, such as c1.small.x86 - 
 
 #### What are Generations?
 
-Generations are updated when we significantly upgrade or change the components.  
+Generations are updated when we significantly upgrade or change the components.
 
 This is usually around a major processor refresh, but often also relates to the underlying hardware configuration / chassis.  As such, a "1st" generation system is not necessarily outdated, it is simply our first iteration of a particular configuration.
 
-#### What About Previous Server Names and API Calls?  
+#### What About Previous Server Names and API Calls?
 
-Packet previously labeled servers using Types, such as "Type 1" which was represented in the API as "baremetal_1".  
+Packet previously labeled servers using Types, such as "Type 1" which was represented in the API as "baremetal_1".
 
-_These will still work_--we have simply made an alias in which baremetal_1 translates to its new name:  "c1.small.x86".  
+_These will still work_--we have simply made an alias in which baremetal_1 translates to its new name:  "c1.small.x86".
 

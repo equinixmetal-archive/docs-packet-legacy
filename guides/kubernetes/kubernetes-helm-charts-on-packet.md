@@ -77,20 +77,20 @@ helm create my-new-chart
 and Helm will create a directory tree with sample templates, and Chart definition files:
 
 ```
-» tree my-new-chart                                                                                                    
-my-new-chart                                                                                                                                                                           
-├── Chart.yaml                                                                                                                                                                         
-├── charts                                                                                                                                                                             
-├── templates                                                                                                                                                                          
-│   ├── NOTES.txt                                                                                                                                                                      
-│   ├── _helpers.tpl                                                                                                                                                                   
-│   ├── deployment.yaml                                                                                                                                                                
-│   ├── ingress.yaml                                                                                                                                                                   
-│   ├── service.yaml                                                                                                                                                                   
-│   ├── serviceaccount.yaml                                                                                                                                                            
-│   └── tests                                                                                                                                                                          
-│       └── test-connection.yaml                                                                                                                                                       
-└── values.yaml   
+» tree my-new-chart
+my-new-chart
+├── Chart.yaml
+├── charts
+├── templates
+│   ├── NOTES.txt
+│   ├── _helpers.tpl
+│   ├── deployment.yaml
+│   ├── ingress.yaml
+│   ├── service.yaml
+│   ├── serviceaccount.yaml
+│   └── tests
+│       └── test-connection.yaml
+└── values.yaml
 ```
 
 All of the resources deployed with the application will go into `templates`. With a `Deployment` example like:
