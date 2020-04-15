@@ -120,7 +120,6 @@ Available in SJC2
 | 54825:542 | Prepend two times|
 | 54825:543 | Prepend three times|
 
-
 **Telstra - ASN 4637**
 
 Available in NRT1, SIN3, HKG2
@@ -128,11 +127,10 @@ Available in NRT1, SIN3, HKG2
 
 | Community | Function |
 |--|--|
-| 54825:560 | Advertise to Telstra|
-| 54825:561 | Prepend one time|
-| 54825:562 | Prepend two times|
-| 54825:563 | Prepend three times|
-
+| 54825:620 | Advertise to Telstra|
+| 54825:621 | Prepend one time|
+| 54825:622 | Prepend two times|
+| 54825:623 | Prepend three times|
 
 **GTT Communities - ASN 3257**
 
