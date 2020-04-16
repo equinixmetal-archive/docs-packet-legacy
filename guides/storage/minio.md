@@ -1,12 +1,12 @@
 <!-- <meta>
 {
     "title":"Object Storage with Minio",
-    "description":"Deploy, Setup, & Configure Minio Object Storage Server",
+    "description":"Learn how to deploy Minio's high-performance object storage system on Packet bare metal for your multi-tenant and large scale private-cloud environments",
     "tag":["S3", "Object Storage", "Minio"],
-    "seo-title":"Object Storage with Minio - Packet Technical Guides",
-    "seo-description":"Deploy, Setup, & Configure Minio Object Storage Server",
-    "og-title":"Object Storage with Minio",
-    "og-description":"Deploy, Setup, & Configure Minio Object Storage Server"
+    "seo-title":"Minio Object Storage on Packet - Packet Technical Guides",
+    "seo-description":"Learn how to deploy Minio's high-performance object storage system on Packet bare metal for your multi-tenant and large scale private-cloud environments",
+    "og-title":"Minio Object Storage on Packet - Packet Technical Guides",
+    "og-description":"Learn how to deploy Minio's high-performance object storage system on Packet bare metal for your multi-tenant and large scale private-cloud environments"
 }
 </meta> -->
 
