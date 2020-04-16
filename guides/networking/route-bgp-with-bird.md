@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!-- <meta>
 {
     "title":"Route BGP with BIRD",
@@ -319,4 +318,3 @@ To test, you can ping the IP address in a command line - `ping 10.99.200.138`. _
 #### Alternative Method
 
 For those interested, bird can also be automatically deployed via docker. See more [here](https://github.com/packethost/network-helpers/blob/master/routers/bird/README.md#method-2-bird-via-docker).
->>>>>>> master
