@@ -6,7 +6,7 @@
     "tag":["layer 2", "networking", "advanced"],
     "seo-title": "Layer 2 Network Topology - Packet Developer Docs",
     "seo-description": "A quick look at the layer 2 feature.",
-    "og-title": "Local and Global BGP",
+    "og-title": "Layer 2 Network Topology - Packet Developer Docs",
     "og-description": "A quick look at the layer 2 feature."
 }
 </meta> -->
