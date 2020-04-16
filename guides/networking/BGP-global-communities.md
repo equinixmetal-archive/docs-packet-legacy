@@ -120,24 +120,17 @@ Available in SJC2
 | 54825:542 | Prepend two times|
 | 54825:543 | Prepend three times|
 
+**Telstra - ASN 4637**
 
-
-**Atom86 Communities - ASN 8455**
-
-Available in AMS1
-
-
+Available in NRT1, SIN3, HKG2
 
 
 | Community | Function |
 |--|--|
-| 54825:560 | Advertise to Atom86
-| 54825:561 | Prepend one time|
-| 54825:562 | Prepend two times|
-| 54825:563 | Prepend three times|
-
-
-
+| 54825:620 | Advertise to Telstra|
+| 54825:621 | Prepend one time|
+| 54825:622 | Prepend two times|
+| 54825:623 | Prepend three times|
 
 **GTT Communities - ASN 3257**
 
@@ -150,21 +143,6 @@ Available in SYD2
 | 54825:591 | Prepend one time|
 | 54825:592 | Prepend two times|
 | 54825:593 | Prepend three times|
-
-
-
-**ServerCentral Communities - ASN 23352**
-
-Available in NRT1
-
-
-| Community | Function |
-|--|--|
-| 54825:610 | Advertise to ServerCentral|
-| 54825:611 | Prepend one time|
-| 54825:612 | Prepend two times|
-| 54825:613 | Prepend three times|
-
 
 
 ### Private Network Interconnects
@@ -399,6 +377,7 @@ These communities can be attached to prefixes advertised to any Internet Exchang
 | 54825:6939 | Do not advertise to Hurricane Electric
 | 54825:15169 | Do not advertise to Google|
 
+Most IX support their own "do not advertise" communities in the format of 0:ASN where ASN is the peer not to advertise too.  We will pass on these communities if they are attched on your prefixes.
 
 ### Other communities
 
