@@ -1,12 +1,12 @@
 <!-- <meta>
 {
     "title":"VMware on Packet",
-    "description":"Deploying a multi-node vSphere cluster with vSan enabled in 30 minutes!",
+    "description":"Deploy highly scalable and secure VMware vSphere-based environments to Packet's bare metal cloud in under 30 minutes",
     "tag":["VMware", "ESXi", "vSphere", "vSan"],
     "seo-title": "VMware on Packet - Packet Technical Guides",
-    "seo-description": "Deploying a multi-node vSphere cluster with vSan enabled in 30 minutes!",
-    "og-title": "VMware on Packet",
-    "og-description":"Deploying a multi-node vSphere cluster with vSan enabled in 30 minutes!"
+    "seo-description": "Deploy highly scalable and secure VMware vSphere-based environments to Packet's bare metal cloud in under 30 minutes",
+    "og-title": "VMware on Packet - Packet Technical Guides",
+    "og-description":"Deploy highly scalable and secure VMware vSphere-based environments to Packet's bare metal cloud in under 30 minutes"
 }
 </meta> -->
 
