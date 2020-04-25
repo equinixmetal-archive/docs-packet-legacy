@@ -23,7 +23,7 @@ Userdata takes two different forms:
 User Data Script
 
 * Typically used by those who just want to execute a shell script.
-* Begins with: #!
+* Begins with: #! for Linux shell or #ps1 for Windows Powershell
 
 Cloud Config Data
 
@@ -38,19 +38,30 @@ When provisioning a new server from the Packet Portal, you will find the option 
 On the other hand, if you want to provision a server via our API, you can add userdata by simply using the "userdata": "string" in the body of the call.
 
 
-### Example Usage: Deploying Nginx
+### Example Usage
 
 **User Data Script**
 
+Linux:
 ```
 #!/bin/bash
 export DEBIAN_FRONTEND=noninteractive
 apt-get update && apt-get upgrade -y
 apt-get install nginx -y
 ```
+Windows:
+```
+#ps1
+New-Item C:/Users/Admin test.txt
+Set-Content C:/Users/Admin/test.txt "Hello world"
+
+$password = ConvertTo-SecureString "P@55w0rd!" -AsPlainText -Force
+New-LocalUser -Name "user01" -Password $password
+```
 
 **Cloud-Config**
 
+Linux:
 ```
 #cloud-config
 package_upgrade: true
@@ -58,7 +69,8 @@ packages:
     -  nginx
 ```
 
-Once the server provisions, you should be able to hit the web server on the Public IP.
+Windows:
+Windows can accept cloud-config scripts, but the has some limitations compared to linux. See Cloudbase-init's documentation on user data for a more information on cloud-config scripts.
 
 ### Inithub
 
