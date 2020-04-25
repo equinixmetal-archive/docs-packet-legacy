@@ -122,7 +122,7 @@ Available in SJC2
 
 **Telstra - ASN 4637**
 
-Available in NRT1, SIN3, HKG2
+Available in NRT1, SIN3, HKG2, SYD2
 
 
 | Community | Function |
