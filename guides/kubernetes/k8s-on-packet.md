@@ -11,223 +11,69 @@
 }
 </meta> -->
 
-Kubernetes is an open-source container orchestration framework which was built upon the learnings of Google. It enables you to run applications using containers in a production ready-cluster. Kubernetes three ways to install configure it. In this guide we will be utilizing Kubernetes in a pure upstream format. 
+With modern web services, users expect applications to be available 24/7, and developers expect to deploy new versions of those applications several times a day. Containerization helps package software to serve these goals, enabling applications to be released and updated in an easy and fast way without downtime.
 
-#### Getting Started
-
-OS & Hardware selection is dependent upon your particular build requirements. For this guide, we made us of three (3) of our [c1.small](https://www.packet.com/cloud/servers/c1-small/) on-demand devices along with Ubuntu 20.04.
+Kubernetes helps you make sure those containerized applications run where and when you want, and helps them find the resources and tools they need to work. Kubernetes is a production-ready, open source platform designed with Google's accumulated experience in container orchestration, combined with best-of-breed ideas from the community.
 
 
-> **Note:** For each device that will be in your Kubernetes the following will need to be done:
+## Kubernetes at Packet
 
-### Installing Docker
+A number of projects developed by us, and our community, specifically tailored for the Packet platform are available, using common tooling like [Terraform](https://terraform.io) and [Ansible](https://www.ansible.com/), on our [Github](https://github.com/packethost) organization:
 
-
-````
-sudo apt install docker.io
-````
-Enable Docker: 
-````
-sudo systemctl enable --now docker
-````
-
-### Installing Kubernetes
-
-````
-apt-get update && apt-get install -y \
-  apt-transport-https ca-certificates curl software-properties-common gnupg2 
-````
-
-````
-sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
-````
-
-```
-echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" \
-  | sudo tee -a /etc/apt/sources.list.d/kubernetes.list \
-  && sudo apt-get update 
-````
-> **Note:** At the time of this writing, Ubuntu 16.04 Xenial Xerus is the latest Kubernetes repository available. This should eventually be superseded by Ubuntu 20.04 Focal Fossa, and the following command can then be updated from `xenial` to `focal`.
+* [Kubernetes BGP](https://github.com/packet-labs/kubernetes-bgp): Kubernetes on Packet using Calico and MetalLB.
+* [Multi-architecture Kubernetes](https://github.com/packet-labs/packet-multiarch-k8s-terraform): Deploy Kubernetes on Packet for ARM, x86, and GPU nodes.
+* [Packet K3s](https://github.com/packet-labs/packet-k3s): Run K3s on Packet.
+* [Rook on Bare Metal](https://github.com/packet-labs/Rook-on-Bare-Metal-Workshop): Workshop for running [Rook.io](https://rook.io) cloud-native storage on Bare Metal clusters.
+* [Packet Helm Charts](https://github.com/packet-labs/helm-charts): Helm Charts for Packet platform clusters.
 
 
-To proceed the following three packages are required: `kubelet`, `kubeadm` and `kubernetes-cni`. 
+## Guides
 
-````
-sudo apt-get update \
-  && sudo apt-get install -yq \
-  kubelet \
-  kubeadm \
-  kubernetes-cni
-````
-It is suggested to place the Kubernetes package on hold. As, when you update your system it could cause an unexpected bump in the current version.
-
-```
-sudo apt-mark hold kubelet kubeadm kubectl
-```
-
-### Disable Swap
-
-It has been advised by Kubernetes maintainers that the use of swap memory leads to unpredictable behavior as such, it's suggested to disable swap prior to deploying your cluster.
-
-To disable, review `/etc/fstab` and comment out the following line: 
-
-```
-UUID=c170834e-e51c-4812-82ac-a4d53ddc5d34       none    swap    none    0       0
-```
-
-Then issue: 
-````
-swapoff UUID=2ac483ff-62b4-42b6-80aa-41b58f8a5ceb
-````
-UUID would be the one pertaining to your SWAP partition from the `/etc/fstab` file.
-
-#### Network
-
-For the purpose of this guide, we will expose K8s through the private network functionality. 
-
-```
-ifconfig bond0:0
-bond0:0: flags=5187<UP,BROADCAST,RUNNING,MASTER,MULTICAST>  mtu 1500
-inet 10.88.82.133  netmask 255.255.255.254  broadcast 255.255.255.255
-ether ac:1f:6b:99:ba:ac  txqueuelen 1000  (Ethernet)
-```
-
-##### Initialize your cluster
-
-````
-sudo kubeadm init --apiserver-advertise-address=10.80.0.133
-````
-> **Note:** Only run this step on your designated master node.
+* [How to deploy on bare-metal in ~10 minutes](https://blog.alexellis.io/kubernetes-in-10-minutes/)
+* [Packet: Explore Weave & Kubernetes](https://www.packet.com/resources/guides/microservices-in-kubernetes-with-weave-cloud-and-bare-metal)
 
 
+## Plugins and Official Integrations
 
-If all goes well, you'll be presented with a success message, similar to: 
+As the Kubernetes ecosystem matures, it has adopted formal specifications to help ensure a consistent experience across infrastructure providers and third party solutions.
 
-```
-Your Kubernetes control-plane has initialized successfully!
-
-To start using your cluster, you need to run the following as a regular user:
-
-  mkdir -p $HOME/.kube
-  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-  sudo chown $(id -u):$(id -g) $HOME/.kube/config
-
-You should now deploy a pod network to the cluster.
-Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
-  https://kubernetes.io/docs/concepts/cluster-administration/addons/
-
-Then you can join any number of worker nodes by running the following on each as root:
-
-kubeadm join 10.88.82.129:6443 --token fe82ft.kk1mwznb0hchxbvn \
-    --discovery-token-ca-cert-hash sha256:fa7b9b807941c1664ac68cc3e129211d4462f7f402b89acc6c4527ed86e460be
-````
-
-#### Create a Wheel User
-
-Devices on Packet do not include an unprivileged user. To proceed, one must be created. 
-
-````
-sudo useradd username -G sudo -m -s /bin/bash
-````
-Set the username password:
-````
-sudo passwd username 
-````
-
-### Setting up environmental variables
-
-Switch to the user that you created in the last step to setup `KUBECONFIG` you can do that by issuing `sudo su username` and issue the following: 
-
-````
-cd $HOME
-sudo cp /etc/kubernetes/admin.conf $HOME/
-sudo chown $(id -u):$(id -g) $HOME/admin.conf
-````
-````
-echo "export KUBECONFIG=$HOME/admin.conf" | tee -a ~/.bashrc
-````
-````
-source ~/.bashrc
-````
-
-Try the `kubectl` command to see if master node is listed. It will, for now, appear to be in a `NotReady` status. 
-
-````
-$ kubectl get node
-NAME     STATUS     ROLES    AGE   VERSION
-k8s-02   NotReady   master   23m   v1.18.2
-````
+* [Packet Cloud Controller Manager](https://github.com/packethost/packet-ccm): Allows clusters to interface and authenticate with Packet's APIs.
+* [Packet Container Storage Interface](https://github.com/packethost/csi-packet): Create PersistentVolumes for Kubernetes from Packet's Block Storage offering using the [CSI](https://kubernetes.io/blog/2019/01/15/container-storage-interface-ga/) standard.
+* [Cluster Autoscaler for Packet](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler/cloudprovider/packet): Autoscaling for worker node groups in your Kubernetes clusters.
+* [Packet Cluster API provider](https://github.com/packethost/cluster-api-provider-packet): The Cluster API is a Kubernetes project to bring declarative, Kubernetes-style APIs to cluster creation, configuration, and management. It provides optional, additive functionality on top of core Kubernetes.
 
 
-### Installing Network Plugin
+## Non-Commercial Deployment Solutions
 
-Applying configuration to the cluster using `kubectl` and our new `kubeconfig` will enable networking and the master node will be in `Ready` status. 
+Kubernetes is free, but sometimes deploying and managing it takes work.  A number of projects and distributions exist to help ease that operational pain - here are some that are validated against Packet (note: this is an easily outdated list):
 
-````
-sudo mkdir -p /var/lib/weave
-````
-````
-head -c 16 /dev/urandom | shasum -a 256 | cut -d" " -f1 | sudo tee /var/lib/weave/weave-passwd
-````
-````
-kubectl create secret -n kube-system generic weave-passwd --from-file=/var/lib/weave/weave-passwd
-````
-> **Note:** You would need to use a different private subnet for Weave net to avoid conflicts. 
+* [Kubeadm](https://v1-16.docs.kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/): kubeadm bootstraps a minimal Kubernetes cluster, meeting conformance standards, and automating many cluster operations through its toolchain.
+* [Lokomotive](https://github.com/kinvolk/lokomotive-kubernetes): an open source project by [Kinvolk](https://kinvolk.io/) which distributes pure upstream Kubernetes.
+* [Rancher Kubernetes Engine (RKE)](https://rancher.com/docs/rke/latest/en/): RKE solves the problem of installation complexity, a common issue in the Kubernetes community. With RKE, the installation and operation of Kubernetes is both simplified and easily automated, and it’s entirely independent of the operating system and platform you’re running.
+* [Crossplane](https://crossplane.io/): Manage cluster deployments across cloud providers.
+* [K3s](https://k3s.io/): Lightweight certified Kubernetes distribution for IoT & Edge computing.
+* [Kubespray](https://kubespray.io/): runs perfectly on Packet, using Ansible as its substrate for provisioning and orchestration. Kops performs the provisioning and orchestration itself, and as such is less flexible in deployment platforms.
+* [Pharmer](https://pharmer.io/): a technical preview from Appscode of a Kubernetes cluster manager for kubeadm. Pharmer lets you set up, tear down, and scale clusters up and down on Packet.
+* [Kubernetes on DC/OS](https://github.com/mesosphere/dcos-kubernetes-quickstart): A package to deploy Kubernetes cluster in your [DC/OS](https://github.com/mesosphere/dcos-kubernetes-quickstart) environment.
 
-#### Add the nodes
+## Commercial Deployment Solutions
 
-On the master node you ran `kubeadm init`, the result was a token that is valid for 24-hours. You'll use that, to join your two other nodes. 
+* [Loodse](https://www.loodse.com/): Enterprise software that automates multicloud, on-prem, and edge operations with a single management UI for Kubernetes.
+* [Platform9](https://platform9.com): Packet works closely with Platform9, a managed cloud provider, to enable users with Kubernetes, Openstack, and Serverless solutions.
+* [Cloud66](https://www.cloud66.com/): London-based Cloud66 offers a managed Kubernetes container service called Maestro, which is tested against Packet.
+* [RedHat OpenShift](https://www.openshift.com/): OpenShift is an open source container application platform by Red Hat based on the Kubernetes container orchestrator for enterprise app development and deployment.
 
-````
-kubeadm join 10.88.82.129:6443 --token fe82ft.kk1mwznb0hchxbvn \
-    --discovery-token-ca-cert-hash sha256:fa7b9b807941c1664ac68cc3e129211d4462f7f402b89acc6c4527ed86e460be
-````
+## Community
 
-If the above results in an error, backtrack the steps as one may have been inadvertently omitted. 
+Packet is actively involved in supporting the cloud native space, including Kubernetes.
 
-Move back to the master node, you should then see all sitting in the `Ready` status. 
+* [CNCF Community Infrastructure Lab](https://www.cncf.io/community/infrastructure-lab/): Packet donates $25,000 per month in compute resources that are available to the CNCF and broader open source community.
+* [CNCF Cross Cloud CI](https://cncf.ci/) - Packet is represented as the only bare metal cloud on the this unique dashboard, which shows the results of a sample implementation of the CNCF project stack against various providers.
 
-````
-kubectl get node
-NAME     STATUS   ROLES    AGE     VERSION
-k8s-01   Ready    <none>   4m28s   v1.18.2
-k8s-02   Ready    master   3h23m   v1.18.2
-k8s-03   Ready    <none>   23m     v1.18.2
-````
 
-Check the health of the cluster: 
+## External Resources:
 
-````
-kubectl get all --all-namespaces
-````
-````
-NAMESPACE     NAME                                 READY   STATUS    RESTARTS   AGE
-kube-system   pod/coredns-66bff467f8-cr7w5         1/1     Running   0          3h25m
-kube-system   pod/coredns-66bff467f8-hrhjr         1/1     Running   0          3h25m
-kube-system   pod/etcd-k8s-02                      1/1     Running   0          3h25m
-kube-system   pod/kube-apiserver-k8s-02            1/1     Running   0          3h25m
-kube-system   pod/kube-controller-manager-k8s-02   1/1     Running   0          3h25m
-kube-system   pod/kube-proxy-8nndw                 1/1     Running   0          3h25m
-kube-system   pod/kube-proxy-jtlnm                 1/1     Running   0          6m14s
-kube-system   pod/kube-proxy-vfwzh                 1/1     Running   0          25m
-kube-system   pod/kube-scheduler-k8s-02            1/1     Running   0          3h25m
-kube-system   pod/weave-net-8btjw                  2/2     Running   0          25m
-kube-system   pod/weave-net-qc79h                  2/2     Running   0          35m
-kube-system   pod/weave-net-zb778                  2/2     Running   0          6m14s
-
-NAMESPACE     NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)                  AGE
-default       service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP                  3h25m
-kube-system   service/kube-dns     ClusterIP   10.96.0.10   <none>        53/UDP,53/TCP,9153/TCP   3h25m
-
-NAMESPACE     NAME                        DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR            AGE
-kube-system   daemonset.apps/kube-proxy   3         3         3       3            3           kubernetes.io/os=linux   3h25m
-kube-system   daemonset.apps/weave-net    3         3         3       3            3           <none>                   35m
-
-NAMESPACE     NAME                      READY   UP-TO-DATE   AVAILABLE   AGE
-kube-system   deployment.apps/coredns   2/2     2            2           3h25m
-
-NAMESPACE     NAME                                 DESIRED   CURRENT   READY   AGE
-kube-system   replicaset.apps/coredns-66bff467f8   2         2         2       3h25m
-````
-
-The above shows the cluster is healthy and you can now deploy your microservice therein! 
+* [The Linux Foundation's Kubernetes Fundamentals course](http://bit.ly/2ewaVAs)
+* [Kubernetes Documentation](https://kubernetes.io/docs/home/)
+* [Kubernetes Community Public Slack](https://slack.kubernetes.io/)
+* [#k8s on Packet's Community Slack](https://packetcommunity.slack.com)
