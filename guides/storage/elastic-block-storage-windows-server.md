@@ -23,10 +23,6 @@ Click on "New Storage Volume", give the volume a description, choose the size of
 
 ![create-block-storage](/images/elastic-block-storage-windows-server/storage2.png)
 
-### Snapshots
-
-A snapshot is a differential copy of your volume made at a specific moment in time. If you have a 500GB volume, but only 250 GB of data on it, your snapshot is only 250 GB. With a snapshots, you are only billed for the changes to the original block device from the time the snapshot is made — as such, a policy of 5 snapshots may end up being only a small amount of storage if your rate of change on the device is low. Billing for all snapshots is at our lower $0.07/GB per month tier.
-
 ### Performance Tiers
 
 When you need persistent storage, with built-in replication and snapshots, our block storage product is a very useful tool.  We offer two performance tiers:
@@ -35,6 +31,9 @@ When you need persistent storage, with built-in replication and snapshots, our b
 
 * **Performance Tier:** ($0.000223/GB per hour) - With 15,000 IOPS per volume this is targeted at higher I/O heavy workloads.
 
+### Snapshots
+
+A snapshot is a differential copy of your volume made at a specific moment in time. If you have a 500GB volume, but only 250 GB of data on it, your snapshot is only 250 GB. With a snapshots, you are only billed for the changes to the original block device from the time the snapshot is made — as such, a policy of 5 snapshots may end up being only a small amount of storage if your rate of change on the device is low. Billing for all snapshots is at our lower $0.07/GB per month tier.
 
 ### Attach / Detach the Volume to the Server
 
