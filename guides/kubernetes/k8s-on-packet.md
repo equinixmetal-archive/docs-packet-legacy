@@ -17,7 +17,7 @@ Kubernetes can be installed in a number of ways on Packet however, in this guide
 
 #### Getting Started
 
-OS & Hardware selection is dependent upon your particular build requirements. For this guide, we made us of three (3) of our [c1.small](https://www.packet.com/cloud/servers/c1-small/) on-demand devices along with Ubuntu 20.04.
+OS & Hardware selection is dependent upon your particular build requirements. For this guide, we made use of three (3) of our [c1.small](https://www.packet.com/cloud/servers/c1-small/) on-demand devices along with Ubuntu 20.04.
 
 
 > **Note:** For each device that will be in your Kubernetes the following will need to be done:
