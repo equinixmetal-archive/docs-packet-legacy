@@ -62,7 +62,7 @@ To use the communities correctly please follow the guide below:
 
 **Telia Communities - ASN 1299**
 
-Available in All Facilities (except SYD2, HKG, NRT)
+Available in All Facilities (except SYD2, HKG, NRT, YYZ)
 
 
 | Community | Function |
@@ -95,18 +95,6 @@ Available in NRT1
 | 54825:521 | Prepend one time|
 | 54825:522 | Prepend two times|
 | 54825:523 | Prepend three times|
-
-
-**Limelight Communities - ASN 22822**
-
-Available in All locations
-
-| Community | Function |
-|--|--|
-| 54825:530 | Advertise to Limelight|
-| 54825:531 | Prepend one time|
-| 54825:532 | Prepend two times|
-| 54825:533 | Prepend three times|
 
 
 **Cogent Communities - ASN 174**
