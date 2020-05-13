@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title": "Kubernetes Cluster API",
-    "description": "Cluser API is an effort to make cluster bootstrapping declarative, while also using a single interface for a variety of Kubernetes providers.",
+    "description": "Cluster API is an effort to make cluster bootstrapping declarative, while also using a single interface for a variety of Kubernetes providers.",
     "tag": ["Kubernetes", "Cluster"],
     "seo-title": "Kubernetes Cluster API for Packet - Packet Technical Guides",
     "seo-description": "Kubernetes Cluster API on Packet",
