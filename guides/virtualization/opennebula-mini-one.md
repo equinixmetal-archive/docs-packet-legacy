@@ -36,7 +36,7 @@ Requirements may differ for various types of evaluation enviorments which you ma
     * 20 GB free disk space
     * OS: Ubuntu 18.04
 
-From the available hardware types on Packet, the smallest and cheapest configuration [t1.small.x86](https://www.packet.com/cloud/servers/t1-small/) matches the base requirements for the evaluation purposes just fine. You can select a more powerful and bigger machine if you plan to run several, or resource-demanding workloads.
+From the available hardware types on Packet, the smallest and cheapest configuration [c3.small.x86](https://www.packet.com/cloud/servers/c3-small/) matches the base requirements for the evaluation purposes just fine. You can select a more powerful and bigger machine if you plan to run several, or resource-demanding workloads.
 
 The deployment process with the [miniONE](https://github.com/OpenNebula/minione) tool is so quick and easy that you can switch to the new machine at any time if your existing one doesn’t fit anymore.
 
