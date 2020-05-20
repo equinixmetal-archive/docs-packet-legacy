@@ -10,7 +10,7 @@
 }
 </meta> -->
 
-The [Kubernetes CSI](https://kubernetes.io/blog/2019/01/15/container-storage-interface-ga/) is intended to allow clusters to provision, and attach `PersistentVolumes` as Kubernetes `StorageClasses` from a variety of storage providers via this standard. In this case, Packet's [Elastic Block Storage](https://support.packet.com/kb/articles/elastic-block-storage).
+The [Kubernetes CSI](https://kubernetes.io/blog/2019/01/15/container-storage-interface-ga/) is intended to allow clusters to provision, and attach `PersistentVolumes` as Kubernetes `StorageClasses` from a variety of storage providers via this standard. In this case, Packet's [Elastic Block Storage](https://www.packet.com/developers/docs/storage/ebs/).
 
 ## Requirements:
 
