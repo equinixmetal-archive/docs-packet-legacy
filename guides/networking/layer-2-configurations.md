@@ -217,7 +217,7 @@ For this configuration you'll need two nodes, one in hybrid and one in layer 2 n
 1. Attach the VLAN to the hybrid node's eth1 interface, as shown below.
 
 2. Repeat this step with the same VLAN for the isolated node. Remember, this node is in pure layer 2 networking mode, and bond0 is dismantled.
-Keep in mind that disabling bonding will remove public connectivity from your server and you will have to use [SOS](https://support.packet.com/kb/articles/sos-serial-over-ssh) to connect.
+Keep in mind that disabling bonding will remove public connectivity from your server and you will have to use [SOS](https://www.packet.com/developers/docs/servers/key-features/sos-serial-over-ssh/) to connect.
 
   If you get locked out, you can always change the networking mode back to layer 3--or hybrid mode--and SSH back in via the public IPv4 address.
 
