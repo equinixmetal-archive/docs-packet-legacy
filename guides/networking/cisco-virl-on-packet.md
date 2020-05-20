@@ -5,7 +5,7 @@
     "tag":["Cisco", "VIRL"],
     "seo-title": "Cisco VIRL on Bare Metal - Packet Technical Guides",
     "seo-description": "Using Cisco VIRL on Packet",
-    "og-title": "BGP Global Communities",
+    "og-title": "Cisco VIRL on Packet",
     "og-description": "Using Cisco VIRL on Packet"
 }
 </meta> -->
@@ -48,7 +48,7 @@ Once you've gotten a VIRL license come back here and keep reading. Everything yo
 
 ## About VIRL on Packet
 
-Packet offers a wide variety of bare-metal server types but only some of them are suitable for use with VIRL. First, VIRL requires an AMD64 architecture. Second, some Packet servers provide hardware that is just not applicable or used by VIRL, so there's no need to pay for it. We recommend  [t1.small.x86](https://www.packet.com/cloud/servers/t1-small/) (formerly "Type 0"), [c1.small.x86](https://www.packet.com/cloud/servers/c1-small/) (formerly "Type 1"), and [m1.xlarge.x86](https://www.packet.com/cloud/servers/m1-xlarge/) (formerly "Type 2") servers:
+Packet offers a wide variety of bare-metal server types but only some of them are suitable for use with VIRL. First, VIRL requires an AMD64 architecture. Second, some Packet servers provide hardware that is just not applicable or used by VIRL, so there's no need to pay for it. We recommend: [c1.small.x86](https://www.packet.com/cloud/servers/c1-small/) (formerly "Type 1"), and [m1.xlarge.x86](https://www.packet.com/cloud/servers/m1-xlarge/) (formerly "Type 2") servers:
 
 Cisco provides a [resource calculator](http://virl.cisco.com/) that you can use to size a system based on your needs, but in general customers use:
 

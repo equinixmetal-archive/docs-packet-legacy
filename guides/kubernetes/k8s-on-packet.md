@@ -11,13 +11,7 @@
 }
 </meta> -->
 
-With modern web services, users expect applications to be available 24/7, and developers expect to deploy new versions of those applications several times a day. Containerization helps package software to serve these goals, enabling applications to be released and updated in an easy and fast way without downtime.
-
-Kubernetes helps you make sure those containerized applications run where and when you want, and helps them find the resources and tools they need to work. Kubernetes is a production-ready, open source platform designed with Google's accumulated experience in container orchestration, combined with best-of-breed ideas from the community.
-
-
-## Kubernetes at Packet
-
+# Additional Kubernetes Resources
 A number of projects developed by us, and our community, specifically tailored for the Packet platform are available, using common tooling like [Terraform](https://terraform.io) and [Ansible](https://www.ansible.com/), on our [Github](https://github.com/packethost) organization:
 
 * [Kubernetes BGP](https://github.com/packet-labs/kubernetes-bgp): Kubernetes on Packet using Calico and MetalLB.
@@ -26,14 +20,7 @@ A number of projects developed by us, and our community, specifically tailored f
 * [Rook on Bare Metal](https://github.com/packet-labs/Rook-on-Bare-Metal-Workshop): Workshop for running [Rook.io](https://rook.io) cloud-native storage on Bare Metal clusters.
 * [Packet Helm Charts](https://github.com/packet-labs/helm-charts): Helm Charts for Packet platform clusters.
 
-
-## Guides
-
-* [How to deploy on bare-metal in ~10 minutes](https://blog.alexellis.io/kubernetes-in-10-minutes/)
-* [Packet: Explore Weave & Kubernetes](https://www.packet.com/resources/guides/microservices-in-kubernetes-with-weave-cloud-and-bare-metal)
-
-
-## Plugins and Official Integrations
+#### Plugins and Official Integrations
 
 As the Kubernetes ecosystem matures, it has adopted formal specifications to help ensure a consistent experience across infrastructure providers and third party solutions.
 
@@ -42,8 +29,7 @@ As the Kubernetes ecosystem matures, it has adopted formal specifications to hel
 * [Cluster Autoscaler for Packet](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler/cloudprovider/packet): Autoscaling for worker node groups in your Kubernetes clusters.
 * [Packet Cluster API provider](https://github.com/packethost/cluster-api-provider-packet): The Cluster API is a Kubernetes project to bring declarative, Kubernetes-style APIs to cluster creation, configuration, and management. It provides optional, additive functionality on top of core Kubernetes.
 
-
-## Non-Commercial Deployment Solutions
+#### Non-Commercial Deployment Solutions
 
 Kubernetes is free, but sometimes deploying and managing it takes work.  A number of projects and distributions exist to help ease that operational pain - here are some that are validated against Packet (note: this is an easily outdated list):
 
@@ -56,24 +42,16 @@ Kubernetes is free, but sometimes deploying and managing it takes work.  A numbe
 * [Pharmer](https://pharmer.io/): a technical preview from Appscode of a Kubernetes cluster manager for kubeadm. Pharmer lets you set up, tear down, and scale clusters up and down on Packet.
 * [Kubernetes on DC/OS](https://github.com/mesosphere/dcos-kubernetes-quickstart): A package to deploy Kubernetes cluster in your [DC/OS](https://github.com/mesosphere/dcos-kubernetes-quickstart) environment.
 
-## Commercial Deployment Solutions
+#### Commercial Deployment Solutions
 
 * [Loodse](https://www.loodse.com/): Enterprise software that automates multicloud, on-prem, and edge operations with a single management UI for Kubernetes.
 * [Platform9](https://platform9.com): Packet works closely with Platform9, a managed cloud provider, to enable users with Kubernetes, Openstack, and Serverless solutions.
 * [Cloud66](https://www.cloud66.com/): London-based Cloud66 offers a managed Kubernetes container service called Maestro, which is tested against Packet.
 * [RedHat OpenShift](https://www.openshift.com/): OpenShift is an open source container application platform by Red Hat based on the Kubernetes container orchestrator for enterprise app development and deployment.
 
-## Community
+#### Community
 
 Packet is actively involved in supporting the cloud native space, including Kubernetes.
 
 * [CNCF Community Infrastructure Lab](https://www.cncf.io/community/infrastructure-lab/): Packet donates $25,000 per month in compute resources that are available to the CNCF and broader open source community.
 * [CNCF Cross Cloud CI](https://cncf.ci/) - Packet is represented as the only bare metal cloud on the this unique dashboard, which shows the results of a sample implementation of the CNCF project stack against various providers.
-
-
-## External Resources:
-
-* [The Linux Foundation's Kubernetes Fundamentals course](http://bit.ly/2ewaVAs)
-* [Kubernetes Documentation](https://kubernetes.io/docs/home/)
-* [Kubernetes Community Public Slack](https://slack.kubernetes.io/)
-* [#k8s on Packet's Community Slack](https://packetcommunity.slack.com)
