@@ -129,7 +129,7 @@ We can now install the ingress controller simply by deploying the `stable/nginx-
 ```
 With the above command the ingress controller exposes port `30080` of the master node outside the cluster. Any services deployed on the cluster which have an ingress endpoint (`kubectl get ingress`) can be reached externally at this port.
 
-_To learn more about Kubernetes on Packet cloud, check out [https://support.packet.com/kb/articles/kubernetes](https://support.packet.com/kb/articles/kubernetes)._
+To learn more about Kubernetes on Packet cloud, go [here](https://www.packet.com/resources/guides/k8s-on-packet/). 
 
 ### Installing Kubeless
 
