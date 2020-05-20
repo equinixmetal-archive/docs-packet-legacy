@@ -62,7 +62,7 @@ Deploying VIRL on Packet is easy using Packet's IPXE / custom-image service.  
 
 1. Sign Up / Login to Packet.
 
-2. If you are a first time user, an Organization will be automatically created. You must [add a Public SSH Key](https://support.packet.com/kb/articles/ssh-access) which is needed in order to deploy and access the servers
+2. If you are a first time user, an Organization will be automatically created. You must add a SSH key which is needed in order to deploy and access the servers
 
 3. Create a new Project where you will then deploy the server/s.
 
