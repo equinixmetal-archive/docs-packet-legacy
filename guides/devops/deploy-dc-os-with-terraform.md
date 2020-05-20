@@ -18,7 +18,7 @@ Mesosphere's flagship product [DC/OS](https://mesosphere.com/product/), which st
 
 In this guide we'll be using DC/OS to manage resources inside of Packet's [EWR1](https://www.packet.net/locations/new-york-metro/) datacenter. To deploy our resources and the DC/OS web installer we'll be using [Terraform](https://www.terraform.io/). Terraform lets you easily deploy and manage infrastructure for a single application or your entire data center via configuration files!
 
-We're assuming you already have a Packet account and a project created! Also, you'll need to have an API key ready to go.  Need help? Check out the [Quick Start articles](https://support.packet.com/kb/quick-start) in our help section.
+We're assuming you already have a Packet account and a project created! Also, you'll need to have an API key ready to go.  Need help? Check out the [Quick Start articles](https://www.packet.com/developers/docs/getting-started/overview/) in our help section.
 
 # Step 1: Download Terraform
 
