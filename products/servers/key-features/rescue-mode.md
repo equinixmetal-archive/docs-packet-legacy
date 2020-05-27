@@ -5,7 +5,7 @@
     "tag":["rescue", "password", "reset"],
     "seo-title": "Rescue Mode - Packet Developer Docs",
     "seo-description": "Learn how to access rescue mode",
-    "og-title": "SOS: Serial over SSH",
+    "og-title": "Rescue Mode",
     "og-description": "Learn how to access rescue mode"
 }
 </meta> -->
