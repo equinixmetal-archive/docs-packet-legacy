@@ -51,6 +51,67 @@ From the slide out, you can select the size, type, and facility of the reserved 
 
 ![deploy-reserved-subnets-multi](/images/ip-allocation/deploy-choose-reserved-subnet.png)
 
+
+
+#### Creating an IP Reservation through the API
+
+````
+curl  -v \
+      -X POST "https://api.packet.net/projects/$PROJECT_ID/ips" \
+      -H 'Content-Type: application/json' \
+      -H "X-Auth-Token: $PACKET_API_TOKEN" \
+      -d @- <<-'EOF'
+      {
+        "type": "public_ipv4",
+        "quantity": 4,
+        "comments": "for mytestserver.com",
+        "facility": "ams1",
+        "details": "my /30 in AMS1"
+      }
+EOF
+````
+> **_Please Note:_** The quantity parameter should be the number of IPs in the subnet, valid values are 2, 4, 8, 16. IP reservations larger than 16 will require additional verification by packet)
+
+The output would be similar to:
+```{
+  "id":"18c40668-f9b6-4cdc-b50e-0f8729d4f2f6",
+  "address_family":4,
+  "netmask":"255.255.255.252",
+  "created_at":"2020-02-20T18:53:52Z",
+  "details":"my test /30 in AMS1",
+  "tags":[],
+  "public":true,
+  "cidr":30,
+  "management":false,
+  "manageable":true,
+  "enabled":true,
+  "global_ip":false,
+  "customdata":{},
+  "addon":true,
+  "bill":true,
+  "project":{"href":"/projects/c895ea67-40ce-4f98-bd97-fe0b2e771481"},
+  "project_lite":{"href":"/projects/c895ea67-40ce-4f98-bd97-fe0b2e771481"},
+  "assignments":[],
+  "facility":{"id":"8e6470b3-b75e-47d1-bb93-45b225750975","name":"Amsterdam, NL","code":"ams1","features":["baremetal","storage","global_ipv4","backend_transfer","layer_2"],"address":{"href":"#0688e909-647e-4b21-bdf2-fc056d993fc5"},"ip_ranges":["2604:1380:2000::/36","147.75.204.0/23","147.75.100.0/22","147.75.80.0/22","147.75.32.0/23"]},
+  "network":"147.75.80.220",
+  "address":"147.75.80.222",
+  "gateway":"147.75.80.221",
+  "available":"/ips/18c40668-f9b6-4cdc-b50e-0f8729d4f2f6/available",
+  "href":"/ips/18c40668-f9b6-4cdc-b50e-0f8729d4f2f6"
+}
+````
+> **_Please Note_**: Should you not recieve a response from the above. A support ticket was submitted on your behalf, and our team will review the request an respond. Should you not see this ticket please [email us directly](mailto:support@packet.com)
+
+
+#### Query your Project for Public IPv4 Subnet Reservations
+
+```
+curl  -v \
+          -X GET "https://api.packet.net/projects/$PROJECT_ID/ips?ipv4=true&public=true" \
+          -H 'Content-Type: application/json' \
+          -H "X-Auth-Token: $PACKET_API_TOKEN" | jq '.ip_addresses[] | { id:.id, facility: .facility.code , address: .address, cidr: .cidr}'
+```
+
 #### Provisioning server with reserved subnet(s) via API
 
 
@@ -102,52 +163,3 @@ Since the `$EWR1_RESERVATION_ID` reservation is a `/28`, and 3 instances with `/
       }
 EOF
 ````
-
-#### Creating an IP Reservation
-
-````
-curl  -v \
-      -X POST "https://api.packet.net/projects/$PROJECT_ID/ips" \
-      -H 'Content-Type: application/json' \
-      -H "X-Auth-Token: $PACKET_API_TOKEN" \
-      -d @- <<-'EOF'
-      {
-        "type": "public_ipv4",
-        "quantity": 4,
-        "comments": "for mytestserver.com",
-        "facility": "ams1",
-        "details": "my /30 in AMS1"
-      }
-EOF
-````
-> **_Please Note:_** The quantity parameter should be the number of IPs in the subnet, valid values are 2, 4, 8, 16. IP reservations larger than 16 will require additional verification by packet)
-
-The output would be similar to:
-```{
-  "id":"18c40668-f9b6-4cdc-b50e-0f8729d4f2f6",
-  "address_family":4,
-  "netmask":"255.255.255.252",
-  "created_at":"2020-02-20T18:53:52Z",
-  "details":"my test /30 in AMS1",
-  "tags":[],
-  "public":true,
-  "cidr":30,
-  "management":false,
-  "manageable":true,
-  "enabled":true,
-  "global_ip":false,
-  "customdata":{},
-  "addon":true,
-  "bill":true,
-  "project":{"href":"/projects/c895ea67-40ce-4f98-bd97-fe0b2e771481"},
-  "project_lite":{"href":"/projects/c895ea67-40ce-4f98-bd97-fe0b2e771481"},
-  "assignments":[],
-  "facility":{"id":"8e6470b3-b75e-47d1-bb93-45b225750975","name":"Amsterdam, NL","code":"ams1","features":["baremetal","storage","global_ipv4","backend_transfer","layer_2"],"address":{"href":"#0688e909-647e-4b21-bdf2-fc056d993fc5"},"ip_ranges":["2604:1380:2000::/36","147.75.204.0/23","147.75.100.0/22","147.75.80.0/22","147.75.32.0/23"]},
-  "network":"147.75.80.220",
-  "address":"147.75.80.222",
-  "gateway":"147.75.80.221",
-  "available":"/ips/18c40668-f9b6-4cdc-b50e-0f8729d4f2f6/available",
-  "href":"/ips/18c40668-f9b6-4cdc-b50e-0f8729d4f2f6"
-}
-````
-> **_Please Note_**: Should you not recieve a response from the above. A support ticket was submitted on your behalf, and our team will review the request an respond. Should you not see this ticket please [email us directly](mailto:support@packet.com)
