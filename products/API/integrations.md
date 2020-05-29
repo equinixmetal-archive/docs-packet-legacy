@@ -20,7 +20,7 @@ Many users interact with our platform through tools like Ansible, Terraform or L
 
 Packet and its community maintain drivers (often called 'providers') for these tools, which means there is native support available. A good example is [Terraform](https://www.terraform.io/docs/providers/packet/).
 
-You can also take a loot at our [full list of orchestration tools](https://www.packet.com/developers/integrations/).
+You can also take a look at our [full list of orchestration tools](https://www.packet.com/developers/integrations/).
 
 ### Hosted Integrations
 
