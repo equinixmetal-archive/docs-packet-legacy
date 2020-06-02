@@ -1,6 +1,7 @@
 <!-- <meta>
 {
     "title":"Crossplane",
+    "slug":"crossplane",
     "description":"Using Cross Plane on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",

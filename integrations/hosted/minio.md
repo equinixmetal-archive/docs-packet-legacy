@@ -1,6 +1,7 @@
 <!-- <meta>
 {
     "title":"Minio",
+    "slug":"minio",
     "description":"Using Minio on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",

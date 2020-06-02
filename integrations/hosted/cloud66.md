@@ -1,6 +1,7 @@
 <!-- <meta>
 {
     "title":"Cloud66",
+    "slug":"clou66",
     "description":"Usig Cloud66 on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",
