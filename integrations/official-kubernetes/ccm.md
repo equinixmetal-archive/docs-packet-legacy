@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Cloud Controller Manager",
-    "slug":"cloud controller manager",
+    "slug":"cloud-controller-manager",
     "description":"K8s Cloud Controller Manager",
     "author":"Mo Lawler",
     "github":"usrdev",
