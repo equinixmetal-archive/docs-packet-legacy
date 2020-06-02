@@ -1,6 +1,7 @@
 <!-- <meta>
 {
     "title":"Ansible",
+    "slug":"ansible",
     "description":"Using Ansible on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",

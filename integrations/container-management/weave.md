@@ -1,6 +1,7 @@
 <!-- <meta>
 {
     "title":"Weave",
+    "slug":"weave",
     "description":"Using Weave on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",

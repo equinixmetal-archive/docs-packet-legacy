@@ -1,6 +1,7 @@
 <!-- <meta>
 {
     "title":"Pharmer",
+    "slug":"pharmer",
     "description":"Using Pharmer on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",

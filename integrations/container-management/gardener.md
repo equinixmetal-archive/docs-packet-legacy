@@ -1,6 +1,7 @@
 <!-- <meta>
 {
     "title":"Gardener",
+    "slug":"gardener",
     "description":"Using Gardener on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",

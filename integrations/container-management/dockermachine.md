@@ -1,6 +1,7 @@
 <!-- <meta>
 {
     "title":"Docker Machine",
+    "slug":"docker machine",
     "description":"A Docker Machine driver from Packet",
     "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",

@@ -1,6 +1,7 @@
 <!-- <meta>
 {
     "title":"Mist.io",
+    "slug":"mistio",
     "description":"Usig Mist.io on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",

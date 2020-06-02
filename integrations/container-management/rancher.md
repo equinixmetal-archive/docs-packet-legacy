@@ -1,6 +1,7 @@
 <!-- <meta>
 {
     "title":"Rancher",
+    "slug":"Rancher",
     "description":"How to use Rancher on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",

@@ -1,6 +1,7 @@
 <!-- <meta>
 {
     "title":"Python",
+    "slug":"python",
     "description":"An official Python client for the Packet API",
     "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",

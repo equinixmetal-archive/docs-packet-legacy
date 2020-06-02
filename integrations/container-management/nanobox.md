@@ -1,6 +1,7 @@
 <!-- <meta>
 {
     "title":"NanoBox",
+    "slug":"nanobox",
     "description":"Using NanoBox on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",
