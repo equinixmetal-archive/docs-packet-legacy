@@ -1,6 +1,10 @@
 <!-- <meta>
 {
     "title":"Container Management",
+<<<<<<< Updated upstream
+=======
+    "slug":"contaniner-management",
+>>>>>>> Stashed changes
     "description":"A overview of using K8s & Container Management on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",

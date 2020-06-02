@@ -1,6 +1,10 @@
 <!-- <meta>
 {
     "title":"Apache Lib Cloud",
+<<<<<<< Updated upstream
+=======
+    "slug":"apache-lib-cloud",
+>>>>>>> Stashed changes
     "description":"Using Apache Lib Cloud",
     "author":"Mo Lawler",
     "github":"usrdev",

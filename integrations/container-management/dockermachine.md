@@ -1,6 +1,10 @@
 <!-- <meta>
 {
     "title":"Docker Machine",
+<<<<<<< Updated upstream
+=======
+    "slug":"docker-machine",
+>>>>>>> Stashed changes
     "description":"A Docker Machine driver from Packet",
     "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",

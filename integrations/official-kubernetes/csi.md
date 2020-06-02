@@ -1,6 +1,10 @@
 <!-- <meta>
 {
     "title":"Container Storage Interface",
+<<<<<<< Updated upstream
+=======
+    "slug":"container-storage-interface",
+>>>>>>> Stashed changes
     "description":"K8s Container Storage Interface",
     "author":"Mo Lawler",
     "github":"usrdev",

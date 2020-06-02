@@ -1,6 +1,10 @@
 <!-- <meta>
 {
     "title":"Cloud Controller Manager",
+<<<<<<< Updated upstream
+=======
+    "slug":"cloud-controller-manager",
+>>>>>>> Stashed changes
     "description":"K8s Cloud Controller Manager",
     "author":"Mo Lawler",
     "github":"usrdev",

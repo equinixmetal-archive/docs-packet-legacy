@@ -1,6 +1,10 @@
 <!-- <meta>
 {
     "title":"Kubernetes",
+<<<<<<< Updated upstream
+=======
+    "slug":"official-kubernetes",
+>>>>>>> Stashed changes
     "description":"Our offical Kubernets Offering",
     "author":"Mo Lawler",
     "github":"usrdev",

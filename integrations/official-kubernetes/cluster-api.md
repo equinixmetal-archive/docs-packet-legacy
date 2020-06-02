@@ -1,6 +1,10 @@
 <!-- <meta>
 {
     "title":"Cluster API",
+<<<<<<< Updated upstream
+=======
+    "slug":"cluster-api",
+>>>>>>> Stashed changes
     "description":"Using Cluster API on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",

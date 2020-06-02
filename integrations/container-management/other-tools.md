@@ -1,6 +1,10 @@
 <!-- <meta>
 {
     "title":"Other Tools",
+<<<<<<< Updated upstream
+=======
+    "slug":"other-tools",
+>>>>>>> Stashed changes
     "description":"Other Container Management Tools",
     "author":"Mo Lawler",
     "github":"usrdev",
