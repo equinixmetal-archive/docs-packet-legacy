@@ -1,7 +1,6 @@
 <!-- <meta>
 {
     "title":"Go",
-    "slug":"go",
     "description":"An official Golang client for the Packet API",
     "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",

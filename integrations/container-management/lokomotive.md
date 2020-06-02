@@ -1,7 +1,6 @@
 <!-- <meta>
 {
     "title":Lokomotive",
-    "slug":"lokomotive",
     "description":"Using Lokomotive on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",

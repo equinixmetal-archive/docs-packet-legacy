@@ -1,7 +1,6 @@
 <!-- <meta>
 {
     "title":"Other Tools",
-    "slug":"other tools",
     "description":"Other Container Management Tools",
     "author":"Mo Lawler",
     "github":"usrdev",

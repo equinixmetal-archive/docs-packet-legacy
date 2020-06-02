@@ -1,7 +1,6 @@
 <!-- <meta>
 {
     "title":"Cluster API",
-    "slug":"cluster api",
     "description":"Using Cluster API on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",

@@ -1,7 +1,6 @@
 <!-- <meta>
 {
     "title":"Pulumi",
-    "slug":"pulumi",
     "description":"Using Pulumi on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",

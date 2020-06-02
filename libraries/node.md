@@ -1,7 +1,6 @@
 <!-- <meta>
 {
     "title":"Node.js",
-    "slug":"node",
     "description":"An official Node.js client for the Packet API",
     "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",

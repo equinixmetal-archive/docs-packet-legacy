@@ -1,7 +1,6 @@
 <!-- <meta>
 {
     "title":"Cycle.io",
-    "slug":"cycle.io",
     "description":"Using cycle.io on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",

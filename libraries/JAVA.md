@@ -1,7 +1,6 @@
 <!-- <meta>
 {
     "title":"Java",
-    "slug":"java",
     "description":"An official Java client for the Packet API",
     "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",

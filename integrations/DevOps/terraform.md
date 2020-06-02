@@ -1,7 +1,6 @@
 <!-- <meta>
 {
     "title":"Terraform",
-    "slug":"terraform",
     "description":"Using Terraform on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",
