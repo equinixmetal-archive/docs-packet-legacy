@@ -1,7 +1,6 @@
 <!-- <meta>
 {
     "title":"Kontena",
-    "slug":"kontena",
     "description":"Using Kontena on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",

@@ -1,7 +1,6 @@
 <!-- <meta>
 {
     "title":"Container Storage Interface",
-    "slug":"container storage interface",
     "description":"K8s Container Storage Interface",
     "author":"Mo Lawler",
     "github":"usrdev",

@@ -1,7 +1,6 @@
 <!-- <meta>
 {
     "title":"Mesosphere",
-    "slug":"mesosphere",
     "description":"Using Mesosphere on Packet",
     "author":"Mo Lawler",
     "github":"usrdev",

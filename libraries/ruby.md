@@ -1,7 +1,6 @@
 <!-- <meta>
 {
     "title":"Ruby",
-    "slug":"ruby",
     "description":"An official Ruby client for the Packet API",
     "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",

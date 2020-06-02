@@ -1,7 +1,6 @@
 <!-- <meta>
 {
     "title":"PHP",
-    "slug":"php",
     "description":"An official PHP client for the Packet API",
     "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
