@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Kubernetes",
-    "slug":"official kubernetes",
+    "slug":"official-kubernetes",
     "description":"Our offical Kubernets Offering",
     "author":"Mo Lawler",
     "github":"usrdev",
