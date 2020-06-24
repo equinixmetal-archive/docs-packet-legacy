@@ -11,7 +11,7 @@
 }
 </meta> -->
 
-> **Sunset Notice:_**  Effective July 1, 2020 egress will no longer be free to these partners. All egress traffic will be subject to our default bandwidth pricing of $0.05/GB. Inbound traffic and traffic within the same facility remains free, as always. 
+> **_SUNSET NOTICE:_**  Effective July 1, 2020 egress will no longer be free to these partners. All egress traffic will be subject to our default bandwidth pricing of $0.05/GB. Inbound traffic and traffic within the same facility remains free, as always. 
 
 
 Packet partners with a number of providers to help users reduce traffic that flows over the public internet, which is both less ideal and expensive.  Current partners include:
