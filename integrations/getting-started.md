@@ -1,4 +1,4 @@
-![Integrations Banner](/images/integrations/integrations.png)
+![Integrations Banner](/images/integrations/integrations-banner.png)
 
 One of the most important things we do as a cloud provider is to ensure that we support an enjoyable and productive experience for users.
 

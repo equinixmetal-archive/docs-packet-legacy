@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Apache Lib Cloud",
-    "slug":"apache-lib-cloud",
+    "slug":"Apache Lib Cloud",
     "description":"Using Apache Lib Cloud",
     "author":"Mo Lawler",
     "github":"usrdev",

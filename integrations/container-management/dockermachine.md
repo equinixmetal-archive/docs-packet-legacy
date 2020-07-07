@@ -1,7 +1,7 @@
 <!-- <meta>
 {
     "title":"Docker Machine",
-    "slug":"docker-machine",
+    "slug":"docker machine",
     "description":"A Docker Machine driver from Packet",
     "author":"Zalkar Ziiaidin",
     "github":"zalkar-z",
@@ -22,7 +22,7 @@ $ docker-machine create --driver packet
 
 Pre-reqs: `docker-machine` and `make`
 
-- Install the Golang SDK [https://golang.org/dl/](https://golang.org/dl/) (at least 1.11 required for [modules](https://github.com/golang/go/wiki/Modules) support
+- Install the Golang SDK [https://golang.org/dl/](https://golang.org/dl/) (at least 1.11 required for [modules](https://github.com/golang/go/wiki/Modules) support)
 
 - Download the source-code with `git clone http://github.com/packethost/docker-machine-driver-packet.git`
 
