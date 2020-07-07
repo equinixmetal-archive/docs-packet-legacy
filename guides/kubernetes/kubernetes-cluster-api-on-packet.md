@@ -22,7 +22,7 @@ Using the Packet provider, cluster configurations, infrastructure requirements, 
 
 The [Packet provider](https://github.com/packethost/cluster-api-provider-packet) details the steps and the templates used. The only requirements are your [Packet API key](https://www.packet.com/developers/api/), project ID, and the `kubectl` client installed on your machine.
 
-You may use the [examples](https://github.com/packethost/cluster-api-provider-packet/tree/master/cmd/clusterctl/examples/packet) for Packet to quickly get up and running with clusterctl.
+You may use the [quick start](https://cluster-api.sigs.k8s.io/user/quick-start.html) for Packet to quickly get up and running with clusterctl.
 
 ## Additional Resources
 
