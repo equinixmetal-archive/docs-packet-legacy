@@ -49,7 +49,7 @@ In order to complete the attachment process, you will need to run the following 
 
  `apt-get install jq`
 
-All other users, similar to: 
+All other users:
 
 ```
 root@block:~# packet-block-storage-attach -m queue
@@ -60,7 +60,13 @@ portal: 10.144.51.225 iqn: iqn.2013-05.com.daterainc:tc:01:sn:5d9defb6cbc43192
 
 create: volume-32829074 (36001405d589377db1a14b08913f04a14) undef DATERA,IBLOCK
 
-size=1000G features='1 queue_if_no_path' hwhandler='1 alua' wp=unde
+size=1000G features='1 queue_if_no_path' hwhandler='1 alua' wp=undef
+
+`-+- policy='round-robin 0' prio=1 status=undef
+
+ |- 10:0:0:0 sdc 8:32 undef ready running
+
+ `- 11:0:0:0 sdd 8:48 undef ready running
 
 Block device /dev/mapper/volume-32829074 is available for use
 ```
