@@ -30,7 +30,6 @@ We have a wealth of technical guides, videos, webinars and blogs to help you get
 *   [K3s on Packet (Packet Labs project)](https://github.com/packet-labs/packet-k3s)
 *   [K3s on Packet (technical guide)](https://www.packet.com/resources/guides/k3s-on-packet/)
 *   [Packet Quickstart Terraform scripts](https://github.com/kubermatic/kubeone/tree/master/examples/terraform/packet)
-*   [Terraform - Packet Provider](https://github.com/packet-labs/Packet-Terraform-Boilerplate)
 *   [Kubernetes Helm Charts](https://github.com/packet-labs/helm-charts)
 *   [Multi-Architecture Kubernetes on Packet](https://github.com/packet-labs/packet-multiarch-k8s-terraform)
 
@@ -53,7 +52,6 @@ We have a wealth of technical guides, videos, webinars and blogs to help you get
 *   [Deploying Kubernetes on OpenStack](https://github.com/packet-labs/OpenStackOnPacket)
 *   [Deploying Tanzu on Packet](https://github.com/packet-labs/packet-tanzu-tf)
 *   [Deploying Anthos on Packet](https://github.com/packet-labs/google-anthos)
-*   [Kubeless on Packet](https://www.packet.com/resources/guides/kubeless-on-packet-cloud/)
 
 
 
