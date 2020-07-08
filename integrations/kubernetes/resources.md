@@ -61,8 +61,6 @@ We have a wealth of technical guides, videos, webinars and blogs to help you get
 *   [Kubernetes CCM for Packet](https://www.packet.com/resources/guides/kubernetes-ccm-for-packet/)
 *   [Kubernetes Cluster API](https://www.packet.com/resources/guides/kubernetes-cluster-api-on-packet/)
 *   [Kubeless on Packet](https://www.packet.com/resources/guides/kubeless-on-packet-cloud/)
-*   [Helm Charts for Kubernetes](https://www.packet.com/resources/guides/kubernetes-helm-charts-on-packet/)
-
 
 
 ## Networking
