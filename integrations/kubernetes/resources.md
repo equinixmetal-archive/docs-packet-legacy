@@ -26,7 +26,7 @@ We have a wealth of technical guides, videos, webinars and blogs to help you get
 
 
 *   [Kubernetes on bare-metal in 10 Minutes (community resource)](https://blog.alexellis.io/kubernetes-in-10-minutes/)
-*   [Simple K8s Cluster on Packet](https://github.com/packethost/docs-private/blob/master/guides/kubernetes/simple-k8s-cluster-on-packet.md)
+*   [Simple K8s Cluster on Packet](https://www.packet.com/resources/guides/simple-k8s-cluster-on-packet/)
 *   [K3s on Packet (Packet Labs project)](https://github.com/packet-labs/packet-k3s)
 *   [K3s on Packet (technical guide)](https://www.packet.com/resources/guides/k3s-on-packet/)
 *   [Packet Quickstart Terraform scripts](https://github.com/kubermatic/kubeone/tree/master/examples/terraform/packet)
