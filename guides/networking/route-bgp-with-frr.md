@@ -4,9 +4,9 @@
     "description":"Configuring BGP Announcer FRR for Local BGP Access",
     "tag":["Route BGP", "FRR"],
     "seo-title": "Route BGP with FRR - Packet Technical Guides",
-    "seo-description": "Route BGP with FRR on Packet",
-    "og-title": "Route BGP with FRR",
-    "og-description":"Route BGP with FRR on Packet"
+    "seo-description": "Similar to Bird, FRR is a routing daemon for Linux that can be used to announce an Elastic IP address via BGP",
+    "og-title": "Similar to Bird, FRR is a routing daemon for Linux that can be used to announce an Elastic IP address via BGP",
+    "og-description":"Similar to Bird, FRR is a routing daemon for Linux that can be used to announce an Elastic IP address via BGP"
 }
 </meta> -->
 
