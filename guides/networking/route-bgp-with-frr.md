@@ -31,8 +31,8 @@ Update the network interfaces with a virtual loopback interface.
 cat >>/etc/network/interfaces <<EOF
 auto lo:0
 iface lo:0 inet static
-address 10.99.200.138
-netmask 255.255.255.255
+  address 10.99.200.138
+  netmask 255.255.255.255
 EOF
 ```
 
@@ -75,6 +75,7 @@ Now we need to clone the network-helpers repo and install python dependencies:
 cd /opt
 git clone https://github.com/packethost/network-helpers.git
 cd network-helpers
+pip3 install jmespath
 pip3 install -e .
 ```
 
