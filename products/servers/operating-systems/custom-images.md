@@ -11,7 +11,7 @@
 </meta> -->
 
 Official Images
-Packet leverages GitHub to transparently manage our officially supported Operating System images. You can view the repos for each official image at https://github.com/packethost/packet-images.
+Packet leverages GitHub to transparently manage our officially supported Operating System images. You can view the repos for each official image on our [github](https://github.com/packethost/packet-images).
 
 In addition to providing a public change log, this process enables users to programmatically "pin" their installs to particular OS versions, improving the stability (dare we say immutability!) of your deployments.
 
