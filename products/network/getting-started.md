@@ -21,7 +21,6 @@ For redundancy, each server has dedicated dual network connections going into tw
 
 | Type  | Network |
 | ------------- | ------------- |
-| t3.small|  20 Gbps Bonded Network (2 x 10Gbps Ports w/ LACP)
 | c3.small|  20 Gbps Bonded Network (2 x 10Gbps Ports w/ LACP)
 | c3.medium| 20 Gbps Bonded Network (2 x 10Gbps Ports w/ LACP)
 | m3.large| 20 Gbps Bonded Network  (2 x 10Gbps Ports w/ LACP)
