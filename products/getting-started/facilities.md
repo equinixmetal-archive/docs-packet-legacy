@@ -24,7 +24,11 @@ As part of Equinix, Packet deploys in the most densely interconnected facilities
 
 
 ## Packet Legacy Sites:
+
+Packet maintains a large number of global sites that pre-date its acquisition by Equinix.
+Contact sales@packet.com to review deployments in these locations.
 <br>
+
 
 | The Americas   |           |   |
 |----------|:-------------:|------:|------:|
@@ -33,17 +37,15 @@ As part of Equinix, Packet deploys in the most densely interconnected facilities
 |[Kansas City (MCI1)](https://www.packet.com/cloud/locations/kansas-city/)  | [Los Angeles (LAX2)](https://www.packet.com/cloud/locations/los-angeles/) | [Phoenix (PHX1)](https://www.packet.com/cloud/locations/phoenix/)    |
 |[Seattle (SEA2)](https://www.packet.com/cloud/locations/seattle/) | [Toronto, Canada (YYZ1)](https://www.packet.com/cloud/locations/toronto/) | [Silicon Valley (SJC1)](https://www.packet.com/cloud/locations/silicon-valley/) 
 | [Houston (IAH1)](https://www.packet.com/cloud/locations/houston/) | [Pittsburgh (PIT1)](https://www.packet.com/cloud/locations/phoenix/)
-
-
 <br>
+
 
 | EMEA   |                 |   |
 |----------|:-------------:|------:|------:|
 | [Amsterdam, NL (AMS1)](https://www.packet.com/cloud/locations/amsterdam/) | [Frankfurt (FRA2)](https://www.packet.com/cloud/locations/frankfurt/) | [Marseille (MRS1)](https://www.packet.com/cloud/locations/marseille/)
 | [Sydney, Australia (SYD2)](https://www.packet.com/cloud/locations/sydney/) 
-
-
 <br>
+
 
 | Asia-Pacific   |                 |   |
 |----------|:-------------:|------:|------:|
