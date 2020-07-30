@@ -51,5 +51,3 @@ Contact sales@packet.com to review deployments in these locations.
 |----------|:-------------:|------:|------:|
 | [Singapore (SIN3)](https://www.packet.com/cloud/locations/singapore/) | [Tokyo, JP (NRT1)](https://www.packet.com/cloud/locations/tokyo/) | [Kong Kong (HKG1)](https://www.packet.com/cloud/locations/hong-kong/) 
 | 
-
-As a part of Equinix, our data centers are certified to meet rigorous standards that enable secure, compliant and efficient operations. Learn more at [Equinix](https://www.equinix.com/data-centers/design/standards-compliance/). 
