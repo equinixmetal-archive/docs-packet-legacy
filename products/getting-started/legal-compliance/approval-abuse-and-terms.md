@@ -10,8 +10,6 @@
 }
 </meta> -->
 
-Approval, Abuse and Terms - Packet Developer Docs
-
 When signing up for a Packet account you may receive a notification informing you that your account has been flagged for manual review. Please note: this is in no way a judgment of your character, and the decision to flag an account is made by an algorithm, not a Packet employee.
 
 Since we are an on demand hosting provider, our platform is often the target of payment fraud and other forms of abusive usage. Therefore, it is imperative that we properly vet all packet customers for possible fraud and abuse risk factors.

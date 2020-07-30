@@ -10,14 +10,14 @@
 }
 </meta> -->
 
-As part of Equinix, Packet deploys in the most densely interconnected facilities in the world, putting your workloads milliseconds away from the clouds, networks & Enterprises that matter.
+As part of Equinix, Packet deploys in the most densely interconnected facilities in the world, putting your workloads milliseconds away from the clouds, networks & Enterprises that matter. Our data centers are certified to meet rigorous standards that enable secure, compliant and efficient operations. Learn more at [Equinix](https://www.equinix.com/data-centers/design/standards-compliance/). 
 
 ## Equinix Core IBX Sites
 
 | The Americas   |      EMEA      |  Asia-Pacific |
 |----------|:-------------:|------:|
 |[New York (NY5)](https://www.packet.com/cloud/locations/new-york/)  |  [Amsterdam, Netherlands (AMS1)](https://www.packet.com/cloud/locations/amsterdam/) | [Singapore (SIN3)](https://www.packet.com/cloud/locations/singapore/) |
-|[Ashburn, VA (IAD5)](https://www.packet.com/cloud/locations/ashburn/) |    [Frankfurt, Germany (FRA2)](https://www.packet.com/cloud/locations/frankfurt/)   |    |
+|[Ashburn, VA (DC13)](https://www.packet.com/cloud/locations/ashburn/) |    [Frankfurt, Germany (FRA2)](https://www.packet.com/cloud/locations/frankfurt/)   |    |
 |[Dallas, TX (DFW2)](https://www.packet.com/cloud/locations/dallas/)  |  |     |
 |[Silicon Valley (SJC1)](https://www.packet.com/cloud/locations/silicon-valley/) | | |
 
@@ -51,3 +51,5 @@ Contact sales@packet.com to review deployments in these locations.
 |----------|:-------------:|------:|------:|
 | [Singapore (SIN3)](https://www.packet.com/cloud/locations/singapore/) | [Tokyo, JP (NRT1)](https://www.packet.com/cloud/locations/tokyo/) | [Kong Kong (HKG1)](https://www.packet.com/cloud/locations/hong-kong/) 
 | 
+
+As a part of Equinix, our data centers are certified to meet rigorous standards that enable secure, compliant and efficient operations. Learn more at [Equinix](https://www.equinix.com/data-centers/design/standards-compliance/). 
