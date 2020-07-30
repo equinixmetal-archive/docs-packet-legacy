@@ -17,7 +17,7 @@ As part of Equinix, Packet deploys in the most densely interconnected facilities
 | The Americas   |      EMEA      |  Asia-Pacific |
 |----------|:-------------:|------:|
 |[New York (NY5)](https://www.packet.com/cloud/locations/new-york/)  |  [Amsterdam, Netherlands (AMS1)](https://www.packet.com/cloud/locations/amsterdam/) | [Singapore (SIN3)](https://www.packet.com/cloud/locations/singapore/) |
-|[Ashburn, VA (IAD5)](https://www.packet.com/cloud/locations/ashburn/) |    [Frankfurt, Germany (FRA2)](https://www.packet.com/cloud/locations/frankfurt/)   |    |
+|[Ashburn, VA (DC13)](https://www.packet.com/cloud/locations/ashburn/) |    [Frankfurt, Germany (FRA2)](https://www.packet.com/cloud/locations/frankfurt/)   |    |
 |[Dallas, TX (DFW2)](https://www.packet.com/cloud/locations/dallas/)  |  |     |
 |[Silicon Valley (SJC1)](https://www.packet.com/cloud/locations/silicon-valley/) | | |
 
