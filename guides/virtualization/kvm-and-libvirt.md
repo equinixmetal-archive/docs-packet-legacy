@@ -32,7 +32,7 @@ apt-get update && apt-get upgrade -y
 ```
 Then install the packages...
 ```
-apt-get install bridge-utils qemu-kvm virtinst -y
+apt-get install bridge-utils qemu-kvm virtinst libvirt-bin -y
 ```
 Once you're done you can verify the install is successful by running `kvm-ok`.
 
