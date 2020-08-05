@@ -2,7 +2,8 @@
 {
     "title":"Packet Bare Metal Cloud Docs - DevOps Resources",
     "description":"Learn more about Packet and get started!",
-    "tag":["Product documentation", "Getting started", "Contact us"]
+    "tag":["Product documentation", "Getting started", "Contact us"],
+    "og-image":"/images/packet-product-docs.png"
 }
 </meta>-->
 
