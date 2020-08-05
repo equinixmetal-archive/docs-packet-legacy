@@ -1,13 +1,13 @@
 <!-- <meta>
 {
-
-     "title":"Elastic Block Storage",
+    "title":"Elastic Block Storage",
     "description":"Overview of our Storage Offering",
     "tag":["EBS", "Block storage"],
     "seo-title": "Elastic Block Storage - Packet Developer Docs",
     "seo-description": "Overview of our Storage Offering",
     "og-title": "Elastic Block Storage",
-    "og-description": "Overview of our Storage Offering"
+    "og-description": "Overview of our Storage Offering",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

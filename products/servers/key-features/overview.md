@@ -6,7 +6,8 @@
     "seo-title": "Bare Metal Servers Features - Packet Developer Docs",
     "seo-description": "Bare Metal Servers Features - Packet Developer Docs",
     "og-title": "Overview",
-    "og-description": "Bare Metal Servers Features - Packet Developer Docs"
+    "og-description": "Bare Metal Servers Features - Packet Developer Docs",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

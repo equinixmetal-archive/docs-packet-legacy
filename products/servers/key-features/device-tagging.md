@@ -6,7 +6,8 @@
     "seo-title": "Device Tagging - Packet Developer Docs",
     "seo-description": "Create Device Tags",
     "og-title": Device Tagging",
-    "og-description": "Create Device Tags"
+    "og-description": "Create Device Tags",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

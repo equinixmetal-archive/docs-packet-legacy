@@ -6,7 +6,8 @@
     "seo-title": "Cloud Integration Tools - Packet Developer Docss",
     "seo-description": "A quick look at our various API integrations.",
     "og-title": "Integrations & Libraries",
-    "og-description": "A quick look at our various API integrations."
+    "og-description": "A quick look at our various API integrations.",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

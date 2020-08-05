@@ -6,7 +6,8 @@
     "seo-title": "SOS: Serial over SSH - Packet Developer Docs",
     "seo-description": "Accesisng Serial Console (SOS)",
     "og-title": "SOS: Serial over SSH",
-    "og-description": "Accesisng Serial Console (SOS)"
+    "og-description": "Accesisng Serial Console (SOS)",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

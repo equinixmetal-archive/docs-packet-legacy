@@ -6,7 +6,8 @@
     "seo-title": "On Demand Server Deployment - Packet Developer Docs",
     "seo-description": "Learn more about on demand deployment.",
     "og-title": "Overview",
-    "og-description": "Learn more about on demand deployment."
+    "og-description": "Learn more about on demand deployment.",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

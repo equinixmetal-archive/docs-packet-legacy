@@ -1,13 +1,13 @@
 <!-- <meta>
 {
-
     "title":"Native VLAN",
     "description":"Setting up Native VLAN",
     "tag":["VLAN", "Layer2"],
     "seo-title": "Native VLAN - Packet Developer Docs",
     "seo-description": "Setting up Native VLAN",
     "og-title": "Utilizing Native VLAN",
-    "og-description": "Setting up Native VLAN"
+    "og-description": "Setting up Native VLAN",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

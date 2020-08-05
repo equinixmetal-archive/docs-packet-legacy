@@ -6,7 +6,8 @@
     "seo-title": "User State - Packet Developer Docs ",
     "seo-description": "Leverage 'user state' options to inform the Packet API about custom provisioning events.",
     "og-title": "User State",
-    "og-description": "Leverage 'user state' options to inform the Packet API about custom provisioning events."
+    "og-description": "Leverage 'user state' options to inform the Packet API about custom provisioning events.",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

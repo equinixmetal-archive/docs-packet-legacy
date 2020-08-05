@@ -1,13 +1,13 @@
 <!-- <meta>
 {
-
     "title":"Zero Egress Partners",
     "description":"Learn more about Zero Egress Partners",
     "tag":["Zero Egress Partners"],
     "seo-title": "Zero Egress Partners - Packet Developer Docs",
     "seo-description": "Learn more about Zero Egress Partners",
     "og-title": "Zero Egress Partners",
-    "og-description": "Learn more about Zero Egress Partners"
+    "og-description": "Learn more about Zero Egress Partners",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

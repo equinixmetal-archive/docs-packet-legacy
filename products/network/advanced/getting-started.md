@@ -6,7 +6,8 @@
     "seo-title": "Bare Metal Cloud Network - Packet Developer Docs",
     "seo-description": "Using advanced network features",
     "og-title": "Overview",
-    "og-description": "Using advanced network features"
+    "og-description": "Using advanced network features",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

@@ -6,7 +6,8 @@
     "seo-title": "Custom Partitioning and RAID - Packet Developer Docs",
     "seo-description": "Setting up CPR (Custom Partitioning & RAID).",
     "og-title": "Custom Partitioning and RAID",
-    "og-description": "Setting up CPR (Custom Partitioning & RAID)."
+    "og-description": "Setting up CPR (Custom Partitioning & RAID).",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

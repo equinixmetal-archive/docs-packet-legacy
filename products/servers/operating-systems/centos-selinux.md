@@ -6,7 +6,8 @@
     "seo-title": "CentOS: SELinux - Packet Developer Docs",
     "seo-description": "Learn more about why we disable SELinux on CentOS",
     "og-title": "CentOS: SELinux - Packet Developer Docs",
-    "og-description": "Learn more about why we disable SELinux on CentOS"
+    "og-description": "Learn more about why we disable SELinux on CentOS",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

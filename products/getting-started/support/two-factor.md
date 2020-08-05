@@ -6,7 +6,8 @@
     "seo-title": "Learn more about setting up 2FA",
     "seo-description": "2FA - Setting up two-factor",
     "og-title": "2FA",
-    "og-description": "Setting up 2FA on Packet"
+    "og-description": "Setting up 2FA on Packet",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

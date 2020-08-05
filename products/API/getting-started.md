@@ -6,7 +6,8 @@
     "seo-title": "Packet Bare Metal API Documents",
     "seo-description": "An introduction to the Packet API.",
     "og-title": "Overview",
-    "og-description": "An introduction to the Packet API."
+    "og-description": "An introduction to the Packet API.",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

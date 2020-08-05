@@ -6,7 +6,8 @@
     "seo-title": "Custom iPXE - Packet Developer Docs",
     "seo-description": "Learn more about Building Your Own O.S. (Custom Images)",
     "og-title": "Custom Images",
-    "og-description": "Learn more about Building Your Own O.S. (Custom Images)"
+    "og-description": "Learn more about Building Your Own O.S. (Custom Images)",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

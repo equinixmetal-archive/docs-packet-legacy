@@ -6,7 +6,8 @@
     "seo-title": "Metadata Servers - Packet Developer Docs ",
     "seo-description": "Understanding and leveraging Packet’s metadata service.",
     "og-title": "User Data",
-    "og-description": "Understanding and leveraging Packet’s metadata service."
+    "og-description": "Understanding and leveraging Packet’s metadata service.",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

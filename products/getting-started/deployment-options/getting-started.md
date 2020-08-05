@@ -6,7 +6,8 @@
     "seo-title": "Packet Bare Metal Cloud Docs - Deployment Options",
     "seo-description": "Learn more on deploment options on Packet",
     "og-title": "Overview",
-    "og-description": "Learn more on deploment options on Packet"
+    "og-description": "Learn more on deploment options on Packet",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

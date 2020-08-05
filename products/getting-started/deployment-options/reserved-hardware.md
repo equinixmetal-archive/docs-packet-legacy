@@ -1,12 +1,13 @@
 <!-- <meta>
 {
-  "title":"Reserved Hardware",
-  "description":"Deploy from a pool of reserved hardware available only to you!",
-  "tag":["reserve", "Deploy"],
-  "seo-title": "Reserved Cloud Servers - Packet Developer Docs",
-  "seo-description": "Deploy from a pool of reserved hardware available only to you!",
-  "og-title": "Overview",
-  "og-description": "Deploy from a pool of reserved hardware available only to you!"
+    "title":"Reserved Hardware",
+    "description":"Deploy from a pool of reserved hardware available only to you!",
+    "tag":["reserve", "Deploy"],
+    "seo-title": "Reserved Cloud Servers - Packet Developer Docs",
+    "seo-description": "Deploy from a pool of reserved hardware available only to you!",
+    "og-title": "Overview",
+    "og-description": "Deploy from a pool of reserved hardware available only to you!",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

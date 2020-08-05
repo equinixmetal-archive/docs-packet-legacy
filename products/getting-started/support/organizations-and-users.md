@@ -6,7 +6,8 @@
     "seo-title": "An overview of Packet's data model including organizations, team users, and projects.",
     "seo-description": "An overview of Packet's data model.",
     "og-title": "An overview of Packet's data model including organizations, team users, and projects.",
-    "og-description": "Learn more about Packet and get started!"
+    "og-description": "Learn more about Packet and get started!",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

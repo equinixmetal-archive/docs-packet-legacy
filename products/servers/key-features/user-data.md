@@ -6,7 +6,8 @@
     "seo-title": "User Data - Packet Developer Docs",
     "seo-description": "Run commands during the server provisioning process.",
     "og-title": "User Data",
-    "og-description": "Run commands during the server provisioning process."
+    "og-description": "Run commands during the server provisioning process.",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 When provisioning a server at Packet you have the option to include User Data, which can be used to perform various automation tasks after the server is ready, such as executing common scripts / packages, or triggering other more advanced configuration processes.

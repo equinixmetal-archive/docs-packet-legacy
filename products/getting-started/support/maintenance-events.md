@@ -6,7 +6,8 @@
     "seo-title": "Maintenance Events - Packet Developer Docs",
     "seo-description": "Maintenance Events - Packet Developer Docs",
     "og-title": "Maintenance Events - Packet Developer Docs",
-    "og-description": "Maintenance Events - Packet Developer Docs"
+    "og-description": "Maintenance Events - Packet Developer Docs",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 
