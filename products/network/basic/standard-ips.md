@@ -6,7 +6,8 @@
     "seo-title": "Standard IPs - Packet Developer Docs",
     "seo-description": "Standard IP addresses at Packet",
     "og-title": "Standard IPs",
-    "og-description": "Standard IP addresses at Packet"
+    "og-description": "Standard IP addresses at Packet",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

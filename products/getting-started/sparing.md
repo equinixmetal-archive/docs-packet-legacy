@@ -6,7 +6,8 @@
     "seo-title": "Sparing - Packet Developer Docs",
     "seo-description": "Learn more about sparing.",
     "og-title": "Sparing",
-    "og-description": "Learn more about sparing."
+    "og-description": "Learn more about sparing.",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

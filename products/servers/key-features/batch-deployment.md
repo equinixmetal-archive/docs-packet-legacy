@@ -6,7 +6,8 @@
     "seo-title": "Batch Deployment - Packet Developer Docs",
     "seo-description": "Deploying devices in Batch",
     "og-title": "Batch Deployment",
-    "og-description": "Deploying devices in Batch"
+    "og-description": "Deploying devices in Batch",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

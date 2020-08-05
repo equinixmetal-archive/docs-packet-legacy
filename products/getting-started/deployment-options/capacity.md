@@ -6,7 +6,8 @@
     "seo-title": "Learn more about Packet capacity",
     "seo-description": "Learn more about Packet capacity",
     "og-title": "Capacity",
-    "og-description": "Learn more about Packet capacity"
+    "og-description": "Learn more about Packet capacity",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

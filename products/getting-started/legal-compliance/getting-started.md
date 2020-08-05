@@ -6,7 +6,8 @@
     "seo-title": "Legal Compliance - Packet Developer Docs",
     "seo-description": "Learn more about our legal terms",
     "og-title": "Legal Compliance",
-    "og-description": "Learn more about our legal terms"
+    "og-description": "Learn more about our legal terms",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

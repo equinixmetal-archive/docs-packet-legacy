@@ -6,7 +6,8 @@
     "seo-title": "Doorman VPN - Packet Developer Docs",
     "seo-description": "Utilizing Doorman VPN to access your Device",
     "og-title": "Doorman VPN",
-    "og-description": "Utilizing Doorman VPN to access your Device"
+    "og-description": "Utilizing Doorman VPN to access your Device",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

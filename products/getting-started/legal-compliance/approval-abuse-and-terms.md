@@ -6,7 +6,8 @@
     "seo-title": "Approval, Abuse and Terms - Packet Developer Docs",
     "seo-description": "Learn more about Approval, Abuse and Terms at Packet",
     "og-title": "Approval, Abuse & Terms",
-    "og-description": "Learn more about Packet and get started!"
+    "og-description": "Learn more about Packet and get started!",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

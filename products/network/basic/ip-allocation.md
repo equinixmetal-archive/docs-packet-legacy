@@ -6,7 +6,8 @@
     "seo-title": "IP Allocation - Packet Developer Docs",
     "seo-description": "Provision servers with a reserved subnet",
     "og-title": "IP Allocation",
-    "og-description": "Provision servers with a reserved subnet"
+    "og-description": "Provision servers with a reserved subnet",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

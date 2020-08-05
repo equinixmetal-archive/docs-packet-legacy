@@ -6,7 +6,8 @@
     "seo-title": "Local and Global BGP - Packet Developer Docs",
     "seo-description": "Using BGP Global/Local on Packet",
     "og-title": "Local and Global BGP",
-    "og-description": "Using BGP Global/Local on Packet"
+    "og-description": "Using BGP Global/Local on Packet",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

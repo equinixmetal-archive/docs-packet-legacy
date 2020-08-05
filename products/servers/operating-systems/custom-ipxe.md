@@ -6,7 +6,8 @@
     "seo-title": "Custom iPXE - Packet Developer Docs",
     "seo-description": "Learn more about operating systems at Packet",
     "og-title": "Custom iPXE",
-    "og-description": "Setting Up & Using Custom PXE on Packet"
+    "og-description": "Setting Up & Using Custom PXE on Packet",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

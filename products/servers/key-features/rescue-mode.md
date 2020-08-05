@@ -6,7 +6,8 @@
     "seo-title": "Rescue Mode - Packet Developer Docs",
     "seo-description": "Learn how to access rescue mode",
     "og-title": "Rescue Mode",
-    "og-description": "Learn how to access rescue mode"
+    "og-description": "Learn how to access rescue mode",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 There are times when a server becomes unreachable over SSH due to broken networking, a bad install, misconfiguration, a kernel upgrade, bad firewall rules, etc.

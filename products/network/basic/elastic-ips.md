@@ -6,7 +6,8 @@
     "seo-title": "Elastic IPs - Packet Developer Docs",
     "seo-description": "Setting Up & Using Elastic IPs",
     "og-title": "Elastic IPs",
-    "og-description": "Setting Up & Using Elastic IPs"
+    "og-description": "Setting Up & Using Elastic IPs",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

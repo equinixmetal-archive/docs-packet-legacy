@@ -6,7 +6,8 @@
     "seo-title": "Bare Metal Cloud Servers Overview - Packet Developer Docs",
     "seo-description": "Learn more about compute classes and custom configurations.",
     "og-title": "Overview",
-    "og-description": "Learn more about compute classes and custom configurations."
+    "og-description": "Learn more about compute classes and custom configurations.",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

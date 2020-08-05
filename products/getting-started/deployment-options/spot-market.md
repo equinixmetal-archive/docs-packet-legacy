@@ -6,7 +6,8 @@
   "seo-title": "Reserved Cloud Servers - Packet Developer Docs",
   "seo-description": "Packet Spot Market - Packet Developer Docs",
   "og-title": "Overview",
-  "og-description": "Packet Spot Market - Packet Developer Docs"
+  "og-description": "Packet Spot Market - Packet Developer Docs",
+  "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

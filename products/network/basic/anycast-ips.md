@@ -6,7 +6,8 @@
     "seo-title": "Global Anycast IPs - Packet Developer Docs",
     "seo-description": "Obtaining & Utilizing Global Anycast IPs",
     "og-title": "Overview",
-    "og-description": "Obtaining & Utilizing Global Anycast IPs"
+    "og-description": "Obtaining & Utilizing Global Anycast IPs",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

@@ -6,7 +6,8 @@
     "seo-title": "Reinstall - Packet Developer Docs",
     "seo-description": "Learn more about reinstalling a server at Packet!",
     "og-title": "Reinstall",
-    "og-description": "Learn more about reinstalling a server at Packet!"
+    "og-description": "Learn more about reinstalling a server at Packet!",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

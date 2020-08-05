@@ -6,7 +6,8 @@
     "seo-title": "Backend Transfer - Packet Developer Docs",
     "seo-description": "Setting Up & Using Backend Transfer on Packet",
     "og-title": "Backend Transfer",
-    "og-description": "Setting Up & Using Backend Transfer on Packet"
+    "og-description": "Setting Up & Using Backend Transfer on Packet",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

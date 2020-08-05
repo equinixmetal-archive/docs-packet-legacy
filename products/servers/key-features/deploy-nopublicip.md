@@ -6,7 +6,8 @@
     "seo-title": "Deploy Without Public IP - Packet Developer Docs",
     "seo-description": "Deploying Devices Without a Public IP.",
     "og-title": "Deploy Without Public IP",
-    "og-description": "Deploying Devices Without a Public IP."
+    "og-description": "Deploying Devices Without a Public IP.",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

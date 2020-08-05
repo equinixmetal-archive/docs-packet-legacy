@@ -1,13 +1,13 @@
 <!-- <meta>
 {
-
     "title":"Layer 2",
     "description":"A quick look at the layer 2 feature.",
     "tag":["layer 2", "networking", "advanced"],
     "seo-title": "Layer 2 Network Topology - Packet Developer Docs",
     "seo-description": "A quick look at the layer 2 feature.",
     "og-title": "Layer 2 Network Topology - Packet Developer Docs",
-    "og-description": "A quick look at the layer 2 feature."
+    "og-description": "A quick look at the layer 2 feature.",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

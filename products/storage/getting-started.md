@@ -1,13 +1,13 @@
 <!-- <meta>
 {
-
     "title":"Storage",
     "description":"Learn more about deploying Storage Solutions at Packet",
     "tag":["Storage Solutions"],
     "seo-title": "Storage Solutions - Packet Developer Docs",
     "seo-description": "Learn more about deploying Storage Solutions at Packet",
     "og-title": "Storage Solutions",
-    "og-description": "Learn more about deploying Storage Solutions at Packet"
+    "og-description": "Learn more about deploying Storage Solutions at Packet",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

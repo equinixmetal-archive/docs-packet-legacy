@@ -6,7 +6,8 @@
     "seo-title": "Network Cloud Services - Packet Developer Docs",
     "seo-description": "Using Network Features on Packet",
     "og-title": "Overview",
-    "og-description": "Using Network Features on Packet"
+    "og-description": "Using Network Features on Packet",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

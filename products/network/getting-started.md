@@ -6,7 +6,8 @@
     "seo-title": "Bare Metal Network Overview -Packet Developer Docs ",
     "seo-description": "Overview of our Network Offerings",
     "og-title": "Overview",
-    "og-description": "Overview of our Network Offerings"
+    "og-description": "Overview of our Network Offerings",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

@@ -6,7 +6,8 @@
     "seo-title": "Sales: Getting Started - Packet Developer Docs",
     "seo-description": "Getting Started - Packet Developer Doc",
     "og-title": "Sales: Getting Started",
-    "og-description": "Getting Started - Packet Developer Doc"
+    "og-description": "Getting Started - Packet Developer Doc",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

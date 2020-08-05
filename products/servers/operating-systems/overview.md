@@ -6,7 +6,8 @@
     "seo-title": "Operating Systems Overview - Packet Developer Docs ",
     "seo-description": "Learn more about operating systems at Packet",
     "og-title": "OS Overview",
-    "og-description": "Learn more about operating systems at Packet"
+    "og-description": "Learn more about operating systems at Packet",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

@@ -6,7 +6,8 @@
     "seo-title": "Bare Metal Cloud Data Centers -- Packet Developer Docs",
     "seo-description": "Locations, certifications, & speed tests for our global datacenters.",
     "og-title": "Data Centers",
-    "og-description": "Locations, certifications, & speed tests for our global data centers."
+    "og-description": "Locations, certifications, & speed tests for our global data centers.",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 

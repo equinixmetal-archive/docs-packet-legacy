@@ -6,7 +6,8 @@
     "seo-title": "SSH Keys - Packet Developer Docs",
     "seo-description": "Use SSH to securely access your Packet servers.",
     "og-title": "Overview",
-    "og-description": "Use SSH to securely access your Packet servers."
+    "og-description": "Use SSH to securely access your Packet servers.",
+    "og-image": "/images/packet-product-docs.png"
 }
 </meta> -->
 
