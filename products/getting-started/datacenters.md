@@ -31,6 +31,9 @@ Platform Equinix consists of 210+ data centers across 55 metro areas in 26 count
 | |   [Frankfurt](https://www.packet.com/cloud/locations/frankfurt/)  |    |
 | | | |
 
+## Global IBX Expansions
+Packet will expand across the Equinix footprint to meet customer demand, including to: Paris (France), São Paulo (Brazil), London (England), Hong Kong (China), Tokyo (Japan), Sydney (Australia) and more.  Please [contact us](https://www.packet.com/about/contact/) for details.
+
 ## Packet Legacy Sites:
 
 Packet maintains a number of global sites that pre-date its acquisition by Equinix. As such, growth is limited in these sites. Please [contact us](https://www.packet.com/about/contact/) with details about your deployment or application needs. 
