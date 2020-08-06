@@ -15,8 +15,15 @@ A bridge is a way to connect two Ethernet segments together in a protocol indepe
 QEMU (short for Quick Emulator) is a free and open-source hosted hypervisor thatperforms hardware virtualization (not to be confused with hardware-assisted virtualization).
 
 ### Prerequisites
-* CentOS/Redhat: `yum install bridge-utils` 
-* Debian/Ubuntu: `apt-get install bridge-utils`
+To install on CentOS/Redhat: 
+```
+yum install bridge-utils
+```
+
+To install on Debian/Ubuntu: 
+```
+apt-get install bridge-utils
+```
 
 > **Note:**  This guide will make use of an [elastic IP subnet](https://www.packet.com/developers/docs/network/basic/elastic-ips/) size of `/29`.
 
