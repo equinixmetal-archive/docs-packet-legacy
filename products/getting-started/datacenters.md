@@ -62,4 +62,3 @@ Packet maintains a number of global sites that pre-date its acquisition by Equin
 |----------|:-------------:|------:|------:|
 | [Singapore (SIN3)](https://www.packet.com/cloud/locations/sin3/) | [Tokyo, JP (NRT1)](https://www.packet.com/cloud/locations/nrt1/) | [Hong Kong (HKG1)](https://www.packet.com/cloud/locations/hong-kong/)
 
-Faciltity Certification for Packet Legacy Sites can be found [here](https://www.packet.com/developers/docs/getting-started/legal-compliance/legacy-certifications/). 
