@@ -16,16 +16,15 @@ While these facilites do not offer PCI compliant hosting and rarely sign BAAs, w
 
 With our legacy sites we rented large amounts of colocation space from Tier 1 providers like Equinix and Interxion, and each of our data centers have been certified to national and/or international security standards.
 
-#### Core Facilities:
+#### Packet Legacy Sites:
 
 * **EWR1:** is SSAE16 & SOC certified, plus HIPAA, HITECH & PCI DSS 3.0 compliant.
 * **SJC1:**  is in process for SOC certification.
 * **AMS1:** is ISO 27001, ISO 22301, and ITIL v3 certified.
 * **DFW1:** is SSAE16 SOC-1 Type II and SOC-2 Type II certified. Plus ISO 27001 compliant. 
 
-* **NRT1:** is new and in process for SSAE16 SOC-1 Type ll, ISO/IEC 27001: 2013.
+* **NRT1:** is SSAE16 SOC-1 Type ll, ISO/IEC 27001: 2013.
 
-#### Custom Facilities:
 
 * **SEA1:** is SSAE16 SOC-1 Type II and SOC-2 Type II certified. Plus ISO 27001 compliant.
 

@@ -16,15 +16,15 @@ As part of Equinix, Packet deploys in the most densely interconnected facilities
 Platform Equinix consists of 210+ data centers across 55 metro areas in 26 countries. As Packet continues to grow into Equinix’s global footprint, we can help you scale to reach everyone, anywhere. [Contact us](https://www.packet.com/about/contact/) to discuss our growing list of the world’s most interconnected data centers.
 
 
-## Current Core IBX Sites
+## Current Live IBX Sites
 
-| The Americas   |      EMEA      |  Asia-Pacific |
+| The Americas   |            |   |
 |----------|:-------------:|------:|
 |[New York (NY5)](https://www.packet.com/cloud/locations/new-york/)  |  |  |
 |[Ashburn, VA (DC13)](https://www.packet.com/cloud/locations/ashburn/) |     |    |
 |[Silicon Valley (SV15)](https://www.packet.com/cloud/locations/silicon-valley/) | | |
 
-## Planned Core IBX Sites
+## Planned IBX Sites
 
 | The Americas   |      EMEA      |  Asia-Pacific |
 |----------|:-------------:|------:|
