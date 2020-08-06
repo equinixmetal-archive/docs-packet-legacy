@@ -37,9 +37,9 @@ Packet maintains a number of global sites that pre-date its acquisition by Equin
 <br>
 
 
-| The Americas   |           |   | |
+| The Americas   |           |   | 
 |----------|:-------------:|------:|------:|
-|[Ashburn (IAD2)](https://www.packet.com/cloud/locations/iad2/)  |  [Dallas (DFW2)](https://www.packet.com/cloud/locations/dfw2/) | [New York (EWR1)](https://www.packet.com/cloud/locations/new-york-metro/)  | 
+|[Ashburn (IAD2)](https://www.packet.com/cloud/locations/iad2/)  |  [Dallas (DFW2)](https://www.packet.com/cloud/locations/dfw2/) | [New York (EWR1)](https://www.packet.com/cloud/locations/new-york-metro/)  |
 |[Atlanta (ATL2)](https://www.packet.com/cloud/locations/atlanta/) |    [Chicago (ORD4)](https://www.packet.com/cloud/locations/chicago/)   |  [Detroit (DTW1)](https://www.packet.com/cloud/locations/detriot/)  |
 |[Kansas City (MCI1)](https://www.packet.com/cloud/locations/kansas-city/)  | [Los Angeles (LAX2)](https://www.packet.com/cloud/locations/los-angeles/) | [Phoenix (PHX1)](https://www.packet.com/cloud/locations/phoenix/)    |
 |[Seattle (SEA2)](https://www.packet.com/cloud/locations/seattle/) | [Toronto, Canada (YYZ1)](https://www.packet.com/cloud/locations/toronto/) | [Silicon Valley (SJC1)](https://www.packet.com/cloud/locations/sjc1/) 
@@ -56,7 +56,6 @@ Packet maintains a number of global sites that pre-date its acquisition by Equin
 
 | Asia-Pacific   |                 |   | |
 |----------|:-------------:|------:|------:|
-| [Singapore (SIN3)](https://www.packet.com/cloud/locations/sin3/) | [Tokyo, JP (NRT1)](https://www.packet.com/cloud/locations/nrt1/) | [Hong Kong (HKG1)](https://www.packet.com/cloud/locations/hong-kong/) 
-| 
+| [Singapore (SIN3)](https://www.packet.com/cloud/locations/sin3/) | [Tokyo, JP (NRT1)](https://www.packet.com/cloud/locations/nrt1/) | [Hong Kong (HKG1)](https://www.packet.com/cloud/locations/hong-kong/)
 
 Faciltity Certification for Packet Legacy Sites can be found here. 
