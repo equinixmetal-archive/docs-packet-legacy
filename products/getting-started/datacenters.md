@@ -10,27 +10,34 @@
 }
 </meta> -->
 
-As part of Equinix, Packet deploys in the most densely interconnected facilities in the world, putting your workloads milliseconds away from the clouds, networks & Enterprises that matter. Our data centers are certified to meet rigorous standards that enable secure, compliant and efficient operations. Learn more at [Equinix](https://www.equinix.com/data-centers/design/standards-compliance/). 
+As part of Equinix, Packet deploys in the most densely interconnected facilities in the world, putting your workloads milliseconds away from the clouds, networks & Enterprises that matter. Equinix data centers are certified to meet rigorous standards that enable secure, compliant and efficient operations  [Learn more about Equinix’s standards, regulations & certifications](https://www.equinix.com/data-centers/design/standards-compliance/).
 
-## Equinix Core IBX Sites
+Platform Equinix consists of 210+ data centers across 55 metro areas in 26 countries. As Packet continues to grow into Equinix’s global footprint, we can help you scale to reach everyone, anywhere. [Contact us](https://www.packet.com/about/contact/) to discuss our growing list of the world’s most interconnected data centers.
+
+
+## Current Core IBX Sites
 
 | The Americas   |      EMEA      |  Asia-Pacific |
 |----------|:-------------:|------:|
-|[New York (NY5)](https://www.packet.com/cloud/locations/new-york/)  |  [Amsterdam, Netherlands (AMS1)](https://www.packet.com/cloud/locations/amsterdam/) | [Singapore (SIN3)](https://www.packet.com/cloud/locations/singapore/) |
-|[Ashburn, VA (DC13)](https://www.packet.com/cloud/locations/ashburn/) |    [Frankfurt, Germany (FRA2)](https://www.packet.com/cloud/locations/fra2/)   |    |
-|[Dallas, TX (DFW2)](https://www.packet.com/cloud/locations/dallas/)  |  |     |
-|[Silicon Valley (SJC1)](https://www.packet.com/cloud/locations/silicon-valley/) | | |
+|[New York (NY5)](https://www.packet.com/cloud/locations/new-york/)  |  |  |
+|[Ashburn, VA (DC13)](https://www.packet.com/cloud/locations/ashburn/) |     |    |
+|[Silicon Valley (SV15)](https://www.packet.com/cloud/locations/silicon-valley/) | | |
 
+## Planned Core IBX Sites
 
+| The Americas   |      EMEA      |  Asia-Pacific |
+|----------|:-------------:|------:|
+|[Dallas, TX (DA11)](https://www.packet.com/cloud/locations/dallas/)| [Amsterdam](https://www.packet.com/cloud/locations/amsterdam/) | [Singapore](https://www.packet.com/cloud/locations/singapore/) |
+| |   [Frankfurt](https://www.packet.com/cloud/locations/frankfurt/)  |    |
+| | | |
 
 ## Packet Legacy Sites:
 
-Packet maintains a large number of global sites that pre-date its acquisition by Equinix.
-Contact sales@packet.com to review deployments in these locations.
+Packet maintains a number of global sites that pre-date its acquisition by Equinix. As such, growth is limited in these sites. Please [contact us](https://www.packet.com/about/contact/) with details about your deployment or application needs. 
 <br>
 
 
-| The Americas   |           |   |
+| The Americas   |           |   | |
 |----------|:-------------:|------:|------:|
 |[Ashburn (IAD2)](https://www.packet.com/cloud/locations/iad2/)  |  [Dallas (DFW2)](https://www.packet.com/cloud/locations/dfw2/) | [New York (EWR1)](https://www.packet.com/cloud/locations/new-york-metro/)  | 
 |[Atlanta (ATL2)](https://www.packet.com/cloud/locations/atlanta/) |    [Chicago (ORD4)](https://www.packet.com/cloud/locations/chicago/)   |  [Detroit (DTW1)](https://www.packet.com/cloud/locations/detriot/)  |
@@ -40,14 +47,16 @@ Contact sales@packet.com to review deployments in these locations.
 <br>
 
 
-| EMEA   |                 |   |
+| EMEA   |                 |   | |
 |----------|:-------------:|------:|------:|
 | [Amsterdam, NL (AMS1)](https://www.packet.com/cloud/locations/ams1/) | [Frankfurt (FRA2)](https://www.packet.com/cloud/locations/ams1/) | [Marseille (MRS1)](https://www.packet.com/cloud/locations/marseille/)
 | [Sydney, Australia (SYD2)](https://www.packet.com/cloud/locations/sydney/) 
 <br>
 
 
-| Asia-Pacific   |                 |   |
+| Asia-Pacific   |                 |   | |
 |----------|:-------------:|------:|------:|
 | [Singapore (SIN3)](https://www.packet.com/cloud/locations/sin3/) | [Tokyo, JP (NRT1)](https://www.packet.com/cloud/locations/nrt1/) | [Hong Kong (HKG1)](https://www.packet.com/cloud/locations/hong-kong/) 
 | 
+
+Faciltity Certification for Packet Legacy Sites can be found here. 
