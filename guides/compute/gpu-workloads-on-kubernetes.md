@@ -5,7 +5,7 @@
     "tag": ["Kubernetes", "Docker", "GPU"],
     "seo-title": "Preparing Kubernetes for GPU Workloads - Packet Technical Guides",
     "seo-description": "Preparing Kubernetes for GPU Workloads",
-    "og-title": "Learn how to utilize GPUs within Kubernetes using the native tooling available in your cluster.,
+    "og-title": "Learn how to utilize GPUs within Kubernetes using the native tooling available in your cluster.",
     "og-description": "Learn how to utilize GPUs within Kubernetes using the native tooling available in your cluster."
 }
 </meta> -->
