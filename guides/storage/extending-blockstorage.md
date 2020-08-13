@@ -5,8 +5,8 @@
     "tag":["Extending", "Storage", "Blockstorage"],
     "seo-title": "Advanced Elastic Block Storage Techniques - Packet Technical Guides",
     "seo-description": "Advanced Elastic Block Storage Techniques",
-    "og-title": "Extending Blockstorage",
-    "og-description": "Extending Storage Volume on Packet"
+    "og-title": "Learn how to resize and expand your elastic block storage volume.",
+    "og-description": "Learn how to resize and expand your elastic block storage volume."
 }
 </meta> -->
 

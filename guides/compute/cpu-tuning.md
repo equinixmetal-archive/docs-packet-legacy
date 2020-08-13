@@ -5,8 +5,8 @@
     "tag": ["CPU", "Tuning", "Processor", "Performance"],
     "seo-title": "Introduction to CPU Tuning - Packet Technical Guides",
     "seo-description": "Tips for fine tuning the CPU to improve performance",
-    "og-title": "CPU Tuning",
-    "og-description": "Tips for fine tuning the CPU to improve performance"
+    "og-title": "Explore some best practices to help you work with common CPU settings for potential hardware improvements.",
+    "og-description": "Explore some best practices to help you work with common CPU settings for potential hardware improvements."
 }
 </meta> -->
 

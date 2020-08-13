@@ -5,8 +5,8 @@
     "tag": ["AMD", "SEV"],
     "seo-title": "Deploy AMD SEV on Bare Metal- Packet Technical Guides",
     "seo-description": "Deploying AMD SEV with Anjuna",
-    "og-title": "AMD Sev with Anjuna",
-    "og-description": "Deploying AMD SEV with Anjuna"
+    "og-title": "In this Technical Guide, learn to leverage AMD's Secure Encrypted Virtualization (SEV) for encrypting the memory of virtual machines",
+    "og-description": "In this Technical Guide, learn to leverage AMD's Secure Encrypted Virtualization (SEV) for encrypting the memory of virtual machines"
 }
 </meta> -->
 

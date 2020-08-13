@@ -6,8 +6,8 @@
     "tag":["Storage", "Block Storage", "Elastic Block Storage", "Windows", "Windows Server"],
     "seo-title": "Block Storage on Windows Server - Packet Technical Guides",
     "seo-description": "Deploying Block Storage on Packet Windows Servers",
-    "og-title": "Block Storage on Windows Server",
-    "og-description": "Deploying Block Storage on Packet Windows Servers"
+    "og-title": "Find out how to create, configure, and manage your Block Storage volumes on Windows Server.",
+    "og-description": "Find out how to create, configure, and manage your Block Storage volumes on Windows Server."
 }
 </meta> -->
 
