@@ -5,7 +5,7 @@
     "tag":["BGP", "Communities", "Peering"],
     "seo-title": "BGP Global Communities - Packet Technical Guides",
     "seo-description": "Using BGP communities on Packe",
-    "og-title": "Check out all of Packet's supported BGP Communities and their use in this technical guide.",
+    "og-title": "Global BGP Communities on Packet.",
     "og-description": "Check out all of Packet's supported BGP Communities and their use in this technical guide."
 }
 </meta> -->

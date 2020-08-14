@@ -5,7 +5,7 @@
     "tag":["Crosscloud VPN", "Wireguard"],
     "seo-title": "Introduction to CPU Tuning - Packet Technical Guides",
     "seo-description": "Crosscloud VPN with Wireguard - Packet Technical Guides",
-    "og-title": "Secure your point-to-point connections with WireGuard VPN. Learn more about it's use cases on Packet.",
+    "og-title": "Setup WireGuard VPN on Packet.",
     "og-description": "Secure your point-to-point connections with WireGuard VPN. Learn more about it's use cases on Packet."
 }
 </meta> -->
