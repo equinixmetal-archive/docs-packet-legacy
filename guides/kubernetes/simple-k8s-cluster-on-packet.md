@@ -22,6 +22,12 @@ OS & Hardware selection is dependent upon your particular build requirements. Fo
 
 > **Note:** For each device that will be in your Kubernetes the following will need to be done:
 
+### Upgrade and Update OS Packages
+
+
+````
+sudo apt update && sudo apt upgrade -y
+````
 ### Installing Docker
 
 
@@ -44,14 +50,13 @@ apt-get update && apt-get install -y \
 sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 ````
 
+> **Note:** At the time of this writing, Ubuntu 16.04 Xenial Xerus is the latest Kubernetes repository available. This should eventually be superseded by Ubuntu 20.04 Focal Fossa, and the following command can then be updated from `xenial` to `focal`.
+
 ```
 echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" \
   | sudo tee -a /etc/apt/sources.list.d/kubernetes.list \
   && sudo apt-get update 
 ````
-> **Note:** At the time of this writing, Ubuntu 16.04 Xenial Xerus is the latest Kubernetes repository available. This should eventually be superseded by Ubuntu 20.04 Focal Fossa, and the following command can then be updated from `xenial` to `focal`.
-
-
 To proceed the following three packages are required: `kubelet`, `kubeadm` and `kubernetes-cni`. 
 
 ````
@@ -174,7 +179,10 @@ head -c 16 /dev/urandom | shasum -a 256 | cut -d" " -f1 | sudo tee /var/lib/weav
 ````
 kubectl create secret -n kube-system generic weave-passwd --from-file=/var/lib/weave/weave-passwd
 ````
-> **Note:** You would need to use a different private subnet for Weave net to avoid conflicts. 
+> **Note:** You would need to use a different private subnet for Weave net to avoid conflicts.
+> In this example, since the default private network is already used on the hosts (10.0.0.0/8), use 192.168.0.0/16 for Weave configuration:
+> kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')&env.IPALLOC_RANGE=192.168.0.0/16"
+> Reference: https://www.weave.works/docs/net/latest/kubernetes/kube-addon/#configuration-options
 
 #### Add the nodes
 
