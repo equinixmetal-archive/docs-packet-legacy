@@ -5,7 +5,7 @@
      "tag": ["Ditch Cobbler", "RackN"],
     "seo-title": "Ditch Cobbler for RackN - Packet Technical Guides",
     "seo-description": "Ditch Cobbler for RackN on Packet",
-    "og-title": "RackN builds software to enable Continuously Integrated (CI) data centers. Try out RackN Digital Rebar on Packet.",
+    "og-title": "Deploy RackN on bare metal.",
     "og-description": "RackN builds software to enable Continuously Integrated (CI) data centers. Try out RackN Digital Rebar on Packet."
 }
 </meta> -->

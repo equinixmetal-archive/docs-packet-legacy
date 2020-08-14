@@ -5,7 +5,7 @@
     "tag": ["CPU", "Compute", "Profiling", "Beanchmarking"],
     "seo-title": "Compute Profiling & Benchmarking - Packet Technical Guides",
     "seo-description": "Benchmarking Tools for Linux",
-    "og-title": Monitor your applications for best productivity, security, and compliance.",
+    "og-title": "Tutorial for Profiling & Benchmarking your infrastructure.",
     "og-description": "Monitor your applications for best productivity, security, and compliance."
 }
 </meta> -->
