@@ -5,8 +5,8 @@
     "tag": ["storage", "RAID"],
     "seo-title": "Software RAID 10 - Packet Technical Guides",
     "seo-description": "This quide will demonstrate a Software RAID configuration for a Packet m1.xlarge server, “The Virtualizer”, running Ubuntu 16.04.",
-    "og-title": "Software RAID 10",
-    "og-description":"This quide will demonstrate a Software RAID configuration for a Packet m1.xlarge server, “The Virtualizer”, running Ubuntu 16.04."
+    "og-title": "Configure RAID 10 in minutes.",
+    "og-description":"Secure and speed up your data by standing up RAID 10 on fully automated bare metal by Packet."
 }
 </meta> -->
 

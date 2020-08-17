@@ -5,8 +5,8 @@
     "tag":["DevStack", "OpenStack"],
     "seo-title": "NVMe Flash Drives - Packet Technical Guides",
     "seo-description": "OpenStack DevStack - Packet Technical Guides",
-    "og-title": "OpenStack DevStack",
-    "og-description":"Testing OpenStack using DevStack"
+    "og-title": "Bring up a complete OpenStack environment.",
+    "og-description":"Using DevStack, learn how to quickly deploy OpenStack on fully automated infrastructure."
 }
 </meta> -->
 

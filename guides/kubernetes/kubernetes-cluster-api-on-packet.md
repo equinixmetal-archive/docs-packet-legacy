@@ -5,8 +5,8 @@
     "tag": ["Kubernetes", "Cluster"],
     "seo-title": "Kubernetes Cluster API for Packet - Packet Technical Guides",
     "seo-description": "Kubernetes Cluster API on Packet",
-    "og-title": "Kubernetes Cluster API",
-    "og-description": "Kubernetes Cluster API on Packet"
+    "og-title": "Kubernetes Cluster API for Packet.",
+    "og-description": "Packet is now a supported provider for the Kubernetes Cluster API. In this Technical Guide explore how to use Cluster API on Packet infrastructure."
 }
 </meta> -->
 

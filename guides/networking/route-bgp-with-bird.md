@@ -5,8 +5,8 @@
     "tag":["Route BGP", "BIRD"],
     "seo-title": "Route BGP with BIRD - Packet Technical Guides",
     "seo-description": "Route BGP with BIRD on Packet",
-    "og-title": "Route BGP with BIRD",
-    "og-description":"Route BGP with BIRD on Packet"  
+    "og-title": "Use BIRD to run BGP.",
+    "og-description":"BIRD is a routing software that runs on UNIX-like operating systems. Learn how to configure BGP announcer BIRD for local BGP access on Packet."  
 }
 </meta> -->
 

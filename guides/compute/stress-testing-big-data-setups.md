@@ -5,8 +5,8 @@
     "tag": ["Stress Testing", "Big Data"],
     "seo-title": "Stress Testing Big Data Setups - Packet Technical Guides",
     "seo-description": "Stress Testing Big Data Setups",
-    "og-title": "Stress Testing Big Data Setups",
-    "og-description":"Stress Testing Big Data Setups"
+    "og-title": "Testing out big data workloads.",
+    "og-description":"Get some helpful tips and tricks from Packet for stress testing your big data setups."
 }
 </meta> -->
 

@@ -5,8 +5,8 @@
     "tag": ["Kubernetes", "CSI", "Container Storage Interface"],
     "seo-title": "Kubernetes CSI for Bare Metal - Packet Technical Guides",
     "seo-description": "Kubernetes CSI (Container Storage Interface) for Packet",
-    "og-title": "Kubernetes Cluster Autoscaler",
-    "og-description": "Kubernetes CSI (Container Storage Interface) for Packet"
+    "og-title": "Kubernetes CSI for Packet.",
+    "og-description": "The K8 Container Storage Interface (CSI) plugin allows you to attach storage system files to containerized workloads. Learn how to leverage CSI in this how-to guide."
 }
 </meta> -->
 

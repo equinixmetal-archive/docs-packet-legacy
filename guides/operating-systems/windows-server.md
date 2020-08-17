@@ -5,8 +5,8 @@
     "tag":["Operating Systems", "Windows"],
     "seo-title": "Windows Server - Packet Developer Docs",
     "seo-description": "Learn more about utilizing Windows Server at Packet",
-    "og-title": "Windows Server",
-    "og-description": "Learn more about utilizing Windows Server at Packet"
+    "og-title": "Deploy Windows server on Packet.",
+    "og-description": "In this technical guide explore all of Packet's Windows server options and it's compatibilties."
 }
 </meta> -->
 

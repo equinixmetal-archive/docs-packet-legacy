@@ -5,8 +5,8 @@
     "tag":["NVME", "flash", "drive"],
     "seo-title": "NVMe Flash Drives - Packet Technical Guides",
     "seo-description": "How to Setup NVME flash drives.",
-    "og-title": "NVME Flash Drives",
-    "og-description": "How to Setup NVME flash drives."
+    "og-title": "Try NVMe Flash Drives on Packet.",
+    "og-description": "Get access speeds up to 100x faster using NVMe than a traditional drive. Get started using NVMe on Packet infrastructure today."
 }
 </meta> -->
 

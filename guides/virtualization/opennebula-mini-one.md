@@ -5,8 +5,8 @@
     "tag":["OpenNebula"],
     "seo-title": "OpenNebula miniONE - Packet Technical Guides",
     "seo-description": "deploy OpenNebula single-node environments",
-    "og-title": "OpenNebula miniONE",
-    "og-description":"Quickly deploy OpenNebula single-node environments"
+    "og-title": "The all-in-one OpenNebula environment.",
+    "og-description":"Operate your private & hybrid clouds running on KVM or VMware technologies. Learn more on how to configure OpenNebula on Packet bare metal."
 }
 </meta> -->
 

@@ -5,8 +5,8 @@
     "tag":["S3", "Object Storage", "Minio"],
     "seo-title":"Minio Object Storage on Packet - Packet Technical Guides",
     "seo-description":"Learn how to deploy Minio's high-performance object storage system on Packet bare metal for your multi-tenant and large scale private-cloud environments",
-    "og-title":"Minio Object Storage on Packet - Packet Technical Guides",
-    "og-description":"Learn how to deploy Minio's high-performance object storage system on Packet bare metal for your multi-tenant and large scale private-cloud environments"
+    "og-title":"Deploy Object Storage on Packet.",
+    "og-description":"Minio is a high performance distributed object storage server Learn how to deploy on Packet for multi-tenant & large-scale private cloud environments."
 }
 </meta> -->
 
