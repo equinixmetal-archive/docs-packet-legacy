@@ -5,8 +5,8 @@
     "tag":["virtual machines"],
     "seo-title": "KVM and Libvirt on Ubuntu 16.04 - Packet Technical Guides",
     "seo-description": "KVM and Libvirt on Ubuntu 16.04 description",
-    "og-title": "KVM and Libvirt on Ubuntu 16.04",
-    "og-description": "KVM and Libvirt on Ubuntu 16.04 description"
+    "og-title": "Virtualize your infrastructure on Packet.",
+    "og-description": "In this technical guide explore how to setup and configure KVM hypervisor & Libvirt on automated bare metal."
 }
 </meta> -->
 

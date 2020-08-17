@@ -5,8 +5,8 @@
     "tag": ["Kubernetes", "Cluster", "Autoscaler"],
     "seo-title": "Kubernetes Cluster Autoscaler - Packet Technical Guides",
     "seo-description": "Kubernetes Cluster Autoscaler on Packet",
-    "og-title": "Kubernetes Cluster Autoscaler",
-    "og-description": "Kubernetes Cluster Autoscaler on Packet"
+    "og-title": "K8 Cluster Autoscaler on Packet.",
+    "og-description": "The Kubernetes Cluster Autoscaler scales your cluster nodepools that are no longer needed. Learn how to in this comprehensive technical guide."
 }
 </meta> -->
 

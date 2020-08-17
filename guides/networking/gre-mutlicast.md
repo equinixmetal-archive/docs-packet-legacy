@@ -5,8 +5,8 @@
     "tag":["Route GRE", "Multicast"],
     "seo-title": "GRE with Multicast - Packet Technical Guides",
     "seo-description": "Configure GRE with Multicast.",
-    "og-title": "GRE with Multicast",
-    "og-description":"Learn how to configure GRE with Multicast."
+    "og-title": "Configure GRE with Multicast on Packet.",
+    "og-description":"Learn how to set up GRE with multicast between two Packet devices in this comprehensive guide."
 }
 </meta> -->
 

@@ -5,8 +5,8 @@
     "tag":["VMware", "ESXi", "vSphere", "vSan"],
     "seo-title": "VMware on Packet - Packet Technical Guides",
     "seo-description": "Deploy highly scalable and secure VMware vSphere-based environments to Packet's bare metal cloud in under 30 minutes",
-    "og-title": "VMware on Packet - Packet Technical Guides",
-    "og-description":"Deploy highly scalable and secure VMware vSphere-based environments to Packet's bare metal cloud in under 30 minutes"
+    "og-title": "Explore VMware on bare metal.",
+    "og-description":"Deploy a multi-node vSphere on Packet in under 30 minutes with this simple guide."
 }
 </meta> -->
 

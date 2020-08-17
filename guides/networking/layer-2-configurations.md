@@ -5,8 +5,8 @@
     "tag": ["layer 2", "networking", "advanced"],
     "seo-title": "Layer 2 Configurations - Packet Technical Guides",
     "seo-description": "How to configure some possible layer 2 environments.",
-    "og-title": "Layer 2 Configurations",
-    "og-description":" How to configure some possible layer 2 environments."
+    "og-title": "Set up private networking with Layer 2.",
+    "og-description":" Utilize Packet's Layer 2 VLAN feature to create more traditional both private & hybrid networking environments."
 }
 </meta> -->
 

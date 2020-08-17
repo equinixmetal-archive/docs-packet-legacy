@@ -5,8 +5,8 @@
     "tag":["Kubernetes", "CCM", "Cloud Controller Manager"],
     "seo-title": "Kubernetes CCM for Packet - Packet Technical Guides",
     "seo-description": "Kubernetes CCM (Cloud Controller Manager) for Packet",
-    "og-title": "Kubeless on Packet",
-    "og-description": "Kubernetes CCM (Cloud Controller Manager) for Packet"
+    "og-title": "Kubernetes CCM for Packet.",
+    "og-description": "Kubernetes Cloud Controller Manager (CCM) allows clusters to interface and authenticate with Packet's APIs. Dig into our CCM technical guide to learn more."
 }
 </meta> -->
 

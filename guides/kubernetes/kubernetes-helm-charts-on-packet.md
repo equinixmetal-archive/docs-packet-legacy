@@ -5,8 +5,8 @@
     "tag":["Kubernetes", "Package Management", "Helm"],
     "seo-title": "Helm Charts for Kubernetes Package Management - Packet Technical Guides",
     "seo-description": "Helm Charts for Kubernetes Package Management",
-    "og-title": "Helm Charts for Kubernetes Package Management",
-    "og-description": "Helm Charts for Kubernetes Package Management"
+    "og-title": "K8 Helm Charts for Kubernetes",
+    "og-description": "Helm is a package manager for Kubernetes clusters. In this technical guide learn how to set up a helm chart on Packet. "
 }
 </meta> -->
 

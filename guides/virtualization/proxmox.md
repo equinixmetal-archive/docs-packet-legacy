@@ -5,8 +5,8 @@
     "tag":["VMs", "Proxmox", "Virtualization"],
     "seo-title": "Install Proxmox on Bare Metal - Packet Technical Guides",
     "seo-description": "Deploying Proxmox on Packet",
-    "og-title": "Proxmox",
-    "og-description":"Deploying Proxmox on Packet"
+    "og-title": "Set up your own virtualization server.",
+    "og-description":"Provide maximum flexibility to your environment with Proxmox, a open-source virtualization management platform. Learn how to utilize Proxmox in this guide."
 }
 </meta> -->
 
