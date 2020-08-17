@@ -6,7 +6,8 @@
     "seo-title": "Simple K8s Cluster - Packet Technical Guides",
     "seo-description": "Simple K8s Cluster on Packet",
     "og-title": "Explore Kubernetes Clusters on Packet.",
-    "og-description":"Kubernetes can be deployed in a number of ways on Packet, but find out how to utilize Kubernetes on bare metal in a more upstream format.": true
+    "og-description":"Kubernetes can be deployed in a number of ways on Packet, but find out how to utilize Kubernetes on bare metal in a more upstream format.",
+    "featured": true
 }
 </meta> -->
 
