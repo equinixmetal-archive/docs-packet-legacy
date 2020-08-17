@@ -12,7 +12,7 @@
 </meta> -->
 
 Official Images
-Packet leverages GitHub to transparently manage our officially supported Operating System images. You can view the repos for each official image on our [github](https://github.com/packethost/packet-images).
+Packet leverages GitHub to transparently manage our officially supported Operating System images. You can view the repos for each official image on our [Github](https://github.com/packethost/packet-images).
 
 In addition to providing a public change log, this process enables users to programmatically "pin" their installs to particular OS versions, improving the stability (dare we say immutability!) of your deployments.
 
@@ -28,7 +28,7 @@ Prerequisites: This assumes you have an active GitHub/Lab account. Also, the fol
 
 * git-lfs
 ```
-apt get install git-lfs
+apt-get install git-lfs
 ```
 * get-ubuntu-image
 ```
@@ -36,7 +36,7 @@ wget https://raw.githubusercontent.com/packethost/packet-images/master/tools/get
 ```
 * make get-ubuntu-image executable
 ```
-chmod +x /path/to/file
+chmod u+x get-ubuntu-image
 ```
 * packet-save2image
 ```
@@ -44,7 +44,7 @@ wget https://raw.githubusercontent.com/packethost/packet-images/master/tools/pac
 ```
 * set packet-save2image to executable
 ```
-chmod +x /<path>/packet-save2image
+chmod u+x packet-save2image
 ```
 * initrd.tar.gz
 ```
