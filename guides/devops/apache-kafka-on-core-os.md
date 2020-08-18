@@ -5,7 +5,7 @@
     "tag": ["AMD", "Apache", "CoreOS", "Kafa"],
     "seo-title": "Apache Kafka on CoreOS - Packet Technical Guides",
     "seo-description": "Setup Kafka cluster on a single Packet bare-metal machine",
-    "og-title": "Explore Apache Kafka with Packet, a distributed date platform optimized for processing data in real-time, on CoreOS.",
+    "og-title": "Set up Apache Kafka on CoreOS.",
     "og-description": "Explore Apache Kafka with Packet, a distributed date platform optimized for processing data in real-time, on CoreOS."
 }
 </meta> -->

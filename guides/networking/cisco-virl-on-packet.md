@@ -5,7 +5,7 @@
     "tag":["Cisco", "VIRL"],
     "seo-title": "Cisco VIRL on Bare Metal - Packet Technical Guides",
     "seo-description": "Using Cisco VIRL on Packet",
-    "og-title": "Explore this Technical Guide to get up and running in minutes with a licensed, customized VIRL server on Packet.",
+    "og-title": "Deploy VIRL on bare metal.",
     "og-description": "Explore this Technical Guide to get up and running in minutes with a licensed, customized VIRL server on Packet."
 }
 </meta> -->

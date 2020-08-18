@@ -5,8 +5,8 @@
     "tag":["Kubernetes", "K3s"],
     "seo-title": "K3s on Packet - Packet Technical Guides",
     "seo-description": "Running K3s on Packet",
-    "og-title": "Resources for running K3s on Packet",
-    "og-description":"Running K3s on Packet",
+    "og-title": "Explore K3s on bare metal in this technical guide.",
+    "og-description":"K3s is a lightweight, easy to deploy & manage certified Kubernetes distribution. Try it out on Packet.",
     "featured": true
 }
 </meta> -->

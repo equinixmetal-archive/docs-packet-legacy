@@ -5,8 +5,8 @@
     "tag":["kubeless", "k8s"],
     "seo-title": "Introduction to CPU Tuning - Packet Technical Guides",
     "seo-description": "Setup Kubeless on a bare metal K8s cluster",
-    "og-title": "Kubeless on Packet",
-    "og-description": "Setup Kubeless on a bare metal K8s cluster"
+    "og-title": "Kubeless on Packet.",
+    "og-description": "Kubeless lets you deploy small bits of code without having to worry about the underlying infrastructure. Learn how to set up Kubeless on Packet in this guide."
 }
 </meta> -->
 

@@ -5,7 +5,7 @@
     "tag":["VMs", "ESXi", "VMWare"],
     "seo-title": "Learn about deploying VMWare ESXi on Packet - Packet Technical Guides",
     "seo-description": "Learn about deploying ESXi on Packet",
-    "og-title": "With ESXi on Packet, you can easily segregate your server into virtual machines in minutes.",
+    "og-title": "Deploy VMware ESXi on bare metal.",
     "og-description":"With ESXi on Packet, you can easily segregate your server into virtual machines in minutes."
 }
 </meta> -->

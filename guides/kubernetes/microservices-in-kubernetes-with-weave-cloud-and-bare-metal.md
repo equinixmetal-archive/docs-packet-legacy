@@ -5,8 +5,8 @@
     "tag": ["Weave Cloud"],
     "seo-title": "Explore Weave and Kubernetes on Bare Metal  - Packet Technical Guides",
     "seo-description": "Use Weave Cloud to explore and troubleshoot a microservices app running in Kubernetes on Packet’s bare metal cloud.",
-    "og-title": "Explore Weave and Kubernetes",
-    "og-description":"Use Weave Cloud to explore and troubleshoot a microservices app running in Kubernetes on Packet’s bare metal cloud."
+    "og-title": "Explore Weave Cloud on Packet.",
+    "og-description":"Configure Weave Cloud to troubleshoot a microservices app running in Kubernetes on Packet infrastructure."
 }
 </meta> -->
 

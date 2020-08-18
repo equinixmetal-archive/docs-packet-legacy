@@ -5,7 +5,7 @@
     "tag": ["Flynn"],
     "seo-title": "Deploy Flynn on Bare Metal - Packet Technical Guides",
     "seo-description": "Deploy Flynn on Packet",
-    "og-title": "Flynn is an open source platform for running your apps in production. Try it on Packet today.",
+    "og-title": "Try Deploying Flynn on Packet.",
     "og-description": "Flynn is an open source platform for running your apps in production. Try it on Packet today."
 }
 </meta> -->

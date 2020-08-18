@@ -5,8 +5,8 @@
     "tag":["OS", "SmartOS"],
     "seo-title": "SmartOS on Packet - Packet Technical Guides",
     "seo-description": "Deplying SmartOS on Packet",
-    "og-title": "Deplying SmartOS on Packet",
-    "og-description":"Deplying SmartOS on Packet"
+    "og-title": "Deploy SmartOS on bare metal.",
+    "og-description":"Take advantage of Packet's iPXE by standing up SmartOS on automated infrastructure."
 }
 </meta> -->
 
