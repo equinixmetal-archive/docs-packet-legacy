@@ -32,12 +32,12 @@ Once you're SSH'd into your server as **root** you'll need to install several pa
 
 Good idea to do this...
 ```
-$ apt update && apt upgrade --no-install-recommends -y
+$ apt update && apt upgrade -y
 ```
 
 Then install the packages...
 ```
-$ apt install bridge-utils qemu-kvm virtinst libvirt-daemon virt-manager --no-install-recommends -y
+$ apt install bridge-utils qemu-kvm virtinst libvirt-daemon virt-manager -y
 ```
 
 Once you're done you can verify the install is successful by running `kvm-ok`.
