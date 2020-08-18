@@ -1,12 +1,8 @@
 <!-- <meta>
 {
-    "title":"KVM and Libvirt on Ubuntu 16.04",
-    "description":"Installing and configurating KVM with Libvirt on Ubuntu 16.04",
+    "title":"KVM and Libvirt on Ubuntu 20.04",
+    "description":"Installing and configurating KVM with Libvirt on Ubuntu 20.04",
     "tag":["virtual machines"],
-    "seo-title": "KVM and Libvirt on Ubuntu 16.04 - Packet Technical Guides",
-    "seo-description": "KVM and Libvirt on Ubuntu 16.04 description",
-    "og-title": "Virtualize your infrastructure on Packet.",
-    "og-description": "In this technical guide explore how to setup and configure KVM hypervisor & Libvirt on automated bare metal."
 }
 </meta> -->
 
@@ -14,29 +10,36 @@
 
 Turns out booting virtual machines from scratch using the [KVM](http://www.linux-kvm.org/page/Main_Page) [hypervisor](https://en.wikipedia.org/wiki/Hypervisor) with the virtualization manager [Libvirt](https://libvirt.org/) has some gotchas! We'll dispel any of that with this guide. We'll also show you how to expose your virtual machine to the public internet with an elastic IP.
 
-All of Packet's hardware can be virtualized but for this guide, we'll be deploying a [Tiny But Mighty](https://www.packet.net/cloud/servers/t1-small/) server with Ubuntu 16.04 installed.
+All of Packet's hardware can be virtualized but for this guide, we'll be deploying an [Entry Level & All-Arounder](https://www.packet.com/cloud/servers/c3-small/) server with Ubuntu 20.04 installed.
 
-_**Note: This installation is completed entirely using the command line (no GUI!). Also, you will need a public /30 IPv4 block assigned to your account if you plan to route public traffic to your virtual machine. You can request the [IP block](https://www.packet.com/developers/docs/network/basic/elastic-ips) from our portal.**_
+_**Note: This installation is completed entirely using the command line (no GUI!). Also, you will need a public /29 IPv4 block assigned to your account if you plan to route public traffic to your virtual machine. You can request the [IP block](https://www.packet.com/developers/docs/network/basic/elastic-ips) from our portal.**_
 
-### Step 1: Install Virtualization Software
+### Step 1: Deploy The Server & Install Virtualization Software
+
+Once you're logged into your Packet Dashboard navigate to deploy a new c3.small.x86 server in the region that suits you best. Do not add the /29 IPv4 block to the server at this point, we will assign it later on. The server will automatically be assigned one public IPv4 and one public IPv6 address which we'll use as the management addresses for the KVM host itself. The elastic IPs are entire reserved for the virtualization layer.
+
 
 Once you're SSH'd into your server as **root** you'll need to install several packages to create and properly manage virtual machines.
 
 *   **_qemu-kvm_**: the hypervisor and emulator.
 *   **_virtinst_**: a suite of command line tools for installing and managing virtual machines with the operating system of your choosing.
 *   **_bridge-utils_**: used to create and manage bridge networks.
+*   **_libvirt_**: The system daemon managing your VMs for you
 
 Good idea to do this...
 ```
-apt-get update && apt-get upgrade -y
+$ apt update && apt upgrade -y
 ```
+
 Then install the packages...
 ```
-apt-get install bridge-utils qemu-kvm virtinst libvirt-bin -y
+$ apt install bridge-utils qemu-kvm virtinst libvirt-daemon virt-manager -y
 ```
-Once you're done you can verify the install is successful by running `kvm-ok`.
 
-**Restart your server so that the needed kvm and libvirt deamons come up.**
+Once you're done you can verify the install is successful by running `kvm-ok`.
+```
+$ kvm-ok
+```
 
 ### Step 2: Configure the Network
 
@@ -48,7 +51,7 @@ In Route mode, each virtual machine gets their own public IP. 
 
 With either configuration, you'll need to create a bridge network. By default, libvirt comes with a preconfigured NATed network. It will usually assign 192.168.x.x IPs to the virtual machines you create. But we're not doing that here! We want our virtual machines to have their own public IPs so we will define our own network in an XML file.
 
-Go ahead and assign all the IPs to the server that you're on.
+In your Packet dashboard click on your KVM's host name, select `Network` on the left hand menu and then select the `+ Assign New Elastic` button on the right.
 
 ![ips](/images/kvm-and-libvirt/attach-elastic-IP-subnet.png)
 
@@ -60,14 +63,17 @@ For subnets of size `/30` or greater, there are 3 IPs that cannot be used for yo
 
 139.178.66.144     - Network address
 
-139.178.66.145     - Gateway for the VMs / Host bridge address
+139.178.66.145     - Gateway for the VMs / KVM host bridge address
 
-139.178.66.146-150 - Range of usable IPs for VMs
+139.178.66.146-150 - Range of usable IPs for VMs (5 in the case of a /29)
 
 139.178.66.151     - Broadcast address
 
 
 Run the following command to create the `network.xml` file. You will need to adjust the IPs and subnet mask for this to fit your subnet.
+A IPv4 netmask cheat sheet can be found [here](https://www.aelius.com/njh/subnet_sheet.html). The first IP you'll have to alter in the XML file is the one for KVM host which will act as a virtual network gateway for your VMs. If it ends in an even number like it does in our example the KVM host gateway address has to be odd, if it ends in an odd number it has to be an even number. In our case it's the latter case since the network ends in `.144`. Therefore our KVM host gateway address has to be `139.178.66.145`.
+
+The other two IP addresses to change are the ones defining the useable IP space in our network. In this case we'll have 5 useable IP addresses which we can assign to our VMs. The broadcast address does not need to set explicitly.
 
 ```
 echo '<network>
@@ -98,13 +104,13 @@ virsh net-destroy default
 virsh net-undefine default
 ```
 
-Lastly, restart the _libvirt-bin_ daemon.
+Lastly, restart the _libvirt daemon_.
 
 ```
-service libvirt-bin restart
+systemctl restart libvirtd.service
 ```
 
-Now if you look at your interfaces you'll see a new interface named vmbr0 with our 139.178.66.145/297 IP.
+Now if you look at your interfaces you'll see a new interface named vmbr0 with our 139.178.66.145/29 IP.
 
 Lastly, don't forget to enable IPv4 and IPv6 packet forwarding!
 
@@ -121,19 +127,19 @@ sysctl -p
 
 ### Step 3: Install a Virtual Guest Machine
 
-To install a virtual machine we'll run _[virt-install](https://www.mankier.com/1/virt-install)_. Feel free to configure some of those parameters such as the RAM amount, vCPUs, OS, etc.. The following will install an Ubuntu 16.04 Xenial VM.
+To install a virtual machine we'll run _[virt-install](https://www.mankier.com/1/virt-install)_. Feel free to configure some of those parameters such as the RAM amount, vCPUs, OS, etc.. The following will install an Ubuntu 18.04 Bionic VM.
 
 ```
-virt-install --name ubuntu16 \
+virt-install --name ubuntu18 \
 --ram 4096 \
---disk path=/var/lib/libvirt/images/ubuntu16.img,size=8 \
+--disk path=/var/lib/libvirt/images/ubuntu18.img,size=8 \
 --vcpus 2 \
 --os-type linux \
---os-variant ubuntu16.04 \
+--os-variant ubuntu18.04 \
 --network bridge=vmbr0 \
 --graphics none \
 --console pty,target_type=serial \
---location 'http://us.archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/' \
+--location 'http://us.archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/' \
 --extra-args 'console=ttyS0,115200n8 serial'
 ```
 
@@ -167,18 +173,10 @@ The important part comes up during the end of the install where you'll be prompt
 
 To access your VM you can SSH into it from the host machine.
 
-But where is the IP address!?!? 
-
-Easy, first get the virtual machine's MAC address: (ubuntu16 is the name of the VM)
+To view the IP address/MAC address of your VM have virsh list the DHCP leases for the virtual bridge network we setup: (ubuntu18 is the name of the VM)
 
 ```
-virsh domiflist ubuntu16
-```
-
-Next, find the IP address:
-
-```
-arp -an | grep "the MAC address"
+virsh net-dhcp-leases vmbr0
 ```
 
 Then, SSH into the VM with the user name of the account that we created during the OS installation process:
