@@ -1,8 +1,12 @@
 <!-- <meta>
 {
-    "title":"KVM and Libvirt on Ubuntu 20.04",
+   "title":"KVM and Libvirt on Ubuntu 20.04",
     "description":"Installing and configurating KVM with Libvirt on Ubuntu 20.04",
     "tag":["virtual machines"],
+    "seo-title": "KVM and Libvirt on Ubuntu 20.04 - Packet Technical Guides",
+    "seo-description": "KVM and Libvirt on Ubuntu 20.04 description",
+    "og-title": "Virtualize your infrastructure on Packet.",
+    "og-description": "In this technical guide explore how to setup and configure KVM hypervisor & Libvirt on automated bare metal."
 }
 </meta> -->
 
