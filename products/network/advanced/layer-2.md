@@ -37,7 +37,7 @@ Note: both pure Layer 2 networking configurations will permanently remove the se
 
 ## Reverting to Layer 3 from Layer 2
 
-Reverting to Layer 3 from Layer 3 via the portal only require changing the networking mode via the server's networking page. Our API will automatically bond the network interfaces and assign a new IP address.
+Reverting to Layer 3 from Layer 2 via the portal only require changing the networking mode via the server's networking page. Our API will automatically bond the network interfaces and assign a new IP address.
 
 ## Functional Description
 
