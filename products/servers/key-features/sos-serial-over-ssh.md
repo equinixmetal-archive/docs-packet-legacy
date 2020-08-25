@@ -44,6 +44,7 @@ A few things to note:
 *   This method allows only one connection at a time because our servers only have a single serial console. In the future, we plan to allow users to share the same console session.
 *   If you try to connect to the console while the server is still provisioning, it will place you in a read-only mode until up to 30 seconds after the server has finished provisioning.
 *   If you don't see any output after connecting to SOS (common when using a custom image, operating system, or iPXE) please ensure that you have your console settings setup correctly. For x86 servers, use `ttyS1,115200n8`. For aarch64 servers, use `ttyAMA0,115200`.
+* If you're connecting with PuTTY, use the SOS host as the hostname/IP in your PuTTY Session (e.g. if your server was provisioned in ewr1, your SOS host is sos.ewr1.packet.net), and the server ID as the username (you'll be prompted to enter this after opening the SSH connection with PuTTY).
 
 ### Disconnect
 
