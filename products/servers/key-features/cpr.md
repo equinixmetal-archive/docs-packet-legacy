@@ -29,14 +29,17 @@ You should also be aware of our standard disk configurations for each server typ
 *   __c2.large.arm__: 1 × 480 GB SSD (Boot)
 *   __c1.xlarge.x86__:  2 × 120 GB SSD in RAID 1 (Boot) & 1.6 TB of NVMe Flash
 *   __c2.medium.x86__: 960 GB of SSD (2 x 480 GB) (1 for Boot)
-*   __c3.medium.x86__: 960 GB of SSD (2 x 480 GB) (1 for Boot)
 *   __m1.xlarge.x86__:   6 × 480GB SSD (1 for Boot)
+*   __c3.small.x86__: 960 GB of SSD (2 x 480 GB) (1 for Boot)
+*   __c3.medium.x86__: 1440 GB of SSD (2 x 240 GB + 2x 480 GB) (1 for Boot)
 *   __m2.xlarge.x86__: 2 × 120 GB SSD (1 for Boot) & 3.2 TB of NVMe Flash
+*   __m3.large.x86__: 480GB of SSD (2 × 240 GB SSD) (1 for Boot) & 7.6 TB of NVMe Flash (2x 3.8 TB)
 *   __x1.small.x86__:   1 × 240 GB SSD (Boot)
 *   __x2.xlarge.x86__: 1 × 120 GB SSD (Boot) , 2 × 240 GB SSD & 3.8 TB of NVMe Flash
 *   __n2.xlarge.x86__: 2 × 240 GB SSD in Hardware RAID 1 (Boot) & 3.8 TB of NVMe Flash
 *   __g2.large.x86__: 1 x 150 GB SSD (Boot), 2 x 480 GB SSD
 *   __s1.large.x86__:  1 x 120 GB SSD (Boot), 2 x 480 GB SSD & 12 X 2 TB HDD.
+*   __s3.xlarge.x86__:  2 x 960 GB SSD (1 for Boot), 2 x 240 GB NVMe (cache) & 12 X 8 TB HDD (96TB).
 
 _Some servers are UEFI only and require an extra step for the CPR configuration. Please check the [last section](#efi-partition-requirement-for-uefi-only-servers) of this article for the details of UEFI only servers._
 
