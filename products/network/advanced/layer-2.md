@@ -44,9 +44,10 @@ gateway, for example.
 
 Layer 2 - Bonded mode converts the bonded network interface to pure Layer 2
 mode. This means all access to the public internet is lost, and the host can
-only be reached by the Serial Over SSH (SOS) console. In this configuration the
-network bond is intact, so only one network interface will be available for
-attaching VLANs.
+only be reached by the [Serial Over SSH (SOS)
+console](https://www.packet.com/developers/docs/servers/key-features/sos-serial-over-ssh/).
+In this configuration the network bond is intact, so only one network interface
+will be available for attaching VLANs.
 
 Layer 2 - Individual mode (also known as a "broken bond mode") is similar to the
 Layer 2 - Bonded mode configuration, except the network bond is also dismantled,
