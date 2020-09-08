@@ -1,4 +1,4 @@
-<!-- meta>
+<!-- <meta>
 {
     "title":"DIY: ECX Interconnection",
     "description":"Setting Up & Using ECX Interconnection",
