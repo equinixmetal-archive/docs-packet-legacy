@@ -20,7 +20,7 @@ ECX Connections are powered by Equinix ECX Fabric and are available in the follo
 
 ### Billing
 
-Charges for interconnections will be billed to your ECX Fabric account, separate from your Packet bill. 
+Charges for interconnections will be billed to your ECX Fabric account, separate from your Packet bill.
 
 
 ### Setup ECX on Packet
@@ -34,7 +34,7 @@ Setting up the ECX interconnection is completed in three steps.
 ## Setting up connection in Packet Portal 
 In the Packet portal you will find ECX Interconnections under IPs & Networks
 
-![ECX Selector](/images/ecx/diy-ecx-interconnection-choose.png)
+![ECX Selector](/images/ecx/ecx-interconnection-choose.png)
 
 from its landing page click 'Request New Connection'.
 
