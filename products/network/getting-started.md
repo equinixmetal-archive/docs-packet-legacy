@@ -11,28 +11,46 @@
 }
 </meta> -->
 
+Packet’s network and data center topology is designed with performance and
+redundancy as top priorities. Two unique features include a Layer-3 topology and
+native dual-stack (IPv4 / IPv6) capability.
 
+With our Layer-3 network design, each server is directly attached to a physical
+switch with 2 x 1Gbps copper, 2 x 10Gbps SFP+, or 4 x 10Gbps SFP+ connections.
+This provides elastic, cloud-style networking without the slow, latency-inducing
+characteristics often associated with complex overlays. For use cases that
+require Layer 2 functionality, please check out our [Layer 2
+feature](https://www.packet.com/developers/docs/network/advanced/layer-2).
 
-Packet’s network and datacenter topology is designed with performance and redundancy as top priorities. Two unique features include a Layer-3 topology and native dual-stack (IPv4 / IPv6) capability.
+For redundancy, each server has dedicated dual network connections going into
+two Top-of-Rack (ToR) switches. These physical connections are virtually bonded
+together as follows:
 
-With our Layer-3 network design, each server is directly attached to a physical switch via either 2 x 1Gbps copper or 2 x 10Gbps SFP+ connections. This provides elastic, cloud-style networking without the slow, latency-inducing characteristics often associated with complex overlays. For use cases that require Layer 2 functionality, please check out our [Layer 2 feature](https://www.packet.com/developers/docs/network/advanced/layer-2).
+| Server   | Throughput | Port Configuration
+| -------- | --------   | -------------
+| n2.large | 20 Gbps    | 4 × 10 Gbps (802.3ad/LACP), Quad-port Intel x710
+| c3.small | 20 Gbps    | 2 x 10 Gbps (802.3ad/LACP)
+| c3.medium| 20 Gbps    | 2 x 10 Gbps (802.3ad/LACP)
+| m3.large | 20 Gbps    | 2 x 10 Gbps (802.3ad/LACP)
+| s3.large | 20 Gbps    | 2 x 10 Gbps (802.3ad/LACP)
+| g2.large | 20 Gbps    | 2 × 10 Gbps (802.3ad/LACP)
+| m2.xlarge| 20 Gbps    | 2 x 10 Gbps (802.3ad/LACP), Mellanox ConnectX-4 NICs
+| c2.medium| 20 Gbps    | 2 x 10 Gbps (802.3ad/LACP), Mellanox ConnectX NICs
+| s1.large | 20 Gbps    | 2 × 10 Gbps (802.3ad/LACP), Mellanox ConnectX NICs
+| m1.xlarge| 20 Gbps    | 2 × 10 Gbps (802.3ad/LACP), Mellanox ConnectX NICs
+| c1.xlarge| 20 Gbps    | 2 × 10 Gbps (802.3ad/LACP), Mellanox ConnectX NICs
+| c1.small | 2 Gbps     | 2 × 1  Gbps (802.3ad/LACP), Intel NICs
+| x1.small | 10 Gbps    | 2 x 10 Gbps (mode 5/balance-tlb), Intel X710 NICs
+| t1.small | 2.5 Gbps   | 2 × 2.5 Gbps (mode 5/balance-tlb), Intel NICs
 
-For redundancy, each server has dedicated dual network connections going into two Top-of-Rack (ToR) switches. These two physical connections are virtually bonded together as follows:
+___
 
+In **802.3ad** mode, all interfaces send and receive traffic equally.
 
-| Type  | Network |
-| ------------- | ------------- |
-| c3.small|  20 Gbps Bonded Network (2 x 10Gbps Ports w/ LACP)
-| c3.medium| 20 Gbps Bonded Network (2 x 10Gbps Ports w/ LACP)
-| m3.large| 20 Gbps Bonded Network  (2 x 10Gbps Ports w/ LACP)
-| s3.large| 20 Gbps Bonded Network  (2 x 10Gbps Ports w/ LACP)
-| t1.small|  2.5 Gbps Network (2 × Intel NICs 2.5Gbps w/ TLB) full hardware redundancy but no active/active bond.
-| c1.small|  2 Gbps Bonded Network (2 × Intel NICs 1Gbps w/ LACP) full hardware redundancy and active/active bond.
-| x1.small| 10 Gbps Network (2 x Intel X710 NICs 10 Gbps w/ TLB) full hardware redundancy but no active/active bond.
-| m1.xlarge| 20 Gbps Bonded Network (2 × Mellanox ConnectX NICs, 10Gbps w/ LACP) full hardware redundancy and active/active bond.
-|c1.xlarge| 20 Gbps Bonded Network (2 × Mellanox ConnectX NICs, 10Gbps w/ LACP) full hardware redundancy and active/active bond.
-|s1.large|20 Gbps Bonded Network ( 2 × Mellanox ConnectX NICs, 10 Gbps w/ LACP) full hardware redundancy and active/active bond.
-|m2.xlarge| 20Gbps Network Pipe with 2 x 10 Gbps Bonded NICs in an HA configuration (2 x 10Gbps Mellanox Connect-X 4 NICs)
-|c2.medium| 20Gbps Network Pipe with 2 x 10 Gbps Bonded NICs in an HA configuration (2 x Mellanox ConnectX NICs)
-|g2.large| 20Gbps Bonded Network 2 × 10GBPS W/ LACP
-|n2.large| Quad-port Intel x710  (4 × 10GBPS W/ LACP)
+In **mode 5/balance-tlb** mode, all interfaces send outbound traffic, while only
+1 interface, considered the primary NIC, receives inbound traffic at a time. If
+the primary NIC were to go down, incoming traffic will seamlessly flow to the
+other NIC.
+
+See <https://en.wikipedia.org/wiki/Link_aggregation> for more in depth
+information.
