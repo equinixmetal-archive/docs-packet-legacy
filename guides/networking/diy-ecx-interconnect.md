@@ -1,11 +1,11 @@
 <!-- <meta>
 {
-    "title":"DIY: ECX Interconnection",
+    "title":"ECX Interconnection",
     "description":"Setting Up & Using ECX Interconnection",
     "tag":["Network", "ECX", "Interconnection"],
-    "seo-title": "DIY: ECX Interconnection - Packet Developer Docs",
+    "seo-title": "ECX Interconnection - Packet Developer Docs",
     "seo-description": "Setting Up & Using ECX Interconnection",
-    "og-title": "DIY: ECX Interconnection",
+    "og-title": "ECX Interconnection",
     "og-description": "Setting Up & Using ECX Interconnection",
     "og-image": "/images/packet-product-docs.png"
 }
