@@ -34,19 +34,19 @@ Setting up the ECX interconnection is completed in three steps.
 ## Setting up connection in Packet Portal 
 In the Packet portal you will find ECX Interconnections under IPs & Networks
 
-![ECX Selector](../..//images/ecx/diy-ecx-interconnection-choose.png)
+![ECX Selector](/images/ecx/diy-ecx-interconnection-choose.png)
 
 from its landing page click 'Request New Connection'.
 
-![Request ECX Connection](../../images/ecx/ecx-new-connection.png)
+![Request ECX Connection](/images/ecx/ecx-new-connection.png)
 
 Choose the preferred IBX & a connection name.
 
-![ECX Details](../../images/ecx/ecx-connection-request.png)
+![ECX Details](/images/ecx/ecx-connection-request.png)
 
 The Packet Portal ECX Connection has successfully been submitted and is awaiting review by our support team.
 
-![ECX Connection Success](../../images/ecx/ecx-success-connection.png)
+![ECX Connection Success](/images/ecx/ecx-success-connection.png)
 
 > **_NOTE:_** Retain the ECX token, as it is required to complete the setup process in the [ECX Portal](https://ecxfabric.equinix.com/dashboard).
 
@@ -60,24 +60,24 @@ Now, onto the [ECX portal](https://ecxfabric.equinix.com/dashboard) to begin the
 
 From the Dashboard, click 'Create Connection'
 
-![ECX Dashboard](../../images/ecx/ecx-dashboard.png)
+![ECX Dashboard](/images/ecx/ecx-dashboard.png)
 
 From 'I want to connect to:' click 'A Service Provider' and search for or click on Packet. 
 
-![ECX Connect To](../../images/ecx/ecx-connect-to.png)
+![ECX Connect To](/images/ecx/ecx-connect-to.png)
 
 With Packet selected proceed to 'Create Connection'
-![Packet ECX Services](../../images/ecx/ecx-packet-services.png)
+![Packet ECX Services](/images/ecx/ecx-packet-services.png)
 
 From Select Locations choose 'Port' or 'Virtual Device'. Along with choosing an IBX & connection Destination. 
 
-![ECX Port](../../images/ecx/ecx-portal-connection-setup.png)
+![ECX Port](/images/ecx/ecx-portal-connection-setup.png)
 
 From Connection Details set 'Connection Information' including its preferred name, and VLAN ID. The ECX Token of which was generated/shown during the Packet Portal configuration process will also be required for this step. Lastly, choose the connection speed for your connection.
 
 
 
-![ECX Connection Details](../../images/ecx/ecx-connection-details.png)
+![ECX Connection Details](/images/ecx/ecx-connection-details.png)
 
 Then final review screen will provide your full connection details, it will also allow you to rollback and correct any errors. If all is well, proceed with 'Submit your Order'. After this, the order has been submitted. There could be a slight delay complete your connection request. Typically this is verified, processed and completed with a business day, usually sooner. 
 
