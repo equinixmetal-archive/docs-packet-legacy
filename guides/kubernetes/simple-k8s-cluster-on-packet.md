@@ -182,15 +182,13 @@ head -c 16 /dev/urandom | shasum -a 256 | cut -d" " -f1 | sudo tee /var/lib/weav
 kubectl create secret -n kube-system generic weave-passwd --from-file=/var/lib/weave/weave-passwd
 ````
 
-In this example, since the default private network is already used on the hosts (10.0.0.0/8), use 192.168.0.0/16 for Weave configuration:
+You would need to use a different private subnet for Weave net to avoid conflicts.
 
 ````
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')&env.IPALLOC_RANGE=192.168.0.0/16"
 ````
 
-Reference: https://www.weave.works/docs/net/latest/kubernetes/kube-addon/#configuration-options
-
-> **Note:** You would need to use a different private subnet for Weave net to avoid conflicts.
+> **Note:** CNI reference - https://www.weave.works/docs/net/latest/kubernetes/kube-addon/#configuration-options
 
 #### Add the nodes
 
