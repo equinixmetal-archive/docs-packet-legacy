@@ -22,6 +22,13 @@ OS & Hardware selection is dependent upon your particular build requirements. Fo
 
 > **Note:** For each device that will be in your Kubernetes the following will need to be done:
 
+### Upgrade and Update OS Packages
+
+
+````
+sudo apt update && sudo apt upgrade -y
+````
+
 ### Installing Docker
 
 
@@ -174,7 +181,10 @@ head -c 16 /dev/urandom | shasum -a 256 | cut -d" " -f1 | sudo tee /var/lib/weav
 ````
 kubectl create secret -n kube-system generic weave-passwd --from-file=/var/lib/weave/weave-passwd
 ````
-> **Note:** You would need to use a different private subnet for Weave net to avoid conflicts. 
+> **Note:** You would need to use a different private subnet for Weave net to avoid conflicts.
+> In this example, since the default private network is already used on the hosts (10.0.0.0/8), use 192.168.0.0/16 for Weave configuration:
+> kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')&env.IPALLOC_RANGE=192.168.0.0/16"
+> Reference: https://www.weave.works/docs/net/latest/kubernetes/kube-addon/#configuration-options
 
 #### Add the nodes
 
