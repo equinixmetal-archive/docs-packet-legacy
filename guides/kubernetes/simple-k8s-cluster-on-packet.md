@@ -185,10 +185,11 @@ kubectl create secret -n kube-system generic weave-passwd --from-file=/var/lib/w
 You would need to use a different private subnet for Weave net to avoid conflicts.
 
 ````
-kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')&env.IPALLOC_RANGE=192.168.0.0/16"
+kubectl apply -f \
+    "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')&env.IPALLOC_RANGE=192.168.0.0/16"
 ````
 
-> **Note:** CNI reference - https://www.weave.works/docs/net/latest/kubernetes/kube-addon/#configuration-options
+> **Note:** Weave CNI reference link - https://www.weave.works/docs/net/latest/kubernetes/kube-addon/#configuration-options
 
 #### Add the nodes
 
