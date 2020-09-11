@@ -132,7 +132,8 @@ Using a simple t1.small.x86 to start, the following example shows you how to:
 ```
 
 ## m1.xlarge.x86 example
-The next exmaple is a slightly more complicated configuration that includes RAID. It's worth noting that RAID created through CPR is software RAID, not hardware RAID.
+The next example is a slightly more complicated configuration that includes RAID.
+It's worth noting that RAID created through CPR is software RAID, not hardware RAID.
 ```
 {
    "disks":[
@@ -230,7 +231,8 @@ The next exmaple is a slightly more complicated configuration that includes RAID
 
 ## m2.xlarge.x86 with RAID and NVMe drive example
 
-This example is more complex than the others as it involves different RAID setups for the ROOT and SWAP partitions as well as mounting the NVMe drive during deployment.
+This example is more complex than the others as it involves different RAID setups
+for the ROOT and SWAP partitions as well as mounting the NVMe drive during deployment.
 
 ```
 {
@@ -354,7 +356,10 @@ This example is more complex than the others as it involves different RAID setup
 
 ## EFI Partition Requirement for UEFI only servers
 
-For the c1.large.arm, c2.large.arm, c2.medium.x86, and c3.medium.x86 servers which are UEFI only, you are required to use a FAT32 EFI partition for `/boot/efi` - The default c2.medium.x86 CPR configuration looks like the following:
+For the c1.large.arm, c2.large.arm and c2.medium.x86 servers which are UEFI only,
+you are required to use a FAT32 EFI partition for `/boot/efi`
+
+The default c2.medium.x86 CPR configuration looks like the following:
 
 ```
 {
