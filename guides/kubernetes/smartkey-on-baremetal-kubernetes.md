@@ -64,10 +64,10 @@ resources:
     - secrets
     providers:
     - kms:
-	name: smartkey
-	endpoint: unix:///etc/smartkey/smartkey.socket
-	cachesize: 100
-	timeout: 3s
+        name: smartkey
+        endpoint: unix:///etc/smartkey/smartkey.socket
+        cachesize: 100
+        timeout: 3s
     - identity: {}
 ```
 
