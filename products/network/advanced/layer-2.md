@@ -91,7 +91,7 @@ Networks" tab.
 
 Under "Layer 2" you can add one or more networks like this:
 
-![add VLAN](../../../images/layer-2-overview/add-vlan.jpg)
+![add VLAN](/images/layer-2-overview/add-vlan.jpg)
 
 Note that networks are local to a specific data center and that the assigned
 VLAN ID displayed here will be used to configure server port switching and
@@ -106,15 +106,15 @@ additional steps are required.
    mix/hybrid pure Layer 2 (with the option to break the bond or leave it
    intact).
 
-   ![convert network](../../../images/layer-2-overview/convert-network-mode.jpg)
+   ![convert network](/images/layer-2-overview/convert-network-mode.jpg)
 
 1. Once the network mode has been changed you will see the option to attach a
    new VLAN.
 
-   ![attach VLAN](../../../images/layer-2-overview/attach-vlan-step1.jpg)
+   ![attach VLAN](/images/layer-2-overview/attach-vlan-step1.jpg)
 
 1. Choose the network interface you wish to attach the VLAN to, but be aware
    that you should only choose "bond0" if you have converted the server to the
    bonded layer 2 networking mode.
 
-   ![VLAN menue](../../../images/layer-2-overview/attach-vlan-step2.jpg)
+   ![VLAN menue](/images/layer-2-overview/attach-vlan-step2.jpg)
