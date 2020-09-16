@@ -21,11 +21,16 @@
     <a href="https://cloud.drone.io/packethost/docs">
         <img src="https://img.shields.io/drone/build/packethost/docs" alt="License"/>
     </a>
+    <a href="https://github.com/packethost/standards/blob/master/maintained-statement.md">
+        <img src="https://img.shields.io/badge/Stability-Maintained-green.svg" alt="Stability"/>
+    </a>
 </p>
 
 <!--- Headline Description --->
 This is the public documentation for Packet's public services.
 View our documentation page at [Packet Docs](https://www.packet.com/developers/).
+
+This repository is [Maintained](https://github.com/packethost/standards/blob/master/maintained-statement.md) meaning that this software is supported by Packet and its community - available to use in production environments.
 
 <!--- What We Have Here --->
 ## What We Have Here
