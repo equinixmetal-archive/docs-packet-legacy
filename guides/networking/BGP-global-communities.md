@@ -163,7 +163,7 @@ Available in SJC
 
 **Google**
 
-Available in SJC, IAD, EWR
+Available in SJC, IAD, DC13, EWR, NY5
 
 
 | Community | Function |
@@ -193,7 +193,7 @@ Available in AMS
 
 **NYIIX**
 
-Available in EWR
+Available in EWR, NY5
 
 
 | Community | Function |
@@ -207,7 +207,7 @@ Available in EWR
 
 **EQIX-NY**
 
-Available in EWR
+Available in EWR, NY5
 
 
 | Community | Function |
@@ -221,7 +221,7 @@ Available in EWR
 
 **DECIX-NY**
 
-Available in EWR
+Available in EWR, NY5
 
 
 | Community | Function |
@@ -235,7 +235,7 @@ Available in EWR
 
 **EQIX-SJC**
 
-Available in SJC
+Available in SJC, SV5
 
 
 | Community | Function |
@@ -248,7 +248,7 @@ Available in SJC
 
 **SFMIX**
 
-Available in SJC
+Available in SJC, SV5
 
 | Community | Function |
 |--|--|
@@ -275,7 +275,7 @@ Available in NRT1
 
 **EQIX-IAD**
 
-Available in IAD
+Available in IAD, DC13
 
 
 | Community | Function |
@@ -355,6 +355,39 @@ Available in LAX2
 | 54825:932 | Prepend two times|
 | 54825:933 | Prepend three times|
 
+**EQIX ORD**
+
+Available in ORD
+
+
+| Community | Function |
+|--|--|
+| 54825:940 | Advertise to EQIX Chicago|
+| 54825:941 | Prepend one time|
+| 54825:942 | Prepend two times|
+| 54825:943 | Prepend three times|
+
+**EQIX HK**
+
+Available in HKG2
+
+| Community | Function |
+|--|--|
+| 54825:950 | Advertise to EQIX Hong Kong|
+| 54825:951 | Prepend one time|
+| 54825:952 | Prepend two times|
+| 54825:953 | Prepend three times|
+
+**DE-CIX FRA**
+
+Available in FRA2
+
+| Community | Function |
+|--|--|
+| 54825:960 | Advertise to DE-CIX Frankfurt|
+| 54825:961 | Prepend one time|
+| 54825:962 | Prepend two times|
+| 54825:963 | Prepend three times|
 
 ### Additional communities for Internet Exchanges only
 
