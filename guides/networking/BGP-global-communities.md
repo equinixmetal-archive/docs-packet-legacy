@@ -395,7 +395,7 @@ Available in ATL
 
 | Community | Function |
 |--|--|
-| 54825:970 | Advertise to Equinix  Atlanta|
+| 54825:970 | Advertise to Equinix Atlanta|
 | 54825:971 | Prepend one time|
 | 54825:972 | Prepend two times|
 | 54825:973 | Prepend three times|
