@@ -389,6 +389,17 @@ Available in FRA2
 | 54825:962 | Prepend two times|
 | 54825:963 | Prepend three times|
 
+**EQIX ATL**
+
+Available in ATL
+
+| Community | Function |
+|--|--|
+| 54825:970 | Advertise to Equinix  Atlanta|
+| 54825:971 | Prepend one time|
+| 54825:972 | Prepend two times|
+| 54825:973 | Prepend three times|
+
 ### Additional communities for Internet Exchanges only
 
 These communities can be attached to prefixes advertised to any Internet Exchange.  This allows you to advertise to the whole IX, except for some specific peers.  We are able to add more of these communities by request.
