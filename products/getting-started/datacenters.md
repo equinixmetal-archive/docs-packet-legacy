@@ -12,7 +12,7 @@
 </meta> -->
 # Data Center Locations
 
-As part of Equinix, we deploy in the most densely interconnected facilities in the world, putting your workloads milliseconds away from the clouds, networks & Enterprises that matter. Equinix data centers are certified to meet rigorous standards that enable secure, compliant and efficient operations  [Learn more about Equinix’s standards, regulations & certifications](https://www.equinix.com/data-centers/design/standards-compliance/).
+As part of Equinix, Packet deploys in the most densely interconnected facilities in the world, putting your workloads milliseconds away from the clouds, networks & Enterprises that matter. Equinix data centers are certified to meet rigorous standards that enable secure, compliant and efficient operations  [Learn more about Equinix’s standards, regulations & certifications](https://www.equinix.com/data-centers/design/standards-compliance/).
 
 ## Current Live IBX Sites
 
