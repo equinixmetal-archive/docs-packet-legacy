@@ -18,13 +18,13 @@ As part of Equinix, Equinix Metal deploys in the most densely interconnected fac
 
 | The Americas   |
 |----------|
-|[New York (NY5)](https://www.packet.com/cloud/locations//new-york/)  |
-|[Ashburn, VA (DC13)](https://www.packet.com/cloud/locations//ashburn/) | 
-|[Silicon Valley (SV15)](https://www.packet.com/cloud/locations//silicon-valley/) | 
+|[New York (NY5)](https://www.packet.com/cloud/locations/new-york/)  |
+|[Ashburn, VA (DC13)](https://www.packet.com/cloud/locations/ashburn/) | 
+|[Silicon Valley (SV15)](https://www.packet.com/cloud/locations/silicon-valley/) | 
 
 | EMEA   |
 |----------|
-|[Amsterdam (AM6)](https://www.packet.com/cloud/locations//amsterdam/) |
+|[Amsterdam (AM6)](https://www.packet.com/cloud/locations/amsterdam/) |
 
 
 
@@ -33,8 +33,8 @@ As part of Equinix, Equinix Metal deploys in the most densely interconnected fac
 
 | The Americas | EMEA | Asia-Pacific |
 |----------|-------------|------|
-|[Dallas, TX (DA11)](https://www.packet.com/cloud/locations//dallas/)| [Singapore](https://www.packet.com/cloud/locations//singapore/) |
-| | [Frankfurt](https://www.packet.com/cloud/locations//frankfurt/) |    |
+|[Dallas, TX (DA11)](https://www.packet.com/cloud/locations/dallas/)| [Singapore](https://www.packet.com/cloud/locations/singapore/) |
+| | [Frankfurt](https://www.packet.com/cloud/locations/frankfurt/) |    |
 
 ## Global IBX Expansions
 
