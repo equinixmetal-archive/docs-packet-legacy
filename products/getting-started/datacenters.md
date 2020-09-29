@@ -12,7 +12,7 @@
 </meta> -->
 # Data Center Locations
 
-As part of Equinix, Equinix Metal deploys in the most densely interconnected facilities in the world, putting your workloads milliseconds away from the clouds, networks & Enterprises that matter. Equinix data centers are certified to meet rigorous standards that enable secure, compliant and efficient operations  [Learn more about Equinix’s standards, regulations & certifications](https://www.equinix.com/data-centers/design/standards-compliance/).
+As part of Equinix, we deploy in the most densely interconnected facilities in the world, putting your workloads milliseconds away from the clouds, networks & Enterprises that matter. Equinix data centers are certified to meet rigorous standards that enable secure, compliant and efficient operations  [Learn more about Equinix’s standards, regulations & certifications](https://www.equinix.com/data-centers/design/standards-compliance/).
 
 ## Current Live IBX Sites
 
@@ -38,7 +38,7 @@ As part of Equinix, Equinix Metal deploys in the most densely interconnected fac
 
 ## Global IBX Expansions
 
-Equinix Metal is expanding across the Equinix footprint to meet customer demand, including to: 
+With Equinix Packet is expanding across the Equinix footprint to meet customer demand, including to: 
 
 - Paris, France 
 - São Paulo, Brazil
@@ -51,7 +51,7 @@ Please [contact us](https://www.packet.com/about/contact/) for details.
 
 ## Packet Legacy Sites
 
-Equinix Metal maintains a number of global sites that pre-date its acquisition by Equinix, when it was still Packet. As such, growth is limited in these sites. Please [contact us](https://www.metal.equinix.com/about/contact/) with details about your deployment or application needs. 
+Packet maintains a number of global sites that pre-date its acquisition by Equinix, when it was still Packet. As such, growth is limited in these sites. Please [contact us](https://www.packet.com/about/contact/) with details about your deployment or application needs. 
 
 | The Americas|  |
 | ----------- | ----------- |
