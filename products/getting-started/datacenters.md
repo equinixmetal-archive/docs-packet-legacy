@@ -1,8 +1,15 @@
----
-title: Data Center Locations
-date: 2020-08-19
----
-
+<!-- <meta>
+{
+   "title":"Data Centers",
+    "description":"Locations, certifications, & speed tests for our global data centers.",
+    "tag":["datacenters", "locations", "facilities"],
+    "seo-title": "Bare Metal Cloud Data Centers -- Packet Developer Docs",
+    "seo-description": "Locations, certifications, & speed tests for our global datacenters.",
+    "og-title": "Data Centers",
+    "og-description": "Locations, certifications, & speed tests for our global data centers.",
+    "og-image": "/images/packet-product-docs.png"
+}
+</meta> -->
 # Data Center Locations
 
 As part of Equinix, Equinix Metal deploys in the most densely interconnected facilities in the world, putting your workloads milliseconds away from the clouds, networks & Enterprises that matter. Equinix data centers are certified to meet rigorous standards that enable secure, compliant and efficient operations  [Learn more about Equinix’s standards, regulations & certifications](https://www.equinix.com/data-centers/design/standards-compliance/).
