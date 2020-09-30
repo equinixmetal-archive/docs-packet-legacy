@@ -55,6 +55,19 @@ boot
 
 If it fails during initramfs trying to load the CD device, update the install media to look for install media via the memdisk. More information can be found about this issue [here](https://www.reversengineered.com/2016/01/07/booting-linux-isos-with-memdisk-and-ipxe/).
 
+### packet-cli with Netboot.xyz
+
+```
+packet-cli device create \
+  --hostname netboot-custom-ipxe \
+  --plan c3.small.x86 \
+  --facility any \
+  --operating-system custom_ipxe \
+  --project-id "$PACKET_PROJECT" \
+  --userdata='#!ipxe
+chain -ar https://boot.netboot.xyz'
+```
+
 ### Persisting PXE
 
 When provisioning the Custom iPXE operating system kicks off, we set the next boot option to PXE on first boot.  By default, this PXE process only happens once on the first boot. To set your device to continuously boot to iPXE first, you can edit it under 'server actions' through the customer portal.
