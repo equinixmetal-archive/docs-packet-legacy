@@ -7,11 +7,11 @@
     "seo-description": "Setting Up & Using Equinix Fabric",
     "og-title": "Equinix Fabric",
     "og-description": "Setting Up & Using Equinix Fabric",
-    "og-image": "/images/packet-product-docs.png"
+    "og-image": "/images/edge-metal-product-docs.png"
 }
 </meta> -->
 
-Equinix Fabric is a software-defined interconnection service that enables any business to connect between its own distributed infrastructure and any other businesses', including the world's largest network service and cloud providers, on Platform Equinix. On Packet, Fabric accepts ingress connections only.  
+Equinix Fabric is a software-defined interconnection service that enables any business to connect between its own distributed infrastructure and any other businesses', including the world's largest network service and cloud providers, on Platform Equinix. On Edge Metal, Fabric accepts ingress connections only.  
 
 
 ### Availability  
@@ -20,7 +20,7 @@ Fabric Connections are available in the following IBX Locations: NY5, DC13, SV15
 
 ### Billing
 
-Charges for Fabric will be billed to your Equinix Fabric account, separate from your Packet bill.
+Charges for Fabric will be billed to your Equinix Fabric account, separate from your Edge Metal bill.
 
 
 ### Setup Equinix Fabric on Edge Metal
@@ -32,7 +32,7 @@ Setting up Fabric is completed in three steps.
 
 
 ## Setting up connection in Edge Metal Portal 
-In the Packet portal you will find `Connections` under IPs & Networks
+In the Edge Metal portal you will find `Connections` under IPs & Networks
 
 from its landing page click 'Request New Connection'.
 
@@ -58,7 +58,7 @@ From the Dashboard, click 'Create Connection'
 
 ![Fabric Dashboard](/images/fabric/fabric-dashboard.png)
 
-From 'I want to connect to:' click 'A Service Provider' and search for or click on Packet. 
+From 'I want to connect to:' click 'A Service Provider' and search for or click on Edge Metal. 
 
 ![Fabric Connect To](/images/fabric/fabric-connect-to.png)
 
