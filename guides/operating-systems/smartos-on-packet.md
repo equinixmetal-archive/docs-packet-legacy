@@ -10,53 +10,76 @@
 }
 </meta> -->
 
-
 # SmartOS on Packet
 
 Packet’s Custom iPXE boot option allows users to boot a system image like that of SmartOS persistently across boots, on top of a local storage ZFS pool for the VM and zone data on the node itself, to provide a fast and easily administered hypervisor operating system experience.
 
 ## Booting
 
+There are two options for booting SmartOS on Packet. First, you can use Joyent's netboot server, which will give you the option of selecting from a few recent platform images. Second, you can set up your own server with any SmartOS platform image you choose.
+
+### Using Joyent's Netboot Server
+
+To use Joyent's netboot server, set the `custom_pxe` URL to the following:
+
+```txt
+https://netboot.smartos.org/packet.ipxe
+```
+
+This will boot to a menu where you can select from several recently released platform images. The menu will default to boot the latest platform image after 10 seconds.
+
+### Setting up your own netboot server
+
 After acquiring the SmartOS archive image, decompressing it in any web-facing path (this can be in object storage, behind a webserver, etc. as long as the path is web reachable). For example, in the leanest possible example, you can place it in an Nginx path like `/usr/share/nginx/html/smartos`, and then, in that path, at `/usr/share/nginx/html/smartos.ipxe`, you can add the following iPXE manifest:
 
-```
-    #!ipxe
+```ipxe
+#!ipxe
 
-    dhcp
+dhcp
 
-    set base-url http://${YOUR_HOST_ADDR}
+set base-url http://${YOUR_HOST_ADDR}
 
-    kernel ${base-url}/smartos/smartos/platform/i86pc/kernel/amd64/unix -B smartos=true,console=ttyb,ttyb-mode="115200,8,n,1,-"
+kernel ${base-url}/smartos/smartos/platform/i86pc/kernel/amd64/unix -B smartos=true,console=ttyb,ttyb-mode="115200,8,n,1,-"
 
-    module ${base-url}/smartos/smartos/platform/i86pc/amd64/boot_archive type=rootfs name=ramdisk
+module ${base-url}/smartos/smartos/platform/i86pc/amd64/boot_archive type=rootfs name=ramdisk
+module ${base_url}/smartos/smartos/platform/i86pc/amd64/boot_archive.hash type=hash name=ramdisk
+module http://metadata.platformequinix.com/metadata type=file name=tinkerbell.json
 
-    boot
+boot
 ```
 
 Which will, for example, set a relative path for your webserver to refer to the kernel and boot module files on disk.
+
+## Provisioning a server
 
 In your Packet console, you can create a new instance, and select Custom iPXE as your Operating System:
 
 ![custom-ipxe-1](/images/smartos-on-packet/01-new.png)
 ![custom-ipxe-2](/images/smartos-on-packet/01-2-new.png)
 
-Then, in the text field below that selection, you will paste the full path to your iPXE script:
+Then, in the text field below that selection, you will paste the full path to the iPXE script.
 
+For Joyent's netboot server:
+
+```txt
+https://netboot.smartos.org/packet.ipxe
 ```
+
+Or your own:
+
+```txt
 http://${YOUR_HOST}/smartos.ipxe
 ```
 
 ## Configuring SmartOS
 
-Because this is the first boot, you will need to configure things like a root password, a network configuration for your management interface, and the storage pool for your instance.
-
 After hitting “Deploy Servers” in your Packet console, you’ll find, one it’s online, you will need to use the SOS console to complete the setup.
 
 ![smartos-node-address](/images/smartos-on-packet/02.png)
 
-You’ll find your SSH information to access the console on the Out-Of-Band Console link pictured. Make note of your network configuration as well, as you’ll need this when connecting to the SmartOS setup screens to follow.
+Because this is the first boot, you will need to configure things like a root password, a network configuration for your management interface, and the storage pool for your instance.
 
-The first thing you’ll want to do, however, before setting up the host is, in the Packet console, clicking “Server Actions” and setting this host to “Always Boot from PXE” in order to ensure that, on each boot, SmartOS is bootable, as this OS is not typically installed to disk, and will be delivered over the network on subsequent boots (with your persistent installation specific things like passwords, users, VM data, all stored in the node storage pool):
+You’ll find your SSH information to access the console on the Out-Of-Band Console link pictured. Make note of your network configuration as well, as you’ll need this when connecting to the SmartOS setup screens to follow.
 
 ![set-boot-ipxe](/images/smartos-on-packet/03.png)
 
@@ -71,6 +94,12 @@ The next step is to configure storage, which SmartOS will make a recommendation 
 ![storage-pool](/images/smartos-on-packet/05.png)
 
 If the default works for you, then type “yes”, and continue, however, there are other options for SmartOS storage configurations, or manually defining options if you’ve decided to, for example, attach network storage, or add block devices.
+
+During this step you can also choose to make the zpool bootable. While SmartOS is not typically installed to disk, on Packet booting from the zpool is preferred. To configure your SmartOS system to boot from the zpool, enter `zones` as the boot pool, and `latest` as the source.
+
+If you choose to boot form the zpool, go into the Packet console, clicking “Server Actions” and disable “Always Boot from PXE”. If for any reason your pool becomes unbootable, you can set this to “Always Boot from PXE” (and ensuring your `custom_ipxe` URL is set correctly) to boot from the network. If you do not enter a boot pool, you will need to alwyas boot from pxe.
+
+Persistent installation specific things like passwords, users, VM data, is always stored in the node storage pool in either case.
 
 Your final step is to configure a root password for the device:
 
